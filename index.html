@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Unofficial personal investor dashboard for SpaceX (Nasdaq: SPCX), built for Claes Berg. Not affiliated with Space Exploration Technologies Corp.">
   <title>SPCX · Investor Dashboard · Claes Berg</title>
-  <link rel="stylesheet" href="css/style.css?v=78caa3b-20261111150556">
+  <link rel="stylesheet" href="css/style.css?v=ac06753-20261111155425">
   <meta name="theme-color" content="#000000">
   <meta name="robots" content="noindex,nofollow">
 </head>
@@ -22,7 +22,6 @@
         <nav class="nav" id="site-nav">
           <a href="#price">Price</a>
           <a href="#news">News</a>
-          <a href="#forecast">Forecast</a>
           <a href="#kpis">KPIs</a>
           <a href="#unlocks">Unlocks</a>
           <a href="#calendar">Calendar</a>
@@ -64,29 +63,6 @@
         <div class="filters" id="news-filters"></div>
         <p class="tiny" id="news-updated"></p>
         <div class="news-list" id="news-list"></div>
-      </div>
-    </section>
-
-    <section class="section" id="forecast">
-      <div class="wrap">
-        <p class="section-kicker">Base case</p>
-        <h2>Revenue forecast</h2>
-        <div class="disclaimer">Base case – illustrative model, not investment advice.</div>
-        <p class="lede">Two views of the same model: the next 18 months, quarter by quarter through Q2 2028, and annual figures for FY2026–FY2029. Drivers are listed below and can be moved; Reset returns to the published base case. Every assumption is sourced or marked as an estimate.</p>
-        <div class="tabs" id="forecast-tabs">
-          <button class="ghost active" type="button" data-view="q">18 months · quarterly</button>
-          <button class="ghost" type="button" data-view="a">3 years · annual</button>
-        </div>
-        <div class="chart-card" style="margin-bottom:24px">
-          <h3 id="forecast-chart-title">Base case revenue</h3>
-          <div class="box" style="height:300px"><canvas id="forecast-chart"></canvas></div>
-        </div>
-        <div class="table-wrap" id="forecast-table"></div>
-        <div class="formula" id="forecast-formulas"></div>
-        <p class="section-kicker" style="margin-top:36px">Drivers</p>
-        <div class="drivers" id="forecast-drivers"></div>
-        <button class="ghost" type="button" id="forecast-reset">Reset to base case</button>
-        <div class="assumptions" id="forecast-assumptions" style="margin-top:36px"></div>
       </div>
     </section>
 
@@ -160,11 +136,10 @@
     </div>
   </footer>
 
-  <script src="js/vendor/chart.umd.min.js?v=78caa3b-20261111150556"></script>
-  <script src="js/price.js?v=78caa3b-20261111150556"></script>
-  <script src="js/forecast.js?v=78caa3b-20261111150556"></script>
-  <script src="js/charts.js?v=78caa3b-20261111150556"></script>
-  <script src="js/unlocks.js?v=78caa3b-20261111150556"></script>
-  <script src="js/app.js?v=78caa3b-20261111150556"></script>
+  <script src="js/vendor/chart.umd.min.js?v=ac06753-20261111155425"></script>
+  <script src="js/price.js?v=ac06753-20261111155425"></script>
+  <script src="js/charts.js?v=ac06753-20261111155425"></script>
+  <script src="js/unlocks.js?v=ac06753-20261111155425"></script>
+  <script src="js/app.js?v=ac06753-20261111155425"></script>
 </body>
 </html>

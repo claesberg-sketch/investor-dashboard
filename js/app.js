@@ -257,13 +257,12 @@
       window.addEventListener("resize", () => { if (window.innerWidth > 900) setOpen(false); });
     }
 
-    const [companies, company, quote, news, xposts, forecast, kpis, calendar, unlocks] = await Promise.all([
+    const [companies, company, quote, news, xposts, kpis, calendar, unlocks] = await Promise.all([
       loadJSON(DATA + "/companies.json"),
       loadJSON(DATA + "/spacex/company.json"),
       loadJSON(DATA + "/spacex/quote.json"),
       loadJSON(DATA + "/spacex/news.json"),
       loadJSON(DATA + "/spacex/x-posts.json"),
-      loadJSON(DATA + "/spacex/forecast.json"),
       loadJSON(DATA + "/spacex/kpis.json"),
       loadJSON(DATA + "/spacex/calendar.json"),
       loadJSON(DATA + "/spacex/unlocks.json"),
@@ -281,7 +280,6 @@
     }
     renderNews(news, xposts);
     renderTopics(xposts);
-    SPCXForecast.mount(forecast);
     SPCXCharts.mount(kpis);
     if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
     renderCalendar(calendar);

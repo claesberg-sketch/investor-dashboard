@@ -35,7 +35,7 @@ No build step. Serve the repo root as a static site.
 ## How to add a company (Tesla, NVIDIA, …)
 
 1. Add an entry to `data/companies.json`. Use `"status": "active"` when the page is ready; until then `"coming_soon"` keeps the ticker visible but disabled in the header switcher.
-2. Create `data/<id>/` next to `data/spacex/` with the same files: `company.json`, `quote.json`, `news.json`, `news-static.json`, `kpis.json`, `forecast.json`, `calendar.json`, `unlocks.json`, `x-posts.json`.
+2. Create `data/<id>/` next to `data/spacex/` with the same files: `company.json`, `quote.json`, `news.json`, `news-static.json`, `kpis.json`, `calendar.json`, `unlocks.json`, `x-posts.json`.
 3. Point the page at that folder (today `js/app.js` loads the active SpaceX set). A later iteration can switch `dataDir` from the query string or the switcher without changing the layout.
 4. Extend `scripts/refresh.py` with the new ticker, CIK, news query, and (if it exists) Hyperliquid symbol.
 
@@ -75,15 +75,6 @@ Two official Nasdaq / Yahoo tiles sit under the live perp, from a server-side sn
 
 - **Regular close** — the last completed U.S. regular session (9:30 a.m.–4:00 p.m. ET), with its % change and the close time in CET or CEST (for example `10 Nov 2026, 22:00 CET`).
 - **After hours** — the after-hours session of the current U.S. day (4:00–8:00 p.m. ET) if that session has data; otherwise the latest completed after-hours session. Change is versus that session’s regular close, in $ and %.
-
-## Forecast headline (base case, 11 Nov 2026)
-
-- FY2026 revenue **$46.7B** (nine months reported $27.1B + Q4 estimate). Street consensus $48.9B.
-- Q1 2027 **$35.3B**, anchored to official guidance of $33–37B.
-- FY2027 **$209.5B** (above street $180.7B because the model honors Q1 guidance and then scales with the 13 GW YE2027 compute target, with a declining $/GW).
-- Management’s $500B–$1T *year-end 2027 ARR aspiration* is **not** used as FY2027 revenue.
-
-See the assumptions table on the site for sources.
 
 ## Licence and fonts
 
