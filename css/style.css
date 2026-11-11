@@ -112,6 +112,7 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .news-item .meta .src{margin-top:4px}
 .news-item h3{font-size:1rem;font-weight:500;line-height:1.4;white-space:pre-wrap}
 .news-item p{font-size:.9rem;color:var(--fg-70);margin-top:4px}
+.news-item .summary{font-size:.86rem;line-height:1.5;color:var(--fg-70);margin-top:8px;max-width:46rem;text-wrap:pretty}
 .badge{display:inline-block;border:1px solid var(--fg-20);padding:1px 7px;margin:0 4px 4px 0;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-70)}
 .badge.hl{border-color:var(--fg-70);color:var(--fg)}
 /* Forecast */

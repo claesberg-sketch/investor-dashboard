@@ -9,7 +9,7 @@ Live site (GitHub Pages): **https://claesberg-sketch.github.io/investor-dashboar
 ## What’s on the SpaceX page
 
 1. **Live price and hero chart** — the headline price and the top chart are the Hyperliquid **`xyz:SPCX`** mid, 24/7, labelled “Hyperliquid xyz:SPCX perp – 24/7.” The chart is 5-minute candles from `candleSnapshot` (last 24 hours) plus a live point at the current time in Europe/Stockholm, kept in sync by a 5-second poll and a WebSocket candle / mid subscription (`wss://api.hyperliquid.xyz/ws`). The last chart point is the same price as the ticker. When a Nasdaq/Yahoo snapshot is available, that official print and the basis (perp minus official, value and %) are shown next to it — the perp can trade slightly above or below the stock because of funding. The official regular-session line is overlaid as a dashed series. Yahoo itself is a server-side file (browser CORS is blocked) and updates only when `scripts/refresh.py` is run and pushed.
-2. **News** — one chronological feed (newest first) of official press/IR, SEC filings, Google News RSS, and X posts from @elonmusk, @SpaceX, @Starlink, @Gwynne_Shotwell, @SpaceXSI, and @nextbigfuture (Brian Wang). Filters: All, Press, Filings, Media, X. Every item shows its publish date and time in Europe/Stockholm (CET or CEST); if a source has only a date, the row says “time n/a” rather than inventing a clock time.
+2. **News** — one chronological feed (newest first) of official press/IR, SEC filings, Google News RSS, and X posts from @elonmusk, @SpaceX, @Starlink, @Gwynne_Shotwell, @SpaceXSI, and @nextbigfuture (Brian Wang). Filters: All, Press, Filings, Media, X. Every item shows its publish date and time in Europe/Stockholm (CET or CEST); if a source has only a date, the row says “time n/a” rather than inventing a clock time. Each row also has a two-sentence plain-English summary of the article, filing, release, or post, written from the source (or, if a page could not be fetched, from the headline/snippet only, and labelled as such).
 3. **Base-case revenue model** — next 18 months (quarterly through Q2 2028) and FY2026–FY2029. Drivers and sources are on the page; sliders recompute client-side.
 4. **KPI charts** — segment revenue, Starlink subscribers, satellites (company + Jonathan McDowell), compute GW, earnings, capex, backlog.
 5. **Share unlock schedule** — lock-up expiries and staged releases from the Form 424(b)(4), later 8-Ks and the 10-Q, with sources, a table, and a cumulative chart. The catalyst calendar flags the nearest unlock.
@@ -25,7 +25,7 @@ css/style.css
 js/                     # vanilla JS, Chart.js vendored in js/vendor/
 fonts/                  # Barlow (OFL), bundled
 data/companies.json     # company switcher config
-data/spacex/            # all SpaceX datasets (JSON)
+data/spacex/            # all SpaceX datasets (JSON), including summaries.json
 scripts/refresh.py      # server-side refresh (Actions + local)
 .github/workflows/      # scheduled refresh + Pages deploy
 ```
@@ -49,6 +49,7 @@ No build step. Serve the repo root as a static site.
 | SEC EDGAR | Action tries `data.sec.gov/submissions/CIK0001181412.json`. If the runner is blocked (SEC 403), the page falls back to `data/spacex/filings-static.json`. |
 | Official press releases | Curated in `data/spacex/news-static.json` (IR has no reliable public RSS). |
 | X posts | Pulled via the author’s X connector into `data/spacex/x-posts.json` and merged into the single news feed in the browser. Actions cannot call that connector, so the file updates when someone re-exports posts and commits. The feed has a last-updated line. |
+| Item summaries | Hand-written two-sentence summaries, stored on each item and in `data/spacex/summaries.json`. They are written by the dashboard author (an assistant reading the source) when the feed is refreshed locally. GitHub Actions cannot generate them. `scripts/refresh.py` keeps any summary already stored (matched by id, URL, or title) and lists new items that still need one in `refresh-status.json`. Until a summary is written, the page falls back to the source’s own snippet, truncated to two sentences. |
 
 Run a refresh locally:
 

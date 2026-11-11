@@ -14,7 +14,8 @@
         "Filings"
       ],
       "datetime": "2026-11-06T21:15:01Z",
-      "timeSource": "EDGAR filing index: accepted 2026-11-06 16:15:01 ET"
+      "timeSource": "EDGAR filing index: accepted 2026-11-06 16:15:01 ET",
+      "summary": "The 8-K reports that Donald Harrison, a Class B director, resigned from the SpaceX board effective 4 Nov 2026, and that the resignation was not because of any disagreement on operations, policies, or practices. An IR note the same day thanks Harrison, who had served since February 2015 and is President of Global Partnerships and Corporate Development at Google."
     },
     {
       "id": "filing-0001104659-26-118614",
@@ -28,7 +29,8 @@
         "Filings"
       ],
       "datetime": "2026-10-26T12:00:18Z",
-      "timeSource": "EDGAR filing index: accepted 2026-10-26 08:00:18 ET"
+      "timeSource": "EDGAR filing index: accepted 2026-10-26 08:00:18 ET",
+      "summary": "The 8-K says that on 24 Oct 2026 SpaceX signed a binding commitment for a master finance lease with an Apollo-managed lessor that will buy GPU pods and related equipment and lease them to SpaceX. The company expects about $40 billion of principal payments over roughly five-year tranche schedules, with closing targeted by year-end 2026 and deliveries in the first half of 2027; an IR release adds that the chips are next-generation NVIDIA Vera Rubin GPUs and that Goldman Sachs, BlackRock, and KKR also committed."
     },
     {
       "id": "filing-0001628280-26-066903",
@@ -43,7 +45,8 @@
         "Cursor"
       ],
       "datetime": "2026-10-22T20:24:30Z",
-      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20261022162430 (16:24:30 ET)"
+      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20261022162430 (16:24:30 ET)",
+      "summary": "SpaceX filed a Form S-8 with a reoffer prospectus so shares issued in the Cursor acquisition can be resold by employees and other service providers, subject to Rule 144 and any lock-ups. The live EDGAR document could not be fetched here (403); contemporaneous descriptions of this filing put the registered reoffer amount at about 23.6 million Class A shares."
     },
     {
       "id": "filing-0001628280-26-066880",
@@ -58,7 +61,8 @@
         "Earnings"
       ],
       "datetime": "2026-10-22T20:03:05Z",
-      "timeSource": "EDGAR header 20261022160305 (16:03:05 ET)"
+      "timeSource": "EDGAR header 20261022160305 (16:03:05 ET)",
+      "summary": "This is SpaceX’s Form 10-Q for the quarter ended 30 Sep 2026, the full quarterly report that accompanies the Q3 earnings release (revenue $14.6 billion, net income $4.4 billion, Adjusted EBITDA $8.8 billion). The live EDGAR HTML could not be fetched from this environment (403)."
     },
     {
       "id": "filing-0001628280-26-066482",
@@ -73,7 +77,8 @@
         "Earnings"
       ],
       "datetime": "2026-10-20T20:00:51Z",
-      "timeSource": "EDGAR filing index: accepted 2026-10-20 16:00:51 ET"
+      "timeSource": "EDGAR filing index: accepted 2026-10-20 16:00:51 ET",
+      "summary": "This 8-K furnishes SpaceX’s official third-quarter 2026 earnings release as Exhibit 99.1 under Item 2.02. The exhibit is the same release summarised in the press item: revenue of $14.6 billion (up 161%), net income of $4.4 billion, and Adjusted EBITDA of $8.8 billion."
     },
     {
       "id": "filing-0001628280-26-056945",
@@ -88,7 +93,8 @@
         "Cursor"
       ],
       "datetime": "2026-08-14T12:23:02Z",
-      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20260814082302 (08:23:02 ET)"
+      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20260814082302 (08:23:02 ET)",
+      "summary": "This 8-K (Items 2.01 and 3.02) reports that SpaceX completed the Anysphere/Cursor merger on 14 Aug 2026 and issued unregistered Class A shares as merger consideration. Cursor stock converted into 389,289,254 SpaceX shares at an implied $60 billion equity value, with additional shares and assumed awards for Cursor RSUs and options."
     },
     {
       "id": "filing-0001628280-26-052535",
@@ -103,7 +109,8 @@
         "Earnings"
       ],
       "datetime": "2026-08-04T20:05:00Z",
-      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:05 ET (minute precision)"
+      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:05 ET (minute precision)",
+      "summary": "This is SpaceX’s Form 10-Q for the quarter ended 30 Jun 2026, the full quarterly report that accompanies the Q2 earnings release (revenue $7.8 billion, up 92%, Adjusted EBITDA $3.5 billion). The live EDGAR HTML could not be fetched from this environment (403)."
     },
     {
       "id": "filing-0001628280-26-052515",
@@ -118,7 +125,8 @@
         "Earnings"
       ],
       "datetime": "2026-08-04T20:01:00Z",
-      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:01 ET (minute precision)"
+      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:01 ET (minute precision)",
+      "summary": "This 8-K furnishes SpaceX’s official second-quarter 2026 earnings release, the same document as the Q2 press item. The release reports $7.8 billion of revenue, a $541 million net loss, and $3.5 billion of Adjusted EBITDA."
     }
   ]
 }

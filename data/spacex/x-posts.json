@@ -58,7 +58,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Elon Musk is amplifying Starlink’s Mini 2 launch, calling it portable, fast internet that works wherever Starlink is legal. The linked official Starlink post says Mini 2 adds a quick-swap battery (up to 4.5 hours), USB-C, and built-in Wi-Fi, with preorders open — a consumer-hardware push for the Connectivity business."
     },
     {
       "id": "2120373176060571883",
@@ -78,7 +79,8 @@
       "topics": [
         "AI compute"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Brian Wang notes that SPCX is getting equipment to make 100 gigawatts of solar per year, linking to related discussion of the SINGULUS order. That matches SpaceX’s and SINGULUS’s own announcements of a supply contract to scale HJT solar-cell lines for Starmind satellites in Bastrop, Texas."
     },
     {
       "id": "2120347414901252254",
@@ -99,7 +101,8 @@
         "Starlink",
         "AI compute"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Wang says Musk reposted his video arguing SpaceX is turning “dumb” cell towers into smart edge-inference nodes, in line with Musk’s comment that future traffic will be mostly AI-to-AI. The linked post is Wang’s longer $SPCX “AI carrier” thread; it is commentary, not a company filing."
     },
     {
       "id": "2120302471210033426",
@@ -120,7 +123,8 @@
         "Starmind",
         "AI compute"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Musk says SpaceX has ordered 100 GW a year of HJT solar manufacturing equipment from SINGULUS in Germany “for Starmind to create a sentient sun.” SINGULUS’s own release confirms a supply contract for a turnkey HJT line, with the first line due in the first half of 2027 and a plan to support more than 100 GW of equipment as SpaceX scales satellite production in Bastrop."
     },
     {
       "id": "2120233719491612940",
@@ -142,7 +146,8 @@
         "AI compute",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Wang argues SpaceX is moving to become the first “AI carrier,” pointing to the Qualcomm deal, edge inference at towers, and Starlink Direct-to-Cell and V3 satellites. It is investor commentary tying those already-announced pieces together, not a new official contract."
     },
     {
       "id": "2120231065394590007",
@@ -163,7 +168,8 @@
         "Starmind",
         "AI compute"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX says it has signed a major supply contract with SINGULUS for advanced solar-cell manufacturing to support more than 100 GW of equipment as it speeds Starmind satellite production in Bastrop, Texas. That is official confirmation of a large solar-capex step for the satellite/AI-power roadmap."
     },
     {
       "id": "2120220290219208884",
@@ -183,7 +189,8 @@
       "topics": [
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX says Super Heavy has been moved to the Starbase pad; Booster 22, the first V3 booster planned to return for a catch, was used for a suspended squeeze test at catch height. This is hardware progress toward Flight 15, which official posts were then targeting as early as 13 Nov, pending approval."
     },
     {
       "id": "2120206875581186293",
@@ -203,7 +210,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink introduces Mini 2, a next-generation portable kit with up to 4.5 hours on a quick-swap battery, USB-C charging, built-in Wi-Fi, and a claimed 60-second setup, and says preorders are open. For investors this is a new consumer hardware SKU meant to broaden portable Starlink use."
     },
     {
       "id": "2120182681229246875",
@@ -223,7 +231,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says it will deliver inflight internet on Slate (flyslate), so passengers can stay connected during the flight. It is another airline-install win for the aviation vertical of Connectivity."
     },
     {
       "id": "2120154857801937384",
@@ -243,7 +252,8 @@
       "topics": [
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Wang reports that SpaceX has rewritten Grok 4.8 in C and C++, calling it a different improvement path from Grok 4.7. The post links to Musk’s own thread about dumping JAX and rewriting the training and inference stack; it is commentary on that engineering shift."
     },
     {
       "id": "2120102767624880364",
@@ -264,7 +274,8 @@
         "Starlink",
         "AI compute"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Musk says Starlink’s software, built to move huge amounts of data through space and to the ground, is also well suited to training superintelligence. The comment ties the Connectivity stack to the Super Intelligence roadmap rather than announcing a new financial metric."
     },
     {
       "id": "2120099798078656909",
@@ -284,7 +295,8 @@
       "topics": [
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Musk, asked about models, says Anthropic’s Opus 5.5 is “a masterpiece” but that Grok 5 “should exceed” it, perhaps in two or three months, with continued acceleration after that. That is a product-timeline comment from the CEO, not a dated backlog or revenue figure."
     },
     {
       "id": "2120098433159880790",
@@ -304,7 +316,8 @@
       "topics": [
         "AI compute"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "In a follow-up, Musk says the stack even includes some assembly, that superintelligence will one day write a better stack, and that the current code is “tight.” It continues the same thread about SpaceX rewriting its AI software in-house."
     },
     {
       "id": "2120097663794483601",
@@ -325,7 +338,8 @@
         "AI compute",
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Musk says SpaceX writes its own headers and calculates its own time (including leap seconds), and that the new Grok AI/SI training and inference stack comes from that engineering culture. For investors it underlines that Super Intelligence software is being built inside SpaceX, not only bought in."
     },
     {
       "id": "2120088070443655190",
@@ -345,7 +359,8 @@
       "topics": [
         "AI compute"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Musk says the team has dumped JAX/SGLang and rewritten the reinforcement-learning and inference stack from scratch in C/C++, that pre-training is done, and that Grok 4.8 is now in RL with evals starting. This is a concrete update on the model-training schedule after a time-consuming rewrite."
     },
     {
       "id": "2119909709197279420",
@@ -365,7 +380,8 @@
       "topics": [
         "Leadership"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Musk posts “Gwynne is great,” quoting a Tesla Owners Silicon Valley post, in a show of support for president and COO Gwynne Shotwell. It is a leadership signal rather than an operating update."
     },
     {
       "id": "2119818965266612643",
@@ -385,7 +401,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says its inflight internet is now live on Brussels Airlines (FlyingBrussels). Another airline customer moving from announcement to service supports the aviation part of Starlink’s enterprise story."
     },
     {
       "id": "2119093662957060389",
@@ -406,7 +423,8 @@
         "Starship",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX says Starship is preparing for catch and that Flight 15 is targeting launch as early as Friday 13 Nov, pending regulatory approval. That date, plus the later booster rollout and squeeze test, is the near-term Starship catalyst investors have been watching."
     },
     {
       "id": "2118953789357281607",
@@ -426,7 +444,8 @@
       "topics": [
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX confirms Falcon 9 has launched the USSF-432 mission to orbit from pad 4E in California. It is official completion of a U.S. national-security launch, not a new commercial contract disclosure."
     },
     {
       "id": "2118870818021097862",
@@ -446,7 +465,8 @@
       "topics": [
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX posts that Falcon 9’s first stage has landed on the Of Course I Still Love You droneship after USSF-432. A successful landing keeps the usual reusable-launch cadence intact for that mission."
     },
     {
       "id": "2118868469655433435",
@@ -466,7 +486,8 @@
       "topics": [
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX’s “Liftoff!” post is the USSF-432 Falcon 9 leaving pad 4E at Vandenberg, with video. Together with the later launch-and-landing posts, it documents a completed national-security flight."
     },
     {
       "id": "2118864998407852102",
@@ -486,7 +507,8 @@
       "topics": [
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX invited viewers to watch Falcon 9 launch USSF-432 from pad 4E, linking a live broadcast. It is a pre-launch watch post for the same mission that later reached orbit."
     },
     {
       "id": "2118857663106707757",
@@ -506,7 +528,8 @@
       "topics": [
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX said all systems looked good, weather was favorable, and propellant load was about to start for USSF-432 from California. A standard go-for-tanking update ahead of that national-security launch."
     },
     {
       "id": "2118831607650136119",
@@ -527,7 +550,8 @@
         "Starlink",
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink is running a fan-ad contest: users can generate a Starlink ad with Grok Imagine and post it on X for a chance to be featured during “the big game,” with details at starlink.com/imagine. It is a marketing campaign tying Starlink to Grok, not an operating result."
     },
     {
       "id": "2118782721581527457",
@@ -547,7 +571,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says Router 4 is now shipping with Starlink V4 kits in the United States and Canada on Residential 200 Mbps and Residential Max plans. A hardware refresh for higher-tier residential customers, with orders pointed to the residential store."
     },
     {
       "id": "2118721301300818379",
@@ -567,7 +592,8 @@
       "topics": [
         "Starship"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "A follow-up to “Go For Orbit” points viewers to the series page on X and to spacex.com/content for every episode and past Starship flight tests. It is a distribution post for the same documentary/recap of the first revenue Starship mission."
     },
     {
       "id": "2118719281038770389",
@@ -589,7 +615,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX introduces “Go For Orbit,” describing the first orbital Starship launch carrying advanced Starlink satellites after more than a dozen flight tests and years of work. This is the official announcement of the recap that also appears in the press feed."
     },
     {
       "id": "2118509068897972432",
@@ -609,7 +636,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink promotes in-flight gaming on its high-speed, low-latency inflight internet, linking a United post. A marketing example of the airline product rather than a new carrier contract."
     },
     {
       "id": "2117973275414532165",
@@ -630,7 +658,8 @@
         "Starlink",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says Starlink Mobile will be the first fully integrated U.S. nationwide satellite-and-terrestrial network, and that its 5G base stations will use Qualcomm chips, with deployment starting in 2027. This official post is the company-side announcement of the Qualcomm infrastructure deal also covered in the news feed."
     },
     {
       "id": "2117713298875654297",
@@ -650,7 +679,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says passengers and crew on Air Tahiti Nui will soon get its inflight internet from gate to gate. Another airline-install announcement for the Connectivity enterprise book."
     },
     {
       "id": "2116401549828391177",
@@ -671,7 +701,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX confirms a Falcon 9 has launched 27 Starlink satellites from California (the Halloween / group 15-18 mission). A completed rides of the company’s own constellation, supporting the usual launch cadence."
     },
     {
       "id": "2116396849443598707",
@@ -691,7 +722,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX confirms deployment of those 27 Starlink satellites. The mission has reached the on-orbit step after liftoff and landing."
     },
     {
       "id": "2116378109218009267",
@@ -712,7 +744,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "A pre-launch watch post for the same 27-satellite Starlink mission from California. It links a live broadcast ahead of the 31 Oct liftoff."
     },
     {
       "id": "2116266502533902586",
@@ -730,7 +763,8 @@
         "impressions": 3603691
       },
       "topics": [],
-      "highlight": true
+      "highlight": true,
+      "summary": "Gwynne Shotwell says she and her husband Robert are giving more than 2 million SpaceX shares, to be distributed in December to children’s Trump accounts, starting with 11-to-17-year-olds in lower-income zip codes, with shares already moving to escrow. The gift is a large personal share transfer, not a company issuance or a change in the official unlock schedule."
     },
     {
       "id": "2115588901196984822",
@@ -751,7 +785,8 @@
         "Starlink",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink Mobile is providing free connectivity to Orange España and Telefónica customers after a train collision in Spain, so people with compatible LTE phones can use apps and texts when towers are down. A disaster-response use case for the direct-to-cell product, not a new rate-plan filing."
     },
     {
       "id": "2115476295169814978",
@@ -772,7 +807,8 @@
         "Starship",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX says Ship 42, the Starship for Flight 15, completed a full-duration six-engine static fire and a single-Raptor firing to simulate a deorbit burn. That is a standard pre-flight test milestone on the way to the November attempt."
     },
     {
       "id": "2115004840321659292",
@@ -793,7 +829,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX confirms another Falcon 9 launch of 27 Starlink satellites from California on 27 Oct. Part of the same high-cadence Starlink launch campaign as the flights around it."
     },
     {
       "id": "2114998002129440995",
@@ -813,7 +850,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Deployment of those 27 Starlink satellites is confirmed. The 27 Oct mission completed satellite release after launch."
     },
     {
       "id": "2114979142638960965",
@@ -834,7 +872,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "The watch-party post for the 27 Oct California Starlink launch. A live-broadcast link ahead of liftoff."
     },
     {
       "id": "2114747196226859108",
@@ -855,7 +894,8 @@
         "Starlink",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says Starlink Mobile is live in Brazil with Vivo, covering the whole country, with 50 million customers able to use apps and messaging in dead zones and 7 million phones already connected. It also teases a next-generation Starlink Mobile V2 service — a sizable emerging-market direct-to-cell launch."
     },
     {
       "id": "2114695236459094499",
@@ -875,7 +915,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink will provide inflight connectivity on easyJet so passengers can work, stream, or stay in touch. A European airline win for the aviation vertical."
     },
     {
       "id": "2114444137067844004",
@@ -895,7 +936,8 @@
       "topics": [
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX posted a full-duration 33-engine static fire of the Super Heavy booster preparing for Flight 15. A major test of the first-stage engines before the later pad rollout and planned catch attempt."
     },
     {
       "id": "2113786051009696177",
@@ -916,7 +958,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX confirms a 24 Oct Falcon 9 launch of 27 Starlink satellites from California. Another completed constellation-deployment flight in the late-October cadence."
     },
     {
       "id": "2113780307904381100",
@@ -936,7 +979,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Deployment of those 27 Starlink satellites is confirmed. On-orbit release after the 24 Oct launch."
     },
     {
       "id": "2113761872264712327",
@@ -957,7 +1001,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Watch-party post for the 24 Oct California Starlink launch. Live coverage ahead of liftoff."
     },
     {
       "id": "2113410488319262924",
@@ -978,7 +1023,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX stood down from a planned Starlink launch because of unfavorable weather, with the next chance no earlier than 23 Oct. A short delay in the cadence, later followed by the successful 23–24 Oct attempt."
     },
     {
       "id": "2113400239017378069",
@@ -999,7 +1045,8 @@
         "Starlink",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "The watch post for the Starlink launch that was later stood down for weather on 22 Oct. It shows the attempt was in work before the official delay."
     },
     {
       "id": "2113365443931148624",
@@ -1017,7 +1064,8 @@
         "impressions": 269340
       },
       "topics": [],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX Super Intelligence says it is proud to be part of an important NVIDIA initiative, quoting an NVIDIA post. A partnership signal for the SI/compute stack, without new contract terms in the post itself."
     },
     {
       "id": "2112641741937635789",
@@ -1037,7 +1085,8 @@
       "topics": [
         "Earnings"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX posts a link and broadcast for “Q3 2026 Financial and Operational Results.” This is the official pointer to the earnings webcast and the same quarterly release in the press and filings feed."
     },
     {
       "id": "2112638276389790102",
@@ -1060,7 +1109,8 @@
         "Earnings",
         "Launch"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX’s Q3 highlights post states $14.6 billion of revenue, up 161% year over year, and the first revenue-generating Starship mission, which delivered 26 Starlink V3 satellites with about 10 times the downlink capacity of a Falcon 9 Starlink launch. Those figures match the official earnings release."
     },
     {
       "id": "2112637394654822514",
@@ -1081,7 +1131,8 @@
         "Earnings",
         "Leadership"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceX says the Q3 2026 earnings report is now public, linking the official PDF, and that a live webcast with Musk, Shotwell, and CFO Bret Johnsen would start in 30 minutes. This is the moment the quarterly results were posted for investors."
     },
     {
       "id": "2112350370857115965",
@@ -1102,7 +1153,8 @@
         "Starlink",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says Starlink Mobile has connected more than 11 million people in a year across VEON’s Ukraine, Kazakhstan, and Bangladesh markets, often for messaging and location when cell towers cannot reach. A scale update for the direct-to-cell product in those countries."
     },
     {
       "id": "2111146914121204087",
@@ -1120,7 +1172,8 @@
         "impressions": 2237123
       },
       "topics": [],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says it has worked with Indian regulators, industry, and operators for more than five years and has built in-country systems, gateways, and infrastructure so Indian traffic stays in India, “with the requisite government” approvals implied in the truncated post. It is a regulatory-and-infrastructure update on the India market, not a statement that consumer service is already fully live nationwide."
     },
     {
       "id": "2110416586561433913",
@@ -1140,7 +1193,8 @@
       "topics": [
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceXSI says Grok Voice 3.0 is in the API and Voice Agent Builder at $0.08 per minute and points to a blog with more detail. The official xAI/SpaceXSI post positions it as a priced enterprise voice product."
     },
     {
       "id": "2110416580899168305",
@@ -1160,7 +1214,8 @@
       "topics": [
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceXSI introduces Grok Voice 3.0 as a speech-to-speech model aimed at customer calls, with sub-second responses and a lower cost than other frontier models. The accompanying blog says it already handles millions of conversations a day at Tesla and SpaceX and is in the API at the prior price."
     },
     {
       "id": "2110416584183628161",
@@ -1181,7 +1236,8 @@
         "Starlink",
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "A thread follow-up says Grok Voice 3.0 hits frontier voice-agent performance at 40% lower latency and already resolves 70% of Starlink support calls on its own at SpaceX. That is a concrete cost-and-automation claim for the Connectivity support organisation."
     },
     {
       "id": "2110410786925641854",
@@ -1201,7 +1257,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink announces that service is now available in Curaçao and links the local order page. A small-market consumer launch that slightly widens the geographic footprint."
     },
     {
       "id": "2109783337132843366",
@@ -1222,7 +1279,8 @@
         "Grok",
         "Cursor"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceXSI says the unified X Subscription covers AI coding in Cursor, work with Grok Bot, Grok chat and creation, and X Premium features. It is the product-bundle follow-up to the plan unification announced in the previous post."
     },
     {
       "id": "2109783335296008414",
@@ -1243,7 +1301,8 @@
         "Grok",
         "Cursor"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceXSI says it has unified plans across Grok, Cursor, and X Premium as “The X Subscription.” A packaging change that ties the consumer AI, coding, and X products together after the Cursor deal."
     },
     {
       "id": "2108712075371712825",
@@ -1263,7 +1322,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink is giving free service through 10 Nov to new and existing customers in areas of Panama affected by an earthquake, and says it is coordinating with emergency agencies. A disaster-relief offer, not a pricing change in other markets."
     },
     {
       "id": "2108698771899228179",
@@ -1284,7 +1344,8 @@
         "Starlink",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink Mobile is providing nationwide emergency connectivity to Más Móvil Panama customers so people can stay in touch by SMS, with coverage best under a clear sky. Another emergency direct-to-cell deployment, this time in Panama."
     },
     {
       "id": "2108681960029831359",
@@ -1305,7 +1366,8 @@
         "Starlink",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Shotwell thanks Brazil’s ANATEL (and its then-head) for approving Starlink Mobile’s priority spectrum rights. It is official cheerleading for the same Brazilian spectrum decision described in the Starlink post."
     },
     {
       "id": "2108676180467724397",
@@ -1326,7 +1388,8 @@
         "Starlink",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink says ANATEL voted to approve Starlink Mobile’s full 2 GHz access with global S-band priority, which the company says it will use for high-speed mobile broadband in Brazil. A key spectrum approval ahead of the later “now live with Vivo” announcement."
     },
     {
       "id": "2108302801335918638",
@@ -1349,7 +1412,8 @@
         "Launch",
         "Direct-to-cell"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Shotwell recaps a launch “triple header” — Starship, Crew-13, and Falcon Heavy — plus a terrestrial low-band spectrum acquisition and FCC approval for the Starlink Mobile constellation, and pride in completing a crew mission. A compact official summary of several operational and regulatory wins from that week."
     },
     {
       "id": "2108192257967059132",
@@ -1369,7 +1433,8 @@
       "topics": [
         "Starlink"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "Starlink will put its inflight service across American Airlines’ full mainline fleet so passengers can stream, game, work, and stay in touch. A large U.S. airline fleet win for the aviation vertical."
     },
     {
       "id": "2107623124909060174",
@@ -1389,7 +1454,8 @@
       "topics": [
         "Grok"
       ],
-      "highlight": true
+      "highlight": true,
+      "summary": "SpaceXSI says Grok 4.7 is live on Microsoft Foundry, with a video. A distribution update putting the model on Microsoft’s cloud marketplace."
     }
   ]
 }

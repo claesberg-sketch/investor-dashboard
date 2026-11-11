@@ -77,6 +77,19 @@
     return "";
   }
 
+  function fallbackSnippet(text) {
+    if (!text) return "";
+    const clean = String(text).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    if (!clean) return "";
+    const parts = clean.split(/(?<=[.!?])\s+/);
+    return parts.filter(Boolean).slice(0, 2).join(" ").trim();
+  }
+
+  function itemSummary(i) {
+    if (i.summary) return i.summary;
+    return fallbackSnippet(i.snippet || i.description || "");
+  }
+
   function feedSortKey(item) {
     if (item.datetime) return item.datetime;
     if (item.date && item.date.length === 10) return item.date + "T12:00:00+01:00";
@@ -135,7 +148,7 @@
           '</div><div>' +
           topicBadges(i.topics, i.highlight) +
           '<h3>' + (i.url ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener">' + esc(i.title.length > 220 ? i.title.slice(0, 220) + '…' : i.title) + '</a>' : esc(i.title)) + '</h3>' +
-          (i.summary ? '<p>' + esc(i.summary) + '</p>' : '') +
+          (itemSummary(i) ? '<p class="summary">' + esc(itemSummary(i)) + '</p>' : '') +
           '</div></article>';
       }).join('') || "<p class='muted'>Nothing in this filter yet.</p>";
 

@@ -9,7 +9,9 @@ Does not refresh X posts (Actions cannot call the X connector). See README.
 """
 from __future__ import annotations
 
+import html
 import json
+import re
 import os
 import sys
 import time
@@ -237,6 +239,12 @@ def google_news():
                 iso = parsedate_to_datetime(pub).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
             except Exception:
                 iso = pub
+        raw_desc = it.findtext("description") or ""
+        snippet = re.sub(r"<[^>]+>", " ", html.unescape(raw_desc))
+        snippet = re.sub(r"\s+", " ", snippet).strip()
+        if snippet == title or snippet.startswith(title + " "):
+            # RSS descriptions are often just "Title  Source", not a real lede.
+            snippet = ""
         items.append(
             {
                 "id": "media-" + str(len(items) + 1),
@@ -246,6 +254,7 @@ def google_news():
                 "title": title,
                 "source": source or "Google News",
                 "url": link,
+                "snippet": snippet,
                 "topics": _topics(title),
             }
         )
@@ -357,6 +366,135 @@ def sec_filings():
     }
 
 
+
+def first_sentences(text: str, n: int = 2) -> str:
+    """Keep at most n sentences of a source snippet for a fallback blurb."""
+    text = re.sub(r"<[^>]+>", " ", html.unescape(text or ""))
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return ""
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    out = " ".join(p for p in parts[:n] if p).strip()
+    return out[:600]
+
+
+def _norm_url(u: str) -> str:
+    return (u or "").split("?")[0].rstrip("/")
+
+
+def load_summary_store() -> dict:
+    path = DATA / "summaries.json"
+    if not path.exists():
+        return {"byId": {}, "byUrl": {}, "byTitle": {}}
+    try:
+        return json.loads(path.read_text())
+    except Exception:
+        return {"byId": {}, "byUrl": {}, "byTitle": {}}
+
+
+def lookup_prior_items():
+    """Previously saved items, used so a refresh does not drop written summaries."""
+    prior = []
+    for name in ("news.json", "news-static.json", "filings-static.json"):
+        path = DATA / name
+        if path.exists():
+            try:
+                prior.extend(json.loads(path.read_text()).get("items") or [])
+            except Exception:
+                pass
+    return prior
+
+
+def attach_summaries(items: list[dict], store: dict | None = None, prior: list | None = None):
+    """Copy a hand-written summary onto each item, or fall back to a source snippet.
+
+    Full summaries are written by the dashboard author (an assistant reading the
+    source) at refresh time. GitHub Actions cannot generate them. Existing
+    summaries are kept by id, URL, or title. New items without one get a
+    truncated source snippet when the feed provided one, and are listed so
+    they can be summarised properly on the next manual refresh.
+    """
+    store = store or load_summary_store()
+    prior = prior if prior is not None else lookup_prior_items()
+    prior_by_id = {it.get("id"): it for it in prior if it.get("id")}
+    prior_by_url = {_norm_url(it.get("url")): it for it in prior if it.get("url")}
+    prior_by_title = {(it.get("title") or "").strip(): it for it in prior if it.get("title")}
+    missing = []
+    for it in items:
+        existing = (it.get("summary") or "").strip()
+        if existing and not it.get("summaryFallback"):
+            continue
+        # media-N ids are assigned by RSS order and are not stable, so they
+        # must not be used as lookup keys (that would attach the wrong summary).
+        def _stable_id(i):
+            k = i or ""
+            if k.startswith("media-"):
+                return ""
+            return k
+
+        found = None
+        for bucket, key in (
+            (store.get("byUrl") or {}, _norm_url(it.get("url") or "")),
+            (store.get("byTitle") or {}, (it.get("title") or "").strip()),
+            (store.get("byId") or {}, _stable_id(it.get("id"))),
+        ):
+            if key and bucket.get(key):
+                found = bucket[key]
+                break
+        if not found:
+            prev = (
+                prior_by_url.get(_norm_url(it.get("url") or ""))
+                or prior_by_title.get((it.get("title") or "").strip())
+                or (prior_by_id.get(_stable_id(it.get("id"))) if _stable_id(it.get("id")) else None)
+            )
+            if prev and (prev.get("summary") or "").strip() and not prev.get("summaryFallback"):
+                found = prev["summary"]
+        if found:
+            it["summary"] = found
+            it.pop("summaryFallback", None)
+            continue
+        fb = first_sentences(it.get("snippet") or it.get("description") or "")
+        if fb:
+            it["summary"] = fb
+            it["summaryFallback"] = True
+        else:
+            it.pop("summary", None)
+            it.pop("summaryFallback", None)
+            missing.append({"id": it.get("id"), "type": it.get("type"), "title": it.get("title"), "url": it.get("url")})
+    return missing
+
+
+def attach_x_summaries(store: dict | None = None):
+    """Re-apply stored summaries onto x-posts.json without changing the posts themselves."""
+    path = DATA / "x-posts.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text())
+    posts = data.get("posts") or []
+    # shape as feed items for reuse
+    shaped = []
+    for p in posts:
+        shaped.append({
+            "id": p.get("id"),
+            "title": p.get("text"),
+            "url": p.get("url"),
+            "summary": p.get("summary"),
+            "summaryFallback": p.get("summaryFallback"),
+        })
+    missing = attach_summaries(shaped, store=store, prior=[])
+    for p, s in zip(posts, shaped):
+        if s.get("summary"):
+            p["summary"] = s["summary"]
+            if s.get("summaryFallback"):
+                p["summaryFallback"] = True
+            else:
+                p.pop("summaryFallback", None)
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+    print(f"updated summaries on {path.relative_to(ROOT)} ({len(posts)} posts, {len(missing)} still missing)")
+    return missing
+
+
+
 def build_quote():
     intra = yahoo_chart("SPCX", "1m", "5d", True)
     daily = yahoo_chart("SPCX", "1d", "6mo", False)
@@ -437,7 +575,8 @@ def build_news():
         seen.add(key)
         uniq.append(it)
     uniq.sort(key=_feed_sort_key, reverse=True)
-    return {
+    missing_summaries = attach_summaries(uniq)
+    news_out = {
         "updated": utc_now(),
         "feeds": {
             "press": {
@@ -460,7 +599,9 @@ def build_news():
             },
         },
         "items": uniq,
+        "missingSummaries": missing_summaries,
     }
+    return news_out
 
 
 def write(path: Path, obj):
@@ -484,13 +625,28 @@ def main():
     except Exception as e:
         errors.append(f"quote: {e}")
         print("quote error", e, file=sys.stderr)
+    missing_x = []
     try:
         news = build_news()
         write(DATA / "news.json", news)
     except Exception as e:
         errors.append(f"news: {e}")
         print("news error", e, file=sys.stderr)
-    status = {"updated": utc_now(), "ok": not errors, "errors": errors}
+        news = {}
+    try:
+        missing_x = attach_x_summaries()
+    except Exception as e:
+        errors.append(f"x summaries: {e}")
+        print("x summary error", e, file=sys.stderr)
+    missing = list((news or {}).get("missingSummaries") or []) + list(missing_x or [])
+    if missing:
+        print(f"items still needing a hand-written summary: {len(missing)}")
+    status = {
+        "updated": utc_now(),
+        "ok": not errors,
+        "errors": errors,
+        "missingSummaries": missing,
+    }
     write(DATA / "refresh-status.json", status)
     if errors:
         print("completed with errors:", errors)
