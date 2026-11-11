@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T19:08:58+01:00",
+  "updated": "2026-11-11T20:07:33+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 11 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,175 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120593710107029687",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T19:05:13.000Z",
+      "text": "@IterIntellectus Actually, we’re aiming for 1TW/year from Earth, rising to over 1PW/year from the Moon. \n\nThat’s why I say that if we achieve this outcome, SpaceX will obviously be worth more than Earth, because space is so staggeringly enormous!",
+      "url": "https://x.com/elonmusk/status/2120593710107029687",
+      "metrics": {
+        "likes": 33,
+        "reposts": 5,
+        "replies": 8,
+        "quotes": 0,
+        "bookmarks": 1,
+        "impressions": 10018
+      },
+      "topics": [
+        "AI compute",
+        "Starmind"
+      ],
+      "highlight": true,
+      "summary": "Musk replies that SpaceX is aiming for 1 TW of capacity a year from Earth, rising to over 1 PW a year from the Moon, in response to a post about the company’s 100 GW-per-year solar equipment order. He adds that if that outcome is achieved, SpaceX will “obviously be worth more than Earth, because space is so staggeringly enormous.”"
+    },
+    {
+      "id": "2120592775813255535",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T19:01:31.000Z",
+      "text": "@zerohedge SpaceX has a chance of going about half the GW next year of actually usable compute. \n\n“Actually usable” is an important metric. It takes us ~2 months working 24/7 to get a large compute cluster working reliably. I’d guess closer to 6 months for others.",
+      "url": "https://x.com/elonmusk/status/2120592775813255535",
+      "metrics": {
+        "likes": 254,
+        "reposts": 37,
+        "replies": 39,
+        "quotes": 4,
+        "bookmarks": 18,
+        "impressions": 21586
+      },
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true,
+      "summary": "Replying to a ZeroHedge post on how much of developers’ data-center pipelines actually gets built, Musk says SpaceX has a chance next year of delivering about half the gigawatts as “actually usable” compute. He stresses that “actually usable” matters, saying it takes SpaceX about two months of 24/7 work to get a large cluster running reliably, and he guesses closer to six months for others."
+    },
+    {
+      "id": "2120591950961353125",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T18:58:14.000Z",
+      "text": "Person for scale https://t.co/6XGX98l38L",
+      "url": "https://x.com/elonmusk/status/2120591950961353125",
+      "metrics": {
+        "likes": 1871,
+        "reposts": 197,
+        "replies": 400,
+        "quotes": 34,
+        "bookmarks": 49,
+        "impressions": 369878
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "Musk posts two photos captioned “Person for scale,” showing a person in a boom-lift basket beside a towering stainless-steel Starship or Super Heavy cylinder at a high-bay building. The images are a scale check on the vehicle hardware, posted minutes after he highlighted Super Heavy moving to the launch pad."
+    },
+    {
+      "id": "2120590521253126183",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T18:52:33.000Z",
+      "text": "Starship Super Heavy rocket booster moved to launch pad https://t.co/Sn5VN93bww",
+      "url": "https://x.com/elonmusk/status/2120590521253126183",
+      "metrics": {
+        "likes": 1782,
+        "reposts": 217,
+        "replies": 291,
+        "quotes": 29,
+        "bookmarks": 34,
+        "impressions": 407387
+      },
+      "topics": [
+        "Launch",
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Musk quotes SpaceX’s 10 Nov post that Super Heavy has been moved to the Starbase launch pad, writing “Starship Super Heavy rocket booster moved to launch pad.” The official SpaceX post identified Booster 22 as the first Super Heavy V3 planned to return for a catch and said it was used for a suspended squeeze test at catch height."
+    },
+    {
+      "id": "2120584928983441826",
+      "username": "SpaceXSI",
+      "name": "SpaceX Super Intelligence",
+      "created_at": "2026-11-11T18:30:20.000Z",
+      "text": "Introducing Grok Bot 1.0.\n\nBots can be shared and are more collaborative and capable than ever. https://t.co/gmxan7jupQ",
+      "url": "https://x.com/SpaceXSI/status/2120584928983441826",
+      "metrics": {
+        "likes": 1054,
+        "reposts": 118,
+        "replies": 65,
+        "quotes": 35,
+        "bookmarks": 121,
+        "impressions": 41609
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "SpaceX Super Intelligence introduces Grok Bot 1.0, saying bots can be shared and are more collaborative and capable than ever, with a promotional video. The post is the official SI-account launch note for the new teammate product."
+    },
+    {
+      "id": "2120584703082446863",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-11T18:29:26.000Z",
+      "text": "Thank you to all those who have served, including the veterans we're proud to call members of the SpaceX family. Happy Veterans Day! https://t.co/SGpSvt1dby",
+      "url": "https://x.com/SpaceX/status/2120584703082446863",
+      "metrics": {
+        "likes": 2225,
+        "reposts": 227,
+        "replies": 82,
+        "quotes": 16,
+        "bookmarks": 55,
+        "impressions": 104537
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "SpaceX thanks those who have served, including veterans in the SpaceX family, and wishes a happy Veterans Day, with an accompanying image. It is a commemorative company post, not an operational or financial update."
+    },
+    {
+      "id": "2120584535423565889",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T18:28:46.000Z",
+      "text": "Hire Grok @Bot as a colleague and give it your hardest tasks! https://t.co/yYTjZPGTiC",
+      "url": "https://x.com/elonmusk/status/2120584535423565889",
+      "metrics": {
+        "likes": 2557,
+        "reposts": 285,
+        "replies": 698,
+        "quotes": 66,
+        "bookmarks": 185,
+        "impressions": 610469
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Musk urges people to “Hire Grok @Bot as a colleague and give it your hardest tasks,” quoting the official Grok Bot account’s 1.0 launch post. That announcement describes Grok Bots as AI teammates that can be shared, used in Slack and Teams, invited to meetings, and trained to become more helpful."
+    },
+    {
+      "id": "2120572352073433380",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T17:40:21.000Z",
+      "text": "@aaronburnett We would be happy to take the compute back. No problem.\n\nBut I think the opposite is going to happen.",
+      "url": "https://x.com/elonmusk/status/2120572352073433380",
+      "metrics": {
+        "likes": 4013,
+        "reposts": 210,
+        "replies": 237,
+        "quotes": 56,
+        "bookmarks": 194,
+        "impressions": 182687
+      },
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true,
+      "summary": "Musk replies that SpaceX would be “happy to take the compute back. No problem,” but that he thinks “the opposite is going to happen,” in a thread about reports that Anthropic told sell-side analysts it may not extend a SpaceX compute contract beyond mid-next year. Those claims about contract size and revenue impact come from other posters in the thread, not from Musk or an official company statement."
+    },
     {
       "id": "2120565589945290827",
       "username": "elonmusk",
