@@ -87,18 +87,63 @@
       "label": "Q4 2025",
       "periodEnd": "2025-12-31",
       "revenue": {
+        "space": 809,
+        "connectivity": 3228,
+        "si": 923,
         "total": 4960
       },
-      "notes": "Segment split not disclosed in the Q2/Q3 2026 releases. Total = FY2025 $18.674B minus nine-month 2025 $13.714B.",
+      "starlinkConsumerSubsM": 8.9,
+      "consumerRevenue": 2010,
+      "enterpriseGovRevenue": 1218,
+      "nameplateComputeGW": 0.8,
+      "incomeFromOps": {
+        "space": -476,
+        "connectivity": 1276,
+        "si": -2173,
+        "total": -1373
+      },
+      "adjustedEbitda": 1471,
+      "segmentAdjEbitda": {
+        "space": -150,
+        "connectivity": 2045,
+        "si": -424,
+        "total": 1471
+      },
+      "netIncome": -2347,
+      "capex": 6891,
+      "segmentCapex": {
+        "space": 1014,
+        "connectivity": 1227,
+        "si": 4650
+      },
+      "backlog": 28377,
+      "launches": {
+        "total": 42,
+        "customer": 7,
+        "internal": 35
+      },
       "isPartial": true,
+      "notes": "Flow items (segment revenue, consumer and enterprise & government revenue, income from operations, segment adjusted EBITDA, net income, capex, and launches) are derived as FY2025 minus the nine months ended 30 Sep 2025, using official figures in the 424(b)(4) prospectus / S-1 and the Q3 2026 earnings release and Form 10-Q. Period-end items are taken directly from the prospectus as of 31 Dec 2025: Starlink subscribers 8.9 million, nameplate compute 0.8 GW, and backlog $28,377 million (of which $12,116 million was deferred revenue; approximately 32% expected to be recognized within one year). Q4 Starlink consumer ARPU is not disclosed — FY2025 ARPU of $81 is an annual figure and is not used as a quarterly print. No official year-end 2025 satellite count was found (the prospectus cites approximately 9,600 satellites as of 31 Mar 2026 and more than 3,000 deployed in 2025). Arithmetic ($ millions except launches and period-end metrics): Revenue Space 4,086−3,277=809, Connectivity 11,387−8,159=3,228, SI/AI 3,201−2,278=923, total 18,674−13,714=4,960. Consumer 7,208−5,198=2,010, enterprise & government 4,179−2,961=1,218. Income from operations Space (657)−(181)=(476), Connectivity 4,423−3,147=1,276, SI (6,355)−(4,182)=(2,173), total (2,589)−(1,216)=(1,373). Adjusted EBITDA Space 653−803=(150), Connectivity 7,168−5,123=2,045, SI (1,237)−(813)=(424), total 6,584−5,113=1,471. Net income (4,937)−(2,590)=(2,347). Capex Space 3,832−2,818=1,014, Connectivity 4,178−2,951=1,227, SI 12,727−8,077=4,650, total 20,737−13,846=6,891. Launches 170−128=42. Customer 7 and internal 35 use FY Falcon customer/internal (43 and 122) plus five non-Falcon FY2025 launches (170−165; all Starship launches classified as internal in the prospectus) minus 9M 2025 (36 and 92). 9M launch counts are consistent with Q1+Q2+Q3 (38+46+44=128) from the prospectus and the Q2/Q3 2026 releases.",
       "sources": [
         {
-          "label": "FY2025 revenue in prospectus / Street compilation $18.674B",
+          "label": "FY2025 figures: SpaceX 424(b)(4) prospectus (segment revenue, ops income, adj. EBITDA, net income, capex, YE subscribers 8.9M, FY ARPU $81, YE nameplate 0.8 GW, backlog $28,377M, FY launches 170)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+        },
+        {
+          "label": "FY2025 figures also in the S-1 registration statement",
           "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"
         },
         {
-          "label": "Nine months 2025 revenue $13.714B, Q3 2026 earnings release",
+          "label": "Nine months ended 30 Sep 2025: Q3 2026 earnings release (SEC 8-K)",
           "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        },
+        {
+          "label": "Nine months ended 30 Sep 2025: Form 10-Q for the quarter ended 30 Sep 2026 (net income $(2,590)M, segment tables, capex)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+        },
+        {
+          "label": "H1/Q2 2025 launch counts used to cross-check 9M launches, Q2 2026 earnings release",
+          "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf"
         }
       ]
     },
@@ -327,7 +372,7 @@
     },
     "ye2027_nameplate_gw": {
       "value": 13,
-      "basis": "Musk: fairly confident in an incremental ~10 GW in 2027 on top of 2.5\u20133 GW by YE2026.",
+      "basis": "Musk: fairly confident in an incremental ~10 GW in 2027 on top of 2.5–3 GW by YE2026.",
       "source": {
         "label": "Q3 2026 call coverage, TeslaNorth / Yahoo",
         "url": "https://teslanorth.com/2026/10/20/spacex-2027-arr-500b-1t-q1-guidance/"
@@ -356,7 +401,7 @@
   "street": {
     "asOf": "2026-11-10",
     "source": {
-      "label": "StockAnalysis / S&P Global Market Intelligence, 36\u201340 analysts",
+      "label": "StockAnalysis / S&P Global Market Intelligence, 36–40 analysts",
       "url": "https://stockanalysis.com/stocks/spcx/forecast/"
     },
     "rating": "Buy",

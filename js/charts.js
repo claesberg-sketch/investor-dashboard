@@ -5,6 +5,9 @@
     grid: { color: "rgba(240,240,250,0.08)" },
     border: { color: "rgba(240,240,250,0.15)" },
   };
+  // Show every quarter label so a filled quarter (e.g. Q4 2025) is never skipped off the axis.
+  const xTicksAll = { ...axis.ticks, autoSkip: false, maxTicksLimit: 8, maxRotation: 45, minRotation: 0 };
+  const xAxis = { ...axis, grid: { display: false }, ticks: xTicksAll };
   const legend = { labels: { color: "rgba(240,240,250,0.85)", boxWidth: 12, font: { size: 11 }, padding: 8 } };
   const tip = { titleFont: { size: 13 }, bodyFont: { size: 13 }, padding: 10 };
   const interact = { mode: "index", intersect: false };
@@ -15,7 +18,41 @@
     line: "rgba(240,240,250,0.95)",
     line2: "rgba(61,214,140,0.9)",
     muted: "rgba(240,240,250,0.4)",
+    undisclosed: "rgba(240,200,80,0.85)",
   };
+
+  function hatchPattern(color, bg) {
+    const c = document.createElement("canvas");
+    c.width = 8;
+    c.height = 8;
+    const ctx = c.getContext("2d");
+    ctx.fillStyle = bg || "rgba(240,200,80,0.18)";
+    ctx.fillRect(0, 0, 8, 8);
+    ctx.strokeStyle = color || pal.undisclosed;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(-2, 6);
+    ctx.lineTo(6, -2);
+    ctx.moveTo(0, 10);
+    ctx.lineTo(10, 0);
+    ctx.moveTo(2, 12);
+    ctx.lineTo(12, 2);
+    ctx.stroke();
+    return ctx.createPattern(c, "repeat");
+  }
+
+  function hasSegmentSplit(x) {
+    const r = x.revenue || {};
+    return r.space != null || r.connectivity != null || r.si != null;
+  }
+
+  function totalOnlyValues(q) {
+    return q.map((x) => {
+      const r = x.revenue || {};
+      if (!hasSegmentSplit(x) && r.total != null) return r.total;
+      return null;
+    });
+  }
 
   function card(id, title, sourceHtml) {
     return '<article class="chart-card"><h3>' + title + '</h3><div class="box"><canvas id="' + id + '"></canvas></div><div class="source">' + (sourceHtml || "") + "</div></article>";
@@ -27,28 +64,40 @@
     const q = kpis.quarters || [];
     const labels = q.map((x) => x.label);
     grid.innerHTML = [
-      card("c-rev", "Revenue by segment ($M)", "SpaceX Q2 and Q3 2026 earnings releases; Q4 2025 is total only (FY minus 9M)."),
-      card("c-subs", "Starlink consumer subscribers (M) and stated ARPU", "Company disclosures, period-end. ARPU is the official figure, not the model’s realized yield."),
-      card("c-connmix", "Connectivity revenue: consumer vs enterprise &amp; government ($M)", "Q2 / Q3 2026 earnings releases."),
-      card("c-gw", "Nameplate AI compute (GW)", "Period-end nameplate. Q3 2026 release and Q2 call; YE 2026/27 guides shown as markers in the note."),
-      card("c-earn", "Adjusted EBITDA and net income ($M)", "Where reported in the Q2 and Q3 2026 releases. Gaps are left blank."),
-      card("c-capex", "Capital expenditure ($M)", "Total and SI capex from Q2 / Q3 2026 releases."),
-      card("c-sats", "Starlink satellites", "Company figures from the Q2 call and prospectus; McDowell independent count as of 9 Nov 2026."),
-      card("c-backlog", "Backlog ($B)", "Q2 $47.5B and Q3 $63B (of which $42B expected in 12 months)."),
+      card("c-rev", "Revenue by segment ($M)", "SpaceX Q2 and Q3 2026 earnings releases and prospectus. Q4 2025 segment figures are derived as FY2025 minus nine-month 2025. If a quarter has only a consolidated total, a hatched “Total (segments not disclosed)” bar is shown."),
+      card("c-subs", "Starlink consumer subscribers (M) and stated ARPU", "Company disclosures, period-end. ARPU is the official quarterly figure, not the model’s realized yield. Q4 2025 shows 8.9M subscribers at year-end; quarterly ARPU was not disclosed (FY2025 ARPU of $81 is annual and is not plotted)."),
+      card("c-connmix", "Connectivity revenue: consumer vs enterprise &amp; government ($M)", "Q2 / Q3 2026 earnings releases; Q4 2025 derived as FY2025 minus nine-month 2025 from the prospectus and 10-Q."),
+      card("c-gw", "Nameplate AI compute (GW)", "Period-end nameplate, including 0.8 GW at 31 Dec 2025 from the prospectus. Q3 2026 release and Q2 call; YE 2026/27 guides shown as markers in the note."),
+      card("c-earn", "Adjusted EBITDA and net income ($M)", "Q2 and Q3 2026 releases; Q4 2025 derived as FY2025 minus nine-month 2025. Gaps remain where a quarter was not disclosed."),
+      card("c-capex", "Capital expenditure ($M)", "Total and SI capex from Q2 / Q3 2026 releases; Q4 2025 derived as FY2025 minus nine-month 2025."),
+      card("c-sats", "Starlink satellites", "Company figures from the Q2 call and prospectus; McDowell independent count as of 9 Nov 2026. No official 31 Dec 2025 satellite count was disclosed."),
+      card("c-backlog", "Backlog ($B)", "YE2025 $28.4B (prospectus), Q2 2026 $47.5B, and Q3 2026 $63B (of which $42B expected in 12 months)."),
     ].join("");
 
     const space = q.map((x) => (x.revenue && x.revenue.space) ?? null);
     const conn = q.map((x) => (x.revenue && x.revenue.connectivity) ?? null);
     const si = q.map((x) => (x.revenue && x.revenue.si) ?? null);
+    const totalOnly = totalOnlyValues(q);
+    const revDatasets = [
+      { label: "Space", data: space, backgroundColor: pal.space, stack: "r" },
+      { label: "Connectivity", data: conn, backgroundColor: pal.conn, stack: "r" },
+      { label: "SI / AI", data: si, backgroundColor: pal.si, stack: "r" },
+    ];
+    if (totalOnly.some((v) => v != null)) {
+      revDatasets.push({
+        label: "Total (segments not disclosed)",
+        data: totalOnly,
+        backgroundColor: hatchPattern(),
+        borderColor: pal.undisclosed,
+        borderWidth: 1,
+        stack: "r",
+      });
+    }
     new Chart(document.getElementById("c-rev"), {
       type: "bar",
-      data: { labels, datasets: [
-        { label: "Space", data: space, backgroundColor: pal.space, stack: "r" },
-        { label: "Connectivity", data: conn, backgroundColor: pal.conn, stack: "r" },
-        { label: "SI / AI", data: si, backgroundColor: pal.si, stack: "r" },
-      ] },
+      data: { labels, datasets: revDatasets },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { stacked: true, ...axis, grid: { display: false } }, y: { stacked: true, ...axis } } },
+        scales: { x: { stacked: true, ...xAxis }, y: { stacked: true, ...axis } } },
     });
 
     new Chart(document.getElementById("c-subs"), {
@@ -58,7 +107,7 @@
         { label: "Stated ARPU ($)", data: q.map((x) => x.starlinkConsumerArpu ?? null), yAxisID: "y2", borderColor: pal.line2, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 3, borderDash: [4, 4] },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, title: { display: true, text: "Subs (M)", color: "rgba(240,240,250,0.5)" } }, y2: { ...axis, position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: "ARPU $", color: "rgba(240,240,250,0.5)" } } } },
+        scales: { x: { ...xAxis }, y: { ...axis, title: { display: true, text: "Subs (M)", color: "rgba(240,240,250,0.5)" } }, y2: { ...axis, position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: "ARPU $", color: "rgba(240,240,250,0.5)" } } } },
     });
 
     new Chart(document.getElementById("c-connmix"), {
@@ -68,14 +117,14 @@
         { label: "Enterprise & government", data: q.map((x) => x.enterpriseGovRevenue ?? null), backgroundColor: pal.si, stack: "c" },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { stacked: true, ...axis, grid: { display: false } }, y: { stacked: true, ...axis } } },
+        scales: { x: { stacked: true, ...xAxis }, y: { stacked: true, ...axis } } },
     });
 
     new Chart(document.getElementById("c-gw"), {
       type: "line",
       data: { labels, datasets: [{ label: "Nameplate GW", data: q.map((x) => x.nameplateComputeGW ?? null), borderColor: pal.line, backgroundColor: "rgba(240,240,250,0.1)", fill: true, tension: 0.15, pointRadius: 3, spanGaps: false }] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
-        scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, beginAtZero: true } } },
+        scales: { x: { ...xAxis }, y: { ...axis, beginAtZero: true } } },
     });
     const gwNote = document.querySelector("#c-gw").closest(".chart-card").querySelector(".source");
     if (gwNote && kpis.guidance) {
@@ -90,7 +139,7 @@
         { label: "Net income", data: q.map((x) => x.netIncome ?? null), backgroundColor: pal.si },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { ...axis, grid: { display: false } }, y: { ...axis } } },
+        scales: { x: { ...xAxis }, y: { ...axis } } },
     });
 
     new Chart(document.getElementById("c-capex"), {
@@ -100,7 +149,7 @@
         { label: "SI capex", data: q.map((x) => (x.segmentCapex && x.segmentCapex.si) ?? null), backgroundColor: pal.si },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { ...axis, grid: { display: false } }, y: { ...axis } } },
+        scales: { x: { ...xAxis }, y: { ...axis } } },
     });
 
     // Satellites: sparse company points + McDowell current as a last category
@@ -126,7 +175,7 @@
         { label: "McDowell in orbit", data: mcdowell, backgroundColor: pal.si },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, beginAtZero: true } } },
+        scales: { x: { ...xAxis }, y: { ...axis, beginAtZero: true } } },
     });
     const satSrc = document.querySelector("#c-sats").closest(".chart-card").querySelector(".source");
     if (satSrc && kpis.satellitesTracker) {
@@ -138,7 +187,7 @@
       type: "bar",
       data: { labels, datasets: [{ label: "Backlog ($M)", data: q.map((x) => x.backlog ?? null), backgroundColor: pal.si }] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
-        scales: { x: { ...axis, grid: { display: false } }, y: { ...axis } } },
+        scales: { x: { ...xAxis }, y: { ...axis } } },
     });
   }
 
