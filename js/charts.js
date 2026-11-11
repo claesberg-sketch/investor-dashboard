@@ -103,11 +103,10 @@
     new Chart(document.getElementById("c-subs"), {
       type: "line",
       data: { labels, datasets: [
-        { label: "Consumer subs (M)", data: q.map((x) => x.starlinkConsumerSubsM ?? null), yAxisID: "y", borderColor: pal.line, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 3 },
-        { label: "Stated ARPU ($)", data: q.map((x) => x.starlinkConsumerArpu ?? null), yAxisID: "y2", borderColor: pal.line2, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 3, borderDash: [4, 4] },
+        { label: "Consumer subs (M)", data: q.map((x) => x.starlinkConsumerSubsM ?? null), borderColor: pal.line, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 3 },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { ...xAxis }, y: { ...axis, title: { display: true, text: "Subs (M)", color: "rgba(240,240,250,0.5)" } }, y2: { ...axis, position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: "ARPU $", color: "rgba(240,240,250,0.5)" } } } },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
+        scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, beginAtZero: true, title: { display: true, text: "Subs (M)", color: "rgba(240,240,250,0.5)" } } } },
     });
 
     new Chart(document.getElementById("c-connmix"), {
@@ -121,8 +120,8 @@
     });
 
     new Chart(document.getElementById("c-gw"), {
-      type: "line",
-      data: { labels, datasets: [{ label: "Nameplate GW", data: q.map((x) => x.nameplateComputeGW ?? null), borderColor: pal.line, backgroundColor: "rgba(240,240,250,0.1)", fill: true, tension: 0.15, pointRadius: 3, spanGaps: false }] },
+      type: "bar",
+      data: { labels, datasets: [{ label: "Nameplate GW", data: q.map((x) => x.nameplateComputeGW ?? null), backgroundColor: pal.si }] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
         scales: { x: { ...xAxis }, y: { ...axis, beginAtZero: true } } },
     });
