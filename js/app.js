@@ -2,7 +2,8 @@
   const DATA = "data";
 
   async function loadJSON(path) {
-    const res = await fetch(path + "?t=" + Date.now());
+    const url = path + (path.indexOf("?") >= 0 ? "&" : "?") + "v=" + Date.now();
+    const res = await fetch(url, { cache: "no-store" });
     if (!res.ok) throw new Error(path + " " + res.status);
     return res.json();
   }

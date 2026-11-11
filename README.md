@@ -57,6 +57,14 @@ Run a refresh locally:
 python3 scripts/refresh.py
 ```
 
+`refresh.py` also rewrites a `?v=` query string on every local JS/CSS tag in `index.html` (short git hash plus a UTC timestamp). GitHub Pages caches assets for about ten minutes (`max-age=600`), so that bump makes the next HTML load fetch fresh scripts and styles. For a JS/CSS-only change you can bump without a data refresh:
+
+```bash
+python3 scripts/refresh.py --bump-assets
+```
+
+Run that (or a full refresh) before pushing so clients do not keep a stale overview. JSON files are fetched in the browser with `cache: "no-store"` and a timestamp query.
+
 **GitHub Actions note:** The scheduled workflow lives in `scripts/github-actions-refresh.yml` (copy it to `.github/workflows/refresh.yml`). It could not be committed under `.github/workflows/` from this environment because the logged-in `gh` token has `repo` scope but not the `workflow` scope GitHub requires to create workflow files. Until that file is added with a token that has `workflow` scope, Pages is served from the `main` branch and Yahoo/news JSON update when someone runs `scripts/refresh.py` and pushes. Hyperliquid prices still update live in the browser.
 
 ## Price session rules

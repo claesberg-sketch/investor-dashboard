@@ -13,6 +13,7 @@ import html
 import json
 import re
 import os
+import subprocess
 import sys
 import time
 import urllib.error
@@ -28,6 +29,43 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "spacex"
 USER_AGENT = "ClaesBerg-InvestorDashboard/1.0 (contact: claesberg-sketch@users.noreply.github.com)"
 YAHOO_UA = "Mozilla/5.0 (compatible; InvestorDashboard/1.0; +https://github.com/claesberg-sketch/investor-dashboard)"
+
+
+INDEX = ROOT / "index.html"
+ASSET_TAG_RE = re.compile(
+    r'((?:href|src)=")((?:css|js)/[^"?]+)(?:\?v=[^"]*)?(")',
+    re.I,
+)
+
+
+def asset_version() -> str:
+    sha = ""
+    try:
+        sha = subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=ROOT,
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).strip()
+    except Exception:
+        sha = ""
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+    return f"{sha}-{stamp}" if sha else stamp
+
+
+def bump_asset_version(version: str | None = None) -> str:
+    """Rewrite ?v= on local JS/CSS tags in index.html so Pages clients fetch fresh assets."""
+    version = version or asset_version()
+    html = INDEX.read_text()
+    new, n = ASSET_TAG_RE.subn(rf"\1\2?v={version}\3", html)
+    if n == 0:
+        raise RuntimeError("no local js/css tags found in index.html")
+    if new != html:
+        INDEX.write_text(new)
+    print(f"bumped {n} asset tags in index.html to v={version}")
+    return version
+
+
 
 
 def utc_now():
@@ -661,11 +699,34 @@ def main():
         "missingSummaries": missing,
     }
     write(DATA / "refresh-status.json", status)
+    try:
+        bump_asset_version()
+    except Exception as e:
+        errors.append(f"asset version: {e}")
+        print("asset version error", e, file=sys.stderr)
+        status["ok"] = not errors
+        status["errors"] = errors
+        write(DATA / "refresh-status.json", status)
     if errors:
         print("completed with errors:", errors)
         # still exit 0 so a partial refresh is published
     return 0
 
 
+def parse_args(argv):
+    import argparse
+    ap = argparse.ArgumentParser(description="Refresh dashboard JSON and bump asset cache-busting versions.")
+    ap.add_argument(
+        "--bump-assets",
+        action="store_true",
+        help="Only rewrite ?v= on local JS/CSS tags in index.html, then exit.",
+    )
+    return ap.parse_args(argv)
+
+
 if __name__ == "__main__":
+    args = parse_args(sys.argv[1:])
+    if args.bump_assets:
+        bump_asset_version()
+        sys.exit(0)
     sys.exit(main())
