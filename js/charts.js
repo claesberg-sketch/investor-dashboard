@@ -65,7 +65,7 @@
     const labels = q.map((x) => x.label);
     grid.innerHTML = [
       card("c-rev", "Revenue by segment ($M)", "SpaceX Q2 and Q3 2026 earnings releases and prospectus. Q4 2025 segment figures are derived as FY2025 minus nine-month 2025. If a quarter has only a consolidated total, a hatched “Total (segments not disclosed)” bar is shown."),
-      card("c-subs", "Starlink consumer subscribers (M) and stated ARPU", "Company disclosures, period-end. ARPU is the official quarterly figure, not the model’s realized yield. Q4 2025 shows 8.9M subscribers at year-end; quarterly ARPU was not disclosed (FY2025 ARPU of $81 is annual and is not plotted)."),
+      card("c-subs", "Starlink consumer subscribers (M)", "Company disclosures, period-end. Q4 2025 shows 8.9M subscribers at year-end."),
       card("c-connmix", "Connectivity revenue: consumer vs enterprise &amp; government ($M)", "Q2 / Q3 2026 earnings releases; Q4 2025 derived as FY2025 minus nine-month 2025 from the prospectus and 10-Q."),
       card("c-gw", "Nameplate AI compute (GW)", "Period-end nameplate, including 0.8 GW at 31 Dec 2025 from the prospectus. Q3 2026 release and Q2 call; YE 2026/27 guides shown as markers in the note."),
       card("c-earn", "Adjusted EBITDA and net income ($M)", "Q2 and Q3 2026 releases; Q4 2025 derived as FY2025 minus nine-month 2025. Gaps remain where a quarter was not disclosed."),
