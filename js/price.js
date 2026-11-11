@@ -121,47 +121,230 @@
     return res.json();
   }
 
-  let hlTrail = [];
   let chart;
+  let chartKey = "";
+  let lastPaintArgs = null;
+  let resizeTimer = null;
+  if (!global.__spacexChartResizeBound) {
+    global.__spacexChartResizeBound = true;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (!lastPaintArgs) return;
+        chartKey = "";
+        paintChartSafe(lastPaintArgs[0], lastPaintArgs[1]);
+      }, 200);
+    });
+  }
 
-  function paintChart(quote, hlPrice) {
+  function zoneParts(ms, zone) {
+    const d = new Date(ms);
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: zone,
+      weekday: "short", year: "numeric", month: "short", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hour12: false, hourCycle: "h23",
+    }).formatToParts(d);
+    const get = (typ) => {
+      const f = parts.find((x) => x.type === typ);
+      return f ? f.value : "";
+    };
+    let hour = +get("hour");
+    if (hour === 24) hour = 0;
+    return { year: +get("year"), month: get("month"), day: get("day"), hour, minute: +get("minute"), weekday: get("weekday") };
+  }
+
+  function hmStockholm(ms, withDate) {
+    const p = zoneParts(ms, TZ);
+    const label = String(p.hour).padStart(2, "0") + ":" + String(p.minute).padStart(2, "0");
+    return withDate ? label + " " + p.day + " " + p.month : label;
+  }
+
+  function lastCashSession(quote, series) {
+    const b = quote && quote.prePostFromChart && quote.prePostFromChart.sessionBoundsUnix;
+    if (b && b.preStart && b.postEnd) {
+      const pts = (series || []).filter((p) => p.t >= b.preStart && p.t <= b.postEnd && p.c != null);
+      if (pts.length > 10) return { pts, bounds: b };
+    }
+    const src = (series || []).filter((p) => p.c != null);
+    if (!src.length) return null;
+    const last = src[src.length - 1];
+    const lastMs = last.t * 1000;
+    const p = etParts(new Date(lastMs));
+    const mins = p.hour * 60 + p.minute;
+    // If the last print is before 04:00 ET, the cash session ended the prior calendar day.
+    let dayOffset = 0;
+    if (mins < 4 * 60) dayOffset = -1;
+    // Walk back to 04:00 ET of that session and forward to 20:00 ET.
+    let preStart = null, preEnd = null, postStart = null, postEnd = null;
+    for (const pt of src) {
+      const ep = etParts(new Date(pt.t * 1000));
+      const sameDay = !dayOffset
+        ? (ep.year === p.year && ep.month === p.month && ep.day === p.day)
+        : false;
+      // When dayOffset, accept the most recent weekday session ending before last.
+      if (dayOffset) {
+        const lastDay = new Date(Date.UTC(p.year, p.month - 1, p.day) - 86400000);
+        // Compare via ET parts of a probe: cheaper to just take points whose ET clock is 04:00–20:00 and whose timestamp is within 20h of a 20:00 close before last.
+      }
+    }
+    // Simpler fallback: take points from the last stretch whose ET time is 04:00–20:00, back to the latest 04:00.
+    let i = src.length - 1;
+    while (i > 0) {
+      const ep = etParts(new Date(src[i].t * 1000));
+      if (ep.hour === 4 && ep.minute === 0) break;
+      if (ep.hour < 4) { i -= 1; continue; }
+      i -= 1;
+    }
+    const pts = src.slice(Math.max(0, i));
+    if (pts.length < 10) return { pts: src.slice(-400), bounds: null };
+    const first = pts[0].t;
+    const end = pts[pts.length - 1].t;
+    // Approximate session bounds from first/last + 9:30/16:00 ET in the window.
+    const bounds = { preStart: first, postEnd: end };
+    for (const pt of pts) {
+      const ep = etParts(new Date(pt.t * 1000));
+      const m = ep.hour * 60 + ep.minute;
+      if (preEnd == null && m >= 9 * 60 + 30) preEnd = pt.t;
+      if (postStart == null && m >= 16 * 60) postStart = pt.t;
+    }
+    bounds.preEnd = preEnd || first;
+    bounds.postStart = postStart || end;
+    return { pts, bounds };
+  }
+
+  function buildTimeTicks(bounds, mobile) {
+    if (!bounds) return [];
+    const preS = bounds.preStart * 1000;
+    const regS = (bounds.preEnd || bounds.preStart) * 1000;
+    const regE = (bounds.postStart || bounds.postEnd) * 1000;
+    const postE = bounds.postEnd * 1000;
+    if (mobile) {
+      const mid = Math.round((regS + regE) / 2);
+      return [preS, regS, mid, regE, postE];
+    }
+    const set = new Set([preS, regS, regE, postE]);
+    const step = 15 * 60 * 1000;
+    for (let t = preS; t <= postE; t += step) {
+      const p = zoneParts(t, TZ);
+      if (p.minute !== 0 || p.hour % 2 !== 0) continue;
+      const close = [preS, regS, regE, postE].some((b) => Math.abs(b - t) > 0 && Math.abs(b - t) < 40 * 60 * 1000);
+      if (!close) set.add(t);
+    }
+    return Array.from(set).sort((a, b) => a - b);
+  }
+
+  function sessionBandsPlugin(bounds) {
+    return {
+      id: "sessionBands",
+      beforeDraw(chart) {
+        if (!bounds) return;
+        const { ctx, chartArea, scales } = chart;
+        if (!chartArea || !scales.x) return;
+        const bands = [
+          { from: bounds.preStart * 1000, to: bounds.preEnd * 1000, color: "rgba(240,240,250,0.03)", label: "PRE" },
+          { from: bounds.preEnd * 1000, to: bounds.postStart * 1000, color: "rgba(240,240,250,0.08)", label: "REGULAR" },
+          { from: bounds.postStart * 1000, to: bounds.postEnd * 1000, color: "rgba(240,240,250,0.03)", label: "AFTER" },
+        ];
+        ctx.save();
+        for (const band of bands) {
+          const x1 = Math.max(chartArea.left, scales.x.getPixelForValue(band.from));
+          const x2 = Math.min(chartArea.right, scales.x.getPixelForValue(band.to));
+          if (x2 - x1 < 2) continue;
+          ctx.fillStyle = band.color;
+          ctx.fillRect(x1, chartArea.top, x2 - x1, chartArea.bottom - chartArea.top);
+          ctx.fillStyle = "rgba(240,240,250,0.45)";
+          ctx.font = "500 9px Barlow, sans-serif";
+          ctx.textAlign = "center";
+          ctx.textBaseline = "top";
+          ctx.letterSpacing = "0.14em";
+          if (x2 - x1 > 36) ctx.fillText(band.label, (x1 + x2) / 2, chartArea.top + 4);
+        }
+        // Session boundary hairlines
+        ctx.strokeStyle = "rgba(240,240,250,0.18)";
+        ctx.lineWidth = 1;
+        for (const edge of [bounds.preEnd, bounds.postStart]) {
+          const x = scales.x.getPixelForValue(edge * 1000);
+          if (x < chartArea.left || x > chartArea.right) continue;
+          ctx.beginPath();
+          ctx.moveTo(x, chartArea.top);
+          ctx.lineTo(x, chartArea.bottom);
+          ctx.stroke();
+        }
+        ctx.restore();
+      },
+    };
+  }
+
+  function paintChartSafe(quote, hlPrice) {
     const el = document.getElementById("intraday-chart");
     if (!el || !global.Chart) return;
+    lastPaintArgs = [quote, hlPrice];
     const series = (quote && quote.intraday) || [];
-    const labels = series.map((p) => p.t * 1000);
-    const data = series.map((p) => p.c);
-    const last = data[data.length - 1];
-    const up = hlPrice != null ? hlPrice >= (quote.yahoo.previousClose || last) : (last >= (data[0] || last));
+    const sess = lastCashSession(quote, series);
+    const pts = sess ? sess.pts : [];
+    const bounds = sess && sess.bounds;
+    const data = pts.map((p) => ({ x: p.t * 1000, y: p.c }));
+    const prev = quote && quote.yahoo && quote.yahoo.previousClose;
+    const last = data.length ? data[data.length - 1].y : null;
+    const up = (hlPrice != null ? hlPrice : last) >= (prev || (data[0] && data[0].y) || last);
     const color = up ? "rgba(61,214,140,1)" : "rgba(255,90,90,1)";
     const fill = up ? "rgba(61,214,140,0.12)" : "rgba(255,90,90,0.12)";
-    if (chart) {
-      chart.data.labels = labels;
-      chart.data.datasets[0].data = data;
-      chart.data.datasets[0].borderColor = color;
-      chart.data.datasets[0].backgroundColor = fill;
-      chart.update("none");
-      return;
+    const mobile = window.matchMedia("(max-width: 720px)").matches;
+    const ticks = buildTimeTicks(bounds, mobile);
+    const minX = bounds ? bounds.preStart * 1000 : (data[0] && data[0].x);
+    const maxX = bounds ? bounds.postEnd * 1000 : (data[data.length - 1] && data[data.length - 1].x);
+    const key = [minX, maxX, mobile, ticks.length].join(":");
+    const caption = document.getElementById("intraday-caption");
+    if (caption) {
+      caption.textContent = "Time in Europe/Stockholm. Shaded bands are the U.S. pre-market, regular, and after-hours sessions.";
     }
-    chart = new Chart(el, {
+    const tickLabels = {};
+    ticks.forEach((ms, i) => {
+      const p = zoneParts(ms, TZ);
+      const prevT = i ? zoneParts(ticks[i - 1], TZ) : null;
+      const crossed = prevT && (prevT.day !== p.day || prevT.month !== p.month);
+      tickLabels[ms] = hmStockholm(ms, crossed || (i === 0 && p.hour < 4));
+    });
+    const cfg = {
       type: "line",
       data: {
-        labels,
         datasets: [{
           data, borderColor: color, backgroundColor: fill, fill: true,
           borderWidth: 1.25, pointRadius: 0, tension: 0.15,
         }],
       },
       options: {
-        responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: {
-          mode: "index", intersect: false,
-          callbacks: {
-            title: (items) => items[0] ? formatIn(items[0].parsed.x, TZ) : "",
-            label: (i) => " " + money(i.parsed.y),
+        responsive: true, maintainAspectRatio: false, animation: false,
+        parsing: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            mode: "index", intersect: false,
+            callbacks: {
+              title: (items) => items[0] ? formatIn(items[0].parsed.x, TZ) : "",
+              label: (i) => " " + money(i.parsed.y),
+            },
           },
-        } },
+        },
         scales: {
-          x: { type: "time", display: false, time: { unit: "hour" } },
+          x: {
+            type: "linear",
+            min: minX,
+            max: maxX,
+            afterBuildTicks(axis) {
+              axis.ticks = ticks.map((v) => ({ value: v }));
+            },
+            ticks: {
+              color: "rgba(240,240,250,0.55)",
+              font: { size: 10, family: "Barlow, sans-serif" },
+              maxRotation: 0,
+              minRotation: 0,
+              autoSkip: false,
+              callback(val) { return tickLabels[val] || ""; },
+            },
+            grid: { color: "rgba(240,240,250,0.06)", drawTicks: false },
+            border: { display: false },
+          },
           y: {
             ticks: { color: "rgba(240,240,250,0.45)", font: { size: 10 }, callback: (v) => "$" + v },
             grid: { color: "rgba(240,240,250,0.08)" },
@@ -169,39 +352,18 @@
           },
         },
       },
-    });
-  }
-
-  // Chart.js time scale may be missing without adapter. Use category-less linear by index if needed.
-  function paintChartSafe(quote, hlPrice) {
-    const el = document.getElementById("intraday-chart");
-    if (!el || !global.Chart) return;
-    const series = (quote && quote.intraday) || [];
-    // Use last regular + post session (~780 pts) or last 500
-    const slice = series.length > 800 ? series.slice(-800) : series;
-    const labels = slice.map((p) => formatIn(p.t, ET).replace(" U.S. Eastern", ""));
-    const data = slice.map((p) => p.c);
-    const prev = quote.yahoo && quote.yahoo.previousClose;
-    const last = data[data.length - 1];
-    const up = (hlPrice != null ? hlPrice : last) >= (prev || data[0] || last);
-    const color = up ? "rgba(61,214,140,1)" : "rgba(255,90,90,1)";
-    const fill = up ? "rgba(61,214,140,0.12)" : "rgba(255,90,90,0.12)";
-    const cfg = {
-      type: "line",
-      data: { labels, datasets: [{ data, borderColor: color, backgroundColor: fill, fill: true, borderWidth: 1.25, pointRadius: 0, tension: 0.15 }] },
-      options: {
-        responsive: true, maintainAspectRatio: false, animation: false,
-        plugins: { legend: { display: false }, tooltip: { mode: "index", intersect: false,
-          callbacks: { label: (i) => " " + money(i.parsed.y) } } },
-        scales: {
-          x: { ticks: { display: false }, grid: { display: false }, border: { display: false } },
-          y: { ticks: { color: "rgba(240,240,250,0.45)", font: { size: 10 }, callback: (v) => "$" + v },
-            grid: { color: "rgba(240,240,250,0.08)" }, border: { display: false } },
-        },
-      },
+      plugins: [sessionBandsPlugin(bounds)],
     };
-    if (chart) { chart.data = cfg.data; chart.options = cfg.options; chart.update("none"); }
-    else chart = new Chart(el, cfg);
+    if (chart && chartKey === key) {
+      chart.data.datasets[0].data = data;
+      chart.data.datasets[0].borderColor = color;
+      chart.data.datasets[0].backgroundColor = fill;
+      chart.update("none");
+      return;
+    }
+    if (chart) { chart.destroy(); chart = null; }
+    chartKey = key;
+    chart = new Chart(el, cfg);
   }
 
   function render(quote, hl, liveYahoo) {

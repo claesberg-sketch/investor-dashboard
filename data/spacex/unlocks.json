@@ -1,0 +1,412 @@
+{
+  "asOf": "2026-11-11",
+  "disclaimer": "Figures are \u201cup to\u201d amounts from SpaceX\u2019s Form 424(b)(4). A release makes shares eligible to be sold under the lock-up; it is not a forecast that holders will sell. Goldman Sachs, as underwriters\u2019 representative, may release shares earlier. Company trading windows, Rule 144, affiliate volume limits, and unvested awards can still block a sale. Approximate value uses the price shown at the top of this page and will move with it.",
+  "sharesOutstanding": 13581063709,
+  "sharesOutstandingAsOf": "2026-10-15",
+  "sharesOutstandingSource": {
+    "label": "Form 10-Q cover page, quarter ended 30 Sep 2026 (shares outstanding as of 15 Oct 2026)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+  },
+  "freeFloatEstimate": 4330000000,
+  "freeFloatNote": "SpaceX does not publish an official free-float figure. 4.33 billion (31.9% of shares outstanding) is FloatCap\u2019s estimate of circulating supply minus unrestricted insider holdings, as of its 10-Q / 424(b)(4) review. Percentages of free float below use this denominator and are estimates.",
+  "freeFloatSource": {
+    "label": "FloatCap compilation of the 424(b)(4) and 10-Q",
+    "url": "https://floatcap.app/stocks/SPCX"
+  },
+  "prospectus": {
+    "label": "SpaceX Form 424(b)(4), prospectus dated 11 Jun 2026, filed 12 Jun 2026 \u2014 Underwriting, Lock-up Agreements, and shares-eligible table",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+  },
+  "priceTrigger": {
+    "condition": "Additional Release Shares (up to 455.8 million, 10% of the 180-day group, excluding Rule 144 affiliates) would have been released on the First Earnings Release Date only if the Nasdaq closing price was at least 30% above the $135.00 IPO price \u2014 $175.50 \u2014 on at least five of the ten consecutive trading days ending on, and including, that date.",
+    "firstEarningsReleaseDate": "The prospectus defines the First Earnings Release Date as the second full Nasdaq trading day immediately after the public release of quarterly results for the quarter ended 30 Jun 2026. Q2 results were filed on 4 Aug 2026; the second full trading day after that was 6 Aug 2026 (assuming an after-close release on 4 Aug; the 8-K does not state the time of day).",
+    "outcome": "inferred_not_triggered",
+    "outcomeNote": "SpaceX has not filed a statement confirming whether the $175.50 test was met. Yahoo Finance daily closes (regular session) in every 10-trading-day window ending on 4 Aug or 6 Aug 2026 ranged from $108.27 to $125.33 \u2014 all well below $175.50. This page therefore uses the prospectus\u2019s 797.6 million December 8 remainder, which applies if the Additional Release Shares were not released. The alternative if they had been released is 328.4 million.",
+    "closesWindow": {
+      "low": 108.27,
+      "high": 125.33,
+      "source": "Yahoo Finance daily chart for SPCX, regular-session closes 23 Jul\u20136 Aug 2026"
+    },
+    "sources": [
+      {
+        "label": "424(b)(4) lock-up table, Additional Release Shares / December 8 alternatives",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      },
+      {
+        "label": "Q2 2026 results 8-K, 4 Aug 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm"
+      }
+    ]
+  },
+  "holders": [
+    {
+      "group": "180-day lock-up group",
+      "who": "Pre-IPO holders whose shares are on the standard 180-day schedule (employees, early investors, and other holders not in the extended group or Musk\u2019s 366-day category). The prospectus describes \u201ca variety of other terms\u201d for 180 days, with timed automatic releases.",
+      "source": "424(b)(4)"
+    },
+    {
+      "group": "Extended lock-up group (other than Musk)",
+      "who": "\u201cCertain shareholders\u201d agreed to remain locked until the release of results for the quarter ending 30 Jun 2027, with staged automatic releases. The prospectus names Gwynne Shotwell, President and COO, as having agreed to put the vast majority of her shares in this extended period. Later compilations also place CFO Bret W. Johnsen in the group. The filing does not publish a complete holder list.",
+      "source": "424(b)(4); FloatCap derivation of the release table"
+    },
+    {
+      "group": "Elon Musk (366-day lock-up)",
+      "who": "All of the shares of common stock owned by him. No early-release provisions. Class B shares (10 votes) are unlisted and must convert 1:1 into Class A before they can trade. Separate unvested performance awards remain subject to their own vesting milestones after the lock-up ends.",
+      "source": "424(b)(4), Underwriting \u2014 Lock-up Agreements"
+    },
+    {
+      "group": "Merger / Rule 144 shares",
+      "who": "Unregistered shares issued in the Cursor (Anysphere) and Mesh Optical deals. These are not part of the IPO lock-up table. Public resale is first limited by Rule 144\u2019s holding period; a separate contractual lock-up may still apply (Cursor terms are not fully public).",
+      "source": "8-K 14 Aug 2026; Q3 2026 10-Q"
+    }
+  ],
+  "muskHoldings424b4": {
+    "asOf": "2026-05-01",
+    "classA": 849494440,
+    "classBIncludingUnvested": 5219053075,
+    "unvestedRestrictedClassB": 1302072285,
+    "classBExUnvested": 3916980790,
+    "totalIncludingUnvested": 6068547515,
+    "unvestedBreakdown": [
+      {
+        "name": "SpaceX CEO Award",
+        "shares": 1000000000,
+        "note": "15 tranches; each requires a market-cap milestone from $500B to $7.5T and a permanent human colony on Mars of at least one million inhabitants, plus continued employment."
+      },
+      {
+        "name": "AI CEO Award",
+        "shares": 302072285,
+        "note": "12 tranches; market-cap milestones from $1.065T to $6.565T and off-Earth data centers delivering 100 terawatts of compute per year, plus continued employment. As of 31 Mar 2026 the company treated both performance awards as improbable for accounting."
+      }
+    ],
+    "votingPowerAtIpo": "82.3%",
+    "source": {
+      "label": "424(b)(4) beneficial-ownership table as of 1 May 2026, as compiled by FloatCap",
+      "url": "https://floatcap.app/stocks/SPCX"
+    },
+    "note": "These counts are as of the prospectus ownership table (1 May 2026), not the 15 Oct 2026 10-Q cover. They may not capture later option exercises or transfers. After 12 Jun 2027 the unvested awards still do not become tradable until their operational and market-cap milestones are met."
+  },
+  "events": [
+    {
+      "id": "q2-20",
+      "date": "2026-08-06",
+      "dateLabel": "6 Aug 2026",
+      "status": "released",
+      "group": "180-day",
+      "holders": "180-day lock-up group (ex-affiliates for some rows)",
+      "trigger": "Second full Nasdaq trading day after Q2 2026 results (filed 4 Aug 2026)",
+      "shares": 911500000,
+      "sharesLabel": "Up to 911.5 million (20%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) lock-up table; Q2 8-K 4 Aug 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "q2-price",
+      "date": "2026-08-06",
+      "dateLabel": "6 Aug 2026",
+      "status": "did_not_trigger",
+      "group": "180-day",
+      "holders": "180-day group, excluding Rule 144 affiliates",
+      "trigger": "Price test: close \u2265 $175.50 on 5 of 10 sessions ending on the First Earnings Release Date",
+      "shares": 455800000,
+      "sharesLabel": "Up to 455.8 million (10%) \u2014 did not release",
+      "sharesKind": "disclosed_amount_inferred_outcome",
+      "source": {
+        "label": "424(b)(4) Additional Release Shares; Yahoo Finance daily closes",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "d70",
+      "date": "2026-08-20",
+      "dateLabel": "20 Aug 2026",
+      "status": "released",
+      "group": "180-day",
+      "holders": "180-day lock-up group",
+      "trigger": "70th day after the 11 Jun 2026 prospectus date",
+      "shares": 319000000,
+      "sharesLabel": "Up to 319.0 million (7%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) lock-up table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "d90",
+      "date": "2026-09-09",
+      "dateLabel": "9 Sep 2026",
+      "status": "released",
+      "group": "180-day",
+      "holders": "180-day lock-up group",
+      "trigger": "90th day after the prospectus date",
+      "shares": 319000000,
+      "sharesLabel": "Up to 319.0 million (7%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) lock-up table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "aff91",
+      "date": "2026-09-10",
+      "dateLabel": "10 Sep 2026",
+      "status": "released",
+      "group": "180-day affiliates",
+      "holders": "Rule 144 affiliates whose 180-day contractual restrictions had already lifted",
+      "trigger": "Earliest public-sale date listed for those affiliate shares (not an extra 7% general tranche)",
+      "shares": 59100000,
+      "sharesLabel": "Up to 59.1 million",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) shares-eligible / affiliate row",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "d105",
+      "date": "2026-09-24",
+      "dateLabel": "24 Sep 2026",
+      "status": "released",
+      "group": "180-day",
+      "holders": "180-day lock-up group",
+      "trigger": "105th day after the prospectus date",
+      "shares": 328400000,
+      "sharesLabel": "Up to 328.4 million (7%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) lock-up table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "d120",
+      "date": "2026-10-09",
+      "dateLabel": "9 Oct 2026",
+      "status": "released",
+      "group": "180-day",
+      "holders": "180-day lock-up group",
+      "trigger": "120th day after the prospectus date",
+      "shares": 328400000,
+      "sharesLabel": "Up to 328.4 million (7%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) lock-up table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "q3-28",
+      "date": "2026-10-22",
+      "dateLabel": "22 Oct 2026",
+      "status": "released",
+      "group": "180-day",
+      "holders": "180-day lock-up group",
+      "trigger": "Second full Nasdaq trading day after Q3 2026 results (filed 20 Oct 2026)",
+      "shares": 1300000000,
+      "sharesLabel": "Up to 1.3 billion (28%)",
+      "sharesKind": "disclosed",
+      "sharesNote": "The prospectus prints \u201cup to 1.3 billion,\u201d a rounded figure.",
+      "source": {
+        "label": "424(b)(4) lock-up table; Q3 8-K 20 Oct 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "d135",
+      "date": "2026-10-26",
+      "dateLabel": "26 Oct 2026 (first session after 24 Oct)",
+      "status": "released",
+      "group": "180-day",
+      "holders": "180-day lock-up group",
+      "trigger": "135th day after the prospectus date was 24 Oct 2026, a Saturday; first Nasdaq session was 26 Oct",
+      "shares": 328400000,
+      "sharesLabel": "Up to 328.4 million (7%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) lock-up table",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "d180",
+      "date": "2026-12-08",
+      "dateLabel": "8 Dec 2026",
+      "status": "upcoming",
+      "nearest": true,
+      "group": "180-day",
+      "holders": "Remaining 180-day lock-up group (employees, early investors, and other holders on this schedule)",
+      "trigger": "180th day after the 11 Jun 2026 prospectus date. 8 Dec 2026 is a Tuesday and a regular Nasdaq session. The prospectus does not say the release waits until the close.",
+      "shares": 797600000,
+      "sharesLabel": "Up to 797.6 million (remaining 17% if the Additional Release Shares were not released)",
+      "sharesKind": "disclosed_conditional",
+      "sharesNote": "Uses the 797.6 million alternative. The 328.4 million alternative would have applied only if the $175.50 test had been met in August.",
+      "source": {
+        "label": "424(b)(4) December 8 remainder language",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "mesh144",
+      "date": "2027-01-06",
+      "dateLabel": "6 Jan 2027",
+      "status": "upcoming",
+      "group": "Rule 144",
+      "holders": "Mesh Optical merger recipients",
+      "trigger": "Earliest Rule 144 six-month holding period after issuance on or about 6 Jul 2026",
+      "shares": 3800000,
+      "sharesLabel": "About 3.8 million",
+      "sharesKind": "estimate",
+      "sharesNote": "The Q3 10-Q describes the merger consideration as \u201capproximately 3.8 million shares.\u201d A contractual lock-up, if any, is not separately detailed.",
+      "source": {
+        "label": "Q3 2026 10-Q, acquisitions note / FloatCap",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+      }
+    },
+    {
+      "id": "ext-q4",
+      "date": null,
+      "dateSort": "2027-01-01",
+      "dateLabel": "Second full trading day after Q4 2026 results (date not set; not before 1 Jan 2027)",
+      "status": "upcoming",
+      "group": "extended",
+      "holders": "Extended lock-up group other than Musk (filings name Shotwell\u2019s vast majority of shares; compilations also include the CFO)",
+      "trigger": "Second full Nasdaq trading day after public release of results for the quarter ending 31 Dec 2026. SpaceX has not set the earnings date.",
+      "shares": 351900000,
+      "sharesLabel": "Up to 351.9 million (20% of the extended group)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) extended lock-up schedule",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "cursor144",
+      "date": "2027-02-16",
+      "dateLabel": "16 Feb 2027 (first trading day after 14 Feb)",
+      "status": "upcoming",
+      "group": "Rule 144",
+      "holders": "Cursor (Anysphere) merger recipients",
+      "trigger": "Six-month Rule 144 holding period after issuance on 14 Aug 2026 ends 14 Feb 2027 (Sunday); 15 Feb is Presidents\u2019 Day, so the first session is 16 Feb. A separate lock-up in the letter of transmittal may still apply; its terms are not public.",
+      "shares": 391041680,
+      "sharesLabel": "391.0 million merger shares (up to)",
+      "sharesKind": "disclosed_with_condition",
+      "sharesNote": "An S-8 reoffer prospectus filed 22 Oct 2026 covers resale of up to 23,637,224 Class A shares by current and former Cursor employees, still subject to lock-up, market-standoff, and Rule 144(e) volume caps. The filing does not say how many of those overlap the 391.0 million merger shares, so the table keeps the full merger amount in this row.",
+      "source": {
+        "label": "8-K 14 Aug 2026, Item 3.02; S-8 22 Oct 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm"
+      }
+    },
+    {
+      "id": "ext-d280",
+      "date": "2027-03-18",
+      "dateLabel": "18 Mar 2027",
+      "status": "upcoming",
+      "group": "extended",
+      "holders": "Extended lock-up group other than Musk",
+      "trigger": "280th day after the prospectus date",
+      "shares": 176000000,
+      "sharesLabel": "Up to 176.0 million (10%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) extended lock-up schedule",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "ext-q1",
+      "date": null,
+      "dateSort": "2027-04-01",
+      "dateLabel": "Second full trading day after Q1 2027 results (date not set; not before 1 Apr 2027)",
+      "status": "upcoming",
+      "group": "extended",
+      "holders": "Extended lock-up group other than Musk",
+      "trigger": "Second full Nasdaq trading day after public release of results for the quarter ending 31 Mar 2027",
+      "shares": 351900000,
+      "sharesLabel": "Up to 351.9 million (20%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) extended lock-up schedule",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "ext-d340",
+      "date": "2027-05-17",
+      "dateLabel": "17 May 2027",
+      "status": "upcoming",
+      "group": "extended",
+      "holders": "Extended lock-up group other than Musk",
+      "trigger": "340th day after the prospectus date",
+      "shares": 176000000,
+      "sharesLabel": "Up to 176.0 million (10%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) extended lock-up schedule",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "ext-d366",
+      "date": "2027-06-14",
+      "dateLabel": "14 Jun 2027 (first session after 12 Jun)",
+      "status": "upcoming",
+      "group": "extended",
+      "holders": "Extended lock-up group other than Musk",
+      "trigger": "366th day after the prospectus date is 12 Jun 2027, a Saturday; first Nasdaq session is 14 Jun 2027",
+      "shares": 351900000,
+      "sharesLabel": "Up to 351.9 million (20%)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) extended lock-up schedule",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "id": "musk-366",
+      "date": "2027-06-14",
+      "dateLabel": "14 Jun 2027 (first session after 12 Jun)",
+      "status": "upcoming",
+      "group": "Musk 366-day",
+      "holders": "Elon Musk \u2014 all common stock he owns. Class B must convert 1:1 into Class A before sale.",
+      "trigger": "Immediately after the close of the trading day on the 366th day after the prospectus (12 Jun 2027, a Saturday). First session: 14 Jun 2027. No early-release provisions.",
+      "shares": 4766475230,
+      "sharesLabel": "4.766 billion (849.5M Class A + 3.917B Class B, excluding unvested awards)",
+      "sharesKind": "disclosed_as_of_prospectus",
+      "sharesNote": "Beneficial ownership as of 1 May 2026. A further 1.302 billion unvested restricted Class B (CEO and AI performance awards) stay untradable until their market-cap and operational milestones are met, even after this lock-up ends. Those 1.302 billion are not included in the 4.766 billion figure.",
+      "source": {
+        "label": "424(b)(4) lock-up language and ownership table (1 May 2026), via FloatCap",
+        "url": "https://floatcap.app/stocks/SPCX"
+      }
+    },
+    {
+      "id": "ext-q2",
+      "date": null,
+      "dateSort": "2027-07-01",
+      "dateLabel": "Second full trading day after Q2 2027 results (date not set; not before 1 Jul 2027)",
+      "status": "upcoming",
+      "group": "extended",
+      "holders": "Extended lock-up group other than Musk \u2014 remaining shares in the group",
+      "trigger": "Second full Nasdaq trading day after public release of results for the quarter ending 30 Jun 2027",
+      "shares": 351900000,
+      "sharesLabel": "Up to 351.9 million (the rest of the extended group)",
+      "sharesKind": "disclosed",
+      "source": {
+        "label": "424(b)(4) extended lock-up schedule",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+      }
+    }
+  ],
+  "ipoPrimaryShares": {
+    "shares": 638888888,
+    "note": "638,888,888 Class A shares were sold by the company in the IPO (including the underwriters\u2019 option) and began trading on 12 Jun 2026. They were not subject to the pre-IPO holder lock-up.",
+    "source": {
+      "label": "IPO closing release, 15 Jun 2026",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx"
+    }
+  }
+}

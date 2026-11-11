@@ -21,10 +21,10 @@
         <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false">Menu</button>
         <nav class="nav" id="site-nav">
           <a href="#price">Price</a>
-          <a href="#changed">Today</a>
           <a href="#news">News</a>
           <a href="#forecast">Forecast</a>
           <a href="#kpis">KPIs</a>
+          <a href="#unlocks">Unlocks</a>
           <a href="#calendar">Calendar</a>
           <a href="#valuation">Valuation</a>
         </nav>
@@ -47,18 +47,12 @@
             <div class="asof" id="hero-asof"></div>
             <div class="session-alt" id="session-alt"></div>
           </div>
-          <div class="hero-chart"><canvas id="intraday-chart"></canvas></div>
+          <div class="hero-chart">
+            <canvas id="intraday-chart"></canvas>
+            <p class="chart-caption" id="intraday-caption">Time in Europe/Stockholm. Shaded bands are the U.S. pre-market, regular, and after-hours sessions.</p>
+          </div>
         </div>
         <div class="stats" id="key-stats"></div>
-      </div>
-    </section>
-
-    <section class="section" id="changed" style="padding-top:0;border-top:0">
-      <div class="wrap">
-        <p class="section-kicker">Since yesterday</p>
-        <h2>What moved</h2>
-        <p class="lede">A short strip of fresh company news, posts, and setup items — not a complete feed.</p>
-        <div class="changed" id="changed-strip"></div>
       </div>
     </section>
 
@@ -114,12 +108,30 @@
       </div>
     </section>
 
+
+    <section class="section" id="unlocks">
+      <div class="wrap">
+        <p class="section-kicker">Supply</p>
+        <h2>Share unlock schedule</h2>
+        <div class="unlock-next" id="unlock-next"></div>
+        <p class="lede">When pre-IPO and other restricted shares become eligible for public trading, from SpaceX’s Form 424(b)(4) lock-up table, later 8-Ks and the Q3 10-Q. Amounts are “up to.” A release is not a forecast of selling. Approximate value uses the live price at the top of this page. Percent of free float uses an estimate — SpaceX does not publish an official free-float figure.</p>
+        <div class="chart-card" style="margin-bottom:24px">
+          <h3>Shares becoming eligible, and cumulative “up to” total</h3>
+          <div class="box" style="height:320px"><canvas id="unlock-chart"></canvas></div>
+          <p class="source">Bars are each tranche (past muted, upcoming solid). The line is the cumulative “up to” shares from the IPO lock-up schedules and Rule 144 dates below, starting after the 638.9 million IPO primary shares that were already freely tradable. Musk’s 1.302 billion unvested performance awards are excluded from the bars — they do not become tradable when the 366-day lock-up ends.</p>
+        </div>
+        <div class="table-wrap" id="unlock-table"></div>
+        <div class="assumptions" id="unlock-notes" style="margin-top:28px"></div>
+      </div>
+    </section>
+
     <section class="section" id="calendar">
       <div class="wrap">
         <div class="extra-grid">
           <div class="card">
             <p class="section-kicker">Setup</p>
             <h3>Launch &amp; catalyst calendar</h3>
+            <div class="unlock-next compact" id="calendar-unlock-next"></div>
             <div id="calendar-list"></div>
           </div>
           <div class="card" id="valuation">
@@ -131,6 +143,7 @@
             <p class="section-kicker">Supply</p>
             <h3>Lock-ups &amp; float</h3>
             <div id="lockup-body"></div>
+            <p class="source"><a href="#unlocks">Full unlock schedule, table and chart</a></p>
           </div>
           <div class="card">
             <p class="section-kicker">Watch</p>
@@ -160,6 +173,7 @@
   <script src="js/price.js"></script>
   <script src="js/forecast.js"></script>
   <script src="js/charts.js"></script>
+  <script src="js/unlocks.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

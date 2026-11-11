@@ -43,50 +43,6 @@
     });
   }
 
-  function renderChanged(news, posts, calendar) {
-    const el = document.getElementById("changed-strip");
-    if (!el) return;
-    const cutoff = Date.now() - 48 * 3600 * 1000;
-    const items = [];
-    (posts || []).forEach((p) => {
-      const t = Date.parse(p.created_at);
-      if (t >= cutoff && p.highlight) {
-        items.push({ when: p.created_at, title: "@" + p.username + " — " + p.text.slice(0, 140), url: p.url, kind: "X" });
-      }
-    });
-    (news.items || []).forEach((n) => {
-      const t = Date.parse(n.datetime || n.date);
-      if (t >= cutoff && n.type !== "filing") {
-        items.push({ when: n.datetime || n.date, title: n.title, url: n.url, kind: n.type });
-      }
-    });
-    (calendar.events || []).forEach((e) => {
-      const t = Date.parse(e.date);
-      const days = (t - Date.now()) / 86400000;
-      if (days >= -0.5 && days <= 7) {
-        items.push({ when: e.date, title: e.title, url: e.url, kind: e.type });
-      }
-    });
-    // Prefer uniqueness and cap at 4
-    const seen = new Set();
-    const uniq = [];
-    for (const it of items.sort((a, b) => Date.parse(b.when) - Date.parse(a.when))) {
-      const k = it.title.slice(0, 80);
-      if (seen.has(k)) continue;
-      seen.add(k);
-      uniq.push(it);
-      if (uniq.length === 4) break;
-    }
-    // Fallback curated if thin
-    if (uniq.length < 3) {
-      uniq.push({ when: "2026-11-13", title: "Starship Flight 15, 13 Nov, 17:45–19:00 ET window", url: "https://www.spacex.com/launches/starship-flight-15", kind: "launch" });
-    }
-    el.innerHTML = uniq.map((it) =>
-      '<article><div class="when">' + esc(it.kind) + " · " + formatDate(it.when) + "</div><h3>" +
-      (it.url ? '<a href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.title) + "</a>" : esc(it.title)) +
-      "</h3></article>"
-    ).join("");
-  }
 
   function renderNews(news, posts) {
     const filters = document.getElementById("news-filters");
@@ -173,8 +129,9 @@
   function renderCalendar(cal) {
     const el = document.getElementById("calendar-list");
     if (el) {
-      el.innerHTML = (cal.events || []).map((e) =>
-        '<article class="event"><div class="d">' + esc(e.dateLabel || formatDate(e.date)) + (e.tentative ? " · tentative" : "") + " · " + esc(e.type) + "</div>" +
+      const events = (cal.events || []).slice().sort((a, b) => (b.highlight ? 1 : 0) - (a.highlight ? 1 : 0));
+      el.innerHTML = events.map((e) =>
+        '<article class="event' + (e.highlight ? " highlight" : "") + '"><div class="d">' + esc(e.dateLabel || formatDate(e.date)) + (e.tentative ? " · tentative" : "") + " · " + esc(e.type) + "</div>" +
         "<h4>" + (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + "</a>" : esc(e.title)) + "</h4>" +
         (e.window ? '<p class="tiny">' + esc(e.window) + "</p>" : "") +
         "<p>" + esc(e.detail) + "</p>" +
@@ -222,7 +179,7 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
 
-    const [companies, company, quote, news, xposts, forecast, kpis, calendar] = await Promise.all([
+    const [companies, company, quote, news, xposts, forecast, kpis, calendar, unlocks] = await Promise.all([
       loadJSON(DATA + "/companies.json"),
       loadJSON(DATA + "/spacex/company.json"),
       loadJSON(DATA + "/spacex/quote.json"),
@@ -231,6 +188,7 @@
       loadJSON(DATA + "/spacex/forecast.json"),
       loadJSON(DATA + "/spacex/kpis.json"),
       loadJSON(DATA + "/spacex/calendar.json"),
+      loadJSON(DATA + "/spacex/unlocks.json"),
     ]);
 
     renderSwitcher(companies);
@@ -246,11 +204,11 @@
     } : null;
 
     let state = SPCXPrice.render(quote, hl, null);
-    renderChanged(news, xposts.posts, calendar);
     renderNews(news, xposts.posts);
     renderX(xposts);
     SPCXForecast.mount(forecast);
     SPCXCharts.mount(kpis);
+    if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
     renderCalendar(calendar);
     renderValuation(quote, kpis, company, state);
 
@@ -259,6 +217,7 @@
         hl = await SPCXPrice.fetchHL();
         state = SPCXPrice.render(quote, hl, null);
         renderValuation(quote, kpis, company, state);
+        if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
       } catch (e) {
         console.warn("Hyperliquid poll failed", e);
       }
@@ -273,6 +232,7 @@
         Object.assign(quote, q);
         state = SPCXPrice.render(quote, hl, null);
         renderValuation(quote, kpis, company, state);
+        if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
       } catch (e) { console.warn("quote refresh failed", e); }
       try { await SPCXPrice.tryYahooLive(); }
       catch (e) { /* expected: Yahoo blocks browser CORS */ }

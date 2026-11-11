@@ -30,13 +30,14 @@
       "id": "lockup180",
       "date": "2026-12-08",
       "type": "lockup",
-      "title": "End of 180-day IPO lock-up (remaining tranche)",
-      "detail": "About 797.6 million shares in the residual 17% of the 180-day lock-up group become eligible. First regular session after the expiry is 9 Dec 2026. Already released: ~83% of this group in staged tranches since August.",
-      "source": "424(b)(4) lock-up table / FloatCap compilation",
-      "url": "https://floatcap.app/stocks/SPCX",
+      "title": "Next share unlock: end of the 180-day IPO lock-up",
+      "detail": "Up to 797.6 million remaining shares in the 180-day lock-up group become eligible on 8 Dec 2026 (the 180th day after the 11 Jun 2026 prospectus; a Tuesday session). This is the larger of the two remainder sizes in the 424(b)(4), used because the August $175.50 early-release test does not appear to have been met (inferred from public closing prices; SpaceX has not filed a confirmation). See the Share unlock schedule for the full calendar, sources, and later 2027 releases.",
+      "source": "424(b)(4) lock-up table",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
       "topics": [
         "Lock-up"
-      ]
+      ],
+      "highlight": true
     },
     {
       "id": "f16",
@@ -58,7 +59,7 @@
       "dateLabel": "~25 Feb 2027 (estimated, unconfirmed)",
       "type": "earnings",
       "title": "Q4 2026 / FY2026 results (estimated)",
-      "detail": "TipRanks/earnings calendars estimate around 25 Feb 2027. SpaceX has not confirmed the date. The second full trading day after this print also starts a 20% release (~351.9M shares) from the extended (non-Musk) lock-up group.",
+      "detail": "TipRanks/earnings calendars estimate around 25 Feb 2027. SpaceX has not confirmed the date. Separately, the prospectus releases up to 351.9 million extended-group shares on the second full trading day after those results \u2014 that unlock date is therefore also unset. See the Share unlock schedule.",
       "source": "TipRanks earnings date estimate",
       "url": "https://www.tipranks.com/stocks/spcx/earnings",
       "tentative": true,
