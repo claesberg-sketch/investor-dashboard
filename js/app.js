@@ -128,7 +128,7 @@
         const when = formatPublished(i);
         const ago = relativeAge(i.datetime);
         return '<article class="news-item"><div class="meta">' +
-          '<div class="kind">' + esc(i.type) + '</div>' +
+          '<div class="feed-type">' + esc(i.type) + '</div>' +
           (i.source ? '<div class="src">' + esc(i.source) + '</div>' : '') +
           '<div class="when">' + esc(when) + '</div>' +
           (ago ? '<div class="ago">' + esc(ago) + '</div>' : '') +

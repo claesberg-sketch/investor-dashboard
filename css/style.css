@@ -106,7 +106,7 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .news-list{display:flex;flex-direction:column}
 .news-item{display:grid;grid-template-columns:180px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--fg-10)}
 .news-item .meta{font-size:.72rem;letter-spacing:.02em;color:var(--fg-50);line-height:1.45}
-.news-item .meta .kind{letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;color:var(--fg-70)}
+.news-item .meta .feed-type{letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;color:var(--fg-70)}
 .news-item .meta .when{margin-top:6px;color:var(--fg-70)}
 .news-item .meta .ago{margin-top:2px;color:var(--fg-50)}
 .news-item .meta .src{margin-top:4px}
