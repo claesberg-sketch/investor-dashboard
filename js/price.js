@@ -411,8 +411,12 @@
     return bands;
   }
 
-  function buildTimeTicks(minX, maxX, mobile) {
-    const stepH = mobile ? 6 : 3;
+  function isCompactView() {
+    return window.matchMedia("(max-width: 900px), (max-height: 500px)").matches;
+  }
+
+  function buildTimeTicks(minX, maxX, compact) {
+    const stepH = compact ? 6 : 3;
     const ticks = [];
     const step = 15 * 60 * 1000;
     const start = Math.ceil(minX / step) * step;
@@ -426,17 +430,17 @@
       if (!out.length || Math.abs(t - out[out.length - 1]) > 25 * 60 * 1000) out.push(t);
       else out[out.length - 1] = t;
     }
-    if (mobile && out.length > 6) {
+    if (compact && out.length > 5) {
       const mid = out.slice(1, -1);
       const kept = [out[0]];
-      const take = 4;
+      const take = 3;
       for (let i = 1; i <= take && mid.length; i++) {
         const idx = Math.round(i * mid.length / (take + 1)) - 1;
         const v = mid[Math.max(0, Math.min(mid.length - 1, idx))];
         if (v != null && kept.indexOf(v) < 0) kept.push(v);
       }
       kept.push(out[out.length - 1]);
-      return kept.sort((a, b) => a - b).slice(0, 6);
+      return kept.sort((a, b) => a - b).slice(0, 5);
     }
     return out;
   }
@@ -511,8 +515,8 @@
     const up = last != null && (prev != null ? last >= prev : (hlPts[0] && last >= hlPts[0].y));
     const color = up ? "rgba(61,214,140,1)" : "rgba(255,90,90,1)";
     const fill = up ? "rgba(61,214,140,0.12)" : "rgba(255,90,90,0.12)";
-    const mobile = window.matchMedia("(max-width: 720px)").matches;
-    const ticks = buildTimeTicks(minX, maxX, mobile);
+    const compact = isCompactView();
+    const ticks = buildTimeTicks(minX, maxX, compact);
     const tickLabels = {};
     ticks.forEach((ms, i) => {
       const p = zoneParts(ms, TZ);
@@ -521,7 +525,7 @@
       tickLabels[ms] = hmStockholm(ms, crossed);
     });
     // Round key to the current minute so we do not rebuild the Chart every poll
-    const key = [Math.floor(minX / 60000), Math.floor(maxX / 60000), mobile, ticks.length, yPts.length > 0 ? 1 : 0].join(":");
+    const key = [Math.floor(minX / 60000), Math.floor(maxX / 60000), compact ? 1 : 0, ticks.length, yPts.length > 0 ? 1 : 0].join(":");
     const caption = document.getElementById("intraday-caption");
     if (caption) {
       caption.textContent = "Hyperliquid xyz:SPCX, 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session. Shaded bands are U.S. pre / regular / after-hours sessions.";
@@ -535,7 +539,7 @@
       fill: true,
       borderWidth: 1.35,
       pointRadius: 0,
-      pointHitRadius: 6,
+      pointHitRadius: compact ? 18 : 8,
       tension: 0.15,
       order: 1,
     }];
@@ -549,7 +553,7 @@
         borderWidth: 1.1,
         borderDash: [5, 3],
         pointRadius: 0,
-        pointHitRadius: 4,
+        pointHitRadius: compact ? 14 : 4,
         tension: 0.05,
         order: 2,
       });
@@ -560,13 +564,17 @@
       options: {
         responsive: true, maintainAspectRatio: false, animation: false,
         parsing: false,
+        interaction: { mode: "index", intersect: false, axis: "x" },
         plugins: {
           legend: {
             display: yPts.length > 0,
-            labels: { color: "rgba(240,240,250,0.6)", font: { size: 10, family: "Barlow, sans-serif" }, boxWidth: 12, padding: 8 },
+            labels: { color: "rgba(240,240,250,0.6)", font: { size: compact ? 11 : 10, family: "Barlow, sans-serif" }, boxWidth: 12, padding: 8 },
           },
           tooltip: {
             mode: "index", intersect: false,
+            titleFont: { size: 13, family: "Barlow, sans-serif" },
+            bodyFont: { size: 13, family: "Barlow, sans-serif" },
+            padding: 10,
             callbacks: {
               title: (items) => items[0] ? formatIn(items[0].parsed.x, TZ, true) : "",
               label: (i) => " " + (i.dataset.label || "") + "  " + money(i.parsed.y),
@@ -581,7 +589,7 @@
             afterBuildTicks(axis) { axis.ticks = ticks.map((v) => ({ value: v })); },
             ticks: {
               color: "rgba(240,240,250,0.55)",
-              font: { size: 10, family: "Barlow, sans-serif" },
+              font: { size: compact ? 11 : 10, family: "Barlow, sans-serif" },
               maxRotation: 0, minRotation: 0, autoSkip: false,
               callback(val) { return tickLabels[val] || (Math.abs(val - maxX) < 2000 ? hmStockholm(val, false) : ""); },
             },
@@ -589,7 +597,7 @@
             border: { display: false },
           },
           y: {
-            ticks: { color: "rgba(240,240,250,0.45)", font: { size: 10 }, callback: (v) => "$" + v },
+            ticks: { color: "rgba(240,240,250,0.45)", font: { size: compact ? 11 : 10 }, callback: (v) => "$" + v, maxTicksLimit: compact ? 6 : 8 },
             grid: { color: "rgba(240,240,250,0.08)" },
             border: { display: false },
           },
@@ -729,7 +737,8 @@
   }
 
   function startSocket() {
-    let ws, pingTimer, retry = 0;
+    let ws, pingTimer, retry = 0, startedVis = false;
+    function alive() { return ws && ws.readyState === WebSocket.OPEN; }
     function connect() {
       try { ws = new WebSocket(HL_WS); }
       catch (e) { schedule(); return; }
@@ -766,7 +775,28 @@
       const wait = Math.min(15000, 1500 * Math.pow(1.6, retry++));
       setTimeout(connect, wait);
     }
+    function ensureOpen() {
+      if (alive()) {
+        try { ws.send(JSON.stringify({ method: "ping" })); } catch (e) { try { ws.close(); } catch (e2) { /* ignore */ } }
+        return;
+      }
+      retry = 0;
+      connect();
+    }
+    function onForeground() {
+      ensureOpen();
+      fetchHL().then(applyHl).catch((e) => console.warn("Hyperliquid poll failed", e));
+      refreshCandles().then(() => render(live.quote, live.hl)).catch((e) => console.warn("HL candles failed", e));
+    }
     connect();
+    if (!startedVis) {
+      startedVis = true;
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") onForeground();
+      });
+      window.addEventListener("pageshow", (ev) => { if (ev.persisted) onForeground(); });
+      window.addEventListener("online", onForeground);
+    }
   }
 
   let started = false;

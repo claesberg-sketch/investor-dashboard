@@ -237,10 +237,25 @@
   async function boot() {
     const toggle = document.getElementById("menu-toggle");
     const nav = document.getElementById("site-nav");
-    if (toggle && nav) toggle.addEventListener("click", () => {
-      const open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
+    if (toggle && nav) {
+      const setOpen = (open) => {
+        nav.classList.toggle("open", open);
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      };
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        setOpen(!nav.classList.contains("open"));
+      });
+      nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+      document.addEventListener("click", (e) => {
+        if (!nav.classList.contains("open")) return;
+        if (nav.contains(e.target) || toggle.contains(e.target)) return;
+        setOpen(false);
+      });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
+      window.addEventListener("resize", () => { if (window.innerWidth > 900) setOpen(false); });
+    }
 
     const [companies, company, quote, news, xposts, forecast, kpis, calendar, unlocks] = await Promise.all([
       loadJSON(DATA + "/companies.json"),

@@ -125,11 +125,12 @@
       },
       options: {
         responsive: true, maintainAspectRatio: false,
-        plugins: { legend: { labels: { color: "rgba(240,240,250,0.8)", boxWidth: 12 } },
-          tooltip: { callbacks: { label: (i) => " " + i.dataset.label + ": $" + i.parsed.y.toFixed(1) + "B" } } },
+        interaction: { mode: "index", intersect: false },
+        plugins: { legend: { labels: { color: "rgba(240,240,250,0.8)", boxWidth: 12, font: { size: 11 }, padding: 8 } },
+          tooltip: { titleFont: { size: 13 }, bodyFont: { size: 13 }, padding: 10, callbacks: { label: (i) => " " + i.dataset.label + ": $" + i.parsed.y.toFixed(1) + "B" } } },
         scales: {
-          x: { stacked: true, ticks: { color: "rgba(240,240,250,0.6)" }, grid: { display: false }, border: { color: "rgba(240,240,250,0.15)" } },
-          y: { stacked: true, ticks: { color: "rgba(240,240,250,0.6)", callback: (v) => "$" + v + "B" }, grid: { color: "rgba(240,240,250,0.08)" }, border: { display: false } },
+          x: { stacked: true, ticks: { color: "rgba(240,240,250,0.6)", font: { size: 11 }, autoSkip: true, maxRotation: 40, maxTicksLimit: 6 }, grid: { display: false }, border: { color: "rgba(240,240,250,0.15)" } },
+          y: { stacked: true, ticks: { color: "rgba(240,240,250,0.6)", font: { size: 11 }, callback: (v) => "$" + v + "B" }, grid: { color: "rgba(240,240,250,0.08)" }, border: { display: false } },
         },
       },
     };

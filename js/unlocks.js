@@ -83,8 +83,10 @@
       },
       options: {
         responsive: true, maintainAspectRatio: false, animation: false,
+        interaction: { mode: "index", intersect: false },
         plugins: {
-          legend: { display: true, labels: { color: "rgba(240,240,250,0.65)", font: { size: 10, family: "Barlow, sans-serif" }, boxWidth: 10 } },
+          legend: { display: true, labels: { color: "rgba(240,240,250,0.65)", font: { size: 11, family: "Barlow, sans-serif" }, boxWidth: 10, padding: 8 } },
+          tooltip: { titleFont: { size: 13 }, bodyFont: { size: 13 }, padding: 10 },
           tooltip: {
             callbacks: {
               label(ctx) {
@@ -99,7 +101,7 @@
         },
         scales: {
           x: {
-            ticks: { color: "rgba(240,240,250,0.5)", font: { size: 9, family: "Barlow, sans-serif" }, maxRotation: 70, minRotation: 50, autoSkip: false },
+            ticks: { color: "rgba(240,240,250,0.5)", font: { size: 10, family: "Barlow, sans-serif" }, maxRotation: 60, minRotation: 40, autoSkip: true, maxTicksLimit: 6 },
             grid: { display: false },
             border: { display: false },
           },

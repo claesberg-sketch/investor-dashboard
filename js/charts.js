@@ -1,10 +1,13 @@
 (function (global) {
+  const compact = () => window.matchMedia("(max-width: 900px), (max-height: 500px)").matches;
   const axis = {
-    ticks: { color: "rgba(240,240,250,0.6)", font: { size: 11 } },
+    ticks: { color: "rgba(240,240,250,0.6)", font: { size: 11 }, autoSkip: true, maxRotation: 40, maxTicksLimit: 6 },
     grid: { color: "rgba(240,240,250,0.08)" },
     border: { color: "rgba(240,240,250,0.15)" },
   };
-  const legend = { labels: { color: "rgba(240,240,250,0.85)", boxWidth: 12, font: { size: 11 } } };
+  const legend = { labels: { color: "rgba(240,240,250,0.85)", boxWidth: 12, font: { size: 11 }, padding: 8 } };
+  const tip = { titleFont: { size: 13 }, bodyFont: { size: 13 }, padding: 10 };
+  const interact = { mode: "index", intersect: false };
   const pal = {
     space: "rgba(240,240,250,0.35)",
     conn: "rgba(240,240,250,0.65)",
@@ -44,7 +47,7 @@
         { label: "Connectivity", data: conn, backgroundColor: pal.conn, stack: "r" },
         { label: "SI / AI", data: si, backgroundColor: pal.si, stack: "r" },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { stacked: true, ...axis, grid: { display: false } }, y: { stacked: true, ...axis } } },
     });
 
@@ -54,7 +57,7 @@
         { label: "Consumer subs (M)", data: q.map((x) => x.starlinkConsumerSubsM ?? null), yAxisID: "y", borderColor: pal.line, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 3 },
         { label: "Stated ARPU ($)", data: q.map((x) => x.starlinkConsumerArpu ?? null), yAxisID: "y2", borderColor: pal.line2, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 3, borderDash: [4, 4] },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, title: { display: true, text: "Subs (M)", color: "rgba(240,240,250,0.5)" } }, y2: { ...axis, position: "right", grid: { drawOnChartArea: false }, title: { display: true, text: "ARPU $", color: "rgba(240,240,250,0.5)" } } } },
     });
 
@@ -64,14 +67,14 @@
         { label: "Consumer", data: q.map((x) => x.consumerRevenue ?? null), backgroundColor: pal.conn, stack: "c" },
         { label: "Enterprise & government", data: q.map((x) => x.enterpriseGovRevenue ?? null), backgroundColor: pal.si, stack: "c" },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { stacked: true, ...axis, grid: { display: false } }, y: { stacked: true, ...axis } } },
     });
 
     new Chart(document.getElementById("c-gw"), {
       type: "line",
       data: { labels, datasets: [{ label: "Nameplate GW", data: q.map((x) => x.nameplateComputeGW ?? null), borderColor: pal.line, backgroundColor: "rgba(240,240,250,0.1)", fill: true, tension: 0.15, pointRadius: 3, spanGaps: false }] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
         scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, beginAtZero: true } } },
     });
     const gwNote = document.querySelector("#c-gw").closest(".chart-card").querySelector(".source");
@@ -86,7 +89,7 @@
         { label: "Adj. EBITDA", data: q.map((x) => x.adjustedEbitda ?? null), backgroundColor: pal.conn },
         { label: "Net income", data: q.map((x) => x.netIncome ?? null), backgroundColor: pal.si },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { ...axis, grid: { display: false } }, y: { ...axis } } },
     });
 
@@ -96,7 +99,7 @@
         { label: "Total capex", data: q.map((x) => x.capex ?? null), backgroundColor: pal.muted },
         { label: "SI capex", data: q.map((x) => (x.segmentCapex && x.segmentCapex.si) ?? null), backgroundColor: pal.si },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { ...axis, grid: { display: false } }, y: { ...axis } } },
     });
 
@@ -122,7 +125,7 @@
         { label: "Company operational (approx.)", data: companyOp, backgroundColor: pal.conn },
         { label: "McDowell in orbit", data: mcdowell, backgroundColor: pal.si },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, beginAtZero: true } } },
     });
     const satSrc = document.querySelector("#c-sats").closest(".chart-card").querySelector(".source");
@@ -134,7 +137,7 @@
     new Chart(document.getElementById("c-backlog"), {
       type: "bar",
       data: { labels, datasets: [{ label: "Backlog ($M)", data: q.map((x) => x.backlog ?? null), backgroundColor: pal.si }] },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } },
+      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
         scales: { x: { ...axis, grid: { display: false } }, y: { ...axis } } },
     });
   }
