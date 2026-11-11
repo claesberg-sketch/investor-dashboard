@@ -55,6 +55,8 @@ Run a refresh locally:
 python3 scripts/refresh.py
 ```
 
+**GitHub Actions note:** The scheduled workflow lives in `scripts/github-actions-refresh.yml` (copy it to `.github/workflows/refresh.yml`). It could not be committed under `.github/workflows/` from this environment because the logged-in `gh` token has `repo` scope but not the `workflow` scope GitHub requires to create workflow files. Until that file is added with a token that has `workflow` scope, Pages is served from the `main` branch and Yahoo/news JSON update when someone runs `scripts/refresh.py` and pushes. Hyperliquid prices still update live in the browser.
+
 ## Price session rules
 
 U.S. Eastern Time:
