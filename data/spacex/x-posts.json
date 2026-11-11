@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T09:50:55+01:00",
+  "updated": "2026-11-11T19:08:58+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 11 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120565589945290827",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T17:13:29.000Z",
+      "text": "@XFreeze Much appreciated, Mississippi ❤️",
+      "url": "https://x.com/elonmusk/status/2120565589945290827",
+      "metrics": {
+        "likes": 2838,
+        "reposts": 142,
+        "replies": 170,
+        "quotes": 11,
+        "bookmarks": 24,
+        "impressions": 54309
+      },
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true,
+      "summary": "Musk replies “Much appreciated, Mississippi” to a post reporting that on 10 November Mississippi’s Environmental Quality Permit Board voted to uphold the air permit for SpaceXSI’s permanent Southaven power plant after two days of testimony. That project is described as about 1.2 GW from 41 permanent natural gas turbines to support Super Intelligence compute, including Colossus II."
+    },
     {
       "id": "2120432718639145404",
       "username": "elonmusk",
@@ -361,6 +382,27 @@
       ],
       "highlight": true,
       "summary": "Musk says the team has dumped JAX/SGLang and rewritten the reinforcement-learning and inference stack from scratch in C/C++, that pre-training is done, and that Grok 4.8 is now in RL with evals starting. This is a concrete update on the model-training schedule after a time-consuming rewrite."
+    },
+    {
+      "id": "2120029978066813318",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-10T05:45:09.000Z",
+      "text": "Starlinkは、日本の最も遠隔地や地方にある@sanu2ndhome の別荘にも、高速で安定したインターネットを届けます。滞在中も、途切れない動画視聴やビデオ通話を快適にお楽しみいただけます。 https://t.co/Rhqv2tXMxD",
+      "url": "https://x.com/Starlink/status/2120029978066813318",
+      "metrics": {
+        "likes": 866,
+        "reposts": 124,
+        "replies": 52,
+        "quotes": 8,
+        "bookmarks": 43,
+        "impressions": 98233
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "Starlink says it will bring high-speed, stable internet to SANU (@sanu2ndhome) vacation homes in Japan’s most remote and rural areas, so guests can stream video and make video calls without dropping out. The quoted SANU post says the partnership will add satellite broadband to its new SHELL buildings in places where terrestrial networks barely reach."
     },
     {
       "id": "2119909709197279420",
