@@ -125,11 +125,62 @@
     chart = new Chart(el, cfg);
   }
 
+  function todayStockholm() {
+    return new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Stockholm", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  }
+
+  function formatUnlockDay(iso) {
+    if (!iso) return "";
+    // Date-only unlock days; noon UTC keeps the same calendar date in CET/CEST.
+    const d = new Date(iso.length === 10 ? iso + "T12:00:00Z" : iso);
+    if (Number.isNaN(d.getTime())) return iso;
+    return new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Stockholm", day: "numeric", month: "short", year: "numeric" }).format(d);
+  }
+
+  function shortUndated(e) {
+    const label = e && e.dateLabel ? e.dateLabel : "Date not set";
+    return label
+      .replace(/^Second full trading day after /, "After ")
+      .replace(/ \(date not set; not before [^)]+\)/, "")
+      .replace(/ \(date not set[^)]*\)/, "");
+  }
+
+  function compactShares(e) {
+    if (!e || e.shares == null) return (e && e.sharesLabel) || "";
+    const n = fmtShares(e.shares) + " shares";
+    const label = e.sharesLabel || "";
+    if (/^up to/i.test(label) || /\(up to\)/i.test(label)) return "up to " + n;
+    if (/^about/i.test(label) || e.sharesKind === "estimate") return "about " + n;
+    return n;
+  }
+
+  /**
+   * Nearest future unlock relative to today in Europe/Stockholm.
+   * Skips released / did-not-trigger / already-past events. Prefers a dated
+   * upcoming event; only falls back to an undated one (sorted by dateSort
+   * “not before”) when no fixed date remains.
+   */
   function nearestUpcoming(d) {
-    const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Stockholm", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
-    const up = (d.events || []).filter((e) => e.status === "upcoming" && e.date && e.date >= today)
+    const today = todayStockholm();
+    const events = (d && d.events) || [];
+    const dated = events.filter((e) => e.status === "upcoming" && e.date && e.date >= today)
       .sort((a, b) => a.date.localeCompare(b.date));
-    return up[0] || (d.events || []).find((e) => e.nearest) || null;
+    if (dated[0]) return dated[0];
+    const undated = events.filter((e) => e.status === "upcoming" && !e.date)
+      .sort((a, b) => (a.dateSort || "9999-99-99").localeCompare(b.dateSort || "9999-99-99"));
+    return undated[0] || null;
+  }
+
+  function overviewStat(d) {
+    const ev = nearestUpcoming(d);
+    if (!ev) return { k: "Next share unlock", v: "—", s: "" };
+    const dateBit = ev.date ? formatUnlockDay(ev.date) : shortUndated(ev);
+    const shareBit = compactShares(ev);
+    const parts = [];
+    if (shareBit) parts.push(shareBit);
+    if (ev.shares != null && d && d.sharesOutstanding) parts.push(pct(ev.shares, d.sharesOutstanding) + " of outstanding");
+    if (!ev.date && ev.dateSort) parts.push("not before " + formatUnlockDay(ev.dateSort));
+    return { k: "Next share unlock", v: dateBit || "Date not set", s: parts.join(" · ") };
   }
 
   function renderCallout(d, price) {
@@ -222,5 +273,5 @@
     // Chart tooltips use price; no need to rebuild axes every 5s.
   }
 
-  global.SPCXUnlocks = { mount, updatePrice };
+  global.SPCXUnlocks = { mount, updatePrice, nearestUpcoming, overviewStat };
 })(window);

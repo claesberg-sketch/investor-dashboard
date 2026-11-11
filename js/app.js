@@ -270,6 +270,7 @@
     if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
     renderCalendar(calendar);
     renderValuation(quote, kpis, company, state);
+    if (window.SPCXPrice && SPCXPrice.setUnlocks) SPCXPrice.setUnlocks(unlocks);
     SPCXPrice.startLive(quote, onPrice);
 
     // Re-fetch the Yahoo snapshot file periodically (live Yahoo is CORS-blocked in the browser).

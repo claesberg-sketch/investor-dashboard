@@ -213,7 +213,6 @@ def hyperliquid_spcx():
         "oraclePx": _num(ctx.get("oraclePx")),
         "prevDayPx": _num(ctx.get("prevDayPx")),
         "funding": ctx.get("funding"),
-        "openInterest": _num(ctx.get("openInterest")),
         "dayNtlVlm": _num(ctx.get("dayNtlVlm")),
         "premium": ctx.get("premium"),
         "cors": "access-control-allow-origin: * (browser fetch works)",

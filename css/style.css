@@ -91,6 +91,7 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .stat{background:var(--bg);padding:18px 16px}
 .stat .k{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-50);margin-bottom:6px}
 .stat .v{font-size:1.15rem;letter-spacing:.03em;font-variant-numeric:tabular-nums}
+.stat .tiny{margin-top:6px;overflow-wrap:anywhere}
 
 /* Changed strip */
 .changed{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}

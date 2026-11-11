@@ -165,7 +165,6 @@
       oraclePx: +ctx.oraclePx,
       prevDayPx: +ctx.prevDayPx,
       funding: ctx.funding != null ? +ctx.funding : null,
-      openInterest: +ctx.openInterest,
       dayNtlVlm: +ctx.dayNtlVlm,
       asOf: new Date(),
     };
@@ -189,6 +188,7 @@
 
   let chart = null;
   let chartKey = "";
+  let unlocksData = null;
   let live = {
     quote: null,
     hl: null,
@@ -685,7 +685,9 @@
       { k: "Volume (regular)", v: fmtVol(y.regularMarketVolume) },
       { k: "IPO / first trade", v: "$135.00 · 12 Jun 2026" },
       { k: "Next catalyst", v: "Starship Flight 15 · 13 Nov" },
-      { k: "HL open interest", v: live.hl && live.hl.openInterest != null ? (live.hl.openInterest / 1e3).toFixed(0) + "k contracts" : "—" },
+      (global.SPCXUnlocks && typeof SPCXUnlocks.overviewStat === "function"
+        ? SPCXUnlocks.overviewStat(unlocksData)
+        : { k: "Next share unlock", v: "—", s: "" }),
     ];
     const box = document.getElementById("key-stats");
     if (box) {
@@ -776,7 +778,6 @@
         midPx: quote.hyperliquid.midPx,
         markPx: quote.hyperliquid.markPx,
         prevDayPx: quote.hyperliquid.prevDayPx,
-        openInterest: quote.hyperliquid.openInterest,
         asOf: quote.updated ? new Date(quote.updated) : new Date(),
       };
     }
@@ -809,8 +810,14 @@
     return render(live.quote, live.hl);
   }
 
+  function setUnlocks(payload) {
+    unlocksData = payload || null;
+    if (live.quote || live.hl) return render(live.quote, live.hl);
+    return null;
+  }
+
   global.SPCXPrice = {
     getSession, formatIn, money, compact, fmtVol, chgClass, chgText,
-    fetchHL, tryYahooLive, render, startLive, setQuote, TZ, ET,
+    fetchHL, tryYahooLive, render, startLive, setQuote, setUnlocks, TZ, ET,
   };
 })(window);
