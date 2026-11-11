@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T22:08:00+01:00",
+  "updated": "2026-11-11T23:10:32+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 11 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,48 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120628176275845514",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-11T21:22:11.000Z",
+      "text": "Grok Bot 1.0  is a massive upgrade as they all work together and take initiative automatically $SPCX \n\nGrok Bot team automatically collaborate with each other, take initiative, and continuously improve  \n\nHere's what's NEW:  \n\n1. MULTIPLAYER TEAMMATES  \n• Share Grok Bots with https://t.co/jOl1ZtEXgU",
+      "url": "https://x.com/nextbigfuture/status/2120628176275845514",
+      "metrics": {
+        "likes": 22,
+        "reposts": 2,
+        "replies": 1,
+        "quotes": 1,
+        "bookmarks": 5,
+        "impressions": 1446
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Brian Wang calls Grok Bot 1.0 a massive upgrade for $SPCX, saying the bots now work together, take initiative automatically and continuously improve, quoting an XFreeze post on SpaceXSI’s official 1.0 launch. He lists new multiplayer teammate features (sharing bots, Slack and Microsoft Teams, and video meetings), proactive monitoring and follow-up, team-wide learning, and stronger browser, document and integration tools, arguing the biggest shift is that bots no longer need every task assigned."
+    },
+    {
+      "id": "2120626361408831661",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-11T21:14:58.000Z",
+      "text": "SpaceX Colossus 2 AI data center campus has bought new property in the southwest. It is known as Project Mitchell. SpaceX also is getting approval for more power.\n\nThis is likely a new AI data center beyond the 5 already being built or near completion.\n\nSpaceX has started buying https://t.co/bhflZtevA7",
+      "url": "https://x.com/nextbigfuture/status/2120626361408831661",
+      "metrics": {
+        "likes": 99,
+        "reposts": 18,
+        "replies": 5,
+        "quotes": 0,
+        "bookmarks": 6,
+        "impressions": 2668
+      },
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true,
+      "summary": "Brian Wang says SpaceX’s Colossus 2 AI data-center campus has bought new southwest property known as Project Mitchell and is getting approval for more power, which he sees as likely a new AI data center beyond the five already being built or near completion. An accompanying map labels Project Mitchell on the southwest side of a Colossus 2 campus that includes Macrohard buildings, and he adds that SpaceX has started buying nearby southeast homes, which he says would likely reduce power-plant noise issues, after SpaceXSI’s 1.2 GW Mississippi permit win."
+    },
     {
       "id": "2120622830585024813",
       "username": "nextbigfuture",
