@@ -1,108 +1,124 @@
 {
-  "updated": "2026-11-11T08:50:00+01:00",
+  "updated": "2026-11-11T09:50:00+01:00",
   "source": "data.sec.gov submissions CIK 0001181412, retrieved 11 Nov 2026. Re-fetched in GitHub Actions when the SEC allows the runner User-Agent.",
   "items": [
     {
       "id": "filing-0001628280-26-071689",
       "type": "filing",
       "date": "2026-11-06",
-      "title": "8-K \u2014 8-K",
+      "title": "8-K — Item 5.02, departure of a director or officer",
       "source": "SEC EDGAR",
       "form": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
       "topics": [
         "Filings"
-      ]
+      ],
+      "datetime": "2026-11-06T21:15:01Z",
+      "timeSource": "EDGAR filing index: accepted 2026-11-06 16:15:01 ET"
     },
     {
       "id": "filing-0001104659-26-118614",
       "type": "filing",
       "date": "2026-10-26",
-      "title": "8-K \u2014 FORM 8-K",
+      "title": "8-K — Item 8.01, Apollo GPU finance-lease commitment",
       "source": "SEC EDGAR",
       "form": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
       "topics": [
         "Filings"
-      ]
+      ],
+      "datetime": "2026-10-26T12:00:18Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-26 08:00:18 ET"
     },
     {
       "id": "filing-0001628280-26-066903",
       "type": "filing",
       "date": "2026-10-22",
-      "title": "S-8 \u2014 Cursor reoffer prospectus / S-8",
+      "title": "S-8 — Cursor reoffer prospectus / S-8",
       "source": "SEC EDGAR",
       "form": "S-8",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066903/spacex-cursorformsx8.htm",
       "topics": [
         "Filings",
         "Cursor"
-      ]
+      ],
+      "datetime": "2026-10-22T20:24:30Z",
+      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20261022162430 (16:24:30 ET)"
     },
     {
       "id": "filing-0001628280-26-066880",
       "type": "filing",
       "date": "2026-10-22",
-      "title": "10-Q \u2014 Quarter ended September 30, 2026",
+      "title": "10-Q — Quarter ended September 30, 2026",
       "source": "SEC EDGAR",
       "form": "10-Q",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
       "topics": [
         "Filings",
         "Earnings"
-      ]
+      ],
+      "datetime": "2026-10-22T20:03:05Z",
+      "timeSource": "EDGAR header 20261022160305 (16:03:05 ET)"
     },
     {
       "id": "filing-0001628280-26-066482",
       "type": "filing",
       "date": "2026-10-20",
-      "title": "8-K \u2014 Q3 2026 earnings release",
+      "title": "8-K — Q3 2026 earnings release",
       "source": "SEC EDGAR",
       "form": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
       "topics": [
         "Filings",
         "Earnings"
-      ]
+      ],
+      "datetime": "2026-10-20T20:00:51Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-20 16:00:51 ET"
     },
     {
       "id": "filing-0001628280-26-056945",
       "type": "filing",
       "date": "2026-08-14",
-      "title": "8-K \u2014 Cursor (Anysphere) acquisition",
+      "title": "8-K — Cursor (Anysphere) acquisition",
       "source": "SEC EDGAR",
       "form": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
       "topics": [
         "Filings",
         "Cursor"
-      ]
+      ],
+      "datetime": "2026-08-14T12:23:02Z",
+      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20260814082302 (08:23:02 ET)"
     },
     {
       "id": "filing-0001628280-26-052535",
       "type": "filing",
       "date": "2026-08-04",
-      "title": "10-Q \u2014 Quarter ended June 30, 2026",
+      "title": "10-Q — Quarter ended June 30, 2026",
       "source": "SEC EDGAR",
       "form": "10-Q",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
       "topics": [
         "Filings",
         "Earnings"
-      ]
+      ],
+      "datetime": "2026-08-04T20:05:00Z",
+      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:05 ET (minute precision)"
     },
     {
       "id": "filing-0001628280-26-052515",
       "type": "filing",
       "date": "2026-08-04",
-      "title": "8-K \u2014 Q2 2026 earnings release",
+      "title": "8-K — Q2 2026 earnings release",
       "source": "SEC EDGAR",
       "form": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm",
       "topics": [
         "Filings",
         "Earnings"
-      ]
+      ],
+      "datetime": "2026-08-04T20:01:00Z",
+      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:01 ET (minute precision)"
     }
   ]
 }

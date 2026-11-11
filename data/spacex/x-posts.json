@@ -1,31 +1,37 @@
 {
-  "updated": "2026-11-11T08:50:00+01:00",
+  "updated": "2026-11-11T09:50:55+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X public API, seeded once from the dashboard author's X connector on 11 Nov 2026. GitHub Actions cannot call that connector; this file is a snapshot. Official timelines: https://x.com/SpaceX, https://x.com/elonmusk, https://x.com/Starlink, https://x.com/Gwynne_Shotwell, https://x.com/SpaceXSI, https://x.com/nextbigfuture",
+  "source": "X API public reads (get_users_posts) on 11 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
-      "name": "Elon Musk"
+      "name": "Elon Musk",
+      "id": "44196397"
     },
     {
       "username": "SpaceX",
-      "name": "SpaceX"
+      "name": "SpaceX",
+      "id": "34743251"
     },
     {
       "username": "Starlink",
-      "name": "Starlink"
+      "name": "Starlink",
+      "id": "1330170106501079041"
     },
     {
       "username": "Gwynne_Shotwell",
-      "name": "Gwynne Shotwell"
+      "name": "Gwynne Shotwell",
+      "id": "1188971165424865280"
     },
     {
       "username": "SpaceXSI",
-      "name": "SpaceX Super Intelligence"
+      "name": "SpaceX Super Intelligence",
+      "id": "1661523610111193088"
     },
     {
       "username": "nextbigfuture",
-      "name": "Brian Wang"
+      "name": "Brian Wang",
+      "id": "14694490"
     }
   ],
   "missing": [
@@ -35,20 +41,41 @@
   ],
   "posts": [
     {
+      "id": "2120432718639145404",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T08:25:30.000Z",
+      "text": "Portable, lightning-fast Internet that works anywhere on Earth where Starlink is legal! https://t.co/dBf3iHkEGv",
+      "url": "https://x.com/elonmusk/status/2120432718639145404",
+      "metrics": {
+        "likes": 1998,
+        "reposts": 276,
+        "replies": 531,
+        "quotes": 43,
+        "bookmarks": 101,
+        "impressions": 808969
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
       "id": "2120373176060571883",
       "username": "nextbigfuture",
       "name": "Brian Wang",
       "created_at": "2026-11-11T04:28:54.000Z",
-      "text": "$SPCX gets equipment to make 100 gigawatt of solar per year",
+      "text": "$SPCX gets equipment to make 100 gigawatt of solar per year https://t.co/Ek90pSdLrg",
       "url": "https://x.com/nextbigfuture/status/2120373176060571883",
       "metrics": {
-        "likes": 107,
+        "likes": 124,
         "reposts": 4,
-        "replies": 6,
-        "impressions": 2577
+        "replies": 9,
+        "quotes": 1,
+        "bookmarks": 6,
+        "impressions": 2861
       },
       "topics": [
-        "Starmind",
         "AI compute"
       ],
       "highlight": true
@@ -58,13 +85,15 @@
       "username": "nextbigfuture",
       "name": "Brian Wang",
       "created_at": "2026-11-11T02:46:32.000Z",
-      "text": "Elon musk reposted my video about SpaceX turning Dumb radio cell tower into a smart edge inference like Akamai for AI.  Elon had said 1000X more communication in the future will be AI to AI. Agents talking to Agents. This will require the network and starlink to be optimized for",
+      "text": "Elon musk reposted my video about SpaceX turning Dumb radio cell tower into a smart edge inference like Akamai for AI.  Elon had said 1000X more communication in the future will be AI to AI. Agents talking to Agents. This will require the network and starlink to be optimized for https://t.co/MR3LRbaaFt",
       "url": "https://x.com/nextbigfuture/status/2120347414901252254",
       "metrics": {
-        "likes": 236,
-        "reposts": 14,
+        "likes": 247,
+        "reposts": 15,
         "replies": 11,
-        "impressions": 5191
+        "quotes": 0,
+        "bookmarks": 25,
+        "impressions": 5471
       },
       "topics": [
         "Starlink",
@@ -77,18 +106,19 @@
       "username": "elonmusk",
       "name": "Elon Musk",
       "created_at": "2026-11-10T23:47:57.000Z",
-      "text": "SpaceX has ordered 100 GW/year of HJT solar manufacturing equipment from Singulus in Germany. \n\nThis is for Starmind to create a sentient sun.",
+      "text": "SpaceX has ordered 100 GW/year of HJT solar manufacturing equipment from Singulus in Germany. \n\nThis is for Starmind to create a sentient sun. https://t.co/umtNyF9M7g",
       "url": "https://x.com/elonmusk/status/2120302471210033426",
       "metrics": {
-        "likes": 27100,
-        "reposts": 2672,
-        "replies": 2372,
-        "impressions": 2274598
+        "likes": 28453,
+        "reposts": 2792,
+        "replies": 2478,
+        "quotes": 432,
+        "bookmarks": 1736,
+        "impressions": 2429143
       },
       "topics": [
-        "AI compute",
         "Starmind",
-        "Orbital AI"
+        "AI compute"
       ],
       "highlight": true
     },
@@ -97,18 +127,20 @@
       "username": "nextbigfuture",
       "name": "Brian Wang",
       "created_at": "2026-11-10T19:14:45.000Z",
-      "text": "SpaceX is making moves to become the first AI carrier $SPCX \n\n• Current cell towers are still mostly “dumb” radios. The Qualcomm deal is about making them AI-native.\n• Edge inference at the tower, like an updated Akamai for AI\n• Starlink Direct-to-Cell and V3 satellites",
+      "text": "SpaceX is making moves to become the first AI carrier $SPCX \n\n• Current cell towers are still mostly “dumb” radios. The Qualcomm deal is about making them AI-native.\n• Edge inference at the tower, like an updated Akamai for AI\n• Starlink Direct-to-Cell and V3 satellites https://t.co/BLMvRRKvFW",
       "url": "https://x.com/nextbigfuture/status/2120233719491612940",
       "metrics": {
-        "likes": 2432,
-        "reposts": 370,
+        "likes": 2475,
+        "reposts": 382,
         "replies": 116,
-        "impressions": 386183
+        "quotes": 29,
+        "bookmarks": 300,
+        "impressions": 393323
       },
       "topics": [
         "Starlink",
-        "Direct-to-cell",
-        "AI compute"
+        "AI compute",
+        "Direct-to-cell"
       ],
       "highlight": true
     },
@@ -117,18 +149,19 @@
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-11-10T19:04:12.000Z",
-      "text": "We have signed a major supply contract with SINGULUS to create a durable option for advanced solar cell manufacturing to support more than 100 GW of equipment as we accelerate the production of our Starmind satellites in Bastrop, Texas →",
+      "text": "We have signed a major supply contract with SINGULUS to create a durable option for advanced solar cell manufacturing to support more than 100 GW of equipment as we accelerate the production of our Starmind satellites in Bastrop, Texas → https://t.co/a9bXuUK6Ti",
       "url": "https://x.com/SpaceX/status/2120231065394590007",
       "metrics": {
-        "likes": 10474,
-        "reposts": 1057,
-        "replies": 346,
-        "impressions": 2063012
+        "likes": 10744,
+        "reposts": 1090,
+        "replies": 357,
+        "quotes": 194,
+        "bookmarks": 722,
+        "impressions": 2185752
       },
       "topics": [
         "Starmind",
-        "AI compute",
-        "Orbital AI"
+        "AI compute"
       ],
       "highlight": true
     },
@@ -137,16 +170,18 @@
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-11-10T18:21:23.000Z",
-      "text": "Super Heavy moved to the launch pad at Starbase. Booster 22 is the first Super Heavy V3 booster planned to return to the launch site for catch and was used for final catch testing upon arrival, including a suspended squeeze test at catch height",
+      "text": "Super Heavy moved to the launch pad at Starbase. Booster 22 is the first Super Heavy V3 booster planned to return to the launch site for catch and was used for final catch testing upon arrival, including a suspended squeeze test at catch height https://t.co/iYTX1e6DEH",
       "url": "https://x.com/SpaceX/status/2120220290219208884",
       "metrics": {
-        "likes": 12588,
-        "reposts": 1516,
-        "replies": 373,
-        "impressions": 735786
+        "likes": 12829,
+        "reposts": 1546,
+        "replies": 376,
+        "quotes": 230,
+        "bookmarks": 649,
+        "impressions": 764708
       },
       "topics": [
-        "Starship"
+        "Launch"
       ],
       "highlight": true
     },
@@ -155,13 +190,15 @@
       "username": "Starlink",
       "name": "Starlink",
       "created_at": "2026-11-10T17:28:05.000Z",
-      "text": "Introducing Mini 2, the next-generation portable Starlink. Get up to 4.5 hours of connectivity on a single charge with the quick-swap battery, or plug in with USB-C.\n\nWith built-in Wi-Fi, all you need is a clear view of the sky to get online in 60 seconds.\n\nPreorders are now open",
+      "text": "Introducing Mini 2, the next-generation portable Starlink. Get up to 4.5 hours of connectivity on a single charge with the quick-swap battery, or plug in with USB-C.\n\nWith built-in Wi-Fi, all you need is a clear view of the sky to get online in 60 seconds.\n\nPreorders are now open https://t.co/VRTuJZVBnH",
       "url": "https://x.com/Starlink/status/2120206875581186293",
       "metrics": {
-        "likes": 7718,
-        "reposts": 939,
-        "replies": 373,
-        "impressions": 801921
+        "likes": 7982,
+        "reposts": 983,
+        "replies": 401,
+        "quotes": 389,
+        "bookmarks": 1089,
+        "impressions": 1264492
       },
       "topics": [
         "Starlink"
@@ -173,31 +210,35 @@
       "username": "Starlink",
       "name": "Starlink",
       "created_at": "2026-11-10T15:51:56.000Z",
-      "text": "Starlink will deliver fast, reliable internet onboard @flyslate, enabling passengers to stay connected throughout their flight",
+      "text": "Starlink will deliver fast, reliable internet onboard @flyslate, enabling passengers to stay connected throughout their flight 🛰️✈️ https://t.co/xztm4SEr6O",
       "url": "https://x.com/Starlink/status/2120182681229246875",
       "metrics": {
-        "likes": 730,
+        "likes": 738,
         "reposts": 84,
-        "replies": 51,
-        "impressions": 48553
+        "replies": 54,
+        "quotes": 5,
+        "bookmarks": 22,
+        "impressions": 49325
       },
       "topics": [
         "Starlink"
       ],
-      "highlight": false
+      "highlight": true
     },
     {
       "id": "2120154857801937384",
       "username": "nextbigfuture",
       "name": "Brian Wang",
       "created_at": "2026-11-10T14:01:23.000Z",
-      "text": "Spacex has rewritten Grok 4.8. Rewritten in C and C++. It first not resemble grok 4.7. It is improved a lot but more importantly puts grok into an improvement path.",
+      "text": "Spacex has rewritten Grok 4.8. Rewritten in C and C++. It first not resemble grok 4.7. It is improved a lot but more importantly puts grok into an improvement path. https://t.co/8L5csgel12",
       "url": "https://x.com/nextbigfuture/status/2120154857801937384",
       "metrics": {
-        "likes": 61,
+        "likes": 62,
         "reposts": 6,
         "replies": 3,
-        "impressions": 2901
+        "quotes": 0,
+        "bookmarks": 3,
+        "impressions": 2928
       },
       "topics": [
         "Grok"
@@ -212,10 +253,12 @@
       "text": "Turns out that the Starlink software, built for managing the movement of vast amounts of data through space and to the ground, is also very well suited to training super intelligence",
       "url": "https://x.com/elonmusk/status/2120102767624880364",
       "metrics": {
-        "likes": 105822,
-        "reposts": 9120,
-        "replies": 5685,
-        "impressions": 6999817
+        "likes": 106702,
+        "reposts": 9215,
+        "replies": 5731,
+        "quotes": 882,
+        "bookmarks": 3432,
+        "impressions": 7069472
       },
       "topics": [
         "Starlink",
@@ -231,13 +274,34 @@
       "text": "@Dimdv99 @tetsuoai Not as good. Opus 5.5 is a masterpiece.\n\nBut Grok 5 should exceed Opus 5.5 and maybe that happens in 2 or 3 months, with continued acceleration thereafter.",
       "url": "https://x.com/elonmusk/status/2120099798078656909",
       "metrics": {
-        "likes": 9847,
-        "reposts": 563,
-        "replies": 409,
-        "impressions": 1271013
+        "likes": 10021,
+        "reposts": 576,
+        "replies": 412,
+        "quotes": 399,
+        "bookmarks": 952,
+        "impressions": 1310687
       },
       "topics": [
-        "Grok",
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2120098433159880790",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-10T10:17:10.000Z",
+      "text": "@tetsuoai (There’s even some assembly). \n\nOne day, super intelligence will write a better software stack, but that day has not yet come. \n\nThis is tight code.",
+      "url": "https://x.com/elonmusk/status/2120098433159880790",
+      "metrics": {
+        "likes": 3003,
+        "reposts": 164,
+        "replies": 167,
+        "quotes": 20,
+        "bookmarks": 156,
+        "impressions": 407800
+      },
+      "topics": [
         "AI compute"
       ],
       "highlight": true
@@ -250,14 +314,16 @@
       "text": "@tetsuoai At SpaceX, we write our own headers and calculate our own time (includes leap seconds). Not many people will know what this means, but those that do will appreciate it.\n\nThe new Grok AI/SI training and inference stack is derived from incredible of work done by amazing engineers",
       "url": "https://x.com/elonmusk/status/2120097663794483601",
       "metrics": {
-        "likes": 11738,
-        "reposts": 463,
-        "replies": 375,
-        "impressions": 1306468
+        "likes": 11834,
+        "reposts": 467,
+        "replies": 376,
+        "quotes": 83,
+        "bookmarks": 999,
+        "impressions": 1318837
       },
       "topics": [
-        "Grok",
-        "AI compute"
+        "AI compute",
+        "Grok"
       ],
       "highlight": true
     },
@@ -269,13 +335,14 @@
       "text": "@cradrrat We have dumped JAX/SGLang and rewritten the entire RL and inference stack from scratch in C/C++, which took some extra time. \n\nTraining (aka pre-training) is done. Lot of cleanup was needed on the SFT data to get that mostly right. Now, 4.8 is in RL and the evals are starting to",
       "url": "https://x.com/elonmusk/status/2120088070443655190",
       "metrics": {
-        "likes": 27338,
-        "reposts": 1486,
-        "replies": 1581,
-        "impressions": 3462642
+        "likes": 27495,
+        "reposts": 1501,
+        "replies": 1585,
+        "quotes": 973,
+        "bookmarks": 2623,
+        "impressions": 3504929
       },
       "topics": [
-        "Grok",
         "AI compute"
       ],
       "highlight": true
@@ -285,13 +352,15 @@
       "username": "elonmusk",
       "name": "Elon Musk",
       "created_at": "2026-11-09T21:47:15.000Z",
-      "text": "Gwynne is great",
+      "text": "Gwynne is great https://t.co/alTmn90mFX",
       "url": "https://x.com/elonmusk/status/2119909709197279420",
       "metrics": {
-        "likes": 31660,
-        "reposts": 2902,
-        "replies": 1623,
-        "impressions": 2619778
+        "likes": 31775,
+        "reposts": 2919,
+        "replies": 1630,
+        "quotes": 143,
+        "bookmarks": 1047,
+        "impressions": 2628585
       },
       "topics": [
         "Leadership"
@@ -303,35 +372,18 @@
       "username": "Starlink",
       "name": "Starlink",
       "created_at": "2026-11-09T15:46:40.000Z",
-      "text": "Starlink is now delivering fast, reliable internet onboard @FlyingBrussels",
+      "text": "Starlink is now delivering fast, reliable internet onboard @FlyingBrussels 🛰️✈️ https://t.co/Jly6atnBkK",
       "url": "https://x.com/Starlink/status/2119818965266612643",
       "metrics": {
-        "likes": 2439,
-        "reposts": 287,
+        "likes": 2446,
+        "reposts": 289,
         "replies": 169,
-        "impressions": 404916
+        "quotes": 27,
+        "bookmarks": 73,
+        "impressions": 405590
       },
       "topics": [
         "Starlink"
-      ],
-      "highlight": false
-    },
-    {
-      "id": "2119812607117062451",
-      "username": "elonmusk",
-      "name": "Elon Musk",
-      "created_at": "2026-11-09T15:21:24.000Z",
-      "text": "Project Crystal Sun",
-      "url": "https://x.com/elonmusk/status/2119812607117062451",
-      "metrics": {
-        "likes": 51506,
-        "reposts": 5081,
-        "replies": 3325,
-        "impressions": 3087818
-      },
-      "topics": [
-        "Starmind",
-        "AI compute"
       ],
       "highlight": true
     },
@@ -340,16 +392,19 @@
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-11-07T15:44:34.000Z",
-      "text": "Starship is preparing for catch\n \nFlight 15 is targeting to launch as early as Friday, November 13, pending regulatory approval →",
+      "text": "Starship is preparing for catch\n \nFlight 15 is targeting to launch as early as Friday, November 13, pending regulatory approval → https://t.co/K5XRci6bnw https://t.co/WS2xGLjVsx",
       "url": "https://x.com/SpaceX/status/2119093662957060389",
       "metrics": {
-        "likes": 24184,
-        "reposts": 3535,
+        "likes": 24194,
+        "reposts": 3536,
         "replies": 1098,
-        "impressions": 3189989
+        "quotes": 829,
+        "bookmarks": 1851,
+        "impressions": 3191583
       },
       "topics": [
-        "Starship"
+        "Starship",
+        "Launch"
       ],
       "highlight": true
     },
@@ -358,52 +413,200 @@
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-11-07T06:28:46.000Z",
-      "text": "Falcon 9 launches USSF-432 to orbit from pad 4E in California",
+      "text": "Falcon 9 launches USSF-432 to orbit from pad 4E in California https://t.co/aEMgy2wy1f",
       "url": "https://x.com/SpaceX/status/2118953789357281607",
       "metrics": {
-        "likes": 6209,
+        "likes": 6213,
         "reposts": 660,
         "replies": 284,
-        "impressions": 644261
+        "quotes": 96,
+        "bookmarks": 156,
+        "impressions": 644684
       },
       "topics": [
         "Launch"
       ],
-      "highlight": false
+      "highlight": true
+    },
+    {
+      "id": "2118870818021097862",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-07T00:59:04.000Z",
+      "text": "Falcon 9’s first stage lands on the Of Course I Still Love You droneship https://t.co/u5WQblzJlB",
+      "url": "https://x.com/SpaceX/status/2118870818021097862",
+      "metrics": {
+        "likes": 8395,
+        "reposts": 822,
+        "replies": 382,
+        "quotes": 143,
+        "bookmarks": 277,
+        "impressions": 2127748
+      },
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2118868469655433435",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-07T00:49:44.000Z",
+      "text": "Liftoff! https://t.co/v8mmRp00fG",
+      "url": "https://x.com/SpaceX/status/2118868469655433435",
+      "metrics": {
+        "likes": 14233,
+        "reposts": 1267,
+        "replies": 362,
+        "quotes": 145,
+        "bookmarks": 393,
+        "impressions": 1431840
+      },
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2118864998407852102",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-07T00:35:56.000Z",
+      "text": "Watch Falcon 9 launch the USSF-432 mission from pad 4E in California https://t.co/mAKgbT1mxx",
+      "url": "https://x.com/SpaceX/status/2118864998407852102",
+      "metrics": {
+        "likes": 12509,
+        "reposts": 1664,
+        "replies": 660,
+        "quotes": 131,
+        "bookmarks": 816,
+        "impressions": 798013
+      },
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2118857663106707757",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-07T00:06:48.000Z",
+      "text": "All systems are looking good, and weather is favorable for liftoff. Propellant load is about to begin for Falcon 9’s launch of the USSF-432 mission from California → https://t.co/71Loda4Pvi https://t.co/aV6LN3ET3N",
+      "url": "https://x.com/SpaceX/status/2118857663106707757",
+      "metrics": {
+        "likes": 5654,
+        "reposts": 633,
+        "replies": 241,
+        "quotes": 47,
+        "bookmarks": 124,
+        "impressions": 751940
+      },
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2118831607650136119",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-06T22:23:15.000Z",
+      "text": "Imagine. Create. Share.\n\nDream up a Starlink ad with Grok @Imagine. Post on @X for the opportunity to be featured by Starlink during the big game.\n\nLearn more → https://t.co/TlE4llssc4 https://t.co/M9dGRPYyjG",
+      "url": "https://x.com/Starlink/status/2118831607650136119",
+      "metrics": {
+        "likes": 2462,
+        "reposts": 331,
+        "replies": 283,
+        "quotes": 131,
+        "bookmarks": 623,
+        "impressions": 1751237
+      },
+      "topics": [
+        "Starlink",
+        "Grok"
+      ],
+      "highlight": true
     },
     {
       "id": "2118782721581527457",
       "username": "Starlink",
       "name": "Starlink",
       "created_at": "2026-11-06T19:09:00.000Z",
-      "text": "Router 4 is now shipping with Starlink V4 Kits in the United States and Canada on Residential 200 Mbps and Residential Max.\n\nOrder now →",
+      "text": "Router 4 is now shipping with Starlink V4 Kits in the United States and Canada on Residential 200 Mbps and Residential Max.\n\nOrder now → https://t.co/0wmY2kgxkQ https://t.co/Pypc49Slnp",
       "url": "https://x.com/Starlink/status/2118782721581527457",
       "metrics": {
-        "likes": 1392,
+        "likes": 1394,
         "reposts": 176,
         "replies": 172,
-        "impressions": 161354
+        "quotes": 49,
+        "bookmarks": 109,
+        "impressions": 161513
       },
       "topics": [
         "Starlink"
       ],
-      "highlight": false
+      "highlight": true
+    },
+    {
+      "id": "2118721301300818379",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-06T15:04:56.000Z",
+      "text": "Catch up on past episodes on the series page on X https://t.co/sbD611ZHsu\n\nAnd find every episode and past Starship flight tests at https://t.co/3eHlTo1TCc",
+      "url": "https://x.com/SpaceX/status/2118721301300818379",
+      "metrics": {
+        "likes": 1970,
+        "reposts": 165,
+        "replies": 34,
+        "quotes": 5,
+        "bookmarks": 252,
+        "impressions": 271618
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
     },
     {
       "id": "2118719281038770389",
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-11-06T14:56:55.000Z",
-      "text": "More than a dozen flight tests and years of development, with countless hours worked by SpaceX engineers and technicians, all come down to this: the first orbital Starship launch carrying advanced Starlink satellites bound for space. \n\nWatch “Go For Orbit” and experience the",
+      "text": "More than a dozen flight tests and years of development, with countless hours worked by SpaceX engineers and technicians, all come down to this: the first orbital Starship launch carrying advanced Starlink satellites bound for space. \n\nWatch “Go For Orbit” and experience the https://t.co/J2bA23f6a1",
       "url": "https://x.com/SpaceX/status/2118719281038770389",
       "metrics": {
-        "likes": 30899,
-        "reposts": 4220,
+        "likes": 30903,
+        "reposts": 4221,
         "replies": 1217,
-        "impressions": 36589324
+        "quotes": 611,
+        "bookmarks": 6479,
+        "impressions": 36617496
       },
       "topics": [
         "Starship",
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2118509068897972432",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-06T01:01:36.000Z",
+      "text": "Game in-flight with Starlink’s high-speed, low-latency internet 🛰️✈️ https://t.co/zMBizquZ3y",
+      "url": "https://x.com/Starlink/status/2118509068897972432",
+      "metrics": {
+        "likes": 833,
+        "reposts": 123,
+        "replies": 76,
+        "quotes": 22,
+        "bookmarks": 39,
+        "impressions": 101374
+      },
+      "topics": [
         "Starlink"
       ],
       "highlight": true
@@ -413,17 +616,39 @@
       "username": "Starlink",
       "name": "Starlink",
       "created_at": "2026-11-04T13:32:33.000Z",
-      "text": "Starlink Mobile is building the first fully-integrated US nationwide satellite and terrestrial network that will keep people connected on their phones no matter where they are. Our 5G base stations will leverage @Qualcomm chips to accelerate deployment, starting in 2027",
+      "text": "Starlink Mobile is building the first fully-integrated US nationwide satellite and terrestrial network that will keep people connected on their phones no matter where they are. Our 5G base stations will leverage @Qualcomm chips to accelerate deployment, starting in 2027 🛰️📱 https://t.co/xk7TDmzlL7",
       "url": "https://x.com/Starlink/status/2117973275414532165",
       "metrics": {
-        "likes": 16316,
+        "likes": 16314,
         "reposts": 2419,
         "replies": 1000,
-        "impressions": 5227159
+        "quotes": 371,
+        "bookmarks": 1251,
+        "impressions": 5227467
       },
       "topics": [
         "Starlink",
         "Direct-to-cell"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2117713298875654297",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-03T20:19:30.000Z",
+      "text": "Soon, passengers and crew onboard @AirTahitiNui can access Starlink’s high-speed, low-latency internet from gate to gate 🛰️✈️ https://t.co/pctjEzfkOi",
+      "url": "https://x.com/Starlink/status/2117713298875654297",
+      "metrics": {
+        "likes": 776,
+        "reposts": 89,
+        "replies": 66,
+        "quotes": 19,
+        "bookmarks": 22,
+        "impressions": 133116
+      },
+      "topics": [
+        "Starlink"
       ],
       "highlight": true
     },
@@ -432,68 +657,95 @@
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-10-31T05:27:04.000Z",
-      "text": "Falcon 9 launches 27 @Starlink satellites from California",
+      "text": "Falcon 9 launches 27 @Starlink satellites from California https://t.co/1brhyI7HGD",
       "url": "https://x.com/SpaceX/status/2116401549828391177",
       "metrics": {
         "likes": 7663,
-        "reposts": 916,
+        "reposts": 915,
         "replies": 458,
-        "impressions": 1001711
+        "quotes": 167,
+        "bookmarks": 160,
+        "impressions": 1001851
       },
       "topics": [
         "Starlink",
         "Launch"
       ],
-      "highlight": false
+      "highlight": true
+    },
+    {
+      "id": "2116396849443598707",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-31T05:08:24.000Z",
+      "text": "Deployment of 27 @Starlink satellites confirmed",
+      "url": "https://x.com/SpaceX/status/2116396849443598707",
+      "metrics": {
+        "likes": 8541,
+        "reposts": 556,
+        "replies": 266,
+        "quotes": 40,
+        "bookmarks": 123,
+        "impressions": 1973048
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2116378109218009267",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-31T03:53:56.000Z",
+      "text": "Watch Falcon 9 launch 27 @Starlink satellites to orbit from California https://t.co/aLuStYQVeG",
+      "url": "https://x.com/SpaceX/status/2116378109218009267",
+      "metrics": {
+        "likes": 10881,
+        "reposts": 1467,
+        "replies": 666,
+        "quotes": 175,
+        "bookmarks": 595,
+        "impressions": 1372899
+      },
+      "topics": [
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
     },
     {
       "id": "2116266502533902586",
       "username": "Gwynne_Shotwell",
       "name": "Gwynne Shotwell",
       "created_at": "2026-10-30T20:30:27.000Z",
-      "text": "Robert and I are thrilled that our gift of over 2 million shares of SpaceX stock will be distributed to children’s Trump accounts in December!\n\nOur initial gift (shares transferring to escrow as we speak) will go to 11 to 17-year-olds who live in zip codes with median family",
+      "text": "Robert and I are thrilled that our gift of over 2 million shares of SpaceX stock will be distributed to children’s Trump accounts in December!\n \nOur initial gift (shares transferring to escrow as we speak) will go to 11 to 17-year-olds who live in zip codes with median family",
       "url": "https://x.com/Gwynne_Shotwell/status/2116266502533902586",
       "metrics": {
         "likes": 36536,
-        "reposts": 3747,
+        "reposts": 3748,
         "replies": 0,
-        "impressions": 3603610
+        "quotes": 673,
+        "bookmarks": 1650,
+        "impressions": 3603691
       },
-      "topics": [
-        "Leadership"
-      ],
-      "highlight": false
-    },
-    {
-      "id": "2115476295169814978",
-      "username": "SpaceX",
-      "name": "SpaceX",
-      "created_at": "2026-10-28T16:10:27.000Z",
-      "text": "Ship 42 static fires complete. The Starship preparing for Flight 15 performed a full duration, six-engine static fire, and fired a single Raptor engine to simulate a deorbit burn",
-      "url": "https://x.com/SpaceX/status/2115476295169814978",
-      "metrics": {
-        "likes": 22203,
-        "reposts": 2698,
-        "replies": 1009,
-        "impressions": 2947328
-      },
-      "topics": [
-        "Starship"
-      ],
+      "topics": [],
       "highlight": true
     },
     {
-      "id": "2114747196226859108",
+      "id": "2115588901196984822",
       "username": "Starlink",
       "name": "Starlink",
-      "created_at": "2026-10-26T15:53:16.000Z",
-      "text": "Starlink Mobile is now live in Brazil with @vivobr! 50M customers can use apps and messaging in cellular dead zones — with 7M phones already connected. This is the first nationwide service to cover the entire country.\n\nThe next-gen service - Starlink Mobile V2 - will make sure",
-      "url": "https://x.com/Starlink/status/2114747196226859108",
+      "created_at": "2026-10-28T23:37:54.000Z",
+      "text": "Starlink Mobile is providing free connectivity to @orange_es and @Telefonica customers affected by the devastating train collision in Spain. Families, communities, and businesses with compatible LTE phones can stay connected via apps and texts even when cell towers are down 🛰️📱",
+      "url": "https://x.com/Starlink/status/2115588901196984822",
       "metrics": {
-        "likes": 8347,
-        "reposts": 1177,
-        "replies": 461,
-        "impressions": 2536621
+        "likes": 5545,
+        "reposts": 836,
+        "replies": 343,
+        "quotes": 201,
+        "bookmarks": 227,
+        "impressions": 1796310
       },
       "topics": [
         "Starlink",
@@ -502,54 +754,285 @@
       "highlight": true
     },
     {
+      "id": "2115476295169814978",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-28T16:10:27.000Z",
+      "text": "Ship 42 static fires complete. The Starship preparing for Flight 15 performed a full duration, six-engine static fire, and fired a single Raptor engine to simulate a deorbit burn https://t.co/I7Ip89Bmey",
+      "url": "https://x.com/SpaceX/status/2115476295169814978",
+      "metrics": {
+        "likes": 22203,
+        "reposts": 2698,
+        "replies": 1009,
+        "quotes": 592,
+        "bookmarks": 1019,
+        "impressions": 2947469
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2115004840321659292",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-27T08:57:03.000Z",
+      "text": "Falcon 9 launches 27 @Starlink satellites from California https://t.co/zqjiRb3K1m",
+      "url": "https://x.com/SpaceX/status/2115004840321659292",
+      "metrics": {
+        "likes": 6247,
+        "reposts": 736,
+        "replies": 326,
+        "quotes": 134,
+        "bookmarks": 134,
+        "impressions": 1431089
+      },
+      "topics": [
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2114998002129440995",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-27T08:29:53.000Z",
+      "text": "Deployment of 27 @Starlink satellites confirmed",
+      "url": "https://x.com/SpaceX/status/2114998002129440995",
+      "metrics": {
+        "likes": 9306,
+        "reposts": 536,
+        "replies": 264,
+        "quotes": 55,
+        "bookmarks": 107,
+        "impressions": 1711217
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2114979142638960965",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-27T07:14:56.000Z",
+      "text": "Watch Falcon 9 launch 27 @Starlink satellites to orbit from California https://t.co/Uxe26aH965",
+      "url": "https://x.com/SpaceX/status/2114979142638960965",
+      "metrics": {
+        "likes": 10484,
+        "reposts": 1329,
+        "replies": 546,
+        "quotes": 150,
+        "bookmarks": 568,
+        "impressions": 1209938
+      },
+      "topics": [
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2114747196226859108",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-26T15:53:16.000Z",
+      "text": "Starlink Mobile is now live in Brazil with @vivobr! 50M customers can use apps and messaging in cellular dead zones — with 7M phones already connected. This is the first nationwide service to cover the entire country. \n \nThe next-gen service - Starlink Mobile V2 - will make sure https://t.co/M51O9k0WZh",
+      "url": "https://x.com/Starlink/status/2114747196226859108",
+      "metrics": {
+        "likes": 8348,
+        "reposts": 1177,
+        "replies": 461,
+        "quotes": 250,
+        "bookmarks": 561,
+        "impressions": 2536707
+      },
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2114695236459094499",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-26T12:26:48.000Z",
+      "text": "Starlink will deliver fast, reliable connectivity onboard @easyJet, so passengers can work, stream, or stay in touch without interruption 🛰️✈️ https://t.co/Fd0DbCqxIg",
+      "url": "https://x.com/Starlink/status/2114695236459094499",
+      "metrics": {
+        "likes": 1458,
+        "reposts": 173,
+        "replies": 99,
+        "quotes": 32,
+        "bookmarks": 47,
+        "impressions": 135643
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
       "id": "2114444137067844004",
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-10-25T19:49:01.000Z",
-      "text": "Full duration 33-engine static fire for the Super Heavy booster preparing for Flight 15",
+      "text": "Full duration 33-engine static fire for the Super Heavy booster preparing for Flight 15 https://t.co/7eqbC4h0Fh",
       "url": "https://x.com/SpaceX/status/2114444137067844004",
       "metrics": {
         "likes": 20776,
         "reposts": 2625,
         "replies": 855,
-        "impressions": 2770698
+        "quotes": 591,
+        "bookmarks": 1143,
+        "impressions": 2770797
       },
       "topics": [
-        "Starship"
+        "Launch"
       ],
-      "highlight": false
+      "highlight": true
+    },
+    {
+      "id": "2113786051009696177",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-24T00:14:01.000Z",
+      "text": "Falcon 9 launches 27 @Starlink satellites from California https://t.co/OHHSEsn3Qz",
+      "url": "https://x.com/SpaceX/status/2113786051009696177",
+      "metrics": {
+        "likes": 9832,
+        "reposts": 1053,
+        "replies": 474,
+        "quotes": 227,
+        "bookmarks": 204,
+        "impressions": 2671011
+      },
+      "topics": [
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2113780307904381100",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-23T23:51:12.000Z",
+      "text": "Deployment of 27 @Starlink satellites confirmed",
+      "url": "https://x.com/SpaceX/status/2113780307904381100",
+      "metrics": {
+        "likes": 10514,
+        "reposts": 572,
+        "replies": 286,
+        "quotes": 49,
+        "bookmarks": 98,
+        "impressions": 1859216
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2113761872264712327",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-23T22:37:56.000Z",
+      "text": "Watch Falcon 9 launch 27 @Starlink satellites to orbit from California https://t.co/mqBCvjX0bi",
+      "url": "https://x.com/SpaceX/status/2113761872264712327",
+      "metrics": {
+        "likes": 5930,
+        "reposts": 804,
+        "replies": 416,
+        "quotes": 120,
+        "bookmarks": 269,
+        "impressions": 1414350
+      },
+      "topics": [
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2113410488319262924",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-22T23:21:40.000Z",
+      "text": "Due to unfavorable weather, we are standing down from today's @Starlink launch. Next opportunity is no earlier than Friday, October 23",
+      "url": "https://x.com/SpaceX/status/2113410488319262924",
+      "metrics": {
+        "likes": 1057,
+        "reposts": 137,
+        "replies": 78,
+        "quotes": 19,
+        "bookmarks": 25,
+        "impressions": 172115
+      },
+      "topics": [
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2113400239017378069",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-22T22:40:56.000Z",
+      "text": "Watch Falcon 9 launch 27 @Starlink satellites to orbit from California https://t.co/7PhslAU5ac",
+      "url": "https://x.com/SpaceX/status/2113400239017378069",
+      "metrics": {
+        "likes": 10420,
+        "reposts": 1402,
+        "replies": 594,
+        "quotes": 161,
+        "bookmarks": 628,
+        "impressions": 1551719
+      },
+      "topics": [
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
     },
     {
       "id": "2113365443931148624",
       "username": "SpaceXSI",
       "name": "SpaceX Super Intelligence",
       "created_at": "2026-10-22T20:22:40.000Z",
-      "text": "Proud to be a part of this important initiative from NVIDIA",
+      "text": "Proud to be a part of this important initiative from NVIDIA https://t.co/1npeeNiG8O",
       "url": "https://x.com/SpaceXSI/status/2113365443931148624",
       "metrics": {
         "likes": 3224,
         "reposts": 258,
         "replies": 154,
-        "impressions": 269152
+        "quotes": 25,
+        "bookmarks": 193,
+        "impressions": 269340
       },
-      "topics": [
-        "AI compute",
-        "Tesla tie-ins"
-      ],
-      "highlight": false
+      "topics": [],
+      "highlight": true
     },
     {
       "id": "2112641741937635789",
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-10-20T20:26:56.000Z",
-      "text": "Q3 2026 Financial and Operational Results",
+      "text": "Q3 2026 Financial and Operational Results https://t.co/Qrb0qeVG15",
       "url": "https://x.com/SpaceX/status/2112641741937635789",
       "metrics": {
-        "likes": 14387,
+        "likes": 14388,
         "reposts": 1904,
         "replies": 1001,
-        "impressions": 1359805
+        "quotes": 444,
+        "bookmarks": 2395,
+        "impressions": 1359847
       },
       "topics": [
         "Earnings"
@@ -561,18 +1044,101 @@
       "username": "SpaceX",
       "name": "SpaceX",
       "created_at": "2026-10-20T20:13:10.000Z",
-      "text": "Q3 2026 highlights:\n- Delivered revenue of $14.6 billion, up 161% year-over-year\n\n- Successfully launched our first revenue-generating Starship mission, delivering 26 Starlink V3 satellites to our broadband constellation, representing approximately 10x the downlink capacity added",
+      "text": "Q3 2026 highlights:\n- Delivered revenue of $14.6 billion, up 161% year-over-year\n\n- Successfully launched our first revenue-generating Starship mission, delivering 26 Starlink V3 satellites to our broadband constellation, representing approximately 10x the downlink capacity added https://t.co/Qr94io6PiW",
       "url": "https://x.com/SpaceX/status/2112638276389790102",
       "metrics": {
-        "likes": 4919,
+        "likes": 4920,
         "reposts": 743,
         "replies": 293,
-        "impressions": 1892842
+        "quotes": 228,
+        "bookmarks": 364,
+        "impressions": 1892926
+      },
+      "topics": [
+        "Starship",
+        "Starlink",
+        "Earnings",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2112637394654822514",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-10-20T20:09:40.000Z",
+      "text": "Our Q3 2026 earnings report is now public → https://t.co/IRQs4EDBsS\n\nThe live webcast with @ElonMusk, @Gwynne_Shotwell, and @BretWJ will begin in 30 minutes https://t.co/CGrKBe0lfo",
+      "url": "https://x.com/SpaceX/status/2112637394654822514",
+      "metrics": {
+        "likes": 4395,
+        "reposts": 573,
+        "replies": 230,
+        "quotes": 132,
+        "bookmarks": 320,
+        "impressions": 842641
       },
       "topics": [
         "Earnings",
-        "Starship",
-        "Starlink"
+        "Leadership"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2112350370857115965",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-20T01:09:08.000Z",
+      "text": "In the last year, Starlink Mobile has connected more than 11 million people across @VEONGroup 3 key markets: Ukraine, Kazakhstan, and Bangladesh. For many, it provides a reliable way to send messages, voice notes, share location and more in places that cell towers cannot reach https://t.co/MlckaXDLWP",
+      "url": "https://x.com/Starlink/status/2112350370857115965",
+      "metrics": {
+        "likes": 1260,
+        "reposts": 191,
+        "replies": 730,
+        "quotes": 73,
+        "bookmarks": 48,
+        "impressions": 242827
+      },
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2111146914121204087",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-16T17:27:02.000Z",
+      "text": "We have worked closely with regulators, industry and operators in India for 5+ years, and built a network of dedicated systems, gateways, and other infrastructure all in-country to exclusively serve Indian traffic safely and securely - and all with the requisite government https://t.co/zG8nqXW8WM",
+      "url": "https://x.com/Starlink/status/2111146914121204087",
+      "metrics": {
+        "likes": 9607,
+        "reposts": 958,
+        "replies": 2282,
+        "quotes": 393,
+        "bookmarks": 808,
+        "impressions": 2237123
+      },
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2110416586561433913",
+      "username": "SpaceXSI",
+      "name": "SpaceX Super Intelligence",
+      "created_at": "2026-10-14T17:04:58.000Z",
+      "text": "Grok Voice 3.0 is available today in the API and Voice Agent Builder at $0.08/min. Read our blog to learn more:\nhttps://t.co/LkxbuF7u65",
+      "url": "https://x.com/SpaceXSI/status/2110416586561433913",
+      "metrics": {
+        "likes": 743,
+        "reposts": 41,
+        "replies": 39,
+        "quotes": 16,
+        "bookmarks": 180,
+        "impressions": 57398
+      },
+      "topics": [
+        "Grok"
       ],
       "highlight": true
     },
@@ -581,13 +1147,15 @@
       "username": "SpaceXSI",
       "name": "SpaceX Super Intelligence",
       "created_at": "2026-10-14T17:04:57.000Z",
-      "text": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.\n\nIt excels at resolving customer calls, responds in under a second, and costs less than other frontier models.",
+      "text": "Introducing Grok Voice 3.0, the world’s most intelligent speech-to-speech model.\n\nIt excels at resolving customer calls, responds in under a second, and costs less than other frontier models. https://t.co/cfDRrkQPEc",
       "url": "https://x.com/SpaceXSI/status/2110416580899168305",
       "metrics": {
         "likes": 10824,
         "reposts": 863,
         "replies": 688,
-        "impressions": 3070088
+        "quotes": 576,
+        "bookmarks": 2025,
+        "impressions": 3070191
       },
       "topics": [
         "Grok"
@@ -599,32 +1167,56 @@
       "username": "SpaceXSI",
       "name": "SpaceX Super Intelligence",
       "created_at": "2026-10-14T17:04:57.000Z",
-      "text": "Grok Voice 3.0 achieves frontier performance in voice agent tasks at 40% lower latency. At SpaceX, it resolves 70% of Starlink support calls on its own.",
+      "text": "Grok Voice 3.0 achieves frontier performance in voice agent tasks at 40% lower latency. At SpaceX, it resolves 70% of Starlink support calls on its own. https://t.co/94UCOQzqtG",
       "url": "https://x.com/SpaceXSI/status/2110416584183628161",
       "metrics": {
-        "likes": 1133,
+        "likes": 1134,
         "reposts": 70,
         "replies": 68,
-        "impressions": 141779
+        "quotes": 13,
+        "bookmarks": 79,
+        "impressions": 141843
       },
       "topics": [
-        "Grok",
+        "Starlink",
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2110410786925641854",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-14T16:41:55.000Z",
+      "text": "Starlink's high-speed, low-latency internet is now available in Curaçao! 🛰️🇨🇼❤️ → https://t.co/dpthtwwVMl https://t.co/HXkwiFcJ4F",
+      "url": "https://x.com/Starlink/status/2110410786925641854",
+      "metrics": {
+        "likes": 1462,
+        "reposts": 181,
+        "replies": 294,
+        "quotes": 77,
+        "bookmarks": 52,
+        "impressions": 860272
+      },
+      "topics": [
         "Starlink"
       ],
       "highlight": true
     },
     {
-      "id": "2109783335296008414",
+      "id": "2109783337132843366",
       "username": "SpaceXSI",
       "name": "SpaceX Super Intelligence",
-      "created_at": "2026-10-12T23:08:39.000Z",
-      "text": "We've unified plans across Grok, Cursor, and X Premium.\n\nIntroducing The X Subscription.",
-      "url": "https://x.com/SpaceXSI/status/2109783335296008414",
+      "created_at": "2026-10-12T23:08:40.000Z",
+      "text": "Code with AI in @Cursor_ai, get work done with @Bot, chat and create with @Grok, and benefit from all @X Premium features. https://t.co/fItGfw4GRH",
+      "url": "https://x.com/SpaceXSI/status/2109783337132843366",
       "metrics": {
-        "likes": 17629,
-        "reposts": 1934,
-        "replies": 1570,
-        "impressions": 18765280
+        "likes": 2624,
+        "reposts": 172,
+        "replies": 108,
+        "quotes": 96,
+        "bookmarks": 316,
+        "impressions": 358869
       },
       "topics": [
         "Grok",
@@ -633,17 +1225,102 @@
       "highlight": true
     },
     {
+      "id": "2109783335296008414",
+      "username": "SpaceXSI",
+      "name": "SpaceX Super Intelligence",
+      "created_at": "2026-10-12T23:08:39.000Z",
+      "text": "We've unified plans across Grok, Cursor, and X Premium.\n\nIntroducing The X Subscription. https://t.co/SvkrVvBa0p",
+      "url": "https://x.com/SpaceXSI/status/2109783335296008414",
+      "metrics": {
+        "likes": 17630,
+        "reposts": 1934,
+        "replies": 1570,
+        "quotes": 1970,
+        "bookmarks": 3915,
+        "impressions": 18768460
+      },
+      "topics": [
+        "Grok",
+        "Cursor"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2108712075371712825",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-10T00:11:51.000Z",
+      "text": "For those impacted by the earthquake in Panama, Starlink is providing free service through November 10 to new and existing customers in the affected areas. We are coordinating with emergency response agencies to help restore connectivity in the hardest-hit communities   →",
+      "url": "https://x.com/Starlink/status/2108712075371712825",
+      "metrics": {
+        "likes": 3488,
+        "reposts": 538,
+        "replies": 512,
+        "quotes": 103,
+        "bookmarks": 92,
+        "impressions": 611880
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2108698771899228179",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-09T23:18:59.000Z",
+      "text": "Starlink Mobile is providing nationwide emergency connectivity to @MasMovilPanama customers in Panama. Families, communities and businesses can stay in touch with loved ones via SMS. Coverage works best with a clear view of the sky 🛰️📱 https://t.co/czOh1xVCyi",
+      "url": "https://x.com/Starlink/status/2108698771899228179",
+      "metrics": {
+        "likes": 1502,
+        "reposts": 289,
+        "replies": 90,
+        "quotes": 26,
+        "bookmarks": 67,
+        "impressions": 243841
+      },
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ],
+      "highlight": true
+    },
+    {
       "id": "2108681960029831359",
       "username": "Gwynne_Shotwell",
       "name": "Gwynne Shotwell",
       "created_at": "2026-10-09T22:12:11.000Z",
-      "text": "Starlink Mobile is on a role!   Thank you ANATEL and @Baigorri1984 for approving Starlink Mobile’s priority spectrum rights to serve the  great people of Brazil.",
+      "text": "Starlink Mobile is on a role!   Thank you ANATEL and @Baigorri1984 for approving Starlink Mobile’s priority spectrum rights to serve the  great people of Brazil. https://t.co/1HTFiwBhrj",
       "url": "https://x.com/Gwynne_Shotwell/status/2108681960029831359",
       "metrics": {
         "likes": 4375,
         "reposts": 372,
         "replies": 1,
-        "impressions": 507502
+        "quotes": 33,
+        "bookmarks": 101,
+        "impressions": 507514
+      },
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2108676180467724397",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-09T21:49:13.000Z",
+      "text": "ANATEL just scored a huge win for the people of Brazil by voting to approve Starlink Mobile's full 2 GHz access with our global S-band priority. \n\nStarlink will put this critical mid-band spectrum to work to make sure every Brazilian has access to high-speed mobile broadband on",
+      "url": "https://x.com/Starlink/status/2108676180467724397",
+      "metrics": {
+        "likes": 7401,
+        "reposts": 755,
+        "replies": 270,
+        "quotes": 114,
+        "bookmarks": 282,
+        "impressions": 780606
       },
       "topics": [
         "Starlink",
@@ -656,55 +1333,61 @@
       "username": "Gwynne_Shotwell",
       "name": "Gwynne Shotwell",
       "created_at": "2026-10-08T21:05:32.000Z",
-      "text": "I have been a posting slug!\n\nHow about that launch triple header last week:  Starship, Crew 13, and Heavy!!!\nTerrestrial low band spectrum acquisition and FCC approval for Starlink Mobile constellation!\nAnd I am always relieved, grateful and proud when we complete a crew mission—",
+      "text": "I have been a posting slug!\n\nHow about that launch triple header last week:  Starship, Crew 13, and Heavy!!!\nTerrestrial low band spectrum acquisition and FCC approval for Starlink Mobile constellation!\nAnd I am always relieved, grateful and proud when we complete a crew mission— https://t.co/YE3Ss1fdtD",
       "url": "https://x.com/Gwynne_Shotwell/status/2108302801335918638",
       "metrics": {
         "likes": 8868,
         "reposts": 644,
         "replies": 0,
-        "impressions": 430655
+        "quotes": 47,
+        "bookmarks": 152,
+        "impressions": 430663
       },
       "topics": [
         "Starship",
         "Starlink",
-        "Launch"
+        "Launch",
+        "Direct-to-cell"
       ],
       "highlight": true
     },
     {
-      "id": "2102069815225586149",
+      "id": "2108192257967059132",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-10-08T13:46:17.000Z",
+      "text": "Starlink will deliver fast, reliable connectivity across @AmericanAir’s full mainline fleet so passengers can stream, game, work, and stay connected to family and friends throughout their travel 🛰️✈️ https://t.co/bhYVyZLUdE",
+      "url": "https://x.com/Starlink/status/2108192257967059132",
+      "metrics": {
+        "likes": 1894,
+        "reposts": 249,
+        "replies": 144,
+        "quotes": 28,
+        "bookmarks": 62,
+        "impressions": 162683
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2107623124909060174",
       "username": "SpaceXSI",
       "name": "SpaceX Super Intelligence",
-      "created_at": "2026-09-21T16:17:53.000Z",
-      "text": "Grok 4.7 is here.\n\nIt's a notable improvement over Grok 4.6 at the same price and speed.",
-      "url": "https://x.com/SpaceXSI/status/2102069815225586149",
+      "created_at": "2026-10-07T00:04:45.000Z",
+      "text": "Grok 4.7 is now live on Microsoft Foundry https://t.co/r450VLImFN",
+      "url": "https://x.com/SpaceXSI/status/2107623124909060174",
       "metrics": {
-        "likes": 28833,
-        "reposts": 3108,
-        "replies": 1606,
-        "impressions": 22033082
+        "likes": 2166,
+        "reposts": 226,
+        "replies": 136,
+        "quotes": 46,
+        "bookmarks": 83,
+        "impressions": 439443
       },
       "topics": [
         "Grok"
-      ],
-      "highlight": true
-    },
-    {
-      "id": "2095172141100511325",
-      "username": "Gwynne_Shotwell",
-      "name": "Gwynne Shotwell",
-      "created_at": "2026-09-02T15:28:59.000Z",
-      "text": "We’re excited to work with 4iG Group to bring Starlink Mobile’s resilient direct-to-device connectivity to millions of people in Europe.  This collaboration will deliver our next-gen technology using SpaceX’s global 2GHz priority rights.",
-      "url": "https://x.com/Gwynne_Shotwell/status/2095172141100511325",
-      "metrics": {
-        "likes": 4042,
-        "reposts": 369,
-        "replies": 0,
-        "impressions": 142655
-      },
-      "topics": [
-        "Starlink",
-        "Direct-to-cell"
       ],
       "highlight": true
     }

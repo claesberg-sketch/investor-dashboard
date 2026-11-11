@@ -9,7 +9,7 @@ Live site (GitHub Pages): **https://claesberg-sketch.github.io/investor-dashboar
 ## What’s on the SpaceX page
 
 1. **Live price and hero chart** — the headline price and the top chart are the Hyperliquid **`xyz:SPCX`** mid, 24/7, labelled “Hyperliquid xyz:SPCX perp – 24/7.” The chart is 5-minute candles from `candleSnapshot` (last 24 hours) plus a live point at the current time in Europe/Stockholm, kept in sync by a 5-second poll and a WebSocket candle / mid subscription (`wss://api.hyperliquid.xyz/ws`). The last chart point is the same price as the ticker. When a Nasdaq/Yahoo snapshot is available, that official print and the basis (perp minus official, value and %) are shown next to it — the perp can trade slightly above or below the stock because of funding. The official regular-session line is overlaid as a dashed series. Yahoo itself is a server-side file (browser CORS is blocked) and updates only when `scripts/refresh.py` is run and pushed.
-2. **News** — curated official press/IR, SEC filings, Google News RSS, and a seeded X snapshot from @elonmusk, @SpaceX, @Starlink, @Gwynne_Shotwell, @SpaceXSI, and @nextbigfuture (Brian Wang). Filters: Press, Filings, Media, X.
+2. **News** — one chronological feed (newest first) of official press/IR, SEC filings, Google News RSS, and X posts from @elonmusk, @SpaceX, @Starlink, @Gwynne_Shotwell, @SpaceXSI, and @nextbigfuture (Brian Wang). Filters: All, Press, Filings, Media, X. Every item shows its publish date and time in Europe/Stockholm (CET or CEST); if a source has only a date, the row says “time n/a” rather than inventing a clock time.
 3. **Base-case revenue model** — next 18 months (quarterly through Q2 2028) and FY2026–FY2029. Drivers and sources are on the page; sliders recompute client-side.
 4. **KPI charts** — segment revenue, Starlink subscribers, satellites (company + Jonathan McDowell), compute GW, earnings, capex, backlog.
 5. **Share unlock schedule** — lock-up expiries and staged releases from the Form 424(b)(4), later 8-Ks and the 10-Q, with sources, a table, and a cumulative chart. The catalyst calendar flags the nearest unlock.
@@ -48,7 +48,7 @@ No build step. Serve the repo root as a static site.
 | Google News RSS | Action, merged into `data/spacex/news.json`. |
 | SEC EDGAR | Action tries `data.sec.gov/submissions/CIK0001181412.json`. If the runner is blocked (SEC 403), the page falls back to `data/spacex/filings-static.json`. |
 | Official press releases | Curated in `data/spacex/news-static.json` (IR has no reliable public RSS). |
-| X posts | **Seeded only.** Pulled once via the author’s X connector on 11 Nov 2026 into `data/spacex/x-posts.json`. Actions cannot call that connector. The UI shows a last-updated time and links to official X timelines. To refresh, re-export posts into that file and commit. |
+| X posts | Pulled via the author’s X connector into `data/spacex/x-posts.json` and merged into the single news feed in the browser. Actions cannot call that connector, so the file updates when someone re-exports posts and commits. The feed has a last-updated line. |
 
 Run a refresh locally:
 

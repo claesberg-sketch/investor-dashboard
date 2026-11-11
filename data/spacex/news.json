@@ -1,9 +1,9 @@
 {
-  "updated": "2026-11-11T07:55:40Z",
+  "updated": "2026-11-11T08:52:40Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
-      "updated": "2026-11-11T08:50:00+01:00"
+      "updated": "2026-11-11T09:50:00+01:00"
     },
     "media": {
       "label": "Google News RSS (SpaceX OR Starlink OR SPCX, 14 days)",
@@ -16,13 +16,13 @@
       "error": "HTTP Error 403: Forbidden"
     },
     "x": {
-      "label": "X posts are in x-posts.json (seeded snapshot; not refreshed here)",
+      "label": "X posts are in x-posts.json (refreshed separately via the X connector; not fetched here)",
       "file": "data/spacex/x-posts.json"
     }
   },
   "items": [
     {
-      "id": "media-37",
+      "id": "media-38",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T22:22:00Z",
@@ -32,7 +32,7 @@
       "topics": []
     },
     {
-      "id": "media-33",
+      "id": "media-35",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T22:09:39Z",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "id": "media-32",
+      "id": "media-34",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T21:30:00Z",
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "id": "media-23",
+      "id": "media-25",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T17:36:00Z",
@@ -80,7 +80,7 @@
       "topics": []
     },
     {
-      "id": "media-34",
+      "id": "media-36",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T12:41:00Z",
@@ -90,7 +90,7 @@
       "topics": []
     },
     {
-      "id": "media-16",
+      "id": "media-17",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T09:16:00Z",
@@ -100,7 +100,7 @@
       "topics": []
     },
     {
-      "id": "media-10",
+      "id": "media-11",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T06:30:00Z",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "id": "media-24",
+      "id": "media-26",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T00:55:49Z",
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "id": "media-30",
+      "id": "media-32",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T00:23:00Z",
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "id": "media-35",
+      "id": "media-37",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T18:52:00Z",
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "id": "media-22",
+      "id": "media-24",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T17:47:30Z",
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "id": "media-18",
+      "id": "media-19",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T17:09:35Z",
@@ -184,7 +184,7 @@
       "topics": []
     },
     {
-      "id": "media-28",
+      "id": "media-30",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T16:43:20Z",
@@ -204,20 +204,7 @@
       "topics": []
     },
     {
-      "id": "media-40",
-      "type": "media",
-      "date": "2026-11-09",
-      "datetime": "2026-11-09T14:30:00Z",
-      "title": "SpaceX will launch epic double-catch Starship Flight 15 test mission on Nov. 13 - Space",
-      "source": "Space",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObzJxS3pPV3MwcVN1czhMWEZlYm1xbGV2eC02ZzdwdktJaGxoOUJpWm1fS2pYcTVKU3R5cTAzdzZEdXhRR0lFeXVzT1FZRXU1NGltT1lBVjNGbFYtUG5JN2J2bVN0SlRBRVRoOEp3WlpmRnJ0OC1sSVBfLWlzTy1fS0U4QlZpRDdFLU9jczAxM2ZHTF9tRmJTeGFLcy1mQzJXcktVTzEtY0F1NUFlYmlqelZUR1NEdldOLWQ4Umgzb2ZlT1VuRFdUUzM2a1gxS2p0cDJvdA?oc=5",
-      "topics": [
-        "Starship",
-        "Launch"
-      ]
-    },
-    {
-      "id": "media-11",
+      "id": "media-10",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T13:42:00Z",
@@ -237,7 +224,7 @@
       "topics": []
     },
     {
-      "id": "media-19",
+      "id": "media-20",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T03:27:14Z",
@@ -247,7 +234,7 @@
       "topics": []
     },
     {
-      "id": "media-17",
+      "id": "media-18",
       "type": "media",
       "date": "2026-11-08",
       "datetime": "2026-11-08T22:06:38Z",
@@ -267,6 +254,34 @@
       "topics": []
     },
     {
+      "id": "pr-ussf432",
+      "type": "press",
+      "date": "2026-11-07",
+      "title": "USSF-432 mission",
+      "summary": "SpaceX launched the USSF-432 mission on Falcon 9 from SLC-4E, Vandenberg.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Launch"
+      ],
+      "datetime": "2026-11-07T00:49:44Z",
+      "timeSource": "Official SpaceX “Liftoff!” post for USSF-432"
+    },
+    {
+      "id": "filing-0001628280-26-071689",
+      "type": "filing",
+      "date": "2026-11-06",
+      "title": "8-K — Item 5.02, departure of a director or officer",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
+      "topics": [
+        "Filings"
+      ],
+      "datetime": "2026-11-06T21:15:01Z",
+      "timeSource": "EDGAR filing index: accepted 2026-11-06 16:15:01 ET"
+    },
+    {
       "id": "media-9",
       "type": "media",
       "date": "2026-11-06",
@@ -275,6 +290,21 @@
       "source": "SpaceX",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5kQzl1R0xIWEFvcTRFWkdmM2dhUVJQUklNQzBiaWFOeUJzdDhDeDcwWFJsdEtLYmZrTzBUc1ZJb2VRczlkdEZaVzU2Qy1RY21VdWFrYTM1TXdXRmJocEFkVFNB?oc=5",
       "topics": []
+    },
+    {
+      "id": "pr-gofororbit",
+      "type": "press",
+      "date": "2026-11-06",
+      "title": "Go For Orbit — first revenue Starship mission documentary / recap",
+      "summary": "SpaceX published “Go For Orbit,” covering the first orbital Starship mission to fly advanced Starlink V3 satellites.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ],
+      "datetime": "2026-11-06T14:56:55Z",
+      "timeSource": "Official SpaceX post announcing “Go For Orbit”"
     },
     {
       "id": "media-1",
@@ -289,43 +319,6 @@
       ]
     },
     {
-      "id": "pr-gofororbit",
-      "type": "press",
-      "date": "2026-11-06",
-      "title": "Go For Orbit — first revenue Starship mission documentary / recap",
-      "summary": "SpaceX published “Go For Orbit,” covering the first orbital Starship mission to fly advanced Starlink V3 satellites.",
-      "source": "SpaceX",
-      "url": "https://www.spacex.com",
-      "topics": [
-        "Starship",
-        "Starlink"
-      ]
-    },
-    {
-      "id": "pr-ussf432",
-      "type": "press",
-      "date": "2026-11-06",
-      "title": "USSF-432 mission",
-      "summary": "SpaceX launched the USSF-432 mission on Falcon 9 from SLC-4E, Vandenberg.",
-      "source": "SpaceX",
-      "url": "https://www.spacex.com",
-      "topics": [
-        "Launch"
-      ]
-    },
-    {
-      "id": "filing-0001628280-26-071689",
-      "type": "filing",
-      "date": "2026-11-06",
-      "title": "8-K — 8-K",
-      "source": "SEC EDGAR",
-      "form": "8-K",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
-      "topics": [
-        "Filings"
-      ]
-    },
-    {
       "id": "media-12",
       "type": "media",
       "date": "2026-11-05",
@@ -336,7 +329,7 @@
       "topics": []
     },
     {
-      "id": "media-31",
+      "id": "media-33",
       "type": "media",
       "date": "2026-11-05",
       "datetime": "2026-11-05T21:39:00Z",
@@ -346,7 +339,7 @@
       "topics": []
     },
     {
-      "id": "media-26",
+      "id": "media-28",
       "type": "media",
       "date": "2026-11-05",
       "datetime": "2026-11-05T21:20:00Z",
@@ -356,7 +349,7 @@
       "topics": []
     },
     {
-      "id": "media-21",
+      "id": "media-23",
       "type": "media",
       "date": "2026-11-04",
       "datetime": "2026-11-04T13:35:45Z",
@@ -381,7 +374,7 @@
       ]
     },
     {
-      "id": "media-14",
+      "id": "media-16",
       "type": "media",
       "date": "2026-11-04",
       "datetime": "2026-11-04T13:30:00Z",
@@ -426,7 +419,29 @@
       ]
     },
     {
-      "id": "media-20",
+      "id": "media-14",
+      "type": "media",
+      "date": "2026-11-03",
+      "datetime": "2026-11-03T16:20:00Z",
+      "title": "SpaceX Just Delivered a Monster Quarter, but the Stock Is Still Down 38% From Its High. The Reasons Are Obvious. - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQS2VneEE3d1AxX2J0SE1CbDFTa2xlc2hfSmhNNmpsNHRGTkpVOTZBZkIzZ3FnNlVyX3NYeEMwV3MxWTIzVEtIWGktd0JITEFUOVQ4czdtSHpuQk5oYmowYnRpN2luQ25LSGtmaEQ5NWF2ZFVKTTVEbDBKUDlQU2tpbVRvTHZYSWtGU1F1S2hNYnVyNmdLajd6TEl6WnNLSzY3dVBYWQ?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-22",
+      "type": "media",
+      "date": "2026-11-03",
+      "datetime": "2026-11-03T08:00:00Z",
+      "title": "Starlink - Britannica",
+      "source": "Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FdV9xdThiS05DRFNuY1JPakpBb2Z6dGFQSVJTbWtscEpKdXpsNGtmaHEwMnNMUnE0NlpzUlAzdzIwTEFxV0lfNGlwSmNLYnRHTVV3?oc=5",
+      "topics": [
+        "Starlink"
+      ]
+    },
+    {
+      "id": "media-21",
       "type": "media",
       "date": "2026-11-02",
       "datetime": "2026-11-02T08:00:00Z",
@@ -438,7 +453,7 @@
       ]
     },
     {
-      "id": "media-29",
+      "id": "media-31",
       "type": "media",
       "date": "2026-11-02",
       "datetime": "2026-11-02T08:00:00Z",
@@ -448,7 +463,7 @@
       "topics": []
     },
     {
-      "id": "media-27",
+      "id": "media-29",
       "type": "media",
       "date": "2026-10-31",
       "datetime": "2026-10-31T07:00:00Z",
@@ -470,7 +485,7 @@
       "topics": []
     },
     {
-      "id": "media-25",
+      "id": "media-27",
       "type": "media",
       "date": "2026-10-30",
       "datetime": "2026-10-30T07:00:00Z",
@@ -483,7 +498,7 @@
       ]
     },
     {
-      "id": "media-38",
+      "id": "media-40",
       "type": "media",
       "date": "2026-10-29",
       "datetime": "2026-10-29T07:00:00Z",
@@ -493,28 +508,18 @@
       "topics": []
     },
     {
-      "id": "media-36",
-      "type": "media",
-      "date": "2026-10-28",
-      "datetime": "2026-10-28T07:00:00Z",
-      "title": "Pentagon watchdog tells lawmakers it won’t investigate Starlink slowdowns to Ukraine - AP News",
-      "source": "AP News",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObXZ6TzNnOExPZmEyc0F6ckNhMURBcndMTUFfaC1TTDZkY1lqRGVhNm05YjlqeUo0a2hOdmdlWVYtV3M3bkVRbHhpNUJRRXVzcEhFSjNkUzRlVmJVYTBHWEgyeXdUZnpwSENKS1AyVTg4ekROcGljemJOdnJQSkh5WmgzSThGTlRfVDdHWGcxdHZ0NmkzcWdOd011MndzSWJxZFdYZFhnV1Z3NENTdjAxN2p6T3pJc2JY?oc=5",
-      "topics": [
-        "Starlink"
-      ]
-    },
-    {
       "id": "filing-0001104659-26-118614",
       "type": "filing",
       "date": "2026-10-26",
-      "title": "8-K — FORM 8-K",
+      "title": "8-K — Item 8.01, Apollo GPU finance-lease commitment",
       "source": "SEC EDGAR",
       "form": "8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
       "topics": [
         "Filings"
-      ]
+      ],
+      "datetime": "2026-10-26T12:00:18Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-26 08:00:18 ET"
     },
     {
       "id": "filing-0001628280-26-066903",
@@ -527,7 +532,9 @@
       "topics": [
         "Filings",
         "Cursor"
-      ]
+      ],
+      "datetime": "2026-10-22T20:24:30Z",
+      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20261022162430 (16:24:30 ET)"
     },
     {
       "id": "filing-0001628280-26-066880",
@@ -540,7 +547,9 @@
       "topics": [
         "Filings",
         "Earnings"
-      ]
+      ],
+      "datetime": "2026-10-22T20:03:05Z",
+      "timeSource": "EDGAR header 20261022160305 (16:03:05 ET)"
     },
     {
       "id": "pr-q3",
@@ -554,7 +563,9 @@
         "Earnings",
         "Starlink",
         "AI compute"
-      ]
+      ],
+      "datetime": "2026-10-20T20:00:51Z",
+      "timeSource": "EDGAR acceptance of the Q3 2026 earnings 8-K (the press release is the 8-K exhibit)"
     },
     {
       "id": "filing-0001628280-26-066482",
@@ -567,7 +578,9 @@
       "topics": [
         "Filings",
         "Earnings"
-      ]
+      ],
+      "datetime": "2026-10-20T20:00:51Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-20 16:00:51 ET"
     },
     {
       "id": "pr-cursor",
@@ -580,7 +593,9 @@
       "topics": [
         "Cursor",
         "AI compute"
-      ]
+      ],
+      "datetime": "2026-08-14T12:23:02Z",
+      "timeSource": "EDGAR acceptance of the Cursor acquisition 8-K"
     },
     {
       "id": "filing-0001628280-26-056945",
@@ -593,7 +608,24 @@
       "topics": [
         "Filings",
         "Cursor"
-      ]
+      ],
+      "datetime": "2026-08-14T12:23:02Z",
+      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20260814082302 (08:23:02 ET)"
+    },
+    {
+      "id": "filing-0001628280-26-052535",
+      "type": "filing",
+      "date": "2026-08-04",
+      "title": "10-Q — Quarter ended June 30, 2026",
+      "source": "SEC EDGAR",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ],
+      "datetime": "2026-08-04T20:05:00Z",
+      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:05 ET (minute precision)"
     },
     {
       "id": "pr-q2",
@@ -607,20 +639,9 @@
         "Earnings",
         "Starlink",
         "AI compute"
-      ]
-    },
-    {
-      "id": "filing-0001628280-26-052535",
-      "type": "filing",
-      "date": "2026-08-04",
-      "title": "10-Q — Quarter ended June 30, 2026",
-      "source": "SEC EDGAR",
-      "form": "10-Q",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
-      "topics": [
-        "Filings",
-        "Earnings"
-      ]
+      ],
+      "datetime": "2026-08-04T20:01:00Z",
+      "timeSource": "EDGAR acceptance of the Q2 2026 earnings 8-K (minute precision as published on the filing index)"
     },
     {
       "id": "filing-0001628280-26-052515",
@@ -633,7 +654,9 @@
       "topics": [
         "Filings",
         "Earnings"
-      ]
+      ],
+      "datetime": "2026-08-04T20:01:00Z",
+      "timeSource": "EDGAR filing index via Listed: accepted 2026-08-04 16:01 ET (minute precision)"
     },
     {
       "id": "pr-ipo-close",
@@ -645,7 +668,9 @@
       "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
       "topics": [
         "IPO"
-      ]
+      ],
+      "datetime": "2026-06-15T06:00:00Z",
+      "timeSource": "datePublished on the official IR release page"
     },
     {
       "id": "pr-ipo-price",
@@ -657,7 +682,9 @@
       "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
       "topics": [
         "IPO"
-      ]
+      ],
+      "datetime": "2026-06-11T03:30:00Z",
+      "timeSource": "datePublished on the official IR release page"
     },
     {
       "id": "pr-ipo-launch",
@@ -669,7 +696,9 @@
       "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Launch-of-Initial-Public-Offering/default.aspx",
       "topics": [
         "IPO"
-      ]
+      ],
+      "datetime": "2026-06-04T08:00:00Z",
+      "timeSource": "datePublished on the official IR release page"
     }
   ]
 }

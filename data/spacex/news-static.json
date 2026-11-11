@@ -1,57 +1,65 @@
 {
-  "updated": "2026-11-11T08:50:00+01:00",
+  "updated": "2026-11-11T09:50:00+01:00",
   "items": [
     {
       "id": "pr-gofororbit",
       "type": "press",
       "date": "2026-11-06",
-      "title": "Go For Orbit \u2014 first revenue Starship mission documentary / recap",
-      "summary": "SpaceX published \u201cGo For Orbit,\u201d covering the first orbital Starship mission to fly advanced Starlink V3 satellites.",
+      "title": "Go For Orbit — first revenue Starship mission documentary / recap",
+      "summary": "SpaceX published “Go For Orbit,” covering the first orbital Starship mission to fly advanced Starlink V3 satellites.",
       "source": "SpaceX",
       "url": "https://www.spacex.com",
       "topics": [
         "Starship",
         "Starlink"
-      ]
+      ],
+      "datetime": "2026-11-06T14:56:55Z",
+      "timeSource": "Official SpaceX post announcing “Go For Orbit”"
     },
     {
       "id": "pr-ussf432",
       "type": "press",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "title": "USSF-432 mission",
       "summary": "SpaceX launched the USSF-432 mission on Falcon 9 from SLC-4E, Vandenberg.",
       "source": "SpaceX",
       "url": "https://www.spacex.com",
       "topics": [
         "Launch"
-      ]
+      ],
+      "datetime": "2026-11-07T00:49:44Z",
+      "timeSource": "Official SpaceX “Liftoff!” post for USSF-432"
     },
     {
       "id": "pr-q3",
       "type": "press",
       "date": "2026-10-20",
       "title": "SpaceX reports third quarter 2026 results",
-      "summary": "Revenue $14.6B (+161% YoY), net income $4.4B, Adjusted EBITDA $8.8B. Connectivity $5.25B with 13.6M Starlink consumer subscribers. SI $7.56B; nameplate compute 1.7 GW. Q1 2027 revenue guided at $33\u201337B.",
+      "summary": "Revenue $14.6B (+161% YoY), net income $4.4B, Adjusted EBITDA $8.8B. Connectivity $5.25B with 13.6M Starlink consumer subscribers. SI $7.56B; nameplate compute 1.7 GW. Q1 2027 revenue guided at $33–37B.",
       "source": "SpaceX Investor Relations",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
       "topics": [
         "Earnings",
         "Starlink",
         "AI compute"
-      ]
+      ],
+      "datetime": "2026-10-20T20:00:51Z",
+      "timeSource": "EDGAR acceptance of the Q3 2026 earnings 8-K (the press release is the 8-K exhibit)"
     },
     {
       "id": "pr-cursor",
       "type": "press",
       "date": "2026-08-14",
-      "title": "Acquisition of Cursor (Anysphere) \u2014 8-K",
-      "summary": "SpaceX closed the Cursor acquisition and issued unregistered merger shares (later detailed as ~391M shares). Cursor contributed $608M of SI revenue from Aug 14\u2013Sep 30.",
+      "title": "Acquisition of Cursor (Anysphere) — 8-K",
+      "summary": "SpaceX closed the Cursor acquisition and issued unregistered merger shares (later detailed as ~391M shares). Cursor contributed $608M of SI revenue from Aug 14–Sep 30.",
       "source": "SEC 8-K",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
       "topics": [
         "Cursor",
         "AI compute"
-      ]
+      ],
+      "datetime": "2026-08-14T12:23:02Z",
+      "timeSource": "EDGAR acceptance of the Cursor acquisition 8-K"
     },
     {
       "id": "pr-q2",
@@ -65,19 +73,23 @@
         "Earnings",
         "Starlink",
         "AI compute"
-      ]
+      ],
+      "datetime": "2026-08-04T20:01:00Z",
+      "timeSource": "EDGAR acceptance of the Q2 2026 earnings 8-K (minute precision as published on the filing index)"
     },
     {
       "id": "pr-ipo-close",
       "type": "press",
       "date": "2026-06-15",
-      "title": "SpaceX closes IPO, including full exercise of underwriters\u2019 option",
+      "title": "SpaceX closes IPO, including full exercise of underwriters’ option",
       "summary": "638,888,888 Class A shares issued; gross proceeds approximately $85.7B. Trading began Jun 12 under ticker SPCX on Nasdaq Global Select and Nasdaq Texas.",
       "source": "SpaceX Investor Relations",
       "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
       "topics": [
         "IPO"
-      ]
+      ],
+      "datetime": "2026-06-15T06:00:00Z",
+      "timeSource": "datePublished on the official IR release page"
     },
     {
       "id": "pr-ipo-price",
@@ -89,7 +101,9 @@
       "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
       "topics": [
         "IPO"
-      ]
+      ],
+      "datetime": "2026-06-11T03:30:00Z",
+      "timeSource": "datePublished on the official IR release page"
     },
     {
       "id": "pr-ipo-launch",
@@ -101,7 +115,9 @@
       "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Launch-of-Initial-Public-Offering/default.aspx",
       "topics": [
         "IPO"
-      ]
+      ],
+      "datetime": "2026-06-04T08:00:00Z",
+      "timeSource": "datePublished on the official IR release page"
     }
   ]
 }

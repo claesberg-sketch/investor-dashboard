@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T07:55:39Z",
+  "updated": "2026-11-11T08:52:39Z",
   "symbol": "SPCX",
   "yahoo": {
     "ok": true,
@@ -19,9 +19,9 @@
     "chartPreviousClose": 141.31,
     "fiftyTwoWeekHigh": 225.64,
     "fiftyTwoWeekLow": 104.83,
-    "fulldayPrice": 145.34,
-    "fulldayChange": 3.27,
-    "fulldayChangePercent": 2.302,
+    "fulldayPrice": 146.39,
+    "fulldayChange": 4.32,
+    "fulldayChangePercent": 3.041,
     "hasPrePostMarketData": true,
     "timezone": "EST",
     "gmtoffset": -18000,
@@ -29,20 +29,20 @@
     "currentTradingPeriod": {
       "pre": {
         "timezone": "EST",
-        "end": 1794407400,
         "start": 1794387600,
+        "end": 1794407400,
         "gmtoffset": -18000
       },
       "regular": {
         "timezone": "EST",
-        "end": 1794430800,
         "start": 1794407400,
+        "end": 1794430800,
         "gmtoffset": -18000
       },
       "post": {
         "timezone": "EST",
-        "end": 1794445200,
         "start": 1794430800,
+        "end": 1794445200,
         "gmtoffset": -18000
       }
     },
@@ -24336,14 +24336,14 @@
     "ok": true,
     "symbol": "xyz:SPCX",
     "dex": "xyz",
-    "midPx": 145.34,
-    "markPx": 145.35,
-    "oraclePx": 145.35,
-    "prevDayPx": 141.51,
+    "midPx": 146.435,
+    "markPx": 146.44,
+    "oraclePx": 146.41,
+    "prevDayPx": 141.75,
     "funding": "0.00000625",
-    "openInterest": 966240.62,
-    "dayNtlVlm": 124675355.10429999,
-    "premium": "-0.0000533196",
+    "openInterest": 964876.06,
+    "dayNtlVlm": 125359360.21389993,
+    "premium": "0.0001249915",
     "cors": "access-control-allow-origin: * (browser fetch works)"
   },
   "fundamentals": {

@@ -5,7 +5,7 @@ Intended to run in GitHub Actions every 20 minutes (and on push), and locally.
 Fetches Yahoo Finance chart data (incl. pre/post), Hyperliquid xyz:SPCX snapshot,
 Google News RSS, and SEC company submissions. Merges with static press releases.
 
-Does not refresh X posts (no X API token in Actions). See README.
+Does not refresh X posts (Actions cannot call the X connector). See README.
 """
 from __future__ import annotations
 
@@ -18,6 +18,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -272,6 +273,44 @@ def _topics(title: str):
     return tags
 
 
+def _acceptance_to_utc(val):
+    """Convert an EDGAR acceptance datetime to UTC ISO.
+
+    submissions JSON usually gives ISO with an Eastern offset. Compact
+    ACCEPTANCE-DATETIME values (YYYYMMDDHHMMSS) are Eastern local time
+    with no zone and are converted with America/New_York (EDT/EST).
+    """
+    if not val:
+        return None
+    s = str(val).strip()
+    try:
+        if s.isdigit() and len(s) >= 14:
+            y, m, d = int(s[0:4]), int(s[4:6]), int(s[6:8])
+            H, M, S = int(s[8:10]), int(s[10:12]), int(s[12:14])
+            local = datetime(y, m, d, H, M, S, tzinfo=ZoneInfo("America/New_York"))
+            return local.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        iso = s.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(iso)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=ZoneInfo("America/New_York"))
+        return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    except Exception:
+        return None
+
+
+def _feed_sort_key(it):
+    dt = it.get("datetime") or ""
+    if dt:
+        return dt
+    d = it.get("date") or ""
+    # Date-only items sort as midday Europe/Stockholm so they do not
+    # leap ahead of timed items on the same calendar day. Display still
+    # shows "time n/a" when no clock time is known.
+    if len(d) == 10:
+        return d + "T12:00:00+01:00"
+    return d
+
+
 def sec_filings():
     url = "https://data.sec.gov/submissions/CIK0001181412.json"
     try:
@@ -284,6 +323,7 @@ def sec_filings():
     acc = rec.get("accessionNumber") or []
     prim = rec.get("primaryDocument") or []
     desc = rec.get("primaryDocDescription") or []
+    accepted = rec.get("acceptanceDateTime") or []
     items = []
     for i, form in enumerate(forms[:25]):
         accession = acc[i].replace("-", "") if i < len(acc) else ""
@@ -293,16 +333,20 @@ def sec_filings():
             if accession and doc
             else f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412"
         )
+        iso = _acceptance_to_utc(accepted[i] if i < len(accepted) else None)
+        filing_date = dates[i] if i < len(dates) else ""
         items.append(
             {
                 "id": f"filing-{acc[i] if i < len(acc) else i}",
                 "type": "filing",
-                "date": dates[i] if i < len(dates) else "",
+                "date": (iso[:10] if iso else filing_date),
+                "datetime": iso,
                 "title": f"{form} — {desc[i] if i < len(desc) and desc[i] else form}",
                 "source": "SEC EDGAR",
                 "form": form,
                 "url": href,
                 "topics": ["Filings"],
+                **({"timeSource": "SEC submissions acceptanceDateTime"} if iso else {}),
             }
         )
     return {
@@ -369,8 +413,16 @@ def build_news():
     sf_path = DATA / "filings-static.json"
     if sf_path.exists():
         static_filings = (json.loads(sf_path.read_text()).get("items") or [])
+    static_by_id = {it.get("id"): it for it in static_filings if it.get("id")}
     if filings.get("ok"):
         for it in filings.get("items") or []:
+            # Keep a researched acceptance time if the live feed omitted one.
+            src = static_by_id.get(it.get("id")) or {}
+            if not it.get("datetime") and src.get("datetime"):
+                it["datetime"] = src["datetime"]
+                it["date"] = it.get("date") or src.get("date") or src["datetime"][:10]
+                if src.get("timeSource"):
+                    it["timeSource"] = src["timeSource"]
             items.append(it)
     else:
         for it in static_filings:
@@ -384,7 +436,7 @@ def build_news():
             continue
         seen.add(key)
         uniq.append(it)
-    uniq.sort(key=lambda x: x.get("datetime") or x.get("date") or "", reverse=True)
+    uniq.sort(key=_feed_sort_key, reverse=True)
     return {
         "updated": utc_now(),
         "feeds": {
@@ -403,7 +455,7 @@ def build_news():
                 "error": filings.get("error"),
             },
             "x": {
-                "label": "X posts are in x-posts.json (seeded snapshot; not refreshed here)",
+                "label": "X posts are in x-posts.json (refreshed separately via the X connector; not fetched here)",
                 "file": "data/spacex/x-posts.json",
             },
         },

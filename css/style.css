@@ -103,22 +103,17 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   transition:background .15s,color .15s;
 }
 .filters button.active,.ghost:hover,button.ghost:hover{background:var(--fg);color:#000}
-.news-layout{display:grid;grid-template-columns:1fr 320px;gap:40px}
 .news-list{display:flex;flex-direction:column}
-.news-item{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--fg-10)}
-.news-item .meta{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-50)}
-.news-item h3{font-size:1rem;font-weight:500;line-height:1.4}
+.news-item{display:grid;grid-template-columns:180px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--fg-10)}
+.news-item .meta{font-size:.72rem;letter-spacing:.02em;color:var(--fg-50);line-height:1.45}
+.news-item .meta .kind{letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;color:var(--fg-70)}
+.news-item .meta .when{margin-top:6px;color:var(--fg-70)}
+.news-item .meta .ago{margin-top:2px;color:var(--fg-50)}
+.news-item .meta .src{margin-top:4px}
+.news-item h3{font-size:1rem;font-weight:500;line-height:1.4;white-space:pre-wrap}
 .news-item p{font-size:.9rem;color:var(--fg-70);margin-top:4px}
 .badge{display:inline-block;border:1px solid var(--fg-20);padding:1px 7px;margin:0 4px 4px 0;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-70)}
 .badge.hl{border-color:var(--fg-70);color:var(--fg)}
-.x-side{border-left:1px solid var(--line);padding-left:28px}
-.x-card{padding:14px 0;border-top:1px solid var(--fg-10)}
-.x-card .who{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-50)}
-.x-card p{font-size:.92rem;margin:6px 0 8px;white-space:pre-wrap}
-.x-metrics{font-size:.72rem;color:var(--fg-35);letter-spacing:.04em}
-.embed-note{margin-top:20px;padding-top:16px;border-top:1px solid var(--fg-10);font-size:.75rem;color:var(--fg-50)}
-.embed-note a{border-bottom:1px solid var(--fg-20)}
-
 /* Forecast */
 .tabs{display:flex;gap:8px;margin:0 0 24px;flex-wrap:wrap}
 .table-wrap{overflow-x:auto;border:1px solid var(--line);max-width:100%;-webkit-overflow-scrolling:touch}
@@ -170,8 +165,7 @@ thead th{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-wei
 @media (max-width:900px){
   .hero-top{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
-  .news-layout,.chart-grid,.extra-grid,.changed{grid-template-columns:1fr}
-  .x-side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:24px}
+  .chart-grid,.extra-grid,.changed{grid-template-columns:1fr}
   .hero-chart{max-width:none;width:100%}
   .news-item{grid-template-columns:1fr}
 }

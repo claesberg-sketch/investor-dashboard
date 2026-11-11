@@ -12,18 +12,75 @@
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
+  const TZ = "Europe/Stockholm";
+
   function formatDate(iso) {
     if (!iso) return "";
-    const d = new Date(iso.length === 10 ? iso + "T12:00:00Z" : iso);
+    const d = new Date(iso.length === 10 ? iso + "T12:00:00+01:00" : iso);
     if (Number.isNaN(d.getTime())) return iso;
-    return new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Stockholm", day: "2-digit", month: "short", year: "numeric" }).format(d);
+    return new Intl.DateTimeFormat("en-GB", { timeZone: TZ, day: "numeric", month: "short", year: "numeric" }).format(d);
   }
 
-  function formatTime(iso) {
+  function zoneAbbrev(date) {
+    // Europe/Stockholm: CEST (UTC+2) during DST, otherwise CET (UTC+1).
+    // Do not rely on Intl timeZoneName, which may render "GMT+1" instead of CET.
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: TZ,
+      timeZoneName: "shortOffset",
+      hour: "2-digit",
+    }).formatToParts(date);
+    const off = ((parts.find((p) => p.type === "timeZoneName") || {}).value || "").replace("UTC", "GMT");
+    if (/[+−\-]0?2\b/.test(off)) return "CEST";
+    return "CET";
+  }
+
+  function hasClockTime(item) {
+    const iso = (item && (item.datetime || item.created_at)) || "";
+    if (!iso || (iso.length === 10 && iso.indexOf("T") === -1)) return false;
+    const d = new Date(iso);
+    return !Number.isNaN(d.getTime());
+  }
+
+  function formatPublished(itemOrIso) {
+    const iso = typeof itemOrIso === "string" ? itemOrIso : (itemOrIso && (itemOrIso.datetime || itemOrIso.created_at || itemOrIso.date)) || "";
+    const timed = typeof itemOrIso === "string" ? !(!iso || (iso.length === 10 && iso.indexOf("T") === -1)) : hasClockTime(itemOrIso);
     if (!iso) return "";
+    if (!timed) {
+      const day = formatDate(iso);
+      return day ? day + ", time n/a" : "";
+    }
     const d = new Date(iso);
     if (Number.isNaN(d.getTime())) return iso;
-    return SPCXPrice.formatIn(d, SPCXPrice.TZ);
+    const body = new Intl.DateTimeFormat("en-GB", {
+      timeZone: TZ,
+      day: "numeric", month: "short", year: "numeric",
+      hour: "2-digit", minute: "2-digit",
+      hour12: false, hourCycle: "h23",
+    }).format(d);
+    return body + " " + zoneAbbrev(d);
+  }
+
+  function relativeAge(iso) {
+    if (!iso || (iso.length === 10 && iso.indexOf("T") === -1)) return "";
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return "";
+    const sec = Math.round((Date.now() - d.getTime()) / 1000);
+    const abs = Math.abs(sec);
+    const suffix = sec >= 0 ? " ago" : " from now";
+    if (abs < 45) return "just now";
+    const min = Math.round(abs / 60);
+    if (min < 60) return min + "m" + suffix;
+    const hr = Math.round(min / 60);
+    if (hr < 48) return hr + "h" + suffix;
+    const day = Math.round(hr / 24);
+    if (day < 21) return day + "d" + suffix;
+    return "";
+  }
+
+  function feedSortKey(item) {
+    if (item.datetime) return item.datetime;
+    if (item.date && item.date.length === 10) return item.date + "T12:00:00+01:00";
+    return item.date || "";
   }
 
   function topicBadges(topics, highlight) {
@@ -44,16 +101,17 @@
   }
 
 
-  function renderNews(news, posts) {
+  function renderNews(news, xdata) {
     const filters = document.getElementById("news-filters");
     const list = document.getElementById("news-list");
     const updated = document.getElementById("news-updated");
     const items = (news.items || []).slice();
-    const xItems = (posts || []).map((p) => ({
+    const posts = (xdata && xdata.posts) || [];
+    const xItems = posts.map((p) => ({
       type: "x", date: p.created_at.slice(0, 10), datetime: p.created_at,
       title: p.text, source: "@" + p.username, url: p.url, topics: p.topics, highlight: p.highlight,
     }));
-    const all = items.concat(xItems).sort((a, b) => (b.datetime || b.date || "").localeCompare(a.datetime || a.date || ""));
+    const all = items.concat(xItems).sort((a, b) => feedSortKey(b).localeCompare(feedSortKey(a)));
 
     const types = [
       { id: "all", label: "All" },
@@ -66,13 +124,21 @@
     function paint() {
       const shown = current === "all" ? all : all.filter((i) => i.type === current);
       const cap = window.__newsCap || 20;
-      list.innerHTML = shown.slice(0, cap).map((i) =>
-        '<article class="news-item"><div class="meta">' + esc(i.type) + "<br>" + formatDate(i.datetime || i.date) + "<br>" + esc(i.source || "") + "</div><div>" +
-        topicBadges(i.topics, i.highlight) +
-        "<h3>" + (i.url ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener">' + esc(i.title.length > 220 ? i.title.slice(0, 220) + "…" : i.title) + "</a>" : esc(i.title)) + "</h3>" +
-        (i.summary ? "<p>" + esc(i.summary) + "</p>" : "") +
-        "</div></article>"
-      ).join("") || "<p class='muted'>Nothing in this filter yet.</p>";
+      list.innerHTML = shown.slice(0, cap).map((i) => {
+        const when = formatPublished(i);
+        const ago = relativeAge(i.datetime);
+        return '<article class="news-item"><div class="meta">' +
+          '<div class="kind">' + esc(i.type) + '</div>' +
+          (i.source ? '<div class="src">' + esc(i.source) + '</div>' : '') +
+          '<div class="when">' + esc(when) + '</div>' +
+          (ago ? '<div class="ago">' + esc(ago) + '</div>' : '') +
+          '</div><div>' +
+          topicBadges(i.topics, i.highlight) +
+          '<h3>' + (i.url ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener">' + esc(i.title.length > 220 ? i.title.slice(0, 220) + '…' : i.title) + '</a>' : esc(i.title)) + '</h3>' +
+          (i.summary ? '<p>' + esc(i.summary) + '</p>' : '') +
+          '</div></article>';
+      }).join('') || "<p class='muted'>Nothing in this filter yet.</p>";
+
       if (shown.length > cap) {
         list.innerHTML += '<button class="ghost" type="button" id="news-more" style="margin-top:16px">Show more (' + (shown.length - cap) + " remaining)</button>";
         const more = document.getElementById("news-more");
@@ -90,40 +156,28 @@
       });
     }
     if (updated) {
-      const bits = ["News JSON updated " + (news.updated ? formatTime(news.updated) : "—")];
-      if (news.feeds && news.feeds.filings && news.feeds.filings.ok === false) bits.push("Live EDGAR refresh was blocked (403); filings shown from the seeded list.");
+      const candidates = [news.updated, xdata && xdata.updated].filter(Boolean);
+      let latest = "";
+      candidates.forEach((c) => { if (!latest || new Date(c) > new Date(latest)) latest = c; });
+      const bits = ["Last updated " + (latest ? formatPublished(latest) : "—")];
+      if (news.feeds && news.feeds.filings && news.feeds.filings.ok === false) {
+        bits.push("Live EDGAR refresh was blocked (403); filings are from the copy stored in this repo, with acceptance times from the official filing indexes.");
+      }
       updated.textContent = bits.join(" · ");
     }
     paint();
   }
 
-  function renderX(xdata) {
-    const el = document.getElementById("x-feed");
-    const note = document.getElementById("x-note");
-    const posts = (xdata.posts || []).filter((p) => p.highlight).slice(0, 12);
-    if (el) {
-      el.innerHTML = posts.map((p) =>
-        '<article class="x-card"><div class="who">@' + esc(p.username) + " · " + formatTime(p.created_at) + "</div>" +
-        topicBadges(p.topics, true) +
-        "<p>" + esc(p.text) + "</p>" +
-        '<div class="x-metrics">' + (p.metrics.likes || 0).toLocaleString() + " likes · <a href='" + esc(p.url) + "' target='_blank' rel='noopener'>Open on X</a></div></article>"
-      ).join("");
-    }
-    if (note) {
-      note.innerHTML = "Last seeded " + (xdata.updated ? formatTime(xdata.updated) : "—") + ". GitHub Actions cannot use the X connector, so this list is a snapshot. Official timelines: " +
-        (xdata.accounts || []).map((a) => '<a href="https://x.com/' + a.username + '" target="_blank" rel="noopener">@' + a.username + "</a>").join(" · ") +
-        ". " + (xdata.missing || []).join(" ");
-    }
+  function renderTopics(xdata) {
     const counter = document.getElementById("topic-counter");
-    if (counter) {
-      const counts = {};
-      (xdata.posts || []).forEach((p) => (p.topics || []).forEach((t) => { counts[t] = (counts[t] || 0) + 1; }));
-      const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-      counter.innerHTML = rows.length
-        ? '<table><thead><tr><th>Topic</th><th>Posts in this snapshot</th></tr></thead><tbody>' +
-          rows.map(([k, v]) => "<tr><td>" + esc(k) + "</td><td>" + v + "</td></tr>").join("") + "</tbody></table>"
-        : "<p class='muted'>No topic tags.</p>";
-    }
+    if (!counter) return;
+    const counts = {};
+    ((xdata && xdata.posts) || []).forEach((p) => (p.topics || []).forEach((t) => { counts[t] = (counts[t] || 0) + 1; }));
+    const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    counter.innerHTML = rows.length
+      ? "<table><thead><tr><th>Topic</th><th>Posts</th></tr></thead><tbody>" +
+        rows.map(([k, v]) => "<tr><td>" + esc(k) + "</td><td>" + v + "</td></tr>").join("") + "</tbody></table>"
+      : "<p class='muted'>No topic tags.</p>";
   }
 
   function renderCalendar(cal) {
@@ -201,8 +255,8 @@
       renderValuation(quote, kpis, company, state);
       if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
     }
-    renderNews(news, xposts.posts);
-    renderX(xposts);
+    renderNews(news, xposts);
+    renderTopics(xposts);
     SPCXForecast.mount(forecast);
     SPCXCharts.mount(kpis);
     if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
