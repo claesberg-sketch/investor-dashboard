@@ -1,0 +1,34 @@
+{
+  "default": "spacex",
+  "owner": "Claes Berg",
+  "title": "Investor Dashboard",
+  "companies": [
+    {
+      "id": "spacex",
+      "ticker": "SPCX",
+      "name": "Space Exploration Technologies Corp.",
+      "shortName": "SpaceX",
+      "status": "active",
+      "exchange": "NasdaqGS",
+      "dataDir": "data/spacex",
+      "website": "https://www.spacex.com",
+      "ir": "https://ir.spacex.com"
+    },
+    {
+      "id": "tesla",
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "shortName": "Tesla",
+      "status": "coming_soon",
+      "exchange": "NasdaqGS"
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shortName": "NVIDIA",
+      "status": "coming_soon",
+      "exchange": "NasdaqGS"
+    }
+  ]
+}

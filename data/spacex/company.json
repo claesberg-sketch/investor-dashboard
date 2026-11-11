@@ -1,0 +1,87 @@
+{
+  "id": "spacex",
+  "ticker": "SPCX",
+  "name": "Space Exploration Technologies Corp.",
+  "ipoDate": "2026-06-12",
+  "ipoPrice": 135.0,
+  "ipoSharesIncludingOverAllotment": 638888888,
+  "ipoGrossProceedsUsd": 85700000000,
+  "cik": "0001181412",
+  "cusip": "84615Q103",
+  "sharesOutstanding": 13581063709,
+  "sharesAsOf": "2026-10-15",
+  "sharesSource": {
+    "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+    "detail": "8,246,541,218 Class A + 5,334,522,491 Class B = 13,581,063,709 shares outstanding as of October 15, 2026."
+  },
+  "shareClasses": [
+    {
+      "class": "Class A",
+      "listed": true,
+      "ticker": "SPCX",
+      "shares": 8246541218
+    },
+    {
+      "class": "Class B",
+      "listed": false,
+      "votesPerShare": 10,
+      "shares": 5334522491,
+      "note": "Convert 1:1 into Class A before sale; valued at the Class A price for market cap."
+    }
+  ],
+  "cashAndStInvestmentsUsd": 89860000000,
+  "totalDebtUsd": 37860000000,
+  "balanceSheetAsOf": "2026-09-30",
+  "balanceSheetSource": {
+    "label": "Q3 2026 10-Q / FloatCap compilation",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+  },
+  "circulatingSharesEstimate": 4450000000,
+  "circulatingNote": "FloatCap estimate, 32.7% of shares outstanding; most of the rest remains under IPO lock-ups or unvested awards.",
+  "hyperliquid": {
+    "symbol": "xyz:SPCX",
+    "dex": "xyz",
+    "deployer": "trade.xyz",
+    "type": "HIP-3 US-stock perpetual, cash-settled in USDC, 1 contract \u2248 1 Class A share",
+    "maxLeverage": 20,
+    "note": "Price exposure only \u2014 not share ownership. Used on this dashboard in the overnight window after U.S. after-hours (8:00 p.m. ET) and before pre-market (4:00 a.m. ET), and on weekends/holidays."
+  },
+  "xAccounts": [
+    {
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "role": "CEO, CTO & Chairman"
+    },
+    {
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "role": "Official company"
+    },
+    {
+      "username": "Starlink",
+      "name": "Starlink",
+      "role": "Connectivity business"
+    },
+    {
+      "username": "Gwynne_Shotwell",
+      "name": "Gwynne Shotwell",
+      "role": "President and COO"
+    },
+    {
+      "username": "SpaceXSI",
+      "name": "SpaceX Super Intelligence",
+      "role": "SI / Grok / Cursor (formerly xAI / @xai)"
+    },
+    {
+      "username": "nextbigfuture",
+      "name": "Brian Wang / NextBigFuture",
+      "role": "Independent analyst, frequently cited on SpaceX"
+    }
+  ],
+  "xNotes": [
+    "CFO Bret W. Johnsen does not appear to have a public official X account (handles checked Nov 11, 2026).",
+    "The former @xai account now points to @SpaceXSI. @grok is a high-volume product account and is linked, not fully ingested.",
+    "X posts on this page were seeded from the X public API on Nov 11, 2026 (Europe/Stockholm). GitHub Actions cannot refresh the X connector; official timeline widgets and profile links are the ongoing fallback. See README."
+  ]
+}

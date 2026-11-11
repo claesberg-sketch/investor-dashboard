@@ -1,0 +1,675 @@
+{
+  "updated": "2026-11-11T07:55:40Z",
+  "feeds": {
+    "press": {
+      "label": "Company / IR press (static, curated from official releases)",
+      "updated": "2026-11-11T08:50:00+01:00"
+    },
+    "media": {
+      "label": "Google News RSS (SpaceX OR Starlink OR SPCX, 14 days)",
+      "ok": true,
+      "error": null
+    },
+    "filings": {
+      "label": "SEC EDGAR submissions CIK 0001181412 (data.sec.gov)",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "x": {
+      "label": "X posts are in x-posts.json (seeded snapshot; not refreshed here)",
+      "file": "data/spacex/x-posts.json"
+    }
+  },
+  "items": [
+    {
+      "id": "media-37",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T22:22:00Z",
+      "title": "Here's How Much a $5,000 Investment in SpaceX Stock Could Be Worth by November 2027 - The Motley Fool",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOR2pJNHI1akVKT1draXE5VzdlQm1SSG5hcldxbzZvYkNzSVQ4Rzk3Q2hLM1Y4Yk5EQnBuWXZmeDNvT182ejVzVVpEU0JiUjlUOVA4c0N2bkhPYXZUOEQ0c1FhV1JCUk1fYTZETXJBMmNrTS1ZQWNuM2ZyenVHMmtTZ1RZaU42RzEzTlp1cm5GdGdQQkEtekZrRw?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-33",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T22:09:39Z",
+      "title": "SpaceX moves Starship Flight 15 booster to launch pad for 'squeeze test' ahead of epic double-catch attempt (photos) - Space",
+      "source": "Space",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQZUVUejZCSkpnekNYV2JJWkhXM3FvdGl0UnFiT0pzNkRJS2VhWFNJRHRZNDNtWHRCZUY5ZWgydjRxQlZFLVRzdXByRHZOZWlMankxUmxzR0lBU3NPeGJ0bk9wMUZ1ZExqM3UzbmFJZEZCUW5pRWFMWksyQ3Q5bWVXVndGRVJpZ3VSQ3o2bDF4b1B5NXBpeWlib3hXVEJwbV9Ibjl1RklJNXhESHQ2QnhBX3Q5TzhhVjhhX08yNkl5RXlIRlp4c29fWUhqX3JPLXloWllBTG9pVVNGcTBBT2RqNzBjTUZWSDhFczVsenBmQWR2blpRSXY0QnFFcThYNTd2YkE?oc=5",
+      "topics": [
+        "Starship",
+        "Launch"
+      ]
+    },
+    {
+      "id": "media-32",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T21:30:00Z",
+      "title": "SpaceX Sets Date For Critical Starship Flight 15, Plans Tower Catches - Investor's Business Daily",
+      "source": "Investor's Business Daily",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOeDAyMWNZS3lpcnh4ZWdnMEctQkJFNXZLVGNDTW5HRUpVdlV1RmdxendHdWNsb3N2T19CLS1GSmRiVkFIZW9LMkxycGo3NjZhMHhYZUh4bFdncjFCc1pOYUZsV0U3emNaUk9jZUI3TlpIR01oRDVkOEFyLWNwN3M4dm1JQXJuOVd3cUk2cmd0cnA4d3VRM210NnhUcnZJMjlXeVVRUEtqY19zQTQ?oc=5",
+      "topics": [
+        "Starship"
+      ]
+    },
+    {
+      "id": "media-4",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T18:07:30Z",
+      "title": "Starlink Mini 2 Launches: $999 With Built-In Battery and One Year of Service - BASENOR - Tesla Accessories",
+      "source": "BASENOR - Tesla Accessories",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNekJwdUpYaXhnLXRDMzE5OUk3VFhoWnd6QllPNWc0TTN2Zm9rMEZSaWl4QUZsblJIUVFhX0lVYkJyU0N0SlZidE90NmY4MS1XTzdndGdUcThYemltcGVrQUFobGFrZExsbFlidlJNYnVPSkhwTzA1azFkaUl0Z1lHMTZLMkxYMFNYbHB5UFhQVTIxS1FORmdUdkpQZkJhNWlXeFdpT1MtYXRhWTNzU1E?oc=5",
+      "topics": [
+        "Starlink",
+        "Launch"
+      ]
+    },
+    {
+      "id": "media-23",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T17:36:00Z",
+      "title": "Why SpaceX Could Be the Best Buy-and-Hold Stock of the Decade - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdDV1VXc4dXFfa1UweDhENHo5eEJ6YVktbnBBeVcwZ2pyX3JUS2g4MmtjQktMR0pka25qbXB1VlFqNGRlZ09QQUU2Y2VjNnJLWW5MMGtMUUFRaDJkODZnR0RpWVQ3NlF2cEx5LVB5WDEzVzQtOFU3dUJjeFlSWWNyeVloaU9qYUx6OTBlVksyLVhKSEg1?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-34",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T12:41:00Z",
+      "title": "Prediction: Here's How Much SpaceX Will Be Worth by the End of 2027 - The Motley Fool",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa2tvaFF1eHJpSEFJS1l6ZVdFdkhMRG5vSkpHZHE4aXA1YUpHeUdjWFVncGJ2VFYzUGFILXI5ck9VaUJHYjJqM0lHTkZBWUw5VXpkbDVUMEtLbzZnMkpFb19VZEs2bFJCbFFaOUFGbFVGZks1dVVWS0xfOV94NUxVVC1QMjJfMWd2Q1pKYm1jY24?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-16",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T09:16:00Z",
+      "title": "Prediction: This Is Where SpaceX Stock Will Be at the End of 2027 - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUXZYbWNrRHRrV3ZJY3VCWkJpNXJrSEFBc01UY080ZnBuQ0gzbENoRlR6djg0N04xcjctbHBuRl9URFNiN0dlcVRwa2hyQURKNlAxV0Q1Y24wdDhEWVRmWnMyM05IY1hZenQ4T1RveFFMdWo5a1VCV3U0QlB1MmRjeW5lUWN1Tm5tYm1JbEJpRFg1WUZoN1ZRSlY5bkpLbW8?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-10",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T06:30:00Z",
+      "title": "BT to hold off Starlink launch until Ukraine 'noise' dies down, CEO tells FT - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQUNjZVZkRVQ4bjNDbkVTSFhpbEZhVUVNSHN4bmRNNEtGc1oxNmpZYTBLOTNnbkYyblJBUVppdWc4UGlUYlVaN0JldkVicTYtcjdxMDV4dDMyVVdOQmc3WUtEZWI5SGpBcXM4VUwyU3pEZ3VmWHBiT3M2eEpGX2wtb0E5X3FXU3AyLTl3YnhTWVRrdVBZTDhxSmFtRThsZGJVTGhzdHZLWXFDdzBGSmFYQ2NLU0o2OUEtTHMzTlZlY0d3ODBCRTlCcw?oc=5",
+      "topics": [
+        "Starlink",
+        "Launch"
+      ]
+    },
+    {
+      "id": "media-24",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T00:55:49Z",
+      "title": "Elon Musk Just Gave the Top End of His SpaceX Revenue Forecast About a 2% Chance. His Best Guess Sits at the Bottom End. - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcG5XeDR2MW1LVG44R0F4QVBqak9yNVo0T1lEa3FsRV9WOUJUSW9hdWptTXpCMTdsdUl1cm1Vb3B3Z1dvNTRvQkpEVndFdHZlWWJxbWdOZWpEU0J2YXR3R19TX3F6a0R5OWZ0QVVoWTV4MDhBZUMxakNRbW02c01Ma2FOMFJHLXl5STJHLTJrcTNyQQ?oc=5",
+      "topics": [
+        "Earnings"
+      ]
+    },
+    {
+      "id": "media-30",
+      "type": "media",
+      "date": "2026-11-10",
+      "datetime": "2026-11-10T00:23:00Z",
+      "title": "Elon Musk Just Gave the Top End of His SpaceX Revenue Forecast About a 2% Chance. His Best Guess Sits at the Bottom End. - The Motley Fool",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNQnNTanNxSFJ6SXR5d1dmc1BjZVZ2Z3BDR2RCRG5sMDNsSGZraG13TkpQWlpoN01YT0pFTkwwWjFZc1phSlAwUkZQcWg4b05TNW5KM1A2RFl6dXlXX2k2UUxiWlRZZEM4WnNLQjQ5N19iZ1dVcXV4SXZhQmZnV2xuVkRMMGtrMFRXWFRPN0ZNZmdVUC1tQWhHWnVVelJqam9udk94dUpkMzNranBiVG53cFM0YS1aeEUxY2FRaUVpOFdhemZwZkl1ay1DcTVmMld6Y3lQZE9tNDlaQ1VCSUxjTVZIZk5pNFQyUUtvd0M4N19jQQ?oc=5",
+      "topics": [
+        "Earnings"
+      ]
+    },
+    {
+      "id": "media-3",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T22:17:07Z",
+      "title": "SpaceX plans $24 billion gas power plant, data center project in Texas - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZGhRNnpDTGdodFotZVZacFc5cC1NdnhETU5xb19iMFIxUUgySlJiOEYyX1RsdnFwY1h5VkM5RWpoVVVseFVJMFFFQ3ByaGxUOXZxY3R2M2RNSFJGaXhqU3VzSmhndWpmdklTd2RIekc1Nlg2b1FRVGdsdnN0YzVEQVVrZmpqT1JUVG9GamZ1U29EZjdaV0xFZEJTemZxdUZleGlLb055UEo0Slhod1VBU09kNWw0ajZmQnJmQUp3?oc=5",
+      "topics": [
+        "AI compute"
+      ]
+    },
+    {
+      "id": "media-35",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T18:52:00Z",
+      "title": "SpaceX Plans $24 Billion Data Center and Gas Plant in Texas - Bloomberg.com",
+      "source": "Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa2tLdTRWMGF3cFpraEd5VWpXMzdGNlpZRUdvY0VOTVZNLWl6MXBncjJoRl9TTzZBN0JjMHhSd3NjLTJ5alRFWDlMZFRKSmVIaktDLW14U2piaUIxUVBPWnU3MTBmVWx3WjRrYjA1ejFWWGFwSm9xbzhFWWZzY1VoVDRSb1U4UERRbFJ6ZHhMV2JLUGxGRFFuWmd0YmloVXROdzByZ0lIVzhLV2dhYlE?oc=5",
+      "topics": [
+        "AI compute"
+      ]
+    },
+    {
+      "id": "media-22",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T17:47:30Z",
+      "title": "Musk: SpaceX Revenue “Will Drop” If Compute Becomes “Plentiful and Cheap” - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVmZJRHotMGtwdnZkdmdsYVQwaXdVNDZBalV0S1k5R09UX0hmWXpnVmZ5aXV3TDNZZUJCYXRKWEtla3NYdVYwVzBXSURWX08yYWwtQk5YRUE2bXo1eEpaYjRWMGg4TjlTR2lkZmFXb3ZONERwMlpSZ09sT0g1N1I2bUlVc1FUd1dZYXpoLUtYNzVaQmpsS3p1amFucU8?oc=5",
+      "topics": [
+        "AI compute",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "media-18",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T17:09:35Z",
+      "title": "Prediction: $500 a Month Invested in SpaceX Stock Will Be Worth This Much by Year-End 2030 - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYnNnU0ZHcWFtaHlPRlR1ZzNnNlFaVTVrUlJYc3pfcjU4b3UxbUcyMTB2SXdhMFotY2tVMzY3WE5SbmFlUGYxMFR1UjNzRHg0Q3Z1RldaTG1WWmVPZTY4bllkbkRYZEtncEdadXVFYXBxSWZFQm9rT3dZWnBMeFdVU3ZoVGdzY0NhU0hmd25EY0prTkJsdmNLbkZMQ1ViRWpEbG1v?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-28",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T16:43:20Z",
+      "title": "SpaceX, Rocket Lab blast higher as NASA hands out $10 billion in Moon Base awards - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMWEtYXNDaFBOa2M3TlhLaV9wRFFRUG5oVUNXZzdBM1BybnJCZmZtRFZCdldUcXFYdVBIalhsWW9oRzRLX3NpbjgzbDRtcFJ6Rm9acWhydHMxT0VveGR6dXRvRW1uQnpKeGFfQ1RTYnlIQUJqNFltUTFCbFlrQ09PRGQ4c0FLUkN2YVVxelBQTDBfNEVENkRSRnlTdFVrMWdxOVR1T1hhbVFmYndaWXBsNnFzczN5NXJfb2FfNS1Jc0N1dEg0UkJ6cGdiTWFieGt2Z1E?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-8",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T15:39:21Z",
+      "title": "SpaceX now fundamentally an \"infrastructure company,\" senior official says - Ars Technica",
+      "source": "Ars Technica",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSHlRUkxIaDd0cjI3MjBXdTF3NDFBZFJPNkxtSFFJVno2QlkzY19vdGZzdHRjN2h2U0tUUVllUFF2QU1oeVlSc1hpMndfaXVmUk9CaU16OEoyU1ZZTmRaSWQwX3QtSmZhM1QtSUN3WmlaSkZ2MGVxSVVYQnpidF9KSGFDV0V6TU9QMkkxa1A4M0MwRjJOcEVvNmRwZTh3QVA0X1pNVkhadWFCbGNkS29j?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-40",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T14:30:00Z",
+      "title": "SpaceX will launch epic double-catch Starship Flight 15 test mission on Nov. 13 - Space",
+      "source": "Space",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObzJxS3pPV3MwcVN1czhMWEZlYm1xbGV2eC02ZzdwdktJaGxoOUJpWm1fS2pYcTVKU3R5cTAzdzZEdXhRR0lFeXVzT1FZRXU1NGltT1lBVjNGbFYtUG5JN2J2bVN0SlRBRVRoOEp3WlpmRnJ0OC1sSVBfLWlzTy1fS0U4QlZpRDdFLU9jczAxM2ZHTF9tRmJTeGFLcy1mQzJXcktVTzEtY0F1NUFlYmlqelZUR1NEdldOLWQ4Umgzb2ZlT1VuRFdUUzM2a1gxS2p0cDJvdA?oc=5",
+      "topics": [
+        "Starship",
+        "Launch"
+      ]
+    },
+    {
+      "id": "media-11",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T13:42:00Z",
+      "title": "Here's What Must Happen for SpaceX Stock to Rebound - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNLXNneFY0c3h3Z3ZBWmFnSnJlenVFaGFiTTVrMjIxcWl4OUNaMUN4dk5tX3dDUEFkTk9BMktpbUxsQUMwQkxxd0d3V19NckZqeE0yU0FWaTR5a1l4OEZIdmlySTBQMDBvcmlUTEpCU1NfTTdvRHQwS0R6VXJFaGdfQ051bTJzZDR3dHhYallES21SUmxiYjdLV0dZNA?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-2",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T06:12:36Z",
+      "title": "Space Exploration Technologies Corp. (SPCX) stock price, news, quote and history - Yahoo Finance Singapore",
+      "source": "Yahoo Finance Singapore",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9fZjRjeHVwbUZ2NWhxQ0duY2FDcE0ydzJPaExzQkFLN3FLN3NJaGRNaXVCeE9heFRLcnFQUFlPMExvM0k0VkIxNTFvSGw1UWR6UUE?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-19",
+      "type": "media",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T03:27:14Z",
+      "title": "Elon Musk sends a strong signal to SpaceX stock investors - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaG5BRkJlSWI5VjQ2WHlDclBKRHROdmZ5VTYtdDNGQWdqb1RZUkpocktrbVduWVd0TWxkQjdvV282Z2U4LUtfeDJHbUU4Mml0WTUzckVDX05ZSjVzUVVENlhfczVhRk5MZ3c4SENzcFJTNG1VVzRYb0EzUjNRZi1CZnBsYlpldHlpZXJWSUxWOU9Jc19iTUlFOHlR?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-17",
+      "type": "media",
+      "date": "2026-11-08",
+      "datetime": "2026-11-08T22:06:38Z",
+      "title": "SpaceX (SPCX) Lands $45 Billion AI Deal As New Contracts Recast Its Growth Story - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdTQ3MGdxOWVJeWtRSXZzUDNib0JvRWxiVm9haXFBczdHX0lGYk43WXRUVVhMeERWcG00Q0lBTmRMWkZqbGx6VzV6OEM4TTFLcm1IQmtXUFkwUFJRVGhVOEZNaW9RWGMwekhGdWxHVng4WHFLeTJCZjB4VVZJRWwxSkZERkdLNUxYaXRfelMxWVdLdTUxTjRF?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-7",
+      "type": "media",
+      "date": "2026-11-08",
+      "datetime": "2026-11-08T08:02:44Z",
+      "title": "SPCX Stock Quote Price and Forecast - CNN",
+      "source": "CNN",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mNFpQdmpQSHpfbjh0RmFkcGxLQ1d1dWxoeUoxMTUwM0pnRmYwRDVjMFlvdVNKQm85LUsxSjNVZFlSZm9iSmYwRkJfSVhlNmtK?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-9",
+      "type": "media",
+      "date": "2026-11-06",
+      "datetime": "2026-11-06T17:53:07Z",
+      "title": "Go For Orbit - SpaceX",
+      "source": "SpaceX",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5kQzl1R0xIWEFvcTRFWkdmM2dhUVJQUklNQzBiaWFOeUJzdDhDeDcwWFJsdEtLYmZrTzBUc1ZJb2VRczlkdEZaVzU2Qy1RY21VdWFrYTM1TXdXRmJocEFkVFNB?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-1",
+      "type": "media",
+      "date": "2026-11-06",
+      "datetime": "2026-11-06T08:00:00Z",
+      "title": "USSF-432 Mission - SpaceX",
+      "source": "SpaceX",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAyd0FuR3ZqRVhrMVptSnhncnZ1Um5SdWFoMmZwbEF3RHY4Rlg1blFRWUhCZDBmdnM2aXVzd0dCc2VPMEhVXzdYWTJDYTc3X2tZ?oc=5",
+      "topics": [
+        "Launch"
+      ]
+    },
+    {
+      "id": "pr-gofororbit",
+      "type": "press",
+      "date": "2026-11-06",
+      "title": "Go For Orbit — first revenue Starship mission documentary / recap",
+      "summary": "SpaceX published “Go For Orbit,” covering the first orbital Starship mission to fly advanced Starlink V3 satellites.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ]
+    },
+    {
+      "id": "pr-ussf432",
+      "type": "press",
+      "date": "2026-11-06",
+      "title": "USSF-432 mission",
+      "summary": "SpaceX launched the USSF-432 mission on Falcon 9 from SLC-4E, Vandenberg.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Launch"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-071689",
+      "type": "filing",
+      "date": "2026-11-06",
+      "title": "8-K — 8-K",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
+      "topics": [
+        "Filings"
+      ]
+    },
+    {
+      "id": "media-12",
+      "type": "media",
+      "date": "2026-11-05",
+      "datetime": "2026-11-05T21:42:17Z",
+      "title": "Elon Musk's Tesla and SpaceX lose over $420 billion in combined market cap after midterms - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbVlBX0FCZGw4ZnNTUlRoSU5wSjJRWllFQ2JTZjBHNy1CQ0VXNWZWb1Y1V2dDWXhLQWIxZC1hNG00U0xXUjZIdHV6U0FaWS1hN1BURXBNd2g4Q0RoT0lFX21qMlNrQTkwelZndmExbGpSdlhlQ24taDl4QXpTQkNmVlJZc3FaajZl0gGOAUFVX3lxTE9peU5XOFhISzIwSnNNaGtiR0Iya1JqWVNFcXgyQXVPVXNubjAyMXVYMUR2aHd1MWRnZEhmLXI1MnRONmk3SHIzUGtOZnQ1U3JFdjBkSnYxNHdsQTVSQnBGWmVwUGxSZWJIYW1JZURVYUxsa2prV1VXeUs1VW5CU0pISHRtYVUzLV9LSTNyTEE?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-31",
+      "type": "media",
+      "date": "2026-11-05",
+      "datetime": "2026-11-05T21:39:00Z",
+      "title": "SpaceX Lessors Look To Sell $40 Bil AI Deal. ARK Buys The Dip On SPCX Stock. - Investor's Business Daily",
+      "source": "Investor's Business Daily",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWGJXUGZWcjh1MWNNeFNGZmRPTHF6bVBzOGx5NHFVQlVOUnFFMVZLbEV3Ul93cF9yUElSUUNVd1NhektWMU5VcEdCUmhJQms5dGxZRlBwSFRPODBIRXVLWV96QTg2VklRTk96QlpZNXZpTF9Vck05SjlxSnliVjFPcDFrTDk4OHF4Sk92b09LX1RZVjZ3d2ZVOVdYc1dIV1lxLXBEbDBydjVaVUR4VXZ1cHZQWVVjTmoydU5KeU9nZHE?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-26",
+      "type": "media",
+      "date": "2026-11-05",
+      "datetime": "2026-11-05T21:20:00Z",
+      "title": "SpaceX Stock Had These 2 Positives Today. It’s Still Falling. - Barron's",
+      "source": "Barron's",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeDVOMkthXzBuVFYzclMyTUVLWWs1TmFvT2dETWRPMjFKTkVtQzM4d1Ryb1J4NDJSNUtON0Uzel8tS3JTQ3VveFNTY3V0WTlnZTNTdnhSelllamZWVmV6NlQxczVoUHVVLXc5RjRia0oxY3VGZmNxUU1yLVVjWUtoMEJSWQ?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-21",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T13:35:45Z",
+      "title": "Qualcomm signs major 5G infrastructure deal with SpaceX for Starlink Mobile network - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVWZCaVBsMkw1X24ydGtHeEN2cVhCZ09DcV9TTG9pQkJYMXlhUDZLOElIS21YbEdyeDdxM2RRY2dCazN1MXRFdUNNeEtHck05SFNUd2lpVkw4N1FiakdlTk1kWDFpZ08ycjlSajV0V29sdkJsZEVDbTZOc21ON2t2dkxtbDRDRmx0OFVIdWMyWXo3RUd0ckswYkRyV3RnekU5bmJyNXlvelR6VTRVeElGM2U2Wll4azlpbmNvbURfWDhDX29CMnRkN3ZWaHF6S3VHTTdPOQ?oc=5",
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ]
+    },
+    {
+      "id": "media-6",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T13:30:02Z",
+      "title": "SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXlJT3R0clJVSkpBRkR1TGp2ZU0zWTljNV9VQ1F1a3hiUVdudWJpM3h5aXZWcDhDZEhNU19CQlpGV1RKZmhZbjVhV05rWkdCbFVma2JPMGplSUE5a3NYMk10U2Q4NDYyWmJCNnljeDFWVmt0c053WnJoaHRjSkNCV01FVFZucTQ0SFBQOHA4aFBMTkItb3E2SmlpdWNDNXVjd2xZeHl2bw?oc=5",
+      "topics": [
+        "Direct-to-cell"
+      ]
+    },
+    {
+      "id": "media-14",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T13:30:00Z",
+      "title": "SpaceX inks Qualcomm deal, putting Starlink closer to becoming the fourth major US wireless carrier - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPMUdVZnZzSjFDdnBCZS14SkR1MXRZMXNFMm53RXM0eGFOOVFORXo3MXVLWkNFVWdxSHpuYU5vNGFrQi1ycHVMekRkZlQzY0VWX29vdnR2a1R5UFp0ZnVTRmFMT3ZxSXBQSkM4ZUtHTWZ2ZXgtSnVOZFNncjR5anRweVc2eUtmb2xkVlZsSjdUSkFWUFppQWg0bHZBMGlsMndQLUlQVnRHNXEtRGZZWG85RnpGV0NaOFJwWWZPQXFibDI1T2JZZkpoUFhQcjZkcXZQWWpqQ2ZfNFNxQzJ3Vm9QUUdjblFTZ3ZhSGhOVGxobw?oc=5",
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ]
+    },
+    {
+      "id": "media-39",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T11:53:33Z",
+      "title": "Shares of Elon Musk’s Tesla and SpaceX Tumble After Republican Losses - The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNUJMNUhfVmg3dHlfRHhVb0tham91N0NObjZjNXl0bWN0Yno0QVdFNFVueHlnNEo2eGJJbTUzajY3cVZ6cnR2TG9vN0VpVVBpcEttSm1sZVgwbmpnTE5JZ2EycUV3ZXY5WVk4VTRZaHpHTTNSVHMtZUl3d0l2UXI0LWZsWTR1dkpmcF9R?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-5",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T08:00:00Z",
+      "title": "How to Invest In SpaceX (SPCX) — And How Not To - NerdWallet",
+      "source": "NerdWallet",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE96bGJtS3ROV2hGR1lHUXNWeUxPYlhyZUV1bmFFbmRKLTNOcXhFNGF5VVRUMUZjNUthY0NTNS1nS2I1Q3kyeGJMUzNzbkhVZEFXREFwT3lnaGxuSGtpLWpLSm56NGItVEpUWlNTVmN6bkRTYmU4bmVzWVVSSGM?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-13",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T00:19:50Z",
+      "title": "USSF-317 Mission - SpaceX",
+      "source": "SpaceX",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9uVDBzdUJ6c2tQSEUzVmdWb1oxdzY5dTVQWUVTOWE1THJBbURxaTVUaDJPYUtFTF84WDFQa1oxOTh1dk55cXRjczNFVi1zUjdw?oc=5",
+      "topics": [
+        "Launch"
+      ]
+    },
+    {
+      "id": "media-20",
+      "type": "media",
+      "date": "2026-11-02",
+      "datetime": "2026-11-02T08:00:00Z",
+      "title": "SpaceX weighs Boost Mobile deal in push for Starlink phone service: Report - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONnBla0hkU1VobkJ0TmozMk1fa1R1NEF5VGxRNk95QXBGdk5CSFRYd0NWaFVReFdvaHNPMlFSeXRTM3o4ZU52eWZUZjBadVNsUTRlSnRLN0s4dW9ka2s2bWVmeF94bW01dDVhb2dHbnZYWlZQN0tFSDJ0UENCRTMwZjFLdFVTQ2NEU1A3aWdGRmlMRl9rYlFWRk80cmJfcm9tS3Vsa3g3a0s5LXhjWXNpVWpCcVVqUDh4Y1RKVUMtVERCZTZVQW5zQWdlcV9rVnZ5am5B?oc=5",
+      "topics": [
+        "Starlink"
+      ]
+    },
+    {
+      "id": "media-29",
+      "type": "media",
+      "date": "2026-11-02",
+      "datetime": "2026-11-02T08:00:00Z",
+      "title": "Inside Musk’s plan to upend the wireless phone industry - The Washington Post",
+      "source": "The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM3hVb1R3X1JVWkxpZ04wdUZDLXMyVFdGbXA5OFprUFZUcUM1TkpUTXZMRXNzNXoxWFF4cHBDemFWazhzLUFlcTl5cGgyRzh3UWVYZFVhdmVBUkY4cl8tTm5TeUpKNS1jcnZrMmtuRFplRDNBYVpwSktjUTl3NDgwYi15aU5Eb2swR05TTlhZZ1haUURmNHhuYkZ2bHBERER6blh0eWk5Rnk1QQ?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-27",
+      "type": "media",
+      "date": "2026-10-31",
+      "datetime": "2026-10-31T07:00:00Z",
+      "title": "SpaceX loses bid to toss NAACP lawsuit over Memphis data center air pollution - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONWZobnlmVnlwbk9rMk1yeUVabnE1QUdtdTVEWGR6UUkwYXEzWk9weVpLMWFtRWF2Ykd6SmpNalgtelBCZ0lBdkd6Vm1xcWhNNkNVM0ZKTW43TmZyUUtMb1pYZVY2V2VuaFh5dHdBakhBYllrQjY5bUhrOHpteVNRUWNaZFo?oc=5",
+      "topics": [
+        "AI compute"
+      ]
+    },
+    {
+      "id": "media-15",
+      "type": "media",
+      "date": "2026-10-30",
+      "datetime": "2026-10-30T07:00:00Z",
+      "title": "SpaceX - SpaceX",
+      "source": "SpaceX",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1EVVRTME9OQjNYWTFKZUVHOGZ0YUlaUzRKWkc0VkdabS13UnJsVzRSbXlQQzNueGpKSk9MZVJIRXNrRFM2MEJLb0p5QWlXZWhTOXc?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-25",
+      "type": "media",
+      "date": "2026-10-30",
+      "datetime": "2026-10-30T07:00:00Z",
+      "title": "Happy Halloween! SpaceX launches 27 Starlink satellites to orbit from California (video) - Space",
+      "source": "Space",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQLXhmUXBPR3Z0NEszbXVIUk1taFl1U09tUDZNbFY1WXo1emtHRHNFYzVXX3NNalk1eGVfZWlHWGQ5NzhOQjlrN0xkUjREQ0tVa09XUng1Um9CX1doT2pJVUk5dUJpYzI3OTF3X1RuZnVveHMxbHlCS3RWdVNuWGY1NmlkLWVTRDgwZC1NWTNndGk4QlFld2VsUjBWNFJtMkJVUmE0Tlk3dlBlQzdYM0VFbDZMc0d2enB6Q0E?oc=5",
+      "topics": [
+        "Starlink",
+        "Launch"
+      ]
+    },
+    {
+      "id": "media-38",
+      "type": "media",
+      "date": "2026-10-29",
+      "datetime": "2026-10-29T07:00:00Z",
+      "title": "SpaceX no longer needs NASA, and that’s a problem for America’s space agency - Ars Technica",
+      "source": "Ars Technica",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdHAzekVBR3B2VGZLQU1CRGlaU1BKX3B6ZnJ4UjA3cTJzN2xVQkgzcm9acW85QloyeHZJVl8wVWx3YUVrMm9xanQyaHRHNUpOWnNiOE5OVjJEN1NaWUU2VDQxMEE5YXVpRGRYU1FZb0JNTlhnamhfeVJjWEJCRlVzX3ZTcXk5dHBkOGRFLXhmaFllUzM2MFB1YWFTN1FSdldweXF2VFlkT2dIbmJPQ1FMZVpn?oc=5",
+      "topics": []
+    },
+    {
+      "id": "media-36",
+      "type": "media",
+      "date": "2026-10-28",
+      "datetime": "2026-10-28T07:00:00Z",
+      "title": "Pentagon watchdog tells lawmakers it won’t investigate Starlink slowdowns to Ukraine - AP News",
+      "source": "AP News",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObXZ6TzNnOExPZmEyc0F6ckNhMURBcndMTUFfaC1TTDZkY1lqRGVhNm05YjlqeUo0a2hOdmdlWVYtV3M3bkVRbHhpNUJRRXVzcEhFSjNkUzRlVmJVYTBHWEgyeXdUZnpwSENKS1AyVTg4ekROcGljemJOdnJQSkh5WmgzSThGTlRfVDdHWGcxdHZ0NmkzcWdOd011MndzSWJxZFdYZFhnV1Z3NENTdjAxN2p6T3pJc2JY?oc=5",
+      "topics": [
+        "Starlink"
+      ]
+    },
+    {
+      "id": "filing-0001104659-26-118614",
+      "type": "filing",
+      "date": "2026-10-26",
+      "title": "8-K — FORM 8-K",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+      "topics": [
+        "Filings"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-066903",
+      "type": "filing",
+      "date": "2026-10-22",
+      "title": "S-8 — Cursor reoffer prospectus / S-8",
+      "source": "SEC EDGAR",
+      "form": "S-8",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066903/spacex-cursorformsx8.htm",
+      "topics": [
+        "Filings",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-066880",
+      "type": "filing",
+      "date": "2026-10-22",
+      "title": "10-Q — Quarter ended September 30, 2026",
+      "source": "SEC EDGAR",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "pr-q3",
+      "type": "press",
+      "date": "2026-10-20",
+      "title": "SpaceX reports third quarter 2026 results",
+      "summary": "Revenue $14.6B (+161% YoY), net income $4.4B, Adjusted EBITDA $8.8B. Connectivity $5.25B with 13.6M Starlink consumer subscribers. SI $7.56B; nameplate compute 1.7 GW. Q1 2027 revenue guided at $33–37B.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+      "topics": [
+        "Earnings",
+        "Starlink",
+        "AI compute"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-066482",
+      "type": "filing",
+      "date": "2026-10-20",
+      "title": "8-K — Q3 2026 earnings release",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "pr-cursor",
+      "type": "press",
+      "date": "2026-08-14",
+      "title": "Acquisition of Cursor (Anysphere) — 8-K",
+      "summary": "SpaceX closed the Cursor acquisition and issued unregistered merger shares (later detailed as ~391M shares). Cursor contributed $608M of SI revenue from Aug 14–Sep 30.",
+      "source": "SEC 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+      "topics": [
+        "Cursor",
+        "AI compute"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-056945",
+      "type": "filing",
+      "date": "2026-08-14",
+      "title": "8-K — Cursor (Anysphere) acquisition",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+      "topics": [
+        "Filings",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "pr-q2",
+      "type": "press",
+      "date": "2026-08-04",
+      "title": "SpaceX reports second quarter 2026 results",
+      "summary": "Revenue $7.8B (+92% YoY). Starlink consumer subscribers 12.0M, ARPU $66. Nameplate compute 1.4 GW. Backlog $47.5B; cash and marketable securities $100B post-IPO.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf",
+      "topics": [
+        "Earnings",
+        "Starlink",
+        "AI compute"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-052535",
+      "type": "filing",
+      "date": "2026-08-04",
+      "title": "10-Q — Quarter ended June 30, 2026",
+      "source": "SEC EDGAR",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-052515",
+      "type": "filing",
+      "date": "2026-08-04",
+      "title": "8-K — Q2 2026 earnings release",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "pr-ipo-close",
+      "type": "press",
+      "date": "2026-06-15",
+      "title": "SpaceX closes IPO, including full exercise of underwriters’ option",
+      "summary": "638,888,888 Class A shares issued; gross proceeds approximately $85.7B. Trading began Jun 12 under ticker SPCX on Nasdaq Global Select and Nasdaq Texas.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
+      "topics": [
+        "IPO"
+      ]
+    },
+    {
+      "id": "pr-ipo-price",
+      "type": "press",
+      "date": "2026-06-11",
+      "title": "SpaceX prices IPO at $135.00 per share",
+      "summary": "555,555,555 Class A shares priced at $135, plus a 30-day option for 83,333,333 additional shares.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      "topics": [
+        "IPO"
+      ]
+    },
+    {
+      "id": "pr-ipo-launch",
+      "type": "press",
+      "date": "2026-06-04",
+      "title": "SpaceX launches initial public offering roadshow",
+      "summary": "Roadshow for 555,555,555 Class A shares; expected price $135; intended ticker SPCX.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Launch-of-Initial-Public-Offering/default.aspx",
+      "topics": [
+        "IPO"
+      ]
+    }
+  ]
+}

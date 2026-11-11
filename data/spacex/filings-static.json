@@ -1,0 +1,108 @@
+{
+  "updated": "2026-11-11T08:50:00+01:00",
+  "source": "data.sec.gov submissions CIK 0001181412, retrieved 11 Nov 2026. Re-fetched in GitHub Actions when the SEC allows the runner User-Agent.",
+  "items": [
+    {
+      "id": "filing-0001628280-26-071689",
+      "type": "filing",
+      "date": "2026-11-06",
+      "title": "8-K \u2014 8-K",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
+      "topics": [
+        "Filings"
+      ]
+    },
+    {
+      "id": "filing-0001104659-26-118614",
+      "type": "filing",
+      "date": "2026-10-26",
+      "title": "8-K \u2014 FORM 8-K",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+      "topics": [
+        "Filings"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-066903",
+      "type": "filing",
+      "date": "2026-10-22",
+      "title": "S-8 \u2014 Cursor reoffer prospectus / S-8",
+      "source": "SEC EDGAR",
+      "form": "S-8",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066903/spacex-cursorformsx8.htm",
+      "topics": [
+        "Filings",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-066880",
+      "type": "filing",
+      "date": "2026-10-22",
+      "title": "10-Q \u2014 Quarter ended September 30, 2026",
+      "source": "SEC EDGAR",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-066482",
+      "type": "filing",
+      "date": "2026-10-20",
+      "title": "8-K \u2014 Q3 2026 earnings release",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-056945",
+      "type": "filing",
+      "date": "2026-08-14",
+      "title": "8-K \u2014 Cursor (Anysphere) acquisition",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+      "topics": [
+        "Filings",
+        "Cursor"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-052535",
+      "type": "filing",
+      "date": "2026-08-04",
+      "title": "10-Q \u2014 Quarter ended June 30, 2026",
+      "source": "SEC EDGAR",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    },
+    {
+      "id": "filing-0001628280-26-052515",
+      "type": "filing",
+      "date": "2026-08-04",
+      "title": "8-K \u2014 Q2 2026 earnings release",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ]
+    }
+  ]
+}

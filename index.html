@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Unofficial personal investor dashboard for SpaceX (Nasdaq: SPCX), built for Claes Berg. Not affiliated with Space Exploration Technologies Corp.">
+  <title>SPCX · Investor Dashboard · Claes Berg</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="owner">Claes Berg</span>
+        <span class="product">Investor Dashboard</span>
+      </a>
+      <div class="header-right">
+        <nav class="switcher" id="company-switcher" aria-label="Company"></nav>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false">Menu</button>
+        <nav class="nav" id="site-nav">
+          <a href="#price">Price</a>
+          <a href="#changed">Today</a>
+          <a href="#news">News</a>
+          <a href="#forecast">Forecast</a>
+          <a href="#kpis">KPIs</a>
+          <a href="#calendar">Calendar</a>
+          <a href="#valuation">Valuation</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="price">
+      <div class="wrap">
+        <div class="hero-top">
+          <div>
+            <div class="ticker-row">
+              <div class="ticker" id="hero-ticker">SPCX</div>
+              <div class="tiny" id="hero-name">Space Exploration Technologies Corp.</div>
+            </div>
+            <div class="price" id="hero-price">—</div>
+            <div class="chg" id="hero-chg"></div>
+            <div class="session-badge closed" id="session-badge"><span class="dot"></span><span id="session-label">Loading session</span></div>
+            <div class="asof" id="hero-asof"></div>
+            <div class="session-alt" id="session-alt"></div>
+          </div>
+          <div class="hero-chart"><canvas id="intraday-chart"></canvas></div>
+        </div>
+        <div class="stats" id="key-stats"></div>
+      </div>
+    </section>
+
+    <section class="section" id="changed" style="padding-top:0;border-top:0">
+      <div class="wrap">
+        <p class="section-kicker">Since yesterday</p>
+        <h2>What moved</h2>
+        <p class="lede">A short strip of fresh company news, posts, and setup items — not a complete feed.</p>
+        <div class="changed" id="changed-strip"></div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="wrap">
+        <p class="section-kicker">All news</p>
+        <h2>One place for the company</h2>
+        <p class="lede">Press releases and IR, SEC filings, media, and posts from Elon Musk, SpaceX, Starlink, Gwynne Shotwell, SpaceX Super Intelligence, and Brian Wang. Filters apply to the list. Topics such as Starlink, Starship, AI compute, and Cursor are tagged.</p>
+        <div class="filters" id="news-filters"></div>
+        <p class="tiny" id="news-updated"></p>
+        <div class="news-layout">
+          <div>
+            <div class="news-list" id="news-list"></div>
+          </div>
+          <aside class="x-side">
+            <p class="section-kicker">X · seeded snapshot</p>
+            <div id="x-feed"></div>
+            <div class="embed-note" id="x-note"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="forecast">
+      <div class="wrap">
+        <p class="section-kicker">Base case</p>
+        <h2>Revenue forecast</h2>
+        <div class="disclaimer">Base case – illustrative model, not investment advice.</div>
+        <p class="lede">Two views of the same model: the next 18 months, quarter by quarter through Q2 2028, and annual figures for FY2026–FY2029. Drivers are listed below and can be moved; Reset returns to the published base case. Every assumption is sourced or marked as an estimate.</p>
+        <div class="tabs" id="forecast-tabs">
+          <button class="ghost active" type="button" data-view="q">18 months · quarterly</button>
+          <button class="ghost" type="button" data-view="a">3 years · annual</button>
+        </div>
+        <div class="chart-card" style="margin-bottom:24px">
+          <h3 id="forecast-chart-title">Base case revenue</h3>
+          <div class="box" style="height:300px"><canvas id="forecast-chart"></canvas></div>
+        </div>
+        <div class="table-wrap" id="forecast-table"></div>
+        <div class="formula" id="forecast-formulas"></div>
+        <p class="section-kicker" style="margin-top:36px">Drivers</p>
+        <div class="drivers" id="forecast-drivers"></div>
+        <button class="ghost" type="button" id="forecast-reset">Reset to base case</button>
+        <div class="assumptions" id="forecast-assumptions" style="margin-top:36px"></div>
+      </div>
+    </section>
+
+    <section class="section" id="kpis">
+      <div class="wrap">
+        <p class="section-kicker">Reported results</p>
+        <h2>KPI charts</h2>
+        <p class="lede">Taken from SpaceX quarterly releases and the prospectus, with an independent satellite count from Jonathan McDowell. Missing quarters are left blank — nothing is invented to fill a gap.</p>
+        <div class="chart-grid" id="kpi-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <div class="wrap">
+        <div class="extra-grid">
+          <div class="card">
+            <p class="section-kicker">Setup</p>
+            <h3>Launch &amp; catalyst calendar</h3>
+            <div id="calendar-list"></div>
+          </div>
+          <div class="card" id="valuation">
+            <p class="section-kicker">Snapshot</p>
+            <h3>Valuation &amp; street</h3>
+            <div id="valuation-body"></div>
+          </div>
+          <div class="card">
+            <p class="section-kicker">Supply</p>
+            <h3>Lock-ups &amp; float</h3>
+            <div id="lockup-body"></div>
+          </div>
+          <div class="card">
+            <p class="section-kicker">Watch</p>
+            <h3>Risks</h3>
+            <ul class="risks" id="risk-list"></ul>
+          </div>
+        </div>
+        <div class="card" style="margin-top:28px">
+          <p class="section-kicker">X snapshot</p>
+          <h3>Topic mentions in the seeded feed</h3>
+          <div id="topic-counter"></div>
+          <p class="source">Counts are from the posts stored in this repo, not a live sentiment engine.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="unofficial">Unofficial – personal investor dashboard</p>
+      <p>Built for Claes Berg. Not affiliated with, endorsed by, or an official publication of Space Exploration Technologies Corp., Tesla, NVIDIA, or any of their subsidiaries. Design is inspired by the public look of spacex.com (black field, wide-tracked sans type, thin rules, ghost buttons) but does not use SpaceX trademarks or logo artwork. All figures are from public sources or are labelled estimates. Nothing here is investment advice.</p>
+      <p style="margin-top:10px">Data: Yahoo Finance (server-side), Hyperliquid <code>xyz:SPCX</code> (live in the browser overnight), company IR and SEC filings, Google News RSS, Jonathan McDowell, StockAnalysis / S&amp;P Global, FloatCap compilations of the 424(b)(4) and 10-Q. X posts are a snapshot last pulled on 11 Nov 2026 (Europe/Stockholm). Times on the page are shown in Europe/Stockholm unless a source timestamp is labelled otherwise.</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/chart.umd.min.js"></script>
+  <script src="js/price.js"></script>
+  <script src="js/forecast.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

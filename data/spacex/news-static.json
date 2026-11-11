@@ -1,0 +1,107 @@
+{
+  "updated": "2026-11-11T08:50:00+01:00",
+  "items": [
+    {
+      "id": "pr-gofororbit",
+      "type": "press",
+      "date": "2026-11-06",
+      "title": "Go For Orbit \u2014 first revenue Starship mission documentary / recap",
+      "summary": "SpaceX published \u201cGo For Orbit,\u201d covering the first orbital Starship mission to fly advanced Starlink V3 satellites.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ]
+    },
+    {
+      "id": "pr-ussf432",
+      "type": "press",
+      "date": "2026-11-06",
+      "title": "USSF-432 mission",
+      "summary": "SpaceX launched the USSF-432 mission on Falcon 9 from SLC-4E, Vandenberg.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Launch"
+      ]
+    },
+    {
+      "id": "pr-q3",
+      "type": "press",
+      "date": "2026-10-20",
+      "title": "SpaceX reports third quarter 2026 results",
+      "summary": "Revenue $14.6B (+161% YoY), net income $4.4B, Adjusted EBITDA $8.8B. Connectivity $5.25B with 13.6M Starlink consumer subscribers. SI $7.56B; nameplate compute 1.7 GW. Q1 2027 revenue guided at $33\u201337B.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+      "topics": [
+        "Earnings",
+        "Starlink",
+        "AI compute"
+      ]
+    },
+    {
+      "id": "pr-cursor",
+      "type": "press",
+      "date": "2026-08-14",
+      "title": "Acquisition of Cursor (Anysphere) \u2014 8-K",
+      "summary": "SpaceX closed the Cursor acquisition and issued unregistered merger shares (later detailed as ~391M shares). Cursor contributed $608M of SI revenue from Aug 14\u2013Sep 30.",
+      "source": "SEC 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+      "topics": [
+        "Cursor",
+        "AI compute"
+      ]
+    },
+    {
+      "id": "pr-q2",
+      "type": "press",
+      "date": "2026-08-04",
+      "title": "SpaceX reports second quarter 2026 results",
+      "summary": "Revenue $7.8B (+92% YoY). Starlink consumer subscribers 12.0M, ARPU $66. Nameplate compute 1.4 GW. Backlog $47.5B; cash and marketable securities $100B post-IPO.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf",
+      "topics": [
+        "Earnings",
+        "Starlink",
+        "AI compute"
+      ]
+    },
+    {
+      "id": "pr-ipo-close",
+      "type": "press",
+      "date": "2026-06-15",
+      "title": "SpaceX closes IPO, including full exercise of underwriters\u2019 option",
+      "summary": "638,888,888 Class A shares issued; gross proceeds approximately $85.7B. Trading began Jun 12 under ticker SPCX on Nasdaq Global Select and Nasdaq Texas.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/default.aspx",
+      "topics": [
+        "IPO"
+      ]
+    },
+    {
+      "id": "pr-ipo-price",
+      "type": "press",
+      "date": "2026-06-11",
+      "title": "SpaceX prices IPO at $135.00 per share",
+      "summary": "555,555,555 Class A shares priced at $135, plus a 30-day option for 83,333,333 additional shares.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      "topics": [
+        "IPO"
+      ]
+    },
+    {
+      "id": "pr-ipo-launch",
+      "type": "press",
+      "date": "2026-06-04",
+      "title": "SpaceX launches initial public offering roadshow",
+      "summary": "Roadshow for 555,555,555 Class A shares; expected price $135; intended ticker SPCX.",
+      "source": "SpaceX Investor Relations",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Launch-of-Initial-Public-Offering/default.aspx",
+      "topics": [
+        "IPO"
+      ]
+    }
+  ]
+}

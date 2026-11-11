@@ -1,0 +1,165 @@
+{
+  "updated": "2026-11-11",
+  "timezoneNote": "Launch windows in U.S. Eastern Time unless stated. Displayed to visitors in Europe/Stockholm as well.",
+  "events": [
+    {
+      "id": "f15",
+      "date": "2026-11-13",
+      "dateLabel": "13 Nov 2026",
+      "window": "17:45\u201319:00 ET",
+      "type": "launch",
+      "title": "Starship Flight 15",
+      "detail": "Starbase, Texas. First planned simultaneous tower catch of Super Heavy and Starship; expected to deploy 26 Starlink V3 satellites. Pending regulatory approval.",
+      "source": "SpaceX / Space.com",
+      "url": "https://www.spacex.com/launches/starship-flight-15",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ]
+    },
+    {
+      "id": "thanks",
+      "date": "2026-11-26",
+      "type": "market",
+      "title": "U.S. Thanksgiving \u2014 equity markets closed",
+      "detail": "Nasdaq closed. Hyperliquid xyz:SPCX continues to trade; oracle on internal pricing for the U.S. holiday (overnight session also shut Nov 25 per trade.xyz holiday schedule).",
+      "source": "trade.xyz / Nasdaq calendar",
+      "url": "https://hypeguides.com/guides/spcx-hyperliquid-guide"
+    },
+    {
+      "id": "lockup180",
+      "date": "2026-12-08",
+      "type": "lockup",
+      "title": "End of 180-day IPO lock-up (remaining tranche)",
+      "detail": "About 797.6 million shares in the residual 17% of the 180-day lock-up group become eligible. First regular session after the expiry is 9 Dec 2026. Already released: ~83% of this group in staged tranches since August.",
+      "source": "424(b)(4) lock-up table / FloatCap compilation",
+      "url": "https://floatcap.app/stocks/SPCX",
+      "topics": [
+        "Lock-up"
+      ]
+    },
+    {
+      "id": "f16",
+      "date": "2026-12-10",
+      "dateLabel": "10 Dec 2026 (tentative)",
+      "type": "launch",
+      "title": "Starship Flight 16 \u2014 first from Florida (tentative)",
+      "detail": "Public reporting points to a mid-December target, possibly Dec 10, from LC-39A at Kennedy Space Center \u2014 the first Starship launch from Florida. Date not confirmed by SpaceX in a formal advisory as of 11 Nov.",
+      "source": "Florida spaceflight reporting / launch lists",
+      "url": "https://flspaceflight.com/news/starship-new-glenn-florida-december-2026-launch-targets",
+      "tentative": true,
+      "topics": [
+        "Starship"
+      ]
+    },
+    {
+      "id": "q4earn",
+      "date": "2027-02-25",
+      "dateLabel": "~25 Feb 2027 (estimated, unconfirmed)",
+      "type": "earnings",
+      "title": "Q4 2026 / FY2026 results (estimated)",
+      "detail": "TipRanks/earnings calendars estimate around 25 Feb 2027. SpaceX has not confirmed the date. The second full trading day after this print also starts a 20% release (~351.9M shares) from the extended (non-Musk) lock-up group.",
+      "source": "TipRanks earnings date estimate",
+      "url": "https://www.tipranks.com/stocks/spcx/earnings",
+      "tentative": true,
+      "topics": [
+        "Earnings",
+        "Lock-up"
+      ]
+    },
+    {
+      "id": "mesh144",
+      "date": "2027-01-06",
+      "type": "lockup",
+      "title": "Mesh Optical merger shares \u2014 earliest Rule 144 date",
+      "detail": "About 3.8 million unregistered shares issued Jul 6, 2026; six-month holding period ends around Jan 6, 2027.",
+      "source": "Q3 10-Q / FloatCap",
+      "url": "https://floatcap.app/stocks/SPCX",
+      "topics": [
+        "Lock-up"
+      ]
+    },
+    {
+      "id": "cursor144",
+      "date": "2027-02-16",
+      "type": "lockup",
+      "title": "Cursor merger shares \u2014 earliest Rule 144 trading day",
+      "detail": "~391.0 million shares issued Aug 14, 2026. Six-month holding ends Feb 14, 2027 (Sunday); Feb 15 is Presidents' Day; first trading day Feb 16. A separate lock-up may still apply; terms not fully public.",
+      "source": "8-K / FloatCap",
+      "url": "https://floatcap.app/stocks/SPCX",
+      "topics": [
+        "Cursor",
+        "Lock-up"
+      ]
+    },
+    {
+      "id": "ext-mar",
+      "date": "2027-03-18",
+      "type": "lockup",
+      "title": "Extended lock-up: 10% scheduled release",
+      "detail": "176 million shares from the extended IPO lock-up group (holders other than Musk, including most of Gwynne Shotwell\u2019s and the CFO\u2019s holdings).",
+      "source": "424(b)(4) / FloatCap",
+      "url": "https://floatcap.app/stocks/SPCX",
+      "topics": [
+        "Lock-up"
+      ]
+    },
+    {
+      "id": "musk-lock",
+      "date": "2027-06-12",
+      "dateLabel": "12 Jun 2027 (Saturday; first session 14 Jun)",
+      "type": "lockup",
+      "title": "Elon Musk 366-day IPO lock-up ends",
+      "detail": "849.5M Class A and 3.917B Class B (must convert to Class A before sale), plus a 20% extended-group slice (~351.9M) also scheduled for this date. Musk\u2019s unvested CEO / AI performance awards remain subject to separate vesting (market-cap and operational milestones, including a Mars colony and off-Earth compute).",
+      "source": "424(b)(4) Underwriting, Lock-up Agreements",
+      "url": "https://floatcap.app/stocks/SPCX",
+      "topics": [
+        "Lock-up"
+      ]
+    },
+    {
+      "id": "echostar",
+      "date": "2027-11-30",
+      "type": "corporate",
+      "title": "EchoStar spectrum closing \u2014 share issuance (expected)",
+      "detail": "Up to 261,792,453 Class A shares to be issued to EchoStar at the spectrum closing, expected Nov 30, 2027 (per FloatCap / 10-Q discussion of fully diluted shares).",
+      "source": "FloatCap / 10-Q",
+      "url": "https://floatcap.app/stocks/SPCX",
+      "tentative": true
+    }
+  ],
+  "risks": [
+    {
+      "title": "Capex and free cash flow",
+      "detail": "SI capex is enormous: $16.4B in Q3, with Q4 guided at $35\u201340B. Street FY2026 FCF consensus is about \u2212$56.6B. The AI build has to keep converting into contracted revenue."
+    },
+    {
+      "title": "Q1 2027 guidance execution",
+      "detail": "A jump from $14.6B in Q3 to $33\u201337B in Q1 2027 depends on cloud-services agreements and compute actually coming online. Misses would likely re-rate the stock."
+    },
+    {
+      "title": "Lock-up supply",
+      "detail": "797.6M shares on 8 Dec 2026, then staged extended-group and Musk unlocks through mid-2027. Tradable float is still only about a third of shares outstanding."
+    },
+    {
+      "title": "Power, cooling, and supply chain",
+      "detail": "Musk has flagged power, cooling and electrical infrastructure as binding constraints. The Texas gas-plant / data-center plans and the 100 GW/year solar equipment order are part of the answer \u2014 and also new execution risks."
+    },
+    {
+      "title": "Key-person and control",
+      "detail": "Musk held about 82% of voting power at the IPO (Class B is 10 votes). A special committee is evaluating a possible combination with Tesla; no terms have been disclosed."
+    },
+    {
+      "title": "Starship operationalization",
+      "detail": "Flight 15 is the first planned double catch and another V3 deployment. Cadence, reuse, and FAA licensing remain operational and regulatory risks."
+    },
+    {
+      "title": "Valuation and multiples",
+      "detail": "At ~$1.9T equity value the stock already discounts a very large SI ramp. EV / FY2026 street sales is extremely high; the bull case needs FY2027+ compute revenue to show up."
+    },
+    {
+      "title": "Customer and regulatory concentration",
+      "detail": "SI revenue is currently more cloud-rental (Anthropic, Google, Reflection and others have been named in press) than in-house models. Starlink Mobile and aviation depend on spectrum, aviation authorities, and national regulators (India still a watch item)."
+    }
+  ]
+}

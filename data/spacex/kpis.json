@@ -1,0 +1,430 @@
+{
+  "currency": "USD",
+  "units": {
+    "revenue": "million USD",
+    "subscribers": "million",
+    "compute": "GW nameplate"
+  },
+  "lastReportedQuarter": "2026-Q3",
+  "quarters": [
+    {
+      "id": "2025-Q1",
+      "label": "Q1 2025",
+      "periodEnd": "2025-03-31",
+      "revenue": {
+        "space": 865,
+        "connectivity": 2474,
+        "si": 728,
+        "total": 4067
+      },
+      "notes": "Derived from first-half 2025 minus Q2 2025, as reported in the Q2 2026 earnings release.",
+      "sources": [
+        {
+          "label": "SpaceX Q2 2026 earnings release (H1 2025 columns)",
+          "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf"
+        }
+      ]
+    },
+    {
+      "id": "2025-Q2",
+      "label": "Q2 2025",
+      "periodEnd": "2025-06-30",
+      "revenue": {
+        "space": 746,
+        "connectivity": 2588,
+        "si": 737,
+        "total": 4071
+      },
+      "starlinkConsumerSubsM": 6.0,
+      "starlinkConsumerArpu": 85,
+      "consumerRevenue": 1721,
+      "enterpriseGovRevenue": 867,
+      "nameplateComputeGW": 0.4,
+      "adjustedEbitda": 1200,
+      "netIncome": -1008,
+      "sources": [
+        {
+          "label": "SpaceX Q2 2026 earnings release (prior-year quarter)",
+          "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf"
+        }
+      ]
+    },
+    {
+      "id": "2025-Q3",
+      "label": "Q3 2025",
+      "periodEnd": "2025-09-30",
+      "revenue": {
+        "space": 1666,
+        "connectivity": 3097,
+        "si": 813,
+        "total": 5576
+      },
+      "starlinkConsumerSubsM": 7.2,
+      "starlinkConsumerArpu": 83,
+      "consumerRevenue": 1986,
+      "enterpriseGovRevenue": 1111,
+      "nameplateComputeGW": 0.6,
+      "incomeFromOps": {
+        "space": 259,
+        "connectivity": 1190,
+        "si": -1722,
+        "total": -273
+      },
+      "adjustedEbitda": 2169,
+      "netIncome": -1100,
+      "capex": 6880,
+      "siAdvertising": 454,
+      "siSolutionsInfra": 359,
+      "sources": [
+        {
+          "label": "SpaceX Q3 2026 earnings release (prior-year quarter)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "2025-Q4",
+      "label": "Q4 2025",
+      "periodEnd": "2025-12-31",
+      "revenue": {
+        "total": 4960
+      },
+      "notes": "Segment split not disclosed in the Q2/Q3 2026 releases. Total = FY2025 $18.674B minus nine-month 2025 $13.714B.",
+      "isPartial": true,
+      "sources": [
+        {
+          "label": "FY2025 revenue in prospectus / Street compilation $18.674B",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"
+        },
+        {
+          "label": "Nine months 2025 revenue $13.714B, Q3 2026 earnings release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        }
+      ]
+    },
+    {
+      "id": "2026-Q1",
+      "label": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "revenue": {
+        "space": 619,
+        "connectivity": 3257,
+        "si": 818,
+        "total": 4694
+      },
+      "starlinkConsumerSubsM": 10.3,
+      "starlinkConsumerArpu": 66,
+      "consumerRevenue": 2148,
+      "enterpriseGovRevenue": 1109,
+      "nameplateComputeGW": 1.0,
+      "incomeFromOps": {
+        "connectivity": 1188
+      },
+      "launches": {
+        "total": 40,
+        "internal": 33,
+        "customer": 7
+      },
+      "satellites": {
+        "operationalOrbitNote": "Prospectus: more than 9,600 Starlink satellites as of March 31, 2026"
+      },
+      "sources": [
+        {
+          "label": "SpaceX Q2 2026 earnings release (Q1 columns)",
+          "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf"
+        },
+        {
+          "label": "Q1 launch count, Hudson Labs initiation memo citing S-1/prospectus",
+          "url": "https://www.hudson-labs.com/research/spcx-stock-analysis"
+        }
+      ]
+    },
+    {
+      "id": "2026-Q2",
+      "label": "Q2 2026",
+      "periodEnd": "2026-06-30",
+      "revenue": {
+        "space": 962,
+        "connectivity": 4291,
+        "si": 2561,
+        "total": 7814
+      },
+      "starlinkConsumerSubsM": 12.0,
+      "starlinkConsumerArpu": 66,
+      "consumerRevenue": 2485,
+      "enterpriseGovRevenue": 1806,
+      "nameplateComputeGW": 1.4,
+      "incomeFromOps": {
+        "space": -542,
+        "connectivity": 1656,
+        "si": -1257,
+        "total": -143
+      },
+      "adjustedEbitda": 3538,
+      "segmentAdjEbitda": {
+        "space": -205,
+        "connectivity": 2597,
+        "si": 1146,
+        "total": 3538
+      },
+      "netIncome": -541,
+      "capex": 18369,
+      "segmentCapex": {
+        "space": 1174,
+        "connectivity": 1367,
+        "si": 15828
+      },
+      "backlog": 47500,
+      "cashAndStInvestments": 100000,
+      "siAdvertising": 367,
+      "siSolutionsInfra": 2194,
+      "satellites": {
+        "companyOperationalApprox": 10200,
+        "broadbandApprox": 9600,
+        "note": "Q2 call: roughly 10,200 operational broadband and mobile satellites in orbit; ~9,600 broadband delivering ~800 Tbps downlink."
+      },
+      "sources": [
+        {
+          "label": "SpaceX Q2 2026 earnings release",
+          "url": "https://s21.q4cdn.com/184289198/files/doc_financials/2026/q2/SpaceX-Reports-Second-Quarter-2026-Results.pdf"
+        },
+        {
+          "label": "Q2 2026 earnings call transcript (Motley Fool)",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/spacex-spcx-q2-2026-earnings-call-transcript/"
+        }
+      ]
+    },
+    {
+      "id": "2026-Q3",
+      "label": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "revenue": {
+        "space": 1767,
+        "connectivity": 5248,
+        "si": 7560,
+        "total": 14575
+      },
+      "starlinkConsumerSubsM": 13.6,
+      "starlinkConsumerArpu": 69,
+      "consumerRevenue": 3121,
+      "enterpriseGovRevenue": 2127,
+      "nameplateComputeGW": 1.7,
+      "incomeFromOps": {
+        "space": -7,
+        "connectivity": 2367,
+        "si": 431,
+        "total": 2791
+      },
+      "adjustedEbitda": 8809,
+      "segmentAdjEbitda": {
+        "space": 357,
+        "connectivity": 3499,
+        "si": 4953,
+        "total": 8809
+      },
+      "netIncome": 4400,
+      "capex": 19593,
+      "segmentCapex": {
+        "space": 1606,
+        "connectivity": 1543,
+        "si": 16444
+      },
+      "backlog": 63000,
+      "backlogNext12m": 42000,
+      "cashAndStInvestments": 89860,
+      "totalDebt": 37860,
+      "siAdvertising": 538,
+      "siSolutionsInfra": 7022,
+      "cursorRevenuePartial": 608,
+      "cursorPeriod": "2026-08-14 to 2026-09-30",
+      "launches": {
+        "total": 35,
+        "customer": 12,
+        "internal": 23
+      },
+      "starlinkMobileMonthlyUsersM": 22,
+      "aviationAircraftEquipped": 3800,
+      "aviationAircraftContracted": 12000,
+      "grokBotPaidWeeklyUsers": 800000,
+      "notes": "SI segment was labeled 'AI' in Q2 materials and 'Super Intelligence (SI)' in Q3. Cursor contributed $608M from the Aug 14 acquisition close through Sep 30. First revenue-generating Starship mission deployed 26 Starlink V3 satellites.",
+      "sources": [
+        {
+          "label": "SpaceX Q3 2026 earnings release (SEC 8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+        },
+        {
+          "label": "Q3 2026 earnings call transcript (Motley Fool)",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/10/20/spacex-spcx-q3-2026-earnings-call-transcript/"
+        }
+      ]
+    }
+  ],
+  "annual": [
+    {
+      "year": 2023,
+      "revenue": 10387,
+      "source": {
+        "label": "S-1 / prospectus",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "year": 2024,
+      "revenue": 14015,
+      "source": {
+        "label": "S-1 / prospectus",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"
+      }
+    },
+    {
+      "year": 2025,
+      "revenue": 18674,
+      "source": {
+        "label": "S-1 / prospectus",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"
+      }
+    }
+  ],
+  "satellitesTracker": {
+    "asOf": "2026-11-09",
+    "source": {
+      "label": "Jonathan McDowell, Starlink Statistics",
+      "url": "https://planet4589.org/space/con/star/stats.html"
+    },
+    "updated": "2026-11-09T01:19:56",
+    "launched": 13096,
+    "failedToOrbit": 20,
+    "totalDown": 1892,
+    "inOrbit": 11204,
+    "working": 11190,
+    "operationalOrbit": 9704,
+    "ascent": 85,
+    "drift": 202,
+    "disposalUnderway": 331,
+    "outOfConstellation": 813,
+    "reserveOrRelocating": 55,
+    "note": "McDowell's 'operational orbit' (9,704) is an independent orbital classification and is not identical to SpaceX's 'operational satellites' figure from the Q2 call (~10,200 as of Jun 30)."
+  },
+  "guidance": {
+    "q1_2027_revenue": {
+      "low": 33000,
+      "high": 37000,
+      "mid": 35000,
+      "unit": "million USD",
+      "source": {
+        "label": "Q3 2026 earnings call, CFO guidance",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/10/20/spacex-spcx-q3-2026-earnings-call-transcript/"
+      }
+    },
+    "ye2026_nameplate_gw": {
+      "low": 2.5,
+      "high": 3.0,
+      "mid": 2.75,
+      "source": {
+        "label": "Q3 2026 earnings call, Elon Musk",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/10/20/spacex-spcx-q3-2026-earnings-call-transcript/"
+      }
+    },
+    "ye2027_nameplate_gw": {
+      "value": 13,
+      "basis": "Musk: fairly confident in an incremental ~10 GW in 2027 on top of 2.5\u20133 GW by YE2026.",
+      "source": {
+        "label": "Q3 2026 call coverage, TeslaNorth / Yahoo",
+        "url": "https://teslanorth.com/2026/10/20/spacex-2027-arr-500b-1t-q1-guidance/"
+      }
+    },
+    "q4_2026_capex": {
+      "low": 35000,
+      "high": 40000,
+      "unit": "million USD",
+      "source": {
+        "label": "Q3 2026 earnings call",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/10/20/spacex-spcx-q3-2026-earnings-call-transcript/"
+      }
+    },
+    "arr_ye2027_aspiration": {
+      "low": 500000,
+      "high": 1000000,
+      "unit": "million USD annualized run-rate",
+      "note": "Management aspiration for year-end 2027 run-rate, not a FY2027 revenue guide. Not used as the base-case revenue total.",
+      "source": {
+        "label": "Q3 2026 earnings call, Elon Musk",
+        "url": "https://www.fool.com/earnings/call-transcripts/2026/10/20/spacex-spcx-q3-2026-earnings-call-transcript/"
+      }
+    }
+  },
+  "street": {
+    "asOf": "2026-11-10",
+    "source": {
+      "label": "StockAnalysis / S&P Global Market Intelligence, 36\u201340 analysts",
+      "url": "https://stockanalysis.com/stocks/spcx/forecast/"
+    },
+    "rating": "Buy",
+    "analysts": 40,
+    "priceTarget": {
+      "low": 70,
+      "average": 255.06,
+      "median": 245,
+      "high": 800
+    },
+    "ratings": {
+      "strongBuy": 24,
+      "buy": 8,
+      "hold": 6,
+      "sell": 0,
+      "strongSell": 2
+    },
+    "revenueFY2026": {
+      "low": 40800,
+      "avg": 48900,
+      "high": 54500,
+      "unit": "million USD"
+    },
+    "revenueFY2027": {
+      "avg": 180670,
+      "unit": "million USD",
+      "note": "Consensus average as published Nov 10, 2026."
+    },
+    "recent": [
+      {
+        "firm": "Bank of America Securities",
+        "analyst": "Ronald Epstein",
+        "action": "Maintains",
+        "rating": "Buy",
+        "date": "2026-11-10"
+      },
+      {
+        "firm": "Stifel Nicolaus",
+        "analyst": "Jonathan Siegmann",
+        "action": "Reiterates",
+        "rating": "Buy",
+        "target": 190,
+        "date": "2026-11-09"
+      },
+      {
+        "firm": "Deutsche Bank",
+        "analyst": "Edison Yu",
+        "action": "Reiterates",
+        "rating": "Buy",
+        "target": 250,
+        "date": "2026-11-06"
+      },
+      {
+        "firm": "Barclays",
+        "analyst": "Brendan Lynch",
+        "action": "Maintains",
+        "rating": "Buy",
+        "target": 300,
+        "date": "2026-11-06"
+      },
+      {
+        "firm": "Needham",
+        "analyst": "Ryan Koontz",
+        "action": "Reiterates",
+        "rating": "Buy",
+        "target": 250,
+        "date": "2026-10-27"
+      }
+    ]
+  }
+}
