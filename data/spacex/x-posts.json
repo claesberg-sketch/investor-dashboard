@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T21:08:00+01:00",
+  "updated": "2026-11-11T22:08:00+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 11 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,67 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120622830585024813",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-11T21:00:56.000Z",
+      "text": "$SPCX gets  Mississippi 1.2 Gigawatt air permit https://t.co/Qw2LvkAduV",
+      "url": "https://x.com/nextbigfuture/status/2120622830585024813",
+      "metrics": {
+        "likes": 15,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 486
+      },
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true,
+      "summary": "Brian Wang notes that SPCX has received a 1.2 gigawatt air permit in Mississippi, quoting an XFreeze post about the same decision. That post says Mississippi’s Environmental Quality Permit Board voted on 10 November to uphold the air permit for SpaceXSI’s permanent Southaven power plant after two days of testimony."
+    },
+    {
+      "id": "2120621835532534016",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-11T20:56:59.000Z",
+      "text": "$TSLA and maybe $SPCX might move HQ to Florida. https://t.co/KWzqvQIHe4",
+      "url": "https://x.com/nextbigfuture/status/2120621835532534016",
+      "metrics": {
+        "likes": 8,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 556
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Brian Wang writes that Tesla, and maybe SpaceX, might move their headquarters to Florida, quoting a post that says Governor Ron DeSantis has invited Musk to relocate Tesla’s HQ from Texas. The quoted post is commentary about a political invitation after Democrats won in Texas, not a SpaceX or Tesla announcement that a move is happening."
+    },
+    {
+      "id": "2120613240707420280",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T20:22:50.000Z",
+      "text": "@TheFlintFace @IterIntellectus 100GW in space is roughly equal to 800GW on Earth. \n\nMoreover, solar on Earth must be paired with massive batteries to continue powering compute at night and supplemented with combustion or nuclear power during winter. \n\nThese are not the same at all.",
+      "url": "https://x.com/elonmusk/status/2120613240707420280",
+      "metrics": {
+        "likes": 2987,
+        "reposts": 307,
+        "replies": 320,
+        "quotes": 42,
+        "bookmarks": 175,
+        "impressions": 205466
+      },
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true,
+      "summary": "Musk replies that 100 GW in space is roughly equal to 800 GW on Earth, arguing the two are not the same at all. He adds that terrestrial solar must be paired with massive batteries to keep compute running at night and supplemented with combustion or nuclear power in winter."
+    },
     {
       "id": "2120598044853014716",
       "username": "Starlink",
