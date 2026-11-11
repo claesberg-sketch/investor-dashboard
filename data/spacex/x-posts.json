@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T20:07:33+01:00",
+  "updated": "2026-11-11T21:08:00+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 11 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120598044853014716",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-11T19:22:27.000Z",
+      "text": "Home in rural Oklahoma is where this veteran and his wife enjoy the things that matter most.\n\nWith Starlink, they can stream, study, and stay connected with family and friends, reliably and seamlessly.\n\nDiscover their story this Veterans Day. https://t.co/dJDhgku0iK",
+      "url": "https://x.com/Starlink/status/2120598044853014716",
+      "metrics": {
+        "likes": 266,
+        "reposts": 44,
+        "replies": 22,
+        "quotes": 1,
+        "bookmarks": 11,
+        "impressions": 20324
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "Starlink posted a Veterans Day customer video featuring Marine veteran John Hassell and nursing student Ashley Hassell, who live on five acres about an hour southwest of Oklahoma City. They say they use the service for VA telehealth, Ashley’s online nursing degree, streaming, gaming and family video calls, and that coverage held up during recent tornado warnings; it is a marketing testimonial, not a new product or plan announcement."
+    },
     {
       "id": "2120593710107029687",
       "username": "elonmusk",
