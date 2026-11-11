@@ -348,7 +348,7 @@
     "disposalUnderway": 331,
     "outOfConstellation": 813,
     "reserveOrRelocating": 55,
-    "note": "McDowell's 'operational orbit' (9,704) is an independent orbital classification and is not identical to SpaceX's 'operational satellites' figure from the Q2 call (~10,200 as of Jun 30)."
+    "note": "See satellitesByQuarter for the plotted in-orbit series and generation split. McDowell's 9 Nov 2026 summary table lists 11,204 in orbit / 11,191 working / 9,214 in operational orbit; the object-level series used on the chart is 11,206 in orbit on that date (within 0–4 of the daily log). Company operational figures are not plotted."
   },
   "guidance": {
     "q1_2027_revenue": {
@@ -471,5 +471,108 @@
         "date": "2026-10-27"
       }
     ]
+  },
+  "satellitesByQuarter": [
+    {
+      "id": "2025-Q1",
+      "label": "Q1 2025",
+      "asOf": "2025-03-31",
+      "total": 7150,
+      "v1": 3802,
+      "v2": 3348,
+      "v2Dtc": 556,
+      "v3": 0
+    },
+    {
+      "id": "2025-Q2",
+      "label": "Q2 2025",
+      "asOf": "2025-06-30",
+      "total": 7916,
+      "v1": 3656,
+      "v2": 4260,
+      "v2Dtc": 656,
+      "v3": 0
+    },
+    {
+      "id": "2025-Q3",
+      "label": "Q3 2025",
+      "asOf": "2025-09-30",
+      "total": 8539,
+      "v1": 3570,
+      "v2": 4969,
+      "v2Dtc": 655,
+      "v3": 0
+    },
+    {
+      "id": "2025-Q4",
+      "label": "Q4 2025",
+      "asOf": "2025-12-31",
+      "total": 9392,
+      "v1": 3483,
+      "v2": 5909,
+      "v2Dtc": 650,
+      "v3": 0
+    },
+    {
+      "id": "2026-Q1",
+      "label": "Q1 2026",
+      "asOf": "2026-03-31",
+      "total": 10156,
+      "v1": 3393,
+      "v2": 6763,
+      "v2Dtc": 645,
+      "v3": 0
+    },
+    {
+      "id": "2026-Q2",
+      "label": "Q2 2026",
+      "asOf": "2026-06-30",
+      "total": 10723,
+      "v1": 3294,
+      "v2": 7429,
+      "v2Dtc": 641,
+      "v3": 0
+    },
+    {
+      "id": "2026-Q3",
+      "label": "Q3 2026",
+      "asOf": "2026-09-30",
+      "total": 11157,
+      "v1": 3167,
+      "v2": 7964,
+      "v2Dtc": 638,
+      "v3": 26
+    },
+    {
+      "id": "current",
+      "label": "9 Nov 2026",
+      "asOf": "2026-11-09",
+      "total": 11206,
+      "v1": 3120,
+      "v2": 8060,
+      "v2Dtc": 637,
+      "v3": 26
+    }
+  ],
+  "satellitesMeta": {
+    "definition": "Starlink payload satellites in Earth orbit at the end of each date: successfully launched and not yet reentered. One consistent source (Jonathan McDowell) for the whole series.",
+    "generations": {
+      "v1": "V1.0 and V1.5, including early prototypes. McDowell GCAT bus type Starlink or SpXMicro. Group 5 V1.5 is included here (V1.5 hardware), not in V2.",
+      "v2": "V2 Mini, including Direct-to-Cell (bus V2MD) and V2 Mini/Opt (bus V2MO). DTC is included in the V2 bar; v2Dtc is the DTC subset.",
+      "v3": "V3 satellites from Starship Flight 14 (Starlink Group 31-1) on 28 Sep 2026, 26 in orbit. Earlier V3 simulators and test batches failed to reach orbit and are not counted. V3 is 0 at all earlier quarter-ends."
+    },
+    "method": "Counts are built from McDowell's GCAT payload catalog (satcat.tsv and satcat100k.tsv, updated 9 Nov 2026 00:53 UTC). A satellite is in orbit on a date if its launch date is on or before that date and it has no reentry date, or the reentry date is after that date. Generation is the catalog bus type. NRO Starshield objects that used a Starlink-like bus are excluded; none of those remain in orbit in this window. Totals match McDowell's daily in-orbit series (log.dat) within 0–4 satellites.",
+    "source": {
+      "label": "Jonathan McDowell, GCAT and Starlink statistics",
+      "urls": [
+        "https://planet4589.org/space/gcat/tsv/cat/satcat.tsv",
+        "https://planet4589.org/space/gcat/tsv/cat/satcat100k.tsv",
+        "https://planet4589.org/space/con/star/stats.html",
+        "https://planet4589.org/space/con/star/log.dat"
+      ],
+      "catalogUpdated": "2026-11-09T00:53:06"
+    },
+    "companyComparison": "These are independent in-orbit counts, not SpaceX's 'operational' figures. The prospectus cited approximately 9,600 Starlink broadband and mobile satellites as of 31 Mar 2026 (this series: 10,156 in orbit; McDowell's narrower operational-orbit class: 8,451). The Q2 2026 call cited roughly 10,200 operational satellites as of 30 Jun 2026 (this series: 10,723 in orbit; McDowell working: 10,698; operational orbit: 9,255). Definitions differ, so company figures are not plotted.",
+    "latestNote": "The last point is McDowell's catalog as of 9 Nov 2026, not 11 Nov. The catalog's last new launch is 31 Oct 2026; later decays through 9 Nov are included."
   }
 }

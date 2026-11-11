@@ -61,6 +61,30 @@
     });
   }
 
+
+  const barTotalLabels = {
+    id: "barTotalLabels",
+    afterDatasetsDraw: function (chart) {
+      const totals = chart.$barTotals;
+      if (!totals || !totals.length) return;
+      const { ctx, scales: { x, y } } = chart;
+      if (!x || !y) return;
+      const compact = window.matchMedia("(max-width: 900px), (max-height: 500px)").matches;
+      ctx.save();
+      ctx.fillStyle = "rgba(240,240,250,0.88)";
+      ctx.font = (compact ? "10px" : "11px") + ' Barlow, "Helvetica Neue", sans-serif';
+      ctx.textAlign = "center";
+      ctx.textBaseline = "bottom";
+      totals.forEach(function (tot, i) {
+        if (tot == null) return;
+        const px = x.getPixelForValue(i);
+        const py = y.getPixelForValue(tot);
+        ctx.fillText(Number(tot).toLocaleString("en-US"), px, py - 2);
+      });
+      ctx.restore();
+    },
+  };
+
   function card(id, title, sourceHtml) {
     return '<article class="chart-card"><h3>' + title + '</h3><div class="box"><canvas id="' + id + '"></canvas></div><div class="source">' + (sourceHtml || "") + "</div></article>";
   }
@@ -77,7 +101,7 @@
       card("c-gw", "Nameplate AI compute (GW)", "Period-end nameplate, including 0.8 GW at 31 Dec 2025 from the prospectus. Q3 2026 release and Q2 call; YE 2026/27 guides shown as markers in the note."),
       card("c-earn", "Adjusted EBITDA and net income ($M)", "Q2 and Q3 2026 releases; Q4 2025 derived as FY2025 minus nine-month 2025. Gaps remain where a quarter was not disclosed."),
       card("c-capex", "Capital expenditure ($M)", "Total and SI capex from Q2 / Q3 2026 releases; Q4 2025 derived as FY2025 minus nine-month 2025."),
-      card("c-sats", "Starlink satellites", "Company figures from the Q2 call and prospectus; McDowell independent count as of 9 Nov 2026. No official 31 Dec 2025 satellite count was disclosed."),
+      card("c-sats", "Starlink satellites in orbit by generation", "Jonathan McDowell, in orbit at each quarter-end and 9 Nov 2026. V2 includes Direct-to-Cell; V3 is the 26 Starship Flight 14 satellites (0 before then). Company operational figures are not plotted."),
       card("c-backlog", "Backlog ($B)", "YE2025 $28.4B (prospectus), Q2 2026 $47.5B, and Q3 2026 $63B (of which $42B expected in 12 months)."),
     ].join("");
 
@@ -158,35 +182,54 @@
         scales: { x: { ...xAxis }, y: { ...axis } } },
     });
 
-    // Satellites: sparse company points + McDowell current as a last category
-    const satLabels = [];
-    const companyOp = [];
-    const mcdowell = [];
-    q.forEach((x) => {
-      if (x.satellites && x.satellites.companyOperationalApprox) {
-        satLabels.push(x.label);
-        companyOp.push(x.satellites.companyOperationalApprox);
-        mcdowell.push(null);
-      }
-    });
-    if (kpis.satellitesTracker) {
-      satLabels.push("9 Nov 2026");
-      companyOp.push(null);
-      mcdowell.push(kpis.satellitesTracker.inOrbit);
-    }
-    new Chart(document.getElementById("c-sats"), {
+    const satRows = kpis.satellitesByQuarter || [];
+    const satLabels = satRows.map((x) => x.label);
+    const satV1 = satRows.map((x) => x.v1 ?? null);
+    const satV2 = satRows.map((x) => x.v2 ?? null);
+    const satV3 = satRows.map((x) => x.v3 ?? null);
+    const satTotals = satRows.map((x) => (x.total != null ? x.total : ((x.v1 || 0) + (x.v2 || 0) + (x.v3 || 0))));
+    const satMax = satTotals.reduce((m, n) => Math.max(m, n || 0), 0);
+    const satChart = new Chart(document.getElementById("c-sats"), {
       type: "bar",
       data: { labels: satLabels, datasets: [
-        { label: "Company operational (approx.)", data: companyOp, backgroundColor: pal.teal },
-        { label: "McDowell in orbit", data: mcdowell, backgroundColor: pal.violet },
+        { label: "V1 (v1.0 / v1.5)", data: satV1, backgroundColor: pal.blue, stack: "s" },
+        { label: "V2 Mini (incl. DTC)", data: satV2, backgroundColor: pal.teal, stack: "s" },
+        { label: "V3", data: satV3, backgroundColor: pal.orange, stack: "s" },
       ] },
-      options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
-        scales: { x: { ...xAxis }, y: { ...axis, beginAtZero: true } } },
+      options: {
+        responsive: true, maintainAspectRatio: false, interaction: interact,
+        layout: { padding: { top: 16 } },
+        plugins: {
+          legend,
+          tooltip: {
+            ...tip,
+            callbacks: {
+              footer: function (items) {
+                if (!items.length) return "";
+                const i = items[0].dataIndex;
+                const row = satRows[i] || {};
+                const tot = satTotals[i];
+                let line = "Total in orbit  " + (tot != null ? Number(tot).toLocaleString("en-US") : "—");
+                if (row.v2Dtc) line += "  ·  of which V2 DTC  " + Number(row.v2Dtc).toLocaleString("en-US");
+                return line;
+              },
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true, ...xAxis },
+          y: { stacked: true, ...axis, beginAtZero: true, suggestedMax: satMax ? Math.ceil(satMax * 1.12 / 500) * 500 : undefined },
+        },
+      },
+      plugins: [barTotalLabels],
     });
+    satChart.$barTotals = satTotals;
     const satSrc = document.querySelector("#c-sats").closest(".chart-card").querySelector(".source");
-    if (satSrc && kpis.satellitesTracker) {
-      const t = kpis.satellitesTracker;
-      satSrc.innerHTML = "McDowell as of 9 Nov 2026: " + t.inOrbit.toLocaleString() + " in orbit, " + t.working.toLocaleString() + " working, " + t.operationalOrbit.toLocaleString() + " in operational orbit, " + t.launched.toLocaleString() + " launched. <a href='" + t.source.url + "' target='_blank' rel='noopener'>" + t.source.label + "</a>. Company: ~9,600 as of 31 Mar 2026 (prospectus); ~10,200 operational at 30 Jun 2026 (Q2 call). Definitions differ.";
+    if (satSrc) {
+      const meta = kpis.satellitesMeta || {};
+      const src = meta.source || (kpis.satellitesTracker && kpis.satellitesTracker.source) || {};
+      const href = (src.urls && src.urls[2]) || (src.url) || "https://planet4589.org/space/con/star/stats.html";
+      satSrc.innerHTML = "In orbit at quarter-end (and 9 Nov 2026), from Jonathan McDowell's GCAT: launched and not yet reentered. V1 = v1.0/v1.5; V2 Mini includes Direct-to-Cell (the tooltip shows the DTC subset) and V2 Mini/Opt; V3 = 26 satellites deployed on Starship Flight 14 (28 Sep 2026), zero before that. Company figures are not plotted: prospectus ~9,600 as of 31 Mar 2026 vs 10,156 here; Q2 call ~10,200 operational as of 30 Jun 2026 vs 10,723 here (definitions differ). Latest catalog date is 9 Nov 2026. <a href='" + href + "' target='_blank' rel='noopener'>" + (src.label || "Jonathan McDowell") + "</a>.";
     }
 
     new Chart(document.getElementById("c-backlog"), {
