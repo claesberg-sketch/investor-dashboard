@@ -195,15 +195,12 @@
     document.getElementById("hero-ticker").textContent = company.ticker;
     document.getElementById("hero-name").textContent = company.name;
 
-    let hl = quote.hyperliquid && quote.hyperliquid.ok ? {
-      midPx: quote.hyperliquid.midPx,
-      markPx: quote.hyperliquid.markPx,
-      prevDayPx: quote.hyperliquid.prevDayPx,
-      openInterest: quote.hyperliquid.openInterest,
-      asOf: quote.updated,
-    } : null;
-
-    let state = SPCXPrice.render(quote, hl, null);
+    let state = { display: null };
+    function onPrice(next) {
+      state = next;
+      renderValuation(quote, kpis, company, state);
+      if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
+    }
     renderNews(news, xposts.posts);
     renderX(xposts);
     SPCXForecast.mount(forecast);
@@ -211,26 +208,14 @@
     if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
     renderCalendar(calendar);
     renderValuation(quote, kpis, company, state);
+    SPCXPrice.startLive(quote, onPrice);
 
-    async function tickHL() {
-      try {
-        hl = await SPCXPrice.fetchHL();
-        state = SPCXPrice.render(quote, hl, null);
-        renderValuation(quote, kpis, company, state);
-        if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
-      } catch (e) {
-        console.warn("Hyperliquid poll failed", e);
-      }
-    }
-    tickHL();
-    setInterval(tickHL, 5000);
-
-    // Re-fetch the Action-produced quote periodically (and try Yahoo CORS, which will usually fail).
+    // Re-fetch the Yahoo snapshot file periodically (live Yahoo is CORS-blocked in the browser).
     async function tickQuote() {
       try {
         const q = await loadJSON(DATA + "/spacex/quote.json");
         Object.assign(quote, q);
-        state = SPCXPrice.render(quote, hl, null);
+        state = SPCXPrice.setQuote(quote) || state;
         renderValuation(quote, kpis, company, state);
         if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
       } catch (e) { console.warn("quote refresh failed", e); }

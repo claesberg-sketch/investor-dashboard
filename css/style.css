@@ -206,3 +206,11 @@ thead th{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-wei
 #unlock-table td:nth-child(3){min-width:9rem;max-width:16rem}
 #unlock-table td:nth-child(4){min-width:9rem}
 #unlock-table td:nth-child(8){min-width:8rem}
+
+.official-box{margin-top:14px;border:1px solid var(--fg-20);padding:12px 14px;font-size:.85rem;color:var(--fg-70);line-height:1.45}
+.official-box .k{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--fg-50);margin-bottom:6px}
+.official-box strong{color:var(--fg);font-weight:500}
+.official-box .basis{margin-top:6px;font-variant-numeric:tabular-nums}
+.official-box .basis.up{color:var(--up)}
+.official-box .basis.down{color:var(--down)}
+.official-box .tiny{margin-top:6px}
