@@ -1,4 +1,4 @@
-/* Live price & chart: Hyperliquid xyz:SPCX 24/7, with Regular close and After hours from the Yahoo snapshot. */
+/* Live price & chart: official U.S. last sale during pre / regular / after-hours; Hyperliquid xyz:SPCX in the overnight gap. */
 (function (global) {
   const TZ = "Europe/Stockholm";
   const ET = "America/New_York";
@@ -8,6 +8,59 @@
   const INTERVAL = "5m";
   const INTERVAL_MS = 5 * 60 * 1000;
   const WINDOW_MS = 24 * 3600 * 1000;
+  // CNBC public quote + 1-minute bars. Keyless and CORS-open (Access-Control-Allow-Origin: *),
+  // confirmed from https://claesberg-sketch.github.io. The quote is flagged realTime and
+  // sourced as "Last NASDAQ LS" (U.S. tape). Nasdaq api.nasdaq.com and Yahoo query endpoints
+  // return the same last sale from curl but are CORS-blocked in the browser.
+  const CNBC_QUOTE = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=SPCX&requestMethod=quick&exthrs=1&noform=1&partnerId=2&output=json";
+  const CNBC_BARS = "https://ts-api.cnbc.com/harmony/app/bars/SPCX.O";
+  // Official NYSE / Nasdaq holidays and early closes:
+  // https://www.nyse.com/trade/hours-calendars/
+  // https://www.nasdaq.com/market-activity/stock-market-holiday-schedule
+  const MARKET_HOLIDAYS = {
+    "2026-01-01": "New Year's Day",
+    "2026-01-19": "Martin Luther King, Jr. Day",
+    "2026-02-16": "Washington's Birthday",
+    "2026-04-03": "Good Friday",
+    "2026-05-25": "Memorial Day",
+    "2026-06-19": "Juneteenth",
+    "2026-07-03": "Independence Day (observed)",
+    "2026-09-07": "Labor Day",
+    "2026-11-26": "Thanksgiving",
+    "2026-12-25": "Christmas Day",
+    "2027-01-01": "New Year's Day",
+    "2027-01-18": "Martin Luther King, Jr. Day",
+    "2027-02-15": "Washington's Birthday",
+    "2027-03-26": "Good Friday",
+    "2027-05-31": "Memorial Day",
+    "2027-06-18": "Juneteenth (observed)",
+    "2027-07-05": "Independence Day (observed)",
+    "2027-09-06": "Labor Day",
+    "2027-11-25": "Thanksgiving",
+    "2027-12-24": "Christmas Day (observed)",
+    "2028-01-17": "Martin Luther King, Jr. Day",
+    "2028-02-21": "Washington's Birthday",
+    "2028-04-14": "Good Friday",
+    "2028-05-29": "Memorial Day",
+    "2028-06-19": "Juneteenth",
+    "2028-07-04": "Independence Day",
+    "2028-09-04": "Labor Day",
+    "2028-11-23": "Thanksgiving",
+    "2028-12-25": "Christmas Day",
+  };
+  const EARLY_CLOSE = {
+    "2026-11-27": "Day after Thanksgiving",
+    "2026-12-24": "Christmas Eve",
+    "2027-11-26": "Day after Thanksgiving",
+    "2028-07-03": "Independence Day eve",
+    "2028-11-24": "Day after Thanksgiving",
+  };
+  const PRE_START = 4 * 60;
+  const REG_START = 9 * 60 + 30;
+  const REG_END = 16 * 60;
+  const AFTER_END = 20 * 60;
+  const EARLY_REG_END = 13 * 60;
+  const EARLY_AFTER_END = 17 * 60;
 
   function pad(n) { return String(n).padStart(2, "0"); }
 
@@ -94,23 +147,46 @@
     return map[name] || 1;
   }
 
-  /** US equity session. Used only to label the official Nasdaq/Yahoo snapshot. */
+  function dayKeyFromParts(p) {
+    return p.year + "-" + String(p.month).padStart(2, "0") + "-" + String(p.day).padStart(2, "0");
+  }
+
+  function sessionBounds(dateOrParts) {
+    const p = dateOrParts.year != null ? dateOrParts : etParts(dateOrParts);
+    const key = dayKeyFromParts(p);
+    const holiday = MARKET_HOLIDAYS[key] || null;
+    const early = EARLY_CLOSE[key] || null;
+    const dow = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
+    const weekend = dow === 0 || dow === 6;
+    return {
+      key, holiday, early, weekend, dow,
+      closed: !!(holiday || weekend),
+      preStart: PRE_START,
+      regularStart: REG_START,
+      regularEnd: early ? EARLY_REG_END : REG_END,
+      afterEnd: early ? EARLY_AFTER_END : AFTER_END,
+    };
+  }
+
+  /** US equity session in America/New_York, including holidays and early closes. */
   function getSession(date) {
     const p = etParts(date);
     const mins = p.hour * 60 + p.minute;
-    const dow = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
-    const isWeekend = dow === 0 || dow === 6 || (dow === 5 && mins >= 20 * 60);
-    if (isWeekend) return { id: "weekend", label: "U.S. cash market closed (weekend)", official: false, cashOpen: false };
-    if (mins >= 9 * 60 + 30 && mins < 16 * 60) {
-      return { id: "regular", label: "U.S. regular session open", official: true, cashOpen: true };
+    const b = sessionBounds(p);
+    if (b.closed) {
+      const why = b.holiday ? b.holiday : "weekend";
+      return { id: b.holiday ? "holiday" : "weekend", label: "U.S. cash market closed (" + why + ")", official: false, cashOpen: false, bounds: b };
     }
-    if (mins >= 4 * 60 && mins < 9 * 60 + 30) {
-      return { id: "pre", label: "U.S. pre-market open", official: true, cashOpen: true };
+    if (mins >= b.regularStart && mins < b.regularEnd) {
+      return { id: "regular", label: "regular session", official: true, cashOpen: true, bounds: b };
     }
-    if (mins >= 16 * 60 && mins < 20 * 60) {
-      return { id: "after", label: "U.S. after-hours open", official: true, cashOpen: true };
+    if (mins >= b.preStart && mins < b.regularStart) {
+      return { id: "pre", label: "pre-market", official: true, cashOpen: true, bounds: b };
     }
-    return { id: "overnight", label: "U.S. cash market closed (overnight)", official: false, cashOpen: false };
+    if (mins >= b.regularEnd && mins < b.afterEnd) {
+      return { id: "after", label: "after-hours", official: true, cashOpen: true, bounds: b };
+    }
+    return { id: "overnight", label: "U.S. cash market closed (overnight)", official: false, cashOpen: false, bounds: b };
   }
 
   function money(n, digits) {
@@ -186,22 +262,128 @@
     return res.json();
   }
 
+  function parseMoney(s) {
+    if (s == null || s === "" || s === "N/A") return null;
+    const n = parseFloat(String(s).replace(/[$,+%]/g, ""));
+    return Number.isFinite(n) ? n : null;
+  }
+
+  function etCompactStamp(year, month, day, hour, minute) {
+    return String(year) + pad(month) + pad(day) + pad(hour) + pad(minute) + "00";
+  }
+
+  async function fetchOfficialQuote() {
+    const url = CNBC_QUOTE + "&_=" + Date.now();
+    const res = await fetch(url, { cache: "no-store", credentials: "omit" });
+    if (!res.ok) throw new Error("CNBC quote HTTP " + res.status);
+    const data = await res.json();
+    const q = data && data.FormattedQuoteResult && data.FormattedQuoteResult.FormattedQuote && data.FormattedQuoteResult.FormattedQuote[0];
+    if (!q) throw new Error("CNBC empty quote");
+    let price = parseMoney(q.last);
+    let time = q.last_time || q.last_timedate;
+    const ext = q.ExtendedMktQuote || null;
+    const session = getSession(new Date());
+    if (ext && (session.id === "pre" || session.id === "after")) {
+      const extPx = parseMoney(ext.last);
+      const extMs = tsMs(ext.last_time || ext.last_timedate);
+      const lastMs = tsMs(time);
+      const extFits = (session.id === "pre" && (ext.type === "PRE_MKT" || ext.type === "PRE")) ||
+        (session.id === "after" && (ext.type === "POST_MKT" || ext.type === "POST" || ext.type === "AFTER_MKT"));
+      if (extFits && extPx != null && (extMs == null || lastMs == null || extMs >= lastMs)) {
+        price = extPx;
+        time = ext.last_time || ext.last_timedate || time;
+      }
+    }
+    if (price == null) throw new Error("CNBC missing last price");
+    const prevClose = parseMoney(q.previous_day_closing);
+    const change = parseMoney(q.change);
+    let changePct = parseMoney(q.change_pct);
+    if (changePct == null && change != null && prevClose) changePct = (change / prevClose) * 100;
+    const realTime = q.realTime === true || q.realTime === "true" || q.realTime === "TRUE";
+    return {
+      price,
+      time,
+      prevClose,
+      change: change != null ? change : (prevClose != null ? price - prevClose : null),
+      changePct,
+      open: parseMoney(q.open),
+      high: parseMoney(q.high),
+      low: parseMoney(q.low),
+      volume: parseMoney(String(q.volume || "").replace(/,/g, "")),
+      fullVolume: parseMoney(String(q.fullVolume || "").replace(/,/g, "")),
+      marketStatus: q.curmktstatus,
+      source: q.source || "CNBC",
+      exchange: q.exchange || "NASDAQ",
+      realTime,
+      asOf: new Date(),
+    };
+  }
+
+  async function fetchOfficialBars(date) {
+    const p = etParts(date || new Date());
+    const b = sessionBounds(p);
+    const start = etCompactStamp(p.year, p.month, p.day, 4, 0);
+    const endHour = Math.floor(b.afterEnd / 60);
+    const endMin = b.afterEnd % 60;
+    const end = etCompactStamp(p.year, p.month, p.day, endHour, endMin);
+    const url = CNBC_BARS + "/1M/" + start + "/" + end + "/adjusted/EST5EDT.json?_=" + Date.now();
+    const res = await fetch(url, { cache: "no-store", credentials: "omit" });
+    if (!res.ok) throw new Error("CNBC bars HTTP " + res.status);
+    const data = await res.json();
+    const rows = (data && data.barData && data.barData.priceBars) || [];
+    return rows.map((bar) => ({
+      t: +bar.tradeTimeinMills,
+      o: +bar.open,
+      h: +bar.high,
+      l: +bar.low,
+      c: +bar.close,
+      v: +bar.volume,
+    })).filter((bar) => Number.isFinite(bar.t) && Number.isFinite(bar.c));
+  }
+
+  function wantsOfficialFeed(date) {
+    const now = date || new Date();
+    if (getSession(now).official) return true;
+    return getSession(new Date(now.getTime() + 2 * 60 * 1000)).official;
+  }
+
+  function officialStatus() {
+    const s = getSession(new Date());
+    const o = live.official;
+    if (!s.official) return "closed";
+    if (o && o.ok && o.price != null) return "live";
+    if (o && (o.failCount || 0) >= 1) return "failed";
+    return "loading";
+  }
+
+  function usingOfficial() {
+    return officialStatus() === "live";
+  }
+
   let chart = null;
   let chartKey = "";
   let unlocksData = null;
   let live = {
     quote: null,
     hl: null,
+    official: null,
     candles: [],
     onTick: null,
   };
 
-  function livePx() {
+  function hlPx() {
     const h = live.hl;
     if (!h) return null;
     if (h.midPx != null && !Number.isNaN(h.midPx)) return h.midPx;
     if (h.markPx != null && !Number.isNaN(h.markPx)) return h.markPx;
     return null;
+  }
+
+  function livePx() {
+    const status = officialStatus();
+    if (status === "live") return live.official.price;
+    if (status === "loading") return null;
+    return hlPx();
   }
 
   function upsertCandle(c) {
@@ -230,19 +412,15 @@
   }
 
   function etKind(ms) {
-    const p = etParts(new Date(ms));
-    const dow = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
-    if (dow === 0 || dow === 6) return "closed";
-    const m = p.hour * 60 + p.minute;
-    if (m >= 4 * 60 && m < 9 * 60 + 30) return "pre";
-    if (m >= 9 * 60 + 30 && m < 16 * 60) return "regular";
-    if (m >= 16 * 60 && m < 20 * 60) return "after";
+    const s = getSession(new Date(ms));
+    if (s.id === "pre" || s.id === "regular" || s.id === "after") return s.id;
     return "closed";
   }
 
   function isCompletedCloseTime(ms) {
     const p = etParts(new Date(ms));
-    return p.hour * 60 + p.minute >= 16 * 60;
+    const b = sessionBounds(p);
+    return p.hour * 60 + p.minute >= b.regularEnd;
   }
 
   function prevCloseBefore(quote, closeMs) {
@@ -362,7 +540,8 @@
       if (ms < minX - 5 * 60 * 1000 || ms > maxX) continue;
       const ep = etParts(new Date(ms));
       const m = ep.hour * 60 + ep.minute;
-      if (m < 9 * 60 + 30 || m >= 16 * 60) continue;
+      const b = sessionBounds(ep);
+      if (m < b.regularStart || m >= b.regularEnd) continue;
       if (p.c == null) continue;
       pts.push({ x: ms, y: p.c });
     }
@@ -378,14 +557,7 @@
     // walk 1-minute steps only near possible boundaries by stepping 15m and refining.
     let lastKey = "";
     function kindAt(ms) {
-      const p = etParts(new Date(ms));
-      const dow = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
-      if (dow === 0 || dow === 6) return "closed";
-      const m = p.hour * 60 + p.minute;
-      if (m >= 4 * 60 && m < 9 * 60 + 30) return "pre";
-      if (m >= 9 * 60 + 30 && m < 16 * 60) return "regular";
-      if (m >= 16 * 60 && m < 20 * 60) return "after";
-      return "closed";
+      return etKind(ms);
     }
     const meta = {
       pre: { color: "rgba(240,240,250,0.03)", label: "PRE" },
@@ -501,18 +673,42 @@
     return pts;
   }
 
+  function officialChartWindow(now) {
+    const p = etParts(new Date(now));
+    const start = clockToMs(p.year, p.month, p.day, 4, 0, ET);
+    return { minX: start, maxX: now };
+  }
+
+  function buildOfficialSeries(bars, px, now) {
+    const pts = [];
+    (bars || []).forEach((bar) => {
+      if (bar && bar.t != null && bar.c != null) pts.push({ x: bar.t, y: bar.c });
+    });
+    if (px != null) {
+      if (!pts.length || now >= pts[pts.length - 1].x) pts.push({ x: now, y: px });
+      else pts[pts.length - 1] = { x: now, y: px };
+    }
+    return pts;
+  }
+
   function paintChart() {
     const el = document.getElementById("intraday-chart");
     if (!el || !global.Chart) return;
     const now = Date.now();
+    const official = usingOfficial();
     const px = livePx();
-    const minX = now - WINDOW_MS;
-    const maxX = now;
-    const hlPts = buildHlSeries(live.candles, px, now);
-    const yPts = yahooRegularSeries(live.quote, minX, maxX);
-    const prev = live.quote && live.quote.yahoo && live.quote.yahoo.previousClose;
-    const last = px != null ? px : (hlPts.length ? hlPts[hlPts.length - 1].y : null);
-    const up = last != null && (prev != null ? last >= prev : (hlPts[0] && last >= hlPts[0].y));
+    const span = official ? officialChartWindow(now) : { minX: now - WINDOW_MS, maxX: now };
+    const minX = span.minX;
+    const maxX = span.maxX;
+    const hlPts = official ? [] : buildHlSeries(live.candles, px, now);
+    const offPts = official ? buildOfficialSeries((live.official && live.official.bars) || [], px, now) : [];
+    const yPts = official ? [] : yahooRegularSeries(live.quote, minX, maxX);
+    const prev = (live.official && live.official.prevClose != null)
+      ? live.official.prevClose
+      : (live.quote && live.quote.yahoo && live.quote.yahoo.previousClose);
+    const series = official ? offPts : hlPts;
+    const last = px != null ? px : (series.length ? series[series.length - 1].y : null);
+    const up = last != null && (prev != null ? last >= prev : (series[0] && last >= series[0].y));
     const color = up ? "rgba(61,214,140,1)" : "rgba(255,90,90,1)";
     const fill = up ? "rgba(61,214,140,0.12)" : "rgba(255,90,90,0.12)";
     const compact = isCompactView();
@@ -525,38 +721,56 @@
       tickLabels[ms] = hmStockholm(ms, crossed);
     });
     // Round key to the current minute so we do not rebuild the Chart every poll
-    const key = [Math.floor(minX / 60000), Math.floor(maxX / 60000), compact ? 1 : 0, ticks.length, yPts.length > 0 ? 1 : 0].join(":");
+    const key = [official ? "off" : "hl", Math.floor(minX / 60000), Math.floor(maxX / 60000), compact ? 1 : 0, ticks.length, yPts.length > 0 ? 1 : 0].join(":");
     const caption = document.getElementById("intraday-caption");
     if (caption) {
-      caption.textContent = "Hyperliquid xyz:SPCX, 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session. Shaded bands are U.S. pre / regular / after-hours sessions.";
+      caption.textContent = official
+        ? "Official U.S. last sale via CNBC, 1-minute bars from the start of today's pre-market, time in CET/CEST. The last point is the live last sale, at the current time. Shaded bands are U.S. pre / regular / after-hours sessions. Real-time, not a 15-minute delayed feed."
+        : "Hyperliquid xyz:SPCX, 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session from the snapshot. Shaded bands are U.S. pre / regular / after-hours sessions.";
     }
     const bands = cashBands(minX, maxX);
-    const datasets = [{
-      label: "Hyperliquid xyz:SPCX",
-      data: hlPts,
-      borderColor: color,
-      backgroundColor: fill,
-      fill: true,
-      borderWidth: 1.35,
-      pointRadius: 0,
-      pointHitRadius: compact ? 18 : 8,
-      tension: 0.15,
-      order: 1,
-    }];
-    if (yPts.length) {
+    const datasets = [];
+    if (official) {
       datasets.push({
-        label: "Nasdaq / Yahoo regular (snapshot)",
-        data: yPts,
-        borderColor: "rgba(240,240,250,0.55)",
-        backgroundColor: "transparent",
-        fill: false,
-        borderWidth: 1.1,
-        borderDash: [5, 3],
+        label: "U.S. last sale (CNBC)",
+        data: offPts,
+        borderColor: color,
+        backgroundColor: fill,
+        fill: true,
+        borderWidth: 1.35,
         pointRadius: 0,
-        pointHitRadius: compact ? 14 : 4,
-        tension: 0.05,
-        order: 2,
+        pointHitRadius: compact ? 18 : 8,
+        tension: 0.15,
+        order: 1,
       });
+    } else {
+      datasets.push({
+        label: "Hyperliquid xyz:SPCX",
+        data: hlPts,
+        borderColor: color,
+        backgroundColor: fill,
+        fill: true,
+        borderWidth: 1.35,
+        pointRadius: 0,
+        pointHitRadius: compact ? 18 : 8,
+        tension: 0.15,
+        order: 1,
+      });
+      if (yPts.length) {
+        datasets.push({
+          label: "Nasdaq / Yahoo regular (snapshot)",
+          data: yPts,
+          borderColor: "rgba(240,240,250,0.55)",
+          backgroundColor: "transparent",
+          fill: false,
+          borderWidth: 1.1,
+          borderDash: [5, 3],
+          pointRadius: 0,
+          pointHitRadius: compact ? 14 : 4,
+          tension: 0.05,
+          order: 2,
+        });
+      }
     }
     const cfg = {
       type: "line",
@@ -567,7 +781,7 @@
         interaction: { mode: "index", intersect: false, axis: "x" },
         plugins: {
           legend: {
-            display: yPts.length > 0,
+            display: datasets.length > 1,
             labels: { color: "rgba(240,240,250,0.6)", font: { size: compact ? 11 : 10, family: "Barlow, sans-serif" }, boxWidth: 12, padding: 8 },
           },
           tooltip: {
@@ -626,12 +840,17 @@
     const y = q.yahoo || {};
     const now = new Date();
     const session = getSession(now);
+    const officialOn = usingOfficial();
+    const feedStatus = officialStatus();
+    const officialFailed = feedStatus === "failed";
+    const officialLoading = feedStatus === "loading";
     const px = livePx();
-    const prev = y.previousClose;
+    const off = live.official || {};
+    const prev = officialOn && off.prevClose != null ? off.prevClose : y.previousClose;
     const display = px;
-    const stamp = (live.hl && live.hl.asOf) || now;
-    const delta = display != null && prev != null ? display - prev : null;
-    const pct = delta != null && prev ? (delta / prev) * 100 : null;
+    const stamp = officialOn ? (off.time || off.asOf || now) : ((live.hl && live.hl.asOf) || now);
+    const delta = officialOn && off.change != null ? off.change : (display != null && prev != null ? display - prev : null);
+    const pct = officialOn && off.changePct != null ? off.changePct : (delta != null && prev ? (delta / prev) * 100 : null);
 
     const priceEl = document.getElementById("hero-price");
     const chgEl = document.getElementById("hero-chg");
@@ -646,12 +865,38 @@
       chgEl.className = "chg " + chgClass(delta);
     }
     if (badge && label) {
-      badge.classList.remove("closed");
-      label.textContent = "Hyperliquid xyz:SPCX perp – 24/7";
+      badge.classList.toggle("closed", feedStatus === "closed");
+      badge.classList.toggle("fallback", officialFailed);
+      if (officialOn) {
+        label.textContent = "CNBC · U.S. last sale · " + session.label + " · live";
+      } else if (officialLoading) {
+        label.textContent = "Loading official last sale";
+      } else if (officialFailed) {
+        label.textContent = "Hyperliquid · official feed unavailable";
+      } else {
+        label.textContent = "Hyperliquid · overnight";
+      }
     }
     if (asof) {
-      asof.innerHTML = "Live mid · " + formatIn(stamp, TZ, true) +
-        " · the last point on the chart is this same price, at the current time.";
+      let line;
+      if (officialOn) {
+        line = "Live last sale · " + formatIn(stamp, TZ, true) +
+          " · real-time U.S. tape via CNBC" + (off.source ? " (" + off.source + ")" : "") +
+          " · the last point on the chart is this same price, at the current time.";
+      } else if (officialLoading) {
+        line = "Loading official U.S. last sale…";
+      } else if (officialFailed) {
+        line = "Official feed unavailable · showing Hyperliquid mid · " + formatIn(stamp, TZ, true) + ".";
+      } else {
+        line = "Live mid · " + formatIn(stamp, TZ, true) +
+          " · " + session.label +
+          " · the last point on the chart is this same price, at the current time.";
+      }
+      const ref = officialOn ? hlPx() : null;
+      if (ref != null) {
+        line += '<div class="tiny hl-ref">Hyperliquid perp ' + money(ref) + "</div>";
+      }
+      asof.innerHTML = line;
     }
 
     if (printsEl) {
@@ -686,11 +931,11 @@
     const ev = mkt != null && cash != null && debt != null ? mkt - cash + debt : null;
 
     const stats = [
-      { k: "Market cap", v: compact(mkt), s: shares ? "13.581B shares × live Hyperliquid mid" : "" },
+      { k: "Market cap", v: compact(mkt), s: shares ? ("13.581B shares × " + (officialOn ? "official last sale" : "live Hyperliquid mid")) : "" },
       { k: "Enterprise value", v: compact(ev), s: "Net cash $52.0B (30 Sep 2026 10-Q)" },
       { k: "52-week range", v: money(y.fiftyTwoWeekLow) + " – " + money(y.fiftyTwoWeekHigh) },
-      { k: "Day range (regular)", v: money(y.regularMarketDayLow) + " – " + money(y.regularMarketDayHigh) },
-      { k: "Volume (regular)", v: fmtVol(y.regularMarketVolume) },
+      { k: "Day range (regular)", v: money(officialOn && off.low != null ? off.low : y.regularMarketDayLow) + " – " + money(officialOn && off.high != null ? off.high : y.regularMarketDayHigh) },
+      { k: "Volume (regular)", v: fmtVol(officialOn && off.volume != null ? off.volume : y.regularMarketVolume) },
       { k: "IPO / first trade", v: "$135.00 · 12 Jun 2026" },
       { k: "Next catalyst", v: "Starship Flight 15 · 13 Nov" },
       (global.SPCXUnlocks && typeof SPCXUnlocks.overviewStat === "function"
@@ -702,7 +947,7 @@
       box.innerHTML = stats.map((s) => '<div class="stat"><div class="k">' + s.k + '</div><div class="v">' + s.v + '</div>' + (s.s ? '<div class="tiny">' + s.s + "</div>" : "") + "</div>").join("");
     }
     paintChart();
-    const state = { display, session, mkt, ev, hlPx: px, regular: y.regularMarketPrice, prev };
+    const state = { display, session, mkt, ev, hlPx: hlPx(), official: officialOn, regular: y.regularMarketPrice, prev };
     if (typeof live.onTick === "function") {
       try { live.onTick(state); } catch (e) { console.warn(e); }
     }
@@ -787,6 +1032,16 @@
       ensureOpen();
       fetchHL().then(applyHl).catch((e) => console.warn("Hyperliquid poll failed", e));
       refreshCandles().then(() => render(live.quote, live.hl)).catch((e) => console.warn("HL candles failed", e));
+      if (wantsOfficialFeed(new Date())) {
+        fetchOfficialQuote().then((off) => {
+          live.official = Object.assign({}, live.official || {}, off, { ok: true, error: null, failCount: 0 });
+          render(live.quote, live.hl);
+        }).catch((e) => console.warn("Official quote failed", e));
+        fetchOfficialBars(new Date()).then((bars) => {
+          live.official = Object.assign({}, live.official || {}, { bars, barsAsOf: new Date() });
+          render(live.quote, live.hl);
+        }).catch((e) => console.warn("Official bars failed", e));
+      }
     }
     connect();
     if (!startedVis) {
@@ -822,14 +1077,45 @@
         resizeTimer = setTimeout(() => { chartKey = ""; paintChart(); }, 200);
       });
     }
-    async function tick() {
+    async function tickHl() {
       try {
         const h = await fetchHL();
         applyHl(h);
       } catch (e) { console.warn("Hyperliquid poll failed", e); }
     }
-    tick();
-    setInterval(tick, 5000);
+    async function tickOfficial() {
+      if (!wantsOfficialFeed(new Date())) return;
+      try {
+        const off = await fetchOfficialQuote();
+        const bars = (live.official && live.official.bars) || [];
+        live.official = Object.assign({ bars }, off, { ok: true, error: null, failCount: 0 });
+        render(live.quote, live.hl);
+      } catch (e) {
+        const prevOff = live.official || {};
+        live.official = Object.assign({}, prevOff, {
+          ok: false,
+          error: String((e && e.message) || e),
+          failCount: (prevOff.failCount || 0) + 1,
+          asOf: new Date(),
+        });
+        render(live.quote, live.hl);
+        console.warn("Official quote failed", e);
+      }
+    }
+    async function tickOfficialBars() {
+      if (!getSession(new Date()).official) return;
+      try {
+        const bars = await fetchOfficialBars(new Date());
+        live.official = Object.assign({}, live.official || {}, { bars, barsAsOf: new Date() });
+        render(live.quote, live.hl);
+      } catch (e) { console.warn("Official bars failed", e); }
+    }
+    tickHl();
+    tickOfficial();
+    tickOfficialBars();
+    setInterval(tickHl, 5000);
+    setInterval(tickOfficial, 5000);
+    setInterval(tickOfficialBars, 30000);
     refreshCandles().then(() => render(live.quote, live.hl)).catch((e) => console.warn("HL candles failed", e));
     setInterval(() => { refreshCandles().catch((e) => console.warn("HL candles failed", e)); }, 60000);
     startSocket();
@@ -848,6 +1134,6 @@
 
   global.SPCXPrice = {
     getSession, formatIn, money, compact, fmtVol, chgClass, chgText,
-    fetchHL, tryYahooLive, render, startLive, setQuote, setUnlocks, TZ, ET,
+    fetchHL, fetchOfficialQuote, fetchOfficialBars, tryYahooLive, render, startLive, setQuote, setUnlocks, TZ, ET,
   };
 })(window);
