@@ -109,13 +109,19 @@
     let current = "all";
     function paint() {
       const shown = current === "all" ? all : all.filter((i) => i.type === current);
-      list.innerHTML = shown.slice(0, 60).map((i) =>
+      const cap = window.__newsCap || 20;
+      list.innerHTML = shown.slice(0, cap).map((i) =>
         '<article class="news-item"><div class="meta">' + esc(i.type) + "<br>" + formatDate(i.datetime || i.date) + "<br>" + esc(i.source || "") + "</div><div>" +
         topicBadges(i.topics, i.highlight) +
         "<h3>" + (i.url ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener">' + esc(i.title.length > 220 ? i.title.slice(0, 220) + "…" : i.title) + "</a>" : esc(i.title)) + "</h3>" +
         (i.summary ? "<p>" + esc(i.summary) + "</p>" : "") +
         "</div></article>"
       ).join("") || "<p class='muted'>Nothing in this filter yet.</p>";
+      if (shown.length > cap) {
+        list.innerHTML += '<button class="ghost" type="button" id="news-more" style="margin-top:16px">Show more (' + (shown.length - cap) + " remaining)</button>";
+        const more = document.getElementById("news-more");
+        if (more) more.addEventListener("click", () => { window.__newsCap = cap + 20; paint(); });
+      }
     }
     if (filters) {
       filters.innerHTML = types.map((t) => '<button type="button" data-id="' + t.id + '"' + (t.id === "all" ? " class='active'" : "") + ">" + t.label + "</button>").join("");

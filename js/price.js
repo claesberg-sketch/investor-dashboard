@@ -262,7 +262,7 @@
       const when = stamp ? formatIn(stamp, TZ, true) : formatIn(now, TZ, true);
       const yUpdated = quote && quote.updated ? formatIn(quote.updated, TZ, true) : "—";
       asof.innerHTML = "Showing " + (source || "—") + " · " + when +
-        "<br>Yahoo snapshot last refreshed " + yUpdated + " (GitHub Action, every ~20 min). Hyperliquid is polled live in this browser.";
+        "<br>Yahoo snapshot last refreshed " + yUpdated + " (server-side file; live Yahoo is blocked by CORS). Hyperliquid is polled live in this browser.";
     }
     if (alt) {
       const bits = [];
@@ -282,7 +282,7 @@
 
     const stats = [
       { k: "Market cap", v: compact(mkt), s: shares ? "13.581B shares × displayed price" : "" },
-      { k: "Enterprise value", v: compact(ev), s: "Equity − cash $89.9B + debt $37.9B (30 Sep 2026)" },
+      { k: "Enterprise value", v: compact(ev), s: "Net cash $52.0B (30 Sep 2026 10-Q)" },
       { k: "52-week range", v: money(y.fiftyTwoWeekLow) + " – " + money(y.fiftyTwoWeekHigh) },
       { k: "Day range (regular)", v: money(y.regularMarketDayLow) + " – " + money(y.regularMarketDayHigh) },
       { k: "Volume (regular)", v: fmtVol(y.regularMarketVolume) },
