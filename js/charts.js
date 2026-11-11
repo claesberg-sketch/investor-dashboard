@@ -19,6 +19,13 @@
     line2: "rgba(61,214,140,0.9)",
     muted: "rgba(240,240,250,0.4)",
     undisclosed: "rgba(240,200,80,0.85)",
+    blue: "rgba(74,144,255,0.9)",
+    teal: "rgba(38,208,206,0.9)",
+    violet: "rgba(167,112,255,0.92)",
+    green: "rgba(61,214,140,0.9)",
+    orange: "rgba(255,153,51,0.92)",
+    red: "rgba(255,92,108,0.92)",
+    pink: "rgba(255,110,199,0.9)",
   };
 
   function hatchPattern(color, bg) {
@@ -79,9 +86,9 @@
     const si = q.map((x) => (x.revenue && x.revenue.si) ?? null);
     const totalOnly = totalOnlyValues(q);
     const revDatasets = [
-      { label: "Space", data: space, backgroundColor: pal.space, stack: "r" },
-      { label: "Connectivity", data: conn, backgroundColor: pal.conn, stack: "r" },
-      { label: "SI / AI", data: si, backgroundColor: pal.si, stack: "r" },
+      { label: "Space", data: space, backgroundColor: pal.blue, stack: "r" },
+      { label: "Connectivity", data: conn, backgroundColor: pal.teal, stack: "r" },
+      { label: "SI / AI", data: si, backgroundColor: pal.violet, stack: "r" },
     ];
     if (totalOnly.some((v) => v != null)) {
       revDatasets.push({
@@ -103,7 +110,7 @@
     new Chart(document.getElementById("c-subs"), {
       type: "line",
       data: { labels, datasets: [
-        { label: "Consumer subs (M)", data: q.map((x) => x.starlinkConsumerSubsM ?? null), borderColor: pal.line, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 3 },
+        { label: "Consumer subs (M)", data: q.map((x) => x.starlinkConsumerSubsM ?? null), borderColor: pal.teal, backgroundColor: "transparent", spanGaps: false, tension: 0.15, pointRadius: 4, pointBackgroundColor: pal.teal, borderWidth: 3 },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
         scales: { x: { ...axis, grid: { display: false } }, y: { ...axis, beginAtZero: true, title: { display: true, text: "Subs (M)", color: "rgba(240,240,250,0.5)" } } } },
@@ -112,8 +119,8 @@
     new Chart(document.getElementById("c-connmix"), {
       type: "bar",
       data: { labels, datasets: [
-        { label: "Consumer", data: q.map((x) => x.consumerRevenue ?? null), backgroundColor: pal.conn, stack: "c" },
-        { label: "Enterprise & government", data: q.map((x) => x.enterpriseGovRevenue ?? null), backgroundColor: pal.si, stack: "c" },
+        { label: "Consumer", data: q.map((x) => x.consumerRevenue ?? null), backgroundColor: pal.teal, stack: "c" },
+        { label: "Enterprise & government", data: q.map((x) => x.enterpriseGovRevenue ?? null), backgroundColor: pal.orange, stack: "c" },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { stacked: true, ...xAxis }, y: { stacked: true, ...axis } } },
@@ -121,7 +128,7 @@
 
     new Chart(document.getElementById("c-gw"), {
       type: "bar",
-      data: { labels, datasets: [{ label: "Nameplate GW", data: q.map((x) => x.nameplateComputeGW ?? null), backgroundColor: pal.si }] },
+      data: { labels, datasets: [{ label: "Nameplate GW", data: q.map((x) => x.nameplateComputeGW ?? null), backgroundColor: pal.green }] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
         scales: { x: { ...xAxis }, y: { ...axis, beginAtZero: true } } },
     });
@@ -134,8 +141,8 @@
     new Chart(document.getElementById("c-earn"), {
       type: "bar",
       data: { labels, datasets: [
-        { label: "Adj. EBITDA", data: q.map((x) => x.adjustedEbitda ?? null), backgroundColor: pal.conn },
-        { label: "Net income", data: q.map((x) => x.netIncome ?? null), backgroundColor: pal.si },
+        { label: "Adj. EBITDA", data: q.map((x) => x.adjustedEbitda ?? null), backgroundColor: pal.green },
+        { label: "Net income", data: q.map((x) => x.netIncome ?? null), backgroundColor: pal.red },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { ...xAxis }, y: { ...axis } } },
@@ -144,8 +151,8 @@
     new Chart(document.getElementById("c-capex"), {
       type: "bar",
       data: { labels, datasets: [
-        { label: "Total capex", data: q.map((x) => x.capex ?? null), backgroundColor: pal.muted },
-        { label: "SI capex", data: q.map((x) => (x.segmentCapex && x.segmentCapex.si) ?? null), backgroundColor: pal.si },
+        { label: "Total capex", data: q.map((x) => x.capex ?? null), backgroundColor: pal.blue },
+        { label: "SI capex", data: q.map((x) => (x.segmentCapex && x.segmentCapex.si) ?? null), backgroundColor: pal.violet },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { ...xAxis }, y: { ...axis } } },
@@ -170,8 +177,8 @@
     new Chart(document.getElementById("c-sats"), {
       type: "bar",
       data: { labels: satLabels, datasets: [
-        { label: "Company operational (approx.)", data: companyOp, backgroundColor: pal.conn },
-        { label: "McDowell in orbit", data: mcdowell, backgroundColor: pal.si },
+        { label: "Company operational (approx.)", data: companyOp, backgroundColor: pal.teal },
+        { label: "McDowell in orbit", data: mcdowell, backgroundColor: pal.violet },
       ] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend, tooltip: tip },
         scales: { x: { ...xAxis }, y: { ...axis, beginAtZero: true } } },
@@ -184,7 +191,7 @@
 
     new Chart(document.getElementById("c-backlog"), {
       type: "bar",
-      data: { labels, datasets: [{ label: "Backlog ($M)", data: q.map((x) => x.backlog ?? null), backgroundColor: pal.si }] },
+      data: { labels, datasets: [{ label: "Backlog ($M)", data: q.map((x) => x.backlog ?? null), backgroundColor: pal.pink }] },
       options: { responsive: true, maintainAspectRatio: false, interaction: interact, plugins: { legend: { display: false }, tooltip: tip },
         scales: { x: { ...xAxis }, y: { ...axis } } },
     });
