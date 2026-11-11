@@ -137,7 +137,7 @@
     let current = "all";
     function paint() {
       const shown = current === "all" ? all : all.filter((i) => i.type === current);
-      const cap = window.__newsCap || 20;
+      const cap = 10;
       list.innerHTML = shown.slice(0, cap).map((i) => {
         const when = formatPublished(i);
         const ago = relativeAge(i.datetime);
@@ -152,12 +152,6 @@
           (itemSummary(i) ? '<p class="summary">' + esc(itemSummary(i)) + '</p>' : '') +
           '</div></article>';
       }).join('') || "<p class='muted'>Nothing in this filter yet.</p>";
-
-      if (shown.length > cap) {
-        list.innerHTML += '<button class="ghost" type="button" id="news-more" style="margin-top:16px">Show more (' + (shown.length - cap) + " remaining)</button>";
-        const more = document.getElementById("news-more");
-        if (more) more.addEventListener("click", () => { window.__newsCap = cap + 20; paint(); });
-      }
     }
     if (filters) {
       filters.innerHTML = types.map((t) => '<button type="button" data-id="' + t.id + '"' + (t.id === "all" ? " class='active'" : "") + ">" + t.label + "</button>").join("");
