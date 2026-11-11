@@ -123,6 +123,7 @@
     const xItems = posts.map((p) => ({
       type: "x", date: p.created_at.slice(0, 10), datetime: p.created_at,
       title: p.text, source: "@" + p.username, url: p.url, topics: p.topics, highlight: p.highlight,
+      summary: p.summary, snippet: p.snippet,
     }));
     const all = items.concat(xItems).sort((a, b) => feedSortKey(b).localeCompare(feedSortKey(a)));
 
