@@ -1,4 +1,4 @@
-/* Live price & chart: Hyperliquid xyz:SPCX 24/7, with a Nasdaq/Yahoo snapshot for comparison. */
+/* Live price & chart: Hyperliquid xyz:SPCX 24/7, with Regular close and After hours from the Yahoo snapshot. */
 (function (global) {
   const TZ = "Europe/Stockholm";
   const ET = "America/New_York";
@@ -11,16 +11,37 @@
 
   function pad(n) { return String(n).padStart(2, "0"); }
 
+  function toDate(ts) {
+    return ts instanceof Date ? ts : new Date(typeof ts === "number" && ts < 1e12 ? ts * 1000 : ts);
+  }
+
+  function zoneAbbrev(date) {
+    // Europe/Stockholm: CEST (UTC+2) during DST, otherwise CET (UTC+1).
+    // Do not rely on Intl timeZoneName, which may render "GMT+1" instead of CET.
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: TZ,
+      timeZoneName: "shortOffset",
+      hour: "2-digit",
+    }).formatToParts(date);
+    const off = ((parts.find((p) => p.type === "timeZoneName") || {}).value || "").replace("UTC", "GMT");
+    if (/[+−\-]0?2\b/.test(off)) return "CEST";
+    return "CET";
+  }
+
   function formatIn(ts, zone, withSec) {
-    const d = ts instanceof Date ? ts : new Date(typeof ts === "number" && ts < 1e12 ? ts * 1000 : ts);
-    const fmt = new Intl.DateTimeFormat("en-GB", {
+    const d = toDate(ts);
+    if (Number.isNaN(d.getTime())) return "";
+    const parts = new Intl.DateTimeFormat("en-GB", {
       timeZone: zone,
       year: "numeric", month: "short", day: "2-digit",
       hour: "2-digit", minute: "2-digit",
       second: withSec ? "2-digit" : undefined,
       hour12: false, hourCycle: "h23",
-    });
-    return fmt.format(d) + " " + (zone === TZ ? "Europe/Stockholm" : zone === ET ? "U.S. Eastern" : zone);
+    }).formatToParts(d);
+    const get = (typ) => ((parts.find((p) => p.type === typ) || {}).value || "");
+    const time = get("hour") + ":" + get("minute") + (withSec ? ":" + get("second") : "");
+    const label = zone === TZ ? zoneAbbrev(d) : (zone === ET ? "ET" : zone);
+    return String(+get("day")) + " " + get("month") + " " + get("year") + ", " + time + " " + label;
   }
 
   function etParts(date) {
@@ -196,25 +217,141 @@
     live.candles = live.candles.filter((x) => x.t >= cutoff);
   }
 
-  function officialLast(quote, session) {
+  function tsMs(ts) {
+    if (ts == null || ts === "") return null;
+    const d = toDate(ts);
+    const ms = d.getTime();
+    return Number.isNaN(ms) ? null : ms;
+  }
+
+  function etDayKey(ms) {
+    const p = etParts(new Date(ms));
+    return p.year + "-" + String(p.month).padStart(2, "0") + "-" + String(p.day).padStart(2, "0");
+  }
+
+  function etKind(ms) {
+    const p = etParts(new Date(ms));
+    const dow = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday);
+    if (dow === 0 || dow === 6) return "closed";
+    const m = p.hour * 60 + p.minute;
+    if (m >= 4 * 60 && m < 9 * 60 + 30) return "pre";
+    if (m >= 9 * 60 + 30 && m < 16 * 60) return "regular";
+    if (m >= 16 * 60 && m < 20 * 60) return "after";
+    return "closed";
+  }
+
+  function isCompletedCloseTime(ms) {
+    const p = etParts(new Date(ms));
+    return p.hour * 60 + p.minute >= 16 * 60;
+  }
+
+  function prevCloseBefore(quote, closeMs) {
     const y = (quote && quote.yahoo) || {};
-    const pp = (quote && quote.prePostFromChart) || {};
-    if (session.id === "pre" && pp.preMarket && pp.preMarket.price != null) {
-      return { price: pp.preMarket.price, time: pp.preMarket.time, label: "Nasdaq / Yahoo pre-market (snapshot)" };
+    const day = etDayKey(closeMs);
+    let prev = null;
+    for (const p of (quote && quote.daily) || []) {
+      if (p.c == null) continue;
+      const ms = tsMs(p.t);
+      if (ms != null && etDayKey(ms) < day) prev = p.c;
     }
-    if (session.id === "regular" && y.regularMarketPrice != null) {
-      return { price: y.regularMarketPrice, time: y.regularMarketTime, label: "Nasdaq / Yahoo regular session (snapshot)" };
+    if (prev != null) return prev;
+    return y.previousClose != null ? y.previousClose : null;
+  }
+
+  /** Last completed U.S. regular-session close (not an in-progress regular print). */
+  function lastRegularClose(quote, now) {
+    const y = (quote && quote.yahoo) || {};
+    const session = getSession(now || new Date());
+    if (y.regularMarketPrice != null && y.regularMarketTime != null) {
+      const ms = tsMs(y.regularMarketTime);
+      if (ms != null && isCompletedCloseTime(ms)) {
+        const prev = y.previousClose != null ? y.previousClose : prevCloseBefore(quote, ms);
+        const change = prev != null ? y.regularMarketPrice - prev : null;
+        const changePct = y.regularMarketChangePercent != null
+          ? y.regularMarketChangePercent
+          : (change != null && prev ? (change / prev) * 100 : null);
+        return { price: y.regularMarketPrice, time: y.regularMarketTime, change, changePct };
+      }
     }
-    if (session.id === "after" && pp.postMarket && pp.postMarket.price != null) {
-      return { price: pp.postMarket.price, time: pp.postMarket.time, label: "Nasdaq / Yahoo after-hours (snapshot)" };
+    const today = etDayKey((now || new Date()).getTime());
+    let last = null;
+    for (const p of (quote && quote.intraday) || []) {
+      if (p.c == null) continue;
+      const ms = tsMs(p.t);
+      if (ms == null || etKind(ms) !== "regular") continue;
+      if (etDayKey(ms) === today && session.id === "regular") continue;
+      last = { price: p.c, time: p.t, ms };
     }
-    if (pp.postMarket && pp.postMarket.price != null) {
-      return { price: pp.postMarket.price, time: pp.postMarket.time, label: "Last official Nasdaq / Yahoo print (after-hours snapshot)" };
+    if (!last) {
+      const daily = (quote && quote.daily) || [];
+      for (let i = daily.length - 1; i >= 0; i--) {
+        const p = daily[i];
+        if (p.c == null) continue;
+        const ms = tsMs(p.t);
+        if (ms == null) continue;
+        if (etDayKey(ms) === today && session.id === "regular") continue;
+        const ep = etParts(new Date(ms));
+        const closeMs = clockToMs(ep.year, ep.month, ep.day, 16, 0, ET);
+        const prev = prevCloseBefore(quote, closeMs);
+        const change = prev != null ? p.c - prev : null;
+        const changePct = change != null && prev ? (change / prev) * 100 : null;
+        return { price: p.c, time: closeMs / 1000, change, changePct };
+      }
+      return null;
     }
-    if (y.regularMarketPrice != null) {
-      return { price: y.regularMarketPrice, time: y.regularMarketTime, label: "Last official Nasdaq / Yahoo regular close (snapshot)" };
+    const prev = prevCloseBefore(quote, last.ms);
+    const change = prev != null ? last.price - prev : null;
+    const changePct = change != null && prev ? (change / prev) * 100 : null;
+    return { price: last.price, time: last.time, change, changePct };
+  }
+
+  function regularCloseOnEtDay(quote, dayKey) {
+    const y = (quote && quote.yahoo) || {};
+    if (y.regularMarketPrice != null && y.regularMarketTime != null) {
+      const ms = tsMs(y.regularMarketTime);
+      if (ms != null && etDayKey(ms) === dayKey && isCompletedCloseTime(ms)) {
+        return { price: y.regularMarketPrice, time: y.regularMarketTime };
+      }
+    }
+    let last = null;
+    for (const p of (quote && quote.intraday) || []) {
+      if (p.c == null) continue;
+      const ms = tsMs(p.t);
+      if (ms != null && etDayKey(ms) === dayKey && etKind(ms) === "regular") last = { price: p.c, time: p.t };
+    }
+    if (last) return last;
+    for (const p of (quote && quote.daily) || []) {
+      if (p.c == null) continue;
+      const ms = tsMs(p.t);
+      if (ms == null || etDayKey(ms) !== dayKey) continue;
+      const ep = etParts(new Date(ms));
+      return { price: p.c, time: clockToMs(ep.year, ep.month, ep.day, 16, 0, ET) / 1000 };
     }
     return null;
+  }
+
+  /**
+   * After-hours print for the current U.S. day if that session has data;
+   * otherwise the latest completed after-hours session.
+   */
+  function lastAfterHours(quote) {
+    const pp = (quote && quote.prePostFromChart) || {};
+    let last = null;
+    for (const p of (quote && quote.intraday) || []) {
+      if (p.c == null) continue;
+      const ms = tsMs(p.t);
+      if (ms != null && etKind(ms) === "after") last = { price: p.c, time: p.t, ms };
+    }
+    if (pp.postMarket && pp.postMarket.price != null) {
+      const ms = tsMs(pp.postMarket.time);
+      if (ms != null && (!last || ms >= last.ms)) last = { price: pp.postMarket.price, time: pp.postMarket.time, ms };
+    }
+    if (!last) return null;
+    const sameDay = regularCloseOnEtDay(quote, etDayKey(last.ms));
+    const basis = sameDay && sameDay.price != null ? sameDay.price : null;
+    const change = basis != null ? last.price - basis : null;
+    const changePct = change != null && basis ? (change / basis) * 100 : null;
+    return { price: last.price, time: last.time, change, changePct };
   }
 
   function yahooRegularSeries(quote, minX, maxX) {
@@ -387,7 +524,7 @@
     const key = [Math.floor(minX / 60000), Math.floor(maxX / 60000), mobile, ticks.length, yPts.length > 0 ? 1 : 0].join(":");
     const caption = document.getElementById("intraday-caption");
     if (caption) {
-      caption.textContent = "Hyperliquid xyz:SPCX, 5-minute candles, time in Europe/Stockholm. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session from a server-side snapshot. Shaded bands are U.S. pre / regular / after-hours sessions.";
+      caption.textContent = "Hyperliquid xyz:SPCX, 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session. Shaded bands are U.S. pre / regular / after-hours sessions.";
     }
     const bands = cashBands(minX, maxX);
     const datasets = [{
@@ -479,7 +616,6 @@
     if (hl) live.hl = hl;
     const q = live.quote || {};
     const y = q.yahoo || {};
-    const pp = q.prePostFromChart || {};
     const now = new Date();
     const session = getSession(now);
     const px = livePx();
@@ -494,8 +630,7 @@
     const badge = document.getElementById("session-badge");
     const label = document.getElementById("session-label");
     const asof = document.getElementById("hero-asof");
-    const officialEl = document.getElementById("hero-official");
-    const alt = document.getElementById("session-alt");
+    const printsEl = document.getElementById("session-prints");
 
     if (priceEl) priceEl.textContent = display != null ? money(display) : "—";
     if (chgEl) {
@@ -511,38 +646,29 @@
         " · the last point on the chart is this same price, at the current time.";
     }
 
-    const off = officialLast(q, session);
-    if (officialEl) {
-      if (off && off.price != null) {
-        const gap = display != null ? display - off.price : null;
-        const gapPct = gap != null && off.price ? (gap / off.price) * 100 : null;
-        const gapTxt = gap != null
-          ? (gap >= 0 ? "Perp is " + money(gap) + " (" + (gapPct >= 0 ? "+" : "") + gapPct.toFixed(2) + "%) above the official print."
-            : "Perp is " + money(-gap) + " (" + gapPct.toFixed(2) + "%) below the official print.")
-          : "";
-        officialEl.innerHTML =
-          '<div class="k">' + (session.cashOpen ? "Official Nasdaq / Yahoo (same session)" : "Official Nasdaq / Yahoo") + "</div>" +
-          "<div><strong>" + money(off.price) + "</strong> · " + off.label +
-          (off.time ? " · " + formatIn(off.time, TZ, true) : "") + "</div>" +
-          (gapTxt ? '<div class="basis ' + chgClass(gap) + '">' + gapTxt + "</div>" : "") +
-          '<div class="tiny">The perp can trade slightly above or below the stock because of funding and because it is a derivative, not the share itself. Official prints come from a server-side Yahoo snapshot (live Yahoo is blocked in the browser).</div>' +
-          '<div class="tiny" style="margin-top:4px">' + session.label + (q.updated ? " · snapshot last refreshed " + formatIn(q.updated, TZ, true) : "") + "</div>";
-        officialEl.hidden = false;
-      } else {
-        officialEl.innerHTML = "";
-        officialEl.hidden = true;
+    if (printsEl) {
+      const close = lastRegularClose(q, now);
+      const after = lastAfterHours(q);
+      function tile(label, row, kind) {
+        if (!row || row.price == null) {
+          return '<div class="print"><div class="k">' + label + '</div><div class="v">—</div><div class="when">n/a</div></div>';
+        }
+        let chg = "";
+        if (kind === "close" && row.changePct != null) {
+          const sign = row.changePct > 0 ? "+" : "";
+          chg = '<span class="chg-line ' + chgClass(row.changePct) + '">' + sign + Number(row.changePct).toFixed(2) + "%</span>";
+        } else if (kind === "after" && row.change != null) {
+          const sign = row.change > 0 ? "+" : (row.change < 0 ? "-" : "");
+          const pct = row.changePct != null
+            ? " (" + (row.changePct > 0 ? "+" : "") + Number(row.changePct).toFixed(2) + "%)"
+            : "";
+          chg = '<span class="chg-line ' + chgClass(row.change) + '">' + sign + money(Math.abs(row.change)) + pct + "</span>";
+        }
+        return '<div class="print"><div class="k">' + label + '</div>' +
+          '<div class="v">' + money(row.price) + (chg ? " " + chg : "") + "</div>" +
+          '<div class="when">' + (row.time != null ? formatIn(row.time, TZ) : "time n/a") + "</div></div>";
       }
-    }
-
-    if (alt) {
-      const bits = [];
-      if (y.regularMarketPrice != null) bits.push("<span>Regular close " + money(y.regularMarketPrice) + (y.regularMarketChangePercent != null ? "  (" + (y.regularMarketChangePercent > 0 ? "+" : "") + Number(y.regularMarketChangePercent).toFixed(2) + "%)" : "") + (y.regularMarketTime ? " · " + formatIn(y.regularMarketTime, TZ) : "") + "</span>");
-      if (pp.postMarket && pp.postMarket.price != null) bits.push("<span>After-hours " + money(pp.postMarket.price) + (pp.postMarket.time ? " · " + formatIn(pp.postMarket.time, TZ) : "") + "</span>");
-      if (pp.preMarket && pp.preMarket.price != null) bits.push("<span>Last pre-market " + money(pp.preMarket.price) + (pp.preMarket.time ? " · " + formatIn(pp.preMarket.time, TZ) : "") + "</span>");
-      if (live.hl && live.hl.markPx != null) bits.push("<span>Hyperliquid mark " + money(live.hl.markPx) + "</span>");
-      if (live.hl && live.hl.funding != null) bits.push("<span>Funding " + (live.hl.funding * 100).toFixed(4) + "%</span>");
-      if (y.fulldayPrice != null) bits.push("<span>Yahoo full-day " + money(y.fulldayPrice) + (y.fulldayChangePercent != null ? "  (" + (y.fulldayChangePercent > 0 ? "+" : "") + Number(y.fulldayChangePercent).toFixed(2) + "%)" : "") + "</span>");
-      alt.innerHTML = bits.join("");
+      printsEl.innerHTML = tile("Regular close", close, "close") + tile("After hours", after, "after");
     }
 
     const shares = q.fundamentals && q.fundamentals.sharesOutstanding;

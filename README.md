@@ -8,7 +8,7 @@ Live site (GitHub Pages): **https://claesberg-sketch.github.io/investor-dashboar
 
 ## What’s on the SpaceX page
 
-1. **Live price and hero chart** — the headline price and the top chart are the Hyperliquid **`xyz:SPCX`** mid, 24/7, labelled “Hyperliquid xyz:SPCX perp – 24/7.” The chart is 5-minute candles from `candleSnapshot` (last 24 hours) plus a live point at the current time in Europe/Stockholm, kept in sync by a 5-second poll and a WebSocket candle / mid subscription (`wss://api.hyperliquid.xyz/ws`). The last chart point is the same price as the ticker. When a Nasdaq/Yahoo snapshot is available, that official print and the basis (perp minus official, value and %) are shown next to it — the perp can trade slightly above or below the stock because of funding. The official regular-session line is overlaid as a dashed series. Yahoo itself is a server-side file (browser CORS is blocked) and updates only when `scripts/refresh.py` is run and pushed.
+1. **Live price and hero chart** — the headline price and the top chart are the Hyperliquid **`xyz:SPCX`** mid, 24/7, labelled “Hyperliquid xyz:SPCX perp – 24/7.” The chart is 5-minute candles from `candleSnapshot` (last 24 hours) plus a live point at the current time in CET/CEST, kept in sync by a 5-second poll and a WebSocket candle / mid subscription (`wss://api.hyperliquid.xyz/ws`). The last chart point is the same price as the ticker. Under the live price, two tiles show the latest Nasdaq/Yahoo **Regular close** (price, % change, date and time in CET/CEST) and **After hours** (price, change versus that session’s regular close in $ and %, date and time in CET/CEST). If today’s U.S. after-hours session has data it is shown as it comes; otherwise the tiles use the latest completed after-hours session. The official regular-session line is overlaid on the chart as a dashed series. Yahoo itself is a server-side file (browser CORS is blocked) and updates only when `scripts/refresh.py` is run and pushed.
 2. **News** — one chronological feed (newest first) of official press/IR, SEC filings, Google News RSS, and X posts from @elonmusk, @SpaceX, @Starlink, @Gwynne_Shotwell, @SpaceXSI, and @nextbigfuture (Brian Wang). Filters: All, Press, Filings, Media, X. Every item shows its publish date and time in Europe/Stockholm (CET or CEST); if a source has only a date, the row says “time n/a” rather than inventing a clock time. Each row also has a two-sentence plain-English summary of the article, filing, release, or post, written from the source (or, if a page could not be fetched, from the headline/snippet only, and labelled as such).
 3. **Base-case revenue model** — next 18 months (quarterly through Q2 2028) and FY2026–FY2029. Drivers and sources are on the page; sliders recompute client-side.
 4. **KPI charts** — segment revenue, Starlink subscribers, satellites (company + Jonathan McDowell), compute GW, earnings, capex, backlog.
@@ -63,12 +63,10 @@ python3 scripts/refresh.py
 
 The headline price and hero chart always use Hyperliquid `xyz:SPCX` (a trade.xyz HIP-3 perpetual that references one SpaceX Class A share, cash-settled in USDC). It is price exposure, not share ownership, and it can trade slightly above or below the stock because of funding.
 
-Official Nasdaq / Yahoo prints are shown beside the live perp for comparison, from a server-side snapshot:
+Two official Nasdaq / Yahoo tiles sit under the live perp, from a server-side snapshot:
 
-- Regular 9:30 a.m.–4:00 p.m. ET — Yahoo regular print
-- Pre-market 4:00–9:30 a.m. ET — Yahoo pre-market (from the includePrePost chart)
-- After-hours 4:00–8:00 p.m. ET — Yahoo after-hours
-- Overnight 8:00 p.m.–4:00 a.m. ET, plus weekends and the U.S. holiday close — the official row shows the last cash-session print and its timestamp
+- **Regular close** — the last completed U.S. regular session (9:30 a.m.–4:00 p.m. ET), with its % change and the close time in CET or CEST (for example `10 Nov 2026, 22:00 CET`).
+- **After hours** — the after-hours session of the current U.S. day (4:00–8:00 p.m. ET) if that session has data; otherwise the latest completed after-hours session. Change is versus that session’s regular close, in $ and %.
 
 ## Forecast headline (base case, 11 Nov 2026)
 

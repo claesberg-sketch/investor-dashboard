@@ -159,7 +159,21 @@ def parse_pre_post(day_chart: dict, regular_market_time=None):
         return pts[-1] if pts else None
 
     pre_px = last_in(pre_start, pre_end)
+    # Prefer the current U.S. day's after-hours if that session has prints;
+    # otherwise keep the latest completed after-hours session in the series.
     post_px = last_in(post_start, post_end)
+    if not post_px:
+        def is_after_hours(p):
+            local = p["t"] + offset
+            lt = _time.gmtime(local)
+            dow = lt.tm_wday  # Mon=0
+            if dow >= 5:
+                return False
+            mins = lt.tm_hour * 60 + lt.tm_min
+            return 16 * 60 <= mins < 20 * 60
+
+        after_pts = [p for p in series if is_after_hours(p)]
+        post_px = after_pts[-1] if after_pts else None
     return {
         "preMarket": None if not pre_px else {"price": pre_px["c"], "time": pre_px["t"]},
         "postMarket": None if not post_px else {"price": post_px["c"], "time": post_px["t"]},
