@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-12T07:08:21+01:00",
+  "updated": "2026-11-12T08:01:00+01:00",
   "items": [
     {
       "id": "pr-ussf627",
       "type": "press",
       "date": "2026-11-12",
       "title": "USSF-627 mission",
-      "summary": "This is SpaceX’s official page for USSF-627, a Falcon 9 mission from Space Launch Complex 4E at Vandenberg Space Force Base. The page, still in pre-launch form when fetched, said the four-hour window opened at 8:36 p.m. PT on 11 November 2026, that the first-stage booster was on its seventh flight, and that it would land on the Of Course I Still Love You droneship; official SpaceX posts then confirmed liftoff and that landing early on 12 November 2026.",
+      "summary": "SpaceX’s official USSF-627 page now confirms that Falcon 9 lifted off at 8:36 p.m. PT on 11 November 2026 from Space Launch Complex 4E at Vandenberg Space Force Base. It says this was the seventh flight for the first-stage booster, which had previously launched NROL-179, SDA-T1TL-E, SDA-T1TL-A and three Starlink missions, and that after stage separation the booster landed on the Of Course I Still Love You droneship in the Pacific Ocean.",
       "source": "SpaceX",
       "url": "https://www.spacex.com/launches/ussf627",
       "topics": [
