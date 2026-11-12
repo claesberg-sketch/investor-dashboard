@@ -1,6 +1,20 @@
 {
-  "updated": "2026-11-12T08:01:00+01:00",
+  "updated": "2026-11-12T18:04:20+01:00",
   "items": [
+    {
+      "id": "pr-building-the-future",
+      "type": "press",
+      "date": "2026-11-12",
+      "title": "Building the future — Starbase and Cochise County supercompute investments",
+      "summary": "SpaceX’s 12 November 2026 Updates post says it is advancing two supercompute projects — a facility at Starbase in the Rio Grande Valley and a campus in Cochise County, Arizona — that together represent more than $74 billion in planned U.S. investment. It plans more than $24 billion of new supercomputing at Starbase (on top of more than $15 billion already invested there), with the site generating its own power, plus $220 million to expand Brownsville’s water and wastewater capacity by 20 million gallons a day, and a roughly $50 billion Arizona campus expected to support about 5,500 construction jobs and 1,000 permanent jobs, using dry cooling with no planned industrial groundwater use.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/updates#building-the-future",
+      "topics": [
+        "AI compute"
+      ],
+      "datetime": "2026-11-12T16:08:24Z",
+      "timeSource": "Official SpaceX posts linking the 12 November Updates item"
+    },
     {
       "id": "pr-ussf627",
       "type": "press",
