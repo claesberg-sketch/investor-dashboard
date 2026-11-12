@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T21:06:41+01:00",
+  "updated": "2026-11-12T22:06:31+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 12 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,25 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120973987635495384",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-12T20:16:19.000Z",
+      "text": "$SPCX and $TSLa merger could happen in 4 weeks https://t.co/GbIPSJLtuv",
+      "url": "https://x.com/nextbigfuture/status/2120973987635495384",
+      "metrics": {
+        "likes": 121,
+        "reposts": 10,
+        "replies": 5,
+        "quotes": 0,
+        "bookmarks": 5,
+        "impressions": 3370
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Brian Wang, quoting Bloomberg’s Ed Ludlow, says an SPCX and Tesla merger could happen in four weeks. Ludlow’s post, citing Bloomberg, says SpaceX-Tesla merger negotiations are progressing, with a deal announcement possible by early December, and that boards and advisers are working through terms and governance, with key hurdles including Tesla’s China operations and SpaceX’s U.S. defense ties."
+    },
     {
       "id": "2120957178148471004",
       "username": "nextbigfuture",
