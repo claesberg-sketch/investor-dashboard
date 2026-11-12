@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T22:06:31+01:00",
+  "updated": "2026-11-12T23:11:39+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 12 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,67 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120995147504853416",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-12T21:40:24.000Z",
+      "text": "Starlink enables gaming, live streaming, and chat onboard @SouthwestAir 🛰️✈️ https://t.co/0pnvIXRpdu",
+      "url": "https://x.com/Starlink/status/2120995147504853416",
+      "metrics": {
+        "likes": 179,
+        "reposts": 21,
+        "replies": 22,
+        "quotes": 2,
+        "bookmarks": 5,
+        "impressions": 17113
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "Starlink says its service enables gaming, live streaming and chat onboard Southwest Airlines, quoting a HeadShotChick post about four people on a Southwest flight to TwitchCon attempting what they call the first live in-air LAN party over Starlink. The quoted post links a Twitch stream and is marked as an ad."
+    },
+    {
+      "id": "2120994157380739199",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-12T21:36:27.000Z",
+      "text": "It is so beautiful. $SPCX https://t.co/q3nUlbVudj https://t.co/STjycLWf7G",
+      "url": "https://x.com/nextbigfuture/status/2120994157380739199",
+      "metrics": {
+        "likes": 16,
+        "reposts": 0,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 891
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Brian Wang posts “It is so beautiful. $SPCX,” quoting Larry Goldberg’s close-up of Starship S42 — with “DON’T PANIC” written beside the ship number — captioned “Ship emerging. Don’t panic.” He attaches a teary “it’s so beautiful” meme alongside that photo."
+    },
+    {
+      "id": "2120993535046606952",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-12T21:33:59.000Z",
+      "text": "Spacex and Tesla merger talks accelerating https://t.co/0wggKrljUX",
+      "url": "https://x.com/nextbigfuture/status/2120993535046606952",
+      "metrics": {
+        "likes": 98,
+        "reposts": 7,
+        "replies": 5,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 1888
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Brian Wang writes “Spacex and Tesla merger talks accelerating,” quoting an @ns123abc post that says talks are speeding up and a deal announcement could come by December or early 2027. The quoted post is a social-media wrap of the same Bloomberg-reported timeline already in the news feed, not a new official confirmation."
+    },
     {
       "id": "2120973987635495384",
       "username": "nextbigfuture",
