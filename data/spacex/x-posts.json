@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T20:06:26+01:00",
+  "updated": "2026-11-12T21:06:41+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 12 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,28 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120957178148471004",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-12T19:09:31.000Z",
+      "text": "@Investanswers It is not just the communication satellite to phone. It is mini data centers at or near every cell tower  and with the mesh of picocells with Tesla cars with starlink and starlink on homes and businesses and at superchargers.  AI5 chip in various boxes or form factors acting as first layer triage for ai inference network.",
+      "url": "https://x.com/nextbigfuture/status/2120957178148471004",
+      "metrics": {
+        "likes": 16,
+        "reposts": 0,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 926
+      },
+      "topics": [
+        "Starlink",
+        "AI compute"
+      ],
+      "highlight": true,
+      "summary": "In a follow-up to his InvestAnswers livestream post, Brian Wang says the SpaceX idea is not just satellite-to-phone communications, but mini data centers at or near every cell tower plus a mesh of picocells on Tesla cars with Starlink, on homes and businesses, and at Superchargers. He adds that AI5 chips in various boxes or form factors would act as a first-layer triage for an AI inference network."
+    },
     {
       "id": "2120954275799138696",
       "username": "nextbigfuture",
