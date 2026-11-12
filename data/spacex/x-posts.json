@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T18:04:20+01:00",
+  "updated": "2026-11-12T20:06:26+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 12 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,29 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120954275799138696",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-12T18:57:59.000Z",
+      "text": "In about an hour at noon PST, I will have a livestream James of @Investanswers .\n\nSpaceX is making moves to become the first AI carrier. My points which had some confirmation when Elon Musk reposted my earlier video on it are that today's cell towers are still mostly dumb radios, the Qualcomm deal is about making them AI-native, edge inference at the tower is like an updated Akamai for AI, and Starlink Direct-to-Cell and V3 sit alongside the terrestrial build.\n\nHow to Play the AI Spectrum - LIVESTREAM https://t.co/Z1xDEOneVT via @YouTube",
+      "url": "https://x.com/nextbigfuture/status/2120954275799138696",
+      "metrics": {
+        "likes": 8,
+        "reposts": 1,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 590
+      },
+      "topics": [
+        "Starlink",
+        "AI compute",
+        "Direct-to-cell"
+      ],
+      "highlight": true,
+      "summary": "Brian Wang says he will livestream with James of InvestAnswers at noon PST, under the title “How to Play the AI Spectrum,” and argues SpaceX is moving to become the first AI carrier. He repeats points he says Musk earlier reposted: that today’s cell towers are still mostly dumb radios, the Qualcomm deal is about making them AI-native, edge inference at the tower is like an updated Akamai for AI, and Starlink Direct-to-Cell and V3 sit alongside the terrestrial build."
+    },
     {
       "id": "2120912138772369758",
       "username": "elonmusk",
