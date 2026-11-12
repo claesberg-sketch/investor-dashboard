@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T07:08:21+01:00",
+  "updated": "2026-11-12T11:03:15+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 12 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2120808224324510133",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-12T09:17:38.000Z",
+      "text": "Falcon 9 launches USSF-627 to orbit from pad 4E in California https://t.co/R1Bspfr28v",
+      "url": "https://x.com/SpaceX/status/2120808224324510133",
+      "metrics": {
+        "likes": 1027,
+        "reposts": 111,
+        "replies": 113,
+        "quotes": 21,
+        "bookmarks": 21,
+        "impressions": 95476
+      },
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "SpaceX posts that Falcon 9 has launched the USSF-627 mission to orbit from pad 4E in California, with photos from the flight. This is the official confirmation that the national-security payload reached orbit, after earlier posts on the same mission covering pre-launch status, liftoff and the first-stage landing on Of Course I Still Love You."
+    },
     {
       "id": "2120758305047904548",
       "username": "elonmusk",
