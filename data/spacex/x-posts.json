@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T16:10:06+01:00",
+  "updated": "2026-11-13T17:07:17+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,49 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121268692453343344",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-13T15:47:22.000Z",
+      "text": "And remember … https://t.co/Mw9eFTosGO",
+      "url": "https://x.com/elonmusk/status/2121268692453343344",
+      "metrics": {
+        "likes": 7067,
+        "reposts": 661,
+        "replies": 1163,
+        "quotes": 169,
+        "bookmarks": 216,
+        "impressions": 628896
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “And remember …,” posting a close-up of Ship 42 with “DON’T PANIC” painted beside the S42 identifier and a forward flap extended against the sky. The photo comes a little over an hour after he quoted SpaceX’s post that Ship 42 had moved to the Starbase pad ahead of launch."
+    },
+    {
+      "id": "2121267716023546027",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-13T15:43:29.000Z",
+      "text": "Starlink https://t.co/3aLUAGChRX",
+      "url": "https://x.com/elonmusk/status/2121267716023546027",
+      "metrics": {
+        "likes": 2069,
+        "reposts": 207,
+        "replies": 358,
+        "quotes": 17,
+        "bookmarks": 30,
+        "impressions": 502060
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “Starlink,” quoting Sawyer Merritt’s post of United Airlines CEO Scott Kirby saying in a new interview that Wi-Fi is the No. 1 reason people pick an airline flight and that Starlink is the biggest near-term competitive advantage in United’s 100-year history. Kirby said the service is causing customers to try United because they want Starlink."
+    },
     {
       "id": "2121250205806772283",
       "username": "elonmusk",
