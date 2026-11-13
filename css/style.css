@@ -82,7 +82,9 @@ code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   font-size:var(--label);letter-spacing:.14em;text-transform:uppercase;color:var(--fg-90);
   margin-top:16px;line-height:1.35;
 }
+/* Default green = live feed (official last sale or live Hyperliquid). */
 .session-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--up);box-shadow:0 0 8px var(--up)}
+/* Yellow only when the displayed feed is loading, stale, or disconnected. */
 .session-badge.closed .dot{background:var(--warn);box-shadow:0 0 8px var(--warn)}
 .session-badge.fallback .dot{background:var(--warn);box-shadow:0 0 8px var(--warn)}
 .asof{margin-top:10px;font-size:0.75rem;color:var(--fg-50);line-height:1.45}

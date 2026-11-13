@@ -386,6 +386,17 @@
     return hlPx();
   }
 
+  const HL_STALE_MS = 30 * 1000;
+
+  /** True when a client-side Hyperliquid mid (WebSocket or poll) is fresh. */
+  function hlIsLive() {
+    if (hlPx() == null) return false;
+    const a = live.hl && live.hl.asOf;
+    if (!a) return false;
+    const t = a instanceof Date ? a.getTime() : Date.parse(a);
+    return Number.isFinite(t) && (Date.now() - t) < HL_STALE_MS;
+  }
+
   function upsertCandle(c) {
     if (!c || c.t == null) return;
     const row = { t: +c.t, T: +c.T, o: +c.o, c: +c.c, h: +c.h, l: +c.l, v: +c.v, n: +c.n };
@@ -548,14 +559,11 @@
     return pts;
   }
 
-  function cashBands(minX, maxX) {
+  function cashBands(minX, maxX, opts) {
     const bands = [];
-    let open = null; // {kind, from}
+    const includeHl = !!(opts && opts.includeHl);
     const lo = minX - 2 * 3600 * 1000;
     const hi = maxX + 2 * 3600 * 1000;
-    // Sample every minute to catch 9:30 exactly, but skip ahead in a cheap way:
-    // walk 1-minute steps only near possible boundaries by stepping 15m and refining.
-    let lastKey = "";
     function kindAt(ms) {
       return etKind(ms);
     }
@@ -564,21 +572,41 @@
       regular: { color: "rgba(240,240,250,0.08)", label: "REGULAR" },
       after: { color: "rgba(240,240,250,0.03)", label: "AFTER" },
     };
+    if (includeHl) {
+      meta.closed = {
+        color: "rgba(110,190,255,0.10)",
+        label: "HYPERLIQUID",
+        shortLabel: "HL",
+        labelColor: "rgba(160,210,255,0.75)",
+      };
+    }
     const step = 60 * 1000;
     let prev = kindAt(lo);
     let from = lo;
     for (let t = lo + step; t <= hi; t += step) {
       const k = kindAt(t);
       if (k !== prev) {
-        if (prev !== "closed" && meta[prev]) {
-          bands.push({ from: from, to: t, color: meta[prev].color, label: meta[prev].label });
+        if (meta[prev]) {
+          bands.push({
+            from: from, to: t,
+            color: meta[prev].color,
+            label: meta[prev].label,
+            shortLabel: meta[prev].shortLabel,
+            labelColor: meta[prev].labelColor,
+          });
         }
         from = t;
         prev = k;
       }
     }
-    if (prev !== "closed" && meta[prev]) {
-      bands.push({ from: from, to: hi, color: meta[prev].color, label: meta[prev].label });
+    if (meta[prev]) {
+      bands.push({
+        from: from, to: hi,
+        color: meta[prev].color,
+        label: meta[prev].label,
+        shortLabel: meta[prev].shortLabel,
+        labelColor: meta[prev].labelColor,
+      });
     }
     return bands;
   }
@@ -636,11 +664,15 @@
           if (x2 - x1 < 2) continue;
           ctx.fillStyle = band.color;
           ctx.fillRect(x1, chartArea.top, x2 - x1, chartArea.bottom - chartArea.top);
-          ctx.fillStyle = "rgba(240,240,250,0.4)";
-          ctx.font = "500 9px Barlow, sans-serif";
-          ctx.textAlign = "center";
-          ctx.textBaseline = "top";
-          if (x2 - x1 > 44) ctx.fillText(band.label, (x1 + x2) / 2, chartArea.top + 4);
+          const width = x2 - x1;
+          const text = width > 88 ? band.label : (band.shortLabel || band.label);
+          if (width > 36 && text) {
+            ctx.fillStyle = band.labelColor || "rgba(240,240,250,0.4)";
+            ctx.font = "500 9px Barlow, sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "top";
+            ctx.fillText(text, (x1 + x2) / 2, chartArea.top + 4);
+          }
         }
         ctx.strokeStyle = "rgba(240,240,250,0.14)";
         ctx.lineWidth = 1;
@@ -726,9 +758,9 @@
     if (caption) {
       caption.textContent = official
         ? "Official U.S. last sale via CNBC, 1-minute bars from the start of today's pre-market, time in CET/CEST. The last point is the live last sale, at the current time. Shaded bands are U.S. pre / regular / after-hours sessions. Real-time, not a 15-minute delayed feed."
-        : "Hyperliquid xyz:SPCX, 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session from the snapshot. Shaded bands are U.S. pre / regular / after-hours sessions.";
+        : "Hyperliquid xyz:SPCX, 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session from the snapshot. Shaded bands mark U.S. pre / regular / after-hours sessions and Hyperliquid when the U.S. cash market is closed.";
     }
-    const bands = cashBands(minX, maxX);
+    const bands = cashBands(minX, maxX, { includeHl: !official });
     const datasets = [];
     if (official) {
       datasets.push({
@@ -865,8 +897,11 @@
       chgEl.className = "chg " + chgClass(delta);
     }
     if (badge && label) {
-      badge.classList.toggle("closed", feedStatus === "closed");
-      badge.classList.toggle("fallback", officialFailed);
+      // Green when a live feed is streaming (official tape or fresh Hyperliquid).
+      // Yellow only when the displayed feed is loading, stale, or disconnected.
+      const feedLive = officialOn || (!officialLoading && hlIsLive());
+      badge.classList.toggle("closed", !feedLive && !officialFailed);
+      badge.classList.toggle("fallback", !feedLive && officialFailed);
       if (officialOn) {
         label.textContent = "CNBC · U.S. last sale · " + session.label + " · live";
       } else if (officialLoading) {
