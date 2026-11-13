@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Unofficial personal investor dashboard for SpaceX (Nasdaq: SPCX), built for Claes Berg. Not affiliated with Space Exploration Technologies Corp.">
   <title>SPCX · Investor Dashboard · Claes Berg</title>
-  <link rel="stylesheet" href="css/style.css?v=1fc2854-20261113074851">
+  <link rel="stylesheet" href="css/style.css?v=973069b-20261113080714">
   <meta name="theme-color" content="#000000">
   <meta name="robots" content="noindex,nofollow">
 </head>
@@ -82,13 +82,11 @@
         <h2>Share unlock schedule</h2>
         <div class="unlock-next" id="unlock-next"></div>
         <p class="lede">When pre-IPO and other restricted shares become eligible for public trading, from SpaceX’s Form 424(b)(4) lock-up table, later 8-Ks and the Q3 10-Q. Amounts are “up to.” A release is not a forecast of selling. Approximate value uses the live price at the top of this page. Percent of free float uses an estimate — SpaceX does not publish an official free-float figure.</p>
-        <div class="chart-card" style="margin-bottom:24px">
+        <div class="chart-card">
           <h3>Shares becoming eligible, and cumulative “up to” total</h3>
           <div class="box" style="height:320px"><canvas id="unlock-chart"></canvas></div>
-          <p class="source">Bars are each tranche (past muted, upcoming solid). The line is the cumulative “up to” shares from the IPO lock-up schedules and Rule 144 dates below, starting after the 638.9 million IPO primary shares that were already freely tradable. Musk’s 1.302 billion unvested performance awards are excluded from the bars — they do not become tradable when the 366-day lock-up ends.</p>
+          <p class="source">Bars are each tranche (past muted, upcoming solid). The line is the cumulative “up to” shares from the IPO lock-up schedules and Rule 144 dates, starting after the 638.9 million IPO primary shares that were already freely tradable. Musk’s 1.302 billion unvested performance awards are excluded from the bars — they do not become tradable when the 366-day lock-up ends.</p>
         </div>
-        <div class="table-wrap" id="unlock-table"></div>
-        <div class="assumptions" id="unlock-notes" style="margin-top:28px"></div>
       </div>
     </section>
 
@@ -110,7 +108,7 @@
             <p class="section-kicker">Supply</p>
             <h3>Lock-ups &amp; float</h3>
             <div id="lockup-body"></div>
-            <p class="source"><a href="#unlocks">Full unlock schedule, table and chart</a></p>
+            <p class="source"><a href="#unlocks">Share unlock chart &amp; next release</a></p>
           </div>
           <div class="card">
             <p class="section-kicker">Watch</p>
@@ -136,10 +134,10 @@
     </div>
   </footer>
 
-  <script src="js/vendor/chart.umd.min.js?v=1fc2854-20261113074851"></script>
-  <script src="js/price.js?v=1fc2854-20261113074851"></script>
-  <script src="js/charts.js?v=1fc2854-20261113074851"></script>
-  <script src="js/unlocks.js?v=1fc2854-20261113074851"></script>
-  <script src="js/app.js?v=1fc2854-20261113074851"></script>
+  <script src="js/vendor/chart.umd.min.js?v=973069b-20261113080714"></script>
+  <script src="js/price.js?v=973069b-20261113080714"></script>
+  <script src="js/charts.js?v=973069b-20261113080714"></script>
+  <script src="js/unlocks.js?v=973069b-20261113080714"></script>
+  <script src="js/app.js?v=973069b-20261113080714"></script>
 </body>
 </html>

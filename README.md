@@ -12,7 +12,7 @@ Live site (GitHub Pages): **https://claesberg-sketch.github.io/investor-dashboar
 2. **News** — one chronological feed (newest first) of official press/IR, SEC filings, Google News RSS, and X posts from @elonmusk, @SpaceX, @Starlink, @Gwynne_Shotwell, @SpaceXSI, and @nextbigfuture (Brian Wang). Filters: All, Press, Filings, Media, X. Every item shows its publish date and time in Europe/Stockholm (CET or CEST); if a source has only a date, the row says “time n/a” rather than inventing a clock time. Each row also has a two-sentence plain-English summary of the article, filing, release, or post, written from the source (or, if a page could not be fetched, from the headline/snippet only, and labelled as such).
 3. **Base-case revenue model** — next 18 months (quarterly through Q2 2028) and FY2026–FY2029. Drivers and sources are on the page; sliders recompute client-side.
 4. **KPI charts** — segment revenue, Starlink subscribers, Starlink satellites in orbit by generation (V1 / V2 / V3, Jonathan McDowell), compute GW, earnings, capex, backlog.
-5. **Share unlock schedule** — lock-up expiries and staged releases from the Form 424(b)(4), later 8-Ks and the 10-Q, with sources, a table, and a cumulative chart. The catalyst calendar flags the nearest unlock.
+5. **Share unlock schedule** — lock-up expiries and staged releases from the Form 424(b)(4), later 8-Ks and the 10-Q, with the nearest unlock and a cumulative chart. The catalyst calendar also flags the nearest unlock.
 6. **Calendar, valuation, lock-ups, risks.**
 
 Every datapoint is sourced or marked as an estimate. If a figure was not disclosed, it is not invented as fact.

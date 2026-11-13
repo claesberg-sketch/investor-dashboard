@@ -34,13 +34,6 @@
     return esc(src.label || "");
   }
 
-  function statusLabel(st) {
-    if (st === "released") return "Released";
-    if (st === "upcoming") return "Upcoming";
-    if (st === "did_not_trigger") return "Did not trigger";
-    return st || "";
-  }
-
   function chartEvents(d) {
     return (d.events || []).filter((e) => e.status !== "did_not_trigger");
   }
@@ -200,65 +193,11 @@
     htmlFor(cal);
   }
 
-  function renderTable(d, price) {
-    const el = document.getElementById("unlock-table");
-    if (!el) return;
-    const so = d.sharesOutstanding;
-    const ff = d.freeFloatEstimate;
-    const rows = (d.events || []).slice().sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
-    const head = "<thead><tr>" +
-      "<th>Date</th><th>Trigger / condition</th><th>Who</th><th>Shares unlocking</th>" +
-      "<th>% of 13.581B outstanding</th><th>% of est. free float</th><th>Approx. value at current price</th><th>Source</th>" +
-      "</tr></thead>";
-    const body = rows.map((e) => {
-      const skipped = e.status === "did_not_trigger";
-      return "<tr>" +
-        "<td>" + esc(e.dateLabel) + "<br><span class='status-pill " + esc(e.status) + "'>" + esc(statusLabel(e.status)) + "</span></td>" +
-        "<td>" + esc(e.trigger) + "</td>" +
-        "<td>" + esc(e.holders) + "</td>" +
-        "<td>" + esc(e.sharesLabel) + (e.sharesNote ? "<br><span class='tiny'>" + esc(e.sharesNote) + "</span>" : "") + "</td>" +
-        "<td>" + (skipped ? "—" : pct(e.shares, so)) + "</td>" +
-        "<td>" + (skipped ? "—" : pct(e.shares, ff) + " est.") + "</td>" +
-        "<td>" + (skipped ? "—" : valueAt(e.shares, price)) + "</td>" +
-        "<td>" + sourceLink(e.source) + "</td>" +
-        "</tr>";
-    }).join("");
-    el.innerHTML = "<table>" + head + "<tbody>" + body + "</tbody></table>";
-  }
-
-  function renderNotes(d) {
-    const el = document.getElementById("unlock-notes");
-    if (!el) return;
-    const pt = d.priceTrigger || {};
-    const musk = d.muskHoldings424b4 || {};
-    const ipo = d.ipoPrimaryShares || {};
-    el.innerHTML =
-      "<details open><summary>How to read these figures</summary><div class='row'>" + esc(d.disclaimer) + "</div></details>" +
-      "<details open><summary>August 2026 price test (Additional Release Shares)</summary><div class='row'>" +
-      esc(pt.condition) + " " + esc(pt.firstEarningsReleaseDate) + " " + esc(pt.outcomeNote) +
-      (pt.closesWindow ? " Yahoo regular-session closes in the relevant windows ranged from $" + pt.closesWindow.low.toFixed(2) + " to $" + pt.closesWindow.high.toFixed(2) + "." : "") +
-      "</div><div class='row source'>" + (pt.sources || []).map(sourceLink).join(" · ") + "</div></details>" +
-      "<details><summary>Who is locked, and what Elon Musk holds</summary><div class='row'>" +
-      (d.holders || []).map((h) => "<p style='margin-bottom:8px'><strong>" + esc(h.group) + ".</strong> " + esc(h.who) + " <span class='source'>" + esc(h.source) + "</span></p>").join("") +
-      "<p>Prospectus beneficial ownership as of 1 May 2026, compiled by FloatCap: " +
-      fmtShares(musk.classA) + " Class A and " + fmtShares(musk.classBExUnvested) + " Class B excluding unvested awards (together " + fmtShares(musk.classA + musk.classBExUnvested) + "). A further " +
-      fmtShares(musk.unvestedRestrictedClassB) + " unvested restricted Class B remain subject to market-cap and operational milestones (1.000B SpaceX CEO Award; 302.1M AI CEO Award) after the 366-day lock-up ends and are not treated as unlocking on 14 Jun 2027. Voting power at the IPO was " +
-      esc(musk.votingPowerAtIpo) + ". " + esc(musk.note) + "</p>" +
-      '<p class="source">' + sourceLink(musk.source) + "</p></div></details>" +
-      "<details><summary>Free float, IPO primary shares, and outstanding share count</summary><div class='row'>" +
-      "<p>Shares outstanding: <strong>13,581,063,709</strong> as of " + esc(d.sharesOutstandingAsOf) + ". " + sourceLink(d.sharesOutstandingSource) + "</p>" +
-      "<p>" + esc(d.freeFloatNote) + " " + sourceLink(d.freeFloatSource) + "</p>" +
-      "<p>" + esc(ipo.note) + " " + sourceLink(ipo.source) + "</p>" +
-      '<p class="source">Lock-up table: ' + sourceLink(d.prospectus) + "</p></div></details>";
-  }
-
   function paint(price) {
     if (!data) return;
     lastPrice = price;
     renderCallout(data, price);
-    renderTable(data, price);
     paintChart(data, price);
-    renderNotes(data);
   }
 
   function mount(payload, price) {
@@ -271,7 +210,6 @@
     lastPrice = price;
     if (!data) return;
     renderCallout(data, price);
-    renderTable(data, price);
     // Chart tooltips use price; no need to rebuild axes every 5s.
   }
 
