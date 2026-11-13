@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T09:10:57+01:00",
+  "updated": "2026-11-13T16:10:06+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,49 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121250205806772283",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-13T14:33:54.000Z",
+      "text": "Starship 42 preparing for launch https://t.co/s2nMPoiV3H",
+      "url": "https://x.com/elonmusk/status/2121250205806772283",
+      "metrics": {
+        "likes": 8790,
+        "reposts": 886,
+        "replies": 953,
+        "quotes": 135,
+        "bookmarks": 192,
+        "impressions": 644067
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “Starship 42 preparing for launch,” quoting SpaceX’s post that Ship 42 has moved to the Starbase pad ahead of launch, with photos of the black-tiled Starship being rolled out and standing beside Super Heavy at the catch tower. The quote underscores that Flight 15’s upper stage is at the pad with the booster already in place."
+    },
+    {
+      "id": "2121242367684661286",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-13T14:02:45.000Z",
+      "text": "Grok is a straight shooter https://t.co/PmWKidv3mD",
+      "url": "https://x.com/elonmusk/status/2121242367684661286",
+      "metrics": {
+        "likes": 5952,
+        "reposts": 435,
+        "replies": 993,
+        "quotes": 79,
+        "bookmarks": 177,
+        "impressions": 842808
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “Grok is a straight shooter,” quoting Sundar Pichai’s “Nice summary @grok !,” which itself quotes Grok’s reply that cost efficiency decides usage at scale, with Gemini 4 Hydrogen leading on price and speed while Carbon still leads on hard-task capability. The exchange is about Grok’s model-comparison commentary, not a SpaceX operational or financial update."
+    },
     {
       "id": "2121123425213399408",
       "username": "elonmusk",
