@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T07:08:04+01:00",
+  "updated": "2026-11-13T08:06:34+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121123425213399408",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-13T06:10:07.000Z",
+      "text": "Grok Bot https://t.co/gAq2NDWHqX",
+      "url": "https://x.com/elonmusk/status/2121123425213399408",
+      "metrics": {
+        "likes": 2871,
+        "reposts": 260,
+        "replies": 667,
+        "quotes": 54,
+        "bookmarks": 177,
+        "impressions": 593782
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “Grok Bot,” quoting the official Grok Bot account’s post that Grok Bot on Mac can now use Messages, Mail, Notes, Reminders, Calendar, Location, and Contacts. The quote highlights a new Mac integration for the product, not a SpaceX operational or financial update."
+    },
     {
       "id": "2121120295884837183",
       "username": "elonmusk",
