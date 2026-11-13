@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T17:07:17+01:00",
+  "updated": "2026-11-13T18:03:12+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,25 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121280048871473281",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-13T16:32:29.000Z",
+      "text": "Boca Chica Beach is not for sale, and SpaceX isn’t attempting to buy it. The beach is an important part of the Rio Grande Valley community, and SpaceX is investing substantial resources to preserve and improve it → https://t.co/bvKDh6ytRN https://t.co/Gv11dYWEQk",
+      "url": "https://x.com/SpaceX/status/2121280048871473281",
+      "metrics": {
+        "likes": 3972,
+        "reposts": 384,
+        "replies": 163,
+        "quotes": 47,
+        "bookmarks": 131,
+        "impressions": 151640
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "SpaceX says Boca Chica Beach is not for sale and that the company is not attempting to buy it, adding that the beach is an important part of the Rio Grande Valley community and that SpaceX is investing substantial resources to preserve and improve it. A 13 November Updates post linked from the tweet, titled “Restoring Boca Chica Beach,” says SpaceX has discussed buying about 1,200 acres of Texas Parks and Wildlife land surrounding the launch facility — with about 600 acres to be permanently conserved — and stresses that the beach is not part of that proposal and will remain public."
+    },
     {
       "id": "2121268692453343344",
       "username": "elonmusk",
