@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T20:02:52+01:00",
+  "updated": "2026-11-13T21:09:48+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121323469002437065",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-13T19:25:01.000Z",
+      "text": "Try Grok @Bot https://t.co/tqaAuJSfwC",
+      "url": "https://x.com/elonmusk/status/2121323469002437065",
+      "metrics": {
+        "likes": 2185,
+        "reposts": 264,
+        "replies": 511,
+        "quotes": 35,
+        "bookmarks": 517,
+        "impressions": 629619
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “Try Grok @Bot,” quoting Anatoli Kopadze’s post calling Grok Bot remarkable for “building a second brain,” and saying a prompt can turn everything you read, watch and think into a knowledge base that organizes itself, with a fuller Grok Bot guide linked below. The quote is a product-adoption pitch about Grok Bot, not a SpaceX operational or financial update."
+    },
     {
       "id": "2121317331179614676",
       "username": "elonmusk",
