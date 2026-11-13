@@ -1,0 +1,291 @@
+{
+  "updated": "2026-11-13",
+  "asOf": "2026-09-30",
+  "ytd": {
+    "deliveries2026": 1324681,
+    "deliveries2025": 1217902,
+    "storage2026": 36.0,
+    "storage2025": 32.5,
+    "ttmDeliveries": 1742908,
+    "ttmStorage": 50.2,
+    "streetFY2026Deliveries": 1770000,
+    "streetSource": {
+      "label": "Reuters / Visible Alpha (21 Oct 2026)",
+      "url": "https://ca.investing.com/news/stock-market-news/tesla-revenue-beats-estimates-as-deliveries-rebound-and-energy-storage-grows-4894437"
+    },
+    "cumulativeDeliveriesM": 10.2,
+    "activeFsdSubsM": 1.74,
+    "fsdAttachNA": ">75% of Q3 North American deliveries",
+    "robotaxiUnsupervisedMiles": "nearly 2 million",
+    "superchargerStations": 8904,
+    "superchargerConnectors": 84465
+  },
+  "quarterly": {
+    "labels": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "deliveries": {
+      "2025": [
+        336681,
+        384122,
+        497099,
+        418227
+      ],
+      "2026": [
+        358023,
+        480126,
+        486532,
+        null
+      ]
+    },
+    "storage": {
+      "2025": [
+        10.4,
+        9.6,
+        12.5,
+        14.2
+      ],
+      "2026": [
+        8.8,
+        13.5,
+        13.7,
+        null
+      ]
+    }
+  },
+  "capacity": [
+    {
+      "site": "Shanghai",
+      "product": "Model 3 / Model Y",
+      "capacity": ">950,000 / yr",
+      "status": "Production"
+    },
+    {
+      "site": "California",
+      "product": "Model 3 / Model Y",
+      "capacity": ">550,000 / yr",
+      "status": "Production"
+    },
+    {
+      "site": "Berlin",
+      "product": "Model Y",
+      "capacity": ">375,000 / yr",
+      "status": "Production"
+    },
+    {
+      "site": "Texas",
+      "product": "Model Y",
+      "capacity": ">375,000 / yr",
+      "status": "Production"
+    },
+    {
+      "site": "Texas",
+      "product": "Cybertruck",
+      "capacity": ">125,000 / yr",
+      "status": "Production (ending after summer 2027)"
+    },
+    {
+      "site": "Texas",
+      "product": "Cybercab",
+      "capacity": ">125,000 / yr",
+      "status": "Production"
+    },
+    {
+      "site": "Nevada",
+      "product": "Tesla Semi",
+      "capacity": "25,000 / yr",
+      "status": "Production"
+    },
+    {
+      "site": "TBD",
+      "product": "Roadster",
+      "capacity": "—",
+      "status": "Design development"
+    },
+    {
+      "site": "California",
+      "product": "Megapack",
+      "capacity": "40 GWh",
+      "status": "Production"
+    },
+    {
+      "site": "Shanghai",
+      "product": "Megapack",
+      "capacity": "20 GWh",
+      "status": "Production"
+    },
+    {
+      "site": "Texas",
+      "product": "Megapack",
+      "capacity": "50 GWh",
+      "status": "Production"
+    },
+    {
+      "site": "Nevada",
+      "product": "Powerwall",
+      "capacity": ">6 GWh",
+      "status": "Production"
+    },
+    {
+      "site": "California",
+      "product": "Optimus",
+      "capacity": "—",
+      "status": "Early ramp"
+    },
+    {
+      "site": "Texas",
+      "product": "Optimus",
+      "capacity": "—",
+      "status": "Construction"
+    }
+  ],
+  "milestones": [
+    {
+      "area": "Robotaxi",
+      "status": "Live · expanding",
+      "title": "Robotaxi in Austin and five more metros, San Antonio added; now 24/7",
+      "detail": "Driverless in Austin since January. Limited service in Dallas, Fort Worth, Houston, Miami and Orlando (TechCrunch; Reuters also lists Tampa), plus San Antonio from 10 Nov. @robotaxi says it runs 24/7 in every city (12 Nov). Nearly 2 million cumulative unsupervised miles at the end of Q3, up eightfold quarter on quarter.",
+      "sources": [
+        {
+          "label": "TechCrunch, 9 Nov",
+          "url": "https://techcrunch.com/2026/11/09/tesla-expands-robotaxi-service-to-san-antonio/"
+        },
+        {
+          "label": "@robotaxi",
+          "url": "https://x.com/robotaxi/status/2120736143566344324"
+        },
+        {
+          "label": "Q3 Update",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        },
+        {
+          "label": "Reuters via Investing.com, 21 Oct",
+          "url": "https://ca.investing.com/news/stock-market-news/tesla-revenue-beats-estimates-as-deliveries-rebound-and-energy-storage-grows-4894437"
+        }
+      ]
+    },
+    {
+      "area": "Cybercab",
+      "status": "In service (Austin)",
+      "title": "Rides since 3 Sep; Dallas next; customers by year-end",
+      "detail": "Giga Texas lists >125,000/yr of installed Cybercab capacity in production. Cybercab began giving Robotaxi rides in Austin on 3 Sep, and the fleet grew from fewer than 40 to more than 300 in about a month (Tesla via Reuters). A Dallas launch was guided for November, and Tesla is “trying to get Cybercabs to customers by the end of this year.” NHTSA sent a 21-request special order on its self-certification.",
+      "sources": [
+        {
+          "label": "Q3 Update",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        },
+        {
+          "label": "TeslaNorth (Q3 call)",
+          "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/"
+        },
+        {
+          "label": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-reports-q3-earnings-beat-positive-free-cash-flow-and-better-than-expected-capex-202153389.html"
+        },
+        {
+          "label": "Reuters via Investing.com, 21 Oct",
+          "url": "https://ca.investing.com/news/stock-market-news/tesla-revenue-beats-estimates-as-deliveries-rebound-and-energy-storage-grows-4894437"
+        }
+      ]
+    },
+    {
+      "area": "FSD (Supervised)",
+      "status": "1.74M active subs",
+      "title": ">75% attach in North America; Finland approved",
+      "detail": "Active FSD subscriptions rose to 1.74M (Q3) from 1.10M at end-2025. Available in nine EU countries at the Q3 update, and Finland approved on 11 Nov. Unsupervised use on customer cars targeted for ~Q2 2027 with V15.",
+      "sources": [
+        {
+          "label": "Q3 Update",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        },
+        {
+          "label": "@elonmusk (Finland)",
+          "url": "https://x.com/elonmusk/status/2120565179276832797"
+        },
+        {
+          "label": "TeslaNorth",
+          "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/"
+        }
+      ]
+    },
+    {
+      "area": "Optimus",
+      "status": "Early production",
+      "title": "First production-quality bots off the Fremont line",
+      "detail": "Production began on high-volume lines in Fremont in Q3; Tesla calls these its first production-quality bots. Musk said it will take at least a year to reach ~20,000/week, AI5 goes into Optimus around April 2027, and outside customers come in about a year. A Texas Optimus factory is under construction.",
+      "sources": [
+        {
+          "label": "Q3 Update",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        },
+        {
+          "label": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-reports-q3-earnings-beat-positive-free-cash-flow-and-better-than-expected-capex-202153389.html"
+        },
+        {
+          "label": "TeslaNorth",
+          "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/"
+        }
+      ]
+    },
+    {
+      "area": "Energy",
+      "status": "Megafactory Texas live",
+      "title": "50 GWh Megafactory Texas started; record backlog",
+      "detail": "Megafactory Texas began production (planned 50 GWh), alongside California (40 GWh) and Shanghai (20 GWh). Tesla shipped its first Megapacks built with LFP cells from its Nevada factory. Q3 storage deployments were 13.7 GWh, with the highest-ever order rate and backlog.",
+      "sources": [
+        {
+          "label": "Q3 Update",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        }
+      ]
+    },
+    {
+      "area": "SI compute & chips",
+      "status": ">225 MW → 400 MW",
+      "title": "Cortex 1 + 2 in production; Austin Fab under construction",
+      "detail": "Cortex 1 (>105 MW) and Cortex 2 (>120 MW) are in production, excluding 40 MW of other compute; target 400 MW by end-2026. Equipment commissioning at the Austin semiconductor fab is planned for 2027.",
+      "sources": [
+        {
+          "label": "Q3 Update",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        }
+      ]
+    },
+    {
+      "area": "Semi & Roadster",
+      "status": "Semi in volume",
+      "title": "Semi volume production in Nevada; Roadster unveiled",
+      "detail": "Volume production of the updated Tesla Semi started on the 25,000/yr Nevada line. The Next Gen Roadster was unveiled on 15 Oct 2026; Musk said production starts in 2028.",
+      "sources": [
+        {
+          "label": "Q3 Update",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        },
+        {
+          "label": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/stocks/article/tesla-reports-q3-earnings-beat-positive-free-cash-flow-and-better-than-expected-capex-202153389.html"
+        }
+      ]
+    },
+    {
+      "area": "Cybertruck",
+      "status": "Winding down",
+      "title": "Production ends after summer 2027; Cyberbeast only",
+      "detail": "Musk said the Giga Texas line will be converted for Cybercab, then extended production through the end of summer 2027 to work through the backlog. Only the $112,235 Cyberbeast remains orderable.",
+      "sources": [
+        {
+          "label": "@elonmusk",
+          "url": "https://x.com/elonmusk/status/2120565056429814073"
+        },
+        {
+          "label": "Car and Driver",
+          "url": "https://www.caranddriver.com/news/a74413385/tesla-cybertruck-lineup-reduced-one-expensive-model/"
+        }
+      ]
+    }
+  ]
+}

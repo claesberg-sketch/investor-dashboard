@@ -1,0 +1,66 @@
+{
+  "updated": "2026-11-13T10:00:00+01:00",
+  "items": [
+    {
+      "id": "pr-votetesla-letter-2026-11-06",
+      "type": "press",
+      "date": "2026-11-06",
+      "datetime": "2026-11-06T22:00:07Z",
+      "timeSource": "Filed as DEFA14A, EDGAR accepted 2026-11-06 17:00:07 ET",
+      "title": "Shareholder letter: “Act Like the Owner You Are. Vote.”",
+      "source": "Tesla Board / VoteTesla.com",
+      "url": "https://www.votetesla.com/",
+      "topics": [
+        "Governance"
+      ],
+      "summary": "The Tesla Board asks shareholders to vote FOR re-electing Elon Musk, Robyn Denholm and JB Straubel and for all proposals at the 3 December 2026 annual meeting, noting that about 74% of outstanding shares voted last year. It also promotes Tesla’s new Voluntary Retail Voting Program, citing Broadridge data that retail investors voted only 28% of their shares in the 2025 proxy season."
+    },
+    {
+      "id": "pr-votetesla-letter-2026-10-29",
+      "type": "press",
+      "date": "2026-10-29",
+      "datetime": "2026-10-29T21:00:20Z",
+      "timeSource": "Filed as DEFA14A, EDGAR accepted 2026-10-29 17:00:20 ET",
+      "title": "Shareholder letter: “The Board that Created the Mission Are the Ones to Carry It Forward”",
+      "source": "Tesla Board / VoteTesla.com",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926120263/tm267596d8_defa14a.htm",
+      "topics": [
+        "Governance",
+        "FSD"
+      ],
+      "summary": "The Board makes its case for re-electing its three Class I directors at the 3 Dec 2026 meeting (3:00 p.m. CT), pointing to the Robotaxi rollout, Cybercab, Optimus and the Terafab chip-supply initiative. It cites 1.74 million paid FSD (Supervised) customers with a ~75% attach rate on new North American deliveries in Q3 2026, TTM revenue above $100 billion and more than 10 million vehicles delivered."
+    },
+    {
+      "id": "pr-q3-2026-update",
+      "type": "press",
+      "date": "2026-10-21",
+      "datetime": "2026-10-21T20:41:42Z",
+      "timeSource": "Exhibit 99.1 to 8-K, EDGAR accepted 2026-10-21 16:41:42 ET",
+      "title": "Tesla Q3 2026 Update — financial results and outlook",
+      "source": "Tesla IR",
+      "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+      "topics": [
+        "Earnings",
+        "Robotaxi",
+        "Optimus",
+        "Energy"
+      ],
+      "summary": "Tesla reported Q3 2026 revenue of $28.05 billion (flat year on year), GAAP operating income of $718 million, GAAP net income of $787 million and free cash flow of $1.53 billion, with cash and investments up $1.9 billion to $45.4 billion. It said Cybercab joined the Austin Robotaxi fleet on 3 September, Optimus production began in Fremont, Megafactory Texas started production and active FSD subscriptions reached 1.74 million."
+    },
+    {
+      "id": "pr-q3-2026-pdd",
+      "type": "press",
+      "date": "2026-10-02",
+      "datetime": "2026-10-02T13:04:26Z",
+      "timeSource": "Exhibit 99.1 to 8-K, EDGAR accepted 2026-10-02 09:04:26 ET",
+      "title": "Tesla Third Quarter 2026 Production, Deliveries & Deployments",
+      "source": "Tesla IR",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm",
+      "topics": [
+        "Deliveries",
+        "Energy"
+      ],
+      "summary": "Tesla produced 464,391 vehicles, delivered 486,532 and deployed 13.7 GWh of energy storage in Q3 2026, with Model 3/Y accounting for 478,237 deliveries and other models 8,295. Deliveries beat the ~462,000 company-compiled consensus but were about 2% below Q3 2025’s 497,099."
+    }
+  ]
+}

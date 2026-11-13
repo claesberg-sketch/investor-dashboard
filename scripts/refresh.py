@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 """Refresh server-side JSON for the investor dashboard.
 
-Intended to run in GitHub Actions every 20 minutes (and on push), and locally.
-Fetches Yahoo Finance chart data (incl. pre/post), Hyperliquid xyz:SPCX snapshot,
-Google News RSS, and SEC company submissions. Merges with static press releases.
+Runs from box-side routines (and locally). Fetches Yahoo Finance chart data
+(incl. pre/post), the Hyperliquid HIP-3 snapshot (xyz:SPCX / xyz:TSLA), Google News
+RSS, and SEC company submissions. Merges with static press releases and filings.
+
+Usage:
+  python3 scripts/refresh.py                     # SpaceX (default, unchanged behaviour)
+  python3 scripts/refresh.py --company tesla     # Tesla only
+  python3 scripts/refresh.py --company all       # every active company
+  python3 scripts/refresh.py --bump-assets       # only rewrite ?v= cache-busters
 
 Does not refresh X posts (Actions cannot call the X connector). See README.
 """
@@ -27,6 +33,67 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "spacex"
+
+SPACEX_TOPICS = [
+    ("Starship", ["starship"]),
+    ("Starlink", ["starlink"]),
+    ("AI compute", ["compute", "colossus", "data center", "gigawatt", " gw", "super intelligence", "starmind"]),
+    ("Grok", ["grok"]),
+    ("Cursor", ["cursor"]),
+    ("Earnings", ["earnings", "revenue", "guidance"]),
+    ("Launch", ["launch", "falcon", "ussf"]),
+    ("Lock-up", ["lock-up", "lockup", "unlock"]),
+    ("Direct-to-cell", ["direct-to-cell", "direct to cell", "starlink mobile", "qualcomm"]),
+    ("IPO", ["ipo"]),
+]
+
+TESLA_TOPICS = [
+    ("Robotaxi", ["robotaxi", "cybercab", "driverless", "unsupervised"]),
+    ("FSD", ["fsd", "full self-driving", "self-driving", "autopilot"]),
+    ("Optimus", ["optimus", "humanoid", "robot "]),
+    ("Energy", ["megapack", "powerwall", "energy storage", "megafactory", "battery storage"]),
+    ("Deliveries", ["deliveries", "delivered", "sales", "registrations", "model y", "model 3"]),
+    ("Cybertruck", ["cybertruck"]),
+    ("Semi", ["tesla semi", " semi "]),
+    ("AI compute", ["cortex", "compute", "ai5", "terafab", "dojo", "chip"]),
+    ("SpaceX", ["spacex", "merger"]),
+    ("Earnings", ["earnings", "revenue", "margin", "guidance", "price target", "analyst"]),
+    ("Governance", ["shareholder", "annual meeting", "proxy", "board", "pay package", "compensation"]),
+]
+
+COMPANIES = {
+    "spacex": {
+        "id": "spacex",
+        "dir": "spacex",
+        "symbol": "SPCX",
+        "hl": "xyz:SPCX",
+        "cik": "0001181412",
+        "news_q": "SpaceX OR Starlink OR SPCX when:14d",
+        "news_label": "Google News RSS (SpaceX OR Starlink OR SPCX, 14 days)",
+        "topics": SPACEX_TOPICS,
+    },
+    "tesla": {
+        "id": "tesla",
+        "dir": "tesla",
+        "symbol": "TSLA",
+        "hl": "xyz:TSLA",
+        "cik": "0001318605",
+        "news_q": "Tesla OR TSLA when:7d",
+        "news_label": "Google News RSS (Tesla OR TSLA, 7 days)",
+        "topics": TESLA_TOPICS,
+    },
+}
+CFG = COMPANIES["spacex"]
+
+
+def set_company(cid: str):
+    """Point the module-level DATA / CFG at one company's data directory."""
+    global DATA, CFG
+    if cid not in COMPANIES:
+        raise SystemExit(f"unknown company {cid!r}; choose from {', '.join(COMPANIES)} or all")
+    CFG = COMPANIES[cid]
+    DATA = ROOT / "data" / CFG["dir"]
+    return CFG
 USER_AGENT = "ClaesBerg-InvestorDashboard/1.0 (contact: claesberg-sketch@users.noreply.github.com)"
 YAHOO_UA = "Mozilla/5.0 (compatible; InvestorDashboard/1.0; +https://github.com/claesberg-sketch/investor-dashboard)"
 
@@ -223,7 +290,8 @@ def parse_pre_post(day_chart: dict, regular_market_time=None):
     }
 
 
-def hyperliquid_spcx():
+def hyperliquid_snapshot():
+    coin = CFG["hl"]
     body = json.dumps({"type": "metaAndAssetCtxs", "dex": "xyz"}).encode()
     try:
         status, data, headers = fetch_json(
@@ -238,13 +306,13 @@ def hyperliquid_spcx():
         return {"ok": False, "error": "unexpected HL payload"}
     meta, ctxs = data[0], data[1]
     universe = meta.get("universe") or []
-    idx = next((i for i, u in enumerate(universe) if (u.get("name") or "") == "xyz:SPCX"), None)
+    idx = next((i for i, u in enumerate(universe) if (u.get("name") or "") == coin), None)
     if idx is None:
-        return {"ok": False, "error": "xyz:SPCX not in universe"}
+        return {"ok": False, "error": f"{coin} not in universe"}
     ctx = ctxs[idx] if idx < len(ctxs) else {}
     return {
         "ok": True,
-        "symbol": "xyz:SPCX",
+        "symbol": coin,
         "dex": "xyz",
         "midPx": _num(ctx.get("midPx")),
         "markPx": _num(ctx.get("markPx")),
@@ -255,6 +323,11 @@ def hyperliquid_spcx():
         "premium": ctx.get("premium"),
         "cors": "access-control-allow-origin: * (browser fetch works)",
     }
+
+
+# Backward-compatible name used by older notes/routines.
+def hyperliquid_spcx():
+    return hyperliquid_snapshot()
 
 
 def _num(x):
@@ -270,7 +343,7 @@ def google_news():
     url = (
         "https://news.google.com/rss/search?"
         + urllib.parse.urlencode(
-            {"q": "SpaceX OR Starlink OR SPCX when:14d", "hl": "en-US", "gl": "US", "ceid": "US:en"}
+            {"q": CFG["news_q"], "hl": "en-US", "gl": "US", "ceid": "US:en"}
         )
     )
     try:
@@ -314,19 +387,10 @@ def google_news():
 
 def _topics(title: str):
     t = title.lower()
+    if CFG.get("id") != "spacex":
+        t = " " + t + " "  # lets Tesla keys such as " semi " match whole words
     tags = []
-    mapping = [
-        ("Starship", ["starship"]),
-        ("Starlink", ["starlink"]),
-        ("AI compute", ["compute", "colossus", "data center", "gigawatt", " gw", "super intelligence", "starmind"]),
-        ("Grok", ["grok"]),
-        ("Cursor", ["cursor"]),
-        ("Earnings", ["earnings", "revenue", "guidance"]),
-        ("Launch", ["launch", "falcon", "ussf"]),
-        ("Lock-up", ["lock-up", "lockup", "unlock"]),
-        ("Direct-to-cell", ["direct-to-cell", "direct to cell", "starlink mobile", "qualcomm"]),
-        ("IPO", ["ipo"]),
-    ]
+    mapping = CFG.get("topics") or SPACEX_TOPICS
     for label, keys in mapping:
         if any(k in t for k in keys):
             tags.append(label)
@@ -372,7 +436,9 @@ def _feed_sort_key(it):
 
 
 def sec_filings():
-    url = "https://data.sec.gov/submissions/CIK0001181412.json"
+    cik = CFG["cik"]
+    cik_num = str(int(cik))
+    url = f"https://data.sec.gov/submissions/CIK{cik}.json"
     try:
         status, data, _ = fetch_json(url)
     except Exception as e:
@@ -389,9 +455,9 @@ def sec_filings():
         accession = acc[i].replace("-", "") if i < len(acc) else ""
         doc = prim[i] if i < len(prim) else ""
         href = (
-            f"https://www.sec.gov/Archives/edgar/data/1181412/{accession}/{doc}"
+            f"https://www.sec.gov/Archives/edgar/data/{cik_num}/{accession}/{doc}"
             if accession and doc
-            else f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001181412"
+            else f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}"
         )
         iso = _acceptance_to_utc(accepted[i] if i < len(accepted) else None)
         filing_date = dates[i] if i < len(dates) else ""
@@ -547,9 +613,10 @@ def attach_x_summaries(store: dict | None = None):
 
 
 def build_quote():
-    intra = yahoo_chart("SPCX", "1m", "5d", True)
-    daily = yahoo_chart("SPCX", "1d", "6mo", False)
-    hl = hyperliquid_spcx()
+    sym = CFG["symbol"]
+    intra = yahoo_chart(sym, "1m", "5d", True)
+    daily = yahoo_chart(sym, "1d", "6mo", False)
+    hl = hyperliquid_snapshot()
     prepost = {}
     if intra.get("ok"):
         prepost = parse_pre_post(intra, intra.get("regularMarketTime"))
@@ -567,7 +634,7 @@ def build_quote():
     daily_series = daily.get("series") if daily.get("ok") else []
     quote = {
         "updated": utc_now(),
-        "symbol": "SPCX",
+        "symbol": sym,
         "yahoo": {k: v for k, v in intra.items() if k != "series"} if intra.get("ok") else intra,
         "prePostFromChart": prepost,
         "intraday": intra_series,
@@ -585,7 +652,7 @@ def build_quote():
         },
         "sources": {
             "yahoo": "Yahoo Finance chart API v8 (query1/query2), includePrePost=true — fetched server-side because Yahoo blocks browser CORS.",
-            "hyperliquid": "POST https://api.hyperliquid.xyz/info  type=metaAndAssetCtxs, dex=xyz  — symbol xyz:SPCX. Browser CORS allowed.",
+            "hyperliquid": f"POST https://api.hyperliquid.xyz/info  type=metaAndAssetCtxs, dex=xyz  — symbol {CFG['hl']}. Browser CORS allowed.",
         },
     }
     return quote
@@ -635,12 +702,12 @@ def build_news():
                 "updated": static.get("updated"),
             },
             "media": {
-                "label": "Google News RSS (SpaceX OR Starlink OR SPCX, 14 days)",
+                "label": CFG["news_label"],
                 "ok": media.get("ok"),
                 "error": media.get("error"),
             },
             "filings": {
-                "label": "SEC EDGAR submissions CIK 0001181412 (data.sec.gov)",
+                "label": f"SEC EDGAR submissions CIK {CFG['cik']} (data.sec.gov)",
                 "ok": filings.get("ok"),
                 "error": filings.get("error"),
             },
@@ -730,7 +797,23 @@ def write(path: Path, obj):
     print(f"wrote {path.relative_to(ROOT)} ({path.stat().st_size} bytes)")
 
 
-def main():
+def main(company: str = "spacex", bump: bool = True):
+    """Refresh one company (default SpaceX, unchanged) or all active companies."""
+    ids = list(COMPANIES) if company == "all" else [company]
+    for cid in ids:
+        set_company(cid)
+        print(f"== refreshing {cid} ({CFG['symbol']}) into {DATA.relative_to(ROOT)}")
+        refresh_company()
+    set_company("spacex")
+    if bump:
+        try:
+            bump_asset_version()
+        except Exception as e:
+            print("asset version error", e, file=sys.stderr)
+    return 0
+
+
+def refresh_company():
     DATA.mkdir(parents=True, exist_ok=True)
     errors = []
     try:
@@ -765,15 +848,8 @@ def main():
         "errors": errors,
         "missingSummaries": missing,
     }
+    status["company"] = CFG["id"]
     write(DATA / "refresh-status.json", status)
-    try:
-        bump_asset_version()
-    except Exception as e:
-        errors.append(f"asset version: {e}")
-        print("asset version error", e, file=sys.stderr)
-        status["ok"] = not errors
-        status["errors"] = errors
-        write(DATA / "refresh-status.json", status)
     if errors:
         print("completed with errors:", errors)
         # still exit 0 so a partial refresh is published
@@ -787,6 +863,12 @@ def parse_args(argv):
         "--bump-assets",
         action="store_true",
         help="Only rewrite ?v= on local JS/CSS tags in index.html, then exit.",
+    )
+    ap.add_argument(
+        "--company",
+        default="spacex",
+        choices=sorted(list(COMPANIES) + ["all"]),
+        help="Which company's data/<id>/ files to refresh (default: spacex, the original behaviour).",
     )
     ap.add_argument(
         "--launches",
@@ -805,4 +887,4 @@ if __name__ == "__main__":
     if args.launches:
         refresh_launches()
         sys.exit(0)
-    sys.exit(main())
+    sys.exit(main(args.company))

@@ -19,8 +19,11 @@
       "ticker": "TSLA",
       "name": "Tesla, Inc.",
       "shortName": "Tesla",
-      "status": "coming_soon",
-      "exchange": "NasdaqGS"
+      "status": "active",
+      "exchange": "NasdaqGS",
+      "dataDir": "data/tesla",
+      "website": "https://www.tesla.com",
+      "ir": "https://ir.tesla.com"
     },
     {
       "id": "nvidia",

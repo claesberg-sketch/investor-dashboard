@@ -1,0 +1,374 @@
+{
+  "updated": "2026-11-13T10:00:00+01:00",
+  "timezone": "Europe/Stockholm",
+  "source": "X API public reads on 13 Nov 2026 (get_users_posts for @Tesla, @robotaxi, @teslaenergy, @Tesla_Optimus; search_posts_all for Tesla-related original posts by @elonmusk since 1 Nov). Official accounts: original Tesla-relevant posts since 26 Oct 2026; merchandise-only and caption-only clips without a stated subject were omitted. created_at is the original X timestamp (UTC).",
+  "accounts": [
+    {
+      "username": "Tesla",
+      "name": "Tesla",
+      "id": "13298072"
+    },
+    {
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "id": "44196397"
+    },
+    {
+      "username": "robotaxi",
+      "name": "Robotaxi",
+      "id": "1853866883851620352"
+    },
+    {
+      "username": "teslaenergy",
+      "name": "Tesla Energy",
+      "id": "1405917556318392324"
+    }
+  ],
+  "missing": "@Tesla_AI does not exist on X (checked 13 Nov 2026). @Tesla_Optimus had no original posts since 1 Oct 2026.",
+  "posts": [
+    {
+      "id": "2120980260393271585",
+      "username": "Tesla",
+      "name": "Tesla",
+      "created_at": "2026-11-12T20:41:14.000Z",
+      "text": "There's life before experiencing FSD Supervised, and there's life after",
+      "url": "https://x.com/Tesla/status/2120980260393271585",
+      "metrics": {
+        "likes": 3881,
+        "impressions": 552648
+      },
+      "topics": [
+        "FSD",
+        "Cybertruck"
+      ],
+      "highlight": false,
+      "summary": "Tesla quotes a user who called his first ride in a friend’s new Cybertruck on Full Self-Driving (Supervised) “one of the most fascinating and surreal things” he has experienced. It is a marketing push for FSD adoption, which Tesla says now attaches to about 75% of new North American deliveries."
+    },
+    {
+      "id": "2120977308983140439",
+      "username": "teslaenergy",
+      "name": "Tesla Energy",
+      "created_at": "2026-11-12T20:29:30.000Z",
+      "text": "Powerwall owner manages his home energy usage through the Tesla app, which shows how Powerwall helps save money throughout the day",
+      "url": "https://x.com/teslaenergy/status/2120977308983140439",
+      "metrics": {
+        "likes": 624,
+        "impressions": 27615
+      },
+      "topics": [
+        "Energy"
+      ],
+      "highlight": false,
+      "summary": "Tesla Energy shares a customer video of a Powerwall owner tracking home energy use and savings in the Tesla app. It is residential-storage marketing, not an operational update on Megapack deployments."
+    },
+    {
+      "id": "2120746428720988408",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-12T05:12:04.000Z",
+      "text": "Robotaxi works 168 hours a week",
+      "url": "https://x.com/elonmusk/status/2120746428720988408",
+      "metrics": {
+        "likes": 42452,
+        "impressions": 3729683
+      },
+      "topics": [
+        "Robotaxi"
+      ],
+      "highlight": true,
+      "summary": "Musk quote-posts the @robotaxi announcement that the service now runs 24/7 in every city where it operates. Tesla’s Q3 update had listed Austin operating hours as 6 a.m. to midnight, so the change removes the overnight pause."
+    },
+    {
+      "id": "2120736143566344324",
+      "username": "robotaxi",
+      "name": "Robotaxi",
+      "created_at": "2026-11-12T04:31:12.000Z",
+      "text": "Robotaxi now runs 24/7\n\nEvery city we're available in",
+      "url": "https://x.com/robotaxi/status/2120736143566344324",
+      "metrics": {
+        "likes": 21778,
+        "impressions": 3858536
+      },
+      "topics": [
+        "Robotaxi"
+      ],
+      "highlight": true,
+      "summary": "Tesla’s official Robotaxi account says the service now runs around the clock in every city where it is available. Tesla did not say whether the supervised Bay Area service is included or which vehicles run overnight."
+    },
+    {
+      "id": "2120589832963711162",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T18:49:49.000Z",
+      "text": "Tesla Megapacks are designed to ensure grid stability, so that you never have a blackout",
+      "url": "https://x.com/elonmusk/status/2120589832963711162",
+      "metrics": {
+        "likes": 27803,
+        "impressions": 23511804
+      },
+      "topics": [
+        "Energy"
+      ],
+      "highlight": false,
+      "summary": "Musk quotes @Tesla_Megapack explaining that Controller-Hardware-In-the-Loop testing lets Tesla simulate a whole Megapack site before it connects to the grid. He pitches Megapack as grid-stability equipment, as energy storage turns into a data-center and grid story."
+    },
+    {
+      "id": "2120565179276832797",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T17:11:51.000Z",
+      "text": "Tesla self-driving now approved in Finland",
+      "url": "https://x.com/elonmusk/status/2120565179276832797",
+      "metrics": {
+        "likes": 35924,
+        "impressions": 2791735
+      },
+      "topics": [
+        "FSD"
+      ],
+      "highlight": true,
+      "summary": "Musk amplifies @teslaeurope’s post that FSD (Supervised) is now approved in Finland, with rollout “soon.” Tesla’s Q3 update said FSD was available in nine EU countries before this approval."
+    },
+    {
+      "id": "2120565056429814073",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-11T17:11:22.000Z",
+      "text": "In order to work through more of the Cybertruck order backlog, production will be extended through the end of summer 2027",
+      "url": "https://x.com/elonmusk/status/2120565056429814073",
+      "metrics": {
+        "likes": 57438,
+        "impressions": 7710364
+      },
+      "topics": [
+        "Cybertruck"
+      ],
+      "highlight": true,
+      "summary": "Musk says Cybertruck production will now run through the end of summer 2027 to work through more of the order backlog. That extends the 6 November plan to wind the line down around mid-2027 to make room for Cybercab."
+    },
+    {
+      "id": "2119859134074073427",
+      "username": "teslaenergy",
+      "name": "Tesla Energy",
+      "created_at": "2026-11-09T18:26:17.000Z",
+      "text": "Join us at @REPlusEvents in Las Vegas",
+      "url": "https://x.com/teslaenergy/status/2119859134074073427",
+      "metrics": {
+        "likes": 293,
+        "impressions": 22519
+      },
+      "topics": [
+        "Energy"
+      ],
+      "highlight": false,
+      "summary": "Tesla Energy invites followers to its stand at the RE+ clean-energy trade show in Las Vegas. The post is an event notice with no product or deployment figures."
+    },
+    {
+      "id": "2119746828191027346",
+      "username": "robotaxi",
+      "name": "Robotaxi",
+      "created_at": "2026-11-09T11:00:01.000Z",
+      "text": "Bigger Austin service area now live",
+      "url": "https://x.com/robotaxi/status/2119746828191027346",
+      "metrics": {
+        "likes": 9373,
+        "impressions": 633843
+      },
+      "topics": [
+        "Robotaxi"
+      ],
+      "highlight": false,
+      "summary": "The Robotaxi account says an expanded Austin service area is now live. No new map size or vehicle count was given in the post."
+    },
+    {
+      "id": "2119691615774146614",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-09T07:20:37.000Z",
+      "text": "The Cybertruck order rate far exceeds our production rate. We will try to make as many as possible before shutting down the line in about 8 months, but will have to return deposits for a lot of people.\n\nThis is not a case of Cybertruck being unprofitable, as has been misreported",
+      "url": "https://x.com/elonmusk/status/2119691615774146614",
+      "metrics": {
+        "likes": 35219,
+        "impressions": 5364476
+      },
+      "topics": [
+        "Cybertruck"
+      ],
+      "highlight": false,
+      "summary": "Musk says Cybertruck orders far exceed production and that Tesla will have to refund many deposits before the line shuts in about eight months. He disputes reports that the truck is being ended because it is unprofitable."
+    },
+    {
+      "id": "2119678179963187564",
+      "username": "robotaxi",
+      "name": "Robotaxi",
+      "created_at": "2026-11-09T06:27:14.000Z",
+      "text": "Robotaxi available in San Antonio starting tomorrow, 5am",
+      "url": "https://x.com/robotaxi/status/2119678179963187564",
+      "metrics": {
+        "likes": 12201,
+        "impressions": 815942
+      },
+      "topics": [
+        "Robotaxi"
+      ],
+      "highlight": true,
+      "summary": "Tesla announces Robotaxi service in San Antonio from 5 a.m. on 10 November, its fifth Texas city after Austin, Dallas, Fort Worth and Houston. TechCrunch notes Tesla gave no details on fleet size, vehicle type or whether safety monitors are on board."
+    },
+    {
+      "id": "2119533178704863309",
+      "username": "Tesla",
+      "name": "Tesla",
+      "created_at": "2026-11-08T20:51:03.000Z",
+      "text": "FSD Supervised is looking out for you",
+      "url": "https://x.com/Tesla/status/2119533178704863309",
+      "metrics": {
+        "likes": 4500,
+        "impressions": 776427
+      },
+      "topics": [
+        "FSD"
+      ],
+      "highlight": false,
+      "summary": "Tesla shares an owner’s clip in which FSD (Supervised) braked hard when an SUV merged into its lane, then resumed. It is a safety-themed FSD promotion; supervision is still required."
+    },
+    {
+      "id": "2119146526899396725",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-07T19:14:38.000Z",
+      "text": "Most people don’t know that the best-selling car in the world is the Tesla Model Y. \n\nAnd the second and third best-selling cars are much cheaper.",
+      "url": "https://x.com/elonmusk/status/2119146526899396725",
+      "metrics": {
+        "likes": 29226,
+        "impressions": 2749738
+      },
+      "topics": [
+        "Deliveries"
+      ],
+      "highlight": false,
+      "summary": "Musk says the Model Y is the world’s best-selling car and that the next two are much cheaper, quoting a post claiming three straight years at No. 1 (2023–2025). The ranking claim comes from the quoted account, not a Tesla filing."
+    },
+    {
+      "id": "2119130949434888330",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-07T18:12:44.000Z",
+      "text": "The Tesla Cybertruck order backlog is currently far more than we can make before dismantling the line for Cybercab expansion around June/July next year. \n\nWe will add an extra shift to try to get all orders done in time.",
+      "url": "https://x.com/elonmusk/status/2119130949434888330",
+      "metrics": {
+        "likes": 76103,
+        "impressions": 7810662
+      },
+      "topics": [
+        "Cybertruck",
+        "Robotaxi"
+      ],
+      "highlight": false,
+      "summary": "Musk says the Cybertruck backlog exceeds what Tesla can build before the line is dismantled for Cybercab expansion around June–July 2027. Tesla will add an extra shift to try to fill the orders."
+    },
+    {
+      "id": "2118787365426893002",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-06T19:27:27.000Z",
+      "text": "🇦🇷 🇦🇷 Tesla Argentina!! 🇦🇷 🇦🇷",
+      "url": "https://x.com/elonmusk/status/2118787365426893002",
+      "metrics": {
+        "likes": 70719,
+        "impressions": 3138546
+      },
+      "topics": [
+        "Deliveries"
+      ],
+      "highlight": false,
+      "summary": "Musk celebrates Tesla’s entry into Argentina, quoting @Tesla_LatAm’s post that Tesla arrives there on 20 November. It adds another South American market after Tesla’s recent APAC and LatAm expansion."
+    },
+    {
+      "id": "2118720752379899907",
+      "username": "Tesla",
+      "name": "Tesla",
+      "created_at": "2026-11-06T15:02:45.000Z",
+      "text": "Launching in Argentina later this month",
+      "url": "https://x.com/Tesla/status/2118720752379899907",
+      "metrics": {
+        "likes": 9681,
+        "impressions": 719059
+      },
+      "topics": [
+        "Deliveries"
+      ],
+      "highlight": false,
+      "summary": "Tesla’s main account confirms it is launching in Argentina later in November, quoting Tesla Latin America’s 20 November date. No pricing or model line-up was given in the post."
+    },
+    {
+      "id": "2118591788701421573",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-06T06:30:18.000Z",
+      "text": "Tesla will be winding down production of the Cybertruck at Gigafactory Texas around the middle of next year to make room for increased Cybercab production",
+      "url": "https://x.com/elonmusk/status/2118591788701421573",
+      "metrics": {
+        "likes": 89606,
+        "impressions": 10128850
+      },
+      "topics": [
+        "Cybertruck",
+        "Robotaxi"
+      ],
+      "highlight": true,
+      "summary": "Musk says Tesla will wind down Cybertruck production at Gigafactory Texas around mid-2027 to free space for more Cybercab output. He later extended the end date to the end of summer 2027 (11 Nov)."
+    },
+    {
+      "id": "2118588019230056525",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-06T06:15:19.000Z",
+      "text": "🇰🇷 Tesla Korea 🇰🇷",
+      "url": "https://x.com/elonmusk/status/2118588019230056525",
+      "metrics": {
+        "likes": 16272,
+        "impressions": 1919410
+      },
+      "topics": [
+        "Deliveries"
+      ],
+      "highlight": false,
+      "summary": "Musk flags Tesla’s sales in South Korea, quoting a post that Tesla was the No. 1 imported brand for a ninth straight month with October registrations up 110.7% to 9,165. The figures come from the quoted account, not Tesla."
+    },
+    {
+      "id": "2117674414125002877",
+      "username": "Tesla",
+      "name": "Tesla",
+      "created_at": "2026-11-03T17:44:59.000Z",
+      "text": "“FSD is revolutionary – a step change in what it means to drive. I don’t think any other car at a similar price comes close. It’s the best car I have ever owned.”",
+      "url": "https://x.com/Tesla/status/2117674414125002877",
+      "metrics": {
+        "likes": 4887,
+        "impressions": 840650
+      },
+      "topics": [
+        "FSD"
+      ],
+      "highlight": false,
+      "summary": "Tesla quotes economist Alex Tabarrok’s write-up on owning a self-driving Tesla, calling FSD “a step change in what it means to drive.” It is third-party praise used as FSD marketing."
+    },
+    {
+      "id": "2116200444276178966",
+      "username": "Tesla",
+      "name": "Tesla",
+      "created_at": "2026-10-30T16:07:57.000Z",
+      "text": "Even the world's best drivers like being driven",
+      "url": "https://x.com/Tesla/status/2116200444276178966",
+      "metrics": {
+        "likes": 6520,
+        "impressions": 1816758
+      },
+      "topics": [
+        "FSD",
+        "Cybertruck"
+      ],
+      "highlight": false,
+      "summary": "Tesla quotes a report that former F1 world champion Nico Rosberg has been testing a Cybertruck with FSD (Supervised) around San Francisco and called it “life-changing.” It is a celebrity endorsement for FSD."
+    }
+  ]
+}

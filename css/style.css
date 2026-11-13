@@ -268,3 +268,24 @@ thead th:first-child{background:var(--fg-06);z-index:2}
   .launch-milestones .ms-date{display:block;min-width:0;margin-bottom:2px}
   #launches .launch-stats .v{font-size:1.6rem}
 }
+
+/* Multi-company */
+[hidden]{display:none!important}
+.switcher .avail{opacity:.75}
+.switcher .avail:hover{opacity:1}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin-bottom:12px}
+.table-scroll table{font-size:.875rem}
+.table-scroll th,.table-scroll td{padding:8px 12px 8px 0;text-align:left;border-bottom:1px solid var(--fg-10)}
+#ops .launch-stats .v{font-size:1.6rem;font-weight:300;letter-spacing:.02em}
+#ops .launch-stats{margin:0 0 28px}
+#ops .launch-grid{margin-bottom:28px}
+#ops .ms .source{margin-top:8px;font-size:.75rem}
+#ops .stat .up{color:var(--up)}
+#ops .stat .down{color:var(--down,#ff5c6c)}
+@media (max-width:900px){
+  #ops .launch-milestones .ms-grid{grid-template-columns:1fr}
+  #ops .launch-stats .v{font-size:1.35rem}
+}
+@media (min-width:901px) and (max-width:1200px){
+  #ops .launch-milestones .ms-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}

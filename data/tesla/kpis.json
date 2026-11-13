@@ -1,0 +1,463 @@
+{
+  "currency": "USD",
+  "units": {
+    "revenue": "million USD",
+    "deliveries": "vehicles",
+    "storage": "GWh",
+    "fsd": "million active subscriptions"
+  },
+  "lastReportedQuarter": "2026-Q3",
+  "quarters": [
+    {
+      "id": "2024-Q4",
+      "label": "Q4 2024",
+      "periodEnd": "2024-12-31",
+      "revenue": {
+        "automotive": 19798,
+        "automotiveSales": 18659,
+        "regulatoryCredits": 692,
+        "leasing": 447,
+        "energy": 3061,
+        "services": 2848,
+        "total": 25707
+      },
+      "grossProfit": 4179,
+      "incomeFromOps": 1583,
+      "adjustedEbitda": 4333,
+      "netIncomeGaap": 2128,
+      "operatingCashFlow": 4814,
+      "capex": 2780,
+      "freeCashFlow": 2034,
+      "cashAndInvestments": 36563,
+      "production": {
+        "model3y": 436718,
+        "other": 22727,
+        "total": 459445
+      },
+      "deliveries": {
+        "model3y": 471930,
+        "other": 23640,
+        "total": 495570
+      },
+      "storageGWh": 11.0,
+      "superchargerStations": 6975,
+      "superchargerConnectors": 65495,
+      "activeFsdSubsM": 0.8,
+      "inventoryDays": 12,
+      "margins": {
+        "totalGaapGross": 16.3,
+        "autoGaapGross": 16.6,
+        "autoGrossExCredits": 13.6,
+        "energyGross": 25.2,
+        "operating": 6.2
+      },
+      "sources": [
+        {
+          "label": "Tesla Q4 & FY2025 Update (prior-year column), Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003837/exhibit991.htm"
+        }
+      ],
+      "notes": "Q4 2024 active FSD subscriptions are shown as 0.8M because the Q4 2025 deck rounds that column to one decimal. Q4 2024 cash line is “cash, cash equivalents and investments” as labelled in that deck."
+    },
+    {
+      "id": "2025-Q1",
+      "label": "Q1 2025",
+      "periodEnd": "2025-03-31",
+      "revenue": {
+        "automotive": 13967,
+        "automotiveSales": 12925,
+        "regulatoryCredits": 595,
+        "leasing": 447,
+        "energy": 2730,
+        "services": 2638,
+        "total": 19335
+      },
+      "grossProfit": 3153,
+      "incomeFromOps": 399,
+      "adjustedEbitda": 2814,
+      "netIncomeGaap": 409,
+      "operatingCashFlow": 2156,
+      "capex": 1492,
+      "freeCashFlow": 664,
+      "cashAndInvestments": 36996,
+      "production": {
+        "model3y": 345454,
+        "other": 17161,
+        "total": 362615
+      },
+      "deliveries": {
+        "model3y": 323800,
+        "other": 12881,
+        "total": 336681
+      },
+      "storageGWh": 10.4,
+      "superchargerStations": 7131,
+      "superchargerConnectors": 67316,
+      "activeFsdSubsM": 0.85,
+      "inventoryDays": 22,
+      "margins": {
+        "totalGaapGross": 16.3,
+        "autoGaapGross": 16.2,
+        "autoGrossExCredits": 12.5,
+        "energyGross": 28.8,
+        "operating": 2.1
+      },
+      "sources": [
+        {
+          "label": "Tesla Q1 2026 Update (prior-year column), Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026551/exhibit991.htm"
+        }
+      ]
+    },
+    {
+      "id": "2025-Q2",
+      "label": "Q2 2025",
+      "periodEnd": "2025-06-30",
+      "revenue": {
+        "automotive": 16661,
+        "automotiveSales": 15787,
+        "regulatoryCredits": 439,
+        "leasing": 435,
+        "energy": 2789,
+        "services": 3046,
+        "total": 22496
+      },
+      "grossProfit": 3878,
+      "incomeFromOps": 923,
+      "adjustedEbitda": 3401,
+      "netIncomeGaap": 1172,
+      "operatingCashFlow": 2540,
+      "capex": 2394,
+      "freeCashFlow": 146,
+      "cashAndInvestments": 36782,
+      "production": {
+        "model3y": 396835,
+        "other": 13409,
+        "total": 410244
+      },
+      "deliveries": {
+        "model3y": 373728,
+        "other": 10394,
+        "total": 384122
+      },
+      "storageGWh": 9.6,
+      "superchargerStations": 7377,
+      "superchargerConnectors": 70228,
+      "activeFsdSubsM": 0.95,
+      "inventoryDays": 24,
+      "margins": {
+        "totalGaapGross": 17.2,
+        "autoGaapGross": 17.2,
+        "autoGrossExCredits": 15.0,
+        "energyGross": 30.3,
+        "operating": 4.1
+      },
+      "sources": [
+        {
+          "label": "Tesla Q2 2026 Update (prior-year column), Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/exhibit991.htm"
+        }
+      ]
+    },
+    {
+      "id": "2025-Q3",
+      "label": "Q3 2025",
+      "periodEnd": "2025-09-30",
+      "revenue": {
+        "automotive": 21205,
+        "automotiveSales": 20359,
+        "regulatoryCredits": 417,
+        "leasing": 429,
+        "energy": 3415,
+        "services": 3475,
+        "total": 28095
+      },
+      "grossProfit": 5054,
+      "incomeFromOps": 1624,
+      "adjustedEbitda": 4227,
+      "netIncomeGaap": 1373,
+      "operatingCashFlow": 6238,
+      "capex": 2248,
+      "freeCashFlow": 3990,
+      "cashAndInvestments": 41647,
+      "production": {
+        "model3y": 435826,
+        "other": 11624,
+        "total": 447450
+      },
+      "deliveries": {
+        "model3y": 481166,
+        "other": 15933,
+        "total": 497099
+      },
+      "storageGWh": 12.5,
+      "superchargerStations": 7753,
+      "superchargerConnectors": 73817,
+      "activeFsdSubsM": 1.04,
+      "inventoryDays": 10,
+      "margins": {
+        "totalGaapGross": 18.0,
+        "autoGaapGross": 17.0,
+        "autoGrossExCredits": 15.4,
+        "energyGross": 31.4,
+        "operating": 5.8
+      },
+      "sources": [
+        {
+          "label": "Tesla Q3 2026 Update, Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        }
+      ]
+    },
+    {
+      "id": "2025-Q4",
+      "label": "Q4 2025",
+      "periodEnd": "2025-12-31",
+      "revenue": {
+        "automotive": 17693,
+        "automotiveSales": 16750,
+        "regulatoryCredits": 542,
+        "leasing": 401,
+        "energy": 3837,
+        "services": 3371,
+        "total": 24901
+      },
+      "grossProfit": 5009,
+      "incomeFromOps": 1409,
+      "adjustedEbitda": 4154,
+      "netIncomeGaap": 840,
+      "operatingCashFlow": 3813,
+      "capex": 2393,
+      "freeCashFlow": 1420,
+      "cashAndInvestments": 44059,
+      "production": {
+        "model3y": 422652,
+        "other": 11706,
+        "total": 434358
+      },
+      "deliveries": {
+        "model3y": 406585,
+        "other": 11642,
+        "total": 418227
+      },
+      "storageGWh": 14.2,
+      "superchargerStations": 8182,
+      "superchargerConnectors": 77682,
+      "activeFsdSubsM": 1.1,
+      "inventoryDays": 15,
+      "margins": {
+        "totalGaapGross": 20.1,
+        "autoGaapGross": 20.4,
+        "autoGrossExCredits": 17.9,
+        "energyGross": 28.6,
+        "operating": 5.7
+      },
+      "sources": [
+        {
+          "label": "Tesla Q3 2026 Update, Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        }
+      ]
+    },
+    {
+      "id": "2026-Q1",
+      "label": "Q1 2026",
+      "periodEnd": "2026-03-31",
+      "revenue": {
+        "automotive": 16234,
+        "automotiveSales": 15473,
+        "regulatoryCredits": 380,
+        "leasing": 381,
+        "energy": 2408,
+        "services": 3745,
+        "total": 22387
+      },
+      "grossProfit": 4720,
+      "incomeFromOps": 941,
+      "adjustedEbitda": 3668,
+      "netIncomeGaap": 477,
+      "operatingCashFlow": 3937,
+      "capex": 2493,
+      "freeCashFlow": 1444,
+      "cashAndInvestments": 44743,
+      "production": {
+        "model3y": 394611,
+        "other": 13775,
+        "total": 408386
+      },
+      "deliveries": {
+        "model3y": 341893,
+        "other": 16130,
+        "total": 358023
+      },
+      "storageGWh": 8.8,
+      "superchargerStations": 8463,
+      "superchargerConnectors": 79918,
+      "activeFsdSubsM": 1.28,
+      "inventoryDays": 27,
+      "margins": {
+        "totalGaapGross": 21.1,
+        "autoGaapGross": 21.1,
+        "autoGrossExCredits": 19.2,
+        "energyGross": 39.5,
+        "operating": 4.2
+      },
+      "sources": [
+        {
+          "label": "Tesla Q3 2026 Update, Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        }
+      ]
+    },
+    {
+      "id": "2026-Q2",
+      "label": "Q2 2026",
+      "periodEnd": "2026-06-30",
+      "revenue": {
+        "automotive": 20516,
+        "automotiveSales": 20006,
+        "regulatoryCredits": 146,
+        "leasing": 364,
+        "energy": 3139,
+        "services": 4581,
+        "total": 28236
+      },
+      "grossProfit": 4751,
+      "incomeFromOps": 398,
+      "adjustedEbitda": 3273,
+      "netIncomeGaap": 1114,
+      "operatingCashFlow": 4697,
+      "capex": 5789,
+      "freeCashFlow": -1092,
+      "cashAndInvestments": 43524,
+      "production": {
+        "model3y": 442936,
+        "other": 8822,
+        "total": 451758
+      },
+      "deliveries": {
+        "model3y": 467762,
+        "other": 12364,
+        "total": 480126
+      },
+      "storageGWh": 13.5,
+      "superchargerStations": 8704,
+      "superchargerConnectors": 82357,
+      "activeFsdSubsM": 1.48,
+      "inventoryDays": 15,
+      "margins": {
+        "totalGaapGross": 16.8,
+        "autoGaapGross": 16.9,
+        "autoGrossExCredits": 16.3,
+        "energyGross": 20.4,
+        "operating": 1.4
+      },
+      "sources": [
+        {
+          "label": "Tesla Q3 2026 Update, Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        }
+      ]
+    },
+    {
+      "id": "2026-Q3",
+      "label": "Q3 2026",
+      "periodEnd": "2026-09-30",
+      "revenue": {
+        "automotive": 20560,
+        "automotiveSales": 20094,
+        "regulatoryCredits": 113,
+        "leasing": 353,
+        "energy": 2881,
+        "services": 4605,
+        "total": 28046
+      },
+      "grossProfit": 5494,
+      "incomeFromOps": 718,
+      "adjustedEbitda": 3900,
+      "netIncomeGaap": 787,
+      "operatingCashFlow": 6263,
+      "capex": 4732,
+      "freeCashFlow": 1531,
+      "cashAndInvestments": 45447,
+      "production": {
+        "model3y": 457387,
+        "other": 7004,
+        "total": 464391
+      },
+      "deliveries": {
+        "model3y": 478237,
+        "other": 8295,
+        "total": 486532
+      },
+      "storageGWh": 13.7,
+      "superchargerStations": 8904,
+      "superchargerConnectors": 84465,
+      "activeFsdSubsM": 1.74,
+      "inventoryDays": 11,
+      "margins": {
+        "totalGaapGross": 19.6,
+        "autoGaapGross": 18.5,
+        "autoGrossExCredits": 18.1,
+        "energyGross": 33.1,
+        "operating": 2.6
+      },
+      "sources": [
+        {
+          "label": "Tesla Q3 2026 Update, Exhibit 99.1",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+        }
+      ]
+    }
+  ],
+  "notes": {
+    "energyGross": "Energy gross margin is computed from reported Energy generation and storage revenue and cost of revenues in each Update (e.g., Q3 2026: (2,881 − 1,927) / 2,881 = 33.1%, matching the deck commentary).",
+    "fcf": "Free cash flow = operating cash flow less capital expenditures, as reported by Tesla. Capex includes purchases of energy generation and storage systems from Q1 2025 (prior periods restated)."
+  },
+  "compute": {
+    "cortex1MW": 105,
+    "cortex2MW": 120,
+    "otherMW": 40,
+    "yearEndTargetMW": 400,
+    "asOf": "2026-09-30",
+    "detail": "Cortex 1 >105 MW and Cortex 2 >120 MW in production (excludes 40 MW of other compute); Tesla plans 400 MW of SI training compute by end of 2026.",
+    "source": {
+      "label": "Q3 2026 Update, Supporting Infrastructure",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+    }
+  },
+  "street": {
+    "rating": "Buy",
+    "analysts": 44,
+    "priceTarget": {
+      "average": 412.48,
+      "median": 436,
+      "low": 128.11,
+      "high": 600
+    },
+    "mix": {
+      "strongBuy": 15,
+      "buy": 5,
+      "hold": 22,
+      "sell": 0,
+      "strongSell": 2
+    },
+    "revenueFY2026": {
+      "avg": 107860,
+      "low": 99600,
+      "high": 119400
+    },
+    "revenueFY2027": {
+      "avg": 122410
+    },
+    "epsFY2026": 1.72,
+    "epsFY2027": 2.16,
+    "fcfFY2026": -4630,
+    "recent": "J.P. Morgan Hold $430 (12 Nov); Jefferies Hold $400 → $375 (10 Nov); BofA Buy $460 (29 Oct); Cantor Buy $485 (27 Oct); RBC Buy $480 (26 Oct).",
+    "asOf": "2026-11-12",
+    "source": {
+      "label": "StockAnalysis (S&P Global Market Intelligence / TipRanks), checked 13 Nov 2026",
+      "url": "https://stockanalysis.com/stocks/tsla/forecast/"
+    }
+  }
+}

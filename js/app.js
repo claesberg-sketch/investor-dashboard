@@ -101,17 +101,85 @@
     return (topics || []).map((t) => '<span class="badge' + (highlight ? " hl" : "") + '">' + esc(t) + "</span>").join("");
   }
 
-  function renderSwitcher(companies) {
+  const STORE_KEY = "investorDashboard.company";
+
+  function activeCompanies(companies) {
+    return (companies.companies || []).filter((c) => c.status === "active");
+  }
+
+  // ?c=<id> wins, then the last choice saved in this browser, then companies.json "default".
+  function pickCompany(companies) {
+    const act = activeCompanies(companies);
+    const ok = (id) => act.find((c) => c.id === id);
+    let id = null;
+    try { id = new URLSearchParams(location.search).get("c"); } catch (e) { id = null; }
+    if (id) id = String(id).toLowerCase();
+    if (!ok(id)) {
+      // Also accept a ticker, e.g. ?c=TSLA.
+      const byTicker = act.find((c) => c.ticker.toLowerCase() === id);
+      id = byTicker ? byTicker.id : null;
+    }
+    if (!ok(id)) {
+      try { id = localStorage.getItem(STORE_KEY); } catch (e) { id = null; }
+    }
+    if (!ok(id)) id = companies.default && ok(companies.default) ? companies.default : (act[0] && act[0].id);
+    return ok(id);
+  }
+
+  function companyUrl(id) {
+    const u = new URL(location.href);
+    u.searchParams.set("c", id);
+    u.hash = "";
+    return u.pathname + u.search;
+  }
+
+  function renderSwitcher(companies, current) {
     const el = document.getElementById("company-switcher");
     if (!el) return;
     el.innerHTML = (companies.companies || []).map((c) => {
-      if (c.status === "active") return '<button class="active" type="button" data-id="' + c.id + '">' + esc(c.ticker) + "</button>";
+      if (c.status === "active") {
+        const on = c.id === current.id;
+        return '<button class="' + (on ? "active" : "avail") + '" type="button" data-id="' + c.id + '"' + (on ? ' aria-current="page"' : "") + ' title="' + esc(c.shortName || c.name) + '">' + esc(c.ticker) + "</button>";
+      }
       return '<button class="soon" type="button" data-id="' + c.id + '" title="Coming later">' + esc(c.ticker) + "</button>";
     }).join("");
     el.addEventListener("click", (e) => {
-      const b = e.target.closest("button.soon");
-      if (b) alert("Tesla and NVIDIA dashboards will be added later. The data layout is already company-scoped.");
+      const b = e.target.closest("button[data-id]");
+      if (!b) return;
+      if (b.classList.contains("soon")) {
+        const names = (companies.companies || []).filter((c) => c.status !== "active").map((c) => c.shortName || c.name);
+        alert((names.join(" and ") || "More") + " dashboard" + (names.length > 1 ? "s" : "") + " will be added later. The data layout is already company-scoped.");
+        return;
+      }
+      if (b.dataset.id === current.id) return;
+      try { localStorage.setItem(STORE_KEY, b.dataset.id); } catch (err) { /* private mode */ }
+      location.assign(companyUrl(b.dataset.id));
     });
+  }
+
+  function applyCompanyChrome(meta, company) {
+    const id = meta.id;
+    document.body.dataset.company = id;
+    document.querySelectorAll("[data-only]").forEach((n) => {
+      const ids = n.getAttribute("data-only").split(/[\s,|]+/);
+      n.hidden = ids.indexOf(id) === -1;
+    });
+    const ui = company.ui || {};
+    if (ui.title) document.title = ui.title;
+    if (ui.description) {
+      const d = document.querySelector('meta[name="description"]');
+      if (d) d.setAttribute("content", ui.description);
+    }
+    const setHTML = (elId, html) => { const n = document.getElementById(elId); if (n && html) n.innerHTML = html; };
+    setHTML("intraday-caption", ui.intradayCaption && esc(ui.intradayCaption));
+    setHTML("news-lede", ui.newsLede && esc(ui.newsLede));
+    setHTML("kpi-lede", ui.kpiLede && esc(ui.kpiLede));
+    setHTML("calendar-title", ui.calendarTitle);
+    setHTML("lockup-kicker", ui.lockupKicker);
+    setHTML("lockup-title", ui.lockupTitle);
+    setHTML("footer-data", ui.footerData);
+    document.getElementById("hero-ticker").textContent = company.ticker || meta.ticker;
+    document.getElementById("hero-name").textContent = company.name || meta.name;
   }
 
 
@@ -257,50 +325,94 @@
       window.addEventListener("resize", () => { if (window.innerWidth > 900) setOpen(false); });
     }
 
-    const [companies, company, quote, news, xposts, kpis, calendar, unlocks] = await Promise.all([
-      loadJSON(DATA + "/companies.json"),
-      loadJSON(DATA + "/spacex/company.json"),
-      loadJSON(DATA + "/spacex/quote.json"),
-      loadJSON(DATA + "/spacex/news.json"),
-      loadJSON(DATA + "/spacex/x-posts.json"),
-      loadJSON(DATA + "/spacex/kpis.json"),
-      loadJSON(DATA + "/spacex/calendar.json"),
-      loadJSON(DATA + "/spacex/unlocks.json"),
-    ]);
-    const [launches, ndx] = await Promise.all([
-      loadJSON(DATA + "/spacex/launches.json").catch((e) => { console.warn("launches.json", e); return null; }),
-      loadJSON(DATA + "/spacex/nasdaq-index.json").catch((e) => { console.warn("nasdaq-index.json", e); return null; }),
-    ]);
+    const companies = await loadJSON(DATA + "/companies.json");
+    const meta = pickCompany(companies);
+    const dir = meta.dataDir || (DATA + "/" + meta.id);
+    try { localStorage.setItem(STORE_KEY, meta.id); } catch (e) { /* private mode */ }
+    try { if (history.replaceState) history.replaceState(null, "", companyUrl(meta.id) + location.hash); } catch (e) { /* file:// */ }
+    const isSpaceX = meta.id === "spacex";
 
-    renderSwitcher(companies);
-    document.getElementById("hero-ticker").textContent = company.ticker;
-    document.getElementById("hero-name").textContent = company.name;
+    const [company, quote, news, xposts, kpis, calendar] = await Promise.all([
+      loadJSON(dir + "/company.json"),
+      loadJSON(dir + "/quote.json"),
+      loadJSON(dir + "/news.json"),
+      loadJSON(dir + "/x-posts.json").catch((e) => { console.warn("x-posts.json", e); return { posts: [] }; }),
+      loadJSON(dir + "/kpis.json"),
+      loadJSON(dir + "/calendar.json"),
+    ]);
+    applyCompanyChrome(meta, company);
+    renderSwitcher(companies, meta);
 
     let state = { display: null };
+
+    if (isSpaceX) {
+      const unlocks = await loadJSON(dir + "/unlocks.json");
+      const [launches, ndx] = await Promise.all([
+        loadJSON(dir + "/launches.json").catch((e) => { console.warn("launches.json", e); return null; }),
+        loadJSON(dir + "/nasdaq-index.json").catch((e) => { console.warn("nasdaq-index.json", e); return null; }),
+      ]);
+      function onPrice(next) {
+        state = next;
+        renderValuation(quote, kpis, company, state);
+        if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
+      }
+      renderNews(news, xposts);
+      renderTopics(xposts);
+      SPCXCharts.mount(kpis);
+      if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
+      if (window.SPCXLaunches && launches) SPCXLaunches.mount(launches);
+      if (window.SPCXIndexWeight && ndx) SPCXIndexWeight.mount(ndx, unlocks);
+      renderCalendar(calendar);
+      renderValuation(quote, kpis, company, state);
+      if (window.SPCXPrice && SPCXPrice.setUnlocks) SPCXPrice.setUnlocks(unlocks);
+      SPCXPrice.startLive(quote, onPrice);
+
+      // Re-fetch the Yahoo snapshot file periodically (live Yahoo is CORS-blocked in the browser).
+      async function tickQuote() {
+        try {
+          const q = await loadJSON(dir + "/quote.json");
+          Object.assign(quote, q);
+          state = SPCXPrice.setQuote(quote) || state;
+          renderValuation(quote, kpis, company, state);
+          if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
+        } catch (e) { console.warn("quote refresh failed", e); }
+        try { await SPCXPrice.tryYahooLive(); }
+        catch (e) { /* expected: Yahoo blocks browser CORS */ }
+      }
+      setInterval(tickQuote, 30000);
+      return;
+    }
+
+    // Generic (non-SpaceX) company, currently Tesla.
+    const T = window.TSLAView;
+    const ops = await loadJSON(dir + "/ops.json").catch((e) => { console.warn("ops.json", e); return null; });
+    const hl = company.hyperliquid || {};
+    SPCXPrice.configure({
+      coin: hl.symbol || ("xyz:" + meta.ticker),
+      cnbcSymbol: company.cnbcSymbol || meta.ticker,
+      cnbcBarsSymbol: company.cnbcBarsSymbol || (meta.ticker + ".O"),
+      yahooSymbol: meta.ticker,
+      overviewStats: (ctx) => T.overviewStats(ctx, company, calendar),
+    });
     function onPrice(next) {
       state = next;
-      renderValuation(quote, kpis, company, state);
-      if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
+      T.renderValuation(kpis, company, state);
     }
     renderNews(news, xposts);
     renderTopics(xposts);
-    SPCXCharts.mount(kpis);
-    if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
-    if (window.SPCXLaunches && launches) SPCXLaunches.mount(launches);
-    if (window.SPCXIndexWeight && ndx) SPCXIndexWeight.mount(ndx, unlocks);
+    T.mountKpis(kpis);
+    T.mountOps(ops, kpis);
     renderCalendar(calendar);
-    renderValuation(quote, kpis, company, state);
-    if (window.SPCXPrice && SPCXPrice.setUnlocks) SPCXPrice.setUnlocks(unlocks);
+    T.renderValuation(kpis, company, state);
+    T.renderShares(company);
     SPCXPrice.startLive(quote, onPrice);
 
-    // Re-fetch the Yahoo snapshot file periodically (live Yahoo is CORS-blocked in the browser).
     async function tickQuote() {
       try {
-        const q = await loadJSON(DATA + "/spacex/quote.json");
+        const q = await loadJSON(dir + "/quote.json");
         Object.assign(quote, q);
         state = SPCXPrice.setQuote(quote) || state;
-        renderValuation(quote, kpis, company, state);
-        if (window.SPCXUnlocks) SPCXUnlocks.updatePrice(state && state.display);
+        T.renderValuation(kpis, company, state);
       } catch (e) { console.warn("quote refresh failed", e); }
       try { await SPCXPrice.tryYahooLive(); }
       catch (e) { /* expected: Yahoo blocks browser CORS */ }

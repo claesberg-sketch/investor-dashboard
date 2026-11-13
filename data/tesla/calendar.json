@@ -1,0 +1,152 @@
+{
+  "updated": "2026-11-13",
+  "timezoneNote": "Dates are U.S. Eastern/Central unless stated; the annual meeting is 3:00 p.m. CT = 22:00 CET. “Tentative” means Tesla has not confirmed the date.",
+  "events": [
+    {
+      "id": "argentina",
+      "date": "2026-11-20",
+      "dateLabel": "20 Nov 2026",
+      "type": "market",
+      "title": "Tesla launches in Argentina",
+      "detail": "Tesla Latin America says Tesla arrives in Argentina on 20 November; @Tesla confirmed “launching in Argentina later this month”.",
+      "source": "@Tesla / @Tesla_LatAm on X, 6 Nov 2026",
+      "url": "https://x.com/Tesla/status/2118720752379899907"
+    },
+    {
+      "id": "dallas-cybercab",
+      "date": "2026-11-30",
+      "dateLabel": "Nov 2026 (no date)",
+      "tentative": true,
+      "type": "autonomy",
+      "title": "Cybercab service in Dallas",
+      "detail": "Ashok Elluswamy said on the Q3 call (21 Oct) that Cybercab would launch in Dallas “next month”, the first city outside Austin. Dallas already has unsupervised Model Y Robotaxi service.",
+      "source": "Q3 2026 call via TeslaNorth",
+      "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/"
+    },
+    {
+      "id": "agm",
+      "date": "2026-12-03",
+      "dateLabel": "3 Dec 2026",
+      "window": "3:00 p.m. CT (22:00 CET), Gigafactory Texas",
+      "type": "shareholders",
+      "highlight": true,
+      "title": "2026 Annual Meeting of Shareholders",
+      "detail": "Three items: re-elect Elon Musk, Robyn Denholm and JB Straubel; advisory say-on-pay vote; ratify PwC. No shareholder proposals on the ballot. Record date 13 Oct 2026.",
+      "source": "DEF 14A (19 Oct) and DEFA14A (29 Oct)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926120263/tm267596d8_defa14a.htm"
+    },
+    {
+      "id": "merger",
+      "date": "2026-12-15",
+      "dateLabel": "Dec 2026 – early 2027",
+      "tentative": true,
+      "type": "corporate",
+      "highlight": true,
+      "title": "Possible SpaceX–Tesla merger announcement",
+      "detail": "Bloomberg (12 Nov) reports talks are progressing and an announcement could come as soon as December, or slip into early 2027. Both boards have special committees of independent directors; no terms, valuation or exchange ratio have been agreed. A deal would need a Tesla shareholder vote.",
+      "source": "Bloomberg via Bloomberg Law, 12 Nov 2026",
+      "url": "https://news.bloomberglaw.com/daily-labor-report/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
+    },
+    {
+      "id": "cybercab-customers",
+      "date": "2026-12-31",
+      "dateLabel": "By end of 2026",
+      "tentative": true,
+      "type": "autonomy",
+      "title": "First Cybercabs to customers; 400 MW of SI training compute",
+      "detail": "Lars Moravy: “we’re trying to get Cybercabs to customers by the end of this year.” Tesla also plans to reach 400 MW of SI training compute by year-end (Cortex 1 + 2 were >225 MW at 30 Sep).",
+      "source": "Q3 2026 call via TeslaNorth; Q3 2026 Update",
+      "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/"
+    },
+    {
+      "id": "q4-pdd",
+      "date": "2027-01-02",
+      "dateLabel": "Early Jan 2027",
+      "tentative": true,
+      "type": "report",
+      "title": "Q4 2026 production, deliveries & deployments",
+      "detail": "Date not yet announced. 2026 deliveries through Q3 were 1,324,681. Visible Alpha’s FY2026 consensus of about 1.77 million (per Reuters, 21 Oct) implies roughly 445,000 in Q4.",
+      "source": "Tesla Q3 P&D; Reuters / Visible Alpha",
+      "url": "https://ca.investing.com/news/stock-market-news/tesla-revenue-beats-estimates-as-deliveries-rebound-and-energy-storage-grows-4894437"
+    },
+    {
+      "id": "q4-earnings",
+      "date": "2027-01-27",
+      "dateLabel": "Late Jan 2027 (~27 Jan)",
+      "tentative": true,
+      "type": "report",
+      "title": "Q4 & FY2026 results",
+      "detail": "Not confirmed by Tesla; 27 Jan is the commonly cited estimate. Street FY2026: revenue ~$107.9B, non-GAAP EPS ~$1.72 (S&P Global, 44 analysts).",
+      "source": "StockAnalysis / S&P Global",
+      "url": "https://stockanalysis.com/stocks/tsla/forecast/"
+    },
+    {
+      "id": "optimus-ai5",
+      "date": "2027-04-15",
+      "dateLabel": "~Apr 2027",
+      "tentative": true,
+      "type": "robotics",
+      "title": "Optimus with AI5",
+      "detail": "Musk said AI5 should go into Optimus around April 2027 “if things go according to plan”, and that the Fremont line needs at least a year to reach ~20,000 units a week.",
+      "source": "Q3 2026 call via TeslaNorth / Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/article/tesla-reports-q3-earnings-beat-positive-free-cash-flow-and-better-than-expected-capex-202153389.html"
+    },
+    {
+      "id": "fsd-unsupervised",
+      "date": "2027-06-30",
+      "dateLabel": "~Q2 2027",
+      "tentative": true,
+      "type": "autonomy",
+      "title": "First customer cars join the Robotaxi network (FSD V15)",
+      "detail": "Elluswamy: “somewhere around Q2 next year is when we can turn on some of the first customer vehicles to be part of the robotaxi fleet.”",
+      "source": "Q3 2026 call via TeslaNorth",
+      "url": "https://teslanorth.com/2026/10/21/tesla-q3-2026-call-takeaways/"
+    },
+    {
+      "id": "cybertruck-end",
+      "date": "2027-09-15",
+      "dateLabel": "End of summer 2027",
+      "type": "product",
+      "title": "Cybertruck production ends at Giga Texas",
+      "detail": "Musk first said mid-2027 (6 Nov), then extended production “through the end of summer 2027” (11 Nov) to work through the backlog; the line is then converted for Cybercab.",
+      "source": "@elonmusk on X, 11 Nov 2026",
+      "url": "https://x.com/elonmusk/status/2120565056429814073"
+    },
+    {
+      "id": "musk-vest",
+      "date": "2028-01-19",
+      "dateLabel": "19 Jan 2028",
+      "type": "shares",
+      "title": "Musk’s 2018-award restricted shares vest",
+      "detail": "About 304.0M options were exercised in June 2026 (≈17.5M shares withheld for the exercise price); the resulting restricted shares vest on 19 Jan 2028 if Musk stays in service, then carry a five-year holding period.",
+      "source": "Q3 2026 10-Q, Note on 2026 Implementation Agreement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+    }
+  ],
+  "risks": [
+    {
+      "title": "Merger terms and conflicts",
+      "detail": "Musk holds about 20% of Tesla and roughly 82% of SpaceX voting power. The exchange ratio is undecided, and a change in control can accelerate both of his pay packages; independent special committees are negotiating."
+    },
+    {
+      "title": "Valuation",
+      "detail": "About 478× trailing GAAP EPS (CNBC) and ~230× Street FY2026 non-GAAP EPS. The average Street target ($412) is only ~4% above the 12 Nov close, and 22 of 44 analysts rate it Hold."
+    },
+    {
+      "title": "Core auto economics",
+      "detail": "Q3 deliveries fell 2% year on year, average selling prices fell again, and regulatory-credit revenue dropped to $113M from $417M. Battery supply is the stated limit on volume."
+    },
+    {
+      "title": "Capex and free cash flow",
+      "detail": "Tesla guides ~$20B of capex for 2026, rising after that (Musk: “tens of billions in ’28”). Street FY2026 free cash flow is about −$4.6B, but $45.4B of cash and $30B of undrawn credit lines cushion it."
+    },
+    {
+      "title": "Autonomy and regulation",
+      "detail": "FSD is still supervised in customer cars, and unsupervised use is targeted for ~Q2 2027. NHTSA sent a 21-question special order on Cybercab’s self-certification, and a securities class action concerns Autopilot/FSD/Robotaxi statements."
+    },
+    {
+      "title": "Energy, tariffs and politics",
+      "detail": "Q3 energy revenue fell 16% partly due to tariff-related refunds, and deployments of 13.7 GWh missed the ~15.9 GWh estimate. Democrats now control Congress and have pledged to scrutinise Musk’s companies."
+    }
+  ]
+}

@@ -1,10 +1,11 @@
-/* Live price & chart: official U.S. last sale during pre / regular / after-hours; Hyperliquid xyz:SPCX in the overnight gap. */
+/* Live price & chart: official U.S. last sale during pre / regular / after-hours; Hyperliquid (xyz:SPCX, xyz:TSLA, …) in the overnight gap.
+   Defaults are SpaceX; call SPCXPrice.configure({...}) before startLive() to point it at another company. */
 (function (global) {
   const TZ = "Europe/Stockholm";
   const ET = "America/New_York";
   const HL_INFO = "https://api.hyperliquid.xyz/info";
   const HL_WS = "wss://api.hyperliquid.xyz/ws";
-  const COIN = "xyz:SPCX";
+  let COIN = "xyz:SPCX";
   const INTERVAL = "5m";
   const INTERVAL_MS = 5 * 60 * 1000;
   const WINDOW_MS = 24 * 3600 * 1000;
@@ -12,8 +13,23 @@
   // confirmed from https://claesberg-sketch.github.io. The quote is flagged realTime and
   // sourced as "Last NASDAQ LS" (U.S. tape). Nasdaq api.nasdaq.com and Yahoo query endpoints
   // return the same last sale from curl but are CORS-blocked in the browser.
-  const CNBC_QUOTE = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=SPCX&requestMethod=quick&exthrs=1&noform=1&partnerId=2&output=json";
-  const CNBC_BARS = "https://ts-api.cnbc.com/harmony/app/bars/SPCX.O";
+  let CNBC_QUOTE = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=SPCX&requestMethod=quick&exthrs=1&noform=1&partnerId=2&output=json";
+  let CNBC_BARS = "https://ts-api.cnbc.com/harmony/app/bars/SPCX.O";
+  let YAHOO_SYMBOL = "SPCX";
+  // Optional per-company overview tiles (default: the SpaceX tiles below).
+  let overviewHook = null;
+
+  function configure(cfg) {
+    cfg = cfg || {};
+    if (cfg.coin) COIN = cfg.coin;
+    if (cfg.cnbcSymbol) {
+      CNBC_QUOTE = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + encodeURIComponent(cfg.cnbcSymbol) + "&requestMethod=quick&exthrs=1&noform=1&partnerId=2&output=json";
+    }
+    if (cfg.cnbcBarsSymbol) CNBC_BARS = "https://ts-api.cnbc.com/harmony/app/bars/" + encodeURIComponent(cfg.cnbcBarsSymbol);
+    if (cfg.yahooSymbol) YAHOO_SYMBOL = cfg.yahooSymbol;
+    if (typeof cfg.overviewStats === "function") overviewHook = cfg.overviewStats;
+    return { coin: COIN, cnbcQuote: CNBC_QUOTE, cnbcBars: CNBC_BARS, yahoo: YAHOO_SYMBOL };
+  }
   // Official NYSE / Nasdaq holidays and early closes:
   // https://www.nyse.com/trade/hours-calendars/
   // https://www.nasdaq.com/market-activity/stock-market-holiday-schedule
@@ -256,7 +272,7 @@
   }
 
   async function tryYahooLive() {
-    const url = "https://query1.finance.yahoo.com/v8/finance/chart/SPCX?interval=1m&range=1d&includePrePost=true";
+    const url = "https://query1.finance.yahoo.com/v8/finance/chart/" + YAHOO_SYMBOL + "?interval=1m&range=1d&includePrePost=true";
     const res = await fetch(url);
     if (!res.ok) throw new Error("yahoo " + res.status);
     return res.json();
@@ -758,7 +774,7 @@
     if (caption) {
       caption.textContent = official
         ? "Official U.S. last sale via CNBC, 1-minute bars from the start of today's pre-market, time in CET/CEST. The last point is the live last sale, at the current time. Shaded bands are U.S. pre / regular / after-hours sessions. Real-time, not a 15-minute delayed feed."
-        : "Hyperliquid xyz:SPCX, 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session from the snapshot. Shaded bands mark U.S. pre / regular / after-hours sessions and Hyperliquid when the U.S. cash market is closed.";
+        : "Hyperliquid " + COIN + ", 5-minute candles, time in CET/CEST. The last point is the live mid, at the current time. The dashed line is the official Nasdaq/Yahoo regular session from the snapshot. Shaded bands mark U.S. pre / regular / after-hours sessions and Hyperliquid when the U.S. cash market is closed.";
     }
     const bands = cashBands(minX, maxX, { includeHl: !official });
     const datasets = [];
@@ -777,7 +793,7 @@
       });
     } else {
       datasets.push({
-        label: "Hyperliquid xyz:SPCX",
+        label: "Hyperliquid " + COIN,
         data: hlPts,
         borderColor: color,
         backgroundColor: fill,
@@ -965,7 +981,7 @@
     const mkt = shares && display != null ? shares * display : null;
     const ev = mkt != null && cash != null && debt != null ? mkt - cash + debt : null;
 
-    const stats = [
+    let stats = [
       { k: "Market cap", v: compact(mkt), s: shares ? ("13.581B shares × " + (officialOn ? "official last sale" : "live Hyperliquid mid")) : "" },
       { k: "Enterprise value", v: compact(ev), s: "Net cash $52.0B (30 Sep 2026 10-Q)" },
       { k: "52-week range", v: money(y.fiftyTwoWeekLow) + " – " + money(y.fiftyTwoWeekHigh) },
@@ -977,6 +993,11 @@
         ? SPCXUnlocks.overviewStat(unlocksData)
         : { k: "Next share unlock", v: "—", s: "" }),
     ];
+    if (typeof overviewHook === "function") {
+      try {
+        stats = overviewHook({ q, y, off, officialOn, display, shares, cash, debt, mkt, ev, money, compact, fmtVol }) || stats;
+      } catch (e) { console.warn("overview hook failed", e); }
+    }
     const box = document.getElementById("key-stats");
     if (box) {
       box.innerHTML = stats.map((s) => '<div class="stat"><div class="k">' + s.k + '</div><div class="v">' + s.v + '</div>' + (s.s ? '<div class="tiny">' + s.s + "</div>" : "") + "</div>").join("");
@@ -1169,6 +1190,6 @@
 
   global.SPCXPrice = {
     getSession, formatIn, money, compact, fmtVol, chgClass, chgText,
-    fetchHL, fetchOfficialQuote, fetchOfficialBars, tryYahooLive, render, startLive, setQuote, setUnlocks, TZ, ET,
+    fetchHL, fetchOfficialQuote, fetchOfficialBars, tryYahooLive, render, startLive, setQuote, setUnlocks, configure, TZ, ET,
   };
 })(window);

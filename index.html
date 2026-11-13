@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Unofficial personal investor dashboard for SpaceX (Nasdaq: SPCX), built for Claes Berg. Not affiliated with Space Exploration Technologies Corp.">
   <title>SPCX · Investor Dashboard · Claes Berg</title>
-  <link rel="stylesheet" href="css/style.css?v=45e10d0-20261113082925">
+  <link rel="stylesheet" href="css/style.css?v=02f0806-20261113085630">
   <meta name="theme-color" content="#000000">
   <meta name="robots" content="noindex,nofollow">
 </head>
@@ -23,8 +23,9 @@
           <a href="#price">Price</a>
           <a href="#news">News</a>
           <a href="#kpis">KPIs</a>
-          <a href="#launches">Launches</a>
-          <a href="#unlocks">Unlocks</a>
+          <a href="#launches" data-only="spacex">Launches</a>
+          <a href="#unlocks" data-only="spacex">Unlocks</a>
+          <a href="#ops" data-only="tesla" hidden>Operations</a>
           <a href="#calendar">Calendar</a>
           <a href="#valuation">Valuation</a>
         </nav>
@@ -60,7 +61,7 @@
       <div class="wrap">
         <p class="section-kicker">All news</p>
         <h2>One place for the company</h2>
-        <p class="lede">Press releases and IR, SEC filings, media, and posts from Elon Musk, SpaceX, Starlink, Gwynne Shotwell, SpaceX Super Intelligence, and Brian Wang. Filters apply to the list. Topics such as Starlink, Starship, AI compute, and Cursor are tagged.</p>
+        <p class="lede" id="news-lede">Press releases and IR, SEC filings, media, and posts from Elon Musk, SpaceX, Starlink, Gwynne Shotwell, SpaceX Super Intelligence, and Brian Wang. Filters apply to the list. Topics such as Starlink, Starship, AI compute, and Cursor are tagged.</p>
         <div class="filters" id="news-filters"></div>
         <p class="tiny" id="news-updated"></p>
         <div class="news-list" id="news-list"></div>
@@ -71,13 +72,13 @@
       <div class="wrap">
         <p class="section-kicker">Reported results</p>
         <h2>KPI charts</h2>
-        <p class="lede">Taken from SpaceX quarterly releases and the prospectus, with an independent satellite count from Jonathan McDowell. Missing quarters are left blank — nothing is invented to fill a gap.</p>
+        <p class="lede" id="kpi-lede">Taken from SpaceX quarterly releases and the prospectus, with an independent satellite count from Jonathan McDowell. Missing quarters are left blank — nothing is invented to fill a gap.</p>
         <div class="chart-grid" id="kpi-grid"></div>
       </div>
     </section>
 
 
-    <section class="section" id="launches">
+    <section class="section" id="launches" data-only="spacex">
       <div class="wrap">
         <p class="section-kicker">Cadence</p>
         <h2>Launch counter</h2>
@@ -103,7 +104,7 @@
       </div>
     </section>
 
-    <section class="section" id="unlocks">
+    <section class="section" id="unlocks" data-only="spacex">
       <div class="wrap">
         <p class="section-kicker">Supply</p>
         <h2>Share unlock schedule</h2>
@@ -123,13 +124,41 @@
       </div>
     </section>
 
+    <section class="section" id="ops" data-only="tesla" hidden>
+      <div class="wrap">
+        <p class="section-kicker">Operations</p>
+        <h2>Deliveries, Energy &amp; Autonomy Tracker</h2>
+        <p class="lede">Vehicle deliveries and energy storage deployments against last year, factory capacity, and where Robotaxi, Cybercab, FSD, Optimus and the energy business stand. Figures are from Tesla’s quarterly reports, SEC filings and Tesla/Musk posts. Dates Tesla has not confirmed are marked.</p>
+        <div class="stats launch-stats" id="ops-stats"></div>
+        <div class="chart-grid launch-grid">
+          <div class="chart-card">
+            <h3>Deliveries per quarter, 2025 vs 2026</h3>
+            <div class="box"><canvas id="ops-deliv"></canvas></div>
+            <p class="source" id="ops-deliv-src"></p>
+          </div>
+          <div class="chart-card">
+            <h3>Energy storage deployed per quarter, 2025 vs 2026 (GWh)</h3>
+            <div class="box"><canvas id="ops-storage"></canvas></div>
+            <p class="source" id="ops-storage-src"></p>
+          </div>
+        </div>
+        <div class="card launch-milestones">
+          <p class="section-kicker">Autonomy, robots &amp; energy</p>
+          <div id="ops-milestones"></div>
+          <p class="ms-sub">Installed annual capacity (30 Sep 2026)</p>
+          <div class="table-scroll" id="ops-capacity"></div>
+          <p class="source" id="ops-sources"></p>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="calendar">
       <div class="wrap">
         <div class="extra-grid">
           <div class="card">
             <p class="section-kicker">Setup</p>
-            <h3>Launch &amp; catalyst calendar</h3>
-            <div class="unlock-next compact" id="calendar-unlock-next"></div>
+            <h3 id="calendar-title">Launch &amp; catalyst calendar</h3>
+            <div class="unlock-next compact" id="calendar-unlock-next" data-only="spacex"></div>
             <div id="calendar-list"></div>
           </div>
           <div class="card" id="valuation">
@@ -138,10 +167,10 @@
             <div id="valuation-body"></div>
           </div>
           <div class="card">
-            <p class="section-kicker">Supply</p>
-            <h3>Lock-ups &amp; float</h3>
+            <p class="section-kicker" id="lockup-kicker">Supply</p>
+            <h3 id="lockup-title">Lock-ups &amp; float</h3>
             <div id="lockup-body"></div>
-            <p class="source"><a href="#unlocks">Share unlock chart &amp; next release</a></p>
+            <p class="source" data-only="spacex"><a href="#unlocks">Share unlock chart &amp; next release</a></p>
           </div>
           <div class="card">
             <p class="section-kicker">Watch</p>
@@ -163,16 +192,17 @@
     <div class="wrap">
       <p class="unofficial">Unofficial – personal investor dashboard</p>
       <p>Built for Claes Berg. Not affiliated with, endorsed by, or an official publication of Space Exploration Technologies Corp., Tesla, NVIDIA, or any of their subsidiaries. Design is inspired by the public look of spacex.com (black field, wide-tracked sans type, thin rules, ghost buttons) but does not use SpaceX trademarks or logo artwork. All figures are from public sources or are labelled estimates. Nothing here is investment advice.</p>
-      <p style="margin-top:10px">Data: Yahoo Finance (server-side), Hyperliquid <code>xyz:SPCX</code> (live mid and 5-minute candles in the browser, 24/7), company IR and SEC filings, Google News RSS, Jonathan McDowell, StockAnalysis / S&amp;P Global, FloatCap compilations of the 424(b)(4) and 10-Q. X posts were last pulled on 11 Nov 2026 into this repo (Actions cannot call the X connector). Publish times in the news feed are shown in Europe/Stockholm as CET or CEST.</p>
+      <p style="margin-top:10px" id="footer-data">Data: Yahoo Finance (server-side), Hyperliquid <code>xyz:SPCX</code> (live mid and 5-minute candles in the browser, 24/7), company IR and SEC filings, Google News RSS, Jonathan McDowell, StockAnalysis / S&amp;P Global, FloatCap compilations of the 424(b)(4) and 10-Q. X posts were last pulled on 11 Nov 2026 into this repo (Actions cannot call the X connector). Publish times in the news feed are shown in Europe/Stockholm as CET or CEST.</p>
     </div>
   </footer>
 
-  <script src="js/vendor/chart.umd.min.js?v=45e10d0-20261113082925"></script>
-  <script src="js/price.js?v=45e10d0-20261113082925"></script>
-  <script src="js/charts.js?v=45e10d0-20261113082925"></script>
-  <script src="js/unlocks.js?v=45e10d0-20261113082925"></script>
-  <script src="js/launches.js?v=45e10d0-20261113082925"></script>
-  <script src="js/indexweight.js?v=45e10d0-20261113082925"></script>
-  <script src="js/app.js?v=45e10d0-20261113082925"></script>
+  <script src="js/vendor/chart.umd.min.js?v=02f0806-20261113085630"></script>
+  <script src="js/price.js?v=02f0806-20261113085630"></script>
+  <script src="js/charts.js?v=02f0806-20261113085630"></script>
+  <script src="js/unlocks.js?v=02f0806-20261113085630"></script>
+  <script src="js/launches.js?v=02f0806-20261113085630"></script>
+  <script src="js/indexweight.js?v=02f0806-20261113085630"></script>
+  <script src="js/tesla.js?v=02f0806-20261113085630"></script>
+  <script src="js/app.js?v=02f0806-20261113085630"></script>
 </body>
 </html>

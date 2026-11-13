@@ -1,0 +1,164 @@
+{
+  "updated": "2026-11-13T10:00:00+01:00",
+  "source": "EDGAR company browse page and filing-index directories for CIK 0001318605, read 13 Nov 2026 (data.sec.gov returned 403 to the box). Acceptance times are from each filing index, Eastern Time converted to UTC.",
+  "items": [
+    {
+      "id": "filing-0001104659-26-124575",
+      "type": "filing",
+      "date": "2026-11-09",
+      "datetime": "2026-11-09T22:00:06Z",
+      "timeSource": "EDGAR filing index: accepted 2026-11-09 17:00:06 ET",
+      "form": "DEFA14A",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Governance"
+      ],
+      "title": "DEFA14A — additional proxy materials (digital ads for the 3 Dec annual meeting)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926124575/tm267596d11_defa14a.htm",
+      "summary": "Tesla filed the digital and social-media advertisements it ran on 9 November 2026 urging shareholders to vote at the 2026 annual meeting. The filing repeats that directors Elon Musk, Robyn Denholm, JB Straubel and the rest of the board are participants in the proxy solicitation."
+    },
+    {
+      "id": "filing-0001104659-26-123945",
+      "type": "filing",
+      "date": "2026-11-06",
+      "datetime": "2026-11-06T22:00:07Z",
+      "timeSource": "EDGAR filing index: accepted 2026-11-06 17:00:07 ET",
+      "form": "DEFA14A",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Governance"
+      ],
+      "title": "DEFA14A — shareholder letter and VoteTesla.com update",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926123945/tm267596d10_defa14a.htm",
+      "summary": "This filing contains the Board’s 6 November letter (“Act Like the Owner You Are. Vote.”) and the updated VoteTesla.com pages. It asks holders to back all three ballot items and highlights the Voluntary Retail Voting Program."
+    },
+    {
+      "id": "filing-0001104659-26-121458",
+      "type": "filing",
+      "date": "2026-11-02",
+      "datetime": "2026-11-02T22:00:16Z",
+      "timeSource": "EDGAR filing index: accepted 2026-11-02 17:00:16 ET",
+      "form": "DEFA14A",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Governance"
+      ],
+      "title": "DEFA14A — additional proxy materials (digital ads)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926121458/tm267596d9_defa14a.htm",
+      "summary": "Tesla filed copies of 2 November digital and social advertisements telling shareholders “Your Board sets bold goals and delivers” and to vote for all three proposals before the 3 December meeting. No new financial information is included."
+    },
+    {
+      "id": "filing-0001104659-26-120263",
+      "type": "filing",
+      "date": "2026-10-29",
+      "datetime": "2026-10-29T21:00:20Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-29 17:00:20 ET",
+      "form": "DEFA14A",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Governance"
+      ],
+      "title": "DEFA14A — shareholder letter backing the Class I directors",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926120263/tm267596d8_defa14a.htm",
+      "summary": "The filing carries the Board’s 29 October letter supporting the re-election of Musk, Denholm and Straubel and confirms the meeting time of 3:00 p.m. CT on 3 December 2026. It lists 1.74 million paid FSD customers and more than 10 million vehicles delivered as achievements."
+    },
+    {
+      "id": "filing-0002012383-26-003852",
+      "type": "filing",
+      "date": "2026-10-27",
+      "datetime": "2026-10-27T21:25:35Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-27 17:25:35 ET",
+      "form": "SCHEDULE 13G/A",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings"
+      ],
+      "title": "SCHEDULE 13G/A — BlackRock reports 4.96% of Tesla",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000201238326003852/primary_doc.xml",
+      "summary": "BlackRock, Inc. reported beneficial ownership of 196,348,742 Tesla shares, 4.96% of the class, as of 30 September 2026. The amendment states that no single person’s interest within the holding exceeds 5% of Tesla’s outstanding shares."
+    },
+    {
+      "id": "filing-0001628280-26-066775",
+      "type": "filing",
+      "date": "2026-10-21",
+      "datetime": "2026-10-22T00:12:41Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-21 20:12:41 ET (filing date 22 Oct)",
+      "form": "10-Q",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ],
+      "title": "10-Q — quarter ended 30 Sep 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+      "summary": "The Q3 10-Q shows 3,952,757,946 shares outstanding on 15 October 2026, nine-month operating cash flow of $14.90 billion and capex of $13.01 billion. It also details Musk’s June exercise of ~304.0 million 2018-award options (net-settling ~17.5 million shares) into restricted shares that vest on 19 January 2028, and the 423.7 million-share 2025 CEO Performance Award."
+    },
+    {
+      "id": "filing-0001628280-26-066738",
+      "type": "filing",
+      "date": "2026-10-21",
+      "datetime": "2026-10-21T20:41:42Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-21 16:41:42 ET",
+      "form": "8-K",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ],
+      "title": "8-K — Items 2.02 and 9.01, Q3 2026 results (Update deck as Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm",
+      "summary": "Tesla furnished its Q3 2026 Update as Exhibit 99.1, reporting $28.05 billion revenue, 19.6% GAAP gross margin, 2.6% operating margin and $1.53 billion free cash flow. The deck also lists 8,904 Supercharger stations, 1.74 million active FSD subscriptions and more than 225 MW of Cortex training compute."
+    },
+    {
+      "id": "filing-0001104659-26-116700",
+      "type": "filing",
+      "date": "2026-10-19",
+      "datetime": "2026-10-19T10:15:30Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-19 06:15:30 ET",
+      "form": "DEF 14A",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Governance"
+      ],
+      "title": "DEF 14A — 2026 annual meeting proxy statement",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+      "summary": "The definitive proxy sets the 2026 annual meeting for 3 December at Gigafactory Texas, with three items: electing Musk, Denholm and Straubel, an advisory say-on-pay vote and ratifying PwC as auditor. It also introduces the Voluntary Retail Voting Program for future meetings."
+    },
+    {
+      "id": "filing-0001628280-26-064366",
+      "type": "filing",
+      "date": "2026-10-02",
+      "datetime": "2026-10-02T13:04:26Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-02 09:04:26 ET",
+      "form": "8-K",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings",
+        "Deliveries"
+      ],
+      "title": "8-K — Q3 2026 production, deliveries and deployments",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/exhibit991111111.htm",
+      "summary": "Tesla furnished its Q3 2026 volume release: 464,391 vehicles produced, 486,532 delivered and 13.7 GWh of storage deployed. About 1% of deliveries were subject to operating-lease accounting."
+    },
+    {
+      "id": "filing-0001628280-26-063820",
+      "type": "filing",
+      "date": "2026-09-29",
+      "datetime": "2026-09-29T20:38:50Z",
+      "timeSource": "EDGAR filing index: accepted 2026-09-29 16:38:50 ET",
+      "form": "8-K",
+      "source": "SEC EDGAR",
+      "topics": [
+        "Filings"
+      ],
+      "title": "8-K — $30 billion of new unsecured credit facilities",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm",
+      "summary": "Tesla entered a $20.0 billion three-year delayed-draw term loan, an $8.0 billion five-year revolver and a $2.0 billion 364-day revolver, replacing a $5.0 billion 2023 revolver. Nothing was drawn at signing, the agreements require at least $5.0 billion of liquidity, and Tesla said it does not plan to draw on them in 2026."
+    }
+  ]
+}

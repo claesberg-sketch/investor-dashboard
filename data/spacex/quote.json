@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T01:39:04Z",
+  "updated": "2026-11-13T08:55:04Z",
   "symbol": "SPCX",
   "yahoo": {
     "ok": true,
@@ -19,9 +19,9 @@
     "chartPreviousClose": 123.62,
     "fiftyTwoWeekHigh": 225.64,
     "fiftyTwoWeekLow": 104.83,
-    "fulldayPrice": 142.18,
-    "fulldayChange": 2.43,
-    "fulldayChangePercent": 1.739,
+    "fulldayPrice": 140.47,
+    "fulldayChange": 0.72,
+    "fulldayChangePercent": 0.515,
     "hasPrePostMarketData": true,
     "timezone": "EST",
     "gmtoffset": -18000,
@@ -29,20 +29,20 @@
     "currentTradingPeriod": {
       "pre": {
         "timezone": "EST",
-        "start": 1794474000,
-        "end": 1794493800,
+        "end": 1794580200,
+        "start": 1794560400,
         "gmtoffset": -18000
       },
       "regular": {
         "timezone": "EST",
-        "start": 1794493800,
-        "end": 1794517200,
+        "end": 1794603600,
+        "start": 1794580200,
         "gmtoffset": -18000
       },
       "post": {
         "timezone": "EST",
-        "start": 1794517200,
-        "end": 1794531600,
+        "end": 1794618000,
+        "start": 1794603600,
         "gmtoffset": -18000
       }
     },
@@ -23860,19 +23860,24 @@
       "t": 1794407400,
       "c": 139.75,
       "v": 114209100
+    },
+    {
+      "t": 1794493800,
+      "c": 139.94000244140625,
+      "v": 95236400
     }
   ],
   "hyperliquid": {
     "ok": true,
     "symbol": "xyz:SPCX",
     "dex": "xyz",
-    "midPx": 142.165,
-    "markPx": 142.18,
-    "oraclePx": 142.18,
-    "prevDayPx": 139.14,
+    "midPx": 140.495,
+    "markPx": 140.48,
+    "oraclePx": 140.45,
+    "prevDayPx": 138.9,
     "funding": "0.00000625",
-    "dayNtlVlm": 148163781.13629988,
-    "premium": "-0.0001055001",
+    "dayNtlVlm": 154404592.8070001,
+    "premium": "0.0003456746",
     "cors": "access-control-allow-origin: * (browser fetch works)"
   },
   "fundamentals": {

@@ -1,0 +1,95 @@
+{
+  "id": "tesla",
+  "ticker": "TSLA",
+  "name": "Tesla, Inc.",
+  "exchange": "NasdaqGS",
+  "cik": "0001318605",
+  "cusip": "88160R101",
+  "sharesOutstanding": 3952757946,
+  "sharesAsOf": "2026-10-15",
+  "sharesSource": {
+    "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+    "detail": "As of October 15, 2026, there were 3,952,757,946 shares of the registrant's common stock outstanding."
+  },
+  "weightedShares": {
+    "basicQ3_2026M": 3240,
+    "dilutedQ3_2026M": 3541,
+    "source": {
+      "label": "Q3 2026 Update, statement of operations",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+    }
+  },
+  "cashAndStInvestmentsUsd": 45447000000,
+  "totalDebtUsd": 9523000000,
+  "debtDetail": "Current portion of debt and finance leases $1,387M + non-current $8,136M = $9,523M (non-recourse debt $9,265M, recourse $2M).",
+  "balanceSheetAsOf": "2026-09-30",
+  "balanceSheetSource": {
+    "label": "Q3 2026 Update balance sheet / Form 10-Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+  },
+  "creditFacilities": {
+    "totalUsd": 30000000000,
+    "detail": "$20.0B 3-year delayed-draw term loan + $8.0B 5-year revolver + $2.0B 364-day revolver, entered 29 Sep 2026; nothing drawn and Tesla said it does not plan to draw in 2026.",
+    "source": {
+      "label": "8-K, 29 Sep 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm"
+    }
+  },
+  "spacexStake": {
+    "costUsd": 2000000000,
+    "shares": 18990195,
+    "detail": "$2.00B xAI preferred investment converted into SpaceX Class A stock (closed 12 Mar 2026), under 1% of SpaceX; carried at fair value.",
+    "source": {
+      "label": "Q3 2026 10-Q, related-party note",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+    }
+  },
+  "hyperliquid": {
+    "symbol": "xyz:TSLA",
+    "dex": "xyz",
+    "deployer": "trade.xyz",
+    "type": "HIP-3 US-stock perpetual, cash-settled in USDC",
+    "maxLeverage": 20,
+    "note": "Price exposure only, not share ownership. Used on this dashboard in the overnight window after U.S. after-hours (8:00 p.m. ET) and before pre-market (4:00 a.m. ET), and on weekends/holidays. Verified in the xyz universe (metaAndAssetCtxs, dex=xyz) on 13 Nov 2026."
+  },
+  "xAccounts": [
+    {
+      "username": "Tesla",
+      "name": "Tesla",
+      "id": "13298072"
+    },
+    {
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "id": "44196397"
+    },
+    {
+      "username": "robotaxi",
+      "name": "Robotaxi",
+      "id": "1853866883851620352"
+    },
+    {
+      "username": "teslaenergy",
+      "name": "Tesla Energy",
+      "id": "1405917556318392324"
+    },
+    {
+      "username": "Tesla_Optimus",
+      "name": "Tesla Optimus",
+      "id": "1616163256413863943",
+      "note": "No original posts since 1 Oct 2026 (checked 13 Nov 2026)."
+    }
+  ],
+  "ui": {
+    "title": "TSLA · Investor Dashboard · Claes Berg",
+    "description": "Unofficial personal investor dashboard for Tesla (Nasdaq: TSLA), built for Claes Berg. Not affiliated with Tesla, Inc.",
+    "intradayCaption": "Live U.S. last sale during pre-market, regular session, and after-hours; Hyperliquid xyz:TSLA when the U.S. market is closed. Time in CET/CEST.",
+    "newsLede": "Tesla IR updates and shareholder letters, SEC filings, media, and posts from @Tesla, @elonmusk (Tesla-related only), @robotaxi and @teslaenergy. Filters apply to the list. Topics such as Robotaxi, FSD, Optimus, Energy and Cybertruck are tagged.",
+    "kpiLede": "Taken from Tesla’s quarterly Update decks (Exhibit 99.1 to the earnings 8-Ks) and the Q3 2026 10-Q, Q4 2024 through Q3 2026. Nothing is estimated or interpolated — every bar is a reported figure.",
+    "calendarTitle": "Catalyst calendar",
+    "lockupKicker": "Capital",
+    "lockupTitle": "Share structure &amp; ownership",
+    "footerData": "Data: Yahoo Finance (server-side), CNBC real-time U.S. last sale and 1-minute bars (browser), Hyperliquid <code>xyz:TSLA</code> (live mid and 5-minute candles in the browser, 24/7), Tesla Update decks and SEC filings (10-Q, 8-K, DEF 14A, 13G), Google News RSS, StockAnalysis / S&amp;P Global for Street estimates. X posts were last pulled on 13 Nov 2026 into this repo. Publish times in the news feed are shown in Europe/Stockholm as CET or CEST."
+  }
+}
