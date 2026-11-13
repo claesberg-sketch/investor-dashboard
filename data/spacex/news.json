@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T12:02:06Z",
+  "updated": "2026-11-13T13:09:03Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -22,7 +22,19 @@
   },
   "items": [
     {
-      "id": "media-39",
+      "id": "media-6",
+      "type": "media",
+      "date": "2026-11-13",
+      "datetime": "2026-11-13T10:00:00Z",
+      "title": "SpaceX's giant rocket may leave NASA in the dust - NPR",
+      "source": "NPR",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS29lRWxDTEFxWU55UU1fMlhIcXNJamF3bFRkX01nWEhnRjI1QjNnZHppcERYSFJPTzVJVHlvc0pVVkh6WENxSTJQTkVlODhuaGY4b1dzWUhTcjVJZ0w0NGhNWmtsQ0JkNzRlX2trUS1KVkozZFJFOGFWeXRCQVZtUHV1YllJalFsT3Qxd2tObFBKdw?oc=5",
+      "snippet": "SpaceX's giant rocket may leave NASA in the dust NPR",
+      "topics": [],
+      "summary": "An NPR report by Geoff Brumfiel, published 13 November 2026, says SpaceX plans its most ambitious Starship test later today — lift off from South Texas, orbit Earth, and land vertically at the same pad 22 and a half hours later — and that experts warn the shift toward Starship could strand NASA, because SpaceX has said it will stop flying Falcon 9, which launches Dragon, currently the only American spacecraft that can ferry NASA astronauts to and from the ISS. NASA has contracted three additional ISS flights that would only take Dragon through 2028 if flown every six months with no further orders; SpaceX did not comment, its latest report showed about $2.1 billion of launch revenue through September versus $12.8 billion from Starlink and $10.9 billion from AI, and Gwynne Shotwell suggested Boeing’s problem-plagued Starliner (next crewed flight sometime in 2028) could take some of that NASA business."
+    },
+    {
+      "id": "media-38",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T05:07:23Z",
@@ -37,19 +49,21 @@
       "summary": "A Space.com piece by Mike Wall, published 13 November 2026, says Starship Flight 15 is scheduled to lift off today from Starbase during a 75-minute window that opens at 5:45 p.m. EST, with SpaceX planning to catch both Super Heavy and Ship on the tower’s “chopstick” arms — something it has never done before. The plan is for Super Heavy to return about 6.5 minutes after launch, for Ship to deploy 26 Starlink V3 satellites (the second such batch after Flight 14 on 28 September) and then come back for a catch on 14 November about 22.5 hours after liftoff, or splash down in the Pacific if a catch is called off."
     },
     {
-      "id": "media-33",
+      "id": "media-39",
       "type": "media",
-      "date": "2026-11-13",
-      "datetime": "2026-11-13T04:59:41Z",
-      "title": "Zelensky says Musk-owned satellite system throttled again, Space X denies it - Axios",
-      "source": "Axios",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTzQyRDlJZHdQMzRHV1lGenRGbk5FLUM3R3BGNFZ1U0ZYRXFpQk9ZY2tUeFRTQ3o3UW1pcmgwcHlEaWVfa2tPT2VQSkVCelJMLWlydWRLSUU2X3VHZTJmYXM5QUY0ekhSTUE4R1hXQ3hjWURxNUp3YmFUX1Y0dXRBaHNiTGljcVdOdkliYmxR?oc=5",
-      "snippet": "Zelensky says Musk-owned satellite system throttled again, Space X denies it Axios",
-      "topics": [],
-      "summary": "An Axios report by Barak Ravid and Thomas Novelly, dated 12 November 2026, says the Ukrainian government has asked the Pentagon and SpaceX to explain new restrictions it says are disrupting Starshield, the military version of Starlink used to operate reconnaissance and intercept drones — the second such complaint in recent weeks — and quotes SpaceX telling Axios: “This is false. There has been no change.” President Volodymyr Zelenskyy said units have recorded significant, systematic speed restrictions along the entire front line and in occupied areas, and a Ukrainian official told Axios the limits built over three days until 100% of missions failed, with Ukraine’s chargé d’affaires Denys Sienik saying the system shuts down when drones fly faster than 100 mph."
+      "date": "2026-11-12",
+      "datetime": "2026-11-12T21:27:41Z",
+      "title": "United Airlines CEO: Starlink is our biggest competitive advantage in 100 years - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZF9Bc2o2Vl9PdHVwRXVHeGNTZ0JPQVZGd0ttaFZNUGI3LTRwZW02X0V6aVdEalQwZERHV3NyZ3drc2NDLWdsTnprSDNScnoxaEk3ZU1Tc3VvQ2lZY3VITkpzWHIwNVpySGxXRHhHcUhBLTZzTnk2SmtZMDNEb1pQeW9VODBnM1h5VnhES3FjeHZjLWNseWZWMkRVWFNYeUFwZk0zVmlSUnRrRmY0dkprT0xyazlYWnB2N0R0Q3pFLTNaSTB4c2g1MU8tb0xKM1gt?oc=5",
+      "snippet": "United Airlines CEO: Starlink is our biggest competitive advantage in 100 years Yahoo Finance",
+      "topics": [
+        "Starlink"
+      ],
+      "summary": "A Yahoo Finance piece by Brian Sozzi, dated 12 November 2026, quotes United Airlines CEO Scott Kirby at Yahoo Finance Invest calling Starlink Wi-Fi “the biggest near-term competitive advantage that we’ve ever had in United’s 100-year history,” the No. 1 reason people pick a flight, and a reason customers are trying United, with all JFK flights to be on Starlink when the airline starts service there. Jefferies’ Sheila Kahyaoglu said United has equipped nearly 600 aircraft (300 regional and 300 mainline); Kirby said 50% of the mainline fleet should have Starlink by year-end, 87% by the end of next summer, and 100% of the fleet by the end of 2027, called Amazon’s Leo “a mistake,” and said he still respects Delta, which has signed up for a Leo rollout not expected to begin until 2028."
     },
     {
-      "id": "media-12",
+      "id": "media-15",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T21:15:43Z",
@@ -61,19 +75,7 @@
       "summary": "A Reuters report dated 12 November 2026, citing Bloomberg News and people familiar with the matter, says SpaceX and Tesla are progressing in their merger negotiations and that a deal could be announced as early as December. The companies have also discussed a scenario in which the announcement slips into early 2027; Reuters said SpaceX and Tesla could not be immediately reached for comment. Reuters.com itself was paywalled here (401); this summary is from the same Reuters brief as carried by CNA."
     },
     {
-      "id": "media-40",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T21:13:08Z",
-      "title": "SpaceX-Tesla Merger Could Come Soon: What Do Shareholders Get? - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMW9aemx6Rjkyb1pDcmpWZ3U1Y3RvY0pwczNrSlQ1TTFCN0FOV09GME9HTnh0Y0JfWC1LaTJibXFBS0ttelo2bkVHSmh0M1U2U09jU1JYdDdGZWdVYlFmQnJqbWh1UUlLT3Z2NktSRjlpNWhwZVFJLVdkUUpqazlKWUVJNVFKb1FtM0Q5bTRPbzZjc3JGRVpJMURwcw?oc=5",
-      "snippet": "SpaceX-Tesla Merger Could Come Soon: What Do Shareholders Get? Yahoo Finance",
-      "topics": [],
-      "summary": "A BeInCrypto article by Lockridge Okoth, dated 12 November 2026 and listed in Google News under Yahoo Finance, says Bloomberg reported that SpaceX–Tesla merger talks are progressing and a deal could be announced as early as December, though no terms are signed and the timetable could slip into 2027. It cites Bank of America analyst Alexander Perry saying SpaceX would buy Tesla with stock, leaving Tesla holders with about 47% of the combined company at a 20% premium on 20 October prices, and notes Tesla’s majority-of-outstanding-shares vote rule plus China regulatory risk could still block the deal."
-    },
-    {
-      "id": "media-5",
+      "id": "media-4",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T20:23:24Z",
@@ -85,7 +87,7 @@
       "summary": "A Reuters report dated 12 November 2026 says SpaceX plans to invest more than $74 billion in two supercomputing campuses — more than $24 billion at Starbase in Texas and roughly $50 billion in Cochise County, Arizona — expanding an AI business that already generated more than half of third-quarter revenue. The Arizona campus still needs county approval and faces a 2,400-signature petition ahead of a December public hearing, while a Starbase city notice describes a gas-fired power plant and supercomputing facility on about 444 acres, with the City Commission due to consider a property tax abatement on 9 December."
     },
     {
-      "id": "media-8",
+      "id": "media-10",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T20:22:35Z",
@@ -100,7 +102,7 @@
       "id": "media-31",
       "type": "media",
       "date": "2026-11-12",
-      "datetime": "2026-11-12T19:29:19Z",
+      "datetime": "2026-11-12T19:45:26Z",
       "title": "SpaceX Plans $74 Billion Investment to Build Data Centers in Texas and Arizona - The New York Times",
       "source": "The New York Times",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE50Ym5PVmtVcmozcmwzTDBvSVZuSUVuanV6R3FNY0lrQm5GZ3pYZk1TQThWd2xERm9xUWs0NEdpTnpmSEFsOG9NT1hxdHVOb2xUSVNjeWhCckR3eGxoLTlSN2VyTV9EQXJ5VDJsM3Vxalp2NF9oTFE?oc=5",
@@ -111,16 +113,16 @@
       "summary": "A New York Times report dated 12 November 2026 says SpaceX plans a $74 billion investment to build data centers in Texas and Arizona. That tracks SpaceX’s own 12 November update, which puts more than $24 billion into a self-powered supercompute site at Starbase in the Rio Grande Valley and about $50 billion into a Cochise County, Arizona campus; the NYT page itself did not return a readable full text here, so this summary is from the headline plus that official company update."
     },
     {
-      "id": "media-2",
+      "id": "media-28",
       "type": "media",
       "date": "2026-11-12",
-      "datetime": "2026-11-12T19:21:50Z",
-      "title": "Space Exploration Technologies Corp. (SPCX) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-      "source": "Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5mRHFBcDFldmxyZHp2LTB2Z0hUM0R6Y0l2akcyU1NjVXN2YW9wYVVTRFUtdnRIM1JTd1llcDVKcFhobkowNUZxNVlYSE1NZ2Z6OUE?oc=5",
-      "snippet": "Space Exploration Technologies Corp. (SPCX) Stock Price, News, Quote & History Yahoo! Finance Canada",
+      "datetime": "2026-11-12T19:15:00Z",
+      "title": "What a $1,000 Investment in SpaceX Could Be Worth in 5 Years - The Motley Fool",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSVQwdlpsTVNpWkE2dGpwdjAzdjNONzA3LUxwenYyOGRWUHBGRUFDQ2paclFGQTFSeTh1LXNRbjgwRU9TOEs0ZnFDakRkekxzX0NxOFNJOTdTdHdXU1BrNzhUV0dGM1lrLUNQYTFzUkhTbjFWM0tzQ3NrajdLdnFvQ3BkdlR5RGtkOW9JZExRdTJlZXdDM2lkUQ?oc=5",
+      "snippet": "What a $1,000 Investment in SpaceX Could Be Worth in 5 Years The Motley Fool",
       "topics": [],
-      "summary": "This is Yahoo Finance Canada’s SPCX quote page, not a news article. When fetched during the U.S. session on 11 Nov 2026, it showed the stock at $141.06, down $2.04 (1.42%) from the previous close of $143.09, with a stated market cap of about $1.92 trillion."
+      "summary": "A Motley Fool column by Leo Sun, dated 12 November 2026, notes SPCX went public at $135 on 12 June and now trades at about $143, and sketches a five-year bull case in which Musk’s $1 trillion revenue-by-2030 claim, followed by $1.2 trillion in 2031 and a 20-times-sales multiple, could imply a $24 trillion market cap, while even a miss could still see the stock double or triple, turning $1,000 into a few thousand or even tens of thousands of dollars. It says connectivity (Starlink) was 47% of nine-month 2026 revenue and the only GAAP-profitable segment, SI (X, xAI, Grok, Cursor) was 40% with positive adjusted EBITDA, and space was 12% and still unprofitable, and cites analyst expectations that full-year revenue and adjusted EBITDA grow 162% and 271% and that the company turns GAAP-profitable."
     },
     {
       "id": "media-27",
@@ -135,7 +137,7 @@
       "summary": "A CNN report by Jackie Wattles, dated 12 November 2026, says SpaceX will try on Friday, in a window from 5:45 p.m. to 7:00 p.m. ET, to bring both stages of Starship back intact — the first attempt at full recovery of an orbital launch system, which the company has called the “holy grail” of rocketry. The piece notes that a Super Heavy V3 booster has not yet been caught, that catching the roughly 52-metre Ship from orbit in the tower arms has never been demonstrated, and that FAA rules require showing the chance of a casualty is below 1 in 1 million. CNN.com English did not return a usable page here; this is from CNN’s Spanish edition of the same Wattles article."
     },
     {
-      "id": "media-30",
+      "id": "media-29",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T16:34:00Z",
@@ -161,7 +163,7 @@
       "timeSource": "Official SpaceX posts linking the 12 November Updates item"
     },
     {
-      "id": "media-25",
+      "id": "media-24",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T12:45:00Z",
@@ -176,7 +178,7 @@
       "summary": "A Motley Fool column by Keithen Drury, dated 12 Nov 2026 and listed in this feed as Yahoo Finance, argues that Super Intelligence — not Starlink or Starship — is the real reason SPCX could rally before 2027, noting SI revenue grew 830% year over year to $7.56 billion in Q3, more than half of SpaceX’s $14.6 billion total. He cites Musk’s view that annual recurring revenue could reach $500 billion to $1 trillion by the end of 2027, while warning that the stock could struggle if the market stays bearish on heavy AI spending."
     },
     {
-      "id": "media-7",
+      "id": "media-8",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T12:25:00Z",
@@ -191,7 +193,7 @@
       "summary": "A Motley Fool column by Keithen Drury, dated 12 Nov 2026, argues that Super Intelligence — not Starlink or Starship — is the real reason SPCX could rally before 2027, noting SI revenue grew 830% year over year to $7.56 billion in Q3, more than half of SpaceX’s $14.6 billion total. He cites Musk’s view that annual recurring revenue could reach $500 billion to $1 trillion by the end of 2027, while warning that the stock could struggle if the market stays bearish on heavy AI spending."
     },
     {
-      "id": "media-29",
+      "id": "media-30",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T11:42:00Z",
@@ -203,7 +205,7 @@
       "summary": "A Barron’s column dated 12 November 2026 argues that SpaceX’s share-price slump is complicating a potential all-stock Tesla merger, because a lower SPCX price would mean issuing more shares to buy Tesla. Barron’s itself returned 401 here; as relayed by Yahoo Finance and Benzinga, its hypothetical math says a 15% premium deal would need about 2.3 SPCX shares per Tesla share at $200, versus about 3.2 shares at around $140, leaving Tesla holders with more than half the combined company versus about 43% at the higher price. Those figures are illustrative — neither company has agreed terms."
     },
     {
-      "id": "media-34",
+      "id": "media-35",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T11:32:11Z",
@@ -215,7 +217,7 @@
       "summary": "A Barchart column by Ebube Jones, published 12 Nov 2026, tells SPCX holders to mark Friday 13 Nov for Starship Flight 15, when SpaceX plans to catch both the Super Heavy booster and the Starship upper stage with the launch tower’s mechanical arms — a first if it succeeds — after Flight 14 reached orbit on 28 Sept and deployed 26 Starlink V3 satellites. Jones notes shares have fallen almost 12% over the past month and that SpaceX and Tesla lost about $456 billion in combined market value after the midterms, argues a successful double catch could help the stock bounce back but would not erase valuation or spending concerns, and cites Morgan Stanley’s Adam Jonas at Overweight with a $300 price target plus a 40-analyst “Moderate Buy” consensus averaging $252.05."
     },
     {
-      "id": "media-36",
+      "id": "media-33",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T10:15:02Z",
@@ -227,7 +229,7 @@
       "summary": "A CNBC report dated 12 November 2026 says President Volodymyr Zelenskyy alleged fresh, systematic speed restrictions on SpaceX’s Starshield service over Ukraine, with terminals disconnecting above 161 km/h (100 mph) and making it harder to intercept Russian jet-powered drones along the front line and in occupied territories. CNBC says it reached out to SpaceX and the White House for comment, notes similar limits were imposed in mid-October and lifted by 24 October, and places Zelenskyy’s remarks as U.S. envoys Steve Witkoff and Jared Kushner arrived in Moscow for talks with Vladimir Putin."
     },
     {
-      "id": "media-35",
+      "id": "media-34",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T09:35:00Z",
@@ -239,7 +241,7 @@
       "summary": "A Motley Fool column by Jennifer Saibil, dated 12 Nov 2026, notes that SPCX is down 11% from its first-day close and argues that if revenue compounds at 50% a year to $247 billion in trailing sales and the shares trade at 20 times sales, the stock could be worth $357 in five years, implying a $4.9 trillion market cap. She is hesitant to recommend it, citing uncertainty around AI competition and regulation and a still-rich 58 times sales multiple that she says will keep falling and thus limit how high the price can go."
     },
     {
-      "id": "media-24",
+      "id": "media-23",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T06:50:00Z",
@@ -251,19 +253,7 @@
       "summary": "A Motley Fool column by Rick Orford, dated 12 November 2026 and carried by Yahoo Finance, sketches three earnings-based scenarios for what $1,000 in SPCX could be worth by 2029, citing Q3 revenue of $14.6 billion, $4.4 billion of net income, 13.6 million Starlink subscribers and about $19.6 billion of capex. Its conservative case (30% annual sales growth, a 20 times price-to-sales multiple) implies about $810; the base case (45%, 25 times) about $1,400; and the optimistic case (60%, 30 times) about $2,260 — the author’s calculations, not a company forecast."
     },
     {
-      "id": "media-11",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T06:15:43Z",
-      "title": "Space Exploration Technologies Corp. (SPCX) stock price, news, quote and history - Yahoo Finance UK",
-      "source": "Yahoo Finance UK",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FdjlSV3JDNDQyZmFXMkxBdjZ5WW8yY25sa09pb3lpeXAzVGxwcHdMSWpjZzJQRkpMUjY0NmdKWVBjYjBfZU01enNaRmI3ZG5PNlE?oc=5",
-      "snippet": "Space Exploration Technologies Corp. (SPCX) stock price, news, quote and history Yahoo Finance UK",
-      "topics": [],
-      "summary": "This is Yahoo Finance UK’s SPCX quote page, not a news article. When fetched just after the U.S. close on 11 Nov 2026, it showed a regular-session close of $139.75, down $3.34 (2.33%) from the previous close of $143.09, with after-hours trading at $140.01 and a stated market cap of about $1.90 trillion."
-    },
-    {
-      "id": "media-37",
+      "id": "media-36",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T05:24:54Z",
@@ -277,7 +267,7 @@
       "summary": "A Space.com report by Mike Wall, published 12 November 2026, says a Falcon 9 lifted off from Vandenberg at 11:36 p.m. EST on 11 November (8:36 p.m. local) on the classified USSF-627 mission, SpaceX’s second such Space Force flight in six days after USSF-432 on 6 November. Both payloads are undisclosed — some experts have speculated they may be Starshield satellites for the Space Force’s Space Based Sensing and Targeting portfolio — and the USSF-627 booster (designation 1103, on its seventh flight) landed about 8.5 minutes after liftoff on the Of Course I Still Love You droneship; the flight was the 120th Falcon 9 launch of 2026 and the rocket’s 15th national-security mission of the year."
     },
     {
-      "id": "media-14",
+      "id": "media-12",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T05:06:00Z",
@@ -303,7 +293,7 @@
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-627"
     },
     {
-      "id": "media-16",
+      "id": "media-13",
       "type": "media",
       "date": "2026-11-11",
       "datetime": "2026-11-11T22:23:03Z",
@@ -317,7 +307,7 @@
       "summary": "A Motley Fool market wrap by Robert Izquierdo, dated 11 Nov 2026 and listed in this feed as Yahoo Finance, says SPCX closed at $139.75, down 2.33%, after early strength from the FCC accepting SpaceX’s application to acquire 800 MHz spectrum licenses from Grain Management faded as investors focused on Friday’s Starship Flight 15. He also flags the 8 December lock-up expiry and notes Q3 revenue of $14.6 billion, up 161%, including $7.6 billion from the AI business; volume was about 111 million shares, and the stock is down 13% since the 2026 IPO."
     },
     {
-      "id": "media-17",
+      "id": "media-16",
       "type": "media",
       "date": "2026-11-11",
       "datetime": "2026-11-11T19:50:02Z",
@@ -329,7 +319,7 @@
       "summary": "A Motley Fool column by Johnny Rice, dated 11 Nov 2026 and listed in this feed as Yahoo Finance, treats Friday’s Starship Flight 15 as a major event for SPCX and quotes Morgan Stanley’s Adam Jonas calling a successful catch potentially “the biggest positive catalyst since the IPO.” SpaceX plans to catch both the Super Heavy booster and, for the first time, the Starship upper stage at Starbase after a window opening around 5:45 p.m. ET, then fly more than 22 hours, complete about 14 orbits and deploy 26 Starlink V3 satellites before a Saturday catch attempt; the author notes that none of the latest V3 boosters have been caught yet and that a miss could push the payoff further out."
     },
     {
-      "id": "media-28",
+      "id": "media-26",
       "type": "media",
       "date": "2026-11-11",
       "datetime": "2026-11-11T10:33:34Z",
@@ -344,7 +334,7 @@
       "summary": "An Ookla analysis by Sue Marek, dated 11 Nov 2026, says Starlink’s U.S. median upload speed rose 42% year over year in the first half of 2026, from 14.63 Mbps to 20.73 Mbps, improving in all 50 states and D.C., while median download speed rose a more uneven 12% nationally to 119.71 Mbps and fell in 16 states and D.C. Ookla also found that about nine in 10 new U.S. Starlink users switched from non-fiber connections such as DSL, cable or fixed wireless, and that urban Speedtest users grew 73% year over year, more than twice the 33% rural growth."
     },
     {
-      "id": "media-38",
+      "id": "media-37",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T22:22:00Z",
@@ -356,7 +346,7 @@
       "summary": "The Motley Fool uses Street price targets to sketch what a $5,000 SPCX purchase might be worth by November 2027, citing a CNN-tracked median 12-month target of $245 (about 82% above the 6 Nov close of $134.27) and a low target of $118. It notes that 47 analysts cover the stock, with most rating it a buy, and stresses that targets are not guarantees."
     },
     {
-      "id": "media-18",
+      "id": "media-17",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T20:13:00Z",
@@ -380,7 +370,7 @@
       "summary": "A Motley Fool column by Justin Pope, dated 10 November 2026 and carried on Yahoo Finance, predicts SPCX could finish 2027 around $250, about 65% above the then-current $134, after a $1.77 trillion IPO and a pullback to roughly the $135 offer price. The piece cites Q3 Super Intelligence revenue of $7.56 billion and Connectivity revenue of $5.25 billion with 13.6 million subscribers, and reaches that $250 target by annualizing the high end of Q1 2027 guidance to about $150 billion of 2027 revenue and applying a 20 times sales multiple, while warning of political and AI-industry risks."
     },
     {
-      "id": "media-3",
+      "id": "media-2",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T08:00:00Z",
@@ -392,7 +382,7 @@
       "summary": "The Google News link and the main Britannica page were blocked; Britannica’s Scholars encyclopedia entry by Alison Eldridge describes SpaceX as an American aerospace company founded by Elon Musk in 2002, now headquartered in Starbase, Texas, and covers Falcon, Dragon, Starlink and Starship plus the February 2026 xAI acquisition, a June 2026 IPO of 555.6 million shares at $135 that raised $75 billion and valued the company at about $1.77 trillion, and the August 2026 $60 billion purchase of Cursor. It says that as of June 2026 Starlink had more than 10,200 satellites in orbit and 12 million subscribers, and that after the xAI deal SpaceX made artificial intelligence one of its three main business segments alongside space and connectivity."
     },
     {
-      "id": "media-22",
+      "id": "media-21",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T00:55:49Z",
@@ -435,7 +425,7 @@
       "summary": "Space.com reports that SpaceX is targeting Friday 13 Nov 2026 for Starship Flight 15, in a 75-minute window opening at 5:45 p.m. EST from Starbase, in the first attempt to catch both Super Heavy and Ship at the tower. The mission description quoted in the article also calls for deploying 26 Starlink V3 satellites and a more than 22-hour flight of about 14 orbits at roughly 275 km, longer than Flight 14’s Pacific splashdown."
     },
     {
-      "id": "media-26",
+      "id": "media-25",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T03:27:14Z",
@@ -476,7 +466,7 @@
       "summary": "The 8-K reports that Donald Harrison, a Class B director, resigned from the SpaceX board effective 4 Nov 2026, and that the resignation was not because of any disagreement on operations, policies, or practices. An IR note the same day thanks Harrison, who had served since February 2015 and is President of Global Partnerships and Corporate Development at Google."
     },
     {
-      "id": "media-10",
+      "id": "media-11",
       "type": "media",
       "date": "2026-11-06",
       "datetime": "2026-11-06T17:53:07Z",
@@ -517,7 +507,7 @@
       "summary": "This is SpaceX’s official USSF-432 launch page, also listed as a press item. Company posts show a Falcon 9 liftoff from Vandenberg pad 4E and a landing on Of Course I Still Love You; the page itself returned only a short JavaScript shell here."
     },
     {
-      "id": "media-23",
+      "id": "media-22",
       "type": "media",
       "date": "2026-11-05",
       "datetime": "2026-11-05T21:42:17Z",
@@ -529,7 +519,7 @@
       "summary": "CNBC reports that Tesla and SpaceX shares fell about 11% and 9% on Thursday after the midterms, taking combined market-cap losses since Tuesday’s close to more than $420 billion on concerns that Musk could face new probes and tighter regulation. The article says Musk was a major GOP donor (more than $470 million, per the Financial Times) even as most of the candidates he backed lost, and that his estimated wealth dropped to below $800 billion."
     },
     {
-      "id": "media-4",
+      "id": "media-3",
       "type": "media",
       "date": "2026-11-04",
       "datetime": "2026-11-04T08:00:00Z",
@@ -541,7 +531,7 @@
       "summary": "NerdWallet explains how a retail investor can buy SPCX now that SpaceX is public — and how someone who does not want the stock might still end up with exposure through funds — after the 12 Jun IPO at $135 that raised about $75 billion at a $1.75 trillion opening valuation. The guide recalls a first-day close a little above $160 and a brief spike above $225, followed by a bumpier trade often below the offer price; it is an explainer, not a recommendation."
     },
     {
-      "id": "media-6",
+      "id": "media-7",
       "type": "media",
       "date": "2026-11-04",
       "datetime": "2026-11-04T08:00:00Z",
@@ -553,6 +543,21 @@
         "Direct-to-cell"
       ],
       "summary": "CNBC says SpaceX struck a multiyear deal with Qualcomm to build base stations for Starlink Mobile, a planned U.S. cellular service meant to complement the satellite network, with a rollout targeted to begin next year. Financial terms were not disclosed; Qualcomm’s Durga Malladi called it a chance to advance 5G and eventually AI-native 6G, and CNBC notes Starlink already accounted for 36% of SpaceX revenue and 85% of operating profit in Q3."
+    },
+    {
+      "id": "media-18",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T08:00:00Z",
+      "title": "Qualcomm signs major 5G infrastructure deal with SpaceX for Starlink Mobile network - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVWZCaVBsMkw1X24ydGtHeEN2cVhCZ09DcV9TTG9pQkJYMXlhUDZLOElIS21YbEdyeDdxM2RRY2dCazN1MXRFdUNNeEtHck05SFNUd2lpVkw4N1FiakdlTk1kWDFpZ08ycjlSajV0V29sdkJsZEVDbTZOc21ON2t2dkxtbDRDRmx0OFVIdWMyWXo3RUd0ckswYkRyV3RnekU5bmJyNXlvelR6VTRVeElGM2U2Wll4azlpbmNvbURfWDhDX29CMnRkN3ZWaHF6S3VHTTdPOQ?oc=5",
+      "snippet": "Qualcomm signs major 5G infrastructure deal with SpaceX for Starlink Mobile network Reuters",
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ],
+      "summary": "Reuters reported that Qualcomm signed a major 5G-infrastructure deal with SpaceX for the Starlink Mobile network; Reuters.com itself returned 401 here. Open coverage of the same announcement, including Qualcomm’s own release and CNBC, says Qualcomm will supply radio and baseband gear for a nationwide terrestrial 5G network that complements Starlink satellites, with deployment expected to start in 2027 and financial terms undisclosed."
     },
     {
       "id": "media-20",
@@ -570,36 +575,19 @@
       "summary": "Yahoo Finance describes the Qualcomm agreement as a step toward making Starlink a fourth major U.S. wireless carrier, pairing satellite coverage with a terrestrial 5G build. It frames the deal as part of SpaceX’s push to add spectrum and partners after its consumer mobile offering had been limited compared with the big phone carriers."
     },
     {
-      "id": "media-21",
+      "id": "media-40",
       "type": "media",
       "date": "2026-11-04",
       "datetime": "2026-11-04T08:00:00Z",
-      "title": "Qualcomm signs major 5G infrastructure deal with SpaceX for Starlink Mobile network - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVWZCaVBsMkw1X24ydGtHeEN2cVhCZ09DcV9TTG9pQkJYMXlhUDZLOElIS21YbEdyeDdxM2RRY2dCazN1MXRFdUNNeEtHck05SFNUd2lpVkw4N1FiakdlTk1kWDFpZ08ycjlSajV0V29sdkJsZEVDbTZOc21ON2t2dkxtbDRDRmx0OFVIdWMyWXo3RUd0ckswYkRyV3RnekU5bmJyNXlvelR6VTRVeElGM2U2Wll4azlpbmNvbURfWDhDX29CMnRkN3ZWaHF6S3VHTTdPOQ?oc=5",
-      "snippet": "Qualcomm signs major 5G infrastructure deal with SpaceX for Starlink Mobile network Reuters",
-      "topics": [
-        "Starlink",
-        "Direct-to-cell"
-      ],
-      "summary": "Reuters reported that Qualcomm signed a major 5G-infrastructure deal with SpaceX for the Starlink Mobile network; Reuters.com itself returned 401 here. Open coverage of the same announcement, including Qualcomm’s own release and CNBC, says Qualcomm will supply radio and baseband gear for a nationwide terrestrial 5G network that complements Starlink satellites, with deployment expected to start in 2027 and financial terms undisclosed."
+      "title": "Shares of Elon Musk’s Tesla and SpaceX Tumble After Republican Losses - The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNUJMNUhfVmg3dHlfRHhVb0tham91N0NObjZjNXl0bWN0Yno0QVdFNFVueHlnNEo2eGJJbTUzajY3cVZ6cnR2TG9vN0VpVVBpcEttSm1sZVgwbmpnTE5JZ2EycUV3ZXY5WVk4VTRZaHpHTTNSVHMtZUl3d0l2UXI0LWZsWTR1dkpmcF9R?oc=5",
+      "snippet": "Shares of Elon Musk’s Tesla and SpaceX Tumble After Republican Losses The New York Times",
+      "topics": [],
+      "summary": "The New York Times headline is that shares of Musk’s Tesla and SpaceX tumbled after Republican losses in the midterms. The full article could not be fetched here (403/paywall), so this summary is limited to that headline; contemporaneous CNBC reporting on the same session described large one-day drops and political-risk concerns."
     },
     {
-      "id": "media-13",
-      "type": "media",
-      "date": "2026-11-04",
-      "datetime": "2026-11-04T00:19:50Z",
-      "title": "USSF-317 Mission - SpaceX",
-      "source": "SpaceX",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9uVDBzdUJ6c2tQSEUzVmdWb1oxdzY5dTVQWUVTOWE1THJBbURxaTVUaDJPYUtFTF84WDFQa1oxOTh1dk55cXRjczNFVi1zUjdw?oc=5",
-      "snippet": "USSF-317 Mission SpaceX",
-      "topics": [
-        "Launch"
-      ],
-      "summary": "This is SpaceX’s official page for the USSF-317 mission, a separate Falcon 9 national-security launch from the same period as the later USSF-432 flight. The page is a JavaScript launch listing and returned no extra article text here."
-    },
-    {
-      "id": "media-15",
+      "id": "media-5",
       "type": "media",
       "date": "2026-11-03",
       "datetime": "2026-11-03T16:20:00Z",
@@ -609,6 +597,20 @@
       "snippet": "SpaceX Just Delivered a Monster Quarter, but the Stock Is Still Down 38% From Its High. The Reasons Are Obvious. Yahoo Finance",
       "topics": [],
       "summary": "Yahoo Finance notes that SpaceX delivered a very strong quarter but that the stock was still about 38% below its post-IPO high near $226, and it discusses why the shares had lagged the results. The column is market commentary on valuation and sentiment after the Q3 print, not a new official forecast."
+    },
+    {
+      "id": "media-14",
+      "type": "media",
+      "date": "2026-11-03",
+      "datetime": "2026-11-03T08:00:00Z",
+      "title": "Starlink - Britannica",
+      "source": "Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FdV9xdThiS05DRFNuY1JPakpBb2Z6dGFQSVJTbWtscEpKdXpsNGtmaHEwMnNMUnE0NlpzUlAzdzIwTEFxV0lfNGlwSmNLYnRHTVV3?oc=5",
+      "snippet": "Starlink Britannica",
+      "topics": [
+        "Starlink"
+      ],
+      "summary": "This Google News item is Encyclopaedia Britannica’s background entry on Starlink, SpaceX’s satellite internet constellation. The Britannica page itself could not be fetched here (403 / JavaScript challenge), so no additional encyclopedia text is summarised."
     },
     {
       "id": "filing-0001104659-26-118614",
