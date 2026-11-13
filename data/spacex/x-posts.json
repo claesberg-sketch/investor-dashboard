@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-12T23:11:39+01:00",
+  "updated": "2026-11-13T07:08:04+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X API public reads (get_users_posts) on 12 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
+  "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
@@ -40,6 +40,49 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121120295884837183",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-13T05:57:41.000Z",
+      "text": "Give Grok @Bot your most laborious tasks! https://t.co/4TCwwBCe5j",
+      "url": "https://x.com/elonmusk/status/2121120295884837183",
+      "metrics": {
+        "likes": 983,
+        "reposts": 84,
+        "replies": 371,
+        "quotes": 30,
+        "bookmarks": 48,
+        "impressions": 357681
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “Give Grok @Bot your most laborious tasks!,” quoting Maye Musk’s post that she asked Grok Bot the best way to move 2,000 Dropbox Camera Uploads photos into folders and the bot offered to do it, finishing the job in five minutes. The quote is a product-adoption anecdote about Grok Bot, not a SpaceX operational or financial update."
+    },
+    {
+      "id": "2121044579470233638",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-13T00:56:49.000Z",
+      "text": "Ship 42 moves to the Starbase pad ahead of launch https://t.co/pMUFTHneJQ",
+      "url": "https://x.com/SpaceX/status/2121044579470233638",
+      "metrics": {
+        "likes": 12537,
+        "reposts": 1432,
+        "replies": 491,
+        "quotes": 249,
+        "bookmarks": 519,
+        "impressions": 506071
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "SpaceX says Ship 42 has moved to the Starbase pad ahead of launch, posting photos of the black-tiled Starship — marked “DON’T PANIC” beside the S42 identifier — being rolled along the coastal road and then standing beside Super Heavy at the catch tower. That puts the Flight 15 upper stage at the pad with the booster already in place."
+    },
     {
       "id": "2120995147504853416",
       "username": "Starlink",
