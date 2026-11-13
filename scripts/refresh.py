@@ -655,6 +655,73 @@ def build_news():
     return news_out
 
 
+WIKI_F9_RAW = "https://en.wikipedia.org/w/index.php?title=List_of_Falcon_9_and_Falcon_Heavy_launches&action=raw"
+_MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August",
+           "September", "October", "November", "December"]
+
+
+def refresh_launches(year: int = 2026) -> dict:
+    """Recount Falcon 9 / Falcon Heavy launches (and Falcon 9 Starlink missions) by UTC month
+    from Wikipedia's launch list and merge them into launches.json. Starship flights,
+    quarterly company figures and milestones in launches.json are kept as they are."""
+    path = DATA / "launches.json"
+    cur = json.loads(path.read_text())
+    raw = fetch(WIKI_F9_RAW)[1].decode("utf-8", "replace")
+    start = raw.index(f"=== {year} ===")
+    end = raw.index(f"=== {year}, future", start)
+    rows = re.split(r'\n\|- *id="?', raw[start:end])[1:]
+    f9 = [0] * 12
+    fh = [0] * 12
+    sl = [0] * 12
+    last = None
+    for r in rows:
+        m = re.search(r"date table sorting\|([A-Za-z]+) (\d+), " + str(year) + r"\}\}(?:<br />)?(\d\d:\d\d)?", r)
+        if not m or m.group(1) not in _MONTHS:
+            continue
+        lines = r.split("\n")
+        mi = _MONTHS.index(m.group(1))
+        heavy = "Falcon Heavy" in "\n".join(lines[:4])
+        (fh if heavy else f9)[mi] += 1
+        payload = lines[5] if len(lines) > 5 else ""
+        if not heavy and "Starlink" in payload:
+            sl[mi] += 1
+        pm = re.search(r"\[\[[^\]|]*\|([^\]]+)\]\]|\[\[([^\]]+)\]\]", payload)
+        name = (pm.group(1) or pm.group(2)) if pm else "launch"
+        last = (f"{year}-{mi + 1:02d}-{int(m.group(2)):02d}", m.group(3) or "", re.sub(r"\{\{[^}]*\}\}", " ", name).strip(), heavy)
+    if sum(f9) < 1:
+        raise RuntimeError("no Falcon rows parsed")
+    old = {x["m"]: x for x in cur.get("monthly", [])}
+    now = datetime.now(timezone.utc)
+    monthly = []
+    for i in range(12):
+        key = f"{year}-{i + 1:02d}"
+        if (year, i + 1) > (now.year, now.month):
+            break
+        prev = old.get(key, {})
+        partial = (year, i + 1) == (now.year, now.month)
+        monthly.append({"m": key, "label": datetime(year, i + 1, 1).strftime("%b") + ("*" if partial else ""),
+                        "f9": f9[i], "f9Starlink": sl[i], "fh": fh[i], "starship": prev.get("starship", 0),
+                        **({"partial": True} if partial else {})})
+    ytd = cur.get("ytd", {})
+    ship = sum(x["starship"] for x in monthly)
+    ytd.update({"falcon9": sum(f9), "falconHeavy": sum(fh), "falcon9Starlink": sum(sl), "starship": ship})
+    ytd["total"] = ytd["falcon9"] + ytd["falconHeavy"] + ship
+    ytd["orbital"] = ytd["falcon9"] + ytd["falconHeavy"] + ytd.get("starshipOrbital", 0)
+    cur["monthly"] = monthly
+    cur["ytd"] = ytd
+    if last:
+        d, t, name, heavy = last
+        when = datetime.fromisoformat(f"{d}T{t or '12:00'}:00+00:00")
+        local = when.astimezone(ZoneInfo("Europe/Stockholm"))
+        cur["countedThrough"] = when.strftime("%Y-%m-%dT%H:%M:%SZ")
+        cur["countedThroughLabel"] = (f"{name} on {'Falcon Heavy' if heavy else 'Falcon 9'}, "
+                                      + local.strftime("%-d %b %Y %H:%M ") + local.tzname()
+                                      + (f" ({t} UTC)" if t else ""))
+    cur["asOf"] = datetime.now(ZoneInfo("Europe/Stockholm")).strftime("%Y-%m-%d")
+    write(path, cur)
+    return cur
+
+
 def write(path: Path, obj):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -721,6 +788,12 @@ def parse_args(argv):
         action="store_true",
         help="Only rewrite ?v= on local JS/CSS tags in index.html, then exit.",
     )
+    ap.add_argument(
+        "--launches",
+        action="store_true",
+        help="Only recount 2026 Falcon launches from Wikipedia into data/spacex/launches.json, then exit. "
+             "Starship flights, quarterly figures and milestones are edited by hand.",
+    )
     return ap.parse_args(argv)
 
 
@@ -728,5 +801,8 @@ if __name__ == "__main__":
     args = parse_args(sys.argv[1:])
     if args.bump_assets:
         bump_asset_version()
+        sys.exit(0)
+    if args.launches:
+        refresh_launches()
         sys.exit(0)
     sys.exit(main())

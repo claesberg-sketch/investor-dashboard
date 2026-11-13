@@ -1,0 +1,212 @@
+{
+  "asOf": "2026-11-13",
+  "countedThrough": "2026-11-12T04:36:00Z",
+  "countedThroughLabel": "USSF-627 on Falcon 9, 12 Nov 2026 05:36 CET (04:36 UTC)",
+  "year": 2026,
+  "definition": "All SpaceX launches in 2026 counted in UTC, including Starship flight tests (Flights 12 and 13 were suborbital; Flight 14 was the first orbital flight). This matches how SpaceX counts quarterly launches in its earnings materials.",
+  "ytd": {
+    "total": 126,
+    "orbital": 124,
+    "falcon9": 120,
+    "falconHeavy": 3,
+    "starship": 3,
+    "starshipOrbital": 1,
+    "falcon9Starlink": 85,
+    "failures": 0
+  },
+  "monthly": [
+    {
+      "m": "2026-01",
+      "label": "Jan",
+      "f9": 13,
+      "f9Starlink": 9,
+      "fh": 0,
+      "starship": 0
+    },
+    {
+      "m": "2026-02",
+      "label": "Feb",
+      "f9": 12,
+      "f9Starlink": 11,
+      "fh": 0,
+      "starship": 0
+    },
+    {
+      "m": "2026-03",
+      "label": "Mar",
+      "f9": 15,
+      "f9Starlink": 13,
+      "fh": 0,
+      "starship": 0
+    },
+    {
+      "m": "2026-04",
+      "label": "Apr",
+      "f9": 11,
+      "f9Starlink": 9,
+      "fh": 1,
+      "starship": 0
+    },
+    {
+      "m": "2026-05",
+      "label": "May",
+      "f9": 11,
+      "f9Starlink": 8,
+      "fh": 0,
+      "starship": 1
+    },
+    {
+      "m": "2026-06",
+      "label": "Jun",
+      "f9": 14,
+      "f9Starlink": 10,
+      "fh": 0,
+      "starship": 0
+    },
+    {
+      "m": "2026-07",
+      "label": "Jul",
+      "f9": 12,
+      "f9Starlink": 8,
+      "fh": 0,
+      "starship": 1
+    },
+    {
+      "m": "2026-08",
+      "label": "Aug",
+      "f9": 13,
+      "f9Starlink": 10,
+      "fh": 1,
+      "starship": 0
+    },
+    {
+      "m": "2026-09",
+      "label": "Sep",
+      "f9": 7,
+      "f9Starlink": 3,
+      "fh": 0,
+      "starship": 1
+    },
+    {
+      "m": "2026-10",
+      "label": "Oct",
+      "f9": 10,
+      "f9Starlink": 4,
+      "fh": 1,
+      "starship": 0
+    },
+    {
+      "m": "2026-11",
+      "label": "Nov*",
+      "f9": 2,
+      "f9Starlink": 0,
+      "fh": 0,
+      "starship": 0,
+      "partial": true
+    }
+  ],
+  "quarterly": {
+    "note": "Company-reported totals (Falcon plus Starship flight tests). Q4 2026 is quarter-to-date from public launch logs, not a company figure.",
+    "rows": [
+      {
+        "q": "Q1",
+        "y2025": 38,
+        "y2026": 40
+      },
+      {
+        "q": "Q2",
+        "y2025": 46,
+        "y2026": 38
+      },
+      {
+        "q": "Q3",
+        "y2025": 44,
+        "y2026": 35
+      },
+      {
+        "q": "Q4",
+        "y2025": 42,
+        "y2026": 13,
+        "y2026Partial": true
+      }
+    ],
+    "fy2025": 170
+  },
+  "starship": [
+    {
+      "flight": 12,
+      "date": "2026-05-22",
+      "result": "Suborbital test. Block 3 debut; 20 simulators and 2 modified Starlink V3 deployed. Booster lost in the Gulf, ship splashed down."
+    },
+    {
+      "flight": 13,
+      "date": "2026-07-24",
+      "result": "Suborbital test. First deployment of 20 Starlink V3 satellites (on a reentry trajectory, burned up as planned). Booster lost, ship splashed down."
+    },
+    {
+      "flight": 14,
+      "date": "2026-09-28",
+      "result": "First orbital Starship flight; deployed 26 Starlink V3 satellites, the first V3s in service."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "f15",
+      "title": "Starship Flight 15",
+      "date": "2026-11-13",
+      "when": "13 Nov 2026, 17:45–19:00 ET (23:45–01:00 CET)",
+      "status": "next",
+      "detail": "First attempt to return and catch both Super Heavy and Starship at the launch site, and the first catch try for a V3 booster. 26 Starlink V3 satellites to orbit; about 14 orbits over a 22+ hour flight. Pending regulatory approval.",
+      "source": {
+        "label": "SpaceX — Starship Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15"
+      }
+    },
+    {
+      "id": "f16",
+      "title": "Starship Flight 16 — first from Florida",
+      "date": null,
+      "when": "Tentative: mid-December 2026 per Florida reporting; other trackers list Q1 2027",
+      "status": "tentative",
+      "detail": "First Starship launch from LC-39A at Kennedy Space Center. Not yet confirmed by SpaceX.",
+      "source": {
+        "label": "Florida spaceflight reporting",
+        "url": "https://flspaceflight.com/news/starship-new-glenn-florida-december-2026-launch-targets"
+      }
+    },
+    {
+      "id": "f9target",
+      "title": "Falcon 9 full-year target",
+      "date": null,
+      "when": "Gwynne Shotwell, Time, 26 Mar 2026",
+      "status": "context",
+      "detail": "“Maybe 140, 145-ish” Falcon 9 launches in 2026. 120 flown through 12 Nov, so about 20–25 more would be needed in the last seven weeks.",
+      "source": {
+        "label": "Time interview with Gwynne Shotwell",
+        "url": "https://time.com/article/2026/03/26/spacex-gwynne-shotwell-full-interview/"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "label": "Wikipedia — List of Falcon 9 and Falcon Heavy launches (2026 table; F9/FH by month, Starlink missions)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches"
+    },
+    {
+      "label": "The Space Road — SpaceX launches in 2026 (124 orbital: 120 F9, 3 FH, 1 Starship)",
+      "url": "https://thespaceroad.com/launches/2026/spacex/"
+    },
+    {
+      "label": "Wikipedia — List of Starship launches (Flights 12–14)",
+      "url": "https://en.wikipedia.org/wiki/List_of_Starship_launches"
+    },
+    {
+      "label": "SpaceX Q2 2026 10-Q (38 launches: 37 Falcon + 1 Starship)",
+      "url": "https://filingspy.com/securities/SPCX/filings/0001628280-26-052535/I/item_2"
+    },
+    {
+      "label": "SpaceX Q3 2026 earnings release (35 launches); 424(b)(4) for 2025 (170)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+    }
+  ]
+}

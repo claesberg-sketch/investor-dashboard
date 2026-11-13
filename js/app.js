@@ -267,6 +267,10 @@
       loadJSON(DATA + "/spacex/calendar.json"),
       loadJSON(DATA + "/spacex/unlocks.json"),
     ]);
+    const [launches, ndx] = await Promise.all([
+      loadJSON(DATA + "/spacex/launches.json").catch((e) => { console.warn("launches.json", e); return null; }),
+      loadJSON(DATA + "/spacex/nasdaq-index.json").catch((e) => { console.warn("nasdaq-index.json", e); return null; }),
+    ]);
 
     renderSwitcher(companies);
     document.getElementById("hero-ticker").textContent = company.ticker;
@@ -282,6 +286,8 @@
     renderTopics(xposts);
     SPCXCharts.mount(kpis);
     if (window.SPCXUnlocks) SPCXUnlocks.mount(unlocks, state && state.display);
+    if (window.SPCXLaunches && launches) SPCXLaunches.mount(launches);
+    if (window.SPCXIndexWeight && ndx) SPCXIndexWeight.mount(ndx, unlocks);
     renderCalendar(calendar);
     renderValuation(quote, kpis, company, state);
     if (window.SPCXPrice && SPCXPrice.setUnlocks) SPCXPrice.setUnlocks(unlocks);

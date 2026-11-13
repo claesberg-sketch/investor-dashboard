@@ -1,0 +1,38 @@
+{
+  "asOf": "2026-11-13",
+  "membership": {
+    "nasdaq100": {"inIndex": true, "since": "2026-07-07", "how": "Fast-entry rule (effective 1 May 2026): announced 26 Jun, added before the open on 7 Jul 2026.", "latestOfficial": {"weight": 2.66, "date": "2026-11-02", "label": "Nasdaq NDX weights file, data as of 2 Nov 2026", "url": "https://www.nasdaq.com/docs/global-indexes/NDX"}, "latestEtf": [{"weight": 2.82, "date": "2026-11-12", "label": "Invesco QQQ holdings (91.3M SPCX shares), via TradeSmith", "url": "https://tradesmith.com/stockdata/QQQ:NASDAQ/holdings"}, {"weight": 2.69, "date": "2026-11-12", "label": "Xtrackers Nasdaq 100 UCITS ETF holdings, via WhichIndex", "url": "https://whichindex.com/indexes/nasdaq-100/"}]},
+    "composite": {"inIndex": true, "since": "2026-06-12", "how": "Automatic on the first day of trading; every Nasdaq-listed common stock is included.", "weightEst": 4.00, "weightDate": "2026-11-12", "label": "WhichIndex estimate from market cap (rank #6 of 3,375)", "url": "https://whichindex.com/companies/spacex/", "note": "The Composite is weighted by market cap without a float adjustment, so lock-up releases do not change SpaceX’s Composite weight. Only the price and the share count do."}
+  },
+  "rule": {
+    "summary": "Nasdaq-100 weights by listed market value, not free-float market value. Since 1 May 2026 a stock whose free float is 33.3% or less is counted at the lesser of its listed market value or three times its free-float value. Above 33.3% float the full listed value counts. Float is only re-measured at the quarterly reviews (March, June, September, December), using data as of the last trading day of the prior month; future lock-up expiries are not anticipated.",
+    "source": {"label": "Nasdaq — Nasdaq-100 methodology changes FAQ (July 2026)", "url": "https://indexes.nasdaqomx.com/docs/2026_NDX_Changes_FAQ.pdf"}
+  },
+  "points": [
+    {"id": "entry", "date": "2026-07-07", "label": "7 Jul 26 · entry", "floatRef": "2026-06-23", "weight": 1.28, "kind": "reported", "source": {"label": "Bloomberg 19 Sep 2026 (prior weight about 1.28%); Invesco expected 1.25–1.35% at entry", "url": "https://etf.net/news/spacex-joins-qqq-under-new-rule-2026-10-23"}},
+    {"id": "sep26", "date": "2026-09-21", "label": "21 Sep 26 · review", "floatRef": "2026-08-31", "weight": 2.82, "kind": "reported", "source": {"label": "Bloomberg, 19 Sep 2026: weight confirmed at 2.82% (18 Sep close)", "url": "https://www.bloomberg.com/news/articles/2026-09-19/spacex-s-nasdaq-100-weight-is-confirmed-at-2-82-in-rebalance"}},
+    {"id": "nov26", "date": "2026-11-02", "label": "2 Nov 26 · latest", "floatRef": "2026-11-02", "weight": 2.66, "kind": "official", "source": {"label": "Nasdaq NDX weights file, 2 Nov 2026", "url": "https://www.nasdaq.com/docs/global-indexes/NDX"}},
+    {"id": "dec26", "date": "2026-12-21", "label": "21 Dec 26 · review", "floatRef": "2026-11-30", "weight": 3.22, "weightLow": 3.08, "kind": "proforma"},
+    {"id": "mar27", "date": "2027-03-22", "label": "22 Mar 27 · review", "floatRef": "2027-02-26", "weight": 3.22, "weightLow": 3.22, "kind": "proforma"},
+    {"id": "jun27", "date": "2027-06-21", "label": "21 Jun 27 · review", "floatRef": "2027-05-28", "weight": 3.22, "weightLow": 3.22, "kind": "proforma"},
+    {"id": "sep27", "date": "2027-09-20", "label": "20 Sep 27 · review", "floatRef": "2027-08-31", "weight": 3.22, "weightLow": 3.22, "kind": "proforma"}
+  ],
+  "proforma": {
+    "method": "Pro-forma at constant 10 Nov 2026 prices with the rest of the index unchanged. On 10 Nov, fully counted mega-caps carried about 1.667% of the Nasdaq-100 per $1 trillion of market value (Apple 8.47% / $5.06T, Nvidia 6.78% / $4.07T, Microsoft 6.60% / $3.96T, Amazon 4.87% / $2.93T). SpaceX’s 2.82% therefore counts about $1.69T of its $1.94T total market value (about 87%). If Nasdaq’s 30 Nov float measure is above 33.3%, all $1.94T counts: about 3.22%. If Nasdaq uses a float near FloatCap’s 4.33B shares (31.9%), the cap is 3 × 31.9% = 95.6% of value: about 3.08%. After that, further unlocks do not raise the weight; only price moves do.",
+    "inputs": {"date": "2026-11-10", "pctPerTrillion": 1.667, "spcxWeight": 2.82, "spcxMarketCapT": 1.94, "countedT": 1.692, "fullWeight": 3.22, "floatCapWeight": 3.08},
+    "inputsSource": {"label": "QYLD holdings weights and Nasdaq market caps, 10 Nov 2026 (compiled by BestFirms)", "url": "https://www.bestfirms.org/nasdaq-100-companies-list/"},
+    "caveats": [
+      "Nasdaq does not publish the float or index share count it uses for SpaceX, so the counted share of value (about 87%) is implied from ETF weights, not reported.",
+      "The 21 Dec review uses float as of the 30 Nov close. The 8 Dec unlock is after that date, so it could only be counted from the March 2027 review.",
+      "Musk’s 366-day release (14 Jun 2027) and other insiders’ shares are not free float under Nasdaq’s rules, so the bars exclude Musk’s 4.77B shares.",
+      "Undated extended lock-up releases (after Q4 2026, Q1 and Q2 2027 results) are left out of the bars.",
+      "Index caps (24% single stock; 4.5% / 48% aggregate rule) are not binding for SpaceX at these weights."
+    ]
+  },
+  "sources": [
+    {"label": "Nasdaq-100 methodology changes FAQ, July 2026", "url": "https://indexes.nasdaqomx.com/docs/2026_NDX_Changes_FAQ.pdf"},
+    {"label": "etf.net, 23 Oct 2026: SpaceX more than doubles its Nasdaq-100 weighting", "url": "https://etf.net/news/spacex-joins-qqq-under-new-rule-2026-10-23"},
+    {"label": "Panke: next Nasdaq-100 rebalance 21 Dec 2026, data as of 30 Nov close", "url": "https://tape.panke.app/sp500"},
+    {"label": "Rimes, 16 Jun 2026: Nasdaq Composite inclusion on day one", "url": "https://www.rimes.com/spacex-lists-on-nasdaq-which-benchmarks-follow-and-when/"}
+  ]
+}
