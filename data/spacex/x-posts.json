@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T08:06:34+01:00",
+  "updated": "2026-11-13T09:10:57+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -81,6 +81,25 @@
       ],
       "highlight": true,
       "summary": "Elon Musk writes “Give Grok @Bot your most laborious tasks!,” quoting Maye Musk’s post that she asked Grok Bot the best way to move 2,000 Dropbox Camera Uploads photos into folders and the bot offered to do it, finishing the job in five minutes. The quote is a product-adoption anecdote about Grok Bot, not a SpaceX operational or financial update."
+    },
+    {
+      "id": "2121054897584079008",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-13T01:37:49.000Z",
+      "text": "@JEli1039301 It is the announcement of the deal. Actual votes and execution would take months",
+      "url": "https://x.com/nextbigfuture/status/2121054897584079008",
+      "metrics": {
+        "likes": 1,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 103
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Brian Wang, replying to a comment on his earlier post that a SpaceX–Tesla merger could happen in four weeks, says that timeline is for the announcement of the deal. He adds that actual shareholder votes and execution would take months."
     },
     {
       "id": "2121044579470233638",
