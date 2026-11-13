@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T22:08:16+01:00",
+  "updated": "2026-11-13T23:09:24+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 13 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,72 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121361977721106881",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-13T21:58:03.000Z",
+      "text": "Live webcast of Starship's 15th flight test starts now → https://t.co/xvmIH2diNA",
+      "url": "https://x.com/SpaceX/status/2121361977721106881",
+      "metrics": {
+        "likes": 6376,
+        "reposts": 1174,
+        "replies": 397,
+        "quotes": 188,
+        "bookmarks": 701,
+        "impressions": 236228
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "SpaceX posted that the live webcast of Starship’s 15th flight test “starts now,” linking to the same official X broadcast as its earlier Flight 15 watch post. The notice went out at 22:58 CET on 13 November 2026, shortly before the 4:45 p.m. CT (23:45 CET) launch window opens."
+    },
+    {
+      "id": "2121360601377374680",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-13T21:52:34.000Z",
+      "text": "Go for propellant load. Teams will soon begin loading Starship with ~12 million pounds of liquid oxygen and liquid methane https://t.co/qzWBFfwesN",
+      "url": "https://x.com/SpaceX/status/2121360601377374680",
+      "metrics": {
+        "likes": 3966,
+        "reposts": 499,
+        "replies": 192,
+        "quotes": 87,
+        "bookmarks": 113,
+        "impressions": 235900
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "SpaceX announced “Go for propellant load,” saying teams will soon begin loading Starship with about 12 million pounds of liquid oxygen and liquid methane. The post quotes the official Flight 15 webcast and comes minutes after the company said the 75-minute launch window opens at 4:45 p.m. CT."
+    },
+    {
+      "id": "2121358365725213183",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-13T21:43:41.000Z",
+      "text": "On track for Starship’s 15th flight. The 75-minute launch window opens at 4:45p.m. CT. Live coverage of the mission begins ~42 minutes before launch https://t.co/qzWBFfwesN",
+      "url": "https://x.com/SpaceX/status/2121358365725213183",
+      "metrics": {
+        "likes": 4815,
+        "reposts": 691,
+        "replies": 290,
+        "quotes": 154,
+        "bookmarks": 244,
+        "impressions": 332360
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "SpaceX said it is on track for Starship’s 15th flight, with the 75-minute launch window opening at 4:45 p.m. CT on 13 November 2026. The company added that live coverage of the mission begins about 42 minutes before launch, quoting its earlier “Watch Starship Flight 15” webcast post."
+    },
     {
       "id": "2121335897744372073",
       "username": "elonmusk",
