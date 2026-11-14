@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T06:00:38Z",
+  "updated": "2026-11-14T07:04:08Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -36,7 +36,7 @@
       "summary": "A DW report by Andreas Illmer, with Reuters and AP, dated 14 November 2026, says SpaceX got Starship into orbit on its latest flight but did not recover the Super Heavy booster as planned, after the booster diverted from a return to the South Texas launch site and exploded over a designated area of the Gulf of Mexico. SpaceX commentator Dan Huot said it was not immediately clear why the booster could not be brought back; the upper stage began releasing 26 Starlink satellites and is scheduled to return Saturday for a first attempt to catch the spacecraft with mechanical arms at the pad."
     },
     {
-      "id": "media-26",
+      "id": "media-27",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T01:19:00Z",
@@ -78,6 +78,20 @@
       "summary": "A PBS NewsHour piece by Marcia Dunn of the Associated Press, published 13 November 2026, says SpaceX’s attempt to recover the entire Starship stack at the pad was thwarted when Super Heavy v3 Booster 22 malfunctioned, automatically aborted, and ended up exploding after being diverted to the Gulf of Mexico, while the Starship 42 spacecraft still reached orbit. It says this was the first catch attempt for the upgraded 236-foot booster and that, barring further trouble, the ship will try a first-ever return-from-orbit catch Saturday after about 22 hours and 15 laps at roughly 170 miles (275 kilometers), having prepared to deploy 26 of SpaceX’s most advanced Starlink satellites."
     },
     {
+      "id": "media-28",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T00:15:00Z",
+      "title": "SpaceX’s Starship Just Did Something for Only the 2nd Time. Saturday Could Be Even Bigger. - The Motley Fool",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVGdOXzdrTkFMdXk2dGFnZGFHcUxILTU1dUxzVGJBUGcyNmYtNEJYeHdKWTFuLUthbjFOS1FWdnBZU3o5T0w1dGk2YVlpWmFQT0xqZ3c2M3hPWXlxMTlfajJkb3JJMkJQQnZsRWhLZkk0ZDlnaVJ5dTBwbTl6RXJlYUFKTExJeGFWajFsUkowbkpsbDdvcUtiMW5CREJKLXFhLUpQdUdpOTctcnMyMk42NmY3S20yNk9jSjNmWGRkTUFCUTItWnZTcVZXQQ?oc=5",
+      "snippet": "SpaceX’s Starship Just Did Something for Only the 2nd Time. Saturday Could Be Even Bigger. The Motley Fool",
+      "topics": [
+        "Starship"
+      ],
+      "summary": "A Motley Fool article by Johnny Rice, dated 13 November 2026 at 7:15 p.m. EST, says Starship Flight 15 lifted off from Starbase at 5:47 p.m. ET, reached orbit at 6:13 p.m. ET — only the second time Starship has done so — and began deploying 26 Starlink satellites, while the Super Heavy booster was diverted to a Gulf of Mexico splashdown and burst into flames. Rice notes SpaceX has not shared details of the booster issue, that a catch of the upper stage is scheduled for 4:17 p.m. ET on Saturday only if systems stay healthy, and that the Space segment was just $1.8 billion of SpaceX’s $14.6 billion in third-quarter revenue."
+    },
+    {
       "id": "media-14",
       "type": "media",
       "date": "2026-11-13",
@@ -107,7 +121,7 @@
       "summary": "A Barron’s article by Al Root, published 13 November 2026 and later listed under the updated headline “SpaceX’s Starship Launched Today. No Booster Catch Might Hurt the Stock,” says Friday’s 15th flight of Starship, “the largest rocket ever built by humans,” did not go exactly as planned. The rest of the Barron’s page could not be fetched beyond that opening paragraph, so the article’s specific stock commentary is not summarised here."
     },
     {
-      "id": "media-40",
+      "id": "media-39",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T23:33:00Z",
@@ -136,7 +150,7 @@
       "summary": "An NBC News report by Reuters and Evan Bush, published and updated 13 November 2026, says SpaceX launched the 15th uncrewed Starship flight from Starbase on Friday but aborted the planned “chopstick” catch of the Super Heavy booster shortly after launch, diverting it to the Gulf of Mexico, where it hovered briefly and exploded a short distance over the sea. SpaceX said the upper stage reached orbit about 27 minutes after launch and began releasing 26 Starlink satellites about 36 minutes in; it was not immediately clear why the booster catch failed, and controllers still hoped to bring the ship back after nearly a day in orbit."
     },
     {
-      "id": "media-22",
+      "id": "media-15",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T22:50:16Z",
@@ -151,7 +165,7 @@
       "summary": "A CNBC report by Lora Kolodny, published 13 November 2026, says Starship Flight 15 lifted off from Starbase at 4:47 p.m. local time (5:47 p.m. ET) after FAA launch authorization, but SpaceX aborted the plan to catch and reuse the booster and diverted it to a Gulf of Mexico splashdown, where it burst into flames. The upper stage continued to orbit for a planned 14 trips around Earth and a Saturday landing back at Starbase; Kolodny notes the flight also deployed another 26 Starlink V3 satellites, that William Blair analysts said even a failed catch and a delay of a few months would not be that consequential, and that SpaceX faces fresh criticism over Starshield restrictions in Ukraine."
     },
     {
-      "id": "media-27",
+      "id": "media-25",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T21:12:00Z",
@@ -231,7 +245,7 @@
       "summary": "An NPR report by Geoff Brumfiel, published 13 November 2026, says SpaceX plans its most ambitious Starship test later today — lift off from South Texas, orbit Earth, and land vertically at the same pad 22 and a half hours later — and that experts warn the shift toward Starship could strand NASA, because SpaceX has said it will stop flying Falcon 9, which launches Dragon, currently the only American spacecraft that can ferry NASA astronauts to and from the ISS. NASA has contracted three additional ISS flights that would only take Dragon through 2028 if flown every six months with no further orders; SpaceX did not comment, its latest report showed about $2.1 billion of launch revenue through September versus $12.8 billion from Starlink and $10.9 billion from AI, and Gwynne Shotwell suggested Boeing’s problem-plagued Starliner (next crewed flight sometime in 2028) could take some of that NASA business."
     },
     {
-      "id": "media-39",
+      "id": "media-40",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T08:03:59Z",
@@ -269,7 +283,7 @@
       "summary": "A Reuters report dated 12 November 2026 says SpaceX plans to invest more than $74 billion in two supercomputing campuses — more than $24 billion at Starbase in Texas and roughly $50 billion in Cochise County, Arizona — expanding an AI business that already generated more than half of third-quarter revenue. The Arizona campus still needs county approval and faces a 2,400-signature petition ahead of a December public hearing, while a Starbase city notice describes a gas-fired power plant and supercomputing facility on about 444 acres, with the City Commission due to consider a property tax abatement on 9 December."
     },
     {
-      "id": "media-23",
+      "id": "media-22",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T19:47:00Z",
@@ -295,7 +309,7 @@
       "summary": "A New York Times report dated 12 November 2026 says SpaceX plans a $74 billion investment to build data centers in Texas and Arizona. That tracks SpaceX’s own 12 November update, which puts more than $24 billion into a self-powered supercompute site at Starbase in the Rio Grande Valley and about $50 billion into a Cochise County, Arizona campus; the NYT page itself did not return a readable full text here, so this summary is from the headline plus that official company update."
     },
     {
-      "id": "media-28",
+      "id": "media-26",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T18:27:00Z",
@@ -321,7 +335,7 @@
       "timeSource": "Official SpaceX posts linking the 12 November Updates item"
     },
     {
-      "id": "media-24",
+      "id": "media-23",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T12:45:00Z",
@@ -363,7 +377,7 @@
       "summary": "A CNBC report dated 12 November 2026 says President Volodymyr Zelenskyy alleged fresh, systematic speed restrictions on SpaceX’s Starshield service over Ukraine, with terminals disconnecting above 161 km/h (100 mph) and making it harder to intercept Russian jet-powered drones along the front line and in occupied territories. CNBC says it reached out to SpaceX and the White House for comment, notes similar limits were imposed in mid-October and lifted by 24 October, and places Zelenskyy’s remarks as U.S. envoys Steve Witkoff and Jared Kushner arrived in Moscow for talks with Vladimir Putin."
     },
     {
-      "id": "media-21",
+      "id": "media-20",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T06:50:00Z",
@@ -389,7 +403,7 @@
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-627"
     },
     {
-      "id": "media-12",
+      "id": "media-1",
       "type": "media",
       "date": "2026-11-12",
       "datetime": "2026-11-12T04:36:00Z",
@@ -427,7 +441,7 @@
       "summary": "A TheStreet column by Hillary Remy and Dana Sullivan Kilroy, dated 10 Nov 2026 and listed in this feed as Yahoo Finance, says Alphabet raised its SpaceX holding to about 555 million shares, up from 551.2 million, while paying SpaceX $920 million a month for xAI data-center capacity from October 2026 through June 2029 — a contract TheStreet puts at roughly $30 billion, covering about 110,000 Nvidia GPUs. The piece notes Alphabet booked an $8.7 billion third-quarter equity-securities loss driven mainly by the SpaceX share drop, that Google called the GPU arrangement bridge capacity for Gemini (either side can exit with 90 days’ notice after 2026), and that Google executive Don Harrison has resigned from SpaceX’s board."
     },
     {
-      "id": "media-19",
+      "id": "media-18",
       "type": "media",
       "date": "2026-11-10",
       "datetime": "2026-11-10T13:01:00Z",
@@ -468,7 +482,7 @@
       "summary": "Space.com reports that SpaceX is targeting Friday 13 Nov 2026 for Starship Flight 15, in a 75-minute window opening at 5:45 p.m. EST from Starbase, in the first attempt to catch both Super Heavy and Ship at the tower. The mission description quoted in the article also calls for deploying 26 Starlink V3 satellites and a more than 22-hour flight of about 14 orbits at roughly 275 km, longer than Flight 14’s Pacific splashdown."
     },
     {
-      "id": "media-25",
+      "id": "media-24",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T03:27:14Z",
@@ -536,7 +550,7 @@
       "timeSource": "Official SpaceX post announcing “Go For Orbit”"
     },
     {
-      "id": "media-1",
+      "id": "media-12",
       "type": "media",
       "date": "2026-11-06",
       "datetime": "2026-11-06T08:00:00Z",
@@ -574,21 +588,7 @@
       "summary": "NerdWallet explains how a retail investor can buy SPCX now that SpaceX is public — and how someone who does not want the stock might still end up with exposure through funds — after the 12 Jun IPO at $135 that raised about $75 billion at a $1.75 trillion opening valuation. The guide recalls a first-day close a little above $160 and a brief spike above $225, followed by a bumpier trade often below the offer price; it is an explainer, not a recommendation."
     },
     {
-      "id": "media-15",
-      "type": "media",
-      "date": "2026-11-04",
-      "datetime": "2026-11-04T08:00:00Z",
-      "title": "SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service - CNBC",
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXlJT3R0clJVSkpBRkR1TGp2ZU0zWTljNV9VQ1F1a3hiUVdudWJpM3h5aXZWcDhDZEhNU19CQlpGV1RKZmhZbjVhV05rWkdCbFVma2JPMGplSUE5a3NYMk10U2Q4NDYyWmJCNnljeDFWVmt0c053WnJoaHRjSkNCV01FVFZucTQ0SFBQOHA4aFBMTkItb3E2SmlpdWNDNXVjd2xZeHl2b9IBrAFBVV95cUxPUXo4bEVDS3N4cUlPeThFajVycVB0ejdqSUpJYzZPMlAxTFFIcnROeDNNX1F4NmlVYUNZRXp2R2pfendpdkhaQWx0NHljdFl6U0dJekJYWFZObERiTzZ2S2dORlgzXzVDZkFTZ09QNlo2Qkt0N0stM1NwUjktQ1oxUzZEZVZfTXFkd0djVTkyeFJCYTRzczExSnBOc3R4dFdXLVR0SFRCY1psTXJ2?oc=5",
-      "snippet": "SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service CNBC",
-      "topics": [
-        "Direct-to-cell"
-      ],
-      "summary": "CNBC says SpaceX struck a multiyear deal with Qualcomm to build base stations for Starlink Mobile, a planned U.S. cellular service meant to complement the satellite network, with a rollout targeted to begin next year. Financial terms were not disclosed; Qualcomm’s Durga Malladi called it a chance to advance 5G and eventually AI-native 6G, and CNBC notes Starlink already accounted for 36% of SpaceX revenue and 85% of operating profit in Q3."
-    },
-    {
-      "id": "media-20",
+      "id": "media-19",
       "type": "media",
       "date": "2026-11-04",
       "datetime": "2026-11-04T08:00:00Z",
@@ -601,6 +601,20 @@
         "Direct-to-cell"
       ],
       "summary": "Yahoo Finance describes the Qualcomm agreement as a step toward making Starlink a fourth major U.S. wireless carrier, pairing satellite coverage with a terrestrial 5G build. It frames the deal as part of SpaceX’s push to add spectrum and partners after its consumer mobile offering had been limited compared with the big phone carriers."
+    },
+    {
+      "id": "media-21",
+      "type": "media",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T08:00:00Z",
+      "title": "SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaXlJT3R0clJVSkpBRkR1TGp2ZU0zWTljNV9VQ1F1a3hiUVdudWJpM3h5aXZWcDhDZEhNU19CQlpGV1RKZmhZbjVhV05rWkdCbFVma2JPMGplSUE5a3NYMk10U2Q4NDYyWmJCNnljeDFWVmt0c053WnJoaHRjSkNCV01FVFZucTQ0SFBQOHA4aFBMTkItb3E2SmlpdWNDNXVjd2xZeHl2b9IBrAFBVV95cUxPUXo4bEVDS3N4cUlPeThFajVycVB0ejdqSUpJYzZPMlAxTFFIcnROeDNNX1F4NmlVYUNZRXp2R2pfendpdkhaQWx0NHljdFl6U0dJekJYWFZObERiTzZ2S2dORlgzXzVDZkFTZ09QNlo2Qkt0N0stM1NwUjktQ1oxUzZEZVZfTXFkd0djVTkyeFJCYTRzczExSnBOc3R4dFdXLVR0SFRCY1psTXJ2?oc=5",
+      "snippet": "SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service CNBC",
+      "topics": [
+        "Direct-to-cell"
+      ],
+      "summary": "CNBC says SpaceX struck a multiyear deal with Qualcomm to build base stations for Starlink Mobile, a planned U.S. cellular service meant to complement the satellite network, with a rollout targeted to begin next year. Financial terms were not disclosed; Qualcomm’s Durga Malladi called it a chance to advance 5G and eventually AI-native 6G, and CNBC notes Starlink already accounted for 36% of SpaceX revenue and 85% of operating profit in Q3."
     },
     {
       "id": "media-36",
@@ -616,20 +630,6 @@
         "Direct-to-cell"
       ],
       "summary": "Reuters reported that Qualcomm signed a major 5G-infrastructure deal with SpaceX for the Starlink Mobile network; Reuters.com itself returned 401 here. Open coverage of the same announcement, including Qualcomm’s own release and CNBC, says Qualcomm will supply radio and baseband gear for a nationwide terrestrial 5G network that complements Starlink satellites, with deployment expected to start in 2027 and financial terms undisclosed."
-    },
-    {
-      "id": "media-18",
-      "type": "media",
-      "date": "2026-11-04",
-      "datetime": "2026-11-04T00:19:50Z",
-      "title": "USSF-317 Mission - SpaceX",
-      "source": "SpaceX",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9uVDBzdUJ6c2tQSEUzVmdWb1oxdzY5dTVQWUVTOWE1THJBbURxaTVUaDJPYUtFTF84WDFQa1oxOTh1dk55cXRjczNFVi1zUjdw?oc=5",
-      "snippet": "USSF-317 Mission SpaceX",
-      "topics": [
-        "Launch"
-      ],
-      "summary": "This is SpaceX’s official page for the USSF-317 mission, a separate Falcon 9 national-security launch from the same period as the later USSF-432 flight. The page is a JavaScript launch listing and returned no extra article text here."
     },
     {
       "id": "media-6",

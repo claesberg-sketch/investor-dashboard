@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T07:04:13+01:00",
+  "updated": "2026-11-14T08:04:08+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,70 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121493331528056887",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T06:40:00.000Z",
+      "text": "Slowly at first, then rapid acceleration https://t.co/EXWOujlSnb",
+      "url": "https://x.com/elonmusk/status/2121493331528056887",
+      "metrics": {
+        "likes": 2412,
+        "reposts": 343,
+        "replies": 494,
+        "quotes": 67,
+        "bookmarks": 128,
+        "impressions": 419788
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “Slowly at first, then rapid acceleration,” quoting a post that lists all 15 Starship launches from Flight 1 on 20 April 2023 through Flight 15. The quote went out at 07:40 CET on 14 November 2026, after Flight 15 had reached orbit."
+    },
+    {
+      "id": "2121489571213168758",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T06:25:03.000Z",
+      "text": "Starship is traveling around the world every ~90 minutes right now",
+      "url": "https://x.com/elonmusk/status/2121489571213168758",
+      "metrics": {
+        "likes": 9177,
+        "reposts": 866,
+        "replies": 1131,
+        "quotes": 140,
+        "bookmarks": 191,
+        "impressions": 543648
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk said “Starship is traveling around the world every ~90 minutes right now.” The post went out at 07:25 CET on 14 November 2026, while Flight 15’s upper stage was still in orbit ahead of the planned Saturday catch attempt."
+    },
+    {
+      "id": "2121489252072693925",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T06:23:47.000Z",
+      "text": "So far, so good for the ship https://t.co/eqHpV33Ryc",
+      "url": "https://x.com/elonmusk/status/2121489252072693925",
+      "metrics": {
+        "likes": 4840,
+        "reposts": 451,
+        "replies": 508,
+        "quotes": 41,
+        "bookmarks": 91,
+        "impressions": 471663
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk writes “So far, so good for the ship,” quoting SpaceX’s update that Starship and its heatshield are healthy in orbit nearly seven hours after launch, with teams still monitoring systems ahead of a planned return-to-launch-site catch at Starbase about 22.5 hours after liftoff. The quote went out at 07:23 CET on 14 November 2026."
+    },
     {
       "id": "2121479482582441991",
       "username": "SpaceX",
