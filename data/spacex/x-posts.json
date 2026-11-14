@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T22:02:19+01:00",
+  "updated": "2026-11-14T23:10:35+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,211 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121726288968720709",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T22:05:41.000Z",
+      "text": "Congratulations to an incredible team at SpaceX!!! https://t.co/phiZ0amQyp",
+      "url": "https://x.com/elonmusk/status/2121726288968720709",
+      "metrics": {
+        "likes": 4728,
+        "reposts": 650,
+        "replies": 534,
+        "quotes": 58,
+        "bookmarks": 169,
+        "impressions": 289980
+      },
+      "summary": "Elon Musk wrote “Congratulations to an incredible team at SpaceX!!!,” with video of the Starship catch attached. The post went out at 23:05 CET on 14 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2121720883870142484",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T21:44:13.000Z",
+      "text": "CONGRATULATIONS. HISTORIC.\nA Giant Leap for Mankind https://t.co/gqZ6tFUDAS",
+      "url": "https://x.com/nextbigfuture/status/2121720883870142484",
+      "metrics": {
+        "likes": 92,
+        "reposts": 7,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 4,
+        "impressions": 1244
+      },
+      "summary": "Brian Wang wrote “CONGRATULATIONS. HISTORIC. A Giant Leap for Mankind,” with media attached. The post went out at 22:44 CET on 14 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2121717540074516571",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T21:30:55.000Z",
+      "text": "After the catch we will get full rapid reuse and launch a lot of AI data centers in Space $SPCX https://t.co/1sOs3AwbEx",
+      "url": "https://x.com/nextbigfuture/status/2121717540074516571",
+      "metrics": {
+        "likes": 51,
+        "reposts": 4,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 3,
+        "impressions": 1482
+      },
+      "summary": "Brian Wang wrote that after the catch we will get full rapid reuse and launch a lot of AI data centers in space, tagging $SPCX. The post went out at 22:30 CET on 14 November 2026.",
+      "topics": [
+        "AI compute",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121715790965809500",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T21:23:58.000Z",
+      "text": "CATCH WAS GOOD. HISTORY MADE. $SPCX https://t.co/xei7uAxnde",
+      "url": "https://x.com/nextbigfuture/status/2121715790965809500",
+      "metrics": {
+        "likes": 172,
+        "reposts": 13,
+        "replies": 7,
+        "quotes": 0,
+        "bookmarks": 4,
+        "impressions": 3246
+      },
+      "summary": "Brian Wang wrote “CATCH WAS GOOD. HISTORY MADE. $SPCX,” with media attached. The post went out at 22:23 CET on 14 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2121715216597827756",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T21:21:41.000Z",
+      "text": "Mechazilla catches Starship! Congratulations to the entire SpaceX team on this incredible achievement! https://t.co/YJzmGUZb2B",
+      "url": "https://x.com/SpaceX/status/2121715216597827756",
+      "metrics": {
+        "likes": 54632,
+        "reposts": 12749,
+        "replies": 3705,
+        "quotes": 4666,
+        "bookmarks": 5142,
+        "impressions": 1671003
+      },
+      "summary": "SpaceX wrote “Mechazilla catches Starship! Congratulations to the entire SpaceX team on this incredible achievement!,” with a video attached. The update went out at 22:21 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121715062666875373",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T21:21:05.000Z",
+      "text": "Spacex Starship go for tower. 1 minute",
+      "url": "https://x.com/nextbigfuture/status/2121715062666875373",
+      "metrics": {
+        "likes": 35,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 1912
+      },
+      "summary": "Brian Wang wrote “Spacex Starship go for tower. 1 minute.” The post went out at 22:21 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121714851613741059",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T21:20:14.000Z",
+      "text": "2 minutes to SpaceX Starship catch attempt\n\nDon't panic",
+      "url": "https://x.com/nextbigfuture/status/2121714851613741059",
+      "metrics": {
+        "likes": 40,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 1,
+        "impressions": 2053
+      },
+      "summary": "Brian Wang wrote “2 minutes to SpaceX Starship catch attempt” and “Don't panic.” The post went out at 22:20 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121714305968304321",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T21:18:04.000Z",
+      "text": "Starship is executing a banking maneuver and final approach as it returns to Starbase for a catch https://t.co/E1WpGrlfaz",
+      "url": "https://x.com/SpaceX/status/2121714305968304321",
+      "metrics": {
+        "likes": 11478,
+        "reposts": 939,
+        "replies": 379,
+        "quotes": 100,
+        "bookmarks": 357,
+        "impressions": 489846
+      },
+      "summary": "SpaceX wrote “Starship is executing a banking maneuver and final approach as it returns to Starbase for a catch,” with a video attached. The update went out at 22:18 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121713559361249572",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T21:15:06.000Z",
+      "text": "About 8 minutes to Starship 42 flight 15 catch attempt $SPCX https://t.co/qMrs6jqNlk",
+      "url": "https://x.com/nextbigfuture/status/2121713559361249572",
+      "metrics": {
+        "likes": 11,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 1461
+      },
+      "summary": "Brian Wang wrote “About 8 minutes to Starship 42 flight 15 catch attempt $SPCX.” The post went out at 22:15 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121711061439217899",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T21:05:11.000Z",
+      "text": "Historic SpaceX Starship catch attempt is in minutes. Deorbit is happening. Attempt will be made in minutes or they will abort and land in the ocean.\n\n$SPCX https://t.co/8pXnjQKLzK https://t.co/2f4hWq42DI",
+      "url": "https://x.com/nextbigfuture/status/2121711061439217899",
+      "metrics": {
+        "likes": 23,
+        "reposts": 2,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 1957
+      },
+      "summary": "Brian Wang wrote that a historic SpaceX Starship catch attempt is in minutes, that deorbit is happening, and that an attempt will be made in minutes or they will abort and land in the ocean, tagging $SPCX. The post went out at 22:05 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2121709368945385477",
       "username": "SpaceX",
