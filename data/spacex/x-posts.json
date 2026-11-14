@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T17:08:49+01:00",
+  "updated": "2026-11-14T18:01:40+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,90 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121648757456662970",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T16:57:36.000Z",
+      "text": "Starlink https://t.co/NUZAs2alPg",
+      "url": "https://x.com/elonmusk/status/2121648757456662970",
+      "metrics": {
+        "likes": 649,
+        "reposts": 107,
+        "replies": 123,
+        "quotes": 9,
+        "bookmarks": 11,
+        "impressions": 318430
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk posted “Starlink,” quoting a report that SpaceX is donating Starlink kits to help vulnerable children, including devices received by Lagos State’s Ministry of Youth and Social Development via BEB Global, and that SpaceX’s wider grant covers 750 kits in 16 countries and 12 months of free internet. The quote tweet went out at 17:57 CET on 14 November 2026."
+    },
+    {
+      "id": "2121648438144024943",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T16:56:20.000Z",
+      "text": "@DJSnM Yes, the green flame is caused by burning copper from depleting fuel in the regenerative cooling circuit and going oxygen-rich (closer to stoichiometric temperature) in the main combustion chamber. \n\nSlight underperformance of engines on this flight is the reason. The booster is meant to land with tiny residuals, so the solution is to improve engine performance and performance consistency (underway with Raptor V3.2), as well as adjust flight software to do MECO1 about one second earlier to ensure enough propellant for boostback and landing (tiny change).\n\nThese early ships and boosters are already outdated by improved designs in production or on the test stand, so this booster loss does not change our timeline to reach high volume, fully reusable Starship flights.",
+      "url": "https://x.com/elonmusk/status/2121648438144024943",
+      "metrics": {
+        "likes": 727,
+        "reposts": 105,
+        "replies": 59,
+        "quotes": 18,
+        "bookmarks": 58,
+        "impressions": 41957
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk replied to @DJSnM that the green flame is caused by burning copper from depleting fuel in the regenerative cooling circuit and going oxygen-rich in the main combustion chamber, and that slight engine underperformance on this flight is the reason; the booster is meant to land with tiny residuals, so the fix is better engine performance and consistency (underway with Raptor V3.2) plus a small flight-software change to do MECO1 about one second earlier. He added that these early ships and boosters are already outdated by improved designs in production or on the test stand, so this booster loss does not change SpaceX’s timeline to reach high-volume, fully reusable Starship flights; the reply went out at 17:56 CET on 14 November 2026."
+    },
+    {
+      "id": "2121644169462681818",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T16:39:22.000Z",
+      "text": "Text watermarking with Grok is only on where required by law or requested by the user https://t.co/GbSxfeRShc",
+      "url": "https://x.com/elonmusk/status/2121644169462681818",
+      "metrics": {
+        "likes": 1934,
+        "reposts": 217,
+        "replies": 363,
+        "quotes": 46,
+        "bookmarks": 113,
+        "impressions": 525272
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk wrote “Text watermarking with Grok is only on where required by law or requested by the user,” quoting a post that text watermarking is now off by default in the SpaceXSI API. The quote tweet went out at 17:39 CET on 14 November 2026."
+    },
+    {
+      "id": "2121640541221785669",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T16:24:57.000Z",
+      "text": "@billlee This is not as good as it sounds, because Starlink required many satellites in low Earth orbit to achieve this bandwidth improvement globally. \n\nThat said, there will ultimately be over 100k SpaceX communications satellites, most of which will be V4 or V5. Good chance that this system carries about half of global traffic.",
+      "url": "https://x.com/elonmusk/status/2121640541221785669",
+      "metrics": {
+        "likes": 1707,
+        "reposts": 152,
+        "replies": 172,
+        "quotes": 15,
+        "bookmarks": 91,
+        "impressions": 86763
+      },
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk replied to @billlee that this is not as good as it sounds, because Starlink required many satellites in low Earth orbit to achieve this bandwidth improvement globally, though there will ultimately be over 100k SpaceX communications satellites, most of which will be V4 or V5, and a good chance that this system carries about half of global traffic. The reply, at 17:24 CET on 14 November 2026, followed @billlee’s quote of a Grok post saying 50 Tbps per Starship would be more than 2% of roughly 2,260 Tbps of global international bandwidth."
+    },
     {
       "id": "2121630197611208994",
       "username": "elonmusk",
