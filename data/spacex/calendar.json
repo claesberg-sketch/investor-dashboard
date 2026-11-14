@@ -1,17 +1,17 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-14",
   "timezoneNote": "Launch windows in U.S. Eastern Time unless stated. Displayed to visitors in Europe/Stockholm as well.",
   "events": [
     {
       "id": "f15",
       "date": "2026-11-13",
       "dateLabel": "13 Nov 2026",
-      "window": "17:45\u201319:00 ET",
+      "window": "Launched 13 Nov 17:47 ET (22:47 UTC); ship catch attempt planned 14 Nov ~21:17 UTC",
       "type": "launch",
       "title": "Starship Flight 15",
-      "detail": "Starbase, Texas. First planned return-to-launch-site catch of both Super Heavy and Starship (the ship about 22 hours after liftoff); 26 Starlink V3 satellites to orbit. Pending regulatory approval.",
-      "source": "SpaceX / Space.com",
-      "url": "https://www.spacex.com/launches/starship-flight-15",
+      "detail": "Starbase, Texas. Launched 13 Nov 2026; Super Heavy booster catch was aborted. Ship (S42) with 26 Starlink V3 satellites is in orbit, with the first-ever ship return-to-launch-site catch attempt planned about 22.5 hours after liftoff (14 Nov, ~21:17 UTC).",
+      "source": "Space.com, 13 Nov 2026",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship",
       "topics": [
         "Starship",
         "Starlink"
@@ -21,7 +21,7 @@
       "id": "thanks",
       "date": "2026-11-26",
       "type": "market",
-      "title": "U.S. Thanksgiving \u2014 equity markets closed",
+      "title": "U.S. Thanksgiving — equity markets closed",
       "detail": "Nasdaq closed. Hyperliquid xyz:SPCX continues to trade; oracle on internal pricing for the U.S. holiday (overnight session also shut Nov 25 per trade.xyz holiday schedule).",
       "source": "trade.xyz / Nasdaq calendar",
       "url": "https://hypeguides.com/guides/spcx-hyperliquid-guide"
@@ -44,8 +44,8 @@
       "date": "2026-12-10",
       "dateLabel": "10 Dec 2026 (tentative)",
       "type": "launch",
-      "title": "Starship Flight 16 \u2014 first from Florida (tentative)",
-      "detail": "Public reporting points to a mid-December target, possibly Dec 10, from LC-39A at Kennedy Space Center \u2014 the first Starship launch from Florida. Date not confirmed by SpaceX in a formal advisory as of 11 Nov.",
+      "title": "Starship Flight 16 — first from Florida (tentative)",
+      "detail": "Public reporting points to a mid-December target, possibly Dec 10, from LC-39A at Kennedy Space Center — the first Starship launch from Florida. Date not confirmed by SpaceX in a formal advisory as of 11 Nov.",
       "source": "Florida spaceflight reporting / launch lists",
       "url": "https://flspaceflight.com/news/starship-new-glenn-florida-december-2026-launch-targets",
       "tentative": true,
@@ -59,7 +59,7 @@
       "dateLabel": "~25 Feb 2027 (estimated, unconfirmed)",
       "type": "earnings",
       "title": "Q4 2026 / FY2026 results (estimated)",
-      "detail": "TipRanks/earnings calendars estimate around 25 Feb 2027. SpaceX has not confirmed the date. Separately, the prospectus releases up to 351.9 million extended-group shares on the second full trading day after those results \u2014 that unlock date is therefore also unset. See the Share unlock schedule.",
+      "detail": "TipRanks/earnings calendars estimate around 25 Feb 2027. SpaceX has not confirmed the date. Separately, the prospectus releases up to 351.9 million extended-group shares on the second full trading day after those results — that unlock date is therefore also unset. See the Share unlock schedule.",
       "source": "TipRanks earnings date estimate",
       "url": "https://www.tipranks.com/stocks/spcx/earnings",
       "tentative": true,
@@ -72,7 +72,7 @@
       "id": "mesh144",
       "date": "2027-01-06",
       "type": "lockup",
-      "title": "Mesh Optical merger shares \u2014 earliest Rule 144 date",
+      "title": "Mesh Optical merger shares — earliest Rule 144 date",
       "detail": "About 3.8 million unregistered shares issued Jul 6, 2026; six-month holding period ends around Jan 6, 2027.",
       "source": "Q3 10-Q / FloatCap",
       "url": "https://floatcap.app/stocks/SPCX",
@@ -84,7 +84,7 @@
       "id": "cursor144",
       "date": "2027-02-16",
       "type": "lockup",
-      "title": "Cursor merger shares \u2014 earliest Rule 144 trading day",
+      "title": "Cursor merger shares — earliest Rule 144 trading day",
       "detail": "~391.0 million shares issued Aug 14, 2026. Six-month holding ends Feb 14, 2027 (Sunday); Feb 15 is Presidents' Day; first trading day Feb 16. A separate lock-up may still apply; terms not fully public.",
       "source": "8-K / FloatCap",
       "url": "https://floatcap.app/stocks/SPCX",
@@ -98,7 +98,7 @@
       "date": "2027-03-18",
       "type": "lockup",
       "title": "Extended lock-up: 10% scheduled release",
-      "detail": "176 million shares from the extended IPO lock-up group (holders other than Musk, including most of Gwynne Shotwell\u2019s and the CFO\u2019s holdings).",
+      "detail": "176 million shares from the extended IPO lock-up group (holders other than Musk, including most of Gwynne Shotwell’s and the CFO’s holdings).",
       "source": "424(b)(4) / FloatCap",
       "url": "https://floatcap.app/stocks/SPCX",
       "topics": [
@@ -111,7 +111,7 @@
       "dateLabel": "12 Jun 2027 (Saturday; first session 14 Jun)",
       "type": "lockup",
       "title": "Elon Musk 366-day IPO lock-up ends",
-      "detail": "849.5M Class A and 3.917B Class B (must convert to Class A before sale), plus a 20% extended-group slice (~351.9M) also scheduled for this date. Musk\u2019s unvested CEO / AI performance awards remain subject to separate vesting (market-cap and operational milestones, including a Mars colony and off-Earth compute).",
+      "detail": "849.5M Class A and 3.917B Class B (must convert to Class A before sale), plus a 20% extended-group slice (~351.9M) also scheduled for this date. Musk’s unvested CEO / AI performance awards remain subject to separate vesting (market-cap and operational milestones, including a Mars colony and off-Earth compute).",
       "source": "424(b)(4) Underwriting, Lock-up Agreements",
       "url": "https://floatcap.app/stocks/SPCX",
       "topics": [
@@ -122,7 +122,7 @@
       "id": "echostar",
       "date": "2027-11-30",
       "type": "corporate",
-      "title": "EchoStar spectrum closing \u2014 share issuance (expected)",
+      "title": "EchoStar spectrum closing — share issuance (expected)",
       "detail": "Up to 261,792,453 Class A shares to be issued to EchoStar at the spectrum closing, expected Nov 30, 2027 (per FloatCap / 10-Q discussion of fully diluted shares).",
       "source": "FloatCap / 10-Q",
       "url": "https://floatcap.app/stocks/SPCX",
@@ -132,11 +132,11 @@
   "risks": [
     {
       "title": "Capex and free cash flow",
-      "detail": "SI capex is enormous: $16.4B in Q3, with Q4 guided at $35\u201340B. Street FY2026 FCF consensus is about \u2212$56.6B. The AI build has to keep converting into contracted revenue."
+      "detail": "SI capex is enormous: $16.4B in Q3, with Q4 guided at $35–40B. Street FY2026 FCF consensus is about −$56.6B. The AI build has to keep converting into contracted revenue."
     },
     {
       "title": "Q1 2027 guidance execution",
-      "detail": "A jump from $14.6B in Q3 to $33\u201337B in Q1 2027 depends on cloud-services agreements and compute actually coming online. Misses would likely re-rate the stock."
+      "detail": "A jump from $14.6B in Q3 to $33–37B in Q1 2027 depends on cloud-services agreements and compute actually coming online. Misses would likely re-rate the stock."
     },
     {
       "title": "Lock-up supply",
@@ -144,7 +144,7 @@
     },
     {
       "title": "Power, cooling, and supply chain",
-      "detail": "Musk has flagged power, cooling and electrical infrastructure as binding constraints. The Texas gas-plant / data-center plans and the 100 GW/year solar equipment order are part of the answer \u2014 and also new execution risks."
+      "detail": "Musk has flagged power, cooling and electrical infrastructure as binding constraints. The Texas gas-plant / data-center plans and the 100 GW/year solar equipment order are part of the answer — and also new execution risks."
     },
     {
       "title": "Key-person and control",
