@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T19:04:07+01:00",
+  "updated": "2026-11-14T20:02:33+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,86 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121669169925996567",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T18:18:43.000Z",
+      "text": "Actually, just looked closer and noticed that Tom, Gwynne and a few others aren’t in this particular picture, but they were certainly part of the company in those days",
+      "url": "https://x.com/elonmusk/status/2121669169925996567",
+      "metrics": {
+        "likes": 1611,
+        "reposts": 85,
+        "replies": 162,
+        "quotes": 8,
+        "bookmarks": 38,
+        "impressions": 150749
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Elon Musk replied to his own post about the 2002 SpaceX company photo, writing that he looked closer and noticed that Tom, Gwynne and a few others aren’t in this particular picture, but they were certainly part of the company in those days. The reply went out at 19:18 CET on 14 November 2026."
+    },
+    {
+      "id": "2121668709064282507",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T18:16:53.000Z",
+      "text": "True, that pic shows everyone in the entire company of SpaceX in 2002!\n\nTom Mueller (@lrocket) and Hans Koenigsmann, both amazing, world-class engineers, came by Mission Control last night. Good to see old friends ❤️ https://t.co/VJpa1cQERO",
+      "url": "https://x.com/elonmusk/status/2121668709064282507",
+      "metrics": {
+        "likes": 4872,
+        "reposts": 400,
+        "replies": 495,
+        "quotes": 35,
+        "bookmarks": 163,
+        "impressions": 719372
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Elon Musk wrote that the picture shows everyone in the entire company of SpaceX in 2002, and that Tom Mueller (@lrocket) and Hans Koenigsmann, both amazing, world-class engineers, came by Mission Control last night, adding “Good to see old friends,” quoting @cb_doge’s “How it started v/s How it’s going” comparison photo. The quote tweet went out at 19:16 CET on 14 November 2026."
+    },
+    {
+      "id": "2121666778308678025",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T18:09:13.000Z",
+      "text": "@DJSnM 💯\n\nWe have the next booster almost ready for flight, but losing the tower or launch mount would potentially cost us 2 to 3 months",
+      "url": "https://x.com/elonmusk/status/2121666778308678025",
+      "metrics": {
+        "likes": 1932,
+        "reposts": 123,
+        "replies": 97,
+        "quotes": 19,
+        "bookmarks": 77,
+        "impressions": 49494
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk replied to @DJSnM with a 💯 and wrote that SpaceX has the next booster almost ready for flight, but losing the tower or launch mount would potentially cost the company two to three months, after Scott Manley said he was glad they have a tower ready for later today and that diversion was clearly the right call. The reply went out at 19:09 CET on 14 November 2026."
+    },
+    {
+      "id": "2121666488214204441",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T18:08:04.000Z",
+      "text": "@DJSnM As always, initial conclusions are often wrong to some degree. Full review of the flight telemetry is needed for high probability final conclusions.",
+      "url": "https://x.com/elonmusk/status/2121666488214204441",
+      "metrics": {
+        "likes": 2262,
+        "reposts": 131,
+        "replies": 108,
+        "quotes": 12,
+        "bookmarks": 72,
+        "impressions": 170041
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk replied to @DJSnM, in the Flight 15 thread, that initial conclusions are often wrong to some degree and that a full review of the flight telemetry is needed for high-probability final conclusions. The reply went out at 19:08 CET on 14 November 2026."
+    },
     {
       "id": "2121649657189425394",
       "username": "elonmusk",
