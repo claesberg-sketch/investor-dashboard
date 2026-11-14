@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T20:02:33+01:00",
+  "updated": "2026-11-14T21:08:30+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,88 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121695824543695119",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T20:04:38.000Z",
+      "text": "Elon says the Flight 15 Booster aborted return and then crashed. It was running low on fuel. It was burning too much. They used up more fuel to divert. So attempting to land could have made it but it was too risky. They may have needed more hover moves.\n\nSlight underperformance https://t.co/sQWCuS11Z7 https://t.co/XYMvvsfKdi",
+      "url": "https://x.com/nextbigfuture/status/2121695824543695119",
+      "metrics": {
+        "likes": 2,
+        "reposts": 0,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 251
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Brian Wang wrote that Elon says the Flight 15 booster aborted its return and then crashed, that it was running low on fuel and burning too much, and that they used up more fuel to divert, so attempting to land could have made it but it was too risky and they may have needed more hover moves. The post, which quotes Musk’s earlier reply on the green flame and “slight underperformance,” went out at 21:04 CET on 14 November 2026; it is Wang’s paraphrase of Musk, not a new official SpaceX statement."
+    },
+    {
+      "id": "2121695381759144393",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T20:02:52.000Z",
+      "text": "All systems green for the deorbit burn of Starship https://t.co/fPMxiM2FII",
+      "url": "https://x.com/elonmusk/status/2121695381759144393",
+      "metrics": {
+        "likes": 1835,
+        "reposts": 257,
+        "replies": 249,
+        "quotes": 31,
+        "bookmarks": 48,
+        "impressions": 307755
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk wrote “All systems green for the deorbit burn of Starship,” quoting SpaceX’s post that teams have polled go to return Starship to the launch site at Starbase. The quote tweet went out at 21:02 CET on 14 November 2026."
+    },
+    {
+      "id": "2121684113526858011",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T19:18:06.000Z",
+      "text": "Teams have polled go to return Starship to the launch site at Starbase https://t.co/BsrI3nLXFe",
+      "url": "https://x.com/SpaceX/status/2121684113526858011",
+      "metrics": {
+        "likes": 9200,
+        "reposts": 1139,
+        "replies": 348,
+        "quotes": 270,
+        "bookmarks": 398,
+        "impressions": 501597
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "SpaceX said teams have polled go to return Starship to the launch site at Starbase, with a video attached. The update went out at 20:18 CET on 14 November 2026."
+    },
+    {
+      "id": "2121682638759235876",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T19:12:14.000Z",
+      "text": "Watch our next status check in ~5 minutes ahead of Starship's deorbit and return to launch site https://t.co/qzWBFfwesN",
+      "url": "https://x.com/SpaceX/status/2121682638759235876",
+      "metrics": {
+        "likes": 3317,
+        "reposts": 388,
+        "replies": 100,
+        "quotes": 40,
+        "bookmarks": 118,
+        "impressions": 270002
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "SpaceX wrote “Watch our next status check in ~5 minutes ahead of Starship's deorbit and return to launch site,” quoting its earlier Flight 15 broadcast link. The post went out at 20:12 CET on 14 November 2026."
+    },
     {
       "id": "2121669169925996567",
       "username": "elonmusk",
