@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T21:08:30+01:00",
+  "updated": "2026-11-14T22:02:19+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,111 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121709368945385477",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T20:58:27.000Z",
+      "text": "Starship is reentering Earth’s atmosphere https://t.co/b0M87R1SHn",
+      "url": "https://x.com/SpaceX/status/2121709368945385477",
+      "metrics": {
+        "likes": 602,
+        "reposts": 151,
+        "replies": 32,
+        "quotes": 14,
+        "bookmarks": 28,
+        "impressions": 58793
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "SpaceX wrote “Starship is reentering Earth’s atmosphere,” with a video attached. The update went out at 21:58 CET on 14 November 2026."
+    },
+    {
+      "id": "2121701421183853007",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T20:26:52.000Z",
+      "text": "Good deorbit burn. \n\nLanding burn in 53 minutes.  https://t.co/GJIz7yiCvY",
+      "url": "https://x.com/elonmusk/status/2121701421183853007",
+      "metrics": {
+        "likes": 8215,
+        "reposts": 1041,
+        "replies": 788,
+        "quotes": 142,
+        "bookmarks": 314,
+        "impressions": 704048
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk wrote “Good deorbit burn. Landing burn in 53 minutes,” with a link to the Flight 15 live broadcast. The update went out at 21:26 CET on 14 November 2026."
+    },
+    {
+      "id": "2121701161040556374",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T20:25:50.000Z",
+      "text": "Good deorbit burn. Starship is on course to reenter Earth’s atmosphere ahead of a planned catch at Starbase in ~1 hour https://t.co/eQPUx9klvM",
+      "url": "https://x.com/SpaceX/status/2121701161040556374",
+      "metrics": {
+        "likes": 3838,
+        "reposts": 494,
+        "replies": 110,
+        "quotes": 75,
+        "bookmarks": 127,
+        "impressions": 275504
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "SpaceX said “Good deorbit burn. Starship is on course to reenter Earth’s atmosphere ahead of a planned catch at Starbase in ~1 hour,” with a video attached. The update went out at 21:25 CET on 14 November 2026."
+    },
+    {
+      "id": "2121700409173487768",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T20:22:51.000Z",
+      "text": "Starship deorbit burn in 30 seconds",
+      "url": "https://x.com/elonmusk/status/2121700409173487768",
+      "metrics": {
+        "likes": 6270,
+        "reposts": 505,
+        "replies": 593,
+        "quotes": 47,
+        "bookmarks": 94,
+        "impressions": 638517
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk wrote “Starship deorbit burn in 30 seconds.” The post went out at 21:22 CET on 14 November 2026."
+    },
+    {
+      "id": "2121698835659706459",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T20:16:36.000Z",
+      "text": "Watch live: After being in orbit for more than 21 hours, Starship is preparing for its deorbit burn, reentry, and for the first time ship's return to launch site and catch at Starbase https://t.co/qzWBFfwesN",
+      "url": "https://x.com/SpaceX/status/2121698835659706459",
+      "metrics": {
+        "likes": 3043,
+        "reposts": 418,
+        "replies": 90,
+        "quotes": 53,
+        "bookmarks": 128,
+        "impressions": 286009
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "SpaceX wrote “Watch live: After being in orbit for more than 21 hours, Starship is preparing for its deorbit burn, reentry, and for the first time ship's return to launch site and catch at Starbase,” quoting its earlier Flight 15 broadcast link. The post went out at 21:16 CET on 14 November 2026."
+    },
     {
       "id": "2121695824543695119",
       "username": "nextbigfuture",
