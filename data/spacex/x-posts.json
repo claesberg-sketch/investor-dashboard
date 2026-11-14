@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T08:04:08+01:00",
+  "updated": "2026-11-14T09:09:09+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,50 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121502131056177514",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T07:14:58.000Z",
+      "text": "Made on Earth by humans https://t.co/NEQ4zMs7bo",
+      "url": "https://x.com/elonmusk/status/2121502131056177514",
+      "metrics": {
+        "likes": 11959,
+        "reposts": 1227,
+        "replies": 1392,
+        "quotes": 227,
+        "bookmarks": 411,
+        "impressions": 660761
+      },
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk posted “Made on Earth by humans,” with a photo of Starship and its Super Heavy booster lifting off from Starbase over the wetlands under a clear sky. The post went out at 08:14 CET on 14 November 2026, the morning after Flight 15 launched."
+    },
+    {
+      "id": "2121501324663832873",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T07:11:46.000Z",
+      "text": "Future Starship flights will carry over 50 Tb/s of Starlink bandwidth to orbit https://t.co/4XDqI7TICt",
+      "url": "https://x.com/elonmusk/status/2121501324663832873",
+      "metrics": {
+        "likes": 3123,
+        "reposts": 363,
+        "replies": 411,
+        "quotes": 46,
+        "bookmarks": 84,
+        "impressions": 557108
+      },
+      "topics": [
+        "Starship",
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk wrote “Future Starship flights will carry over 50 Tb/s of Starlink bandwidth to orbit,” quoting Starlink’s earlier note that Friday’s payload would add up to 26 terabits of capacity to the constellation. The quote went out at 08:11 CET on 14 November 2026."
+    },
     {
       "id": "2121493331528056887",
       "username": "elonmusk",
