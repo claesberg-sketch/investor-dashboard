@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T16:09:58+01:00",
+  "updated": "2026-11-14T17:08:49+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,128 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121630197611208994",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T15:43:51.000Z",
+      "text": "@Erdayastronaut Booster was slightly low on fuel",
+      "url": "https://x.com/elonmusk/status/2121630197611208994",
+      "metrics": {
+        "likes": 2590,
+        "reposts": 215,
+        "replies": 187,
+        "quotes": 78,
+        "bookmarks": 94,
+        "impressions": 82297
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "Elon Musk replied to @Erdayastronaut that the Super Heavy booster “was slightly low on fuel,” after that account quoted SpaceX’s Flight 15 status update and said the booster diverted because it “wasn’t where it was supposed to be,” wondering if something aerodynamic had underperformed during reentry. The reply went out at 16:43 CET on 14 November 2026 and gives Musk’s explanation for why the booster catch was aborted."
+    },
+    {
+      "id": "2121629958036492590",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T15:42:54.000Z",
+      "text": "Following Booster splashdown in the Gulf yesterday, SpaceX recovery teams were immediately onsite to safe the area.\n\nAt the same time, our Environmental Health and Safety team is ensuring any debris that washes onshore is recovered. We’re committed to protecting and restoring Boca Chica Beach.",
+      "url": "https://x.com/SpaceX/status/2121629958036492590",
+      "metrics": {
+        "likes": 1696,
+        "reposts": 156,
+        "replies": 36,
+        "quotes": 8,
+        "bookmarks": 48,
+        "impressions": 66040
+      },
+      "topics": [],
+      "highlight": true,
+      "summary": "In a follow-up to its Flight 15 update, SpaceX said that after the booster splashdown in the Gulf the day before, recovery teams were immediately on site to safe the area, and that its Environmental Health and Safety team is making sure any debris that washes onshore is recovered. The company said it is committed to protecting and restoring Boca Chica Beach; the post went out at 16:42 CET on 14 November 2026, with photos attached."
+    },
+    {
+      "id": "2121629656868614213",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T15:41:42.000Z",
+      "text": "Flight 15 Update: Starship coasting in orbit, still looking good for return to launch site today. Pad and tower systems are go for catch. https://t.co/vMkjoZdxa6",
+      "url": "https://x.com/SpaceX/status/2121629656868614213",
+      "metrics": {
+        "likes": 4792,
+        "reposts": 631,
+        "replies": 159,
+        "quotes": 57,
+        "bookmarks": 174,
+        "impressions": 229553
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "SpaceX posted a Flight 15 update saying Starship was coasting in orbit and still looking good for a return to the launch site later today, with pad and tower systems go for catch. The post went out at 16:41 CET on 14 November 2026, with a video attached."
+    },
+    {
+      "id": "2121628295234023654",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T15:36:18.000Z",
+      "text": "Improvements to Grok @Bot efficiency https://t.co/V5e35Nz7Du",
+      "url": "https://x.com/elonmusk/status/2121628295234023654",
+      "metrics": {
+        "likes": 2152,
+        "reposts": 217,
+        "replies": 516,
+        "quotes": 27,
+        "bookmarks": 62,
+        "impressions": 596748
+      },
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk wrote “Improvements to Grok @Bot efficiency,” quoting a post that a few Grok Bot harness optimizations had shipped this week, which should give about 7% more usage out of a plan and up to about 15% more on routine runs. The quote tweet went out at 16:36 CET on 14 November 2026."
+    },
+    {
+      "id": "2121627776881230121",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T15:34:14.000Z",
+      "text": "Update on Starship https://t.co/poEZV34ICD",
+      "url": "https://x.com/elonmusk/status/2121627776881230121",
+      "metrics": {
+        "likes": 3367,
+        "reposts": 347,
+        "replies": 411,
+        "quotes": 25,
+        "bookmarks": 66,
+        "impressions": 584499
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "Elon Musk posted “Update on Starship,” quoting SpaceX’s message that it was back live for a status update on Starship Flight 15. The quote tweet went out at 16:34 CET on 14 November 2026."
+    },
+    {
+      "id": "2121625194275951101",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T15:23:58.000Z",
+      "text": "Back live for a status update on Starship's Flight 15 https://t.co/qzWBFfvGDf",
+      "url": "https://x.com/SpaceX/status/2121625194275951101",
+      "metrics": {
+        "likes": 2490,
+        "reposts": 297,
+        "replies": 106,
+        "quotes": 28,
+        "bookmarks": 89,
+        "impressions": 428583
+      },
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true,
+      "summary": "SpaceX wrote that it was “Back live for a status update on Starship's Flight 15,” quoting its earlier Flight 15 broadcast link. The post went out at 16:23 CET on 14 November 2026."
+    },
     {
       "id": "2121611711278981147",
       "username": "elonmusk",
