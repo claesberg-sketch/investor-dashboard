@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T09:09:09+01:00",
+  "updated": "2026-11-14T15:07:31+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,28 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121602376532742611",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T13:53:18.000Z",
+      "text": "Starship in orbit over Africa https://t.co/vwkuBpdrLI",
+      "url": "https://x.com/SpaceX/status/2121602376532742611",
+      "metrics": {
+        "likes": 2706,
+        "reposts": 309,
+        "replies": 106,
+        "quotes": 37,
+        "bookmarks": 96,
+        "impressions": 102687
+      },
+      "topics": [
+        "Starship",
+        "Starlink"
+      ],
+      "highlight": true,
+      "summary": "SpaceX posted an 83-second onboard video, labelled “Views by Starlink,” of Starship Flight 15 in orbit over Africa, with the ship’s tiled heatshield in the foreground and the Nile and the surrounding desert below. The overlay showed the vehicle at about 26,400 km/h and 266 km altitude around T+15 hours; the post went out at 14:53 CET on 14 November 2026, during the long coast ahead of the planned return-to-launch-site catch."
+    },
     {
       "id": "2121502131056177514",
       "username": "elonmusk",
