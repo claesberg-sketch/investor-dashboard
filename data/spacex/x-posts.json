@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T06:52:51+01:00",
+  "updated": "2026-11-15T07:54:47+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 15 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -41,6 +41,48 @@
   ],
   "posts": [
     {
+      "id": "2121802527524164015",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T03:08:38.000Z",
+      "text": "Will the future that you want https://t.co/kkSV08AUuv",
+      "url": "https://x.com/elonmusk/status/2121802527524164015",
+      "metrics": {
+        "likes": 31801,
+        "reposts": 2535,
+        "replies": 1543,
+        "quotes": 194,
+        "bookmarks": 895,
+        "impressions": 1476570
+      },
+      "summary": "Elon Musk wrote “Will the future that you want,” quoting a Geiger Capital post that said “Choose your path Western man” and paired a photo of Starship being caught by the tower arms with a photo of an unfinished elevated concrete guideway. The post went out at 04:08 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121791568055320994",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T02:25:05.000Z",
+      "text": "@yunta_tsai As foretold by the great prophet, Douglas Adams",
+      "url": "https://x.com/elonmusk/status/2121791568055320994",
+      "metrics": {
+        "likes": 4647,
+        "reposts": 253,
+        "replies": 416,
+        "quotes": 52,
+        "bookmarks": 169,
+        "impressions": 160915
+      },
+      "summary": "Elon Musk replied “As foretold by the great prophet, Douglas Adams” to a post that said “The answer is 42,” a nod to Starship 42 after its return. The post went out at 03:25 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
       "id": "2121770874885845044",
       "username": "elonmusk",
       "name": "Elon Musk",
@@ -58,6 +100,27 @@
       "summary": "Elon Musk wrote “Try Grok @Bot,” quoting a post that said Grok Bot rebooked a cancelled flight and can now make phone calls and wait on hold. The post went out at 02:02 CET on 15 November 2026.",
       "topics": [
         "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121764319792677119",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T00:36:48.000Z",
+      "text": "Thanks https://t.co/wOjiVpoHqz",
+      "url": "https://x.com/elonmusk/status/2121764319792677119",
+      "metrics": {
+        "likes": 11715,
+        "reposts": 675,
+        "replies": 746,
+        "quotes": 46,
+        "bookmarks": 188,
+        "impressions": 1241226
+      },
+      "summary": "Elon Musk wrote “Thanks,” quoting a post that congratulated SpaceX “for making history with an amazing feat of engineering.” The post went out at 01:36 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
       ],
       "highlight": true
     },
