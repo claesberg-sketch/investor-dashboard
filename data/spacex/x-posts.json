@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T17:52:35+01:00",
+  "updated": "2026-11-15T19:56:13+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 15 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,48 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2122039394164990097",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T18:49:51.000Z",
+      "text": "@DavidSolomon You would be most welcome",
+      "url": "https://x.com/elonmusk/status/2122039394164990097",
+      "metrics": {
+        "likes": 572,
+        "reposts": 25,
+        "replies": 97,
+        "quotes": 5,
+        "bookmarks": 8,
+        "impressions": 26972
+      },
+      "summary": "Elon Musk replied “You would be most welcome” to a David Solomon post, quoting SpaceX’s “Mechazilla catches Starship!” video, that called the catch “spectacular,” said it “looks like science fiction, but it’s real,” and added that he needs to see it live one of these days. The post went out at 19:49 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122039209103970594",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T18:49:07.000Z",
+      "text": "@Alwaleed_Talal 🚀",
+      "url": "https://x.com/elonmusk/status/2122039209103970594",
+      "metrics": {
+        "likes": 363,
+        "reposts": 17,
+        "replies": 75,
+        "quotes": 6,
+        "bookmarks": 5,
+        "impressions": 24046
+      },
+      "summary": "Elon Musk replied “🚀” to an @Alwaleed_Talal post that thanked him, called the Starship catch “another extraordinary milestone,” and said “The sky is no longer the limit,” quoting Musk’s earlier “Congratulations to an incredible team at SpaceX!!!” The post went out at 19:49 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2122001927861158109",
       "username": "SpaceX",
