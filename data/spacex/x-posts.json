@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T08:53:08+01:00",
+  "updated": "2026-11-15T09:49:29+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 15 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,154 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121882242125529493",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T08:25:23.000Z",
+      "text": "@skorusARK Yes",
+      "url": "https://x.com/elonmusk/status/2121882242125529493",
+      "metrics": {
+        "likes": 679,
+        "reposts": 39,
+        "replies": 128,
+        "quotes": 5,
+        "bookmarks": 12,
+        "impressions": 31394
+      },
+      "summary": "Elon Musk replied “Yes” to a Sam Korus post that said “Terrestrial data centers were a cute phase,” with a Flight 15 webcast still of Starship held in the tower arms at T+22:32:39. The post went out at 09:25 CET on 15 November 2026.",
+      "topics": [
+        "AI compute",
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121880208638988668",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-15T08:17:19.000Z",
+      "text": "@mach33 SpaceX can rent for at a higher price to other customers if Anthropic leaves. Anthropic does not have a lot of other data center from Google and Amazon to replace SpaceX and if they did giving up the ~300,000 GPUs would slow growth.",
+      "url": "https://x.com/nextbigfuture/status/2121880208638988668",
+      "metrics": {
+        "likes": 2,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 49
+      },
+      "summary": "Brian Wang replied that SpaceX can rent at a higher price to other customers if Anthropic leaves, and that Anthropic does not have many other data-center options from Google and Amazon to replace SpaceX — giving up the ~300,000 GPUs would slow growth. The post, a reply to a Mach33 Financial Group episode post, went out at 09:17 CET on 15 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121879376853602768",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T08:14:00.000Z",
+      "text": "@anabology Human superintelligence \n\nMentats",
+      "url": "https://x.com/elonmusk/status/2121879376853602768",
+      "metrics": {
+        "likes": 1271,
+        "reposts": 83,
+        "replies": 188,
+        "quotes": 39,
+        "bookmarks": 41,
+        "impressions": 48600
+      },
+      "summary": "Elon Musk replied “Human superintelligence” and “Mentats” to a post that said “SpaceX is a honestly an artificial superintelligence.” The post went out at 09:14 CET on 15 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121878866801107098",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T08:11:59.000Z",
+      "text": "@willdepue The sky is not even close to the limit",
+      "url": "https://x.com/elonmusk/status/2121878866801107098",
+      "metrics": {
+        "likes": 1667,
+        "reposts": 119,
+        "replies": 187,
+        "quotes": 28,
+        "bookmarks": 50,
+        "impressions": 46097
+      },
+      "summary": "Elon Musk replied “The sky is not even close to the limit” to a will depue post that, quoting close-up photos of Ship 42 on the tower, said the alternative to everyday work is “constructing access to the heavens.” The post went out at 09:11 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121875758704370144",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T07:59:38.000Z",
+      "text": "5 years ago https://t.co/PvHI3xcTJf",
+      "url": "https://x.com/elonmusk/status/2121875758704370144",
+      "metrics": {
+        "likes": 5850,
+        "reposts": 512,
+        "replies": 590,
+        "quotes": 50,
+        "bookmarks": 218,
+        "impressions": 506479
+      },
+      "summary": "Elon Musk wrote “5 years ago,” quoting a DogeDesigner post that showed his 30 August 2021 post — “SpaceX will try to catch largest ever flying object with robot chopsticks. Success is not guaranteed, but excitement is!” — and said a Starship had now returned from orbit into those arms. The post went out at 08:59 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121875600906592260",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T07:59:00.000Z",
+      "text": "This gives a clear sense of the catch maneuver https://t.co/5IlsUeDFnd",
+      "url": "https://x.com/elonmusk/status/2121875600906592260",
+      "metrics": {
+        "likes": 3263,
+        "reposts": 344,
+        "replies": 370,
+        "quotes": 27,
+        "bookmarks": 152,
+        "impressions": 456418
+      },
+      "summary": "Elon Musk wrote “This gives a clear sense of the catch maneuver,” quoting a John Kraus composite photograph of Ship 42 flipping from horizontal to vertical and being caught by the Starbase tower arms on Flight 15. The post went out at 08:59 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121875056817328621",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T07:56:50.000Z",
+      "text": "Great day https://t.co/B3sFYvxicR",
+      "url": "https://x.com/elonmusk/status/2121875056817328621",
+      "metrics": {
+        "likes": 3554,
+        "reposts": 287,
+        "replies": 552,
+        "quotes": 42,
+        "bookmarks": 85,
+        "impressions": 490198
+      },
+      "summary": "Elon Musk wrote “Great day,” quoting a Demis Hassabis post that called the catch “one of the coolest things I've ever seen,” congratulated SpaceX, and said “the whole stack is now proven out,” with a photo of Starship hanging in the tower arms. The post went out at 08:56 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2121869801106878744",
       "username": "nextbigfuture",
