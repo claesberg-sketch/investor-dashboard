@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-14T23:10:35+01:00",
+  "updated": "2026-11-15T06:52:51+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X API public reads (get_users_posts) on 14 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
+  "source": "X API public reads (get_users_posts) on 15 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
@@ -40,6 +40,231 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2121770874885845044",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T01:02:51.000Z",
+      "text": "Try Grok @Bot https://t.co/wupzwF1bkE",
+      "url": "https://x.com/elonmusk/status/2121770874885845044",
+      "metrics": {
+        "likes": 9011,
+        "reposts": 875,
+        "replies": 769,
+        "quotes": 72,
+        "bookmarks": 1833,
+        "impressions": 1502377
+      },
+      "summary": "Elon Musk wrote “Try Grok @Bot,” quoting a post that said Grok Bot rebooked a cancelled flight and can now make phone calls and wait on hold. The post went out at 02:02 CET on 15 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121763977349013884",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T00:35:27.000Z",
+      "text": "I hugged ship 42 upon its return",
+      "url": "https://x.com/elonmusk/status/2121763977349013884",
+      "metrics": {
+        "likes": 68766,
+        "reposts": 3478,
+        "replies": 3564,
+        "quotes": 434,
+        "bookmarks": 1050,
+        "impressions": 3058616
+      },
+      "summary": "Elon Musk wrote “I hugged ship 42 upon its return.” The post went out at 01:35 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121763396190179414",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T00:33:08.000Z",
+      "text": "Some phone videos I took from the tower https://t.co/kxiSkIvoHQ",
+      "url": "https://x.com/elonmusk/status/2121763396190179414",
+      "metrics": {
+        "likes": 118195,
+        "reposts": 11910,
+        "replies": 5909,
+        "quotes": 1087,
+        "bookmarks": 6528,
+        "impressions": 2833898
+      },
+      "summary": "Elon Musk wrote “Some phone videos I took from the tower,” with media attached. The post went out at 01:33 CET on 15 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2121759522851115109",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T00:17:45.000Z",
+      "text": "The epic day has arrived, thanks to the incredibly talented team at SpaceX! https://t.co/vGQ8eSoEFk",
+      "url": "https://x.com/elonmusk/status/2121759522851115109",
+      "metrics": {
+        "likes": 37091,
+        "reposts": 3026,
+        "replies": 1248,
+        "quotes": 125,
+        "bookmarks": 714,
+        "impressions": 1377847
+      },
+      "summary": "Elon Musk wrote, “The epic day has arrived, thanks to the incredibly talented team at SpaceX!,” quoting a post about the Mechazilla catch. The post went out at 01:17 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121759042582589821",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T00:15:50.000Z",
+      "text": "Three booster catches and a ship https://t.co/Yqrn60Scfb",
+      "url": "https://x.com/elonmusk/status/2121759042582589821",
+      "metrics": {
+        "likes": 15065,
+        "reposts": 1710,
+        "replies": 845,
+        "quotes": 123,
+        "bookmarks": 524,
+        "impressions": 1076708
+      },
+      "summary": "Elon Musk wrote “Three booster catches and a ship,” quoting a post that listed SpaceX’s three prior Super Heavy booster catches and the first Starship catch on 14 November 2026. The post went out at 01:15 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121746382402797892",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T23:25:32.000Z",
+      "text": "Ship 42 looks great! https://t.co/ChJcdWiuuS",
+      "url": "https://x.com/elonmusk/status/2121746382402797892",
+      "metrics": {
+        "likes": 48279,
+        "reposts": 4625,
+        "replies": 2597,
+        "quotes": 383,
+        "bookmarks": 1735,
+        "impressions": 1586749
+      },
+      "summary": "Elon Musk wrote “Ship 42 looks great!,” with photos or video attached. The post went out at 00:25 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121744638650233057",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T23:18:36.000Z",
+      "text": "@NASAAdmin @SpaceX Thanks to an incredible team at SpaceX 🚀🚀",
+      "url": "https://x.com/elonmusk/status/2121744638650233057",
+      "metrics": {
+        "likes": 17469,
+        "reposts": 682,
+        "replies": 322,
+        "quotes": 25,
+        "bookmarks": 122,
+        "impressions": 154391
+      },
+      "summary": "Elon Musk replied to NASA Administrator congratulations, writing “Thanks to an incredible team at SpaceX.” The post went out at 00:18 CET on 15 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2121738348804857963",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-14T22:53:37.000Z",
+      "text": "On Friday, November 13, Starship lifted off from Starbase, Texas on its 15th flight. \n\nOn Saturday, November 14, Starship returned to Starbase, Texas, and changed everything → https://t.co/K5XRci6bnw https://t.co/smWs1qSDuZ",
+      "url": "https://x.com/SpaceX/status/2121738348804857963",
+      "metrics": {
+        "likes": 18998,
+        "reposts": 2598,
+        "replies": 650,
+        "quotes": 312,
+        "bookmarks": 830,
+        "impressions": 907809
+      },
+      "summary": "SpaceX wrote that on Friday, 13 November, Starship lifted off from Starbase, Texas on its 15th flight, and that on Saturday, 14 November, Starship returned to Starbase “and changed everything,” linking to the official Flight 15 recap. The post went out at 23:53 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121736650132983893",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-14T22:46:52.000Z",
+      "text": "$SPCX catch of STARSHIP https://t.co/sKjUSLdVO1",
+      "url": "https://x.com/nextbigfuture/status/2121736650132983893",
+      "metrics": {
+        "likes": 251,
+        "reposts": 15,
+        "replies": 6,
+        "quotes": 1,
+        "bookmarks": 9,
+        "impressions": 3729
+      },
+      "summary": "Brian Wang wrote “$SPCX catch of STARSHIP,” with media attached. The post went out at 23:46 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121733992726802703",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-14T22:36:18.000Z",
+      "text": "Inspecting ship 42 right now https://t.co/mazv15Dxtk",
+      "url": "https://x.com/elonmusk/status/2121733992726802703",
+      "metrics": {
+        "likes": 101283,
+        "reposts": 10012,
+        "replies": 4094,
+        "quotes": 812,
+        "bookmarks": 4516,
+        "impressions": 2784618
+      },
+      "summary": "Elon Musk wrote “Inspecting ship 42 right now,” with media attached. The post went out at 23:36 CET on 14 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2121729692394823814",
+      "username": "Gwynne_Shotwell",
+      "name": "Gwynne Shotwell",
+      "created_at": "2026-11-14T22:19:13.000Z",
+      "text": "Alien-level technology from this star system’s finest team. Congratulations and please enjoy the moment! https://t.co/99lqrfV5Vu",
+      "url": "https://x.com/Gwynne_Shotwell/status/2121729692394823814",
+      "metrics": {
+        "likes": 12290,
+        "reposts": 990,
+        "replies": 321,
+        "quotes": 35,
+        "bookmarks": 261,
+        "impressions": 109374
+      },
+      "summary": "Gwynne Shotwell quoted SpaceX’s catch announcement and wrote, “Alien-level technology from this star system’s finest team. Congratulations and please enjoy the moment!” The post went out at 23:19 CET on 14 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
     {
       "id": "2121726288968720709",
       "username": "elonmusk",

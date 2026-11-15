@@ -1,6 +1,22 @@
 {
-  "updated": "2026-11-13T23:09:24+01:00",
+  "updated": "2026-11-15T06:52:51+01:00",
   "items": [
+    {
+      "id": "pr-starship-flight-15",
+      "type": "press",
+      "date": "2026-11-14",
+      "title": "Starship Flight 15",
+      "summary": "SpaceX’s official Starship Flight 15 page says the vehicle lifted off from Pad 2 at Starbase on 13 November 2026, reached orbit and deployed 26 Starlink V3 satellites, while the Super Heavy booster aborted its catch after a boostback burn ended early due to low fuel mass and was diverted to an offshore landing in the Gulf, where its flight termination system was triggered after the landing burn. After more than 20 hours in space and a deorbit burn, Starship returned to the same launch site 22.5 hours after liftoff and, for the first time, was caught by Mechazilla’s arms.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/starship-flight-15/",
+      "topics": [
+        "Starship",
+        "Launch",
+        "Starlink"
+      ],
+      "datetime": "2026-11-14T22:53:37Z",
+      "timeSource": "Official SpaceX post linking the Flight 15 recap"
+    },
     {
       "id": "pr-restoring-boca-chica-beach",
       "type": "press",
