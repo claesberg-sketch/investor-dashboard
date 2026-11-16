@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T06:56:56+01:00",
+  "updated": "2026-11-16T07:57:52+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 16 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,48 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2122221516867895726",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T06:53:33.000Z",
+      "text": "💯 https://t.co/BQNBVr5IoM",
+      "url": "https://x.com/elonmusk/status/2122221516867895726",
+      "metrics": {
+        "likes": 424,
+        "reposts": 56,
+        "replies": 109,
+        "quotes": 4,
+        "bookmarks": 10,
+        "impressions": 279065
+      },
+      "summary": "Elon Musk wrote “💯,” quoting a Kiko Dontchev post that introduced “the greatest team on earth…. @SpaceX!!!” and said he couldn’t get over the high of yesterday, with vibes “10/10 right now.” The post went out at 07:53 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122217639540134337",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T06:38:08.000Z",
+      "text": "@pronounced_kyle Propellant cost per flight will drop below $500k and payload will exceed 200 tons",
+      "url": "https://x.com/elonmusk/status/2122217639540134337",
+      "metrics": {
+        "likes": 668,
+        "reposts": 75,
+        "replies": 110,
+        "quotes": 10,
+        "bookmarks": 34,
+        "impressions": 28511
+      },
+      "summary": "Elon Musk replied to Christian Keil that “Propellant cost per flight will drop below $500k and payload will exceed 200 tons,” after Keil wrote that it costs about $1 million to fuel Starship and that recovering both the ship and the booster would be the cost of putting 100 tons of payload into orbit. The reply went out at 07:38 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2122203324460265943",
       "username": "elonmusk",
