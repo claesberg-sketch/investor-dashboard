@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T20:00:51+01:00",
+  "updated": "2026-11-16T20:55:32+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 16 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,111 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2122416056006324311",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T19:46:34.000Z",
+      "text": "Try Grok @Bot https://t.co/JJJ3EdgqlD",
+      "url": "https://x.com/elonmusk/status/2122416056006324311",
+      "metrics": {
+        "likes": 429,
+        "reposts": 54,
+        "replies": 137,
+        "quotes": 3,
+        "bookmarks": 26,
+        "impressions": 274337
+      },
+      "summary": "Elon Musk wrote “Try Grok @Bot,” quoting a matt palmer post titled “What's new in Grok Bot 1.0,” with a video whose chapters were listed as team bot improvements, bots joining meetings, taking initiative, learning and improving, and being smarter and faster, plus “Lots of easter eggs in this one for y'all!” The post went out at 20:46 CET on 16 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122408454325416322",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T19:16:22.000Z",
+      "text": "Catching a Starship from space https://t.co/okQTOiW1Hu",
+      "url": "https://x.com/elonmusk/status/2122408454325416322",
+      "metrics": {
+        "likes": 6560,
+        "reposts": 636,
+        "replies": 691,
+        "quotes": 66,
+        "bookmarks": 200,
+        "impressions": 622151
+      },
+      "summary": "Elon Musk wrote “Catching a Starship from space,” quoting SpaceX’s “Don't Panic” post that said “Riding on Starship 42 during final approach to catch,” with video attached. The post went out at 20:16 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122407697240723650",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T19:13:22.000Z",
+      "text": "@farzyness Yeah",
+      "url": "https://x.com/elonmusk/status/2122407697240723650",
+      "metrics": {
+        "likes": 3098,
+        "reposts": 80,
+        "replies": 150,
+        "quotes": 11,
+        "bookmarks": 22,
+        "impressions": 56753
+      },
+      "summary": "Elon Musk replied “Yeah” to a Farzad post that said “SpaceX needs to be added to the list,” quoting a Polymarket post that said “JUST IN: Trump administration to reportedly name Nvidia, OpenAI, & Anthropic as AI “national champions.”” The reply went out at 20:13 CET on 16 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122407149401964722",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T19:11:11.000Z",
+      "text": "Cool https://t.co/eivxpAUM99",
+      "url": "https://x.com/elonmusk/status/2122407149401964722",
+      "metrics": {
+        "likes": 2878,
+        "reposts": 238,
+        "replies": 384,
+        "quotes": 27,
+        "bookmarks": 114,
+        "impressions": 619944
+      },
+      "summary": "Elon Musk wrote “Cool,” quoting a Yun-Ta Tsai post that said “Starship is no longer the smallest ship compared to the Culture. Respectable achievement,” with a scale chart titled “How big is Starship — in the Culture?” that places a SpaceX Starship V3 full stack (124.4 m) as #8 of 9, longer than an 80 m Scree-class ship and shorter than the larger Culture vessels. The post went out at 20:11 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122406902827245831",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T19:10:12.000Z",
+      "text": "We’ve come a long way https://t.co/X7YZpljHtH",
+      "url": "https://x.com/elonmusk/status/2122406902827245831",
+      "metrics": {
+        "likes": 10754,
+        "reposts": 776,
+        "replies": 657,
+        "quotes": 64,
+        "bookmarks": 266,
+        "impressions": 592192
+      },
+      "summary": "Elon Musk wrote “We’ve come a long way,” quoting a Sebastian Völkl post that said “100 years” and showed two photographs: a historic black-and-white image of a man in a winter coat standing beside a small metal-frame rocket in the snow, and a photo of Starship being caught by the launch tower’s arms with its engines still firing. The post went out at 20:10 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2122395316200894762",
       "username": "nextbigfuture",
