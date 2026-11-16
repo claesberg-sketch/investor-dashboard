@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T20:55:32+01:00",
+  "updated": "2026-11-16T21:55:51+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 16 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,112 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2122429861205774677",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T20:41:26.000Z",
+      "text": "Starship Flight 14 and Flight 15 are test flights and are deploying working Starlink. 20-35% of the new Starlink capacity this year could be added by Starship this year.  Each \"test flight of starship\" has put 26 bigger and better satellites into orbit, the equivalent of 20 https://t.co/2LO7dyabug",
+      "url": "https://x.com/nextbigfuture/status/2122429861205774677",
+      "metrics": {
+        "likes": 12,
+        "reposts": 2,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 2,
+        "impressions": 653
+      },
+      "summary": "Brian Wang wrote that Starship Flight 14 and Flight 15 are test flights that are deploying working Starlink, that “20-35% of the new Starlink capacity this year could be added by Starship this year,” and that each of those flights “has put 26 bigger and better satellites into orbit, the equivalent of 20 Falcon 9 launches.” A NextBigFuture “WHAT STARSHIP UNLOCKS” graphic was attached; he added that if the upper stage and booster are reused, “the numbers in this episode go from about 3,000 tons a year to 20,000–40,000 tons next year (over 10×), and toward a million tons a year once the launch towers scale,” and tagged $SPCX; the post went out at 21:41 CET on 16 November 2026.",
+      "topics": [
+        "Starship",
+        "Starlink",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122427170328883425",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-16T20:30:44.000Z",
+      "text": "Views from Mechazilla of the first ever Starship catch https://t.co/mcoWaqnkaU",
+      "url": "https://x.com/SpaceX/status/2122427170328883425",
+      "metrics": {
+        "likes": 4576,
+        "reposts": 854,
+        "replies": 239,
+        "quotes": 142,
+        "bookmarks": 655,
+        "impressions": 133379
+      },
+      "summary": "SpaceX wrote “Views from Mechazilla of the first ever Starship catch,” with two videos attached. The post went out at 21:30 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122421155940401156",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T20:06:50.000Z",
+      "text": "@DennisLWenger 99% of the value came back undamaged. $SPCX. All the engines will come back. They will prevent damage with rubber rollers or they fix the obviously scraped tiles. This is maybe 2-4 weeks of repairs  and very low cost. Can already see an easy path to faster reuse than the Falcon 9",
+      "url": "https://x.com/nextbigfuture/status/2122421155940401156",
+      "metrics": {
+        "likes": 14,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 644
+      },
+      "summary": "Brian Wang replied to Dennis L. Wenger, who had said the catch “does not look like a reusable rocket without maintenance” because of scraping, that “99% of the value came back undamaged,” all the engines will come back, damage can be prevented with rubber rollers or the scraped tiles fixed, and that this is “maybe 2-4 weeks of repairs and very low cost.” He said there is “an easy path to faster reuse than the Falcon 9 booster,” putting Starship at “$600 per kliogram with no reuse” even with some scraping and “$65 per kilogram” with 10 reuses of each stage, versus “$3000 per kilogram” retail for Falcon 9 and an internal SpaceX cost of “$600-800 per kilogram” with 30 booster and fairing reuses, and tagged $SPCX; the reply went out at 21:06 CET on 16 November 2026.",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122419992058826810",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T20:02:13.000Z",
+      "text": "@farzyness 99% of the value came back undamaged. $SPCX. All the engines will come back.",
+      "url": "https://x.com/nextbigfuture/status/2122419992058826810",
+      "metrics": {
+        "likes": 11,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 1,
+        "impressions": 538
+      },
+      "summary": "Brian Wang replied to Farzad that “99% of the value came back undamaged. $SPCX. All the engines will come back,” after Farzad, quoting a photo of scraped tiles, joked that putting “fat rubber tires on the chopsticks” would solve the problem. The reply went out at 21:02 CET on 16 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122416162180841688",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T19:47:00.000Z",
+      "text": "@mayemusk 😂",
+      "url": "https://x.com/elonmusk/status/2122416162180841688",
+      "metrics": {
+        "likes": 2401,
+        "reposts": 64,
+        "replies": 176,
+        "quotes": 6,
+        "bookmarks": 24,
+        "impressions": 58319
+      },
+      "summary": "Elon Musk replied “😂” to a Maye Musk post that said “Wow! Hell has frozen over,” quoting a Sawyer Merritt post compiling legacy-media headlines after SpaceX caught Starship, including lines from CNN, Reuters, Fox, CNBC, the New York Times, BBC, NPR and Sky News. The reply went out at 20:47 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2122416056006324311",
       "username": "elonmusk",
