@@ -447,6 +447,13 @@
         "date": "2026-11-09"
       },
       {
+        "firm": "China Renaissance",
+        "action": "Initiates",
+        "rating": "Buy",
+        "target": 194.2,
+        "date": "2026-11-05"
+      },
+      {
         "firm": "Deutsche Bank",
         "analyst": "Edison Yu",
         "action": "Reiterates",
