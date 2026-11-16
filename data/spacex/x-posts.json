@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T21:55:51+01:00",
+  "updated": "2026-11-16T22:55:08+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 16 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,70 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2122446937286971592",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-16T21:49:17.000Z",
+      "text": "Starship 42 back on Earth https://t.co/OEkFHSM5GJ",
+      "url": "https://x.com/SpaceX/status/2122446937286971592",
+      "metrics": {
+        "likes": 1098,
+        "reposts": 186,
+        "replies": 54,
+        "quotes": 11,
+        "bookmarks": 85,
+        "impressions": 47763
+      },
+      "summary": "SpaceX wrote “Starship 42 back on Earth,” with six photos attached. The post went out at 22:49 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122446366354096479",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T21:47:01.000Z",
+      "text": "As I was saying …\n\nFree Starlinks for FAA were offered to Sec Duffy, but he said they were not needed. As it turns out, they were. https://t.co/OZwDeiXOAr",
+      "url": "https://x.com/elonmusk/status/2122446366354096479",
+      "metrics": {
+        "likes": 1605,
+        "reposts": 267,
+        "replies": 236,
+        "quotes": 32,
+        "bookmarks": 85,
+        "impressions": 312566
+      },
+      "summary": "Elon Musk wrote that free Starlinks for the FAA were offered to Sec Duffy, who said they were not needed, and that “as it turns out, they were.” The post, at 22:47 CET on 16 November 2026, begins “As I was saying …” and quotes his February 2025 correction that an aging system then in decline was made by L3Harris and that a new system not yet operational was from Verizon.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122446093648875712",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-16T21:45:56.000Z",
+      "text": "Catching a Starship with Mini 2 → https://t.co/UirXPKXYHa https://t.co/mmDrFNvhA6",
+      "url": "https://x.com/Starlink/status/2122446093648875712",
+      "metrics": {
+        "likes": 149,
+        "reposts": 26,
+        "replies": 14,
+        "quotes": 1,
+        "bookmarks": 6,
+        "impressions": 10008
+      },
+      "summary": "Starlink wrote “Catching a Starship with Mini 2,” with a video attached and a link to the Mini 2 product page at starlink.com/mini-2. The post went out at 22:45 CET on 16 November 2026.",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ],
+      "highlight": true
+    },
     {
       "id": "2122429861205774677",
       "username": "nextbigfuture",
@@ -4448,27 +4512,6 @@
       ],
       "highlight": true,
       "summary": "Starlink says it will bring high-speed, stable internet to SANU (@sanu2ndhome) vacation homes in Japan’s most remote and rural areas, so guests can stream video and make video calls without dropping out. The quoted SANU post says the partnership will add satellite broadband to its new SHELL buildings in places where terrestrial networks barely reach."
-    },
-    {
-      "id": "2119909709197279420",
-      "username": "elonmusk",
-      "name": "Elon Musk",
-      "created_at": "2026-11-09T21:47:15.000Z",
-      "text": "Gwynne is great https://t.co/alTmn90mFX",
-      "url": "https://x.com/elonmusk/status/2119909709197279420",
-      "metrics": {
-        "likes": 31775,
-        "reposts": 2919,
-        "replies": 1630,
-        "quotes": 143,
-        "bookmarks": 1047,
-        "impressions": 2628585
-      },
-      "topics": [
-        "Leadership"
-      ],
-      "highlight": true,
-      "summary": "Musk posts “Gwynne is great,” quoting a Tesla Owners Silicon Valley post, in a show of support for president and COO Gwynne Shotwell. It is a leadership signal rather than an operating update."
     },
     {
       "id": "2119818965266612643",
