@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-15T21:58:25+01:00",
+  "updated": "2026-11-16T06:56:56+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X API public reads (get_users_posts) on 15 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
+  "source": "X API public reads (get_users_posts) on 16 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
@@ -40,6 +40,528 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2122203324460265943",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T05:41:15.000Z",
+      "text": "Yup https://t.co/QVOy9tq9Gz",
+      "url": "https://x.com/elonmusk/status/2122203324460265943",
+      "metrics": {
+        "likes": 1328,
+        "reposts": 141,
+        "replies": 267,
+        "quotes": 16,
+        "bookmarks": 59,
+        "impressions": 415182
+      },
+      "summary": "Elon Musk wrote “Yup,” quoting an X Freeze post that contrasted NASA’s 2014 awards of $4.2 billion to Boeing for Starliner and $2.6 billion to SpaceX for Crew Dragon, saying Starliner has had one crewed flight and left two astronauts stuck on the ISS for over nine months until SpaceX sent Dragon to rescue them, while Crew Dragon has flown 21 crewed missions since 2020 and later brought Boeing’s own astronauts home. The post went out at 06:41 CET on 16 November 2026.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122191623731745133",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T04:54:46.000Z",
+      "text": "Yup https://t.co/d0K80VhUWW",
+      "url": "https://x.com/elonmusk/status/2122191623731745133",
+      "metrics": {
+        "likes": 3302,
+        "reposts": 381,
+        "replies": 515,
+        "quotes": 42,
+        "bookmarks": 124,
+        "impressions": 614271
+      },
+      "summary": "Elon Musk wrote “Yup,” quoting a The Rabbit Hole post that said “SpaceX has launched more then every other company combined.” The post went out at 05:54 CET on 16 November 2026.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122190757981516238",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T04:51:19.000Z",
+      "text": "@farzyness Overnight trading is showing cluelessness $SPCX https://t.co/gqd45TAOZm",
+      "url": "https://x.com/nextbigfuture/status/2122190757981516238",
+      "metrics": {
+        "likes": 1,
+        "reposts": 1,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 249
+      },
+      "summary": "Brian Wang replied to Farzad that “Overnight trading is showing cluelessness $SPCX,” after Farzad wrote that if SPCX does not gap up 100% on Monday, the market is completely clueless. The reply went out at 05:51 CET on 16 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122182627134443947",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T04:19:01.000Z",
+      "text": "@JohnLeFevre 💯",
+      "url": "https://x.com/elonmusk/status/2122182627134443947",
+      "metrics": {
+        "likes": 3765,
+        "reposts": 101,
+        "replies": 159,
+        "quotes": 1,
+        "bookmarks": 42,
+        "impressions": 64775
+      },
+      "summary": "Elon Musk replied “💯” to a John LeFevre post that said “The SpaceX engineers who caught the rocket don’t write LinkedIn thought pieces about leadership.” The reply went out at 05:19 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122173074258731277",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T03:41:03.000Z",
+      "text": "@Dogetothemoon We made some improvements",
+      "url": "https://x.com/elonmusk/status/2122173074258731277",
+      "metrics": {
+        "likes": 8858,
+        "reposts": 257,
+        "replies": 425,
+        "quotes": 32,
+        "bookmarks": 94,
+        "impressions": 111383
+      },
+      "summary": "Elon Musk replied “We made some improvements” to a @Dogetothemoon post pairing a 2020 photo of him with his dog surveying the wreckage of Starship SN8 with a 2026 photo of him with Ship 42 after the first orbital catch. The reply went out at 04:41 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122164976282374286",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T03:08:52.000Z",
+      "text": "@nandesu @max_west07 Yes",
+      "url": "https://x.com/elonmusk/status/2122164976282374286",
+      "metrics": {
+        "likes": 362,
+        "reposts": 25,
+        "replies": 47,
+        "quotes": 6,
+        "bookmarks": 7,
+        "impressions": 35688
+      },
+      "summary": "Elon Musk replied “Yes” to an Eric Dean Wade post arguing that SpaceX does communicate with the FAA, that Starship launched with FAA authorization, and that an unexpected grounding of other aircraft actually made the situation more favorable because those restrictions did not apply to Starship. The reply went out at 04:08 CET on 16 November 2026.",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122164224382447808",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T03:05:53.000Z",
+      "text": "Grok @Bot can do almost anything https://t.co/jLMOWxLTNF",
+      "url": "https://x.com/elonmusk/status/2122164224382447808",
+      "metrics": {
+        "likes": 4059,
+        "reposts": 496,
+        "replies": 769,
+        "quotes": 63,
+        "bookmarks": 228,
+        "impressions": 722076
+      },
+      "summary": "Elon Musk wrote “Grok @Bot can do almost anything,” quoting a DogeDesigner post that said Grok Bot made a Starship Flight 15 highlight reel by downloading the 23-hour livestream, picking out the best moments, editing the clips together and adding effects and music. The post went out at 04:05 CET on 16 November 2026.",
+      "topics": [
+        "Grok",
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122149918014054877",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T02:09:02.000Z",
+      "text": "$spcx catches starship. Doing the impossible and overnight markets barely react\n\nMeanwhile @elonmusk plans 60% improvement in fuel to a much bigger version 4 starship. https://t.co/4GFCdHxm6C https://t.co/UBUDV1OlEg",
+      "url": "https://x.com/nextbigfuture/status/2122149918014054877",
+      "metrics": {
+        "likes": 283,
+        "reposts": 18,
+        "replies": 18,
+        "quotes": 2,
+        "bookmarks": 3,
+        "impressions": 8320
+      },
+      "summary": "Brian Wang wrote that “$spcx catches starship. Doing the impossible and overnight markets barely react,” and noted Elon Musk’s plan for a “60% improvement in fuel to a much bigger version 4 starship,” quoting Musk’s post that Starship V4 will be about 70 metres long with more than 60% more propellant and nine engines. The post went out at 03:09 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122146002853646428",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T01:53:29.000Z",
+      "text": "@elonmusk @dhh @wholemars @matthewstoller ULA did not get the memo that anyone can do what $SPCX does.\n\nhttps://t.co/xZ2hv82CgV",
+      "url": "https://x.com/nextbigfuture/status/2122146002853646428",
+      "metrics": {
+        "likes": 7,
+        "reposts": 0,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 667
+      },
+      "summary": "Brian Wang replied to Elon Musk, DHH, @wholemars and Matthew Stoller that “ULA did not get the memo that anyone can do what $SPCX does,” linking a New York Post report that a ULA rocket suffered a total mission failure minutes after launch and lost 40 Amazon Leo satellites. The reply went out at 02:53 CET on 16 November 2026.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122145680873705643",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T01:52:12.000Z",
+      "text": "Elon is just a business man.\nSpaceX is just a space company.\nSteph Curry is just a basketball player.\nAnyone can get to his shooting percentages during the most competitive games in the world. Anyone can make the NBA.\n\nFalcon 9 99.6 launch reliability vs 95% industry.\nBlue Origin New Glenn 67% launch reliability\nBlue Origin 3 orbital launches vs 700+.",
+      "url": "https://x.com/nextbigfuture/status/2122145680873705643",
+      "metrics": {
+        "likes": 47,
+        "reposts": 4,
+        "replies": 2,
+        "quotes": 0,
+        "bookmarks": 4,
+        "impressions": 2833
+      },
+      "summary": "Brian Wang, quoting Elon Musk, wrote that treating Musk as “just a business man” and SpaceX as “just a space company” is like calling Steph Curry just a basketball player, and cited Falcon 9’s 99.6% launch reliability versus 95% for the industry, Blue Origin New Glenn’s 67% reliability, and Blue Origin’s 3 orbital launches versus 700+. The post went out at 02:52 CET on 16 November 2026.",
+      "topics": [
+        "Launch",
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122145351553699962",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T01:50:54.000Z",
+      "text": "@elonmusk @dhh @wholemars @matthewstoller Elon is just a business man.\nSpaceX is just a space company.\nSteph Curry is just a basketball player.\nAnyone can get to his shooting percentages during the most competitive games in the world. Anyone can make the NBA.\n\nFalcon 9 99.6 launch reliability vs 95% industry.\nBlue Origin New Glenn 67% launch reliability\nBlue Origin 3 orbital launches vs 700+.",
+      "url": "https://x.com/nextbigfuture/status/2122145351553699962",
+      "metrics": {
+        "likes": 55,
+        "reposts": 4,
+        "replies": 2,
+        "quotes": 0,
+        "bookmarks": 2,
+        "impressions": 4204
+      },
+      "summary": "Brian Wang, replying to Elon Musk, wrote that treating Musk as “just a business man” and SpaceX as “just a space company” is like calling Steph Curry just a basketball player, and cited Falcon 9’s 99.6% launch reliability versus 95% for the industry, Blue Origin New Glenn’s 67% reliability, and Blue Origin’s 3 orbital launches versus 700+. The reply went out at 02:50 CET on 16 November 2026.",
+      "topics": [
+        "Launch",
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122145276681220436",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T01:50:36.000Z",
+      "text": "I have a very wide distribution of training data https://t.co/QxHW95Nzsk",
+      "url": "https://x.com/elonmusk/status/2122145276681220436",
+      "metrics": {
+        "likes": 8421,
+        "reposts": 696,
+        "replies": 673,
+        "quotes": 33,
+        "bookmarks": 698,
+        "impressions": 998366
+      },
+      "summary": "Elon Musk wrote “I have a very wide distribution of training data,” quoting a DogeDesigner post of former NASA astronaut Garrett Reisman, who spent seven years at SpaceX, saying Musk can discuss both the most arcane software and esoteric welding of unusual alloys with top engineers, and that this range across rockets, cars and other technologies is what impresses him. The post went out at 02:50 CET on 16 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122141959917842487",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T01:37:25.000Z",
+      "text": "That’s how it happened https://t.co/IceeiJGYX6",
+      "url": "https://x.com/elonmusk/status/2122141959917842487",
+      "metrics": {
+        "likes": 11131,
+        "reposts": 1120,
+        "replies": 735,
+        "quotes": 64,
+        "bookmarks": 723,
+        "impressions": 1461785
+      },
+      "summary": "Elon Musk wrote “That’s how it happened,” quoting a Fireside Alpha post in which he said he founded SpaceX in mid-2002 expecting to fail, recruited the first engineers by telling them “we’re probably going to die,” and ended up as chief engineer because no good chief engineer would join a venture that looked too risky. The post went out at 02:37 CET on 16 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122141019894383027",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T01:33:41.000Z",
+      "text": "Starship V4 will be ~70m long, which is roughly a 40% length increase and allows >60% more propellant load.\n\nEngine count will be raised to 9, with 3 more Raptor-Vacuum engines added, and these will be higher thrust V4 engines. https://t.co/VxrFs7FImC",
+      "url": "https://x.com/elonmusk/status/2122141019894383027",
+      "metrics": {
+        "likes": 25632,
+        "reposts": 2533,
+        "replies": 1152,
+        "quotes": 283,
+        "bookmarks": 1559,
+        "impressions": 1436122
+      },
+      "summary": "Elon Musk wrote that Starship V4 will be about 70 metres long, a roughly 40% length increase that allows more than 60% more propellant, and that the engine count will be raised to nine by adding three higher-thrust V4 Raptor-Vacuum engines, quoting an ApoStructura post on Starship’s scale. The post went out at 02:33 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122138555137110487",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T01:23:53.000Z",
+      "text": "This is the way https://t.co/cptWjSgJ2a",
+      "url": "https://x.com/elonmusk/status/2122138555137110487",
+      "metrics": {
+        "likes": 11829,
+        "reposts": 992,
+        "replies": 746,
+        "quotes": 66,
+        "bookmarks": 286,
+        "impressions": 1030670
+      },
+      "summary": "Elon Musk wrote “This is the way,” quoting an Owen Sparks post that said most CEOs would take a meeting to hear from employees who inspected the ship, but Musk got up in a boom lift to inspect it alongside his team, with “zero loss of information,” so Starship can be further improved. The post went out at 02:23 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122138040176894180",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T01:21:50.000Z",
+      "text": "Cool https://t.co/Z0fbkZvcHz",
+      "url": "https://x.com/elonmusk/status/2122138040176894180",
+      "metrics": {
+        "likes": 4072,
+        "reposts": 347,
+        "replies": 385,
+        "quotes": 23,
+        "bookmarks": 102,
+        "impressions": 837569
+      },
+      "summary": "Elon Musk wrote “Cool,” quoting a Sawyer Merritt roundup of legacy-media headlines after SpaceX caught Starship, including CNN, Reuters, Fox, CNBC, the New York Times, BBC, NPR and Sky News describing the first tower catch of the spacecraft. The post went out at 02:21 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122138022837887323",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-16T01:21:46.000Z",
+      "text": "Claim : @elonmusk  is just a regular business guy who applied capital and engineering and got better at it? SpaceX is just a regular company ?\n\nClaim : Michael Jordan was just a basketball player. Anyone who practiced dribbling and shooting and free throws would get better at it? The Chicago Bulls of his era was just a regular basketball team? Also, basketball teams are all the same from NBA, College, high school.",
+      "url": "https://x.com/nextbigfuture/status/2122138022837887323",
+      "metrics": {
+        "likes": 57,
+        "reposts": 7,
+        "replies": 1,
+        "quotes": 0,
+        "bookmarks": 1,
+        "impressions": 2098
+      },
+      "summary": "Brian Wang quoted a Sawyer Merritt post and asked whether Elon Musk is “just a regular business guy who applied capital and engineering and got better at it” and SpaceX “just a regular company,” comparing that claim to saying Michael Jordan was just a basketball player and the Chicago Bulls of his era just a regular team. The post went out at 02:21 CET on 16 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122127527040712704",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-16T00:40:04.000Z",
+      "text": "Starlink helps rural schools with education https://t.co/mOb4qjOrri",
+      "url": "https://x.com/elonmusk/status/2122127527040712704",
+      "metrics": {
+        "likes": 9896,
+        "reposts": 1063,
+        "replies": 742,
+        "quotes": 71,
+        "bookmarks": 183,
+        "impressions": 974043
+      },
+      "summary": "Elon Musk wrote “Starlink helps rural schools with education,” quoting a DogeDesigner post that said every rural municipal school in Rondonópolis, Brazil, now has Starlink internet, so students and teachers can use digital libraries, educational videos and online learning tools. The post went out at 01:40 CET on 16 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122114284779925897",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T23:47:27.000Z",
+      "text": "@dhh @wholemars @matthewstoller Let’s take this gentleman’s argument at face value that anyone can throw money at rockets and get something like Starship, Falcon or Dragon.\n\nPerhaps he can explain to everyone how SpaceX is able to catch giant starships from orbit with chopsticks and deliver 85% of all Earth payload to orbit with Falcon, while Blue Origin, which started before SpaceX and was funded by the immensely wealthy Jeff Bezos, is not yet able to launch reliably?\n\nAlso, why is it that Boeing and Lockheed received several times what SpaceX did from the government for development of their rockets and spacecraft, but the Boeing capsule is still not operational and ULA delivers less than 5% of SpaceX payload to orbit?\n\nI am genuinely curious about these questions.",
+      "url": "https://x.com/elonmusk/status/2122114284779925897",
+      "metrics": {
+        "likes": 76194,
+        "reposts": 7963,
+        "replies": 3925,
+        "quotes": 755,
+        "bookmarks": 4121,
+        "impressions": 2206618
+      },
+      "summary": "Elon Musk, replying to DHH, @wholemars and Matthew Stoller, asked how, if anyone can throw money at rockets and get something like Starship, Falcon or Dragon, SpaceX can catch giant Starships from orbit with chopsticks and deliver 85% of Earth’s payload to orbit with Falcon while Blue Origin is “not yet able to launch reliably,” and why Boeing and Lockheed received several times more government development funding yet the Boeing capsule is still not operational and ULA delivers less than 5% of SpaceX’s payload to orbit. The post went out at 00:47 CET on 16 November 2026.",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122109219855806886",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T23:27:19.000Z",
+      "text": "Starlink saves lives https://t.co/geX77GkNL1",
+      "url": "https://x.com/elonmusk/status/2122109219855806886",
+      "metrics": {
+        "likes": 8451,
+        "reposts": 1080,
+        "replies": 727,
+        "quotes": 68,
+        "bookmarks": 210,
+        "impressions": 903709
+      },
+      "summary": "Elon Musk wrote “Starlink saves lives,” quoting a DogeDesigner post that said Greece’s government is using Starlink to support a railway safety system that warns of potential train collisions, sending live train data to a control center even through mountainous areas without mobile coverage, with monitoring gear on 134 locomotives, positioning accuracy of up to five centimetres, location updates every second, and a 24/7 centre that receives automatic collision-risk alerts. The post went out at 00:27 CET on 16 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122108594183414081",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T23:24:50.000Z",
+      "text": "@MinaGawargious Ship 42 brings back a motherlode of data for further improvements to the heat shield",
+      "url": "https://x.com/elonmusk/status/2122108594183414081",
+      "metrics": {
+        "likes": 21187,
+        "reposts": 855,
+        "replies": 496,
+        "quotes": 36,
+        "bookmarks": 313,
+        "impressions": 239778
+      },
+      "summary": "Elon Musk replied to Mina Gawargious that “Ship 42 brings back a motherlode of data for further improvements to the heat shield,” after her post said he was inspecting heat-shield tiles on Starship. The reply went out at 00:24 CET on 16 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122100464942772425",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-15T22:52:32.000Z",
+      "text": "@franzbruckhoff booster was completely empty of fuel which is why it crumpled as the pumps took used all fuel.  dry weight is 200 tons.  When it has fuel at takeoff it is about 3600 tons for booster stage. https://t.co/cDxIuMDoQT",
+      "url": "https://x.com/nextbigfuture/status/2122100464942772425",
+      "metrics": {
+        "likes": 2,
+        "reposts": 0,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 89
+      },
+      "summary": "Brian Wang replied that the booster “was completely empty of fuel which is why it crumpled as the pumps took used all fuel,” giving a dry weight of 200 tons and about 3,600 tons at takeoff when fueled, in answer to a question about how heavy that booster was. The reply went out at 23:52 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122092920434274773",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T22:22:33.000Z",
+      "text": "Starlink is a gamechanger https://t.co/rRhQ4bvzcN",
+      "url": "https://x.com/elonmusk/status/2122092920434274773",
+      "metrics": {
+        "likes": 12872,
+        "reposts": 1277,
+        "replies": 856,
+        "quotes": 73,
+        "bookmarks": 240,
+        "impressions": 1302328
+      },
+      "summary": "Elon Musk wrote “Starlink is a gamechanger,” quoting an X Freeze post that cited United Airlines CEO Scott Kirby saying customers are already moving from other airlines, with Starlink on more than 50% of United’s daily flights, over 700 aircraft equipped, a full fleet rollout expected by the end of 2027, and Kirby calling it “a really unique RASM tailwind.” The post went out at 23:22 CET on 15 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122092646294581460",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T22:21:28.000Z",
+      "text": "🍌 4 scale https://t.co/ndHd3mosRp",
+      "url": "https://x.com/elonmusk/status/2122092646294581460",
+      "metrics": {
+        "likes": 5962,
+        "reposts": 541,
+        "replies": 613,
+        "quotes": 86,
+        "bookmarks": 239,
+        "impressions": 1110000
+      },
+      "summary": "Elon Musk wrote “🍌 4 scale,” quoting a Yun-Ta Tsai post that praised “S-tier Engineering” and “S-tier Humor” and said “Love this company,” which itself quoted a spaceship_star media post. The post went out at 23:21 CET on 15 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122092374016806969",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-15T22:20:23.000Z",
+      "text": "Yeah, I was going over the whole Starship heat shield earlier today. Overall, it looks great. The engines look great too. Ship 42 could probably be reflown with a few weeks of refurbishment. \n\nHowever, many small fixes are needed to achieve immediate reusability (like an airplane), which requires zero expected refurbishment, apart from scheduled maintenance.",
+      "url": "https://x.com/elonmusk/status/2122092374016806969",
+      "metrics": {
+        "likes": 56203,
+        "reposts": 5335,
+        "replies": 1990,
+        "quotes": 355,
+        "bookmarks": 1962,
+        "impressions": 2499766
+      },
+      "summary": "Elon Musk, quoting a Robin (@xdNiBoR) post that he was at the pad inspecting the ship, wrote at 23:20 CET on 15 November 2026 that he had gone over the whole Starship heat shield earlier that day, that overall it and the engines look great, and that Ship 42 could probably be reflown with a few weeks of refurbishment. He added that many small fixes are still needed to achieve immediate reusability, “like an airplane,” with zero expected refurbishment apart from scheduled maintenance.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2122068777189716003",
       "username": "elonmusk",
