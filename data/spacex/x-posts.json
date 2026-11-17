@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T06:53:12+01:00",
+  "updated": "2026-11-17T07:55:03+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 17 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,48 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2122576221846253837",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-17T06:23:01.000Z",
+      "text": "Starship 42 https://t.co/qcnoZ74uXS",
+      "url": "https://x.com/elonmusk/status/2122576221846253837",
+      "metrics": {
+        "likes": 2433,
+        "reposts": 345,
+        "replies": 423,
+        "quotes": 90,
+        "bookmarks": 207,
+        "impressions": 462286
+      },
+      "summary": "Elon Musk posted “Starship 42,” sharing a video from Katia Karpenko (@KatiaEarth) whose post, captioned “Ship 42,” said “The Universe was watching, pleased to welcome humanity as a space-faring civilization.” The post went out at 07:23 CET on 17 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122572107116642664",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-17T06:06:40.000Z",
+      "text": "How can Grok @Bot be more helpful? https://t.co/7gkOy6LXmg",
+      "url": "https://x.com/elonmusk/status/2122572107116642664",
+      "metrics": {
+        "likes": 1440,
+        "reposts": 156,
+        "replies": 791,
+        "quotes": 28,
+        "bookmarks": 104,
+        "impressions": 530422
+      },
+      "summary": "Elon Musk wrote “How can Grok @Bot be more helpful?,” quoting Parker Smith (@parkersmith), who asked for feedback from people automating most of their work with Bot in exchange for some credits, and asked them to reply to the thread with how they use Bot and DM him their email. The post went out at 07:06 CET on 17 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
     {
       "id": "2122560774073901341",
       "username": "elonmusk",
