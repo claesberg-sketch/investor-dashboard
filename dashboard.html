@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Unofficial personal investor dashboard for SpaceX (Nasdaq: SPCX), built for Claes Berg. Not affiliated with Space Exploration Technologies Corp.">
+  <title>SPCX · Investor Dashboard · Claes Berg</title>
+  <link rel="stylesheet" href="css/style.css?v=df11e96-20261120132409">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://claesberg-sketch.github.io/investor-dashboard/dashboard.html">
+  <meta property="og:title" content="Investor Dashboard · Claes Berg">
+  <meta property="og:url" content="https://claesberg-sketch.github.io/investor-dashboard/dashboard.html">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="owner">Claes Berg</span>
+        <span class="product">Investor Dashboard</span>
+      </a>
+      <div class="header-right">
+        <nav class="switcher" id="company-switcher" aria-label="Company"></nav>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">Menu</button>
+        <nav class="nav" id="site-nav">
+          <a href="./" class="nav-watchlist">Watchlist</a>
+          <a href="#price">Price</a>
+          <a href="#news">News</a>
+          <a href="#kpis">KPIs</a>
+          <a href="#launches" data-only="spacex">Launches</a>
+          <a href="#unlocks" data-only="spacex">Unlocks</a>
+          <a href="#ops" data-only="tesla" hidden>Operations</a>
+          <a href="#calendar">Calendar</a>
+          <a href="#valuation">Valuation</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="price">
+      <div class="wrap">
+        <div class="hero-top">
+          <div>
+            <div class="ticker-row">
+              <div class="ticker" id="hero-ticker">SPCX</div>
+              <div class="tiny" id="hero-name">Space Exploration Technologies Corp.</div>
+            </div>
+            <div class="price" id="hero-price">—</div>
+            <div class="chg" id="hero-chg"></div>
+            <div class="session-badge closed" id="session-badge"><span class="dot"></span><span id="session-label">Loading session</span></div>
+            <div class="asof" id="hero-asof"></div>
+            <div class="session-prints" id="session-prints"></div>
+          </div>
+          <div class="hero-chart">
+            <canvas id="intraday-chart"></canvas>
+            <p class="chart-caption" id="intraday-caption">Live U.S. last sale during pre-market, regular session, and after-hours; Hyperliquid xyz:SPCX when the U.S. market is closed. Time in CET/CEST.</p>
+          </div>
+        </div>
+        <div class="stats" id="key-stats"></div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="wrap">
+        <p class="section-kicker">All news</p>
+        <h2>One place for the company</h2>
+        <p class="lede" id="news-lede">Press releases and IR, SEC filings, media, and posts from Elon Musk, SpaceX, Starlink, Gwynne Shotwell, SpaceX Super Intelligence, and Brian Wang. Filters apply to the list. Topics such as Starlink, Starship, AI compute, and Cursor are tagged.</p>
+        <div class="filters" id="news-filters"></div>
+        <p class="tiny" id="news-updated"></p>
+        <div class="news-list" id="news-list"></div>
+      </div>
+    </section>
+
+    <section class="section" id="kpis">
+      <div class="wrap">
+        <p class="section-kicker">Reported results</p>
+        <h2>KPI charts</h2>
+        <p class="lede" id="kpi-lede">Taken from SpaceX quarterly releases and the prospectus, with an independent satellite count from Jonathan McDowell. Missing quarters are left blank — nothing is invented to fill a gap.</p>
+        <div class="chart-grid" id="kpi-grid"></div>
+      </div>
+    </section>
+
+
+    <section class="section" id="launches" data-only="spacex">
+      <div class="wrap">
+        <p class="section-kicker">Cadence</p>
+        <h2>Launch counter</h2>
+        <p class="lede" id="launch-lede">Every SpaceX launch in 2026, counted in UTC, including Starship flight tests — the same basis SpaceX uses for its quarterly launch counts.</p>
+        <div class="stats launch-stats" id="launch-stats"></div>
+        <div class="chart-grid launch-grid">
+          <div class="chart-card">
+            <h3>2026 launches by month and vehicle</h3>
+            <div class="box"><canvas id="launch-monthly"></canvas></div>
+            <p class="source" id="launch-monthly-src"></p>
+          </div>
+          <div class="chart-card">
+            <h3>Launches per quarter, 2025 vs 2026</h3>
+            <div class="box"><canvas id="launch-quarterly"></canvas></div>
+            <p class="source" id="launch-quarterly-src"></p>
+          </div>
+        </div>
+        <div class="card launch-milestones">
+          <p class="section-kicker">Starship &amp; milestones</p>
+          <div id="launch-milestones"></div>
+          <p class="source" id="launch-sources"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="unlocks" data-only="spacex">
+      <div class="wrap">
+        <p class="section-kicker">Supply</p>
+        <h2>Share unlock schedule</h2>
+        <div class="unlock-next" id="unlock-next"></div>
+        <p class="lede">When pre-IPO and other restricted shares become eligible for public trading, from SpaceX’s Form 424(b)(4) lock-up table, later 8-Ks and the Q3 10-Q. Amounts are “up to.” A release is not a forecast of selling. Approximate value uses the live price at the top of this page. Percent of free float uses an estimate — SpaceX does not publish an official free-float figure.</p>
+        <div class="chart-card">
+          <h3>Shares becoming eligible, and cumulative “up to” total</h3>
+          <div class="box" style="height:320px"><canvas id="unlock-chart"></canvas></div>
+          <p class="source">Bars are each tranche (past muted, upcoming solid). The line is the cumulative “up to” shares from the IPO lock-up schedules and Rule 144 dates, starting after the 638.9 million IPO primary shares that were already freely tradable. Musk’s 1.302 billion unvested performance awards are excluded from the bars — they do not become tradable when the 366-day lock-up ends.</p>
+        </div>
+        <div class="chart-card ndx-card" id="ndx-card">
+          <h3>Unlocked float vs Nasdaq-100 weight</h3>
+          <div class="ndx-facts" id="ndx-facts"></div>
+          <div class="box" style="height:320px"><canvas id="ndx-chart"></canvas></div>
+          <p class="source" id="ndx-source"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ops" data-only="tesla" hidden>
+      <div class="wrap">
+        <p class="section-kicker">Operations</p>
+        <h2>Deliveries, Energy &amp; Autonomy Tracker</h2>
+        <p class="lede">Vehicle deliveries and energy storage deployments against last year, factory capacity, and where Robotaxi, Cybercab, FSD, Optimus and the energy business stand. Figures are from Tesla’s quarterly reports, SEC filings and Tesla/Musk posts. Dates Tesla has not confirmed are marked.</p>
+        <div class="stats launch-stats" id="ops-stats"></div>
+        <div class="chart-grid launch-grid">
+          <div class="chart-card">
+            <h3>Deliveries per quarter, 2025 vs 2026</h3>
+            <div class="box"><canvas id="ops-deliv"></canvas></div>
+            <p class="source" id="ops-deliv-src"></p>
+          </div>
+          <div class="chart-card">
+            <h3>Energy storage deployed per quarter, 2025 vs 2026 (GWh)</h3>
+            <div class="box"><canvas id="ops-storage"></canvas></div>
+            <p class="source" id="ops-storage-src"></p>
+          </div>
+        </div>
+        <div class="card launch-milestones">
+          <p class="section-kicker">Autonomy, robots &amp; energy</p>
+          <div id="ops-milestones"></div>
+          <p class="ms-sub">Installed annual capacity (30 Sep 2026)</p>
+          <div class="table-scroll" id="ops-capacity"></div>
+          <p class="source" id="ops-sources"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calendar">
+      <div class="wrap">
+        <div class="extra-grid">
+          <div class="card">
+            <p class="section-kicker">Setup</p>
+            <h3 id="calendar-title">Launch &amp; catalyst calendar</h3>
+            <div class="unlock-next compact" id="calendar-unlock-next" data-only="spacex"></div>
+            <div id="calendar-list"></div>
+          </div>
+          <div class="card" id="valuation">
+            <p class="section-kicker">Snapshot</p>
+            <h3>Valuation &amp; street</h3>
+            <div id="valuation-body"></div>
+          </div>
+          <div class="card">
+            <p class="section-kicker" id="lockup-kicker">Supply</p>
+            <h3 id="lockup-title">Lock-ups &amp; float</h3>
+            <div id="lockup-body"></div>
+            <p class="source" data-only="spacex"><a href="#unlocks">Share unlock chart &amp; next release</a></p>
+          </div>
+          <div class="card">
+            <p class="section-kicker">Watch</p>
+            <h3>Risks</h3>
+            <ul class="risks" id="risk-list"></ul>
+          </div>
+        </div>
+        <div class="card" style="margin-top:28px">
+          <p class="section-kicker">X posts</p>
+          <h3>Topic mentions in X posts</h3>
+          <div id="topic-counter"></div>
+          <p class="source">Counts are from the posts stored in this repo, not a live sentiment engine.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="unofficial">Unofficial – personal investor dashboard</p>
+      <p>Built for Claes Berg. Not affiliated with, endorsed by, or an official publication of Space Exploration Technologies Corp., Tesla, NVIDIA, or any of their subsidiaries. Design is inspired by the public look of spacex.com (black field, wide-tracked sans type, thin rules, ghost buttons) but does not use SpaceX trademarks or logo artwork. All figures are from public sources or are labelled estimates. Nothing here is investment advice.</p>
+      <p style="margin-top:10px" id="footer-data">Data: Yahoo Finance (server-side), Hyperliquid <code>xyz:SPCX</code> (live mid and 5-minute candles in the browser, 24/7), company IR and SEC filings, Google News RSS, Jonathan McDowell, StockAnalysis / S&amp;P Global, FloatCap compilations of the 424(b)(4) and 10-Q. X posts were last pulled on 11 Nov 2026 into this repo (Actions cannot call the X connector). Publish times in the news feed are shown in Europe/Stockholm as CET or CEST.</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/chart.umd.min.js?v=df11e96-20261120132409"></script>
+  <script src="js/price.js?v=df11e96-20261120132409"></script>
+  <script src="js/charts.js?v=df11e96-20261120132409"></script>
+  <script src="js/unlocks.js?v=df11e96-20261120132409"></script>
+  <script src="js/launches.js?v=df11e96-20261120132409"></script>
+  <script src="js/indexweight.js?v=df11e96-20261120132409"></script>
+  <script src="js/tesla.js?v=df11e96-20261120132409"></script>
+  <script src="js/app.js?v=df11e96-20261120132409"></script>
+</body>
+</html>

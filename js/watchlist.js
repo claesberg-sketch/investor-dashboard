@@ -9,8 +9,8 @@
   const ET = P.ET;
 
   const STOCKS = [
-    { ticker: "SPCX", name: "SpaceX", full: "Space Exploration Technologies Corp.", cnbc: "SPCX", bars: "SPCX.O", coin: "xyz:SPCX", href: "./" },
-    { ticker: "TSLA", name: "Tesla", full: "Tesla, Inc.", cnbc: "TSLA", bars: "TSLA.O", coin: "xyz:TSLA", href: "./?c=tesla" },
+    { ticker: "SPCX", name: "SpaceX", full: "Space Exploration Technologies Corp.", cnbc: "SPCX", bars: "SPCX.O", coin: "xyz:SPCX", href: "dashboard.html?c=spacex" },
+    { ticker: "TSLA", name: "Tesla", full: "Tesla, Inc.", cnbc: "TSLA", bars: "TSLA.O", coin: "xyz:TSLA", href: "dashboard.html?c=tesla" },
     { ticker: "ANT", name: "Anthropic", full: "Anthropic, PBC · Nasdaq since 19 Nov 2026 (IPO $83)", cnbc: "ANT", bars: "ANT.O", coin: "xyz:ANT" },
     { ticker: "NVDA", name: "Nvidia", full: "NVIDIA Corporation", cnbc: "NVDA", bars: "NVDA.O", coin: "xyz:NVDA" },
     { ticker: "AMD", name: "AMD", full: "Advanced Micro Devices, Inc.", cnbc: "AMD", bars: "AMD.O", coin: "xyz:AMD" },

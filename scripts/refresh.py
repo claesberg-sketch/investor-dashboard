@@ -99,7 +99,10 @@ YAHOO_UA = "Mozilla/5.0 (compatible; InvestorDashboard/1.0; +https://github.com/
 
 
 INDEX = ROOT / "index.html"
-PAGES = [INDEX, ROOT / "watchlist.html"]  # every HTML page whose ?v= cache-busters are bumped
+DASHBOARD = ROOT / "dashboard.html"
+# Every HTML page whose ?v= cache-busters are bumped. index.html is the watchlist start page,
+# dashboard.html the SPCX/TSLA dashboard; watchlist.html is only a redirect to ./ (no assets).
+PAGES = [INDEX, DASHBOARD, ROOT / "watchlist.html"]
 ASSET_TAG_RE = re.compile(
     r'((?:href|src)=")((?:css|js)/[^"?]+)(?:\?v=[^"]*)?(")',
     re.I,
@@ -122,7 +125,7 @@ def asset_version() -> str:
 
 
 def bump_asset_version(version: str | None = None) -> str:
-    """Rewrite ?v= on local JS/CSS tags in index.html and watchlist.html so Pages clients fetch fresh assets."""
+    """Rewrite ?v= on local JS/CSS tags in every HTML page (PAGES) so Pages clients fetch fresh assets."""
     version = version or asset_version()
     for page in PAGES:
         if not page.exists():
@@ -130,7 +133,7 @@ def bump_asset_version(version: str | None = None) -> str:
         html = page.read_text()
         new, n = ASSET_TAG_RE.subn(rf"\1\2?v={version}\3", html)
         if n == 0:
-            raise RuntimeError(f"no local js/css tags found in {page.name}")
+            continue  # e.g. the watchlist.html redirect has no local assets
         if new != html:
             page.write_text(new)
         print(f"bumped {n} asset tags in {page.name} to v={version}")
@@ -801,19 +804,38 @@ def write(path: Path, obj):
     print(f"wrote {path.relative_to(ROOT)} ({path.stat().st_size} bytes)")
 
 
-def main(company: str = "spacex", bump: bool = True):
-    """Refresh one company (default SpaceX, unchanged) or all active companies."""
+def main(company: str = "spacex", bump: bool = False, quote_only: bool = False):
+    """Refresh one company (default SpaceX, unchanged) or all active companies.
+
+    A data refresh only writes data/<id>/*.json. It no longer rewrites HTML ?v= tags unless
+    bump=True (--bump): the JSON is fetched with cache: "no-store", so routines never need to
+    touch or restore index.html / dashboard.html."""
     ids = list(COMPANIES) if company == "all" else [company]
     for cid in ids:
         set_company(cid)
-        print(f"== refreshing {cid} ({CFG['symbol']}) into {DATA.relative_to(ROOT)}")
-        refresh_company()
+        print(f"== refreshing {cid} ({CFG['symbol']}) into {DATA.relative_to(ROOT)}" + (" [quote only]" if quote_only else ""))
+        if quote_only:
+            refresh_quote_only()
+        else:
+            refresh_company()
     set_company("spacex")
     if bump:
         try:
             bump_asset_version()
         except Exception as e:
             print("asset version error", e, file=sys.stderr)
+    return 0
+
+
+def refresh_quote_only():
+    """Only rebuild data/<id>/quote.json (Yahoo regular close / after-hours snapshot + Hyperliquid)."""
+    DATA.mkdir(parents=True, exist_ok=True)
+    quote = build_quote()
+    write(DATA / "quote.json", quote)
+    y = quote.get("yahoo") or {}
+    if not y.get("regularMarketPrice"):
+        print("quote warning: Yahoo returned no regularMarketPrice", file=sys.stderr)
+        return 1
     return 0
 
 
@@ -866,7 +888,22 @@ def parse_args(argv):
     ap.add_argument(
         "--bump-assets",
         action="store_true",
-        help="Only rewrite ?v= on local JS/CSS tags in index.html, then exit.",
+        help="Only rewrite ?v= on local JS/CSS tags in index.html and dashboard.html, then exit.",
+    )
+    ap.add_argument(
+        "--bump",
+        action="store_true",
+        help="After a data refresh, also rewrite the HTML ?v= cache-busters (off by default).",
+    )
+    ap.add_argument(
+        "--no-bump",
+        action="store_true",
+        help="Accepted for older routines; data refreshes no longer bump HTML by default.",
+    )
+    ap.add_argument(
+        "--quote-only",
+        action="store_true",
+        help="Only refresh data/<id>/quote.json (regular close / after-hours tiles), not news.",
     )
     ap.add_argument(
         "--company",
@@ -891,4 +928,4 @@ if __name__ == "__main__":
     if args.launches:
         refresh_launches()
         sys.exit(0)
-    sys.exit(main(args.company))
+    sys.exit(main(args.company, bump=args.bump and not args.no_bump, quote_only=args.quote_only))

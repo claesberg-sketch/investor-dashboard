@@ -4,7 +4,11 @@ Unofficial personal investor dashboard for **Claes Berg**. It starts with **Spac
 
 This is **not** an official SpaceX site, is not affiliated with Space Exploration Technologies Corp., and is not investment advice. The visual language is inspired by the public look of [spacex.com](https://www.spacex.com) (black background, wide-tracked sans typography, thin rules, ghost buttons). Official logos and trademarked artwork are not used. A footer on the site states: *Unofficial – personal investor dashboard*.
 
-Live site (GitHub Pages): **https://claesberg-sketch.github.io/investor-dashboard/**
+Live site (GitHub Pages):
+
+- **Start page – watchlist:** https://claesberg-sketch.github.io/investor-dashboard/ (`index.html`) — live prices for SPCX, TSLA, ANT, NVDA, AMD and MU: CNBC real-time U.S. last sale in pre-market, regular and after-hours; Hyperliquid `xyz:` perps overnight, on weekends and holidays.
+- **Company dashboard:** https://claesberg-sketch.github.io/investor-dashboard/dashboard.html (`?c=spacex` or `?c=tesla`). Without `?c=` it opens the company last picked in this browser (localStorage), else SpaceX.
+- Old links keep working: `/?c=tesla`, `/?c=spacex` and dashboard anchors such as `/#unlocks` are forwarded to `dashboard.html` with the same query and hash; `/watchlist.html` redirects to `/`.
 
 ## What’s on the SpaceX page
 
@@ -20,7 +24,10 @@ Every datapoint is sourced or marked as an estimate. If a figure was not disclos
 ## Repository layout
 
 ```
-index.html              # static page
+index.html              # start page: watchlist (forwards old ?c= / #section dashboard links)
+dashboard.html          # SPCX / TSLA company dashboard
+watchlist.html          # redirect to ./ (old link)
+css/watchlist.css, js/watchlist.js   # watchlist page
 css/style.css
 js/                     # vanilla JS, Chart.js vendored in js/vendor/
 fonts/                  # Barlow (OFL), bundled
@@ -59,13 +66,15 @@ Run a refresh locally:
 python3 scripts/refresh.py
 ```
 
-`refresh.py` also rewrites a `?v=` query string on every local JS/CSS tag in `index.html` (short git hash plus a UTC timestamp). GitHub Pages caches assets for about ten minutes (`max-age=600`), so that bump makes the next HTML load fetch fresh scripts and styles. For a JS/CSS-only change you can bump without a data refresh:
+Options: `--company spacex|tesla|all` (default `spacex`), `--quote-only` (only `quote.json`, i.e. the Regular close / After hours tiles), `--bump` (also bump HTML cache-busters).
+
+A data refresh writes only `data/<id>/*.json`; it no longer touches any HTML file (JSON is fetched with `cache: "no-store"`), so routines never need to restore `index.html` or `dashboard.html`. To make browsers fetch new JS/CSS after a code change, rewrite the `?v=` query string on every local JS/CSS tag in all HTML pages (`index.html`, `dashboard.html`; short git hash plus a UTC timestamp). GitHub Pages caches assets for about ten minutes (`max-age=600`):
 
 ```bash
 python3 scripts/refresh.py --bump-assets
 ```
 
-Run that (or a full refresh) before pushing so clients do not keep a stale overview. JSON files are fetched in the browser with `cache: "no-store"` and a timestamp query.
+Run that before pushing any JS/CSS change so clients do not keep stale scripts. JSON files are fetched in the browser with `cache: "no-store"` and a timestamp query.
 
 **GitHub Actions note:** The scheduled workflow lives in `scripts/github-actions-refresh.yml` (copy it to `.github/workflows/refresh.yml`). It could not be committed under `.github/workflows/` from this environment because the logged-in `gh` token has `repo` scope but not the `workflow` scope GitHub requires to create workflow files. Until that file is added with a token that has `workflow` scope, Pages is served from the `main` branch and Yahoo/news JSON update when someone runs `scripts/refresh.py` and pushes. Hyperliquid prices still update live in the browser.
 
