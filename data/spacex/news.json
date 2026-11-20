@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T13:53:22Z",
+  "updated": "2026-11-20T14:55:19Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -22,7 +22,7 @@
   },
   "items": [
     {
-      "id": "media-12",
+      "id": "media-21",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T23:51:47Z",
@@ -36,7 +36,7 @@
       "summary": "Will Robinson-Smith at Spaceflight Now reported that SpaceX scrubbed Thursday night’s launch attempt of USSF-317, a classified U.S. Space Force mission carrying an undisclosed number of satellites on a Falcon 9 from Space Launch Complex 4 East at Vandenberg, and is targeting Friday without stating a reason for the delay. The Friday window opens at 6:32 p.m. PST (03:32 CET on 21 November 2026), with first-stage booster B1100 flying for the 11th time and planned to land on the droneship Of Course I Still Love You; the article was listed in Google News at 00:51 CET on 20 November 2026."
     },
     {
-      "id": "media-33",
+      "id": "media-26",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T21:15:00Z",
@@ -48,7 +48,7 @@
       "summary": "A Barron’s article by Al Root, listed in Google News at 22:15 CET on 19 November 2026, says SpaceX stock ended the day down 3.5%, but capital markets are still eager to funnel billions to AI companies. The rest of the article is behind a paywall here (Barron’s returned 401), so this summary is limited to that lede."
     },
     {
-      "id": "media-8",
+      "id": "media-7",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T19:18:02Z",
@@ -60,7 +60,31 @@
       "summary": "A Motley Fool article by Johnny Rice, listed in Google News via Yahoo Finance at 20:18 CET on 19 November 2026 under the headline “Why SpaceX Stock Is Down Today,” says SPCX was down about 4% at 1:50 p.m. ET that Thursday after Anthropic’s IPO failed to keep a morning tech rally going, with the S&P 500 and Nasdaq also lower. It notes Anthropic opened 34% above its offer price and briefly touched a $2 trillion fully diluted valuation, then slipped to around $97, and says Anthropic’s IPO filing showed a commitment of up to $120.5 billion through 2029 for computing capacity from SpaceX’s AI arm, reaching about $3.1 billion a month once delivered, which ties SpaceX’s results closely to one customer."
     },
     {
-      "id": "media-36",
+      "id": "media-37",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T17:59:04Z",
+      "title": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMF90TDNmOE5NZDdRdFNJY0NTMjRtVEgtM2d5c0tneWFIRlgwZ2kxQm5xanFDTTFoUkVnMUtzc2ZnRzZiNFdPX2RKOHZUeml2R1FrbU91YXJLN0tNNHdCakRKLUpqOWR6TUNncGxqSkhmOEtqV2tNemZnY2twaFdkRk8tQWdERFdaak5ZdmliWC1vZ9IBlwFBVV95cUxOQXhDcmxvYTY2RkxKUzZJRGNmYUhUbkhWYzU3TVhqbGY2ZlZCdWZUcVZ5WE8yZnpxTFlQbG1xaUgxNG9JWXIwRThqblFNM09VejBMNFA1TXgxQmxFbDJhWGhFQWtEbWRFM29YRllPaTA3WEV4RFpicndzX2ctUEhGQnk0NlRkeFpNRW9YQlk1b2l3VEhGcVVr?oc=5",
+      "snippet": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew CNBC",
+      "topics": [],
+      "summary": "A CNBC article by Luke Fountain, listed in Google News at 18:59 CET on 19 November 2026, says President Donald Trump’s latest financial disclosure shows 751 September trades worth between $40.9 million and $148.1 million, including SpaceX investments around a $946 million NASA contract expansion. The accounts bought $100,001–$250,000 of SpaceX debt at 5.35% on 1 September and $1,001–$15,000 of shares on 9 September, then a further $15,001–$50,000 of shares on 24 September, six days after NASA’s 18 September announcement adding three ISS astronaut missions and bringing the contract to $5.92 billion; the White House said independent managers make the trades and CNBC found no evidence Trump directed them."
+    },
+    {
+      "id": "media-40",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T17:46:00Z",
+      "title": "Verizon’s CEO knows Elon Musk is coming for his business. He says it’ll cost SpaceX over $300 billion to compete - Fortune",
+      "source": "Fortune",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbk11dWpOSWpTam5zWnhZc3hXNHVkdEliT3BZYzVBeHJIWVd5aHBUWnJBRGdZQjlJN1NTd0MwWmlTdXRnTGpLaXBXelJhdVlXUDlhbUVqamhncXR1cTNFMFp5eHpfZmxaM1g0OWlIWWxwaHJwZFZKV0ZjdTNCRk96RVpzTWoySmZWVWtQblVPVjFYNko3OFVOOU5mU2hRQWVFRVRF?oc=5",
+      "snippet": "Verizon’s CEO knows Elon Musk is coming for his business. He says it’ll cost SpaceX over $300 billion to compete Fortune",
+      "topics": [],
+      "summary": "A Fortune article, listed in Google News at 18:46 CET on 19 November 2026, reports Verizon CEO Dan Schulman telling Fortune editor-in-chief Alyson Shontell on the Titans and Disruptors of Industry podcast that if Elon Musk makes Starlink a major U.S. phone carrier, he will have spent four to six years and about $300 billion building a network much like Verizon’s, with “no structural cost advantage,” and would be “the sixth entrant into the market.” The article says SpaceX’s plan last month for Starlink to become a major U.S. mobile carrier knocked about $50 billion off the three big U.S. carriers’ market caps, with Verizon falling 8.7%, and notes Starlink has 12 million paying subscribers and was SpaceX’s only profitable arm in the latest earnings."
+    },
+    {
+      "id": "media-33",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T15:12:35Z",
@@ -72,7 +96,7 @@
       "summary": "A Forbes article titled “Trump’s Financial Disclosure Reveals SpaceX, Tesla, Nvidia Trades,” listed in Google News at 16:12 CET on 19 November 2026, could not be fetched here from the Google News link, so this summary is limited to the headline. It reports that a financial disclosure reveals trades in SpaceX, Tesla and Nvidia."
     },
     {
-      "id": "media-37",
+      "id": "media-35",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T08:20:00Z",
@@ -84,7 +108,7 @@
       "summary": "A Motley Fool article by Prosper Junior Bakiny, listed in Google News via Yahoo Finance at 09:20 CET on 19 November 2026, predicts SpaceX stock could be worth $203 by the end of 2030, implying a market cap of $2.76 trillion and about a 10% average annualized return, if revenue reaches about $230 billion and the price-to-sales ratio falls from 57.1 to about 12. Bakiny notes third-quarter revenue of $14.6 billion, up 161%, and net income of $4.4 billion, but argues Musk’s $1 trillion revenue-by-2030 target is too optimistic and that $200–300 billion is more reasonable, citing execution, regulation, competition and slower AI growth as risks."
     },
     {
-      "id": "media-10",
+      "id": "media-9",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T07:44:11Z",
@@ -98,7 +122,7 @@
       "summary": "An Al Jazeera article by Hanna Duggal, published 19 November 2026 and listed in Google News at 08:44 CET that day, says Anthropic raised $81.3 billion in the largest IPO in history, pricing shares at $83 for a valuation of about $1.5 trillion, after selling 980 million shares (up from a planned 825 million) above a $70–$78 range on six-times oversubscription, with trading due to start on Nasdaq under the ticker ANT. It says Anthropic overtook SpaceX, which raised $75 billion in June at $135 a share and a $1.75 trillion valuation, a total that rose to $85.7 billion after extra shares were sold, and it recaps Anthropic’s $33.2 billion of revenue in the first nine months of 2026, a $104 billion net loss largely from non-cash adjustments, and nearly $901 billion of computing and infrastructure commitments."
     },
     {
-      "id": "media-27",
+      "id": "media-25",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T02:55:00Z",
@@ -112,7 +136,7 @@
       "summary": "A Motley Fool article by Ryan Vanzo, listed in Google News via Yahoo Finance at 03:55 CET on 19 November 2026, says the next unlock, which it dates to 9 December, will free roughly 17% of SpaceX’s locked shares for sale, and looks back at October, when 328.4 million shares unlocked on 9 October (the stock rose about 1% that day), 1.3 billion on 22 October (it fell about 9% that session), and another 328.4 million from 24 October (down 0.4% the next day). It notes SpaceX went public with less than 5% of its shares tradable, says large unlocks can create short-term selling pressure without changing the company’s intrinsic value, and that the author would still stay on the sidelines at a nearly $2 trillion valuation unless the AI roadmap is executed."
     },
     {
-      "id": "media-19",
+      "id": "media-18",
       "type": "media",
       "date": "2026-11-18",
       "datetime": "2026-11-18T16:35:04Z",
@@ -126,21 +150,7 @@
       "summary": "SpaceX’s official USSF-380 page, listed in Google News at 17:35 CET on 18 November 2026, says the company is targeting Friday 27 November for a Falcon 9 launch from Space Launch Complex 4E at Vandenberg Space Force Base, with a four-hour window opening at 8:53 p.m. PT and a backup at 8:39 a.m. PT on Saturday 28 November. It says this will be the 27th flight for the first-stage booster, which previously launched USSF-62, OneWeb Launch 20, NROL-145, Transporter-18 and 22 Starlink missions, and that after stage separation the booster will land on the Of Course I Still Love You droneship in the Pacific, with a possible sonic boom in Santa Barbara, San Luis Obispo and Ventura counties."
     },
     {
-      "id": "media-25",
-      "type": "media",
-      "date": "2026-11-18",
-      "datetime": "2026-11-18T15:52:00Z",
-      "title": "How the Anthropic IPO stacks up against SpaceX - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWkdlbW1ReWtyUXdHSHFPaWw0Q25WdThvUlFSTDY3cGI2THcyNUtSNzVhNVZUdFVkcVF1Rzh3SWl4dVRiTEk3Z3JyLWpGeEx2aGFCYWZ3bTA2SXBia1lXcVBFd2xrRFdNQTllNUV4RGxVOWZreFlLWENXNzF5Njdsa1ZLZ0NWcEVRbzRJdnNuSm0tLTVUY280clRCaXVzOGhSekhNMkhBdGF2Wmc?oc=5",
-      "snippet": "How the Anthropic IPO stacks up against SpaceX Reuters",
-      "topics": [
-        "IPO"
-      ],
-      "summary": "A Reuters article by Niket Nishant, dated 18 November 2026 and listed in Google News at 16:52 CET that day, compared the then-upcoming Anthropic IPO with SpaceX’s June debut, saying Anthropic was expected to be the second-biggest U.S. offering on record and that a $1.4 trillion valuation then discussed by bankers would be about 40 times trailing 12-month sales, versus roughly 92 times revenue when SpaceX went public at about $1.8 trillion. The live Reuters page could not be fetched here; this summary is from a Reuters-bylined syndication, which also noted SpaceX’s tighter lock-up for Elon Musk, who is barred from selling for a year, and that SpaceX shares were trading above their IPO price but below the June open."
-    },
-    {
-      "id": "media-38",
+      "id": "media-34",
       "type": "media",
       "date": "2026-11-18",
       "datetime": "2026-11-18T11:05:02Z",
@@ -152,7 +162,7 @@
       "summary": "A Motley Fool article by Jake Lerch, listed in Google News via Yahoo Finance at 12:05 CET on 18 November 2026, models investing $200 a month in SpaceX from January 2027 through December 2035 (108 contributions totaling $21,600) and says the account would be worth about $35,023 at a 10% annual return, $45,702 at 15%, and $81,412 at 25%, or $14,244 if returns were minus 10%. Lerch calls a 15% annual return a conservative assumption that would leave the plan worth around $46,000, citing third-quarter revenue up 161% year over year and Yahoo Finance estimates of $181 billion of 2027 revenue and $4.06 of earnings per share, while warning that weaker AI-compute demand or Starship delays could disappoint."
     },
     {
-      "id": "media-24",
+      "id": "media-23",
       "type": "media",
       "date": "2026-11-18",
       "datetime": "2026-11-18T10:25:06Z",
@@ -164,7 +174,7 @@
       "summary": "This is Yahoo Finance UK’s SPCX quote page, not a news article. When fetched just after the U.S. close on 11 Nov 2026, it showed a regular-session close of $139.75, down $3.34 (2.33%) from the previous close of $143.09, with after-hours trading at $140.01 and a stated market cap of about $1.90 trillion."
     },
     {
-      "id": "media-23",
+      "id": "media-22",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T23:33:00Z",
@@ -176,7 +186,7 @@
       "summary": "A TheStreet article by Moz Farooque and Aparajita Chatterjee, listed in Google News via Yahoo Finance at 00:33 CET on 18 November 2026 under the headline “Nvidia just sent a powerful signal to SpaceX stock investors,” opens by saying Nvidia had been in the spotlight after Jensen Huang’s 12 November resignation as CEO, national-security questions over overseas chip shipments, and a roughly 13% weekly slide. The rest of the article could not be fetched here; only a short syndication teaser was available."
     },
     {
-      "id": "media-40",
+      "id": "media-39",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T22:39:00Z",
@@ -190,7 +200,19 @@
       "summary": "A Politico article by Ariel Wittenberg, listed in Google News at 23:39 CET on 17 November 2026, says Texas environmental regulators issued an air pollution permit on Monday for SpaceX’s planned data center and gas-fired power plant in the Rio Grande Valley, after the state said it had resumed permitting of supercomputing facilities following Governor Greg Abbott’s September pause. The Politico page itself was blocked here (Cloudflare challenge/timeout); a Data Center Bulletin write-up of the same report says the permit covers 35 natural-gas turbines producing 750 megawatts at a 444-acre site for the $24 billion project, and that the plant would not be connected to the grid."
     },
     {
-      "id": "media-39",
+      "id": "media-36",
+      "type": "media",
+      "date": "2026-11-17",
+      "datetime": "2026-11-17T21:34:21Z",
+      "title": "SPCX Stock Quote Price and Forecast - CNN",
+      "source": "CNN",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mNFpQdmpQSHpfbjh0RmFkcGxLQ1d1dWxoeUoxMTUwM0pnRmYwRDVjMFlvdVNKQm85LUsxSjNVZFlSZm9iSmYwRkJfSVhlNmtK?oc=5",
+      "snippet": "SPCX Stock Quote Price and Forecast CNN",
+      "topics": [],
+      "summary": "This is CNN’s SPCX quote page, not a news feature. When fetched, it showed the stock closed at $143.09, up $1.02 (0.72%) on the day, with a stated market cap of about $1.94 trillion, and it did not have enough data for CNN’s usual revenue or net-income insights."
+    },
+    {
+      "id": "media-38",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T21:07:00Z",
@@ -202,7 +224,7 @@
       "summary": "A TipRanks article by Nikolaos Sismanis, listed in Google News via Yahoo Finance at 22:07 CET on 17 November 2026, argues SpaceX could beat Wall Street estimates after third-quarter revenue rose 161% to $14.6 billion (about 13% above consensus) and earnings per share of $0.35 came in more than twice the $0.13 expected, with Super Intelligence revenue at $7.56 billion, up 830% year over year, and Starlink connectivity revenue up 69% to $5.25 billion on 13.6 million consumer subscribers. It says Flight 15’s first orbital upper-stage catch and the deployment of 26 V3 satellites bring cheaper launches closer, notes Citi raised its target to $280 from $240, and cites a TipRanks average target of $267.76, about 95% upside, while warning that the stock already trades at about 50 times 2027 earnings and that Starship reuse and heavy AI capex still have to be delivered."
     },
     {
-      "id": "media-9",
+      "id": "media-8",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T19:17:24Z",
@@ -214,7 +236,7 @@
       "summary": "A NASA news release by Lauren E. Low, dated 17 November 2026 and updated on 18 and 19 November, listed in Google News at 20:17 CET on 17 November, says NASA will cover the departure of the SpaceX Dragon on the 35th commercial resupply mission, with undocking from Harmony’s space-facing port no earlier than 12:05 p.m. EST on Friday 20 November and live coverage from 11:45 a.m., targeting splashdown off the California coast at about 4:55 p.m. EST (1:55 p.m. PST) on Saturday 21 November, weather permitting. It says the spacecraft arrived on 15 October after a Falcon 9 launch from Cape Canaveral two days earlier with more than 6,300 pounds of cargo, and that thousands of pounds are coming back, including a 3D-bioprinted blood-vessel construct, frozen tumor organoids, microbial samples and a lighting system that spent more than three years on station."
     },
     {
-      "id": "media-30",
+      "id": "media-29",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T18:07:04Z",
@@ -228,7 +250,7 @@
       "summary": "A Yahoo Finance article by Arnab Paul, listed in Google News at 19:07 CET on 17 November 2026, cites a Bloomberg report that SpaceX could begin selling around $4 billion of bonds that week as the first part of a $40 billion financing plan to buy Nvidia Vera Rubin chips, with Goldman Sachs and Apollo expected to underwrite the sale and BlackRock and KKR funds also having made financing commitments. It says a special-purpose company managed by Apollo-backed Atlas SP would buy the chips and lease them to SpaceX for five years, a structure designed to keep the borrowing off SpaceX’s balance sheet and protect its investment-grade ratings, and that SpaceX had not responded to a request for comment."
     },
     {
-      "id": "media-31",
+      "id": "media-30",
       "type": "media",
       "date": "2026-11-16",
       "datetime": "2026-11-16T21:11:00Z",
@@ -242,7 +264,7 @@
       "summary": "A Barron’s article by Al Root and Callum Keown, listed in Google News at 17:53 CET on 16 November 2026 under the headline “Why SpaceX Stock Is Down After Its Historic Starship Catch,” says SpaceX did something amazing on Saturday but the stock is barely budging on Monday, after Starship’s upper stage came back from orbit and was caught by the launch tower’s mechanical arms, which the writers call an amazing feat of engineering. The rest of the article could not be fetched here because of the paywall."
     },
     {
-      "id": "media-16",
+      "id": "media-15",
       "type": "media",
       "date": "2026-11-16",
       "datetime": "2026-11-16T15:16:04Z",
@@ -256,7 +278,7 @@
       "summary": "A Yahoo Finance article by Pras Subramanian, published at 16:16 CET on 16 November 2026, says SpaceX caught Starship’s upper stage for the first time on Saturday after Flight 15 deployed 26 Starlink V3 satellites, and cites Evercore ISI’s Kutgun Maral saying the mission should remind investors the company is at its “core” a rocket builder, because long-term value will be decided more by the cost and frequency of access to orbit than by the next gigawatt of compute or contract renewal. It also quotes William Blair’s Louie DiPalma calling the Super Heavy booster abort, which Musk attributed to being slightly low on fuel, a “footnote in an otherwise historic mission,” and contrasts that with ULA’s Vulcan anomaly on Sunday that lost all 40 Amazon Leo satellites."
     },
     {
-      "id": "media-11",
+      "id": "media-10",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T20:35:21Z",
@@ -270,7 +292,7 @@
       "summary": "A Reuters report by Joey Roulette, listed in Google News at 22:40 CET on 14 November 2026, says Starship returned from a 22-hour voyage in orbit and descended for the first time into the Mechazilla arms at the Texas tower it launched from a day earlier, after the Super Heavy booster failed to make a similar return about 10 minutes after Friday’s liftoff. The piece says the ship had deployed 26 Starlink satellites, completed 14 orbits over 22.5 hours, and that Elon Musk and SpaceX engineers began inspecting Ship 42 within hours of the catch."
     },
     {
-      "id": "media-35",
+      "id": "media-32",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T17:24:07Z",
@@ -282,7 +304,7 @@
       "summary": "A 24/7 Wall St. article by Rich Duprey, carried on Yahoo Finance and listed in Google News at 18:24 CET on 15 November 2026, says SpaceX missed a double catch on Starship Flight 15 but caught the upper stage with the tower arms for the first time, after Ship 42 completed about 22.5 hours and 14 Earth orbits and deployed 26 Starlink V3 satellites, while the Super Heavy booster diverted offshore and was lost. The piece sketches a path to $275 in 2027, citing a $256.41 Wall Street consensus target (84% upside), 31 Buy ratings versus two Sells, and drivers including upper-stage reuse, Starlink capacity and 10 gigawatts of added compute, while noting two-stage recovery is still unproven and fourth-quarter capital expenditure is guided at $35–40 billion."
     },
     {
-      "id": "media-21",
+      "id": "media-19",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T13:21:24Z",
@@ -309,20 +331,6 @@
       "summary": "An Economist Science and Technology article, listed in Google News at 12:33 CET on 15 November 2026, says that on 14 November, during Starship’s 15th test flight, SpaceX caught the rocket’s second stage at its launch tower for the first time, having previously caught boosters mid-air but never the upper half. The Economist page itself returned 403 here; the visible opening says that leaves the company on the cusp of building the first fully reusable rocket, which should cut the cost of reaching space further."
     },
     {
-      "id": "media-32",
-      "type": "media",
-      "date": "2026-11-15",
-      "datetime": "2026-11-15T11:00:00Z",
-      "title": "What's next for SpaceX's Starship after epic Flight 15 chopsticks catch? - Space",
-      "source": "Space",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeG54TUh4Wm5aVHNOSXVQYV85YUJuaHZ0V29nbWVDZ2JhVUs1a2R4aGhOZjZjS1hGX1JfSGtVcGtYczZDVTFhNEFIY2RRUHpsRWYxT3p6YmdGWlB4S0xIUGxGekdVaEZUd0NCZlFST0lwei1zbUNZa1VDSmZQOTZUQVhteFI0ODdoWXYxTWliNGYxRUZYamQwSkpEQzlta1F5eFVQZ2hVaUl1b0o0Y0NiVWFjcmpRUllQa0dqZmdjS2ltZ3NlM2dtSg?oc=5",
-      "snippet": "What's next for SpaceX's Starship after epic Flight 15 chopsticks catch? Space",
-      "topics": [
-        "Starship"
-      ],
-      "summary": "A Space.com report by Mike Wall, listed in Google News at 12:00 CET on 15 November 2026, asks what comes next after Flight 15: the Super Heavy booster diverted to a Gulf of Mexico splashdown after a low-fuel alarm, but the Ship upper stage was caught at Starbase 22.5 hours after liftoff — a first, while Super Heavy has been caught on three prior tests. Wall writes that SpaceX has yet to show rapid reflight of either stage (Ship has never been reused; Super Heavy has been reflown twice, months apart), that Musk wants both stages reused and has talked of 10,000 Starship launches a year by 2030, and that remaining hurdles include orbital refueling and a crew cabin for NASA’s Artemis IV lunar landing, targeted for 2028."
-    },
-    {
       "id": "media-2",
       "type": "media",
       "date": "2026-11-15",
@@ -335,7 +343,7 @@
       "summary": "The Google News link and the main Britannica page were blocked; Britannica’s Scholars encyclopedia entry by Alison Eldridge describes SpaceX as an American aerospace company founded by Elon Musk in 2002, now headquartered in Starbase, Texas, and covers Falcon, Dragon, Starlink and Starship plus the February 2026 xAI acquisition, a June 2026 IPO of 555.6 million shares at $135 that raised $75 billion and valued the company at about $1.77 trillion, and the August 2026 $60 billion purchase of Cursor. It says that as of June 2026 Starlink had more than 10,200 satellites in orbit and 12 million subscribers, and that after the xAI deal SpaceX made artificial intelligence one of its three main business segments alongside space and connectivity."
     },
     {
-      "id": "media-22",
+      "id": "media-12",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T00:40:59Z",
@@ -349,7 +357,7 @@
       "summary": "An Ars Technica report by Eric Berger, listed in Google News at 01:40 CET on 15 November 2026, describes Starship’s upper stage returning to Starbase on Saturday, flipping from horizontal to vertical as three Raptor engines ignited, and being snagged by the launch-tower arms — a hugely significant step, he writes, toward a massive, rapidly reusable rocket after earlier practice runs into the Indian Ocean. Berger notes SpaceX has now returned both elements of a Starship to the tower as a proof of concept, currently builds an upper stage every three weeks at the South Texas Starfactory (sized for one every three days), and says the heat shield is likely the hardest part of making such landings routine."
     },
     {
-      "id": "media-28",
+      "id": "media-27",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T00:36:33Z",
@@ -361,7 +369,7 @@
       "summary": "The New York Times page itself could not be fetched here; a syndicated reprint of Kenneth Chang’s Times report, listed in Google News at 01:36 CET on 15 November 2026, says Starship returned from orbit on Saturday afternoon and was caught between the mechanical “chopstick” arms on the South Texas launch tower — the first time an upper stage had been brought back from orbit, on the first try. The 15th test flight launched Friday afternoon and deployed 26 next-generation Starlink satellites, while the planned Super Heavy booster catch — which would have been a first double-catch — did not happen, and the article notes that showing the heat shield and engines can be reused quickly is still further off."
     },
     {
-      "id": "media-26",
+      "id": "media-24",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T23:11:00Z",
@@ -392,7 +400,7 @@
       "timeSource": "Official SpaceX post linking the Flight 15 recap"
     },
     {
-      "id": "media-17",
+      "id": "media-11",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T22:04:24Z",
@@ -420,7 +428,7 @@
       "summary": "An NPR report posted at 22:42 CET on 14 November 2026 says Starship made a triumphant return to Earth on Saturday and was caught in midair by giant mechanical arms after a 22-hour flight, the first-ever capture of a Starship flying back from space, though the company fell short of a double catch after the first-stage booster exploded following Friday’s liftoff. The piece says the upper stage reached orbit, released 26 advanced Starlink satellites, completed 14 laps of Earth, and that SpaceX’s Kate Tice said the booster’s engines stopped firing too soon, after which its guidance system initiated a watery detour and self-destruction."
     },
     {
-      "id": "media-6",
+      "id": "media-5",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T21:14:46Z",
@@ -434,7 +442,7 @@
       "summary": "A CNBC report by Lora Kolodny, published at 22:14 CET on 14 November 2026 and later updated, says SpaceX successfully caught the upper-stage spacecraft of Starship from orbit with the launch tower’s “chopsticks” at Starbase, Texas, after the vehicle flew around the Earth 14 times. The piece notes that on Friday SpaceX failed to catch and recover the booster, diverting it to a Gulf of Mexico splashdown where it exploded before hitting the water, and that Flight 15 also released another 26 of SpaceX’s newest Starlink v3 satellites."
     },
     {
-      "id": "media-7",
+      "id": "media-6",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T12:40:21Z",
@@ -477,7 +485,7 @@
       "summary": "A PBS NewsHour piece by Marcia Dunn of the Associated Press, published 13 November 2026, says SpaceX’s attempt to recover the entire Starship stack at the pad was thwarted when Super Heavy v3 Booster 22 malfunctioned, automatically aborted, and ended up exploding after being diverted to the Gulf of Mexico, while the Starship 42 spacecraft still reached orbit. It says this was the first catch attempt for the upgraded 236-foot booster and that, barring further trouble, the ship will try a first-ever return-from-orbit catch Saturday after about 22 hours and 15 laps at roughly 170 miles (275 kilometers), having prepared to deploy 26 of SpaceX’s most advanced Starlink satellites."
     },
     {
-      "id": "media-29",
+      "id": "media-28",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T23:20:03Z",
@@ -492,7 +500,7 @@
       "summary": "A Space.com report by Josh Dinner, published 13 November 2026 and updated at 7:10 p.m. ET after successful payload deployment, says Starship Flight 15 lifted off from Starbase at 5:47 p.m. ET and that SpaceX called off the Super Heavy booster catch, bringing it down for a controlled splashdown in the Gulf of Mexico about 6.5 minutes after launch for reasons that were not immediately clear. The story says Ship reached orbit for only the second time, at about 170 miles (275 kilometers), deployed 26 Starlink V3 satellites, and that a first-ever Ship catch was planned for Saturday at about 4:17 p.m. EST if systems stayed healthy."
     },
     {
-      "id": "media-15",
+      "id": "media-16",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T22:50:16Z",
@@ -519,7 +527,7 @@
       "timeSource": "Official SpaceX post linking the 13 November Updates item"
     },
     {
-      "id": "media-18",
+      "id": "media-17",
       "type": "media",
       "date": "2026-11-13",
       "datetime": "2026-11-13T10:00:00Z",
@@ -585,22 +593,7 @@
       "summary": "SpaceX’s official USSF-627 mission page confirms that Falcon 9 lifted off at 8:36 p.m. PT on 11 November 2026 from Space Launch Complex 4E at Vandenberg Space Force Base. It says this was the seventh flight for the first-stage booster, which had previously launched NROL-179, SDA-T1TL-E, SDA-T1TL-A and three Starlink missions, and that after stage separation the booster landed on the Of Course I Still Love You droneship in the Pacific Ocean."
     },
     {
-      "id": "media-5",
-      "type": "media",
-      "date": "2026-11-09",
-      "datetime": "2026-11-09T08:00:00Z",
-      "title": "SpaceX will launch epic double-catch Starship Flight 15 test mission on Nov. 13 - Space",
-      "source": "Space",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObzJxS3pPV3MwcVN1czhMWEZlYm1xbGV2eC02ZzdwdktJaGxoOUJpWm1fS2pYcTVKU3R5cTAzdzZEdXhRR0lFeXVzT1FZRXU1NGltT1lBVjNGbFYtUG5JN2J2bVN0SlRBRVRoOEp3WlpmRnJ0OC1sSVBfLWlzTy1fS0U4QlZpRDdFLU9jczAxM2ZHTF9tRmJTeGFLcy1mQzJXcktVTzEtY0F1NUFlYmlqelZUR1NEdldOLWQ4Umgzb2ZlT1VuRFdUUzM2a1gxS2p0cDJvdA?oc=5",
-      "snippet": "SpaceX will launch epic double-catch Starship Flight 15 test mission on Nov. 13 Space",
-      "topics": [
-        "Starship",
-        "Launch"
-      ],
-      "summary": "Space.com reports that SpaceX is targeting Friday 13 Nov 2026 for Starship Flight 15, in a 75-minute window opening at 5:45 p.m. EST from Starbase, in the first attempt to catch both Super Heavy and Ship at the tower. The mission description quoted in the article also calls for deploying 26 Starlink V3 satellites and a more than 22-hour flight of about 14 orbits at roughly 275 km, longer than Flight 14’s Pacific splashdown."
-    },
-    {
-      "id": "media-34",
+      "id": "media-31",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T08:00:00Z",
