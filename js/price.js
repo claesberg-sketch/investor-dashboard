@@ -245,12 +245,31 @@
     return res.json();
   }
 
-  async function fetchHL() {
-    const data = await postInfo({ type: "metaAndAssetCtxs", dex: "xyz" });
+  /** Shared: one metaAndAssetCtxs call for a HIP-3 dex, returned as { coin: ctx }. */
+  async function fetchHLCtxs(dex) {
+    const data = await postInfo({ type: "metaAndAssetCtxs", dex: dex || "xyz" });
     const uni = (data[0] && data[0].universe) || [];
-    const i = uni.findIndex((u) => u.name === COIN);
-    if (i < 0) throw new Error(COIN + " not listed");
-    const ctx = data[1][i];
+    const out = {};
+    uni.forEach((u, i) => { if (u && u.name && data[1] && data[1][i]) out[u.name] = data[1][i]; });
+    return out;
+  }
+
+  function hlFromCtx(ctx) {
+    return {
+      midPx: ctx.midPx != null ? +ctx.midPx : null,
+      markPx: +ctx.markPx,
+      oraclePx: +ctx.oraclePx,
+      prevDayPx: +ctx.prevDayPx,
+      funding: ctx.funding != null ? +ctx.funding : null,
+      dayNtlVlm: +ctx.dayNtlVlm,
+      asOf: new Date(),
+    };
+  }
+
+  async function fetchHL() {
+    const ctxs = await fetchHLCtxs("xyz");
+    const ctx = ctxs[COIN];
+    if (!ctx) throw new Error(COIN + " not listed");
     return {
       midPx: +ctx.midPx,
       markPx: +ctx.markPx,
@@ -263,9 +282,14 @@
   }
 
   async function fetchCandles(startMs, endMs) {
+    return fetchCandlesFor(COIN, INTERVAL, startMs, endMs);
+  }
+
+  /** Shared: Hyperliquid candle snapshot for any coin. */
+  async function fetchCandlesFor(coin, interval, startMs, endMs) {
     const data = await postInfo({
       type: "candleSnapshot",
-      req: { coin: COIN, interval: INTERVAL, startTime: startMs, endTime: endMs },
+      req: { coin, interval, startTime: startMs, endTime: endMs },
     });
     if (!Array.isArray(data)) throw new Error("unexpected candle payload");
     return data.map((c) => ({ t: +c.t, T: +c.T, o: +c.o, c: +c.c, h: +c.h, l: +c.l, v: +c.v, n: +c.n })).filter((c) => Number.isFinite(c.t) && Number.isFinite(c.c));
@@ -295,10 +319,33 @@
     const data = await res.json();
     const q = data && data.FormattedQuoteResult && data.FormattedQuoteResult.FormattedQuote && data.FormattedQuoteResult.FormattedQuote[0];
     if (!q) throw new Error("CNBC empty quote");
+    return parseCnbcQuote(q);
+  }
+
+  function cnbcQuoteUrl(symbols) {
+    const list = Array.isArray(symbols) ? symbols.join("|") : String(symbols);
+    return "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + encodeURIComponent(list) +
+      "&requestMethod=quick&exthrs=1&noform=1&partnerId=2&output=json";
+  }
+
+  /** Shared: one batched CNBC quote request ("A|B|C"); returns { symbol: rawQuote }. */
+  async function fetchCnbcQuotes(symbols) {
+    const res = await fetch(cnbcQuoteUrl(symbols) + "&_=" + Date.now(), { cache: "no-store", credentials: "omit" });
+    if (!res.ok) throw new Error("CNBC quote HTTP " + res.status);
+    const data = await res.json();
+    const rows = (data && data.FormattedQuoteResult && data.FormattedQuoteResult.FormattedQuote) || [];
+    const out = {};
+    rows.forEach((q) => { if (q && q.symbol) out[q.symbol] = q; });
+    return out;
+  }
+
+  /** Shared: turn a raw CNBC quote into the live last sale for the current U.S. session. */
+  function parseCnbcQuote(q, now) {
     let price = parseMoney(q.last);
     let time = q.last_time || q.last_timedate;
+    let usedExt = null;
     const ext = q.ExtendedMktQuote || null;
-    const session = getSession(new Date());
+    const session = getSession(now || new Date());
     if (ext && (session.id === "pre" || session.id === "after")) {
       const extPx = parseMoney(ext.last);
       const extMs = tsMs(ext.last_time || ext.last_timedate);
@@ -308,12 +355,26 @@
       if (extFits && extPx != null && (extMs == null || lastMs == null || extMs >= lastMs)) {
         price = extPx;
         time = ext.last_time || ext.last_timedate || time;
+        usedExt = session.id;
       }
     }
     if (price == null) throw new Error("CNBC missing last price");
-    const prevClose = parseMoney(q.previous_day_closing);
-    const change = parseMoney(q.change);
+    let prevClose = parseMoney(q.previous_day_closing);
+    let change = parseMoney(q.change);
     let changePct = parseMoney(q.change_pct);
+    // Extended-hours prints: measure against the official previous close, not the
+    // regular-session change CNBC reports in q.change.
+    // Pre-market: q.last is the latest official close. After-hours: q.last is today's
+    // close, so the previous close is q.last - q.change.
+    const lastPx = parseMoney(q.last);
+    if (usedExt && lastPx != null) {
+      const base = usedExt === "pre" ? lastPx : (change != null ? lastPx - change : prevClose);
+      if (base != null && base > 0) {
+        prevClose = base;
+        change = price - base;
+        changePct = (change / base) * 100;
+      }
+    }
     if (changePct == null && change != null && prevClose) changePct = (change / prevClose) * 100;
     const realTime = q.realTime === true || q.realTime === "true" || q.realTime === "TRUE";
     return {
@@ -328,6 +389,7 @@
       volume: parseMoney(String(q.volume || "").replace(/,/g, "")),
       fullVolume: parseMoney(String(q.fullVolume || "").replace(/,/g, "")),
       marketStatus: q.curmktstatus,
+      extSession: usedExt,
       source: q.source || "CNBC",
       exchange: q.exchange || "NASDAQ",
       realTime,
@@ -336,13 +398,20 @@
   }
 
   async function fetchOfficialBars(date) {
-    const p = etParts(date || new Date());
+    return fetchBarsFor(CNBC_BARS, date);
+  }
+
+  /** Shared: CNBC 1-minute bars (04:00 ET to the end of after-hours) for the ET day of `date`.
+      `base` is either a full ".../bars/SYM.O" URL or just the bars symbol, e.g. "NVDA.O". */
+  async function fetchBarsFor(base, date) {
+    if (!/^https?:/.test(base)) base = "https://ts-api.cnbc.com/harmony/app/bars/" + encodeURIComponent(base);
+    const p = date && date.year != null ? date : etParts(date || new Date());
     const b = sessionBounds(p);
     const start = etCompactStamp(p.year, p.month, p.day, 4, 0);
     const endHour = Math.floor(b.afterEnd / 60);
     const endMin = b.afterEnd % 60;
     const end = etCompactStamp(p.year, p.month, p.day, endHour, endMin);
-    const url = CNBC_BARS + "/1M/" + start + "/" + end + "/adjusted/EST5EDT.json?_=" + Date.now();
+    const url = base + "/1M/" + start + "/" + end + "/adjusted/EST5EDT.json?_=" + Date.now();
     const res = await fetch(url, { cache: "no-store", credentials: "omit" });
     if (!res.ok) throw new Error("CNBC bars HTTP " + res.status);
     const data = await res.json();
@@ -1190,6 +1259,10 @@
 
   global.SPCXPrice = {
     getSession, formatIn, money, compact, fmtVol, chgClass, chgText,
+    // Shared helpers (also used by watchlist.js)
+    etParts, sessionBounds, clockToMs, dayKeyFromParts, zoneAbbrev, parseMoney, tsMs,
+    fetchHLCtxs, hlFromCtx, fetchCandlesFor, cnbcQuoteUrl, fetchCnbcQuotes, parseCnbcQuote, fetchBarsFor,
+    HL_INFO, HL_WS, MARKET_HOLIDAYS, EARLY_CLOSE,
     fetchHL, fetchOfficialQuote, fetchOfficialBars, tryYahooLive, render, startLive, setQuote, setUnlocks, configure, TZ, ET,
   };
 })(window);

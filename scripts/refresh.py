@@ -99,6 +99,7 @@ YAHOO_UA = "Mozilla/5.0 (compatible; InvestorDashboard/1.0; +https://github.com/
 
 
 INDEX = ROOT / "index.html"
+PAGES = [INDEX, ROOT / "watchlist.html"]  # every HTML page whose ?v= cache-busters are bumped
 ASSET_TAG_RE = re.compile(
     r'((?:href|src)=")((?:css|js)/[^"?]+)(?:\?v=[^"]*)?(")',
     re.I,
@@ -121,15 +122,18 @@ def asset_version() -> str:
 
 
 def bump_asset_version(version: str | None = None) -> str:
-    """Rewrite ?v= on local JS/CSS tags in index.html so Pages clients fetch fresh assets."""
+    """Rewrite ?v= on local JS/CSS tags in index.html and watchlist.html so Pages clients fetch fresh assets."""
     version = version or asset_version()
-    html = INDEX.read_text()
-    new, n = ASSET_TAG_RE.subn(rf"\1\2?v={version}\3", html)
-    if n == 0:
-        raise RuntimeError("no local js/css tags found in index.html")
-    if new != html:
-        INDEX.write_text(new)
-    print(f"bumped {n} asset tags in index.html to v={version}")
+    for page in PAGES:
+        if not page.exists():
+            continue
+        html = page.read_text()
+        new, n = ASSET_TAG_RE.subn(rf"\1\2?v={version}\3", html)
+        if n == 0:
+            raise RuntimeError(f"no local js/css tags found in {page.name}")
+        if new != html:
+            page.write_text(new)
+        print(f"bumped {n} asset tags in {page.name} to v={version}")
     return version
 
 

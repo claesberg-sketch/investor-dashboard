@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Unofficial personal watchlist for Claes Berg: live prices for SPCX, TSLA, ANT, NVDA, AMD and MU — U.S. last sale in pre-market, regular and after-hours, Hyperliquid overnight.">
+  <title>Watchlist · Investor Dashboard · Claes Berg</title>
+  <link rel="stylesheet" href="css/style.css?v=de2b6a9-20261120093605">
+  <link rel="stylesheet" href="css/watchlist.css?v=de2b6a9-20261120093605">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex,nofollow">
+</head>
+<body class="page-watchlist">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./">
+        <span class="owner">Claes Berg</span>
+        <span class="product">Investor Dashboard</span>
+      </a>
+      <div class="header-right">
+        <nav class="switcher wl-nav" aria-label="Pages">
+          <a href="./" title="SpaceX dashboard">SPCX</a>
+          <a href="./?c=tesla" title="Tesla dashboard">TSLA</a>
+          <a class="active" href="watchlist.html" aria-current="page">Watchlist</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wl-hero">
+      <div class="wrap">
+        <p class="section-kicker">Watchlist</p>
+        <h1 class="wl-title">Live prices</h1>
+        <div class="wl-session" id="wl-session"><span class="dot"></span><span id="wl-session-label">Loading session…</span></div>
+        <p class="lede wl-lede">Official U.S. last sale (CNBC real-time tape) in pre-market, the regular session and after-hours. When the U.S. market is closed — overnight, weekends and holidays — prices come from the Hyperliquid perpetual for each stock. Change is measured against the official previous close. Times are Stockholm time (CET/CEST).</p>
+
+        <div class="wl-table" id="wl-table" role="table" aria-label="Watchlist prices">
+          <div class="wl-head" role="row">
+            <div role="columnheader">Stock</div>
+            <div role="columnheader">Price</div>
+            <div role="columnheader">Change</div>
+            <div role="columnheader">Regular close</div>
+            <div role="columnheader">After hours</div>
+            <div role="columnheader" class="wl-h-spark">Today</div>
+          </div>
+          <div id="wl-rows"></div>
+        </div>
+        <p class="source" id="wl-updated"></p>
+        <p class="source" id="wl-notes"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="unofficial">Unofficial – personal watchlist</p>
+      <p>Built for Claes Berg. Not affiliated with any listed company or data provider. U.S. prices: CNBC public quote service (real-time last sale, unofficial endpoint, no service guarantee). Overnight prices: Hyperliquid HIP-3 perpetuals run by trade.xyz (<code>xyz:SPCX</code>, <code>xyz:TSLA</code>, <code>xyz:ANT</code>, <code>xyz:NVDA</code>, <code>xyz:AMD</code>, <code>xyz:MU</code>) — synthetic contracts, not shares, and they can drift from where the stock next opens. Nothing here is investment advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/price.js?v=de2b6a9-20261120093605"></script>
+  <script src="js/watchlist.js?v=de2b6a9-20261120093605"></script>
+</body>
+</html>
