@@ -25,6 +25,7 @@
   STOCKS.forEach((s) => {
     state[s.ticker] = { raw: null, off: null, offAt: 0, offErr: 0, hl: null, hlAt: 0, ah: null, ahKey: "", spark: null, sparkKey: "", sparkAt: 0 };
   });
+  let SHARES = {}; // ticker -> { sharesOutstanding, asOf, source, ... } from data/shares.json
   let cnbcOkAt = 0;
   let cnbcFailCount = 0;
   let hlOkAt = 0;
@@ -55,6 +56,24 @@
     return sign + Math.abs(n).toFixed(digits == null ? 2 : digits);
   }
   function pctText(n) { return n == null || !Number.isFinite(n) ? "" : signed(n) + "%"; }
+  function sharesLabel(n) {
+    if (n == null || !Number.isFinite(+n)) return "";
+    const v = +n;
+    if (v >= 1e9) return (v / 1e9).toFixed(3).replace(/\.?0+$/, "") + "B shares";
+    if (v >= 1e6) return (v / 1e6).toFixed(3).replace(/\.?0+$/, "") + "M shares";
+    return v.toLocaleString("en-US") + " shares";
+  }
+  async function loadShares() {
+    try {
+      const res = await fetch("data/shares.json", { cache: "no-store" });
+      if (!res.ok) throw new Error("shares " + res.status);
+      const data = await res.json();
+      const stocks = data.stocks || {};
+      Object.keys(stocks).forEach((k) => { SHARES[k] = stocks[k]; });
+    } catch (err) {
+      console.warn("watchlist shares", err);
+    }
+  }
 
   /* ---------- ET calendar helpers ---------- */
   function dayKeyOf(ms) { return P.dayKeyFromParts(P.etParts(new Date(ms))); }
@@ -170,7 +189,7 @@
   /* ---------- rendering ---------- */
   function rowSkeleton(s) {
     const nameInner = '<div class="wl-ticker">' + esc(s.ticker) + "</div>" +
-      '<div class="wl-name">' + esc(s.name) + "</div>" +
+      '<div class="wl-name">' + esc(s.name) + ' <span class="wl-mcap" data-f="mcap"></span></div>' +
       '<div class="wl-full">' + esc(s.full) + "</div>" +
       (s.href ? '<div class="wl-go">Dashboard ›</div>' : "");
     const name = s.href
@@ -210,6 +229,14 @@
     if (base != null) {
       const k = close && close.key;
       baseLabel = "vs close " + P.money(base) + (k ? " (" + shortDay(k) + ")" : "");
+    }
+
+    const sh = SHARES[s.ticker] && SHARES[s.ticker].sharesOutstanding;
+    const mcapEl = setHTML(row, "mcap", disp && sh ? P.compact(disp.price * sh) : "");
+    if (mcapEl) {
+      mcapEl.title = disp && sh
+        ? sharesLabel(sh) + " × " + P.money(disp.price) + " live"
+        : (sh ? sharesLabel(sh) + " outstanding" : "");
     }
 
     setHTML(row, "px", disp ? P.money(disp.price) : "—");
@@ -451,7 +478,8 @@
       STOCKS.map((s) => "<code>" + s.coin + "</code>").join(", ") +
       ". “Regular close” is the latest official 4 pm ET close and its daily change. “After hours” is the latest after-hours trade, " +
       "live during the after-hours session, otherwise the last 1-minute bar of the most recent after-hours session, with its change vs that day’s close. " +
-      "Anthropic listed on Nasdaq as <code>ANT</code> on 19 Nov 2026 at an $83 IPO price; <code>xyz:ANT</code> converted from a pre-IPO market to a standard perp tracking the stock the same day.";
+      "Anthropic listed on Nasdaq as <code>ANT</code> on 19 Nov 2026 at an $83 IPO price; <code>xyz:ANT</code> converted from a pre-IPO market to a standard perp tracking the stock the same day. " +
+      "Market cap next to each name is the live displayed price times total shares outstanding (all classes for SpaceX and Anthropic, not the free float). Share counts and sources are in <code>data/shares.json</code>.";
   }
 
   function boot() {
@@ -459,6 +487,7 @@
     rows.innerHTML = STOCKS.map(rowSkeleton).join("");
     notes();
     renderAll();
+    loadShares().then(renderAll);
     pollCnbc().then(refreshSlow);
     pollHl();
     const sock = startSocket();

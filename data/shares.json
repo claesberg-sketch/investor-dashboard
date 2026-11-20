@@ -1,0 +1,97 @@
+{
+  "updated": "2026-11-20",
+  "note": "Total shares outstanding used for watchlist market cap: the live displayed price (CNBC last sale in a U.S. session, otherwise the Hyperliquid mid) times these counts. Counts are all economic classes, not the free float and not a fully diluted option/RSU share count.",
+  "stocks": {
+    "SPCX": {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "sharesOutstanding": 13581063709,
+      "asOf": "2026-10-15",
+      "autoUpdate": false,
+      "autoUpdateReason": "Dual class; total is Class A + Class B from the 10-Q cover. SEC EntityCommonStockSharesOutstanding is not filed as a single combined figure.",
+      "cik": "0001181412",
+      "classes": [
+        { "class": "Class A", "shares": 8246541218, "listed": true, "ticker": "SPCX" },
+        { "class": "Class B", "shares": 5334522491, "listed": false, "note": "Convert 1:1 into Class A; valued at the Class A price." }
+      ],
+      "source": {
+        "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+        "detail": "8,246,541,218 Class A + 5,334,522,491 Class B = 13,581,063,709 shares outstanding as of October 15, 2026."
+      }
+    },
+    "TSLA": {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "sharesOutstanding": 3952757946,
+      "asOf": "2026-10-15",
+      "autoUpdate": true,
+      "cik": "0001318605",
+      "source": {
+        "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+        "detail": "As of October 15, 2026, there were 3,952,757,946 shares of the registrant's common stock outstanding."
+      }
+    },
+    "ANT": {
+      "ticker": "ANT",
+      "name": "Anthropic",
+      "sharesOutstanding": 13366642276,
+      "asOf": "2026-11-20",
+      "autoUpdate": false,
+      "autoUpdateReason": "Recent IPO; total is Class A + Class N (plus 1 Class T and 1 Class F) after the offering, the concurrent private placement and the full greenshoe. Not yet in SEC companyfacts.",
+      "cik": "0002130357",
+      "classes": [
+        { "class": "Class A", "shares": 7730103996, "listed": true, "ticker": "ANT", "note": "7,583,103,996 after the base offering, plus 147,000,000 from the underwriters' option exercised in full." },
+        { "class": "Class N", "shares": 5636538278, "listed": false, "note": "Includes 313,253,007 shares issued in the concurrent $26.0B private placement; valued at the Class A price." },
+        { "class": "Class T", "shares": 1, "listed": false },
+        { "class": "Class F", "shares": 1, "listed": false }
+      ],
+      "source": {
+        "label": "Final 424(b)(4) prospectus (19 Nov 2026) plus IPO closing including full greenshoe and concurrent private placement (20 Nov 2026)",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+        "also": "https://www.anthropic.com/news/ipo-close",
+        "detail": "The 424(b)(4) reports 13,219,642,276 shares outstanding after the base offering and concurrent private placement (7,583,103,996 Class A + 5,636,538,278 Class N + 1 Class T + 1 Class F). The underwriters fully exercised their option to buy 147,000,000 additional Class A shares, which closed on 20 Nov 2026, taking the total to 13,366,642,276. At the $83 IPO price that is about $1.11T, in line with contemporary reports of about $1.10T on the pre-greenshoe count."
+      }
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "name": "Nvidia",
+      "sharesOutstanding": 24100000000,
+      "asOf": "2026-08-21",
+      "autoUpdate": true,
+      "cik": "0001045810",
+      "source": {
+        "label": "Form 10-Q cover page, quarter ended Jul 26, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "detail": "The number of shares of common stock outstanding as of August 21, 2026, was 24.1 billion (NVIDIA reports this cover figure in tenths of a billion). Q3 FY2027 earnings (17 Nov 2026, quarter ended Oct 25, 2026) reported weighted-average basic shares of 24.106 billion; a new point-in-time count is expected in the forthcoming 10-Q."
+      }
+    },
+    "AMD": {
+      "ticker": "AMD",
+      "name": "AMD",
+      "sharesOutstanding": 1640087251,
+      "asOf": "2026-10-28",
+      "autoUpdate": true,
+      "cik": "0000002488",
+      "source": {
+        "label": "Form 10-Q cover page, quarter ended Sep 26, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+        "detail": "1,640,087,251 shares of common stock outstanding as of October 28, 2026."
+      }
+    },
+    "MU": {
+      "ticker": "MU",
+      "name": "Micron",
+      "sharesOutstanding": 1131423212,
+      "asOf": "2026-10-02",
+      "autoUpdate": true,
+      "cik": "0000723125",
+      "source": {
+        "label": "Form 10-K cover page, fiscal year ended Sep 3, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
+        "detail": "The number of outstanding shares of the registrant's common stock as of October 2, 2026 was 1,131,423,212."
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ Usage:
   python3 scripts/refresh.py --company tesla     # Tesla only
   python3 scripts/refresh.py --company all       # every active company
   python3 scripts/refresh.py --bump-assets       # only rewrite ?v= cache-busters
+  python3 scripts/refresh.py --shares            # check SEC cover-page share counts into data/shares.json
 
 Does not refresh X posts (Actions cannot call the X connector). See README.
 """
@@ -882,6 +883,100 @@ def refresh_company():
     return 0
 
 
+
+SHARES_PATH = ROOT / "data" / "shares.json"
+
+
+def _latest_sec_shares(cik: str):
+    """Return the newest dei:EntityCommonStockSharesOutstanding fact, or None."""
+    cik = str(cik).zfill(10)
+    url = (
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK"
+        + cik
+        + "/dei/EntityCommonStockSharesOutstanding.json"
+    )
+    # SEC rejects the default refresh User-Agent (the GitHub noreply address).
+    # This shorter product name is accepted and still identifies the dashboard.
+    status, data, _ = fetch_json(url, ua="ClaesBerg-InvestorDashboard/1.0")
+    units = (data or {}).get("units") or {}
+    rows = []
+    for unit, arr in units.items():
+        for row in arr or []:
+            rows.append({**row, "unit": unit})
+    rows = [r for r in rows if r.get("val") is not None and r.get("end")]
+    if not rows:
+        return None
+    rows.sort(key=lambda r: (r.get("end") or "", r.get("filed") or "", r.get("fy") or 0))
+    latest = rows[-1]
+    return {
+        "sharesOutstanding": int(latest["val"]),
+        "asOf": latest["end"],
+        "filed": latest.get("filed"),
+        "form": latest.get("form"),
+        "url": url,
+    }
+
+
+def refresh_shares():
+    """Update data/shares.json from SEC cover-page counts for auto-update tickers.
+
+    Dual-class / recent-IPO names (SpaceX, Anthropic) stay curated: their total is
+    all economic classes, which is not what a single EntityCommonStockSharesOutstanding
+    fact usually represents. Those rows are reported, not overwritten.
+    """
+    if not SHARES_PATH.exists():
+        raise SystemExit(f"missing {SHARES_PATH}")
+    doc = json.loads(SHARES_PATH.read_text())
+    stocks = doc.get("stocks") or {}
+    changed = False
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for ticker, row in stocks.items():
+        cik = row.get("cik")
+        current = row.get("sharesOutstanding")
+        as_of = row.get("asOf")
+        if not row.get("autoUpdate"):
+            reason = row.get("autoUpdateReason") or "curated (autoUpdate=false)"
+            print(f"{ticker}: skip auto-update ({reason}); keeping {current} as of {as_of}")
+            continue
+        if not cik:
+            print(f"{ticker}: skip, no CIK")
+            continue
+        try:
+            latest = _latest_sec_shares(cik)
+        except Exception as e:
+            print(f"{ticker}: SEC lookup failed: {e}")
+            continue
+        if not latest:
+            print(f"{ticker}: no EntityCommonStockSharesOutstanding fact")
+            continue
+        new_n = latest["sharesOutstanding"]
+        new_as = latest["asOf"]
+        if as_of and new_as < as_of:
+            print(f"{ticker}: SEC fact {new_n} as of {new_as} is older than stored {current} as of {as_of}; leaving as-is")
+            continue
+        if new_n == current and new_as == as_of:
+            print(f"{ticker}: unchanged {current} as of {as_of} ({latest.get('form')} filed {latest.get('filed')})")
+            continue
+        form = latest.get("form") or "SEC"
+        filed = latest.get("filed") or ""
+        print(f"{ticker}: {current} as of {as_of} -> {new_n} as of {new_as} ({form} filed {filed})")
+        row["sharesOutstanding"] = new_n
+        row["asOf"] = new_as
+        src = dict(row.get("source") or {})
+        src["label"] = f"SEC companyfacts EntityCommonStockSharesOutstanding, {form}" + (f" filed {filed}" if filed else "")
+        src["url"] = latest["url"]
+        src["detail"] = f"{new_n:,} shares outstanding as of {new_as}."
+        row["source"] = src
+        changed = True
+    if changed:
+        doc["updated"] = today
+        SHARES_PATH.write_text(json.dumps(doc, indent=2) + "\n")
+        print(f"wrote {SHARES_PATH.relative_to(ROOT)}")
+    else:
+        print("data/shares.json unchanged")
+    return 0
+
+
 def parse_args(argv):
     import argparse
     ap = argparse.ArgumentParser(description="Refresh dashboard JSON and bump asset cache-busting versions.")
@@ -917,6 +1012,12 @@ def parse_args(argv):
         help="Only recount 2026 Falcon launches from Wikipedia into data/spacex/launches.json, then exit. "
              "Starship flights, quarterly figures and milestones are edited by hand.",
     )
+    ap.add_argument(
+        "--shares",
+        action="store_true",
+        help="Check SEC cover-page share counts (EntityCommonStockSharesOutstanding) and update "
+             "data/shares.json for tickers marked autoUpdate. Dual-class / IPO names stay curated.",
+    )
     return ap.parse_args(argv)
 
 
@@ -928,4 +1029,6 @@ if __name__ == "__main__":
     if args.launches:
         refresh_launches()
         sys.exit(0)
+    if args.shares:
+        sys.exit(refresh_shares())
     sys.exit(main(args.company, bump=args.bump and not args.no_bump, quote_only=args.quote_only))

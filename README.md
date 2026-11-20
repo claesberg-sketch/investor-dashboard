@@ -6,7 +6,7 @@ This is **not** an official SpaceX site, is not affiliated with Space Exploratio
 
 Live site (GitHub Pages):
 
-- **Start page – watchlist:** https://claesberg-sketch.github.io/investor-dashboard/ (`index.html`) — live prices for SPCX, TSLA, ANT, NVDA, AMD and MU: CNBC real-time U.S. last sale in pre-market, regular and after-hours; Hyperliquid `xyz:` perps overnight, on weekends and holidays.
+- **Start page – watchlist:** https://claesberg-sketch.github.io/investor-dashboard/ (`index.html`) — live prices for SPCX, TSLA, ANT, NVDA, AMD and MU: CNBC real-time U.S. last sale in pre-market, regular and after-hours; Hyperliquid `xyz:` perps overnight, on weekends and holidays. Market cap sits next to each name (live price × total shares outstanding in `data/shares.json`).
 - **Company dashboard:** https://claesberg-sketch.github.io/investor-dashboard/dashboard.html (`?c=spacex` or `?c=tesla`). Without `?c=` it opens the company last picked in this browser (localStorage), else SpaceX.
 - Old links keep working: `/?c=tesla`, `/?c=spacex` and dashboard anchors such as `/#unlocks` are forwarded to `dashboard.html` with the same query and hash; `/watchlist.html` redirects to `/`.
 
@@ -32,8 +32,9 @@ css/style.css
 js/                     # vanilla JS, Chart.js vendored in js/vendor/
 fonts/                  # Barlow (OFL), bundled
 data/companies.json     # company switcher config
+data/shares.json        # watchlist shares outstanding (all classes) and sources
 data/spacex/            # all SpaceX datasets (JSON), including summaries.json
-scripts/refresh.py      # server-side refresh (Actions + local)
+scripts/refresh.py      # server-side refresh (Actions + local); --shares checks SEC cover counts
 .github/workflows/      # scheduled refresh + Pages deploy
 ```
 
