@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-17T07:55:03+01:00",
+  "updated": "2026-11-20T07:59:17+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X API public reads (get_users_posts) on 17 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
+  "source": "X API public reads (get_users_posts) on 20 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
@@ -40,6 +40,666 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2123559561982542084",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-19T23:30:28.000Z",
+      "text": "Starlink is connecting CAAD and Cad Consults, an infrastructure design firm in Accra, Ghana, that engineers roads, bridges, and buildings at remote construction sites. Field crews work on project designs in real time and can now send multi-gigabyte design files in minutes instead https://t.co/7l0esREQTJ",
+      "url": "https://x.com/Starlink/status/2123559561982542084",
+      "metrics": {
+        "likes": 448,
+        "reposts": 65,
+        "replies": 43,
+        "quotes": 11,
+        "bookmarks": 8,
+        "impressions": 35721
+      },
+      "summary": "Starlink said it is connecting CAAD and Cad Consults, an infrastructure design firm in Accra, Ghana, that engineers roads, bridges and buildings at remote construction sites, and that field crews can work on project designs in real time and now send multi-gigabyte design files in minutes. The post went out at 00:30 CET on 20 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123558220908331365",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-19T23:25:08.000Z",
+      "text": "Elon gave two talks today at DealBook and TomorrowX Summit\n\nElon says outside estimates are off by up to 2x, with SpaceX building at roughly 60% of industry costs. Its in-house \"Army X\" builds the data centers, while Tesla Megapacks smooth training power.\n\nAnthropic could become a 10 GW customer:\n\nAnthropic told Elon its most likely outcome is renting another 10 GW from SpaceX, on top of existing capacity. Contracts allow termination with 3–6 months' notice.\n\nSpaceX is targeting a vastly larger telecom market:\n\nElon argues AT&T and Verizon won't disappear as bandwidth demand explodes. Humans communicate at roughly 100 bits per second, while superintelligence and robots could require a trillion \n\nSpaceXSI has rebuilt its entire AI software stack:\n\nOver six to eight months, it rewrote training, reinforcement learning, and inference from scratch, close to the metal in C and C++. Elon thinks it \"might have the best training stack software in the world.\" Grok 4.8 is also being built for practical usefulness rather than benchmark leadership, which is great for Grokbot.\n\nOptimus is moving toward industrial work\n\nElon expects an unstaged demonstration in a month or two and says Optimus could do dishes within 12–18 months. Its first major industrial role will be mining and refining ore for national security.\n\nShip 42 catch accelerates the entire Starship reuse program\n\nShip 42 needed only minor repairs before flying again, but SpaceX is retiring it for public display. This brings rapid reuse much closer.\n\nSpaceX is targeting 200 GW of annual solar manufacturing for space\n\n40% of average US electricity consumption. Its Starmind compute unit delivers the same capability at roughly a quarter the size of a Vera Rubin NVL72 rack, which is a win in space. Elon says it's also simpler than Starlink V3 communication",
+      "url": "https://x.com/nextbigfuture/status/2123558220908331365",
+      "metrics": {
+        "likes": 183,
+        "reposts": 20,
+        "replies": 6,
+        "quotes": 2,
+        "bookmarks": 25,
+        "impressions": 7446
+      },
+      "summary": "Brian Wang summarised remarks he said Elon Musk made at DealBook and the TomorrowX Summit, including that outside cost estimates are off by up to 2x, SpaceX is building at roughly 60% of industry costs with an in-house “Army X,” Anthropic told Musk its most likely outcome is renting another 10 GW from SpaceX, SpaceXSI has rewritten its AI software stack in C and C++ over six to eight months, Ship 42 needed only minor repairs but will be retired for public display, and SpaceX is targeting 200 GW of annual solar manufacturing for space. The post went out at 00:25 CET on 20 November 2026.",
+      "topics": [
+        "Starship",
+        "Starlink",
+        "AI compute",
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123516375805379040",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-19T20:38:51.000Z",
+      "text": "On Starship’s 15th flight last week, the Super Heavy booster correctly performed a safe abort when returning for a catch and ended its mission with a splashdown in the water off the coast of Starbase. Following splashdown, SpaceX recovery teams were immediately onsite to safe the https://t.co/ERtoYN9tcU",
+      "url": "https://x.com/SpaceX/status/2123516375805379040",
+      "metrics": {
+        "likes": 9998,
+        "reposts": 1000,
+        "replies": 318,
+        "quotes": 109,
+        "bookmarks": 512,
+        "impressions": 830044
+      },
+      "summary": "SpaceX said that on Starship’s 15th flight last week the Super Heavy booster correctly performed a safe abort when returning for a catch and ended its mission with a splashdown off the coast of Starbase, and that recovery teams were immediately on site afterwards to safe the vehicle; the remainder of the post was truncated in the source feed. It quoted a Profepa statement about inspectors at Playa Bagdad looking into reports of a SpaceX explosion on the Mexico border on 13 November, and the post went out at 21:38 CET on 19 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123506944145314293",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-19T20:01:22.000Z",
+      "text": "Microsoft ceo willing to rent spacex compute https://t.co/xr4MufNCgx",
+      "url": "https://x.com/nextbigfuture/status/2123506944145314293",
+      "metrics": {
+        "likes": 247,
+        "reposts": 20,
+        "replies": 7,
+        "quotes": 2,
+        "bookmarks": 8,
+        "impressions": 5372
+      },
+      "summary": "Brian Wang wrote “Microsoft ceo willing to rent spacex compute,” quoting a post in which Satya Nadella, asked at DealBook whether Musk is right about data centers in space, said “If he has SpaceX capacity that I can lease, I would lease it.” The post went out at 21:01 CET on 19 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123475800108503324",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-19T17:57:37.000Z",
+      "text": "Every 500 Megawatt of inference compute makes them $100 billion per year.\n\nThe economic for them and for SpaceX is great. Athropic and SpaceX are working together as AI partners.\n\nAnthropic will likely increase its leasing from SpaceX at about 2-4 gigawatts per year. This is my estimate based upon Elon Musk interview that Anthropic will increase to 10 gigawatts of leasing from SpaceX over an unspecified period.",
+      "url": "https://x.com/nextbigfuture/status/2123475800108503324",
+      "metrics": {
+        "likes": 193,
+        "reposts": 19,
+        "replies": 11,
+        "quotes": 0,
+        "bookmarks": 18,
+        "impressions": 8183
+      },
+      "summary": "Brian Wang wrote that every 500 megawatts of inference compute makes “them” $100 billion a year, that Anthropic and SpaceX are working together as AI partners, and that he estimates Anthropic will increase leasing from SpaceX by about 2–4 gigawatts a year toward 10 gigawatts over an unspecified period, based on a Musk interview. He quoted a post in which Anthropic CEO Dario Amodei said his company is finding SpaceX compute “high quality” and is “enjoying working with SpaceX,” and the post went out at 18:57 CET on 19 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123475464043786417",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-19T17:56:17.000Z",
+      "text": "You can create an entire company made of Grok Bots! https://t.co/qLl5REpV2h",
+      "url": "https://x.com/elonmusk/status/2123475464043786417",
+      "metrics": {
+        "likes": 18518,
+        "reposts": 1668,
+        "replies": 2655,
+        "quotes": 266,
+        "bookmarks": 2355,
+        "impressions": 3939609
+      },
+      "summary": "Elon Musk wrote “You can create an entire company made of Grok Bots!,” quoting a post that said Grok Bot had already opened multiple pull requests, run the tests and merged them by morning, “like hiring a team that never sleeps.” The post went out at 18:56 CET on 19 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123333341932052749",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-19T08:31:32.000Z",
+      "text": "Starlink started with a speech in Seattle https://t.co/y8QLexDwnu",
+      "url": "https://x.com/elonmusk/status/2123333341932052749",
+      "metrics": {
+        "likes": 11419,
+        "reposts": 1540,
+        "replies": 880,
+        "quotes": 91,
+        "bookmarks": 564,
+        "impressions": 1530100
+      },
+      "summary": "Elon Musk wrote “Starlink started with a speech in Seattle,” quoting a post that said he opened SpaceX’s satellite office there in 2015 with the aim of changing satellites the way SpaceX changed rockets, and that eleven years later Starlink has more than 11,100 satellites in orbit. The post went out at 09:31 CET on 19 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123272422719967730",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-19T04:29:28.000Z",
+      "text": "4 years ago https://t.co/odjxLrGjnN",
+      "url": "https://x.com/elonmusk/status/2123272422719967730",
+      "metrics": {
+        "likes": 53898,
+        "reposts": 4856,
+        "replies": 2012,
+        "quotes": 152,
+        "bookmarks": 1433,
+        "impressions": 7329494
+      },
+      "summary": "Elon Musk wrote “4 years ago,” quoting his own October 2022 reply that SpaceX gave Starlinks to Ukraine and lost $80 million-plus in doing so, while putting SpaceX and himself at serious risk of a Russian cyberattack. The post went out at 05:29 CET on 19 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2123241433348137245",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-19T02:26:20.000Z",
+      "text": "Anthropic will likely want 10gw of compute in 2027 from Spacex https://t.co/Feu2QJ5w97",
+      "url": "https://x.com/nextbigfuture/status/2123241433348137245",
+      "metrics": {
+        "likes": 195,
+        "reposts": 12,
+        "replies": 2,
+        "quotes": 0,
+        "bookmarks": 8,
+        "impressions": 4026
+      },
+      "summary": "Brian Wang wrote that “Anthropic will likely want 10gw of compute in 2027 from Spacex,” quoting a post in which Elon Musk said SpaceX is bringing on about half a gigawatt of AI compute a month, roughly 220,000 GB300s, and will be over a gigawatt a month by the end of next year. The post went out at 03:26 CET on 19 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123220899264679988",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-19T01:04:44.000Z",
+      "text": "Catching the ship was the last major piece of the puzzle https://t.co/tzAJsAkwVS",
+      "url": "https://x.com/elonmusk/status/2123220899264679988",
+      "metrics": {
+        "likes": 27012,
+        "reposts": 2952,
+        "replies": 1481,
+        "quotes": 221,
+        "bookmarks": 1068,
+        "impressions": 2147162
+      },
+      "summary": "Elon Musk wrote “Catching the ship was the last major piece of the puzzle,” quoting an XFreeze post that called the historic Starship catch a bigger milestone than most people realize, citing three successful Super Heavy booster catches, a booster that was reflown and caught again, and the first ever Ship catch. The post went out at 02:04 CET on 19 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2123193048574419212",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-18T23:14:04.000Z",
+      "text": "As Texas communities consider major supercomputing investments, careful long-term tax planning is essential. Under Texas’s no-new-revenue tax framework, rising property values generally drive tax rates down. But as expensive computing equipment rapidly depreciates, this can https://t.co/CeBqjWOIZK",
+      "url": "https://x.com/SpaceX/status/2123193048574419212",
+      "metrics": {
+        "likes": 9695,
+        "reposts": 846,
+        "replies": 377,
+        "quotes": 61,
+        "bookmarks": 707,
+        "impressions": 1103098
+      },
+      "summary": "SpaceX wrote that as Texas communities consider major supercomputing investments, careful long-term tax planning is essential, and that under Texas’s no-new-revenue tax framework rising property values generally drive tax rates down, but that expensive computing equipment rapidly depreciates; the rest of the company’s argument was truncated in the source feed. It quoted a report that Cameron County commissioners had voted against advancing a property tax break for a proposed $24 billion data center and power plant near Starbase, and the post went out at 00:14 CET on 19 November 2026.",
+      "topics": [
+        "Earnings"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123171410373677100",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-18T21:48:05.000Z",
+      "text": "@Space_Station @NASA Now targeting no earlier than Friday, November 20 for Dragon’s departure from the @space_Station. Teams are continuing to monitor weather at the splashdown locations",
+      "url": "https://x.com/SpaceX/status/2123171410373677100",
+      "metrics": {
+        "likes": 1268,
+        "reposts": 64,
+        "replies": 30,
+        "quotes": 11,
+        "bookmarks": 19,
+        "impressions": 126280
+      },
+      "summary": "SpaceX told NASA and the space station that Dragon’s departure is now targeted for no earlier than Friday 20 November, and that teams are continuing to monitor weather at the splashdown locations. The post, a follow-up to an earlier weather delay from Wednesday to Thursday, went out at 22:48 CET on 18 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2123163808592265639",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-18T21:17:53.000Z",
+      "text": "Starlink saves lives https://t.co/8dhNQfrDnc",
+      "url": "https://x.com/elonmusk/status/2123163808592265639",
+      "metrics": {
+        "likes": 15842,
+        "reposts": 2089,
+        "replies": 1348,
+        "quotes": 148,
+        "bookmarks": 273,
+        "impressions": 1487732
+      },
+      "summary": "Elon Musk wrote “Starlink saves lives,” quoting an XFreeze post that said Mato Grosso’s government is sending Starlink antennas to the Aguaçu district near Cuiabá, Brazil, where severe flooding left families isolated and without power, and that emergency teams were already on the ground. The post went out at 22:17 CET on 18 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123161902683746640",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-18T21:10:18.000Z",
+      "text": "Treat Grok @Bot like a really smart employee https://t.co/vxR4Hsx7Tv",
+      "url": "https://x.com/elonmusk/status/2123161902683746640",
+      "metrics": {
+        "likes": 9332,
+        "reposts": 1028,
+        "replies": 1008,
+        "quotes": 135,
+        "bookmarks": 4405,
+        "impressions": 1712134
+      },
+      "summary": "Elon Musk wrote “Treat Grok @Bot like a really smart employee,” quoting a post that argued many people are not using Grok Bot to its full potential because learning to automate work is hard, and that linked a breakdown of how to approach automating tasks with it. The post went out at 22:10 CET on 18 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123159371119280372",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-18T21:00:15.000Z",
+      "text": "We put a lot of thought into public safety https://t.co/HFinXIw3pq",
+      "url": "https://x.com/elonmusk/status/2123159371119280372",
+      "metrics": {
+        "likes": 65971,
+        "reposts": 5219,
+        "replies": 1668,
+        "quotes": 229,
+        "bookmarks": 5059,
+        "impressions": 5941340
+      },
+      "summary": "Elon Musk wrote “We put a lot of thought into public safety,” quoting a Farzyness post titled “Why Starship Zigzagged Home Instead of Flying Straight.” The post went out at 22:00 CET on 18 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2123132631596556767",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-18T19:13:59.000Z",
+      "text": "Starlink Mobile is now available in Mongolia with @mobicomofficial! For the first time, phones in areas without cell signal will automatically connect to our satellites, enabling customers to share updates via messaging apps and SMS 🛰️📱 https://t.co/rc3mgGsYy9",
+      "url": "https://x.com/Starlink/status/2123132631596556767",
+      "metrics": {
+        "likes": 2082,
+        "reposts": 266,
+        "replies": 140,
+        "quotes": 51,
+        "bookmarks": 54,
+        "impressions": 373434
+      },
+      "summary": "Starlink said Starlink Mobile is now available in Mongolia with Mobicom, so that for the first time phones in areas without cell signal will automatically connect to its satellites, letting customers share updates via messaging apps and SMS. It quoted Mobicom’s announcement of mobispace, a new service using Starlink’s satellite technology, and the post went out at 20:13 CET on 18 November 2026.",
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123099171800719620",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-18T17:01:02.000Z",
+      "text": "Starlink Mobile is coming to Botswana with @btcbw early next year. From the Central Kalahari National Park, to mining, agriculture and wildlife, many people for the first time can use messaging apps, share location and more in cellular dead zones 🛰️📱 https://t.co/kQeP4P1jjL",
+      "url": "https://x.com/Starlink/status/2123099171800719620",
+      "metrics": {
+        "likes": 804,
+        "reposts": 121,
+        "replies": 45,
+        "quotes": 24,
+        "bookmarks": 21,
+        "impressions": 62564
+      },
+      "summary": "Starlink said Starlink Mobile is coming to Botswana with BTC early next year, so that people in places such as the Central Kalahari National Park and in mining, agriculture and wildlife work can for the first time use messaging apps, share location and more in cellular dead zones. It quoted BTC’s announcement of BTC Satellite, a direct-to-mobile service designed to extend connectivity beyond traditional network coverage, and the post went out at 18:01 CET on 18 November 2026.",
+      "topics": [
+        "Starlink",
+        "Direct-to-cell"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123097995679867195",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-18T16:56:22.000Z",
+      "text": "The Starbase tower team on location with the first caught Starship🍌 https://t.co/ar7y6ccgZr",
+      "url": "https://x.com/SpaceX/status/2123097995679867195",
+      "metrics": {
+        "likes": 20919,
+        "reposts": 2074,
+        "replies": 672,
+        "quotes": 262,
+        "bookmarks": 1218,
+        "impressions": 1325165
+      },
+      "summary": "SpaceX posted a photo with the caption “The Starbase tower team on location with the first caught Starship,” using a banana emoji. The post went out at 17:56 CET on 18 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123002060266406094",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-18T10:35:09.000Z",
+      "text": "@Grimezsz @reneromero08 I don’t want to be king and Starship has the Mandate of Heaven",
+      "url": "https://x.com/elonmusk/status/2123002060266406094",
+      "metrics": {
+        "likes": 5371,
+        "reposts": 328,
+        "replies": 554,
+        "quotes": 146,
+        "bookmarks": 484,
+        "impressions": 334214
+      },
+      "summary": "Elon Musk replied to Grimes, “I don’t want to be king and Starship has the Mandate of Heaven,” after she had urged him to be more magnanimous and said he had lost the Mandate of Heaven. The post went out at 11:35 CET on 18 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122940097683177721",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-18T06:28:56.000Z",
+      "text": "@Space_Station @NASA Due to unfavorable weather conditions at the splashdown locations, now targeting no earlier than Thursday, November 19 for Dragon to undock the @space_station. Teams will continue to keep an eye on weather",
+      "url": "https://x.com/SpaceX/status/2122940097683177721",
+      "metrics": {
+        "likes": 1735,
+        "reposts": 113,
+        "replies": 31,
+        "quotes": 14,
+        "bookmarks": 17,
+        "impressions": 261255
+      },
+      "summary": "SpaceX said that because of unfavorable weather at the splashdown locations, Dragon’s undocking from the space station was slipping to no earlier than Thursday 19 November, and that teams would keep watching the weather. The post went out at 07:28 CET on 18 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122891480729829482",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-18T03:15:45.000Z",
+      "text": "Grok @Bot can do your accounting https://t.co/tpMh017FK7",
+      "url": "https://x.com/elonmusk/status/2122891480729829482",
+      "metrics": {
+        "likes": 11744,
+        "reposts": 923,
+        "replies": 1179,
+        "quotes": 118,
+        "bookmarks": 2427,
+        "impressions": 2660761
+      },
+      "summary": "Elon Musk wrote “Grok @Bot can do your accounting,” quoting a post that said five bots now have full-time roles on an accounting team, onboarded and managed like human teammates, and that described how they were built to handle the order-to-cash process from provisioning accounts to collecting payments. The post went out at 04:15 CET on 18 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122872199623414175",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-18T01:59:08.000Z",
+      "text": "Grok @Bot can save you millions in corporate expenses!\n\nIt will research every expenditure, evaluate its necessity and find better deals on the Internet or by calling suppliers on the phone directly. https://t.co/PvDxsFgLLe",
+      "url": "https://x.com/elonmusk/status/2122872199623414175",
+      "metrics": {
+        "likes": 8439,
+        "reposts": 1107,
+        "replies": 930,
+        "quotes": 148,
+        "bookmarks": 1922,
+        "impressions": 1605011
+      },
+      "summary": "Elon Musk wrote that Grok @Bot can save millions in corporate expenses by researching every expenditure, judging whether it is necessary and finding better deals online or by calling suppliers, quoting a post that said SpaceXSI had cut invoicing time from 24 hours to minutes with five specialized Grok Bots handling accounting jobs while people step in for decisions and approvals. The post went out at 02:59 CET on 18 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122871410561593384",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-18T01:55:59.000Z",
+      "text": "True, Starship launches are incredibly exciting https://t.co/cDuzCHAXH2",
+      "url": "https://x.com/elonmusk/status/2122871410561593384",
+      "metrics": {
+        "likes": 12695,
+        "reposts": 1382,
+        "replies": 826,
+        "quotes": 109,
+        "bookmarks": 414,
+        "impressions": 1744993
+      },
+      "summary": "Elon Musk wrote “True, Starship launches are incredibly exciting,” quoting a Gavin Baker remark that parents should take children to see a Starship launch because it will change their life, that it has a real impact on little kids, and that probably half of adults cry at a launch. The post went out at 02:55 CET on 18 November 2026.",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122814338893332591",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-17T22:09:13.000Z",
+      "text": "The Starbase tower chopsticks catching their first Starship. This unique architecture was designed for full and rapid reusability, enabling repeat launches and landings from the same pad https://t.co/hjfcnVpxLn",
+      "url": "https://x.com/SpaceX/status/2122814338893332591",
+      "metrics": {
+        "likes": 18889,
+        "reposts": 2584,
+        "replies": 620,
+        "quotes": 335,
+        "bookmarks": 2512,
+        "impressions": 2280339
+      },
+      "summary": "SpaceX posted video or images of the Starbase tower chopsticks catching their first Starship, writing that this unique architecture was designed for full and rapid reusability, enabling repeat launches and landings from the same pad. The post went out at 23:09 CET on 17 November 2026.",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122802167212098047",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-17T21:20:51.000Z",
+      "text": "Watch @BretWJ at the @TomorrowXSummit talking about Starship unlocking the future of @Starlink broadband, mobile and ultimately supercompute in space https://t.co/wnjEneecQ3",
+      "url": "https://x.com/SpaceX/status/2122802167212098047",
+      "metrics": {
+        "likes": 1839,
+        "reposts": 231,
+        "replies": 78,
+        "quotes": 20,
+        "bookmarks": 163,
+        "impressions": 638586
+      },
+      "summary": "SpaceX urged people to watch CFO Bret W. Johnsen at the TomorrowX Summit talking about Starship unlocking the future of Starlink broadband, mobile and ultimately supercompute in space, quoting the Day 1 live stream. The post went out at 22:20 CET on 17 November 2026.",
+      "topics": [
+        "Starship",
+        "Starlink",
+        "AI compute",
+        "Lock-up"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122793780810264837",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-17T20:47:31.000Z",
+      "text": "After 34 days docked to the @Space_Station, the Dragon spacecraft supporting SpaceX’s 35th  Commercial Resupply Services mission for @NASA is targeted to undock from the orbiting lab as soon as Wednesday, November 18 → https://t.co/tnMukzSxui https://t.co/OhkzWO1fRh",
+      "url": "https://x.com/SpaceX/status/2122793780810264837",
+      "metrics": {
+        "likes": 7281,
+        "reposts": 759,
+        "replies": 192,
+        "quotes": 59,
+        "bookmarks": 145,
+        "impressions": 999994
+      },
+      "summary": "SpaceX said that after 34 days docked to the space station, the Dragon spacecraft on its 35th Commercial Resupply Services mission for NASA was targeted to undock as soon as Wednesday 18 November. The post went out at 21:47 CET on 17 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122771650748051577",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-17T19:19:35.000Z",
+      "text": "$SPCX wins a 31 Megawatt air permit in Texas https://t.co/XUWzLvrCaP",
+      "url": "https://x.com/nextbigfuture/status/2122771650748051577",
+      "metrics": {
+        "likes": 354,
+        "reposts": 22,
+        "replies": 2,
+        "quotes": 0,
+        "bookmarks": 9,
+        "impressions": 6071
+      },
+      "summary": "Brian Wang wrote “$SPCX wins a 31 Megawatt air permit in Texas,” quoting a post that said Texas regulator TCEQ had approved a 31-megawatt power plant at SpaceX’s Starbase production site, with three natural gas turbines generating 31.14 MW combined, all of the electricity to be used on site. The post went out at 20:19 CET on 17 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122747622662222010",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-17T17:44:06.000Z",
+      "text": "Starlink saves lives https://t.co/j21iGhH6DS",
+      "url": "https://x.com/elonmusk/status/2122747622662222010",
+      "metrics": {
+        "likes": 20536,
+        "reposts": 2678,
+        "replies": 1433,
+        "quotes": 167,
+        "bookmarks": 302,
+        "impressions": 1893019
+      },
+      "summary": "Elon Musk wrote “Starlink saves lives,” quoting a post that said Starlink helped save four sailors after a whale collision left their yacht sinking about 250 nautical miles north of Norfolk Island in the South Pacific, with the crew activating emergency beacons as water poured in. The post went out at 18:44 CET on 17 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2122718036138287610",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-17T15:46:32.000Z",
+      "text": "Building for the future also means investing in the communities we work and live in. We provided another $30 million to the Brownsville Public Utilities Board (making a total to $70 million given so far out of the $220 million we've committed) to secure a reliable, sustainable https://t.co/t51d94EyVW",
+      "url": "https://x.com/SpaceX/status/2122718036138287610",
+      "metrics": {
+        "likes": 8584,
+        "reposts": 862,
+        "replies": 234,
+        "quotes": 55,
+        "bookmarks": 238,
+        "impressions": 981816
+      },
+      "summary": "SpaceX said it had provided another $30 million to the Brownsville Public Utilities Board, bringing the total given so far to $70 million of the $220 million it has committed, to help secure a reliable, sustainable water supply; the rest of the post was truncated in the source feed. It quoted its earlier post on the $220 million commitment to expand water and wastewater infrastructure for Brownsville and Cameron County, and the new post went out at 16:46 CET on 17 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122678226535248248",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-17T13:08:21.000Z",
+      "text": "@firesidealpha SpaceX is assuming zero sales to OpenAI. If OpenAI is not seeing demand rising super fast, then something is wrong with their products.",
+      "url": "https://x.com/elonmusk/status/2122678226535248248",
+      "metrics": {
+        "likes": 13488,
+        "reposts": 746,
+        "replies": 562,
+        "quotes": 86,
+        "bookmarks": 504,
+        "impressions": 613491
+      },
+      "summary": "Elon Musk replied to a post about Sam Altman saying chipmakers are double-counting OpenAI demand, writing that “SpaceX is assuming zero sales to OpenAI” and that if OpenAI is not seeing demand rising super fast, then something is wrong with their products. The post went out at 14:08 CET on 17 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122589089702813944",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-17T07:14:09.000Z",
+      "text": "@XFreeze I found a pic of “the long game” https://t.co/7UKH8JurPH",
+      "url": "https://x.com/elonmusk/status/2122589089702813944",
+      "metrics": {
+        "likes": 13227,
+        "reposts": 562,
+        "replies": 842,
+        "quotes": 135,
+        "bookmarks": 263,
+        "impressions": 725535
+      },
+      "summary": "Elon Musk replied to an XFreeze post about Delta CEO Ed Bastian still defending the decision to reject Starlink in favor of Amazon Leo and calling it “playing the long game,” writing that he had “found a pic of “the long game”” and attaching a photo. The post went out at 08:14 CET on 17 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2122587577274237129",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-17T07:08:08.000Z",
+      "text": "Was good to see @lrocket & @HansKoenigsmann at the first ship catch https://t.co/ehj3JXjaHY",
+      "url": "https://x.com/elonmusk/status/2122587577274237129",
+      "metrics": {
+        "likes": 8394,
+        "reposts": 1002,
+        "replies": 562,
+        "quotes": 82,
+        "bookmarks": 441,
+        "impressions": 1638728
+      },
+      "summary": "Elon Musk wrote that it was good to see Tom Mueller (@lrocket) and Hans Koenigsmann at the first ship catch, quoting a teslaownersSV post of Mueller saying Musk “really gets the best out of everybody, and that’s why that company is so incredible.” The post went out at 08:08 CET on 17 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
     {
       "id": "2122576221846253837",
       "username": "elonmusk",
