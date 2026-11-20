@@ -375,6 +375,8 @@
       const p = partsForKey(key);
       const b = P.sessionBounds(p);
       const bars = await P.fetchBarsFor(s.bars, p);
+      // An empty payload means CNBC did not answer properly; leave ahKey unset so it retries.
+      if (!bars.length) return;
       const regEndMs = P.clockToMs(p.year, p.month, p.day, Math.floor(b.regularEnd / 60), b.regularEnd % 60, ET);
       const afterEndMs = P.clockToMs(p.year, p.month, p.day, Math.floor(b.afterEnd / 60), b.afterEnd % 60, ET);
       const after = bars.filter((x) => x.t >= regEndMs && x.t < afterEndMs);
@@ -425,10 +427,20 @@
     } catch (e) { console.warn("Sparkline failed for " + s.ticker, e); }
   }
 
+  // CNBC's bar endpoint throttles bursts (throttled replies carry no CORS header), so the
+  // per-symbol bar requests run one after another with a short gap instead of in parallel.
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  let slowBusy = false;
   async function refreshSlow() {
-    await Promise.all(STOCKS.map((s) => loadAfterHours(s)));
-    await Promise.all(STOCKS.map((s) => loadSpark(s)));
-    renderAll();
+    if (slowBusy) return;
+    slowBusy = true;
+    try {
+      for (const s of STOCKS) {
+        if (state[s.ticker].ahKey !== lastCompletedAfterDay(new Date())) { await loadAfterHours(s); await sleep(250); }
+      }
+      renderAll();
+      for (const s of STOCKS) { await loadSpark(s); renderAll(); await sleep(250); }
+    } finally { slowBusy = false; }
   }
 
   function notes() {
