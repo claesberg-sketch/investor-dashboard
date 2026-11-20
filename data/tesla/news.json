@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T08:55:07Z",
+  "updated": "2026-11-20T13:24:09Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -22,264 +22,579 @@
   },
   "items": [
     {
-      "id": "media-31",
+      "id": "media-25",
       "type": "media",
-      "date": "2026-11-13",
-      "datetime": "2026-11-13T06:03:39Z",
-      "title": "Tesla Pulls Model Y AWD Trim, Premium Sold Out for 2026 - BASENOR - Tesla Accessories",
-      "source": "BASENOR - Tesla Accessories",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORGVCNEFvR0VraTYtRlBtYk1JUm5icFJzdzdETUdVSUVIc0ZtTnlVempyS2syU3pzYU84MV9kU1pfOUlKYWdQaGZjN2xQTGpMUFBXNVE2cl9ZMFpITGVJbHQ0WmFMbXVjMzFjcDJSZ0pYS3d5d21GeENXSVdrN0c1eHdGVmxsMTFKcUFqSi1oSUhCejg?oc=5",
-      "snippet": "Tesla Pulls Model Y AWD Trim, Premium Sold Out for 2026 BASENOR - Tesla Accessories",
-      "topics": [
-        "Deliveries"
-      ],
-      "summary": "Tesla has removed the $41,990 Model Y AWD from its U.S. order page, leaving the $39,990 RWD as the entry model and the $49,990 Premium AWD as the cheapest all-wheel-drive version. Premium orders now show January–March 2027 delivery estimates; Tesla has not said whether the trim is gone for good."
-    },
-    {
-      "id": "media-28",
-      "type": "media",
-      "date": "2026-11-13",
-      "datetime": "2026-11-13T00:05:11Z",
-      "title": "Tesla FSD Supervised at NZ Expo: 5 Details That Matter - BASENOR - Tesla Accessories",
-      "source": "BASENOR - Tesla Accessories",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbWdIQVhfNS1GRnhnRkltVjlPQ2NnMWpWSDNJYkloZzg2Z183aVBncTZIdlVvcWx4bFZlamRzRW1zUU93RmFOYk44OFpMVkF2MktoSXAwaWlqWXBUVWx1M1VKbEFEZV9OVV8xcDJKYVVTSGh2OWVaZUJ5ZDA5ZGVjME56WjhSQkdfU3FpUnNETlZwUQ?oc=5",
-      "snippet": "Tesla FSD Supervised at NZ Expo: 5 Details That Matter BASENOR - Tesla Accessories",
-      "topics": [
-        "FSD"
-      ],
-      "summary": "Tesla Australia & New Zealand will offer FSD (Supervised) demo rides in a Model 3 RWD at the NZ EV & Tech Expo in Auckland on 13–15 November 2026. FSD has been subscription-only in New Zealand at NZ$159 a month since 31 March 2026, and Tesla’s September safety data cited 160 million km driven on it across Australia and New Zealand."
-    },
-    {
-      "id": "media-24",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T21:35:00Z",
-      "title": "Elon Musk Could Announce Tesla-SpaceX Merger By December: Report - Investor's Business Daily",
-      "source": "Investor's Business Daily",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwWHBNNS1xNW5VQ1JQNE80MHphQWJTbkdacl9DTkROcnJXRFdzaUVJUUNGUTdUWHlJN2xuWXJSeFFLeTVYY1lQNE5QZWU4S2UwMzFibXVSajVHWllFX3FYZjRrbURIYWtqWnFHeVVR?oc=5",
-      "snippet": "Elon Musk Could Announce Tesla-SpaceX Merger By December: Report Investor's Business Daily",
-      "topics": [
-        "SpaceX"
-      ],
-      "summary": "IBD relays Bloomberg’s report that Tesla and SpaceX could announce a merger as soon as December, with early 2027 also discussed, while boards and advisers work through terms and governance. No agreement has been reached, and a deal would likely need a separate Tesla shareholder vote."
-    },
-    {
-      "id": "media-20",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T21:13:08Z",
-      "title": "SpaceX-Tesla Merger Could Come Soon: What Do Shareholders Get? - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMW9aemx6Rjkyb1pDcmpWZ3U1Y3RvY0pwczNrSlQ1TTFCN0FOV09GME9HTnh0Y0JfWC1LaTJibXFBS0ttelo2bkVHSmh0M1U2U09jU1JYdDdGZWdVYlFmQnJqbWh1UUlLT3Z2NktSRjlpNWhwZVFJLVdkUUpqazlKWUVJNVFKb1FtM0Q5bTRPbzZjc3JGRVpJMURwcw?oc=5",
-      "snippet": "SpaceX-Tesla Merger Could Come Soon: What Do Shareholders Get? Yahoo Finance",
-      "topics": [
-        "SpaceX",
-        "Governance"
-      ],
-      "summary": "Yahoo Finance looks at what Tesla and SpaceX holders might receive in a combination now reported to be progressing toward a possible December announcement. No exchange ratio or valuation has been agreed; reports say the talks centre on how many SpaceX shares Tesla investors would get."
+      "date": "2026-11-20",
+      "datetime": "2026-11-20T10:18:00Z",
+      "title": "I relocated for a data center job and am living in my Tesla for a month. I feel way happier than I thought. - Business Insider",
+      "source": "Business Insider",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUEVnVFFTNWdDWEhNdVpKVF9mSG9iR1hobVJkajdVMHBGdWVfc19iYzgtMFdpTGxpQURfX2pZcWpkQ0wtZE5uNWZNcV93UnRrMGs1LVVfYWxCeVA4U1dpejNWUnY2alc4V2dvWDdXZml3YmZGUWtTaFBFSldINWV1dGU5Nk5NbzhEc3c?oc=5",
+      "snippet": "I relocated for a data center job and am living in my Tesla for a month. I feel way happier than I thought. Business Insider",
+      "topics": [],
+      "summary": "I relocated for a data center job and am living in my Tesla for a month. I feel way happier than I thought.",
+      "summaryFallback": true
     },
     {
       "id": "media-35",
       "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T21:02:07Z",
-      "title": "Tesla Stock Best Run in a Year on SpaceX Merger Report - Tesla (NASDAQ:TSLA) - Benzinga",
-      "source": "Benzinga",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOOGdjYnNTT08wcTZGTW5uNVNOQk12ZjVFSDlsSFpaTW1lYlY0TjhLUjZEamY4NG1uZWpjRk5ob3lpR19mX0tCdXNWNkdkTUxpa3VxQXhoZklmYVV4QldUc3k0TlpGck9JZHpjU3VHaXppMmFOTkhpcnA0Q1hieVNYYnBFSU1GVzg4QVJDek9PNzZ1bGhRU2lKTzZuQUFZZw?oc=5",
-      "snippet": "Tesla Stock Best Run in a Year on SpaceX Merger Report - Tesla (NASDAQ:TSLA) Benzinga",
+      "date": "2026-11-20",
+      "datetime": "2026-11-20T04:30:00Z",
+      "title": "What Tesla (TSLA)'s Shanghai Expansion Means For Shareholders - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSFY4ZVQ0aThQX1FCUkpScVFsRnlYaEl5MElaZkR5Ti1aTjVUMHBGWnhJTVltRGt2LUhrb3lzVUxSLW1yUzRmQjZmNVVIalhtR19YSmdRcWo4SjIwTTdJcjhDRlZEN0hQRy1jd0tMX1p0SHVvZmc5V24za2o4djl0TmZ0Qlh0TUpaMDdnamR1TnJkT3BRYkdMMFM2ZXhUaDZEdkE?oc=5",
+      "snippet": "What Tesla (TSLA)'s Shanghai Expansion Means For Shareholders Yahoo Finance",
       "topics": [
-        "SpaceX"
+        "Governance"
       ],
-      "summary": "Benzinga says Tesla shares posted their best five-day rally in more than a year, up about 16% since the 5 November close and adding roughly $218 billion of market value, as merger talks with SpaceX were reported to be progressing. A deal could be announced as early as December but may slip into early 2027."
+      "summary": "What Tesla (TSLA)'s Shanghai Expansion Means For Shareholders Yahoo Finance",
+      "summaryFallback": true
     },
     {
-      "id": "media-27",
+      "id": "media-13",
       "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T20:48:37Z",
-      "title": "SpaceX and Tesla advance merger talks toward potentially record-breaking deal: Report - CNBC",
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMk1fY2oyc29IUmROTkNsUU5ocHItTnBObXZ3dkZKVE0yRmZEcW1sZF9FQUs0bGZUNUVPdnZ1OEI5UzAxSHVia0s2TUZuV3RLcnBWX3hnQkZ6dFQ5QmRwMXo2VkJRNEpweXFjdmxPaGhEZ1o4WHlEQm9veFRhTy02TlNFeEtsbDV6dGloV01SaUZ6dlVCaEU0bExKZ3R1UElNTUo4cU9uTUZSeHNkNGxHb0Q1OVNBZldzMjNQeDBCcURGa052LVE?oc=5",
-      "snippet": "SpaceX and Tesla advance merger talks toward potentially record-breaking deal: Report CNBC",
-      "topics": [
-        "SpaceX"
-      ],
-      "summary": "CNBC reports on Bloomberg’s story that SpaceX and Tesla are advancing merger negotiations toward what would be the largest deal ever. Reports put the combined value at roughly $3.4–3.5 trillion, with a December announcement possible and early 2027 an alternative."
-    },
-    {
-      "id": "media-3",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T20:22:35Z",
-      "title": "SpaceX and Tesla Talks on Record Merger Are Said to Progress - Bloomberg.com",
-      "source": "Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOVhjTWZjYS1paVVuVHpOVmJRaFpkclFuVmtDZ1RYQS1tUjI3YlNoTURnMWwyMUNxRlJEdXVYVHZoNUxRTUVOT28xS0JzS2thUmQ4WE5jMEgtajNlRWhCc1UzRkxBZGRuV2tRZWlmQjFBbmxPbk1ZVjI1Vy1wVy1fRTFaTXgxMjFpNDNKeDg0alZTLUhzZXNKYmxkNlNrMFZwdHBkTEJFTEhrQmNZdE40ZQ?oc=5",
-      "snippet": "SpaceX and Tesla Talks on Record Merger Are Said to Progress Bloomberg.com",
-      "topics": [
-        "SpaceX"
-      ],
-      "summary": "Bloomberg reports that Tesla and SpaceX are progressing in merger negotiations and could announce the biggest-ever deal as soon as December, though an announcement could slip into early 2027. Boards and advisers are working out the terms and the governance structure of the combined company, with ring-fencing Tesla’s China business from SpaceX’s defense work among the issues."
-    },
-    {
-      "id": "media-34",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T18:32:07Z",
-      "title": "If You Want to Order a New Tesla Cybertruck, You’re Now Forced to Buy the $112K Cyberbeast - Car and Driver",
-      "source": "Car and Driver",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSXVsTjlhX3BvcWFMN0M4VVpnWEprQ3oxWDI0cWJSSG53NWpWejlKeUloTjlWeWpiUW1JRVYtTHFTUDllOU1OdWNSOXdtUkZrb0FaeTlDdUNMbTVoNDdVbVEtWUc3THZyXzVIbFpIMkNzX1hMSG9sYnhPZ2JLZXoyRTVoWjRreThEbWlrOWdFVGNIYXJ2c1JjcTRUMzE?oc=5",
-      "snippet": "If You Want to Order a New Tesla Cybertruck, You’re Now Forced to Buy the $112K Cyberbeast Car and Driver",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla has removed the Dual Motor AWD and Premium AWD Cybertruck versions from its order site, leaving only the tri-motor Cyberbeast from $112,235 including order and destination fees. The change follows Musk’s plan to end Cybertruck production in 2027 to make room for Cybercab."
-    },
-    {
-      "id": "media-33",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T17:52:00Z",
-      "title": "House Republican invites Musk to move Tesla HQ to Florida - The Hill",
-      "source": "The Hill",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOR1NrOVNReGRCV0M4Wl93Vi1zcWNWd3dGUTNsOHFNNjUydU15U2VFZE1HRHdSN29UTHJuY3NsTXYtbWdraWlJNlZuWGVtOHBHcnEyY1pfcVNWSzhyRmEySk5KcWlkMkZWXzU3NmhFZ2FaekNyZEFmek1WcDdZMHluOGRB0gGHAUFVX3lxTFBDMHJlWHd3QkU0UWx6Vm01OEE2TGNCZ3JBTTNlaEN1WHZDa1I4RzhqS19OMDFYWnROclc4N0RoOHRJMXE3MlZXRVFHSDNrYWpJTUxzd3U2X19DaG1XYlNVS1ZsbTFxc0VCSjlVbXNjc2VIY1ViV0pDanlRRnZDT3diWFltNW9Vcw?oc=5",
-      "snippet": "House Republican invites Musk to move Tesla HQ to Florida The Hill",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T21:51:37Z",
+      "title": "Tesla Wedged Beneath Highway 101 Guardrail in Carpinteria - The Santa Barbara Independent",
+      "source": "The Santa Barbara Independent",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSmN4S0FBb3owZjRRemdZNm96eHVMUXJlb3pkSnZqbTJrcGZlMG9iRnZfbU8zV2FVYllYVDdMR19PY0hBQ3YzWDE2Z0QzY1pTRW9PX1l1M1JGT0NSdi1Ua21wTXZxY1l4YXNQZkNJY2liWnhhSHB1Nk8tMWlSUm5WVE9uaWVwazdEZDlyZFBRMzVBbmgzcEdHR0taNnRXdw?oc=5",
+      "snippet": "Tesla Wedged Beneath Highway 101 Guardrail in Carpinteria The Santa Barbara Independent",
       "topics": [],
-      "summary": "Rep. Carlos Giménez (R-Fla.) sent Elon Musk a letter inviting him to move Tesla’s headquarters from Austin to Florida, citing concerns about politically motivated investigations in Texas after the midterms. He pitched South Florida’s workforce, infrastructure and business climate; Tesla has not responded publicly."
+      "summary": "Tesla Wedged Beneath Highway 101 Guardrail in Carpinteria The Santa Barbara Independent",
+      "summaryFallback": true
     },
     {
-      "id": "media-29",
+      "id": "media-40",
       "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T16:26:58Z",
-      "title": "SpaceX-Tesla merger: 3 things to know about Musk's control and the deal's size - qz.com",
-      "source": "qz.com",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9odWUxZmlWMzNMajBWYXZ6M3ZsWUVMMUM0dlh4WnVjN3ljZVhRM0laWm1vc2VPZ1g4N0xEOFhqbDVwQ00wdjBwSlVyV0dvTzdtdFktRndqMnBLUHVmcGNCdWY3N3Zlak9i?oc=5",
-      "snippet": "SpaceX-Tesla merger: 3 things to know about Musk's control and the deal's size qz.com",
-      "topics": [
-        "SpaceX"
-      ],
-      "summary": "Quartz notes that no terms have been agreed and that a combined SpaceX–Tesla would be worth about $3.5 trillion at current prices. Musk is excluded from the special committees but holds roughly 82% of SpaceX’s voting power and about 20% of Tesla, which reports say could leave him with around 56% voting control of a combined company."
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T21:16:35Z",
+      "title": "Tesla proposes $3 billion polysilicon refinery in Texas - Austin American-Statesman",
+      "source": "Austin American-Statesman",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcU5kVU9qX3J2Q0hlOXRKcE9PbDJEamRPZmRKWlNyS2JQbnIxMTJHTlF4Sk92SW5sT0pxQ21TYnFRWUtKUUtWTEdMbEJRTGRYNTVaaHFGYjR4S0F6R205WFJ5MmVqdVNrcDZXdXpWcEJyUEctRG1fQXRmSHRBcTJPcm5lSnF3MkhOM2x4c1o3YzBvUQ?oc=5",
+      "snippet": "Tesla proposes $3 billion polysilicon refinery in Texas Austin American-Statesman",
+      "topics": [],
+      "summary": "Tesla proposes $3 billion polysilicon refinery in Texas Austin American-Statesman",
+      "summaryFallback": true
     },
     {
       "id": "media-39",
       "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T11:42:00Z",
-      "title": "Why SpaceX Stock Is Getting in the Way of a Tesla Merger - Barron's",
-      "source": "Barron's",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTlZ4cUtLWkxmdjN2cU1vLTBydEJ0YzMtajRhMjdJaFVnTGNFYjlSR0JzQ0NKS3JqRDExS01HX01vUnU5ZWE1US1rR3V2d0FJbUlsY0x3RDg1cGtJRHV3VWdNclZYV1Vsang5Z2FYenlmYUhsQ00wZ0locWFrUnlGRlhqMA?oc=5",
-      "snippet": "Why SpaceX Stock Is Getting in the Way of a Tesla Merger Barron's",
-      "topics": [
-        "SpaceX"
-      ],
-      "summary": "Barron’s (paywalled) argues that SpaceX’s share price is complicating the terms of a stock-for-stock Tesla deal; a summary of the piece says it cites a “political discount” of up to 25% on SpaceX shares. A weaker SpaceX price means more SpaceX shares would have to be issued to Tesla holders."
-    },
-    {
-      "id": "media-30",
-      "type": "media",
-      "date": "2026-11-12",
-      "datetime": "2026-11-12T02:30:00Z",
-      "title": "If SpaceX and Tesla Merge, Here's What a $10,000 Investment in the Combined Company Could Be Worth by 2030 - The Motley Fool",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T20:09:31Z",
+      "title": "Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal - The Motley Fool",
       "source": "The Motley Fool",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNXNoZUZsYlRuOWRWVXZWcDBuNGxsOGV5R0dkVDBuLVJONnFCR2RpVnZXU1I0SVBIQTlXTHcxR1FZVzdINktzQ0ZRNUdPQmE3RkpEZ2lsV25hMmJsOUd3bW9XaXc2V0I5dUFtV3BSVjVlMy1sanRZaUs2YVhRUHBRczc1dTZfVDdxMU40b3dRZFl1aFlmOHNZaA?oc=5",
-      "snippet": "If SpaceX and Tesla Merge, Here's What a $10,000 Investment in the Combined Company Could Be Worth by 2030 The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeVRveFNnUGpUbnJnQUMzTURFdXhCS2l5aUM4YlZ0M3BGSFJyTFpKbjJGdmZCTW1wMDMwUDJfQkhpcVRULUVIY1VaVTdrMFUtb19JYnkyclNLVy1nSEs0T3N4SFo5a2I3OEEwRU9nOVh1YUtHUXY2eHpGTTEybTRWM2F3M3ZWWTFjM2FwZVgxWktRaHYtVUdrQjN0S0FvSkRyZDY0djFXOEtkLVppeXFMblZ5ZS1relBqdlljUjkyRm9wTV8yNzVrSUsxckVOamtt?oc=5",
+      "snippet": "Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal The Motley Fool",
       "topics": [
         "SpaceX"
       ],
-      "summary": "The Motley Fool argues that a $10,000 stake in a combined SpaceX–Tesla is more likely to be worth less by 2030 than more, despite bullish scenarios. It says a roughly $3.5 trillion combined valuation is hard to justify given Tesla’s slow growth and both companies’ high multiples."
-    },
-    {
-      "id": "media-9",
-      "type": "media",
-      "date": "2026-11-11",
-      "datetime": "2026-11-11T19:55:13Z",
-      "title": "Tesla extending Cybertruck production through summer 2027 to clear backlog, Elon Musk says - CBS News",
-      "source": "CBS News",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9jQUJkYS1VWmF1WncwNkY1MlItSU14a2FIYUZZaHJBZTNpZW0zTHNtSTVjQUE5cTdMY1hDUmx2blZibEl1dThYa1dVbEJweUZBV28tTnVwR2w1R0U3ZlFIcURteGFjbDdBdlNUTHFHZ2lUbHZwNXV5T244NUU?oc=5",
-      "snippet": "Tesla extending Cybertruck production through summer 2027 to clear backlog, Elon Musk says CBS News",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "CBS reports Musk’s statement that Cybertruck production will continue through the end of summer 2027 to work through the order backlog, later than the mid-2027 wind-down he announced on 6 November. Tesla may still have to refund deposits for orders it cannot build before the line closes."
-    },
-    {
-      "id": "media-5",
-      "type": "media",
-      "date": "2026-11-11",
-      "datetime": "2026-11-11T18:11:31Z",
-      "title": "Tesla (TSLA) Forms Special Committee To Review Possible All Stock Merger - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOR0pCbEVyVzFNbnk0RWxvcGFxdzJZWkx5LV92RExheFFQanptV25HWW1VWWtEbkdIT211WXRoZHp2QnR0NWYxSUw1bWtTbGtfS3hMQmZWcmptYzlYT2RUWEZ1YlFjeWpZMTYwZEgxTG1EVmlvNndGR0JWV0MwMm5hN2ZrYUFBVWMzNm9QZWdVdU1OQmotQ1VjREZDNU9tTjR6?oc=5",
-      "snippet": "Tesla (TSLA) Forms Special Committee To Review Possible All Stock Merger Yahoo Finance",
-      "topics": [
-        "SpaceX"
-      ],
-      "summary": "A Simply Wall St piece on Yahoo Finance notes that Tesla and SpaceX have each formed special committees of independent directors to evaluate a potential all-stock merger. It says the next proof point would be a deal framework with valuation, an exchange ratio and a separate vote for Tesla’s outside shareholders."
-    },
-    {
-      "id": "media-25",
-      "type": "media",
-      "date": "2026-11-11",
-      "datetime": "2026-11-11T12:46:21Z",
-      "title": "Porsche CEO Throws Shade at Tesla Roadster Spectacle - Bloomberg.com",
-      "source": "Bloomberg.com",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVzVmSFhXQmcyNWtFSkt4dGdEVGZOOUxnZHJIMFNWNk10eTc4UXhzb3hQQ0d1cTYtTnM4UDIzZVA2UjhrdWM4R3pBYjcyMk83aGt2bW9IU1Vpem42eEZmR1NnbEx4V29vLXFHajRqb0RjM2lJeW90Z2g5Z3doRkxDMHFxRWt1NUNYeGk5bHJLajJnMDRVRGo2OXFfOGw1N1l0WkJ0VW1n?oc=5",
-      "snippet": "Porsche CEO Throws Shade at Tesla Roadster Spectacle Bloomberg.com",
-      "topics": [],
-      "summary": "Porsche CEO Throws Shade at Tesla Roadster Spectacle Bloomberg.com",
+      "summary": "Trump Just Disclosed Tesla and SpaceX Stock Purchases. Here's What His Portfolio Moves Reveal The Motley Fool",
       "summaryFallback": true
     },
     {
-      "id": "media-1",
+      "id": "media-24",
       "type": "media",
-      "date": "2026-11-11",
-      "datetime": "2026-11-11T06:53:00Z",
-      "title": "Finland clears Tesla assisted driving tech after changes - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTlM5bTZEWktQbU9STjk1NE9iMjNpUVJaNUJXcVI1bUV3ZmxPN2p2NjQ0c2ZaQXdITlJkeDNCYkV2MjgwVjlaMjFYTnN6U2VGMHBJNDV3T1VTZ3IwTnVRcGtxdGR5djY3VldGVnVhOEg4YTI0dEUzbWJJVUFNeHZoa1RuZVphZnU3SGk4b3FPeEcxSjR1aGVsMUh5SExpNlZINVE?oc=5",
-      "snippet": "Finland clears Tesla assisted driving tech after changes Reuters",
-      "topics": [],
-      "summary": "Reuters reports that Finland has approved Tesla’s FSD (Supervised) driver-assistance software after changes were made to the system. Tesla’s Q3 update said FSD was already available in nine EU countries before this approval."
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T18:02:00Z",
+      "title": "What the Blue Wave in Texas Means for Elon Musk’s Tesla and SpaceX - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVGRaS0psc00yb1MySC1qZTVTdjhELU1HdmxSSmdhWE52YWM4b0hmVzMzYlFlYmVUZTl3d19OVzk5UFl4YkRMek82NEZLbFJIeWtpSnEwMExFVlYtazRuQ0liTjg2ZFFHX0ZFbUlEbnV5UU5OVFNiNEVYOC02bzBJdzBPREp4ek1VYXA3V01Oa0h4TFF5TFlzQVdhR3ZwTTVy?oc=5",
+      "snippet": "What the Blue Wave in Texas Means for Elon Musk’s Tesla and SpaceX WSJ",
+      "topics": [
+        "SpaceX"
+      ],
+      "summary": "What the Blue Wave in Texas Means for Elon Musk’s Tesla and SpaceX WSJ",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-28",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T16:59:00Z",
+      "title": "Tesla cracks open door to private Cybercab robotaxis — for $29,990, $299 a month, strict rules - Automotive News",
+      "source": "Automotive News",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5FN29QYzJrdmwtRDQ0RUVQdU51ZmpqbmhzcjAyVXl1dzN4Y3N2a2UxbXh5bHpqMjhoOTREZmdTOTNVcXlsbHJLX1h3N215SWRiX0t1eFVNODJaZnFMejJ4ZENrSURGdThjMFRjUlY1YVlIOE1sR1E?oc=5",
+      "snippet": "Tesla cracks open door to private Cybercab robotaxis — for $29,990, $299 a month, strict rules Automotive News",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Tesla cracks open door to private Cybercab robotaxis — for $29,990, $299 a month, strict rules Automotive News",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-4",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T15:12:35Z",
+      "title": "Trump’s Financial Disclosure Reveals SpaceX, Tesla, Nvidia Trades - Forbes",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTzAyZ3c2MVltTTRMZmN4MUxodWRTTE5KZDRCdmVGZUVGZnRkUmNTb3BfemhNSGVFUnRiRklHSTBuS0JRSDVYVWhYaXZOVGkyb21tVFpEUkttVFVBaUFVWE1sLUg5dVZQNGhHVnlFdUtlbVJ4NU1ndzhmc3F5OEtkU09UY2NWZTRuVnNsU01kaWViWTRaaWZaRl8zalhJTHY3MzkwN3JnaVY0aVhUV0ZrNnhZQW1UU0poaTVwZjlLNEpBSDhOb1hqck51dw?oc=5",
+      "snippet": "Trump’s Financial Disclosure Reveals SpaceX, Tesla, Nvidia Trades Forbes",
+      "topics": [
+        "SpaceX"
+      ],
+      "summary": "Trump’s Financial Disclosure Reveals SpaceX, Tesla, Nvidia Trades Forbes",
+      "summaryFallback": true
     },
     {
       "id": "media-23",
       "type": "media",
-      "date": "2026-11-10",
-      "datetime": "2026-11-10T22:06:29Z",
-      "title": "US SEC seeks to close Musk, Tesla settlement fund - Reuters",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T14:30:00Z",
+      "title": "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package - Investor's Business Daily",
+      "source": "Investor's Business Daily",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZHNBWjNqazh6LUZkMmhnTWNGZnAtRFRxbGU1TzBIbVRFeTdud0dmc08wbXNOYmt4M1JzNVh1Uk1JdmoxUnVFUnlab0lvSVlfUXVkeFVpYnBTLURINTd0ZUsyYmdYRVptLXY2dzcwSVNQdjNWOVZtd3JjVElmUWFGX0xaUnh3TFZmX2hQM1MwMlN6UQ?oc=5",
+      "snippet": "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package Investor's Business Daily",
+      "topics": [
+        "SpaceX",
+        "Governance"
+      ],
+      "summary": "Elon Musk's Latest Calls For Tesla-SpaceX Merger; Explains Pay Package Investor's Business Daily",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-21",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T05:34:00Z",
+      "title": "Musk pledges higher Tesla output at China plant, Chinese state media says - Reuters",
       "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSjE1cTZfQmpoV2w2Y1cxb2RBMVJyS1dUUTFQdklVWmN3VmtPUzhMX3NMTnE0M01fSjU0cmREVWI3TkxYdWRwUlpsLWNBNUdFbWQ5YlRQZ1FtXy1vNUw1VFFDdGp6N0JaQzdKd1I0aE5LdVlfWmlJaENodUdFbHBXNDBmZkVGd1l2NzFoTUQzZVFwaUxJemsybEpCSUtwSmc?oc=5",
-      "snippet": "US SEC seeks to close Musk, Tesla settlement fund Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdWFYaDFsNUdtRG82OWFZZUU4MGNKRDVSOW91aTk5N3Zuel9uMHBmSDdGckl3UmhaMVl0TkxTZ0tURE5KQjBzZlM5ZkFCaEdES1l2TzRiV2JfX0xlbzB2NGhLY0U2Y0V5N1NURHdGTVFMckg2VFlxR3F4aUtKVmg1eUo1RDg2RENHYlctRm45aVdELUQzLUwtU01FWExleGNfaEdMM0EyeTBreUJnLXlXVjFQdndBNlBHdWYxVkdpLXZYVHRqRTJjeWhKS0xKakY5?oc=5",
+      "snippet": "Musk pledges higher Tesla output at China plant, Chinese state media says Reuters",
       "topics": [],
-      "summary": "US SEC seeks to close Musk, Tesla settlement fund Reuters",
+      "summary": "Musk pledges higher Tesla output at China plant, Chinese state media says Reuters",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-14",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T03:03:43Z",
+      "title": "Tesla considering $3.1 billion solar materials plant near Robstown - kiiitv.com",
+      "source": "kiiitv.com",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQX1RieW9WM2ItQmY4MGNuSEpmcUd5dmF0WElqVUpJelRlQ2FGeUNYWGxDMWFBeEtYREhmS1gzT29xS2dVQ1Q4TDhZeGw0bWlwZWR0anVZYTRUMXVfSG9fZDRwcUl1NmdqTmFONzhnZEQ0UlJ5aEl3clZ6WC1zME9KR0cxSmJpeTJWRXVhLUwtMDg5cENzNXJMMngtRDBMUEtfQy1seFh3bFRqa0lRcVg3WWJXNzlpYW1ZVktjMjFWRVYtLUVlbmtlV2xYTlh4UnRZOWRNUkJfdzQ?oc=5",
+      "snippet": "Tesla considering $3.1 billion solar materials plant near Robstown kiiitv.com",
+      "topics": [],
+      "summary": "Tesla considering $3.1 billion solar materials plant near Robstown kiiitv.com",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-33",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T02:29:00Z",
+      "title": "Elon Musk says Tesla plans to make an autonomous Model Y with no steering wheel - Business Insider",
+      "source": "Business Insider",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPU3BVSkNtTXpvSHp4UHpCRFRoZjkzYXpqUEhoMUpldWZwLTNmRFA3amhvRDJqTmE3WlVqeXMtRU1nT2ZYZmNyR0Nidl9YWEJqUDFZSEVFckVISl9HX3RRZFhrZ0EwZXp4TkZsUWJXMEMwS1BBRlVsYXdkQ1g0aVdaNFFLRE9ob3l6akZjVmdGTXY4Nm9XYkNsMUF2OU1nN3Q1TFBMb3hn?oc=5",
+      "snippet": "Elon Musk says Tesla plans to make an autonomous Model Y with no steering wheel Business Insider",
+      "topics": [
+        "Deliveries"
+      ],
+      "summary": "Elon Musk says Tesla plans to make an autonomous Model Y with no steering wheel Business Insider",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-31",
+      "type": "media",
+      "date": "2026-11-19",
+      "datetime": "2026-11-19T02:08:00Z",
+      "title": "A Tesla Model Y Without A Steering Wheel Is Coming: Musk - InsideEVs",
+      "source": "InsideEVs",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBSQXVCcnMtZnpMdUNQLXhJUjJJSmR6VGFnWDdVT2hieWpIeHRISUtNdW9hT3hKSnJscHhxS1NPYnY2bFh0Y3I4QWlFdHUyUDdrNFNjOWxCX0xCQTg3ZDBFZ2hhUnpXcGVOb0thWFREb28yMnpnbWd5QXJR?oc=5",
+      "snippet": "A Tesla Model Y Without A Steering Wheel Is Coming: Musk InsideEVs",
+      "topics": [
+        "Deliveries"
+      ],
+      "summary": "A Tesla Model Y Without A Steering Wheel Is Coming: Musk InsideEVs",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-37",
+      "type": "media",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T23:26:00Z",
+      "title": "Elon Musk: More areas of overlap between SpaceX and Tesla than before - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR2lmMnU2TmdLQnhQYmpTWmlzUVVQdlRYb19Md3J4cWtfNm9WMWdGd3N1THdPU0tzT2o3akY4bWtDZlp5LWtTT0pHM0xGZHZmVGZLMUMwV2FQY0pPMkNnWmRMY2ZLYUxodVFjbC1zTWE3TDFzdHpqbFhHRkNZMGZkSDZQTHM1MDFuSGpXR1F6VFExZGR0c0x5NG9iVXBMWEN3TFhieWlVU09VTWlEMU9Kdw?oc=5",
+      "snippet": "Elon Musk: More areas of overlap between SpaceX and Tesla than before CNBC",
+      "topics": [
+        "SpaceX"
+      ],
+      "summary": "Elon Musk: More areas of overlap between SpaceX and Tesla than before CNBC",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-32",
+      "type": "media",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T21:26:41Z",
+      "title": "How Much Is the 2027 Tesla Model Y? - Cars.com",
+      "source": "Cars.com",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9hTGNxQ1UwaGhkTFUwc0lGNVFJcUZjSEh1cVRrOGIweWdzZXFXM2hkb3BGSFR5bWNMVHM5M1g3cTFlYkJvMjRVamxqbm9TeXhnZ0JwcHlORkI1N1A4Q2dnNHExZUhnYV9fUHNHVkhVQ0JyTnlLUGFkY1JUYTU?oc=5",
+      "snippet": "How Much Is the 2027 Tesla Model Y? Cars.com",
+      "topics": [
+        "Deliveries"
+      ],
+      "summary": "How Much Is the 2027 Tesla Model Y? Cars.com",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-12",
+      "type": "media",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T16:21:00Z",
+      "title": "Tesla Energy's New Product A 'Meaningful Positive' For The Company, But Not The Stock - Investor's Business Daily",
+      "source": "Investor's Business Daily",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNkRkU2U0SzlESk9QMnBhbzBkQzlRZjhrYnhGUWw0YWp6U283d3NEeV8yTm9odkozTmJxdzdyU3RyUm9semhiSzNSRzlJVWFWR0tLNG1OSUZuYXY1MmxYSHRNWlk2S1d0SDN3ejdtN1BSaXdSS29Cb2tTWHhHYUFON0pMR1BXNUw5dktwWVV0UDAwQVE4ZnBXZ1hfd0c?oc=5",
+      "snippet": "Tesla Energy's New Product A 'Meaningful Positive' For The Company, But Not The Stock Investor's Business Daily",
+      "topics": [],
+      "summary": "Tesla Energy's New Product A 'Meaningful Positive' For The Company, But Not The Stock Investor's Business Daily",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-27",
+      "type": "media",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T14:56:00Z",
+      "title": "Waymo’s Speed Bump Is Bad News for Tesla Stock - Barron's",
+      "source": "Barron's",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOb3Z6UTZPZ2hIcy13QTNTSDg1aF9mVXpabzdHVlMzN2prOVEwSEsyMEFNYTdjS2lOUm0za2tBVmhfdG55SFpwc3lINkhGMlJ5RGVJemNmTDQyX2t4U2MzSlRjUDljWEo4MEI2T0tseW9hM1JnUmZpTEV2eVlvUmpCNw?oc=5",
+      "snippet": "Waymo’s Speed Bump Is Bad News for Tesla Stock Barron's",
+      "topics": [],
+      "summary": "Waymo’s Speed Bump Is Bad News for Tesla Stock Barron's",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-9",
+      "type": "media",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T14:39:12Z",
+      "title": "Tesla enters solid-state transformer market with Powercore launch at RE+ 2026 - PV Tech",
+      "source": "PV Tech",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeEtvdm5FUzdQa3JMZ3JEV0U3elhwVmRqTW9BT0ZCY0pTWldsMFV2T1ladldYNDloRzdTSUlyXzBsbEx3Z01IOWVxQWYyd2RybTdsUkRzcjRydXl1RThNNmFjN3pNWWhsbUZLVkUwS3NmNUg2M3ZKbXN5MlN6azN2U1RkTTNkWFlxM3ltWUtRWUV2UmIzLXc?oc=5",
+      "snippet": "Tesla enters solid-state transformer market with Powercore launch at RE+ 2026 PV Tech",
+      "topics": [],
+      "summary": "Tesla enters solid-state transformer market with Powercore launch at RE+ 2026 PV Tech",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-18",
+      "type": "media",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T13:00:00Z",
+      "title": "Tesla adds 82,000-square-foot Austin office at former GM site - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ1J4MW44a1pJM0F4NHhRdTFaTmNHcDN6d2tGVEQxQmU5Ym9fbDNMV1NGUmxZakExaFMtNlNoeHUwM0tBQTZhTGxpb3RwWFhobG5RY1YtRWVfMUJDQnQ2eHZ3WVlFNzZ2dFNpQlQ0OU5Gd2VXUC1RSlBYRHN2YlN2Z1VudW1ZVTVWUThhc3FKMA?oc=5",
+      "snippet": "Tesla adds 82,000-square-foot Austin office at former GM site Yahoo Finance",
+      "topics": [],
+      "summary": "Tesla adds 82,000-square-foot Austin office at former GM site Yahoo Finance",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-36",
+      "type": "media",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T05:50:37Z",
+      "title": "Tesla update 2026.44.1 goes wide release with FSD v14.3 Lite (HW3), FSD v14.3.13 (HW4) and Charger Network View (Release Notes) - Tesla Oracle",
+      "source": "Tesla Oracle",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUGZuNGZuZWRpTmgtX2RnX2M0aU9UenZ1Rk5JV3pYVGNudEtUTm1LeEhZVXVudG9CUFJTWDh2SGZFWThpZEpWNjNqNjE0bVRxNmlIV2lZRWlfUG9DMTVpOGJTa1VUd1hCSXBEZV9BcDhKdjZZWnpmYldCZDlRcUk3LUZzek9HTWNROWcwVzBnYWFnX1ZYNmNJcXVnbTJMdF9xc05yRmVXMEcxWFc1eEVOSlF4dFowa2lsSElpWmVQNlN0bEY2bG92Um5ERDJXeEJHUUZmckRSLTZuVC0xOWhoRlN5OFlPc2hCWEVXODM4QzBkQQ?oc=5",
+      "snippet": "Tesla update 2026.44.1 goes wide release with FSD v14.3 Lite (HW3), FSD v14.3.13 (HW4) and Charger Network View (Release Notes) Tesla Oracle",
+      "topics": [
+        "FSD"
+      ],
+      "summary": "Tesla update 2026.44.1 goes wide release with FSD v14.3 Lite (HW3), FSD v14.3.13 (HW4) and Charger Network View (Release Notes) Tesla Oracle",
       "summaryFallback": true
     },
     {
       "id": "media-6",
       "type": "media",
-      "date": "2026-11-10",
-      "datetime": "2026-11-10T18:13:51Z",
-      "title": "The War of the Currents: AC vs. DC Power - Department of Energy (.gov)",
-      "source": "Department of Energy (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mXzNNREp4d1hzRS1Td1RRdjlmRlcyVlVPdHhxcnlfSHQ1aVg3TzdXR1psUS14cUc1ZjB0UU81b2hRMTNrUFp1V1M2ZHRnd3dJX2FoYjBHMFdTOV9SYUhjaXhwdEE1WUV0TXln?oc=5",
-      "snippet": "The War of the Currents: AC vs. DC Power Department of Energy (.gov)",
-      "topics": [],
-      "summary": "The War of the Currents: AC vs. DC Power Department of Energy (.gov)",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T05:21:49Z",
+      "title": "Tesla Futures Margins - CME Group",
+      "source": "CME Group",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB5TVIwaXh0dC1DcURnNnZGbjFuSFgxVDNjOVBCOTQ5MHM5YUJvU09YVU5fSEd5Umo4cmZWUjNwSG9OUjlKZnpBRDdHLWRyRm5NVElmLUhlVGFDZHVvSUhpbDZ2VXEwZ2VQTVZRbUtHQ3B3YVhaWUl6dlRUYXdyZw?oc=5",
+      "snippet": "Tesla Futures Margins CME Group",
+      "topics": [
+        "Earnings"
+      ],
+      "summary": "Tesla Futures Margins CME Group",
       "summaryFallback": true
     },
     {
       "id": "media-22",
       "type": "media",
-      "date": "2026-11-10",
-      "datetime": "2026-11-10T11:33:15Z",
-      "title": "Tesla Cybertruck is EV pickup market's latest casualty - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZnEzQm4wRURvYzdqZWtnbF9wMjI5ODhBaHBrZF90RTI4cmJCSFJIVGNpOTNQRk5fQUhjNWFOcXlHUWVEMDJCdnZvY1lKeERqZXZ0S0o4QzZRNFRJUDJ0aC1LTTF3YktUYjlabWNTR3M4dFpuRC1vT2I2R0FIU3liN0xxVHlrWVlHQlNjZllmZ0RCdDRZdmxUcUZ3MGNna3RMa01RRmx4ZHE4d3p1bXlHX2pPY3BhNDVwbi13?oc=5",
-      "snippet": "Tesla Cybertruck is EV pickup market's latest casualty Reuters",
+      "date": "2026-11-18",
+      "datetime": "2026-11-18T04:30:00Z",
+      "title": "Tesla-SpaceX Merger Is 'Almost Inconceivable' to Avoid, Says Elon Musk Biographer — 'You'll Know More' on Dec. 3 - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSVNXV0JrNG9Ma3Boc0ZuanVJSGpnOVI2ZVl4UXB4S3R1czBSNm82QU5jenZLQWlIYWtwbzlTZk9hbDNIYzVKalhqT0JrSTlRMGJiS0lEWnZYbHRVWFR6eTc3Ni1VcDJ1dUtSYXFMeHJaRkVQZThtaWlaYVY5TnN3Zk1pZFFvaHppQTA1SVhUTE56V19aRFFwWDRDc3hfUGZiNVVj?oc=5",
+      "snippet": "Tesla-SpaceX Merger Is 'Almost Inconceivable' to Avoid, Says Elon Musk Biographer — 'You'll Know More' on Dec. 3 Yahoo Finance",
       "topics": [
+        "SpaceX"
+      ],
+      "summary": "Tesla-SpaceX Merger Is 'Almost Inconceivable' to Avoid, Says Elon Musk Biographer — 'You'll Know More' on Dec. 3 Yahoo Finance",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-34",
+      "type": "media",
+      "date": "2026-11-17",
+      "datetime": "2026-11-17T19:29:00Z",
+      "title": "How To Buy Tesla (TSLA) Stocks & Shares In The UK - Forbes",
+      "source": "Forbes",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNklnaUE1NWVOYzB6VldUbkhXRzB5SEJfRzBlb1pvVmI0Q3MzTC1pX2xPdHZnS2ZMU3JyRjB5NXlqMU9jZU83RWg4b2Vhc0dSV25ibWNjUl85RDN0MEhkS0RDWmQzd2Q0c2tzWjNoT2Y3VFUtdVNJemFURjBacGdTdENtdnJEZWY3cGpTQg?oc=5",
+      "snippet": "How To Buy Tesla (TSLA) Stocks & Shares In The UK Forbes",
+      "topics": [],
+      "summary": "How To Buy Tesla (TSLA) Stocks & Shares In The UK Forbes",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-10",
+      "type": "media",
+      "date": "2026-11-17",
+      "datetime": "2026-11-17T13:00:00Z",
+      "title": "Please Buy Tesla’s Cybercab, Which Is Cool, Not Stupid - McSweeney’s Internet Tendency",
+      "source": "McSweeney’s Internet Tendency",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc3VNX0h6V2k0bkk3Y1NGczRrWjk2YzJnTnMtTmdqYVE0WDVfUFltYnpZM3RVZVN3NXp5TklWTnBsVnFjTTNGTGxtRFRSVm9JdEppN3JOWGNzTlF3QlYtSmFqXzcycUJab0xvbVN5S2ppTUt2NGxGZl96V3g5MEE2bGpaS3pEYnpCUHBOb0l3bWM?oc=5",
+      "snippet": "Please Buy Tesla’s Cybercab, Which Is Cool, Not Stupid McSweeney’s Internet Tendency",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Please Buy Tesla’s Cybercab, Which Is Cool, Not Stupid McSweeney’s Internet Tendency",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-7",
+      "type": "media",
+      "date": "2026-11-17",
+      "datetime": "2026-11-17T10:15:00Z",
+      "title": "Tesla’s Cybercab Is the Subscription Hell They Told You Not to Worry About - WIRED",
+      "source": "WIRED",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbms1SXczRV9hTXpBeUV0VjROUlF4VG9NQ3o1OUpMS1lVT0pFOWgzV1hPMnAxMGRUVGRjUTJ4T0JfZFkyWXJ2anZNQnBCT0pibVkydkJnal91d1BmbExzdHF1MjdUYWRDRlBydU0wVmRHbEw4WE9JcGVRM3JHMl9lWVNFMzhTY2h3MHZPMTFDNVBQRG9xMFNNTnFQZzR1cDVMNTR3?oc=5",
+      "snippet": "Tesla’s Cybercab Is the Subscription Hell They Told You Not to Worry About WIRED",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Tesla’s Cybercab Is the Subscription Hell They Told You Not to Worry About WIRED",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-1",
+      "type": "media",
+      "date": "2026-11-17",
+      "datetime": "2026-11-17T10:05:00Z",
+      "title": "Tesla, Inc. | History, Cars, Elon Musk, & Headquarters - Britannica",
+      "source": "Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DYzB5d29UTWVKVDdpTnNETGVGbGozWUk5aU9WckoxQW5KNWdhdS1WcG9XcnV2TzBRWlQta3M3d19TTWZUalVOSnVFajZ0YlhNbXZnYjBsaU0?oc=5",
+      "snippet": "Tesla, Inc. | History, Cars, Elon Musk, & Headquarters Britannica",
+      "topics": [],
+      "summary": "Tesla, Inc. | History, Cars, Elon Musk, & Headquarters Britannica",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-15",
+      "type": "media",
+      "date": "2026-11-17",
+      "datetime": "2026-11-17T08:00:00Z",
+      "title": "Tesla to pull the plug on Cybertruck after years of poor sales - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWnlMcV9XTE94RnhqbWNmQ1B5Y01Gd0tReURLRG5nc1VOVlBQR1RwazRSdXF0azlhbS1nTmJ5M0MxZUxMMUQxM1pxRHVjN1VVQWM5OGtOOGdWU1Fwa0llb0hxTXVHX05rV3JoRTR3eWwtTkNseGQ2eW5hcTcxUmQ5YnRYUVNwaGdwaDlhelZ5dmJoOVZhaGU1N1Fkb1RTUDFMY1lCUzlMcG9SYUNDcUlMeHBBYXBWQmM2QUloLWh5QkNuOGRvMTRVSml0dmxEN2lqaU1va09iQ0o?oc=5",
+      "snippet": "Tesla to pull the plug on Cybertruck after years of poor sales Reuters",
+      "topics": [
+        "Deliveries",
         "Cybertruck"
       ],
-      "summary": "Tesla Cybertruck is EV pickup market's latest casualty Reuters",
+      "summary": "Tesla to pull the plug on Cybertruck after years of poor sales Reuters",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-8",
+      "type": "media",
+      "date": "2026-11-16",
+      "datetime": "2026-11-16T21:33:00Z",
+      "title": "Tesla Will Invest $3.31 Billion to Expand German Factory for Cybercab Production - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdktrVUd5d0c1dVV0VG5ZSnJEZmstVjQzZFNFdzd6MEFrRmM2YnRSaF95cEljZ0FOR1VIenBEV0VCRzRWTUVxYXZQYVdEb0E1UDBucGZWQ2VjR2t1UlcxLXJNVGdwYnJKdmRPQWR4U1BNSGR0VXpEQUZRRXhVd0RVYnQ0aTRBYk56bjhpUGMxLWU4QldpRUV2RzNtWVlYc2tzOGMwdzNaOFRhYm9fLTZRTDFLdlh3QQ?oc=5",
+      "snippet": "Tesla Will Invest $3.31 Billion to Expand German Factory for Cybercab Production WSJ",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Tesla Will Invest $3.31 Billion to Expand German Factory for Cybercab Production WSJ",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-2",
+      "type": "media",
+      "date": "2026-11-16",
+      "datetime": "2026-11-16T20:52:21Z",
+      "title": "Tesla plans $3.3 billion Cybercab boost for Germany's troubled auto sector - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaHd0RC1iZmQwWUtkTl9CYjJVMUhGYmtxNEZyQU92Rm5mZS1OZ0Z2bHl6TmJuLUFJYWpQUW5GQ1h2anVqSHR5TDF3aThnaWhDd3lDYl9oY3VqbTVLaUMwMGtSME5IckZnZE5PQVhURTNPQ1BaS2tBejl6OU15X1B1N3VOM0o3dktRbnpLSjc1eWI5WWs4bjZqNnFOOA?oc=5",
+      "snippet": "Tesla plans $3.3 billion Cybercab boost for Germany's troubled auto sector Reuters",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Tesla plans $3.3 billion Cybercab boost for Germany's troubled auto sector Reuters",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-3",
+      "type": "media",
+      "date": "2026-11-16",
+      "datetime": "2026-11-16T16:34:31Z",
+      "title": "Elon Musk Wants to Merge Tesla and SpaceX. Their Businesses Already Overlap. - The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ELUVFNFBiWjJzc1Nzc1RmbFkzRV9UVEtwN2VQRlBtV1VuVjR1aThINEpLOUhMYXRLRGF0N0lCbDZJWldSbERPYWxSWHFZQlVPZVlHWnpJa09sc01lRFFXR1JBU2ZrY3dFZnpJNFpLYnZRTWJVYUpxZnFnZw?oc=5",
+      "snippet": "Elon Musk Wants to Merge Tesla and SpaceX. Their Businesses Already Overlap. The New York Times",
+      "topics": [
+        "SpaceX"
+      ],
+      "summary": "Elon Musk Wants to Merge Tesla and SpaceX. Their Businesses Already Overlap.",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-17",
+      "type": "media",
+      "date": "2026-11-16",
+      "datetime": "2026-11-16T16:32:37Z",
+      "title": "Elon Musk Dreams of a Larger Empire in Move Toward Technological Supremacy - The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPazJram9ValE5cjMtTEg4dDczeXc3d3Y1VW9KaldhbHl2ZUhISjBHbzFBZ3FXWExFWGxEVlNwMHpZU0xvcEdkQkpaMURmQldKdE1TUkIyMENXTU4wTWpCTkNtLS01OGY3Qnp0X1BVYlM0NU96RkFxeE12YjRRZ1pKUUpRUFpjOFc1eGswVQ?oc=5",
+      "snippet": "Elon Musk Dreams of a Larger Empire in Move Toward Technological Supremacy The New York Times",
+      "topics": [],
+      "summary": "Elon Musk Dreams of a Larger Empire in Move Toward Technological Supremacy The New York Times",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-5",
+      "type": "media",
+      "date": "2026-11-16",
+      "datetime": "2026-11-16T15:48:46Z",
+      "title": "Prediction market odds for Tesla-SpaceX merger by April 2027 top 60% - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObnp3dHFnTmYtS3p4SXA0T1B4TzhnVmtuclBhcl9BeEM1VVNyYllTblFVWUE2WUxoVUFGUFZyZ2tNZGdxbEJ0LUJkMmNUX1BMekp5aDlmRFlKNEFsRElGU2hRVXZMZFdQRE5fM2h2eUEzUGdvYVVIUTNmeVZTaVBsNDlmdW5jbVhRNVVMRmozSnltOUxyTE1xRkFXbHlTU3VKTnprVlpmdi1qR1lGSGhhZdIBtgFBVV95cUxQak1HZ3VpdXd0RVg2czhCeGZkdHVLSEVJMzdETUg2RXZFMWdjQllnaTVBcnZsN1BMYjNhRDE1Z09MSmNWOHBQZU9TUWs1NDJQT0ZBdFkxbzFURmtXVFFlWG1BNVJuZU9xRmNIaVkxZUJrNnduSnBkSW9jLWxiN3l1XzIweldrNVpmVzlnbW11cnFNMmkzVnVoT3RwVTVKZmJOeG82UnJ4V2x2RFhXZVJZemJTUDRRQQ?oc=5",
+      "snippet": "Prediction market odds for Tesla-SpaceX merger by April 2027 top 60% CNBC",
+      "topics": [
+        "SpaceX"
+      ],
+      "summary": "Prediction market odds for Tesla-SpaceX merger by April 2027 top 60% CNBC",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-38",
+      "type": "media",
+      "date": "2026-11-16",
+      "datetime": "2026-11-16T15:18:00Z",
+      "title": "Tesla Starts Selling Cybercabs for Personal Use. Can It Boost the Stock? - Barron's",
+      "source": "Barron's",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA2MzJWSHdsVWJCaTRyemlDN25MRUpjeC0wNXNPUW1QQ2NXanN5NmI3dzdPbkhsYXd0SHROal91bU5wNUxIUm1aR002cHhNTkFKNWRmTk9MZFNNRFVOTXJoRkRvMjJRSTdXd3hSYmw3ZU15UVRNTkRQNTBhMDE?oc=5",
+      "snippet": "Tesla Starts Selling Cybercabs for Personal Use. Can It Boost the Stock? Barron's",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Tesla Starts Selling Cybercabs for Personal Use. Can It Boost the Stock?",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-26",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T22:48:02Z",
+      "title": "Elon Musk's Tesla and SpaceX Lost More Than $420 Billion in Combined Market Value in Two Days After Democrats Swept the Midterms, With Investors Fearing New Congressional Probes. Here's Why That Political Risk Matters for Shareholders - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOS0thRUx6eUphUHZrRXRYYWxQVnlUenk5eDg4WEd6bkFvYW9rYWFkSy1iRVZ1Y0pscGRlUUh4TmxSQXVXYUpJelA4OGs0T2FxSDA1UEROSGxCanU3VVVfejJZLXJQNkd1WkZkajA3VWlpb1VpbU9XSEdhclF5WXBLdkpVNk9oUkdlUndqSDc4NHRWMFRUb1U5aQ?oc=5",
+      "snippet": "Elon Musk's Tesla and SpaceX Lost More Than $420 Billion in Combined Market Value in Two Days After Democrats Swept the Midterms, With Investors Fearing New Congressional Probes. Here's Why That Political Risk Matters for Shareholders Yahoo Finance",
+      "topics": [
+        "SpaceX",
+        "Governance"
+      ],
+      "summary": "Elon Musk's Tesla and SpaceX Lost More Than $420 Billion in Combined Market Value in Two Days After Democrats Swept the Midterms, With Investors Fearing New Congressional Probes. Here's Why That Political Risk Matters for Shareholders Yahoo Finance",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-30",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T20:04:44Z",
+      "title": "Tesla opens Cybercab preorders ‘for personal use,’ with geo restrictions and a $299 monthly fee - TechCrunch",
+      "source": "TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPb3UyZjZ1cldRQm96REJfQ2QyeTB2MnJ0cEFNM0xBR0x5SjBWRVVYZ0Foc1BQUGRZcDZpUDc0b2FsSnZvZDRjQ3c3UVpzMVVnVVNWZTlvNGZ2LUtRa191dDVYQXN1Y0JCNURBYWNZakx0ZzI0OHdhSzdhdXhZYXNYbUxHdG8tVmIzcHlzaklfaU1WTkhvTVJONnlsczdUMjFOUjBsa1FGSGZaZVNCUkFXVTNJRWMtcjFMdV9xNTlQSjA2cGZGU1E?oc=5",
+      "snippet": "Tesla opens Cybercab preorders ‘for personal use,’ with geo restrictions and a $299 monthly fee TechCrunch",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Tesla opens Cybercab preorders ‘for personal use,’ with geo restrictions and a $299 monthly fee TechCrunch",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-20",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T19:07:28Z",
+      "title": "Tesla (TSLA) Breaks Ground On $10 Billion Texas Solar Factory As EU Approvals Advance - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMlV5RTN0QzFLN2xXWXl6cUxIbDEyVlQ5M0FMeWJnQ2tFLTdlMFR6anB5OUVLSVVPUmpwMC16UzhrOG84NFFlWW9ZWmViYWhkaW9uS2RKZmNfUUd3RXpNTHoyR2F0MmlCWUxQQ3JMVUVmYTh2bmloWDhwTFhJRHp1ZjE1dVVFSHBsV2YxdA?oc=5",
+      "snippet": "Tesla (TSLA) Breaks Ground On $10 Billion Texas Solar Factory As EU Approvals Advance Yahoo Finance",
+      "topics": [],
+      "summary": "Tesla (TSLA) Breaks Ground On $10 Billion Texas Solar Factory As EU Approvals Advance Yahoo Finance",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-29",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T15:29:51Z",
+      "title": "Here’s Why Tesla (TSLA) Is One of the Top High P/E Stocks Under the 200-Day SMA - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcGI0RWxDUDA3M1oxWGRIdllfdXNKV0lqTnA2OFBqcm9mRGw3V29CYzRNUVE4ZjhhZktDUE5SWHBoSzlYUDB6c25FR0ZkMkhLRjBpb0pndEhEOGJIWVVKNkxhVDRCbFdwMlJiSG5SQUlfbUdrbUNkeHRhNTlUSmxmcnRnekY5VjVUaF9acGp4WHA?oc=5",
+      "snippet": "Here’s Why Tesla (TSLA) Is One of the Top High P/E Stocks Under the 200-Day SMA Yahoo Finance",
+      "topics": [],
+      "summary": "Here’s Why Tesla (TSLA) Is One of the Top High P/E Stocks Under the 200-Day SMA Yahoo Finance",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-16",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T15:02:00Z",
+      "title": "Tesla Opens Sales of Autonomous Cybercab for ‘Select’ Customers - WSJ",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMThvUmpYTW5TY3k5M3dGODhWa0RtOS1XY1ZHMVBBMEl0eU5UTVBLbWNZLVRTeFhBWnQzMjRMSF8zNV9oMWRUbzRhN0tieHJkblRyc0lZdnJQYmJ1aThMUGptc3VqbU1Fc0VqUldRUUptODA5VU5uZHhoS0FRS240MlB3MVpLRTE4d3cwODBMdndrS19GYkJEbExXSHZ6SVdOcjhuMkR5ek0?oc=5",
+      "snippet": "Tesla Opens Sales of Autonomous Cybercab for ‘Select’ Customers WSJ",
+      "topics": [
+        "Robotaxi",
+        "Deliveries"
+      ],
+      "summary": "Tesla Opens Sales of Autonomous Cybercab for ‘Select’ Customers WSJ",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-19",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:02:12Z",
+      "title": "Tesla invites select customers to buy Cybercab for personal use - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWE9RSGUwWDAzVms5ZGZVZlpvTFhDUno1ay0tOTVIT1VNbjBWVkhsdzRTRWtaSWhjeF9mUFlsNTVQLTVPVEt1RGVlZzFDcDJZU0lQdTQwREtrOTkxanBwSnhMcTBNYzV4UHlacWZXZUpMTVNvMEYtMm5lWDR4UFVOZUJHcXV6TmJ0R2NrelM0Q1Y1OVVCbUNlT3dLdnUwZnZvSzhnWk1lVDlzLXhBVnBqMFZJdDVtaFVrOWl5bUtYbw?oc=5",
+      "snippet": "Tesla invites select customers to buy Cybercab for personal use Reuters",
+      "topics": [
+        "Robotaxi"
+      ],
+      "summary": "Tesla invites select customers to buy Cybercab for personal use Reuters",
+      "summaryFallback": true
+    },
+    {
+      "id": "media-11",
+      "type": "media",
+      "date": "2026-11-13",
+      "datetime": "2026-11-13T15:21:00Z",
+      "title": "SpaceX and Tesla merger talks advance as December announcement considered - Yahoo Finance",
+      "source": "Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWmZFSjFzZktEbTljU2N5Q01NTE10cEh4ZVMwTWJMaUo0MlhsT3VHd0l0a09zN0V5YlJlM0ZvMDVVWkQ1bzhQSkk0OFpYMmNSb21iNzRudFVaa3gtYjNIY1VzdnZJWjdJS0xORVRIbld2bWprUVFHT25BcGtXamVUeXRlQmQxMnEzbUljLTFTWHpCRjRJMGktOFBOazZnSXM?oc=5",
+      "snippet": "SpaceX and Tesla merger talks advance as December announcement considered Yahoo Finance",
+      "topics": [
+        "SpaceX"
+      ],
+      "summary": "SpaceX and Tesla merger talks advance as December announcement considered Yahoo Finance",
       "summaryFallback": true
     },
     {
@@ -297,139 +612,6 @@
       "title": "DEFA14A — additional proxy materials (digital ads for the 3 Dec annual meeting)",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926124575/tm267596d11_defa14a.htm",
       "summary": "Tesla filed the digital and social-media advertisements it ran on 9 November 2026 urging shareholders to vote at the 2026 annual meeting. The filing repeats that directors Elon Musk, Robyn Denholm, JB Straubel and the rest of the board are participants in the proxy solicitation."
-    },
-    {
-      "id": "media-40",
-      "type": "media",
-      "date": "2026-11-09",
-      "datetime": "2026-11-09T18:31:59Z",
-      "title": "Tesla Soars 5% as Robotaxi Reaches San Antonio and Cybertruck Order Rate “Far Exceeds” Production - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb01ScjNubENJdjBiYW9BU005QTNrNjdqd3NWTW5iOVowVEJCNno0TGhET3ptSGtUcmJmV3hDeFZHYWZEVU5HdHF6TmtUX3pjOGFXZnppc0VGX3lQd2lqUFY3R0h4ZFZWZl9aT0ZfdFZMU2FxUmxydUlIUUYydlhreHNFUE9yVW9uN3oydU81anllVm4tNWF2QU14WQ?oc=5",
-      "snippet": "Tesla Soars 5% as Robotaxi Reaches San Antonio and Cybertruck Order Rate “Far Exceeds” Production Yahoo Finance",
-      "topics": [
-        "Robotaxi",
-        "Cybertruck"
-      ],
-      "summary": "Tesla Soars 5% as Robotaxi Reaches San Antonio and Cybertruck Order Rate “Far Exceeds” Production Yahoo Finance",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-13",
-      "type": "media",
-      "date": "2026-11-09",
-      "datetime": "2026-11-09T17:57:24Z",
-      "title": "Why is Tesla stock surging today - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOV3N3VFJ1cy1rSG1RM0oxM25YQmVub3B1OG9mSVluWEFiUzFjOTBQODFKNnVWYnNvVTAzckc5d3ZIMHpRU05rVGgwdnhlMlRnM2hMc0J5bVZCYkNUVkJMVjZoYlZ1Z1k4d3ZjOWREX01NbmtVNXd0YzdfMzk5Yk9qS0gwd3BPcE92RWthX3hyVFNxRjh5QnV3UW93?oc=5",
-      "snippet": "Why is Tesla stock surging today Yahoo Finance",
-      "topics": [],
-      "summary": "Why is Tesla stock surging today Yahoo Finance",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-17",
-      "type": "media",
-      "date": "2026-11-09",
-      "datetime": "2026-11-09T16:26:04Z",
-      "title": "Musk says Tesla on the hook for Cybertruck deposits after cancellation - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNHdjbEdIODhiQTU5OG1xV0pQd0ZQSW44di1EWEZGcmduQXZSX3lxRkY4dFBJTmtHOWx6N0pHUE03dUlfN2ZFT0VmcERQTS1oZTNkYWV1bzh4VjN4V254OGFSTEV0akYzdjRTVEVHbFB2N1RxczgwWWItdkh4X0tOOWpNVEF0TGZlZ0o4VDU0d1Jsc0FKbXd0c3BKdlpia29MRTJNNms0bnk2anpJcU5TRFlveGdwNnVuQ0M0YTJha291RnFNb2xuV1pJbGE1cmc?oc=5",
-      "snippet": "Musk says Tesla on the hook for Cybertruck deposits after cancellation Yahoo Finance",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Musk says Tesla on the hook for Cybertruck deposits after cancellation Yahoo Finance",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-16",
-      "type": "media",
-      "date": "2026-11-09",
-      "datetime": "2026-11-09T07:41:18Z",
-      "title": "Tesla to refund many Cybertruck deposits as demand exceeds production, Musk says - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdmxXd1NfTG9yQmRhOEhTQ3FqcE9pRjVMNmF3bjBRSjJnLVgzWTlVOGo1SjVUMGQ4NjVoMDkwZENLb0pQUmlmYjZ2NVJIQkZ2dGVON2N4SUt0MlhPVHpaVl82SFU3QVJ4aVJ3bWNtdE5zcEdzVkZYWDdnblg1YXVRdnZGTkw5X0lQbmYwYjFteklUZ1dKR3RDbndXSEJVX24yVmFlVk9WOU1GVlBvT0sxRlJGSlZiS3MyS1J5cHRFN1ZXbmdIcFEyYU9LUHo4MDNGSGdZbGVn?oc=5",
-      "snippet": "Tesla to refund many Cybertruck deposits as demand exceeds production, Musk says Reuters",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla to refund many Cybertruck deposits as demand exceeds production, Musk says Reuters",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-19",
-      "type": "media",
-      "date": "2026-11-08",
-      "datetime": "2026-11-08T23:20:00Z",
-      "title": "Here's What a $1,000 Investment in Tesla Stock Could Be Worth in 5 Years - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOeWJLMmpmRGxSWlZEVUlHa1lWTWV0YnllTEdnVUhEMmVEazdwczd4QlVFSTVtX25ja09tRW13bFNlT2owaVF0MUZrUmN0OHNST2dPTGxnX0RRbUVXSzBaV1dvTkk2REZZQTdZTTF6RDlPX3dkZFV5TklDdTZqdWUzclBLYkx3c3gwZHRkRk1fSU5WRkdkVDItQQ?oc=5",
-      "snippet": "Here's What a $1,000 Investment in Tesla Stock Could Be Worth in 5 Years Yahoo Finance",
-      "topics": [],
-      "summary": "Here's What a $1,000 Investment in Tesla Stock Could Be Worth in 5 Years Yahoo Finance",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-15",
-      "type": "media",
-      "date": "2026-11-08",
-      "datetime": "2026-11-08T17:40:38Z",
-      "title": "The Sudden Demise of the Cybertruck, a Culture War on Wheels - The New York Times",
-      "source": "The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBQNzhsUk9VMGxqSXoxRUJqbURmWjdsbmlPYjZWOTV2Y05hdnlaYTBiMjJoS2tZT1VDUER0TUVSYUtaN3J6bng1UkQ5c1Z0QmM0WGpsaUdzT1RoTDVxdmVsT2g3UEthYW5ueDRFRzhFZFY3UWVQaWt3d2FZUQ?oc=5",
-      "snippet": "The Sudden Demise of the Cybertruck, a Culture War on Wheels The New York Times",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "The Sudden Demise of the Cybertruck, a Culture War on Wheels The New York Times",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-18",
-      "type": "media",
-      "date": "2026-11-07",
-      "datetime": "2026-11-07T22:45:57Z",
-      "title": "Tesla to add Cybertruck shift to clear orders before dismantling line next year - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRUhMT1JwanVVTTN4eGhvcXBNTHo3UV80QXFDU2hMWTRuUGppME9ab3RkNVkwZnFOWXh6VEZ5WUNHaHcwclAtOEZFb09CLWwteW5pN0JMY1lydFVhbzV2OVE4a0FqY1lJRGhIeEN6SVNnSTBfTTBuZm5GeGJFYjdMMUVTVFVFcGNlQ2x0RnF0allhVDV5MlQ4MlV6b1luV21tOVdNQTBzNG1RaHJBU3IxSlBGV25fRm5KTUEza0I4M2xRYnZwZFVIR29vMEY0bXBBaGMtWGJNOEw2Z1VjVXc?oc=5",
-      "snippet": "Tesla to add Cybertruck shift to clear orders before dismantling line next year Reuters",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla to add Cybertruck shift to clear orders before dismantling line next year Reuters",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-4",
-      "type": "media",
-      "date": "2026-11-07",
-      "datetime": "2026-11-07T00:01:00Z",
-      "title": "Tesla halts Cybertruck production | CNN Business - CNN",
-      "source": "CNN",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeGJXXzdJZkdWU0pjaTYtdjdaU3htUHpoQTZJYXAyampTZElvWGctWEp1UGhrZHQ1bWhEWElPWWFkOXVZUlo0LXRRY084cEg5NnQtMjgtME5pdGs4eVBCM0pOMF93dzl6SXNWcU1zUkN4Qjc2SXp0U1JmWUhLMlRiajhMY1dUa0Fhb0NTaGJNTG5jbHVBRHc?oc=5",
-      "snippet": "Tesla halts Cybertruck production | CNN Business CNN",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla halts Cybertruck production | CNN Business CNN",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-12",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T23:11:31Z",
-      "title": "Tesla to pull the plug on Cybertruck after years of poor sales - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNWnlMcV9XTE94RnhqbWNmQ1B5Y01Gd0tReURLRG5nc1VOVlBQR1RwazRSdXF0azlhbS1nTmJ5M0MxZUxMMUQxM1pxRHVjN1VVQWM5OGtOOGdWU1Fwa0llb0hxTXVHX05rV3JoRTR3eWwtTkNseGQ2eW5hcTcxUmQ5YnRYUVNwaGdwaDlhelZ5dmJoOVZhaGU1N1Fkb1RTUDFMY1lCUzlMcG9SYUNDcUlMeHBBYXBWQmM2QUloLWh5QkNuOGRvMTRVSml0dmxEN2lqaU1va09iQ0o?oc=5",
-      "snippet": "Tesla to pull the plug on Cybertruck after years of poor sales Reuters",
-      "topics": [
-        "Deliveries",
-        "Cybertruck"
-      ],
-      "summary": "Tesla to pull the plug on Cybertruck after years of poor sales Reuters",
-      "summaryFallback": true
     },
     {
       "id": "pr-votetesla-letter-2026-11-06",
@@ -460,186 +642,6 @@
       "title": "DEFA14A — shareholder letter and VoteTesla.com update",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926123945/tm267596d10_defa14a.htm",
       "summary": "This filing contains the Board’s 6 November letter (“Act Like the Owner You Are. Vote.”) and the updated VoteTesla.com pages. It asks holders to back all three ballot items and highlights the Voluntary Retail Voting Program."
-    },
-    {
-      "id": "media-2",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T20:40:00Z",
-      "title": "Tesla, Inc. | History, Cars, Elon Musk, & Headquarters - Britannica",
-      "source": "Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DYzB5d29UTWVKVDdpTnNETGVGbGozWUk5aU9WckoxQW5KNWdhdS1WcG9XcnV2TzBRWlQta3M3d19TTWZUalVOSnVFajZ0YlhNbXZnYjBsaU0?oc=5",
-      "snippet": "Tesla, Inc. | History, Cars, Elon Musk, & Headquarters Britannica",
-      "topics": [],
-      "summary": "Tesla, Inc. | History, Cars, Elon Musk, & Headquarters Britannica",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-8",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T17:13:45Z",
-      "title": "Tesla Is Ending Production of Its Cybertruck and Refocusing on the Cybercab - The New York Times",
-      "source": "The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOT3BET3ZQajVOVnRXaEdyMTZydUZQYTNWN2Z5TG5GczZ2SzdPYkRTcDFPWURnN3RfM21KZGNlMl9odXVBNlVGamxianpvTGZXa25jZ05uc3M0bTR3VkJBbFp0c1ZQUEY5b2l2MHFFV3hsSXRkb3dNQ1Q3WEEyMVRadnBR?oc=5",
-      "snippet": "Tesla Is Ending Production of Its Cybertruck and Refocusing on the Cybercab The New York Times",
-      "topics": [
-        "Robotaxi",
-        "Cybertruck"
-      ],
-      "summary": "Tesla Is Ending Production of Its Cybertruck and Refocusing on the Cybercab The New York Times",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-11",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T15:56:00Z",
-      "title": "Musk Called It Tesla’s ‘Best Product Ever.’ Now the Cybertruck Is Being Scrapped. - WSJ",
-      "source": "WSJ",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTHpMa2lsQWt4MmYySXFrVk5TRTBleFg2akdjT0RhN215TkMwVkFnRm9yeHhBQ3NiZkdKQWV1dENHR19vTzVNYWpIS1dGdDU0dGNSanVmT1BROW9lLTIxMy1wVUJmTTFGNGh0d1JCYTI3VGhfT2dNT1RMVkp4cVJGZnY3RERwOVNOcmlrWjlfTVFxZ3dTNlVqMkxjdDhxMGZ0OVduTlplV2loX0xXZklrclVMNVpzOS02MDlQQQ?oc=5",
-      "snippet": "Musk Called It Tesla’s ‘Best Product Ever.’ Now the Cybertruck Is Being Scrapped. WSJ",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Musk Called It Tesla’s ‘Best Product Ever.’ Now the Cybertruck Is Being Scrapped. WSJ",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-37",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T14:41:48Z",
-      "title": "What Can Make Tesla Stock A Buy? - Yahoo Finance",
-      "source": "Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOGdIQks1cFRBX1NZWm81cURiZ0FrMlFBeTFjQWV2SFBJNUpOUUhLU0p1clFTWVZwSUJFY3lucnlsRlNuZlF6Z21Fc3llVnRWaFVSSV9keTVEckVtb3YwaHZlV0RZalp0MkV4cm04NUpfYVNQeWtiX2xXcXhZYnhiQXVBOVc5LU0?oc=5",
-      "snippet": "What Can Make Tesla Stock A Buy? Yahoo Finance",
-      "topics": [],
-      "summary": "What Can Make Tesla Stock A Buy? Yahoo Finance",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-14",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T14:24:53Z",
-      "title": "Tesla set to wind down production of Cybertruck | CNN Business - CNN",
-      "source": "CNN",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbWtnUlF4Z3VoWFhsY3ZDZmNmQi1IUHIyMTBwZFZZZVN2Mkl2dmtaZ1g3NGV3c0VGRlJkc2F2VjJaWFRrVHVFVXR1NXJ0Q0JjSHQ2Q3lVNkFvNFpaSk5pMXhBUm1TVlN2MS1QX0tZWHFjUEVwVUlZMXpteFhBVUxkV3pfSTBtdHBNenJr?oc=5",
-      "snippet": "Tesla set to wind down production of Cybertruck | CNN Business CNN",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla set to wind down production of Cybertruck | CNN Business CNN",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-32",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T14:08:38Z",
-      "title": "Tesla Will Kill the Cybertruck in 2027 - Car and Driver",
-      "source": "Car and Driver",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nUTA5ZGlpRjh2ZmpjZkhFOHN3X0FOZHl6QkZmWlpael8zaTZ2aGkxclg3ZzBDWFhZQXJ5Zi16bk81bTFVZnVYb1RkeDFYWENtVzNNLS1yaWxaOEhJckxlWktkSFlLNkNPWDY2aXRtb1BmRnEy?oc=5",
-      "snippet": "Tesla Will Kill the Cybertruck in 2027 Car and Driver",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla Will Kill the Cybertruck in 2027 Car and Driver",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-10",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T13:36:41Z",
-      "title": "Tesla to wind down Cybertruck production after years of poor sales in few markets - NBC News",
-      "source": "NBC News",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSG1oeC1rMEhSa295Y2lsOEx4bVJITmY3UEJRcWpBRE5SNHMxWWtyN0thOVZxdmI4QzNWYlJhenlOYVJQRVppb1IxR2lEbmxQNlhFOXNNTFVidjdCNEx5Rl9xTmZTUlVydDJSa1ZUVFNMdjU4Uk8wbWlOWUxhYlE2SEZEdUYzUGZTbzZFUngzMjVzaXlhN21DSFgxOHpnd3FwY2J1Smx2Ymdfb0k?oc=5",
-      "snippet": "Tesla to wind down Cybertruck production after years of poor sales in few markets NBC News",
-      "topics": [
-        "Deliveries",
-        "Cybertruck"
-      ],
-      "summary": "Tesla to wind down Cybertruck production after years of poor sales in few markets NBC News",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-7",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T13:12:36Z",
-      "title": "Tesla to wind down Cybertruck production in Texas next year to ramp Cybercab, Musk says - CNBC",
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5MOHpuVjVYejRkd2VlX2hvWGF0RDMxYUNzTGcxaTFadzNJT1c0Y19idmNzSl9nNDFFZnUzaWh4VFU4VkNqSWJOR3EzWk91MWhUdGxhamVWaEkxd1lOYVB3QnVOV1l5V0RCcXRndVQ3bE5DUQ?oc=5",
-      "snippet": "Tesla to wind down Cybertruck production in Texas next year to ramp Cybercab, Musk says CNBC",
-      "topics": [
-        "Robotaxi",
-        "Cybertruck"
-      ],
-      "summary": "Tesla to wind down Cybertruck production in Texas next year to ramp Cybercab, Musk says CNBC",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-26",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T12:38:00Z",
-      "title": "Tesla to wind down Cybertruck production as Elon Musk focuses on robotics and AI - The Guardian",
-      "source": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOckp5MHVCMWRzVEZIQlVUZjc5QjVOZEpHNHBPY0VCbGtocXRtMXJXcDJyRTBSYVI5OVJ0eWM2LVFha0FsOGJSVV9PdHNmR252NU5NYTRmQWE0eE5yVHdnaDJXVDVvZDhmdExmMnVUalNTeVpURXIxZ2tpdVd6SXNfamN5djF2Q3JhclJReUFSLXlsWXFIbUhCSGFNM2hONzhxYXRSakxQeFlySGZYYnN1OFFDMDJRS3czVUpqZlRIN0w4S2JxTC1mRU9hZw?oc=5",
-      "snippet": "Tesla to wind down Cybertruck production as Elon Musk focuses on robotics and AI The Guardian",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla to wind down Cybertruck production as Elon Musk focuses on robotics and AI The Guardian",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-21",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T12:31:00Z",
-      "title": "Tesla’s Polarizing Cybertruck to Wind Down Production Amid Slow Sales - WSJ",
-      "source": "WSJ",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNd0Jtd1JvNWI2RUJHUlA0MVd4Q2RWdUFrelplWVVDNVBkei13Zk9najBrWDY2aHpUY3lYN1J4d21LczZSLTllR1k0Qk16eEtKVklKa01NU3JSeHdzTzBOUWV5aTlnNHBJOXhvWGZTT2R5TjFlUl92M3NvQ2lMaEJGOGhJaG1CQWtyUVZVenVBQ1NQOHVabDFZWUxnOWJDUQ?oc=5",
-      "snippet": "Tesla’s Polarizing Cybertruck to Wind Down Production Amid Slow Sales WSJ",
-      "topics": [
-        "Deliveries",
-        "Cybertruck"
-      ],
-      "summary": "Tesla’s Polarizing Cybertruck to Wind Down Production Amid Slow Sales WSJ",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-36",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T11:50:10Z",
-      "title": "Tesla will stop making the Cybertruck in 2027 - TechCrunch",
-      "source": "TechCrunch",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMTh2YnNUSVpBMFg3eVZ1ckpLR1Zzbk1MTVp3dVhVYjRwZW9EUWlvSUV2amVvdy1hSGFvRDZ3dURmY2NXX1BmaVBMdUpkWFJOdUo3NXBGdzN3dURGUlo2YXJXWUF4QmNyUFRDbDdmc0JqWXBhZkxDcHZrc3MxcG1jMkhZZUg4VDA?oc=5",
-      "snippet": "Tesla will stop making the Cybertruck in 2027 TechCrunch",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla will stop making the Cybertruck in 2027 TechCrunch",
-      "summaryFallback": true
-    },
-    {
-      "id": "media-38",
-      "type": "media",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T09:44:18Z",
-      "title": "Tesla to axe Cybertruck as Musk shifts focus to robotics and AI - Financial Times",
-      "source": "Financial Times",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVlVaZU1LeDhwOFdtY2ltb2ZHRV9mSHdENXZDYm83Nl92dUF2UWpJSU5TbWVzV2RvNXVBNGV4bkVIYmpMNE1LclE4ampWYXRnWkpuUVhrdS1VVE5tcFptakxSYzNGMWpqTkY0Z3BzVFk1WldlenFVcWJhU09WcWlwTUQ0MFY?oc=5",
-      "snippet": "Tesla to axe Cybertruck as Musk shifts focus to robotics and AI Financial Times",
-      "topics": [
-        "Cybertruck"
-      ],
-      "summary": "Tesla to axe Cybertruck as Musk shifts focus to robotics and AI Financial Times",
-      "summaryFallback": true
     },
     {
       "id": "filing-0001104659-26-121458",
