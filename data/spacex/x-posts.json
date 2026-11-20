@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T17:52:21+01:00",
+  "updated": "2026-11-20T18:52:15+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 20 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -41,6 +41,65 @@
   ],
   "posts": [
     {
+      "id": "2123827993382687217",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-20T17:17:07.000Z",
+      "text": "Made with Grok @Bot\nhttps://t.co/b1rXfw9h4K",
+      "url": "https://x.com/elonmusk/status/2123827993382687217",
+      "metrics": {
+        "likes": 1375,
+        "reposts": 533,
+        "replies": 498,
+        "quotes": 70,
+        "bookmarks": 144,
+        "impressions": 643999
+      },
+      "summary": "Elon Musk posted “Made with Grok @Bot,” linking to a YouTube video titled “What can you create with Grok Bots using Grok Imagine?” from the Grok Bot Tips channel, a song about people putting their name on AI-generated work. The post went out at 18:17 CET on 20 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123825853008122336",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-20T17:08:36.000Z",
+      "text": "Separation confirmed! Dragon is performing four departure burns to move away from the @Space_Station. Splashdown in ~29 hours off the coast of California",
+      "url": "https://x.com/SpaceX/status/2123825853008122336",
+      "metrics": {
+        "likes": 1581,
+        "reposts": 143,
+        "replies": 56,
+        "quotes": 16,
+        "bookmarks": 24,
+        "impressions": 109226
+      },
+      "summary": "SpaceX confirmed separation and said Dragon is performing four departure burns to move away from the International Space Station, with splashdown in about 29 hours off the coast of California. The post went out at 18:08 CET on 20 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2123821137490493806",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-20T16:49:52.000Z",
+      "text": "All cargo is loaded, the hatch is closed, and Dragon is ready for an on-time departure from the @Space_Station at 12:05 p.m. ET",
+      "url": "https://x.com/SpaceX/status/2123821137490493806",
+      "metrics": {
+        "likes": 2822,
+        "reposts": 216,
+        "replies": 86,
+        "quotes": 14,
+        "bookmarks": 36,
+        "impressions": 146970
+      },
+      "summary": "SpaceX said all cargo is loaded, the hatch is closed, and Dragon is ready for an on-time departure from the International Space Station at 12:05 p.m. ET. The post went out at 17:49 CET on 20 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
+    {
       "id": "2123816520002482305",
       "username": "elonmusk",
       "name": "Elon Musk",
@@ -79,6 +138,27 @@
       "summary": "SpaceX posted photos of members of the Starship production team with Starship 42 before its launch. The post went out at 17:03 CET on 20 November 2026.",
       "topics": [
         "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123808714566373703",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-20T16:00:30.000Z",
+      "text": "@cb_doge ?\n\nWe aren’t serving open source models",
+      "url": "https://x.com/elonmusk/status/2123808714566373703",
+      "metrics": {
+        "likes": 5030,
+        "reposts": 442,
+        "replies": 302,
+        "quotes": 40,
+        "bookmarks": 154,
+        "impressions": 317433
+      },
+      "summary": "Elon Musk replied to a post that cited CNBC as saying SpaceX’s Cursor is considering phasing out Chinese AI models amid a congressional probe, writing “?” and “We aren’t serving open source models.” The reply went out at 17:00 CET on 20 November 2026.",
+      "topics": [
+        "Cursor"
       ],
       "highlight": true
     },
