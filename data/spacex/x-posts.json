@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T07:59:17+01:00",
+  "updated": "2026-11-20T08:52:42+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 20 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,25 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2123616621906596273",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-20T03:17:12.000Z",
+      "text": "@fermatslibrary Better to build colonies on a substrate, like the Moon or Mars, but this will be one of the later approaches",
+      "url": "https://x.com/elonmusk/status/2123616621906596273",
+      "metrics": {
+        "likes": 4531,
+        "reposts": 484,
+        "replies": 479,
+        "quotes": 47,
+        "bookmarks": 180,
+        "impressions": 137555
+      },
+      "summary": "Elon Musk replied to Fermat’s Library, which had described Gerard O’Neill’s idea of giant rotating space colonies built after the Moon landings, writing that it is “Better to build colonies on a substrate, like the Moon or Mars, but this will be one of the later approaches.” The post went out at 04:17 CET on 20 November 2026.",
+      "topics": [],
+      "highlight": true
+    },
     {
       "id": "2123559561982542084",
       "username": "Starlink",
