@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T11:53:00Z",
+  "updated": "2026-11-21T13:52:55Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -21,6 +21,20 @@
     }
   },
   "items": [
+    {
+      "id": "media-39",
+      "type": "media",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T11:30:00Z",
+      "title": "Prediction: Where Will SpaceX Stock Be in 2030 Now That Flight 15 Has Launched? - The Motley Fool",
+      "source": "The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSHZybTFiUTBEXzBGLUlVTldLV2dBSmlraWtoRVJrU1A2eGNaOEV1VjJBdnBad19nNnFjR0l1blNGVVZORmI3TG1DM2pMNmw4SmJwUnJ2XzdDaGtQSVFKMjE5dmJCaGRtczBmX2lqZlRaS0tnMVd0N29ISUlSdzNmYkRZSHQzT1MyVGVTcjZFZ3N1M2tjQzZR?oc=5",
+      "snippet": "Prediction: Where Will SpaceX Stock Be in 2030 Now That Flight 15 Has Launched? The Motley Fool",
+      "topics": [
+        "Launch"
+      ],
+      "summary": "A Motley Fool article by Rick Orford, published at 6:30 a.m. ET on 21 November 2026 and listed in Google News at 12:30 CET that day, says Flight 15 caught Starship’s upper stage for the first time on 14 November but lost the Super Heavy booster after an aborted catch in the Gulf. It sketches three 2030 valuation scenarios from today’s about 61 times sales: a conservative $96 (50% annual sales growth at 8 times sales, about 33% below the last close), a base $210 (65% growth at 12 times, about 46% above), and an optimistic $372 (80% growth at 15 times, about 159% above)."
+    },
     {
       "id": "pr-ussf317",
       "type": "press",
@@ -48,19 +62,7 @@
       "summary": "An Ars Technica article by Eric Berger, listed in Google News at 23:16 CET on 20 November 2026, reports that Rep. Jim Himes (D-Conn.), expected to chair the House Intelligence Committee in January, has threatened to withhold support for funding government-owned systems from SpaceX over Starshield disruptions in Ukraine. In a Friday letter to Elon Musk first reported by CNN, Himes asked SpaceX to explain the October 2026 Starshield changes and whether they were made unilaterally or directed by a U.S. official, writing that a “potentially unilateral modification of a U.S. Government contract, combined with its lack of responsiveness to congressional oversight, calls into question every contract the U.S. Government has with SpaceX.”"
     },
     {
-      "id": "media-40",
-      "type": "media",
-      "date": "2026-11-20",
-      "datetime": "2026-11-20T21:25:00Z",
-      "title": "SpaceX Sells $32 Bil Of Debt For AI Chips. But Yields, Orbital Deployment Raise Concerns. - Investor's Business Daily",
-      "source": "Investor's Business Daily",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdnpWWjMyRktmbkp0QXYyWnBRNnJDU0hOZXoxeG9oQmw4QUFDVll5WnVQbklIZzFTdXZyeFFXdE5PWjdzcU1NLUhjSExHWHRwSXNXb1FyX0cwcEFQal9OUm4zUG96SFZtZzN4UlpFdjQwYlgwWmJPOWNBQi1aaEkzRjgyVFhxdkRHazRoX0Q4SkRoRHhqUzNqQVlPamFTYW1tem9TT0l5LVhhMWE2SjhWUEZkdTlYS0ttYkd5dQ?oc=5",
-      "snippet": "SpaceX Sells $32 Bil Of Debt For AI Chips. But Yields, Orbital Deployment Raise Concerns. Investor's Business Daily",
-      "topics": [],
-      "summary": "An Investor’s Business Daily article by Harrison Miller, listed in Google News at 22:25 CET on 20 November 2026, says SpaceX on Thursday sold $32 billion of bonds to help fund artificial intelligence chips and related equipment, at a considerably higher interest rate than typical high-grade corporate bonds. The rest of the IBD page was paywalled here; the visible lede and IBD’s own listing add that concerns have been raised over the high yields and orbital data-center deployments, and that SPCX stock and neocloud players retreated Friday as the broader market continued its slide following Anthropic’s IPO on Thursday."
-    },
-    {
-      "id": "media-29",
+      "id": "media-33",
       "type": "media",
       "date": "2026-11-20",
       "datetime": "2026-11-20T20:57:27Z",
@@ -72,7 +74,7 @@
       "summary": "The Reuters article itself returned 401 here; this summary is from the Reuters-bylined write-up carried by Investing.com and CNA, listed in Google News at 21:57 CET on 20 November 2026. It says Apollo and Goldman Sachs priced about $44 billion of senior and subordinated notes to fund GPUs and related equipment for SpaceX, which the firms called the largest GPU financing to date, an oversubscribed and upsized deal expected to finance Nvidia Vera Rubin chips for SpaceX’s terrestrial compute buildout, with leases starting when the equipment is delivered in the first half of 2027 and anchor commitments from BlackRock, Goldman Sachs Asset Management and KKR-advised accounts."
     },
     {
-      "id": "media-39",
+      "id": "media-38",
       "type": "media",
       "date": "2026-11-20",
       "datetime": "2026-11-20T16:35:00Z",
@@ -184,7 +186,7 @@
       "summary": "A Motley Fool article by Johnny Rice, published at 1:58 p.m. ET on 19 November 2026 and listed in Google News at 19:58 CET that day, says SPCX was down 4% as of 1:50 p.m. ET that Thursday after Anthropic’s IPO failed to keep a morning tech rally going, with the S&P 500 and Nasdaq down about 1.3% and 1.5%. It notes Anthropic opened 34% above its offer price and briefly touched a $2 trillion fully diluted valuation, exceeding SpaceX’s, then slipped to around $97, and says Anthropic’s IPO filing showed a commitment of up to $120.5 billion through 2029 for computing capacity from SpaceX’s AI arm, reaching about $3.1 billion a month once delivered, which ties SpaceX’s results closely to one customer."
     },
     {
-      "id": "media-38",
+      "id": "media-40",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T15:12:35Z",
@@ -248,7 +250,7 @@
       "summary": "A NASA news release by Lauren E. Low, dated 17 November 2026 and updated on 18 and 19 November, listed in Google News at 20:17 CET on 17 November, says NASA will cover the departure of the SpaceX Dragon on the 35th commercial resupply mission, with undocking from Harmony’s space-facing port no earlier than 12:05 p.m. EST on Friday 20 November and live coverage from 11:45 a.m., targeting splashdown off the California coast at about 4:55 p.m. EST (1:55 p.m. PST) on Saturday 21 November, weather permitting. It says the spacecraft arrived on 15 October after a Falcon 9 launch from Cape Canaveral two days earlier with more than 6,300 pounds of cargo, and that thousands of pounds are coming back, including a 3D-bioprinted blood-vessel construct, frozen tumor organoids, microbial samples and a lighting system that spent more than three years on station."
     },
     {
-      "id": "media-32",
+      "id": "media-29",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T18:07:04Z",
@@ -331,7 +333,7 @@
       "summary": "An Economist Science and Technology article, listed in Google News at 12:33 CET on 15 November 2026, says that on 14 November, during Starship’s 15th test flight, SpaceX caught the rocket’s second stage at its launch tower for the first time, having previously caught boosters mid-air but never the upper half. The Economist page itself returned 403 here; the visible opening says that leaves the company on the cusp of building the first fully reusable rocket, which should cut the cost of reaching space further."
     },
     {
-      "id": "media-27",
+      "id": "media-28",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T11:00:00Z",
@@ -371,7 +373,7 @@
       "summary": "An Ars Technica report by Eric Berger, listed in Google News at 01:40 CET on 15 November 2026, describes Starship’s upper stage returning to Starbase on Saturday, flipping from horizontal to vertical as three Raptor engines ignited, and being snagged by the launch-tower arms — a hugely significant step, he writes, toward a massive, rapidly reusable rocket after earlier practice runs into the Indian Ocean. Berger notes SpaceX has now returned both elements of a Starship to the tower as a proof of concept, currently builds an upper stage every three weeks at the South Texas Starfactory (sized for one every three days), and says the heat shield is likely the hardest part of making such landings routine."
     },
     {
-      "id": "media-28",
+      "id": "media-27",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T00:36:33Z",
@@ -610,7 +612,7 @@
       "summary": "Space.com reports that SpaceX is targeting Friday 13 Nov 2026 for Starship Flight 15, in a 75-minute window opening at 5:45 p.m. EST from Starbase, in the first attempt to catch both Super Heavy and Ship at the tower. The mission description quoted in the article also calls for deploying 26 Starlink V3 satellites and a more than 22-hour flight of about 14 orbits at roughly 275 km, longer than Flight 14’s Pacific splashdown."
     },
     {
-      "id": "media-33",
+      "id": "media-32",
       "type": "media",
       "date": "2026-11-09",
       "datetime": "2026-11-09T08:00:00Z",
