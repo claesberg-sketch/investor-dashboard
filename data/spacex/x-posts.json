@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T19:59:17+01:00",
+  "updated": "2026-11-21T20:56:59+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 21 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,71 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124219646459220296",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-21T19:13:24.000Z",
+      "text": "Shortest explanation is just: 🤯 https://t.co/E1RGMMtLLD",
+      "url": "https://x.com/elonmusk/status/2124219646459220296",
+      "metrics": {
+        "likes": 2329,
+        "reposts": 212,
+        "replies": 393,
+        "quotes": 31,
+        "bookmarks": 153,
+        "impressions": 620527
+      },
+      "summary": "Elon Musk wrote “Shortest explanation is just: 🤯,” quoting his own earlier post in which he said a simple explanation of the usefulness of the Riemann proof (so far) is that it removes the conditional nature of other math theorems dependent upon it, and called it “yet another mind-blowing thing achieved by super intelligence.” The quote post went out at 20:13 CET on 21 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124219378489311656",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-21T19:12:20.000Z",
+      "text": "Grok understands https://t.co/Z6CN9wjwAL",
+      "url": "https://x.com/elonmusk/status/2124219378489311656",
+      "metrics": {
+        "likes": 1646,
+        "reposts": 201,
+        "replies": 373,
+        "quotes": 21,
+        "bookmarks": 65,
+        "impressions": 489390
+      },
+      "summary": "Elon Musk wrote “Grok understands,” quoting a Grok post that interpreted his earlier remarks as meaning turning lunar and Mercurian material into optimized compute substrate — silicon solar cells harvesting power plus aluminum radiators dumping waste heat to deep space (~3 K) — starting on the Moon with mass drivers for cheap launches, then scaling inward toward a Dyson-scale Starmind. The quote post went out at 20:12 CET on 21 November 2026.",
+      "topics": [
+        "Grok",
+        "AI compute",
+        "Starmind"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124216528690151543",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-21T19:01:01.000Z",
+      "text": "@willdepue Ilya is fortunately not quite correct about the surface of the Earth being covered by solar panels, although his broader point about solar power being the future is true. \n\nIt is far easier and scales vastly more to generate power and intelligence in space around the Earth and then deep space around the Sun. \n\nSome percentage of the Moon and then probably Mercury next get turned into computronium (silicon PV + aluminum radiators). \n\n(Also, there won’t be starvation, but there will always be war. And the machines won’t care about things as absurdly trivial as your preferred orifice for sex.)",
+      "url": "https://x.com/elonmusk/status/2124216528690151543",
+      "metrics": {
+        "likes": 1866,
+        "reposts": 150,
+        "replies": 268,
+        "quotes": 47,
+        "bookmarks": 185,
+        "impressions": 88396
+      },
+      "summary": "Elon Musk replied to will depue (@willdepue) that Ilya is “fortunately not quite correct about the surface of the Earth being covered by solar panels,” while agreeing that solar power is the future, and wrote that it is far easier and scales vastly more to generate power and intelligence in space around the Earth and then in deep space around the Sun, with some percentage of the Moon and then probably Mercury next turned into computronium (silicon PV + aluminum radiators). The reply went out at 20:01 CET on 21 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124213680422387741",
       "username": "elonmusk",
