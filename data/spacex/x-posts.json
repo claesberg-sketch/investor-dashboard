@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T06:57:26+01:00",
+  "updated": "2026-11-21T08:54:50+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 21 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124043015941767630",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-21T07:31:32.000Z",
+      "text": "True https://t.co/5bkNfRtHqv",
+      "url": "https://x.com/elonmusk/status/2124043015941767630",
+      "metrics": {
+        "likes": 1177,
+        "reposts": 145,
+        "replies": 319,
+        "quotes": 10,
+        "bookmarks": 58,
+        "impressions": 421226
+      },
+      "summary": "Elon Musk wrote “True,” quoting a Seth Dillon post that Grok Bot does the work of an entire team of people and that, if you make good use of it, it is worth much more than anyone is paying for it. The post went out at 08:31 CET on 21 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
     {
       "id": "2123997911696429540",
       "username": "SpaceX",
