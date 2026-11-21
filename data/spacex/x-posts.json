@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-20T18:52:15+01:00",
+  "updated": "2026-11-21T06:57:26+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X API public reads (get_users_posts) on 20 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
+  "source": "X API public reads (get_users_posts) on 21 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
@@ -40,6 +40,153 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2123997911696429540",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T04:32:18.000Z",
+      "text": "Falcon 9’s first stage lands on the Of Course I Still Love You droneship https://t.co/FQ4iXRGZHv",
+      "url": "https://x.com/SpaceX/status/2123997911696429540",
+      "metrics": {
+        "likes": 2168,
+        "reposts": 236,
+        "replies": 102,
+        "quotes": 25,
+        "bookmarks": 60,
+        "impressions": 144898
+      },
+      "summary": "SpaceX posted a video of Falcon 9’s first stage landing on the Of Course I Still Love You droneship, writing “Falcon 9’s first stage lands on the Of Course I Still Love You droneship.” The post went out at 05:32 CET on 21 November 2026, after the USSF-317 launch from California.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123995383625924847",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T04:22:16.000Z",
+      "text": "Liftoff! https://t.co/MliO0n8EfK",
+      "url": "https://x.com/SpaceX/status/2123995383625924847",
+      "metrics": {
+        "likes": 3921,
+        "reposts": 432,
+        "replies": 161,
+        "quotes": 42,
+        "bookmarks": 93,
+        "impressions": 176164
+      },
+      "summary": "SpaceX posted “Liftoff!” with a video of Falcon 9 lifting off. The post went out at 05:22 CET on 21 November 2026, during the USSF-317 launch from Vandenberg.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123991780869943752",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T04:07:57.000Z",
+      "text": "Watch Falcon 9 launch the USSF-317 mission from pad 4E in California https://t.co/QaX7ffl3PM",
+      "url": "https://x.com/SpaceX/status/2123991780869943752",
+      "metrics": {
+        "likes": 7538,
+        "reposts": 990,
+        "replies": 433,
+        "quotes": 92,
+        "bookmarks": 466,
+        "impressions": 209637
+      },
+      "summary": "SpaceX invited viewers to “Watch Falcon 9 launch the USSF-317 mission from pad 4E in California,” linking to a live webcast on X. The post went out at 05:07 CET on 21 November 2026.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123983173038034948",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T03:33:44.000Z",
+      "text": "All systems are looking good, and weather is favorable for liftoff. Propellant load is about to begin for Falcon 9’s launch of the USSF-317 mission from California → https://t.co/LRc4X7tygw https://t.co/4jYQrVJZnt",
+      "url": "https://x.com/SpaceX/status/2123983173038034948",
+      "metrics": {
+        "likes": 2582,
+        "reposts": 236,
+        "replies": 132,
+        "quotes": 26,
+        "bookmarks": 47,
+        "impressions": 212240
+      },
+      "summary": "SpaceX said all systems are looking good and weather is favorable for liftoff, with propellant load about to begin for Falcon 9’s launch of the USSF-317 mission from California, linking to the official launch page and a photo. The post went out at 04:33 CET on 21 November 2026.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123917635058328025",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-20T23:13:19.000Z",
+      "text": "For new and existing residential customers affected by flooding in Brevard County, Starlink service is free through December 20.\n\nThis region is home to our neighbors on the Space Coast, and to Kennedy Space Center and Cape Canaveral, where SpaceX has launched astronauts, research, and spacecraft to orbit.\n\nWe're in contact with local responders and will support them in response and recovery → https://t.co/2AvxdIvAVR",
+      "url": "https://x.com/Starlink/status/2123917635058328025",
+      "metrics": {
+        "likes": 827,
+        "reposts": 128,
+        "replies": 57,
+        "quotes": 30,
+        "bookmarks": 20,
+        "impressions": 135439
+      },
+      "summary": "Starlink said that for new and existing residential customers affected by flooding in Brevard County, Starlink service is free through December 20, noting the region is home to neighbors on the Space Coast and to Kennedy Space Center and Cape Canaveral, and that the company is in contact with local responders and will support them in response and recovery. The post, which linked to a Starlink support article that did not return readable text here, went out at 00:13 CET on 21 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123909382459334804",
+      "username": "Starlink",
+      "name": "Starlink",
+      "created_at": "2026-11-20T22:40:31.000Z",
+      "text": "Starlink is connecting foster homes across 16 countries in Africa and Latin America with @BEB_Global. For the first time, many institutions will have reliable internet, allowing them to digitize records, track cases and help trace families so no child gets left behind 🛰️❤️ https://t.co/xRnVbMZGcc",
+      "url": "https://x.com/Starlink/status/2123909382459334804",
+      "metrics": {
+        "likes": 423,
+        "reposts": 60,
+        "replies": 31,
+        "quotes": 7,
+        "bookmarks": 9,
+        "impressions": 33146
+      },
+      "summary": "Starlink said it is connecting foster homes across 16 countries in Africa and Latin America with BEB Global, so that many institutions will have reliable internet for the first time, allowing them to digitize records, track cases and help trace families. The post, which quoted a BEB Global post about Starlink helping child-welfare teams in seven Latin American countries, went out at 23:40 CET on 20 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2123898539352756617",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-20T21:57:26.000Z",
+      "text": "Raptor engines powering Super Heavy and Starship on Flight 15 https://t.co/99ytd8a4Tm",
+      "url": "https://x.com/SpaceX/status/2123898539352756617",
+      "metrics": {
+        "likes": 10420,
+        "reposts": 1157,
+        "replies": 248,
+        "quotes": 132,
+        "bookmarks": 694,
+        "impressions": 577219
+      },
+      "summary": "SpaceX posted photos with the caption “Raptor engines powering Super Heavy and Starship on Flight 15.” The post went out at 22:57 CET on 20 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
     {
       "id": "2123827993382687217",
       "username": "elonmusk",
