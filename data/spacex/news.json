@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T13:52:55Z",
+  "updated": "2026-11-21T16:00:23Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -21,6 +21,20 @@
     }
   },
   "items": [
+    {
+      "id": "media-41",
+      "type": "media",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T13:48:38Z",
+      "title": "NROL-136 Mission - SpaceX",
+      "source": "SpaceX",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBkUUh0cUxWZWp0UjJtQTBpZ0NudTh3OWRHUTdLaGNJdmZtOEUtSjcyZlJiZ0dfNUVkbUo0eE41VGhJdFhZZkNaRHJQamoyOUlr?oc=5",
+      "snippet": "NROL-136 Mission SpaceX",
+      "topics": [
+        "Launch"
+      ],
+      "summary": "SpaceX’s official NROL-136 mission page, listed in Google News at 14:48 CET on 21 November 2026, now says the company is targeting Sunday, 22 November for a Falcon 9 launch from Space Launch Complex 4E at Vandenberg Space Force Base, with a 30-minute window opening at 4:16 a.m. PT and a backup at 4:02 a.m. PT on Monday, 23 November. It says this will be the 14th flight for the first-stage booster, which previously launched Sentinel-6B, Twilight, NROL-172, Transporter-17, USSF-259 and eight Starlink missions, and that after stage separation the booster is due to land at Landing Zone 4 at Vandenberg."
+    },
     {
       "id": "media-39",
       "type": "media",
