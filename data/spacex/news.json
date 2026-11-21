@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T10:55:06Z",
+  "updated": "2026-11-21T11:53:00Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -46,6 +46,18 @@
       "snippet": "SpaceX’s Starshield troubles in Ukraine could threaten its broader military business Ars Technica",
       "topics": [],
       "summary": "An Ars Technica article by Eric Berger, listed in Google News at 23:16 CET on 20 November 2026, reports that Rep. Jim Himes (D-Conn.), expected to chair the House Intelligence Committee in January, has threatened to withhold support for funding government-owned systems from SpaceX over Starshield disruptions in Ukraine. In a Friday letter to Elon Musk first reported by CNN, Himes asked SpaceX to explain the October 2026 Starshield changes and whether they were made unilaterally or directed by a U.S. official, writing that a “potentially unilateral modification of a U.S. Government contract, combined with its lack of responsiveness to congressional oversight, calls into question every contract the U.S. Government has with SpaceX.”"
+    },
+    {
+      "id": "media-40",
+      "type": "media",
+      "date": "2026-11-20",
+      "datetime": "2026-11-20T21:25:00Z",
+      "title": "SpaceX Sells $32 Bil Of Debt For AI Chips. But Yields, Orbital Deployment Raise Concerns. - Investor's Business Daily",
+      "source": "Investor's Business Daily",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPdnpWWjMyRktmbkp0QXYyWnBRNnJDU0hOZXoxeG9oQmw4QUFDVll5WnVQbklIZzFTdXZyeFFXdE5PWjdzcU1NLUhjSExHWHRwSXNXb1FyX0cwcEFQal9OUm4zUG96SFZtZzN4UlpFdjQwYlgwWmJPOWNBQi1aaEkzRjgyVFhxdkRHazRoX0Q4SkRoRHhqUzNqQVlPamFTYW1tem9TT0l5LVhhMWE2SjhWUEZkdTlYS0ttYkd5dQ?oc=5",
+      "snippet": "SpaceX Sells $32 Bil Of Debt For AI Chips. But Yields, Orbital Deployment Raise Concerns. Investor's Business Daily",
+      "topics": [],
+      "summary": "An Investor’s Business Daily article by Harrison Miller, listed in Google News at 22:25 CET on 20 November 2026, says SpaceX on Thursday sold $32 billion of bonds to help fund artificial intelligence chips and related equipment, at a considerably higher interest rate than typical high-grade corporate bonds. The rest of the IBD page was paywalled here; the visible lede and IBD’s own listing add that concerns have been raised over the high yields and orbital data-center deployments, and that SPCX stock and neocloud players retreated Friday as the broader market continued its slide following Anthropic’s IPO on Thursday."
     },
     {
       "id": "media-29",
@@ -182,20 +194,6 @@
       "snippet": "Trump’s Financial Disclosure Reveals SpaceX, Tesla, Nvidia Trades Forbes",
       "topics": [],
       "summary": "A Forbes article titled “Trump’s Financial Disclosure Reveals SpaceX, Tesla, Nvidia Trades,” listed in Google News at 16:12 CET on 19 November 2026, could not be fetched here from the Google News link, so this summary is limited to the headline. It reports that a financial disclosure reveals trades in SpaceX, Tesla and Nvidia."
-    },
-    {
-      "id": "media-40",
-      "type": "media",
-      "date": "2026-11-19",
-      "datetime": "2026-11-19T14:00:00Z",
-      "title": "Anthropic joins SpaceX with a mega-IPO company - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE12cFlac2o3amVKQWstQ01BZ3VlYjJraEt5SS1IZklmSkdzeFJnQjN5aXVIa1d4alFIdFdTVEN5blBEVmhCdlk0WDR0NnhCR25vQzdYMXZYY3NjX2NvbGZyY3hHc1N1dTA5RFFsZlRhTnlmb0NQ?oc=5",
-      "snippet": "Anthropic joins SpaceX with a mega-IPO company Reuters",
-      "topics": [
-        "IPO"
-      ],
-      "summary": "A Reuters graphics article by Pasit Kongkunakornkul, Vineet Sachdev and Echo Wang, published at 15:00 CET on 19 November 2026, says Anthropic has surpassed SpaceX with the largest stock-market debut on record, raising $81.3 billion in its IPO, a total that could rise to $93.5 billion if overallotment options — not yet exercised — are used in full, plus another $26 billion in a private placement alongside the offering. It says SpaceX’s June IPO raised $86 billion including overallotment options, and it notes Anthropic went public despite a recent tech selloff, with a business built almost entirely around its Claude models."
     },
     {
       "id": "media-8",
