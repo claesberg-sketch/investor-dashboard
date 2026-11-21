@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T20:56:59+01:00",
+  "updated": "2026-11-21T22:56:51+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 21 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,44 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124254624601510301",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T21:32:23.000Z",
+      "text": "Dragon’s trunk has been jettisoned and its nosecone is closed. Splashdown in ~32 minutes",
+      "url": "https://x.com/SpaceX/status/2124254624601510301",
+      "metrics": {
+        "likes": 1193,
+        "reposts": 116,
+        "replies": 67,
+        "quotes": 9,
+        "bookmarks": 22,
+        "impressions": 90971
+      },
+      "summary": "SpaceX said Dragon’s trunk has been jettisoned and its nosecone is closed, with splashdown in about 32 minutes. The update went out at 22:32 CET on 21 November 2026, about six minutes after the company reported that the deorbit burn was complete.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2124253187058065868",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T21:26:41.000Z",
+      "text": "Dragon’s deorbit burn is complete",
+      "url": "https://x.com/SpaceX/status/2124253187058065868",
+      "metrics": {
+        "likes": 1240,
+        "reposts": 97,
+        "replies": 53,
+        "quotes": 11,
+        "bookmarks": 19,
+        "impressions": 97717
+      },
+      "summary": "SpaceX said Dragon’s deorbit burn is complete. The post went out at 22:26 CET on 21 November 2026, following earlier posts that the CRS-35 cargo Dragon was on track to splash down off the southern coast of California near Los Angeles at about 2:05 p.m. PT.",
+      "topics": [],
+      "highlight": true
+    },
     {
       "id": "2124219646459220296",
       "username": "elonmusk",
