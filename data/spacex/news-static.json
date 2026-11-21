@@ -1,6 +1,20 @@
 {
-  "updated": "2026-11-21T07:57:14+01:00",
+  "updated": "2026-11-21T18:55:00+01:00",
   "items": [
+    {
+      "id": "pr-nrol136",
+      "type": "press",
+      "date": "2026-11-21",
+      "title": "NROL-136 mission",
+      "summary": "SpaceX’s official NROL-136 mission page says the company is targeting Sunday, 22 November 2026 for a Falcon 9 launch from Space Launch Complex 4E at Vandenberg Space Force Base, with a 30-minute window opening at 4:16 a.m. PT and a backup at 4:02 a.m. PT on Monday, 23 November. It says this will be the 14th flight for the first-stage booster, which previously launched Sentinel-6B, Twilight, NROL-172, Transporter-17, USSF-259 and eight Starlink missions, and that after stage separation the booster is due to land at Landing Zone 4 at Vandenberg.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/nrol136",
+      "topics": [
+        "Launch"
+      ],
+      "datetime": "2026-11-21T13:48:38Z",
+      "timeSource": "Google News first listing of the official SpaceX mission page"
+    },
     {
       "id": "pr-ussf317",
       "type": "press",
