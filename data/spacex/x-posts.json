@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T06:58:00+01:00",
+  "updated": "2026-11-22T12:50:15+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 22 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,70 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124467677859332290",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-22T11:38:59.000Z",
+      "text": "@NRO_gov About eight minutes after liftoff, Falcon 9’s first stage will return to Landing Zone 4 at Vandenberg Space Force Base, announcing its arrival with a sonic boom",
+      "url": "https://x.com/SpaceX/status/2124467677859332290",
+      "metrics": {
+        "likes": 146,
+        "reposts": 17,
+        "replies": 4,
+        "quotes": 1,
+        "bookmarks": 4,
+        "impressions": 13069
+      },
+      "summary": "SpaceX, addressing the National Reconnaissance Office (@NRO_gov) in a follow-up to its NROL-136 propellant-load update, said that about eight minutes after liftoff, Falcon 9’s first stage will return to Landing Zone 4 at Vandenberg Space Force Base, announcing its arrival with a sonic boom. The post went out at 12:38 CET on 22 November 2026, 30 seconds after the company said all systems were looking good and propellant load was about to begin.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124467552441012653",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-22T11:38:29.000Z",
+      "text": "All systems are looking good, and weather is favorable for liftoff. Propellant load is about to begin for Falcon 9’s launch of the @NRO_gov’s NROL-136 mission from California → https://t.co/6fRVX7ogAD https://t.co/gxj8OLD54W",
+      "url": "https://x.com/SpaceX/status/2124467552441012653",
+      "metrics": {
+        "likes": 471,
+        "reposts": 78,
+        "replies": 45,
+        "quotes": 5,
+        "bookmarks": 13,
+        "impressions": 55859
+      },
+      "summary": "SpaceX said all systems are looking good and weather is favorable for liftoff, and that propellant load is about to begin for Falcon 9’s launch of the National Reconnaissance Office’s (@NRO_gov) NROL-136 mission from California. The post went out at 12:38 CET on 22 November 2026 and links to the company’s official NROL-136 mission page.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124464633490850164",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T11:26:53.000Z",
+      "text": "@Liv_Boeree Unequivocal super intelligence has arrived. \n\nWelcome to the Singularity.",
+      "url": "https://x.com/elonmusk/status/2124464633490850164",
+      "metrics": {
+        "likes": 776,
+        "reposts": 122,
+        "replies": 136,
+        "quotes": 30,
+        "bookmarks": 38,
+        "impressions": 35412
+      },
+      "summary": "Elon Musk replied to Liv Boeree (@Liv_Boeree) that “Unequivocal super intelligence has arrived,” and wrote “Welcome to the Singularity.” The reply, at 12:26 CET on 22 November 2026, was to Boeree’s post on the Riemann hypothesis, in which she said she found it funny that a 19th-century mathematician’s narrow question about whether all the zeros lie on the 1/2 line of a complex function had nerdsniped others so thoroughly that, some 170 years later, it influences the market cap of a trillion-dollar AI company and possibly the direction of the light cone.",
+      "topics": [
+        "AI compute",
+        "Starmind"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124329088697675923",
       "username": "elonmusk",
