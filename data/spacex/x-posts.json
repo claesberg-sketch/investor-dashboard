@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T13:59:21+01:00",
+  "updated": "2026-11-22T20:58:56+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 22 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,48 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124589255565680900",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T19:42:06.000Z",
+      "text": "32 hour launch pad recycle. Great work by SpaceX team. https://t.co/b30VOE8Oom",
+      "url": "https://x.com/elonmusk/status/2124589255565680900",
+      "metrics": {
+        "likes": 2238,
+        "reposts": 262,
+        "replies": 383,
+        "quotes": 26,
+        "bookmarks": 51,
+        "impressions": 437482
+      },
+      "summary": "Elon Musk wrote “32 hour launch pad recycle. Great work by SpaceX team,” quoting SpaceX’s post that Falcon 9 and NROL-136 lifted off from pad 4E in California 32 hours after USSF-317, the company’s fastest turnaround between launches from the same pad. The post went out at 20:42 CET on 22 November 2026.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124576203113636183",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-22T18:50:14.000Z",
+      "text": "Falcon 9 and NROL-136 lift off from pad 4E in California 32 hours after teams launched USSF-317, completing our fastest turnaround between launches from the same pad https://t.co/I7wQ5NeDGG",
+      "url": "https://x.com/SpaceX/status/2124576203113636183",
+      "metrics": {
+        "likes": 2154,
+        "reposts": 252,
+        "replies": 123,
+        "quotes": 47,
+        "bookmarks": 49,
+        "impressions": 239373
+      },
+      "summary": "SpaceX said Falcon 9 and NROL-136 lifted off from pad 4E in California 32 hours after teams launched USSF-317, completing the company’s fastest turnaround between launches from the same pad. The post went out at 19:50 CET on 22 November 2026, about six hours after the earlier posts confirming liftoff and the LZ-4 landing.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124481978514739560",
       "username": "SpaceX",
