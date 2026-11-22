@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T07:54:12Z",
+  "updated": "2026-11-22T08:55:37Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -103,8 +103,7 @@
       "topics": [
         "Launch"
       ],
-      "summary": "SpaceX launches classified mission for US Space Force from California (video) Space",
-      "summaryFallback": true
+      "summary": "A Space.com article by Mike Wall, published 21 November 2026 and listed in Google News at 06:28 CET that day, reports that SpaceX launched the classified USSF-317 mission for the U.S. Space Force on a Falcon 9 from Vandenberg Space Force Base at 11:20 p.m. EST on 20 November (8:20 p.m. local / 04:20 GMT on 21 November), with first-stage booster B1100 landing about 8.5 minutes later on the Of Course I Still Love You droneship in the Pacific on its 11th flight. Wall notes that the payload and destination were not disclosed — SpaceX ended the webcast after the landing — though some experts think it may be Starshield satellites for the Space Force’s Space Based Sensing and Targeting portfolio, and that this was the 121st Falcon 9 launch of 2026 and SpaceX’s third Space Force mission in November."
     },
     {
       "id": "pr-ussf317",
