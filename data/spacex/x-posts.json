@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-21T22:56:51+01:00",
+  "updated": "2026-11-22T06:58:00+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X API public reads (get_users_posts) on 21 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
+  "source": "X API public reads (get_users_posts) on 22 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
@@ -41,6 +41,190 @@
   ],
   "posts": [
     {
+      "id": "2124329088697675923",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T02:28:17.000Z",
+      "text": "@cstanley @bot Cool",
+      "url": "https://x.com/elonmusk/status/2124329088697675923",
+      "metrics": {
+        "likes": 1268,
+        "reposts": 207,
+        "replies": 112,
+        "quotes": 10,
+        "bookmarks": 22,
+        "impressions": 58469
+      },
+      "summary": "Elon Musk replied “Cool” to @cstanley, who wrote that he had Grok (@bot) go through all of his Amazon orders, find $590.62 in missing refunds over several years, open a support chat, talk to customer service, and get them processed. The reply went out at 03:28 CET on 22 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124325451908948451",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T02:13:50.000Z",
+      "text": "Looks like an SI curve https://t.co/b8eIemIdV7",
+      "url": "https://x.com/elonmusk/status/2124325451908948451",
+      "metrics": {
+        "likes": 7605,
+        "reposts": 784,
+        "replies": 725,
+        "quotes": 73,
+        "bookmarks": 272,
+        "impressions": 890737
+      },
+      "summary": "Elon Musk wrote “Looks like an SI curve,” quoting an ApoStructura (@ApoStructura) post that said SpaceX has now launched more payload mass to orbit in 20 years than the rest of the US combined since 1957. The quote post went out at 03:13 CET on 22 November 2026.",
+      "topics": [
+        "AI compute",
+        "Starmind"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124297556150939968",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T00:22:59.000Z",
+      "text": "@ICannot_Enough @bot Wheels are a good option to consider, but it looks like woven stainless steel matting on the ship side probably solves for zero refurbishment. \n\nUnlike the booster, we need something there to keep the ship primary structure below its annealing temperature.",
+      "url": "https://x.com/elonmusk/status/2124297556150939968",
+      "metrics": {
+        "likes": 4267,
+        "reposts": 208,
+        "replies": 311,
+        "quotes": 18,
+        "bookmarks": 176,
+        "impressions": 141918
+      },
+      "summary": "Elon Musk replied to ICannot_Enough (@ICannot_Enough), who had asked whether a more rapidly reusable solution than ablative material could be built onto the tower, where there is no weight penalty, that wheels are a good option to consider, but that woven stainless steel matting on the ship side probably solves for zero refurbishment. He added that, unlike the booster, something is needed there to keep the ship’s primary structure below its annealing temperature; the reply went out at 01:22 CET on 22 November 2026.",
+      "topics": [
+        "Starship"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124293036418990381",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T00:05:01.000Z",
+      "text": "@Scobleizer Pretty accurate. \n\nTesla vehicles will share traffic knowledge and combine that with Grok’s real-time 𝕏 feed to give you the optimal transport experience, even giving you a heads up about what’s happening at your destination!",
+      "url": "https://x.com/elonmusk/status/2124293036418990381",
+      "metrics": {
+        "likes": 7144,
+        "reposts": 561,
+        "replies": 428,
+        "quotes": 62,
+        "bookmarks": 415,
+        "impressions": 495689
+      },
+      "summary": "Elon Musk replied to Scobleizer (@Scobleizer) that his take was “Pretty accurate,” and wrote that Tesla vehicles will share traffic knowledge and combine that with Grok’s real-time 𝕏 feed to give the optimal transport experience, including a heads-up about what’s happening at the destination. The reply went out at 01:05 CET on 22 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124282252825596187",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-21T23:22:10.000Z",
+      "text": "@BasedSamParker 😂\n\nBut actually try Grok Bot. It’s awesome.",
+      "url": "https://x.com/elonmusk/status/2124282252825596187",
+      "metrics": {
+        "likes": 771,
+        "reposts": 61,
+        "replies": 159,
+        "quotes": 29,
+        "bookmarks": 20,
+        "impressions": 60295
+      },
+      "summary": "Elon Musk replied to BasedSamParker (@BasedSamParker) with a laugh, then wrote “But actually try Grok Bot. It’s awesome.” The reply went out at 00:22 CET on 22 November 2026, after Sam Parker had joked that a feed refresh showed Elon pitching Grok Bot.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124280710747840889",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-21T23:16:03.000Z",
+      "text": "Give Grok @Bot your hardest tasks https://t.co/KEa57ff3ux",
+      "url": "https://x.com/elonmusk/status/2124280710747840889",
+      "metrics": {
+        "likes": 3273,
+        "reposts": 448,
+        "replies": 827,
+        "quotes": 81,
+        "bookmarks": 293,
+        "impressions": 879213
+      },
+      "summary": "Elon Musk wrote “Give Grok @Bot your hardest tasks,” quoting a Molly O’Shea (@MollySOShea) post that said Ron Biscardi (@rbiscardi) and his team used Grok Bot for “literally everything” to set up the 5,000-person TomorrowX Summit at record speed. The quote post went out at 00:16 CET on 22 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124262638192660846",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T22:04:14.000Z",
+      "text": "Splashdown of Dragon confirmed, completing SpaceX’s 35th Commercial Resupply Services mission to the @Space_Station!",
+      "url": "https://x.com/SpaceX/status/2124262638192660846",
+      "metrics": {
+        "likes": 7394,
+        "reposts": 678,
+        "replies": 218,
+        "quotes": 77,
+        "bookmarks": 57,
+        "impressions": 690878
+      },
+      "summary": "SpaceX confirmed splashdown of Dragon, completing the company’s 35th Commercial Resupply Services mission to the International Space Station. The post went out at 23:04 CET on 21 November 2026, three minutes after it reported that Dragon’s four main parachutes had deployed.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2124261858547048779",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T22:01:08.000Z",
+      "text": "Dragon’s four main parachutes have deployed",
+      "url": "https://x.com/SpaceX/status/2124261858547048779",
+      "metrics": {
+        "likes": 4101,
+        "reposts": 328,
+        "replies": 80,
+        "quotes": 8,
+        "bookmarks": 38,
+        "impressions": 697891
+      },
+      "summary": "SpaceX said Dragon’s four main parachutes have deployed. The update went out at 23:01 CET on 21 November 2026, less than a minute after the company reported that the drogues had deployed.",
+      "topics": [],
+      "highlight": true
+    },
+    {
+      "id": "2124261680028807397",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-21T22:00:26.000Z",
+      "text": "Drogues deployed",
+      "url": "https://x.com/SpaceX/status/2124261680028807397",
+      "metrics": {
+        "likes": 2527,
+        "reposts": 243,
+        "replies": 88,
+        "quotes": 19,
+        "bookmarks": 41,
+        "impressions": 704287
+      },
+      "summary": "SpaceX said drogues deployed, in a one-line update on the CRS-35 cargo Dragon’s return. The post went out at 23:00 CET on 21 November 2026, about half an hour after the company said splashdown was about 32 minutes away.",
+      "topics": [],
+      "highlight": true
+    },
+    {
       "id": "2124254624601510301",
       "username": "SpaceX",
       "name": "SpaceX",
@@ -48,12 +232,12 @@
       "text": "Dragon’s trunk has been jettisoned and its nosecone is closed. Splashdown in ~32 minutes",
       "url": "https://x.com/SpaceX/status/2124254624601510301",
       "metrics": {
-        "likes": 1193,
-        "reposts": 116,
-        "replies": 67,
-        "quotes": 9,
-        "bookmarks": 22,
-        "impressions": 90971
+        "likes": 3579,
+        "reposts": 225,
+        "replies": 101,
+        "quotes": 14,
+        "bookmarks": 46,
+        "impressions": 724789
       },
       "summary": "SpaceX said Dragon’s trunk has been jettisoned and its nosecone is closed, with splashdown in about 32 minutes. The update went out at 22:32 CET on 21 November 2026, about six minutes after the company reported that the deorbit burn was complete.",
       "topics": [],
@@ -67,12 +251,12 @@
       "text": "Dragon’s deorbit burn is complete",
       "url": "https://x.com/SpaceX/status/2124253187058065868",
       "metrics": {
-        "likes": 1240,
-        "reposts": 97,
-        "replies": 53,
-        "quotes": 11,
-        "bookmarks": 19,
-        "impressions": 97717
+        "likes": 3970,
+        "reposts": 203,
+        "replies": 87,
+        "quotes": 15,
+        "bookmarks": 55,
+        "impressions": 824086
       },
       "summary": "SpaceX said Dragon’s deorbit burn is complete. The post went out at 22:26 CET on 21 November 2026, following earlier posts that the CRS-35 cargo Dragon was on track to splash down off the southern coast of California near Los Angeles at about 2:05 p.m. PT.",
       "topics": [],
@@ -172,12 +356,12 @@
       "text": "Dragon will also announce its arrival with a brief sonic boom prior to splashing down in the Pacific Ocean",
       "url": "https://x.com/SpaceX/status/2124172739833414113",
       "metrics": {
-        "likes": 556,
-        "reposts": 36,
-        "replies": 21,
-        "quotes": 0,
-        "bookmarks": 9,
-        "impressions": 46020
+        "likes": 1412,
+        "reposts": 85,
+        "replies": 38,
+        "quotes": 3,
+        "bookmarks": 22,
+        "impressions": 127535
       },
       "summary": "SpaceX added, in a follow-up, that Dragon will also announce its arrival with a brief sonic boom prior to splashing down in the Pacific Ocean. The note went out at 17:07 CET on 21 November 2026.",
       "topics": [],
@@ -191,12 +375,12 @@
       "text": "Dragon is on track to reenter Earth’s atmosphere and splash down off the southern coast of California near Los Angeles at ~2:05 p.m. PT https://t.co/wGJB6jq2s1",
       "url": "https://x.com/SpaceX/status/2124172655779614909",
       "metrics": {
-        "likes": 1621,
-        "reposts": 172,
-        "replies": 78,
-        "quotes": 20,
-        "bookmarks": 23,
-        "impressions": 121520
+        "likes": 4594,
+        "reposts": 441,
+        "replies": 185,
+        "quotes": 60,
+        "bookmarks": 97,
+        "impressions": 565385
       },
       "summary": "SpaceX said Dragon is on track to reenter Earth’s atmosphere and splash down off the southern coast of California near Los Angeles at about 2:05 p.m. PT, and attached a photo. The post went out at 17:06 CET on 21 November 2026, following earlier posts on the same CRS-35 cargo Dragon’s departure from the space station.",
       "topics": [],
@@ -210,12 +394,12 @@
       "text": "Falcon 9 launches USSF-317 to orbit from pad 4E in California https://t.co/KDQs8l96Z4",
       "url": "https://x.com/SpaceX/status/2124122550339002718",
       "metrics": {
-        "likes": 407,
-        "reposts": 53,
-        "replies": 31,
-        "quotes": 5,
-        "bookmarks": 12,
-        "impressions": 50811
+        "likes": 4813,
+        "reposts": 489,
+        "replies": 228,
+        "quotes": 79,
+        "bookmarks": 123,
+        "impressions": 622460
       },
       "summary": "SpaceX posted that Falcon 9 launched USSF-317 to orbit from pad 4E in California, with four night-launch photos including a long-exposure arc over the pad and close-ups of liftoff beside the tower. The post went out at 13:47 CET on 21 November 2026, after earlier posts on the same mission covering pre-launch status, liftoff and the first-stage landing on Of Course I Still Love You.",
       "topics": [
