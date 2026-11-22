@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T12:50:15+01:00",
+  "updated": "2026-11-22T13:59:21+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 22 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,90 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124481978514739560",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-22T12:35:49.000Z",
+      "text": "Falcon 9’s first stage lands on LZ-4 https://t.co/5OWG6G6kCm",
+      "url": "https://x.com/SpaceX/status/2124481978514739560",
+      "metrics": {
+        "likes": 884,
+        "reposts": 125,
+        "replies": 65,
+        "quotes": 13,
+        "bookmarks": 17,
+        "impressions": 82377
+      },
+      "summary": "SpaceX said Falcon 9’s first stage has landed on LZ-4 (Landing Zone 4 at Vandenberg Space Force Base). The post went out at 13:35 CET on 22 November 2026, 11 minutes after the company’s “Liftoff!” post on the NROL-136 mission.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124479235779637392",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-22T12:24:55.000Z",
+      "text": "Liftoff! https://t.co/pO89FePth1",
+      "url": "https://x.com/SpaceX/status/2124479235779637392",
+      "metrics": {
+        "likes": 1421,
+        "reposts": 201,
+        "replies": 96,
+        "quotes": 37,
+        "bookmarks": 28,
+        "impressions": 100436
+      },
+      "summary": "SpaceX posted “Liftoff!” for the Falcon 9 launch of the National Reconnaissance Office’s (@NRO_gov) NROL-136 mission from pad 4E in California. The post went out at 13:24 CET on 22 November 2026, 15 minutes after it told followers to watch the launch.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124477713142665551",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T12:18:52.000Z",
+      "text": "Starlink saves lives https://t.co/Mx58hFBqIk",
+      "url": "https://x.com/elonmusk/status/2124477713142665551",
+      "metrics": {
+        "likes": 2457,
+        "reposts": 339,
+        "replies": 486,
+        "quotes": 43,
+        "bookmarks": 53,
+        "impressions": 519073
+      },
+      "summary": "Elon Musk wrote “Starlink saves lives,” quoting a DogeDesigner (@cb_doge) post that said Starlink helped rescue an injured hiker stranded in Japan’s mountains with no mobile signal. The quoted post said that after a 6-metre fall the hiker was bleeding heavily, had a broken finger and could no longer walk, and used Starlink to text his wife his exact coordinates; Musk’s quote post went out at 13:18 CET on 22 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124475467436851599",
+      "username": "SpaceX",
+      "name": "SpaceX",
+      "created_at": "2026-11-22T12:09:56.000Z",
+      "text": "Watch Falcon 9 launch the @NRO_gov’s NROL-136 mission from pad 4E in California https://t.co/nu2o3Ovbh7",
+      "url": "https://x.com/SpaceX/status/2124475467436851599",
+      "metrics": {
+        "likes": 5480,
+        "reposts": 788,
+        "replies": 286,
+        "quotes": 81,
+        "bookmarks": 335,
+        "impressions": 124810
+      },
+      "summary": "SpaceX told followers to watch Falcon 9 launch the National Reconnaissance Office’s (@NRO_gov) NROL-136 mission from pad 4E in California. The post went out at 13:09 CET on 22 November 2026, about 31 minutes after the company said propellant load was about to begin.",
+      "topics": [
+        "Launch"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124467677859332290",
       "username": "SpaceX",

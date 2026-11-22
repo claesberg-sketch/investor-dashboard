@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T08:54:10+01:00",
+  "updated": "2026-11-22T13:59:21+01:00",
   "items": [
     {
       "id": "pr-crs35",
@@ -42,6 +42,20 @@
       ],
       "datetime": "2026-11-21T04:22:16Z",
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-317"
+    },
+    {
+      "id": "pr-ussf380",
+      "type": "press",
+      "date": "2026-11-18",
+      "title": "USSF-380 mission",
+      "summary": "SpaceX’s official USSF-380 mission page says the company is targeting Saturday, 28 November 2026 for a Falcon 9 launch from Space Launch Complex 4E at Vandenberg Space Force Base, with a four-hour window opening at 8:39 p.m. PT and a backup at 6:26 p.m. PT on Sunday, 29 November. It says this will be the 27th flight for the first-stage booster, which previously launched USSF-62, OneWeb Launch 20, NROL-145, Transporter-18 and 22 Starlink missions, that after stage separation the first stage will land on the Of Course I Still Love You droneship in the Pacific Ocean, and that a live webcast will begin about 10 minutes prior to liftoff on the site and on X @SpaceX.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/ussf380",
+      "topics": [
+        "Launch"
+      ],
+      "datetime": "2026-11-18T16:35:04Z",
+      "timeSource": "Google News first listing of the official SpaceX mission page"
     },
     {
       "id": "pr-starship-flight-15",
