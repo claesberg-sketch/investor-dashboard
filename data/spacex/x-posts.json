@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T20:58:56+01:00",
+  "updated": "2026-11-22T21:57:05+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 22 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,28 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124605881770033304",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T20:48:10.000Z",
+      "text": "@merettm Imagine what super intelligence will be like when we hit an exawatt. This will be like a caveman playing with sticks.",
+      "url": "https://x.com/elonmusk/status/2124605881770033304",
+      "metrics": {
+        "likes": 309,
+        "reposts": 38,
+        "replies": 78,
+        "quotes": 12,
+        "bookmarks": 11,
+        "impressions": 21505
+      },
+      "summary": "Elon Musk replied to Jakub Pachocki (@merettm), “Imagine what super intelligence will be like when we hit an exawatt. This will be like a caveman playing with sticks.” The reply went out at 21:48 CET on 22 November 2026, after Pachocki said OpenAI would provide more transparency into pretraining progress toward shared safety bars and, in a piece titled “Perplexity and Intelligence,” argued for common limits based on perplexity and other measurements.",
+      "topics": [
+        "AI compute",
+        "Starmind"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124589255565680900",
       "username": "elonmusk",
