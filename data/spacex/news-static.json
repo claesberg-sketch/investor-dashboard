@@ -1,6 +1,20 @@
 {
-  "updated": "2026-11-22T06:58:00+01:00",
+  "updated": "2026-11-22T08:54:10+01:00",
   "items": [
+    {
+      "id": "pr-crs35",
+      "type": "press",
+      "date": "2026-11-21",
+      "title": "CRS-35 mission",
+      "summary": "SpaceX’s official CRS-35 mission page says that after 37 days docked to the International Space Station, Dragon completed its 35th Commercial Resupply Services mission for NASA, splashing down off the coast of California on Saturday, 21 November 2026 at 2:04 p.m. PT. It says this was the fourth flight for this Dragon spacecraft, which previously flew CRS-26, CRS-29 and CRS-33, and that Falcon 9 had launched it to the station on Tuesday, 13 October at 6:33 a.m. ET from Space Launch Complex 40 at Cape Canaveral Space Force Station.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/crs35",
+      "topics": [
+        "Launch"
+      ],
+      "datetime": "2026-11-21T22:04:00Z",
+      "timeSource": "Official SpaceX CRS-35 mission page splashdown time (2:04 p.m. PT)"
+    },
     {
       "id": "pr-nrol136",
       "type": "press",
