@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "note": "Total shares outstanding used for watchlist market cap: the live displayed price (CNBC last sale in a U.S. session, otherwise the Hyperliquid mid) times these counts. Counts are all economic classes, not the free float and not a fully diluted option/RSU share count.",
   "stocks": {
     "SPCX": {
@@ -11,8 +11,18 @@
       "autoUpdateReason": "Dual class; total is Class A + Class B from the 10-Q cover. SEC EntityCommonStockSharesOutstanding is not filed as a single combined figure.",
       "cik": "0001181412",
       "classes": [
-        { "class": "Class A", "shares": 8246541218, "listed": true, "ticker": "SPCX" },
-        { "class": "Class B", "shares": 5334522491, "listed": false, "note": "Convert 1:1 into Class A; valued at the Class A price." }
+        {
+          "class": "Class A",
+          "shares": 8246541218,
+          "listed": true,
+          "ticker": "SPCX"
+        },
+        {
+          "class": "Class B",
+          "shares": 5334522491,
+          "listed": false,
+          "note": "Convert 1:1 into Class A; valued at the Class A price."
+        }
       ],
       "source": {
         "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
@@ -42,10 +52,29 @@
       "autoUpdateReason": "Recent IPO; total is Class A + Class N (plus 1 Class T and 1 Class F) after the offering, the concurrent private placement and the full greenshoe. Not yet in SEC companyfacts.",
       "cik": "0002130357",
       "classes": [
-        { "class": "Class A", "shares": 7730103996, "listed": true, "ticker": "ANT", "note": "7,583,103,996 after the base offering, plus 147,000,000 from the underwriters' option exercised in full." },
-        { "class": "Class N", "shares": 5636538278, "listed": false, "note": "Includes 313,253,007 shares issued in the concurrent $26.0B private placement; valued at the Class A price." },
-        { "class": "Class T", "shares": 1, "listed": false },
-        { "class": "Class F", "shares": 1, "listed": false }
+        {
+          "class": "Class A",
+          "shares": 7730103996,
+          "listed": true,
+          "ticker": "ANT",
+          "note": "7,583,103,996 after the base offering, plus 147,000,000 from the underwriters' option exercised in full."
+        },
+        {
+          "class": "Class N",
+          "shares": 5636538278,
+          "listed": false,
+          "note": "Includes 313,253,007 shares issued in the concurrent $26.0B private placement; valued at the Class A price."
+        },
+        {
+          "class": "Class T",
+          "shares": 1,
+          "listed": false
+        },
+        {
+          "class": "Class F",
+          "shares": 1,
+          "listed": false
+        }
       ],
       "source": {
         "label": "Final 424(b)(4) prospectus (19 Nov 2026) plus IPO closing including full greenshoe and concurrent private placement (20 Nov 2026)",
@@ -91,6 +120,99 @@
         "label": "Form 10-K cover page, fiscal year ended Sep 3, 2026",
         "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
         "detail": "The number of outstanding shares of the registrant's common stock as of October 2, 2026 was 1,131,423,212."
+      }
+    },
+    "GOOGL": {
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "sharesOutstanding": 12294000000,
+      "asOf": "2026-10-21",
+      "autoUpdate": false,
+      "autoUpdateReason": "Dual/triple class; total is Class A + Class B + Class C from the 10-Q cover, valued at the GOOGL (Class A) price. Preferred stock is excluded.",
+      "cik": "0001652044",
+      "classes": [
+        {
+          "class": "Class A",
+          "shares": 5888000000,
+          "listed": true,
+          "ticker": "GOOGL"
+        },
+        {
+          "class": "Class B",
+          "shares": 827000000,
+          "listed": false,
+          "note": "Super-voting; not listed; valued at the Class A price."
+        },
+        {
+          "class": "Class C",
+          "shares": 5579000000,
+          "listed": true,
+          "ticker": "GOOG",
+          "note": "Capital stock; valued at the Class A price."
+        }
+      ],
+      "source": {
+        "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "detail": "As of October 21, 2026: 5,888 million Class A + 827 million Class B + 5,579 million Class C = 12,294 million shares. Mandatory convertible preferred stock is not included."
+      }
+    },
+    "AMZN": {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "sharesOutstanding": 10813138306,
+      "asOf": "2026-10-21",
+      "autoUpdate": true,
+      "cik": "0001018724",
+      "source": {
+        "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "detail": "10,813,138,306 shares of common stock outstanding as of October 21, 2026."
+      }
+    },
+    "TSM": {
+      "ticker": "TSM",
+      "name": "TSMC",
+      "sharesOutstanding": 5186504904,
+      "asOf": "2025-12-31",
+      "autoUpdate": false,
+      "autoUpdateReason": "NYSE-listed ADR. Market cap uses ADR-equivalent shares = common shares / 5 (1 ADR = 5 common shares). SEC cover facts are in common shares, not ADRs.",
+      "cik": "0001046179",
+      "commonShares": 25932524521,
+      "adrRatio": 5,
+      "source": {
+        "label": "Form 20-F for the year ended Dec 31, 2025; TSMC IR still reports 25,932 million common shares as of Oct 31, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
+        "also": "https://investor.tsmc.com/english/fundamentals",
+        "detail": "25,932,524,521 common shares outstanding as of December 31, 2025 (IR: 25,932 million as of October 31, 2026, same to the million). Each NYSE ADR (TSM) represents 5 common shares, so 5,186,504,904 ADR-equivalents. Market cap is the ADR price times that ADR-equivalent count."
+      }
+    },
+    "META": {
+      "ticker": "META",
+      "name": "Meta",
+      "sharesOutstanding": 2556241253,
+      "asOf": "2026-10-16",
+      "autoUpdate": false,
+      "autoUpdateReason": "Dual class; total is Class A + Class B from the 10-Q cover, valued at the Class A price.",
+      "cik": "0001326801",
+      "classes": [
+        {
+          "class": "Class A",
+          "shares": 2214472367,
+          "listed": true,
+          "ticker": "META"
+        },
+        {
+          "class": "Class B",
+          "shares": 341768886,
+          "listed": false,
+          "note": "Super-voting; converts 1:1 into Class A; valued at the Class A price."
+        }
+      ],
+      "source": {
+        "label": "Form 10-Q cover page, quarter ended Sep 30, 2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+        "detail": "As of October 16, 2026: 2,214,472,367 Class A + 341,768,886 Class B = 2,556,241,253 shares outstanding."
       }
     }
   }

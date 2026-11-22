@@ -2,7 +2,8 @@
    - U.S. pre-market, regular session, after-hours: CNBC real-time last sale (one batched request, every 5 s).
    - Overnight, weekends, holidays (and fallback if CNBC fails): Hyperliquid HIP-3 perps on the xyz dex
      (WebSocket allMids + a metaAndAssetCtxs poll).
-   All symbols and coins below were verified against both APIs on 20 Nov 2026. */
+   All symbols and coins below were verified against both APIs on 20 Nov 2026,
+   and the four names added on 22 Nov 2026 were re-checked the same day. */
 (function () {
   const P = window.SPCXPrice;
   const TZ = P.TZ;
@@ -15,11 +16,15 @@
     { ticker: "NVDA", name: "Nvidia", full: "NVIDIA Corporation", cnbc: "NVDA", bars: "NVDA.O", coin: "xyz:NVDA" },
     { ticker: "AMD", name: "AMD", full: "Advanced Micro Devices, Inc.", cnbc: "AMD", bars: "AMD.O", coin: "xyz:AMD" },
     { ticker: "MU", name: "Micron", full: "Micron Technology, Inc.", cnbc: "MU", bars: "MU.O", coin: "xyz:MU" },
+    { ticker: "GOOGL", name: "Alphabet", full: "Alphabet Inc. · Class A listed as GOOGL; market cap includes Class A, B and C", cnbc: "GOOGL", bars: "GOOGL.O", coin: "xyz:GOOGL" },
+    { ticker: "AMZN", name: "Amazon", full: "Amazon.com, Inc.", cnbc: "AMZN", bars: "AMZN.O", coin: "xyz:AMZN" },
+    { ticker: "TSM", name: "TSMC", full: "Taiwan Semiconductor Manufacturing Co. · NYSE ADR (1 ADR = 5 common shares)", cnbc: "TSM", bars: "TSM", coin: "xyz:TSM" },
+    { ticker: "META", name: "Meta", full: "Meta Platforms, Inc. · market cap includes Class A and Class B", cnbc: "META", bars: "META.O", coin: "xyz:META" },
   ];
 
   const CNBC_FRESH_MS = 20 * 1000;
   const HL_FRESH_MS = 30 * 1000;
-  const SESSION_TEXT = { pre: "PRE", regular: "MARKET", after: "AFTER" };
+  const SESSION_TEXT = { pre: "PRE", regular: "LIVE", after: "AFTER" };
 
   const state = {};
   STOCKS.forEach((s) => {
@@ -188,13 +193,13 @@
 
   /* ---------- rendering ---------- */
   function rowSkeleton(s) {
-    const nameInner = '<div class="wl-ticker">' + esc(s.ticker) + "</div>" +
-      '<div class="wl-name">' + esc(s.name) + ' <span class="wl-mcap" data-f="mcap"></span></div>' +
-      '<div class="wl-full">' + esc(s.full) + "</div>" +
-      (s.href ? '<div class="wl-go">Dashboard ›</div>' : "");
+    const nameInner = '<span class="wl-ticker">' + esc(s.ticker) + "</span>" +
+      '<span class="wl-name">' + esc(s.name) + "</span>" +
+      '<span class="wl-mcap" data-f="mcap"></span>' +
+      (s.href ? '<span class="wl-go">Dash ›</span>' : "");
     const name = s.href
-      ? '<a class="wl-cell wl-stock" href="' + s.href + '">' + nameInner + "</a>"
-      : '<div class="wl-cell wl-stock">' + nameInner + "</div>";
+      ? '<a class="wl-cell wl-stock" href="' + s.href + '" title="' + esc(s.full) + '">' + nameInner + "</a>"
+      : '<div class="wl-cell wl-stock" title="' + esc(s.full) + '">' + nameInner + "</div>";
     return '<div class="wl-row" role="row" id="row-' + s.ticker + '">' + name +
       '<div class="wl-cell wl-pricecell"><div class="wl-px" data-f="px">—</div>' +
       '<div class="wl-badge closed" data-f="badge"><span class="dot"></span><span data-f="badge-text">Loading</span></div>' +
@@ -244,10 +249,13 @@
     if (badge) {
       badge.classList.toggle("closed", !(disp && disp.live));
       badge.classList.toggle("hl", !!(disp && disp.src === "hl"));
-      badge.classList.toggle("reg", !!(disp && disp.badge === "MARKET"));
+      badge.classList.toggle("reg", !!(disp && disp.badge === "LIVE"));
     }
     setHTML(row, "badge-text", disp ? disp.badge + (disp.fallback ? " · FALLBACK" : "") : "Loading");
-    setHTML(row, "time", disp && disp.time ? (disp.src === "hl" ? "Mid · " : "Last sale · ") + hms(disp.time, true) : "");
+    const timeTxt = disp && disp.time ? (disp.src === "hl" ? "Mid · " : "Last sale · ") + hms(disp.time, true) : "";
+    setHTML(row, "time", timeTxt);
+    const priceCell = row.querySelector(".wl-pricecell");
+    if (priceCell) priceCell.title = timeTxt;
     const chgEl = setHTML(row, "chg", chg != null ? signed(chg) : "—");
     const pctEl = setHTML(row, "pct", pctText(pct));
     const cls = chg > 0 ? "up" : chg < 0 ? "down" : "";
@@ -340,6 +348,7 @@
       const ctxs = await P.fetchHLCtxs("xyz");
       const now = Date.now();
       STOCKS.forEach((s) => {
+        if (!s.coin) return;
         const c = ctxs[s.coin];
         if (!c) return;
         const mid = c.midPx != null ? +c.midPx : +c.markPx;
@@ -369,6 +378,7 @@
         const now = Date.now();
         let hit = false;
         STOCKS.forEach((s) => {
+          if (!s.coin) return;
           const v = mids[s.coin] != null ? +mids[s.coin] : NaN;
           if (!Number.isFinite(v)) return;
           const st = state[s.ticker];
@@ -428,7 +438,7 @@
     const st = state[s.ticker];
     const now = new Date();
     const session = P.getSession(now);
-    const useOfficial = session.official && st.off && Date.now() - st.offAt < CNBC_FRESH_MS;
+    const useOfficial = (session.official && st.off && Date.now() - st.offAt < CNBC_FRESH_MS) || !s.coin;
     const src = useOfficial ? "cnbc" : "hl";
     const key = src + ":" + (useOfficial ? P.dayKeyFromParts(P.etParts(now)) : overnightStartMs(now));
     const maxAge = src === "cnbc" ? 60 * 1000 : 5 * 60 * 1000;
@@ -473,13 +483,19 @@
   function notes() {
     const n = document.getElementById("wl-notes");
     if (!n) return;
+    const withCoin = STOCKS.filter((s) => s.coin);
+    const noCoin = STOCKS.filter((s) => !s.coin);
     n.innerHTML = "Sources per stock — U.S.: CNBC symbols " + STOCKS.map((s) => "<code>" + s.cnbc + "</code>").join(", ") +
       " (real-time Nasdaq/NYSE Arca last sale, extended hours included). Overnight: Hyperliquid " +
-      STOCKS.map((s) => "<code>" + s.coin + "</code>").join(", ") +
-      ". “Regular close” is the latest official 4 pm ET close and its daily change. “After hours” is the latest after-hours trade, " +
+      withCoin.map((s) => "<code>" + s.coin + "</code>").join(", ") +
+      (noCoin.length
+        ? ". No Hyperliquid perp for " + noCoin.map((s) => "<code>" + s.ticker + "</code>").join(", ") + " — when the U.S. market is closed those rows keep the CNBC last sale, labelled LAST."
+        : ".") +
+      " “Regular close” is the latest official 4 pm ET close and its daily change. “After hours” is the latest after-hours trade, " +
       "live during the after-hours session, otherwise the last 1-minute bar of the most recent after-hours session, with its change vs that day’s close. " +
       "Anthropic listed on Nasdaq as <code>ANT</code> on 19 Nov 2026 at an $83 IPO price; <code>xyz:ANT</code> converted from a pre-IPO market to a standard perp tracking the stock the same day. " +
-      "Market cap next to each name is the live displayed price times total shares outstanding (all classes for SpaceX and Anthropic, not the free float). Share counts and sources are in <code>data/shares.json</code>.";
+      "TSMC trades on the NYSE as an ADR (<code>TSM</code>; 1 ADR = 5 common shares) — CNBC 1-minute bars use <code>TSM</code>, not <code>TSM.N</code>. " +
+      "Market cap next to each name is the live displayed price times total shares outstanding (all classes for SpaceX, Anthropic, Alphabet and Meta; TSMC in ADR-equivalent shares). Share counts and sources are in <code>data/shares.json</code>.";
   }
 
   function boot() {
