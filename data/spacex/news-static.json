@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T13:59:21+01:00",
+  "updated": "2026-11-22T14:57:34+01:00",
   "items": [
     {
       "id": "pr-crs35",
@@ -114,19 +114,18 @@
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-627"
     },
     {
-      "id": "pr-gofororbit",
+      "id": "pr-ussf266",
       "type": "press",
-      "date": "2026-11-06",
-      "title": "Go For Orbit — first revenue Starship mission documentary / recap",
-      "summary": "SpaceX released “Go For Orbit,” a recap of the first orbital Starship flight to carry advanced Starlink V3 satellites — the company’s first revenue-generating Starship mission. Official posts describe more than a dozen prior flight tests and years of development; the public page is a JavaScript experience and did not return a long-form transcript here.",
+      "date": "2026-11-09",
+      "title": "USSF-266 mission",
+      "summary": "SpaceX’s official USSF-266 mission page says the company is targeting Tuesday, 24 November 2026 for a Falcon 9 launch from Space Launch Complex 4E at Vandenberg Space Force Base, with a four-hour window opening at 7:55 a.m. PT and a backup at 7:46 a.m. PT on Wednesday, 25 November. It says this will be the 29th flight for the first-stage booster, which previously launched Crew-7, CRS-29, PACE, Transporter-10, EarthCARE, NROL-186, Transporter-13, TRACERS, NROL-48, COSMO-SkyMED Second Generation FM3, USSF-153, USSF-481 and 16 Starlink missions, and that after stage separation the first stage will land on the Of Course I Still Love You droneship in the Pacific Ocean.",
       "source": "SpaceX",
-      "url": "https://www.spacex.com",
+      "url": "https://www.spacex.com/launches/ussf266",
       "topics": [
-        "Starship",
-        "Starlink"
+        "Launch"
       ],
-      "datetime": "2026-11-06T14:56:55Z",
-      "timeSource": "Official SpaceX post announcing “Go For Orbit”"
+      "datetime": "2026-11-09T20:24:32Z",
+      "timeSource": "Google News first listing of the official SpaceX mission page"
     },
     {
       "id": "pr-ussf432",
@@ -141,6 +140,21 @@
       ],
       "datetime": "2026-11-07T00:49:44Z",
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-432"
+    },
+    {
+      "id": "pr-gofororbit",
+      "type": "press",
+      "date": "2026-11-06",
+      "title": "Go For Orbit — first revenue Starship mission documentary / recap",
+      "summary": "SpaceX released “Go For Orbit,” a recap of the first orbital Starship flight to carry advanced Starlink V3 satellites — the company’s first revenue-generating Starship mission. Official posts describe more than a dozen prior flight tests and years of development; the public page is a JavaScript experience and did not return a long-form transcript here.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ],
+      "datetime": "2026-11-06T14:56:55Z",
+      "timeSource": "Official SpaceX post announcing “Go For Orbit”"
     },
     {
       "id": "pr-q3",
