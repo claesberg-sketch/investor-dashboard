@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T17:53:38+01:00",
+  "updated": "2026-11-22T18:51:37+01:00",
   "items": [
     {
       "id": "pr-crs35",
@@ -55,6 +55,20 @@
         "Launch"
       ],
       "datetime": "2026-11-18T16:35:04Z",
+      "timeSource": "Google News first listing of the official SpaceX mission page"
+    },
+    {
+      "id": "pr-ng25",
+      "type": "press",
+      "date": "2026-10-14",
+      "title": "NG-25 mission",
+      "summary": "SpaceX’s official NG-25 mission page says the company is targeting Sunday, 29 November 2026 for a Falcon 9 launch of Northrop Grumman’s Cygnus XL commercial resupply mission (NG-25) to the International Space Station from Space Launch Complex 40 at Cape Canaveral Space Force Station, with liftoff targeted for 10:50 a.m. ET and a backup at 10:24 a.m. ET on Monday, 30 November. It says this will be the ninth flight for the first-stage booster, which previously launched KF-01, IMAP, NROL-77, GPS III-9, CRS-34, NROL-95, CRS-35 and one Starlink mission, that after stage separation the first stage will land on Landing Zone 40 at Cape Canaveral Space Force Station, and that a live webcast will begin about 20 minutes prior to liftoff on the site and on X @SpaceX.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/ng25",
+      "topics": [
+        "Launch"
+      ],
+      "datetime": "2026-10-14T16:49:14Z",
       "timeSource": "Google News first listing of the official SpaceX mission page"
     },
     {
