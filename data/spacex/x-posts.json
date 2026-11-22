@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T21:57:05+01:00",
+  "updated": "2026-11-22T22:53:25+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 22 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,50 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124614639409606954",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T21:22:58.000Z",
+      "text": "Would this be the wrong note upon which to suggest using Grok Bot? https://t.co/qfYPtHSaRV",
+      "url": "https://x.com/elonmusk/status/2124614639409606954",
+      "metrics": {
+        "likes": 2261,
+        "reposts": 193,
+        "replies": 422,
+        "quotes": 30,
+        "bookmarks": 166,
+        "impressions": 496334
+      },
+      "summary": "Elon Musk wrote “Would this be the wrong note upon which to suggest using Grok Bot?,” quoting a Nikita Bier (@nikitabier) post that argued the global economy is held together by people forgetting to cancel auto-renewing subscriptions and being too lazy to move cash into higher-yielding money market accounts, and that if everyone used an agent prompt to do that, the banking system would collapse. The quote post went out at 22:22 CET on 22 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124608788158447644",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T20:59:43.000Z",
+      "text": "This was done without AI/SI, but we will be using a lot of SI in the future https://t.co/OHNcu10C63",
+      "url": "https://x.com/elonmusk/status/2124608788158447644",
+      "metrics": {
+        "likes": 5685,
+        "reposts": 562,
+        "replies": 559,
+        "quotes": 56,
+        "bookmarks": 208,
+        "impressions": 587906
+      },
+      "summary": "Elon Musk wrote “This was done without AI/SI, but we will be using a lot of SI in the future,” quoting an Everyday Astronaut (@Erdayastronaut) post in which he said he still could not get over the sub-meter accuracy of a landing by a vehicle that had been traveling at over 7,000 m/s — more than 7 km in one second — and could “land on a dime.” The quote post went out at 21:59 CET on 22 November 2026.",
+      "topics": [
+        "Starship",
+        "AI compute",
+        "Starmind"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124605881770033304",
       "username": "elonmusk",
