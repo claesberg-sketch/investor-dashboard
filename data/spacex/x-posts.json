@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T20:54:37+01:00",
+  "updated": "2026-11-23T21:51:39+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 23 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,28 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124945551577723147",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-23T19:17:53.000Z",
+      "text": "@kimmonismus I’m honored to have Yann as a reply guy",
+      "url": "https://x.com/elonmusk/status/2124945551577723147",
+      "metrics": {
+        "likes": 4135,
+        "reposts": 131,
+        "replies": 261,
+        "quotes": 19,
+        "bookmarks": 77,
+        "impressions": 123612
+      },
+      "summary": "Elon Musk replied to Chubby (@kimmonismus), “I’m honored to have Yann as a reply guy.” The reply went out at 20:17 CET on 23 November 2026, after kimmonismus juxtaposed remarks attributed to Alexandr Wang and Elon Musk — that superintelligence had arrived and the Riemann Hypothesis had been proven — with a mocking quote of Yann LeCun questioning the claim because level-5 autonomous driving is not yet here.",
+      "topics": [
+        "AI compute",
+        "Starmind"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124944467119747335",
       "username": "elonmusk",

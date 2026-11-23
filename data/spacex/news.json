@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T19:54:37Z",
+  "updated": "2026-11-23T20:51:39Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -52,7 +52,7 @@
       "summary": "A Reuters report by Daniel Flynn, datelined Kyiv on 23 November 2026 and carried by Street Insider at 12:35 p.m. EST (18:35 CET) that day (the reuters.com page returned 401 here), says British defence minister Wes Streeting, visiting Kyiv, told journalists that restrictions on Ukraine’s military use of SpaceX satellite communications have been “a topic of conversation among defense ministers right across Europe” and “has really dented confidence and trust.” Ukraine said earlier this month that military units had seen significant disruptions to SpaceX’s Starshield system along the entire front line and in Russian-occupied areas; SpaceX did not immediately respond to a request for comment, President Zelenskiy said Kyiv was talking with the US government and SpaceX to find the cause, and Streeting said allies are “owed a clear explanation about those service interruptions.”"
     },
     {
-      "id": "media-33",
+      "id": "media-39",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T16:44:46Z",
@@ -66,7 +66,7 @@
       "summary": "A Reuters article by Diana Novak Jones, dated 23 November 2026 and listed in Google News at 15:50 CET that day (the Google News link was not opened; this is from the Reuters text syndicated on Yahoo Finance and Investing.com), says Virginia and Oregon have become the first states to sue Elon Musk’s SpaceX Super Intelligence Corp, alleging it profited from a Grok feature that produces child sexual abuse material and other non-consensual sexual images from photographs while failing to put safeguards in place, and that the company misled consumers about Grok’s safety while promoting “spicy mode.” The consumer-protection suits, filed in state courts, seek damages, penalties and court orders; SpaceX did not immediately comment, Virginia Attorney General Jay Jones told Reuters that state attorneys general are stepping in amid limited federal AI regulation, and the piece notes SpaceX already faces more than a dozen individual lawsuits as well as a UK case by lawmaker Jess Asato."
     },
     {
-      "id": "media-27",
+      "id": "media-8",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T16:13:32Z",
@@ -78,24 +78,19 @@
       "summary": "A New York Times article by Grace Kay and Ryan Mac, listed in Google News at 17:13 CET on 23 November 2026 (the Google News and NYT pages could not be opened here; this is from Reuters/Investing.com and other contemporaneous reports of the Times piece), says SpaceX is making more money renting data-center compute to rivals — about $3.1 billion a month from Anthropic and about $800 million from Google, in contracts that could run through 2029 with 90 days’ notice — than from Grok, with the AI unit now generating more than half of company revenue. The Times reports Musk has told staff the company is falling behind in AI, briefly renamed an internal chat “Sell compute because we can’t compete,” and that SpaceX has shut down its AI companions initiative, shifted engineers off a Digital Optimus project, and disbanded a 60-person Grok Imagine team, while Musk told the paper’s DealBook conference that Anthropic is highly likely to keep renting and wants significantly more."
     },
     {
-      "id": "media-fool-gaining-20261123",
+      "id": "media-37",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T15:10:01Z",
       "title": "Why SpaceX Stock Is Gaining Today - The Motley Fool",
       "source": "The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/23/why-spacex-stock-is-gaining-today/",
-      "snippet": "Space Exploration Technologies Corp. (SPCX) stock is up 9.7% as of 9:58 a.m. ET on Monday, Nov. 23, after Nvidia reinstated its CEO.",
-      "topics": [
-        "AI compute",
-        "Starlink",
-        "Grok"
-      ],
-      "summary": "A Motley Fool article by Johnny Rice, published at 10:10 a.m. ET (16:10 CET) on 23 November 2026, says SpaceX shares were up 9.7% as of 9:58 a.m. ET that Monday after Nvidia’s board reinstated Jensen Huang as CEO, a move the article says eases concerns about SpaceX’s access to the latest chips after about $44 billion of notes were priced on Friday for Nvidia Vera Rubin chips and related equipment for SpaceX data centers. It also notes Musk’s weekend comment that he hopes Tesla will offer built-in Starlink toward the end of 2027, and that Virginia and Oregon sued SpaceX on Monday over Grok-generated abusive sexual images.",
-      "timeSource": "Motley Fool byline, 10:10 a.m. ET"
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQU1CWjhmOER3X3BWYTNYZUdxZjBVUURBWHlkMENaM3NKOHlENW82ZlZaSTUycU1CbzFsX3V1aVVlTzVlMExWeUNNbUxPczZVNlpOYmpWUEVXQThXUGhoOW5rNDRzajJGalViel9DcTVkN0VPX1JhcGx0WlJic25zZ1RB?oc=5",
+      "snippet": "Why SpaceX Stock Is Gaining Today The Motley Fool",
+      "topics": [],
+      "summary": "A Motley Fool article by Johnny Rice, published at 10:10 a.m. ET (16:10 CET) on 23 November 2026, says SpaceX shares were up 9.7% as of 9:58 a.m. ET that Monday after Nvidia’s board reinstated Jensen Huang as CEO, a move the article says eases concerns about SpaceX’s access to the latest chips after about $44 billion of notes were priced on Friday for Nvidia Vera Rubin chips and related equipment for SpaceX data centers. It also notes Musk’s weekend comment that he hopes Tesla will offer built-in Starlink toward the end of 2027, and that Virginia and Oregon sued SpaceX on Monday over Grok-generated abusive sexual images."
     },
     {
-      "id": "media-30",
+      "id": "media-23",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T12:40:37Z",
@@ -109,7 +104,7 @@
       "summary": "A CNBC article by Lora Kolodny, published at 13:40 CET on 23 November 2026, says Virginia and Oregon have become the first states to sue SpaceX over Grok, alleging the company failed to stop users from generating and sharing explicit deepfakes, including alleged AI-generated child sexual abuse material, and falsely marketed Grok and X as generally safe. Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones filed separate complaints in Multnomah County and Richmond seeking injunctions, civil penalties, disgorgement and legal costs, with Virginia also seeking consumer restitution; SpaceX did not immediately comment, and the suits were still pending the courts’ acceptance as of early Monday."
     },
     {
-      "id": "media-38",
+      "id": "media-29",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T12:17:34Z",
@@ -121,7 +116,7 @@
       "summary": "A 23 November 2026 news release from Virginia Attorney General Jay Jones, listed in Google News at 13:17 CET that day, announces that Jones and Oregon Attorney General Dan Rayfield have filed consumer-protection suits against SpaceX — described as the parent of X, xAI (now SpaceX Super Intelligence) and Grok — alleging the company failed to stop Grok from generating non-consensual sexual images and child sexual abuse material while promoting a “spicy mode” and falsely assuring users the tools were safe. Virginia’s case was filed in the Circuit Court for the City of Richmond and Oregon’s in Multnomah County Circuit Court; the release cites a CCDH estimate that Grok posted about three million sexualized images on X between 29 December 2025 and 8 January 2026, including about 23,000 that appeared to depict children, and says the attorneys general are seeking accountability and stronger consumer protections."
     },
     {
-      "id": "media-20",
+      "id": "media-16",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T12:01:59Z",
@@ -146,7 +141,7 @@
       "summary": "An Aer Lingus press release dated 23 November 2026 (the official page gives a date but no clock time) says the airline has begun rolling out free Starlink Wi-Fi on its short-haul European fleet, starting with Airbus A320ceo EI-DVM in retro livery, with the service already available on select European flights and expected to extend across 29 short-haul aircraft in early 2027, beginning with destinations including Spain, Portugal and Morocco. Chief Customer Officer Susanne Carberry said the response on North American routes had been “fantastic,” and the airline said customers on its A330 long-haul fleet used an average of 1.8GB of data per connected device in October 2026."
     },
     {
-      "id": "media-39",
+      "id": "media-40",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T08:38:02Z",
@@ -158,7 +153,7 @@
       "summary": "A Motley Fool column by Chris Neiger, published at 3:18 a.m. ET (09:18 CET) on 23 November 2026 and listed in Google News via Yahoo Finance at 09:38 CET, says he would put $1,000 toward Nvidia rather than SpaceX because Nvidia is more profitable, spends less to grow, and is cheaper, with a forward P/E of around 10 versus SpaceX’s 49. He notes SpaceX’s Q3 2026 revenue jumped 161% to $14.6 billion and net income swung to $4.4 billion, but capex rose 185% to $19.6 billion and AI spending is set to be $35–40 billion in Q4 alone, while Nvidia’s sales more than doubled to $115.8 billion."
     },
     {
-      "id": "media-35",
+      "id": "media-30",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T04:06:43Z",
@@ -186,7 +181,7 @@
       "timeSource": "Official SpaceX NROL-136 mission page liftoff time (4:23 a.m. PT)"
     },
     {
-      "id": "media-40",
+      "id": "media-31",
       "type": "media",
       "date": "2026-11-22",
       "datetime": "2026-11-22T11:03:00Z",
@@ -214,7 +209,7 @@
       "timeSource": "Official SpaceX CRS-35 mission page splashdown time (2:04 p.m. PT)"
     },
     {
-      "id": "media-24",
+      "id": "media-17",
       "type": "media",
       "date": "2026-11-21",
       "datetime": "2026-11-21T16:50:51Z",
@@ -228,7 +223,7 @@
       "summary": "Will Robinson-Smith at Spaceflight Now, in an article dated 21 November 2026, listed in Google News at 17:50 CET that day and updated at 8 a.m. EST on 22 November (14:00 CET), reports that SpaceX launched the NROL-136 mission for the National Reconnaissance Office on Sunday morning, sending an undisclosed number of intelligence-gathering satellites to low Earth orbit from Space Launch Complex 4E at Vandenberg Space Force Base — the fourth such proliferated-architecture launch this year and the 15th to date. The article says Falcon 9 first-stage booster B1097, making its 14th flight, lifted off at 4:23 a.m. PST (12:23 UTC), 32 hours, 3 minutes and 21 seconds after the prior USSF launch, smashing the Vandenberg pad turnaround record by more than 23 hours, and that the booster landed at Landing Zone 4 about 7.5 minutes after liftoff, the 38th landing at that site and the 680th Falcon booster landing to date."
     },
     {
-      "id": "media-37",
+      "id": "media-24",
       "type": "media",
       "date": "2026-11-21",
       "datetime": "2026-11-21T13:00:00Z",
@@ -242,7 +237,7 @@
       "summary": "A Space.com article by Mike Wall, published 21 November 2026 and listed in Google News at 14:00 CET that day, says Elon Musk told the TomorrowX Summit on Wednesday, 18 November, that Ship 42 — the first Starship upper stage SpaceX ever successfully recovered, caught at the Starbase tower after Flight 15 — will not fly again and will instead be left for public display because it is “kind of an historic ship,” even though he said it “could probably be reflown with a few weeks of refurbishment.” Wall writes that Musk did not say where the ship would be put on display, notes that SpaceX had already caught Super Heavy three times and reflown a booster twice but had never before attempted a Ship catch, and recalls Musk’s target of about 10,000 Starship missions a year by 2030."
     },
     {
-      "id": "media-37",
+      "id": "media-35",
       "type": "media",
       "date": "2026-11-21",
       "datetime": "2026-11-21T05:28:14Z",
@@ -270,7 +265,7 @@
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-317"
     },
     {
-      "id": "media-31",
+      "id": "media-22",
       "type": "media",
       "date": "2026-11-20",
       "datetime": "2026-11-20T22:16:51Z",
@@ -306,7 +301,7 @@
       "summary": "The Reuters article itself returned 401 here; this summary is from the Reuters-bylined write-up carried by Investing.com and CNA, listed in Google News at 21:57 CET on 20 November 2026. It says Apollo and Goldman Sachs priced about $44 billion of senior and subordinated notes to fund GPUs and related equipment for SpaceX, which the firms called the largest GPU financing to date, an oversubscribed and upsized deal expected to finance Nvidia Vera Rubin chips for SpaceX’s terrestrial compute buildout, with leases starting when the equipment is delivered in the first half of 2027 and anchor commitments from BlackRock, Goldman Sachs Asset Management and KKR-advised accounts."
     },
     {
-      "id": "media-36",
+      "id": "media-34",
       "type": "media",
       "date": "2026-11-20",
       "datetime": "2026-11-20T18:09:10Z",
@@ -318,7 +313,7 @@
       "summary": "The CNN.com article itself could not be fetched here; this summary is from the CNN-bylined report by Zachary Cohen, Jennifer Hansler and Kylie Atwood, carried by KRDO and RNZ and listed in Google News at 19:09 CET on 20 November 2026. It says Rep. Jim Himes, who will become House Intelligence Committee chairman in January, warned in a classified message to Director of National Intelligence Jay Clayton that the committee “cannot authorize funds for the development of government systems that the government will not fully control,” seeking clarity on repeated slowdowns of Ukraine’s Starshield connection speed, and in a separate letter asked Elon Musk to explain the October 2026 Starshield service changes and whether they were made unilaterally by SpaceX or directed by a U.S. official, writing that a potentially unilateral contract modification and a lack of responsiveness to congressional oversight “calls into question every contract the US government has with SpaceX.”"
     },
     {
-      "id": "media-34",
+      "id": "media-36",
       "type": "media",
       "date": "2026-11-20",
       "datetime": "2026-11-20T14:52:35Z",
@@ -344,19 +339,7 @@
       "summary": "A Barron’s article by Al Root, listed in Google News at 12:55 CET on 20 November 2026, says SpaceX stock “feels tethered to its $135 IPO price” and is failing to achieve escape velocity. The rest of the article is behind a paywall here (Barron’s returned 401; Yahoo Finance only showed that lede), so this summary is limited to the headline and opening line."
     },
     {
-      "id": "media-2",
-      "type": "media",
-      "date": "2026-11-20",
-      "datetime": "2026-11-20T08:00:00Z",
-      "title": "SpaceX - Britannica",
-      "source": "Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4zcHd5YjFSa1NCb3ZueFJhWXBiV2RDdU51UUpjQ2ZlVGxuTVBFV24wN1BuUTlpZ3g2TjJEVWRDVXdPcTF3eVU2WnBRaFpuU3Js?oc=5",
-      "snippet": "SpaceX Britannica",
-      "topics": [],
-      "summary": "The Google News link and the main Britannica page were blocked; Britannica’s Scholars encyclopedia entry by Alison Eldridge describes SpaceX as an American aerospace company founded by Elon Musk in 2002, now headquartered in Starbase, Texas, and covers Falcon, Dragon, Starlink and Starship plus the February 2026 xAI acquisition, a June 2026 IPO of 555.6 million shares at $135 that raised $75 billion and valued the company at about $1.77 trillion, and the August 2026 $60 billion purchase of Cursor. It says that as of June 2026 Starlink had more than 10,200 satellites in orbit and 12 million subscribers, and that after the xAI deal SpaceX made artificial intelligence one of its three main business segments alongside space and connectivity."
-    },
-    {
-      "id": "media-9",
+      "id": "media-7",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T23:51:47Z",
@@ -370,7 +353,7 @@
       "summary": "Will Robinson-Smith at Spaceflight Now, in an article updated at 11:45 p.m. EDT on 20 November 2026 (05:45 CET on 21 November), reports that SpaceX launched USSF-317, a classified U.S. Space Force mission carrying an undisclosed number of satellites, on a Falcon 9 from Space Launch Complex 4 East at Vandenberg at 8:20 p.m. PST (05:20 CET on 21 November), after scrubbing Thursday night without stating a reason. Booster B1100, on its 11th flight, landed a little more than eight minutes after liftoff on the Of Course I Still Love You droneship, the 235th landing on that vessel and the 679th Falcon booster landing to date."
     },
     {
-      "id": "media-6",
+      "id": "media-5",
       "type": "media",
       "date": "2026-11-19",
       "datetime": "2026-11-19T08:00:00Z",
@@ -410,7 +393,7 @@
       "timeSource": "Google News first listing of the official SpaceX mission page"
     },
     {
-      "id": "media-20",
+      "id": "media-19",
       "type": "media",
       "date": "2026-11-18",
       "datetime": "2026-11-18T16:35:04Z",
@@ -438,7 +421,7 @@
       "summary": "A Reuters article by Niket Nishant, dated 18 November 2026 and listed in Google News at 16:52 CET that day, compared the then-upcoming Anthropic IPO with SpaceX’s June debut, saying Anthropic was expected to be the second-biggest U.S. offering on record and that a $1.4 trillion valuation then discussed by bankers would be about 40 times trailing 12-month sales, versus roughly 92 times revenue when SpaceX went public at about $1.8 trillion. The live Reuters page could not be fetched here; this summary is from a Reuters-bylined syndication, which also noted SpaceX’s tighter lock-up for Elon Musk, who is barred from selling for a year, and that SpaceX shares were trading above their IPO price but below the June open."
     },
     {
-      "id": "media-12",
+      "id": "media-9",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T19:17:24Z",
@@ -450,7 +433,7 @@
       "summary": "A NASA news release by Lauren E. Low, dated 17 November 2026 and updated on 18 and 19 November, listed in Google News at 20:17 CET on 17 November, says NASA will cover the departure of the SpaceX Dragon on the 35th commercial resupply mission, with undocking from Harmony’s space-facing port no earlier than 12:05 p.m. EST on Friday 20 November and live coverage from 11:45 a.m., targeting splashdown off the California coast at about 4:55 p.m. EST (1:55 p.m. PST) on Saturday 21 November, weather permitting. It says the spacecraft arrived on 15 October after a Falcon 9 launch from Cape Canaveral two days earlier with more than 6,300 pounds of cargo, and that thousands of pounds are coming back, including a 3D-bioprinted blood-vessel construct, frozen tumor organoids, microbial samples and a lighting system that spent more than three years on station."
     },
     {
-      "id": "media-27",
+      "id": "media-33",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T18:07:04Z",
@@ -464,7 +447,7 @@
       "summary": "A Yahoo Finance article by Arnab Paul, listed in Google News at 19:07 CET on 17 November 2026, cites a Bloomberg report that SpaceX could begin selling around $4 billion of bonds that week as the first part of a $40 billion financing plan to buy Nvidia Vera Rubin chips, with Goldman Sachs and Apollo expected to underwrite the sale and BlackRock and KKR funds also having made financing commitments. It says a special-purpose company managed by Apollo-backed Atlas SP would buy the chips and lease them to SpaceX for five years, a structure designed to keep the borrowing off SpaceX’s balance sheet and protect its investment-grade ratings, and that SpaceX had not responded to a request for comment."
     },
     {
-      "id": "media-30",
+      "id": "media-27",
       "type": "media",
       "date": "2026-11-16",
       "datetime": "2026-11-16T21:11:00Z",
@@ -478,7 +461,19 @@
       "summary": "A Barron’s article by Al Root and Callum Keown, listed in Google News at 17:53 CET on 16 November 2026 under the headline “Why SpaceX Stock Is Down After Its Historic Starship Catch,” says SpaceX did something amazing on Saturday but the stock is barely budging on Monday, after Starship’s upper stage came back from orbit and was caught by the launch tower’s mechanical arms, which the writers call an amazing feat of engineering. The rest of the article could not be fetched here because of the paywall."
     },
     {
-      "id": "media-17",
+      "id": "media-38",
+      "type": "media",
+      "date": "2026-11-16",
+      "datetime": "2026-11-16T16:34:31Z",
+      "title": "Elon Musk Wants to Merge Tesla and SpaceX. Their Businesses Already Overlap. - The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ELUVFNFBiWjJzc1Nzc1RmbFkzRV9UVEtwN2VQRlBtV1VuVjR1aThINEpLOUhMYXRLRGF0N0lCbDZJWldSbERPYWxSWHFZQlVPZVlHWnpJa09sc01lRFFXR1JBU2ZrY3dFZnpJNFpLYnZRTWJVYUpxZnFnZw?oc=5",
+      "snippet": "Elon Musk Wants to Merge Tesla and SpaceX. Their Businesses Already Overlap. The New York Times",
+      "topics": [],
+      "summary": "The New York Times page itself could not be fetched here; a syndicated reprint of Grace Kay’s Times report (with Ryan Mac contributing), listed in Google News at 17:34 CET on 16 November 2026, says Elon Musk hopes to merge Tesla and SpaceX into a conglomerate valued at more than $3 trillion, that any deal would need independent-committee and shareholder approval, and that Musk has called a merger a “good idea” while saying that treating it as a certainty “would be overstating it.” The report, citing interviews, filings and documents, says the companies already overlap through shared executives and engineers, about $890 million of Tesla products bought by SpaceX since 2023, Tesla’s planned use of Starlink and Grok, a $2 billion Tesla investment in xAI (since renamed SpaceXSI), and a planned $16.8 billion joint chip-manufacturing investment in Texas."
+    },
+    {
+      "id": "media-10",
       "type": "media",
       "date": "2026-11-16",
       "datetime": "2026-11-16T15:16:04Z",
@@ -492,7 +487,7 @@
       "summary": "A Yahoo Finance article by Pras Subramanian, published at 16:16 CET on 16 November 2026, says SpaceX caught Starship’s upper stage for the first time on Saturday after Flight 15 deployed 26 Starlink V3 satellites, and cites Evercore ISI’s Kutgun Maral saying the mission should remind investors the company is at its “core” a rocket builder, because long-term value will be decided more by the cost and frequency of access to orbit than by the next gigawatt of compute or contract renewal. It also quotes William Blair’s Louie DiPalma calling the Super Heavy booster abort, which Musk attributed to being slightly low on fuel, a “footnote in an otherwise historic mission,” and contrasts that with ULA’s Vulcan anomaly on Sunday that lost all 40 Amazon Leo satellites."
     },
     {
-      "id": "media-2",
+      "id": "media-3",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T08:00:00Z",
@@ -504,7 +499,7 @@
       "summary": "An Economist Science and Technology article, listed in Google News at 12:33 CET on 15 November 2026, says that on 14 November, during Starship’s 15th test flight, SpaceX caught the rocket’s second stage at its launch tower for the first time, having previously caught boosters mid-air but never the upper half. The Economist page itself returned 403 here; the visible opening says that leaves the company on the cusp of building the first fully reusable rocket, which should cut the cost of reaching space further."
     },
     {
-      "id": "media-22",
+      "id": "media-12",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T08:00:00Z",
@@ -518,7 +513,7 @@
       "summary": "A Reuters report by Joey Roulette, listed in Google News at 22:40 CET on 14 November 2026, says Starship returned from a 22-hour voyage in orbit and descended for the first time into the Mechazilla arms at the Texas tower it launched from a day earlier, after the Super Heavy booster failed to make a similar return about 10 minutes after Friday’s liftoff. The piece says the ship had deployed 26 Starlink satellites, completed 14 orbits over 22.5 hours, and that Elon Musk and SpaceX engineers began inspecting Ship 42 within hours of the catch."
     },
     {
-      "id": "media-28",
+      "id": "media-21",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T08:00:00Z",
@@ -601,7 +596,33 @@
       "summary": "SpaceX’s official Starship Flight 15 page, listed in Google News at 09:00 CET on 13 November 2026, says the vehicle lifted off from Pad 2 at Starbase on 13 November 2026, reached orbit and deployed 26 Starlink V3 satellites, while the Super Heavy booster aborted its catch after a boostback burn ended early due to low fuel mass and was diverted to an offshore landing in the Gulf, where its flight termination system was triggered after the landing burn. After more than 20 hours in space and a deorbit burn, Starship returned to the same launch site 22.5 hours after liftoff and, for the first time, was caught by Mechazilla’s arms."
     },
     {
-      "id": "media-7",
+      "id": "media-2",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:00:00Z",
+      "title": "SpaceX - Britannica",
+      "source": "Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4zcHd5YjFSa1NCb3ZueFJhWXBiV2RDdU51UUpjQ2ZlVGxuTVBFV24wN1BuUTlpZ3g2TjJEVWRDVXdPcTF3eVU2WnBRaFpuU3Js?oc=5",
+      "snippet": "SpaceX Britannica",
+      "topics": [],
+      "summary": "The Google News link and the main Britannica page were blocked; Britannica’s Scholars encyclopedia entry by Alison Eldridge describes SpaceX as an American aerospace company founded by Elon Musk in 2002, now headquartered in Starbase, Texas, and covers Falcon, Dragon, Starlink and Starship plus the February 2026 xAI acquisition, a June 2026 IPO of 555.6 million shares at $135 that raised $75 billion and valued the company at about $1.77 trillion, and the August 2026 $60 billion purchase of Cursor. It says that as of June 2026 Starlink had more than 10,200 satellites in orbit and 12 million subscribers, and that after the xAI deal SpaceX made artificial intelligence one of its three main business segments alongside space and connectivity."
+    },
+    {
+      "id": "media-4",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:00:00Z",
+      "title": "SpaceX successfully catches Starship and makes history - NPR",
+      "source": "NPR",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTkcyZTZfYTNaUW1HemJBRUtfYldKd1cteXZMcHdpdGtySk1nRUh6SFhHMlRlTUh4eTRaTDFaYkhibDJnZTRmYlNWLUUtUmo3NlNWcTh0dEpEMXhGdXNxaHE3aU5kWEZMSjFrQ0FYYnJPMkZRR2ljak9vNGxXVmRQMHYxay1YdHREcGJxa0dmdWJaM2hQYkVjRDBZWXdsUQ?oc=5",
+      "snippet": "SpaceX successfully catches Starship and makes history NPR",
+      "topics": [
+        "Starship"
+      ],
+      "summary": "An NPR report posted at 22:42 CET on 14 November 2026 says Starship made a triumphant return to Earth on Saturday and was caught in midair by giant mechanical arms after a 22-hour flight, the first-ever capture of a Starship flying back from space, though the company fell short of a double catch after the first-stage booster exploded following Friday’s liftoff. The piece says the upper stage reached orbit, released 26 advanced Starlink satellites, completed 14 laps of Earth, and that SpaceX’s Kate Tice said the booster’s engines stopped firing too soon, after which its guidance system initiated a watery detour and self-destruction."
+    },
+    {
+      "id": "media-6",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T08:00:00Z",
@@ -613,6 +634,76 @@
         "Starship"
       ],
       "summary": "A CNBC report by Lora Kolodny, published at 22:14 CET on 14 November 2026 and later updated, says SpaceX successfully caught the upper-stage spacecraft of Starship from orbit with the launch tower’s “chopsticks” at Starbase, Texas, after the vehicle flew around the Earth 14 times. The piece notes that on Friday SpaceX failed to catch and recover the booster, diverting it to a Gulf of Mexico splashdown where it exploded before hitting the water, and that Flight 15 also released another 26 of SpaceX’s newest Starlink v3 satellites."
+    },
+    {
+      "id": "media-11",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:00:00Z",
+      "title": "'Now everything changes': SpaceX catches Starship upper stage for 1st time ever (video) - Space",
+      "source": "Space",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeEYtcEJwRGh1MXpQTG5SdTFMdXFJOGw0aklDa2hSc3NoSmEzN0dwVHQ3a0JkYy1SWW1qX2JZSWdYZVZ0TUlROWhVc2w1ZVJ5aFE0blpvdkM0WUE3eVRENHFLNjdjR2hpLW1waFVudlZPeDNMNXRQRnR0WjhjSWk3MndOV0swNlg1TnpRVlpZSjJtTmhtZHF6M0xCeExkZ2FkckZMVjY2Y3NGSk9QNU5Za08xQ00?oc=5",
+      "snippet": "'Now everything changes': SpaceX catches Starship upper stage for 1st time ever (video) Space",
+      "topics": [
+        "Starship"
+      ],
+      "summary": "A Space.com report by Mike Wall, listed at 23:04 CET on 14 November 2026, says SpaceX caught Starship’s upper stage for the first time on 14 November, with Ship 42 nestling into Mechazilla’s arms at 4:20 p.m. EST, about 22.5 hours after Flight 15 lifted off, while the Super Heavy booster had diverted to a Gulf of Mexico splashdown after a low-fuel alarm. The article quotes SpaceX’s Dan Huot calling the catch “the holy grail of spaceflight,” and notes Flight 15 again deployed 26 next-gen Starlink V3 satellites."
+    },
+    {
+      "id": "media-13",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:00:00Z",
+      "title": "With Starship catch, SpaceX still shows it can dazzle the world - Ars Technica",
+      "source": "Ars Technica",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTjNxR3RJODFOUXdTLWVmNHlwVTVqNGVFdlg3TFhMT0pzVjE2YXZEaS1NOUhnZW93c1d6NjR0eHF3UWpDbHlGSzdTSGxZYU1MbGJPZWJ5OVBLMG1hcEdONEw1UjhENjdrd3l2X2VKUkVnMGEyMGZXV2FiT0d4TkpFZWwwaHpjSy1xYVdidkRqR3VrODktNXBDODNYeDhxa3BERVJV?oc=5",
+      "snippet": "With Starship catch, SpaceX still shows it can dazzle the world Ars Technica",
+      "topics": [
+        "Starship"
+      ],
+      "summary": "An Ars Technica report by Eric Berger, listed in Google News at 01:40 CET on 15 November 2026, describes Starship’s upper stage returning to Starbase on Saturday, flipping from horizontal to vertical as three Raptor engines ignited, and being snagged by the launch-tower arms — a hugely significant step, he writes, toward a massive, rapidly reusable rocket after earlier practice runs into the Indian Ocean. Berger notes SpaceX has now returned both elements of a Starship to the tower as a proof of concept, currently builds an upper stage every three weeks at the South Texas Starfactory (sized for one every three days), and says the heat shield is likely the hardest part of making such landings routine."
+    },
+    {
+      "id": "media-18",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:00:00Z",
+      "title": "SpaceX deploys Starlink satellites in Starship test, but booster crashes into Gulf - NPR",
+      "source": "NPR",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNnpZMHNXRkc0U0xrV1lHbDF1YVZTRzV4NXFJRUlZQWJTQVlDWHozMmlvUmlRd3BONEJiUGxqcHhHSWZpUkI2R1JBVkRaSW0tUXF4R2NlaDNUTmc5ZEVnNFA3NnJKaDNZMWFscWpUOGl6S0tuRzBNYW1Camc1Ymp6ZXNDdEZFS3RKLTVUN1YzMWpKOVYwQlY3VU5GY3BBS3lkWU5YZWJqOTRsY2ZfYzlueXlEWXF4NnZCS1RablMtd3JhWlIy?oc=5",
+      "snippet": "SpaceX deploys Starlink satellites in Starship test, but booster crashes into Gulf NPR",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ],
+      "summary": "An NPR Weekend Edition Saturday interview with Geoff Brumfiel, listed at 13:40 CET on 14 November 2026 and recorded before the catch attempt, says Friday night’s Starship test reached orbit and deployed 26 Starlink satellites, but the Super Heavy booster that was supposed to land at Starbase instead crashed into the Gulf of Mexico. Brumfiel said the plan later that day was for the ship to reenter, fly back to Starbase and be grabbed by the launch tower’s mechanical arms, a step he described as essential to making Starship rapidly reusable for Starlink and orbital data centers."
+    },
+    {
+      "id": "media-25",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:00:00Z",
+      "title": "SpaceX’s Starship returns from orbit and is captured by launchpad arms in a dramatic first - NBC News",
+      "source": "NBC News",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUy1hcVFMUVFOc0lrZWNVT3lvV1gzbVl1MHE0am1WaFBYRjlJWWtJNnEwZERmdGxLZHdLUFhhaUJoZ3BPeTZRZ0ZtNzBJcmFqTTVjcnBtb2pUblpLTm5nWXBnazdHZTBDNUM1cmJYTjlwNnk5TkllVEd4bnJQSGxJanU3OHBhMmpRRnN5b3F4Q1BQRV9ud001RHc3cEo0d1pJbWNZSnhMc0hZSV9RV3JmUW5KT2ZxY3JoRGc?oc=5",
+      "snippet": "SpaceX’s Starship returns from orbit and is captured by launchpad arms in a dramatic first NBC News",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "summary": "An NBC News report by Reuters and Evan Bush, first published on 13 November 2026 and updated at 22:33 CET on 14 November, says SpaceX caught its Starship spacecraft with giant mechanical arms at its South Texas launch site on Saturday, recovering the upper stage for the first time after nearly a day in orbit. The catch capped Starship’s 15th test flight; the company had planned to catch both stages, but the Super Heavy booster was diverted offshore after Friday’s liftoff and exploded a short distance over the Gulf of Mexico."
+    },
+    {
+      "id": "media-26",
+      "type": "media",
+      "date": "2026-11-14",
+      "datetime": "2026-11-14T08:00:00Z",
+      "title": "SpaceX Makes History With Successful Rocket Catch in Texas - The New York Times",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbVlRV21FMHRaYk1jOFJ1M2lId2dOaVgyb292em1yUFlLcjJiQnlEOHhzVHVFZzh4TjczMm5aeURpYTZid3FFdS1mQURxRDhGRlVxQWs2UVZ2NEhBS1dvaTdVbDMySTVLeEx3dDhSMEZpWHluWHJtak1kVWFuWHdzTw?oc=5",
+      "snippet": "SpaceX Makes History With Successful Rocket Catch in Texas The New York Times",
+      "topics": [],
+      "summary": "The New York Times page itself could not be fetched here; a syndicated reprint of Kenneth Chang’s Times report, listed in Google News at 01:36 CET on 15 November 2026, says Starship returned from orbit on Saturday afternoon and was caught between the mechanical “chopstick” arms on the South Texas launch tower — the first time an upper stage had been brought back from orbit, on the first try. The 15th test flight launched Friday afternoon and deployed 26 next-generation Starlink satellites, while the planned Super Heavy booster catch — which would have been a first double-catch — did not happen, and the article notes that showing the heat shield and engines can be reused quickly is still further off."
     },
     {
       "id": "media-13",
@@ -629,63 +720,6 @@
       "summary": "A SpacePolicyOnline report by Marcia Smith, listed at 22:53 CET on 14 November 2026, says Starship’s 15th integrated flight test returned after 14 orbits and was caught at the Starbase launch tower, the first attempt to catch the second stage after an orbital mission, after SpaceX had previously caught Super Heavy boosters on three flights. The piece says the booster did not return as planned after the guidance system diverted it to the Gulf, that IFT-15 deployed 26 Starlink V3 satellites, and that this was Booster 22 and Starship 42 (S42)."
     },
     {
-      "id": "media-14",
-      "type": "media",
-      "date": "2026-11-14",
-      "datetime": "2026-11-14T08:00:00Z",
-      "title": "'Now everything changes': SpaceX catches Starship upper stage for 1st time ever (video) - Space",
-      "source": "Space",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeEYtcEJwRGh1MXpQTG5SdTFMdXFJOGw0aklDa2hSc3NoSmEzN0dwVHQ3a0JkYy1SWW1qX2JZSWdYZVZ0TUlROWhVc2w1ZVJ5aFE0blpvdkM0WUE3eVRENHFLNjdjR2hpLW1waFVudlZPeDNMNXRQRnR0WjhjSWk3MndOV0swNlg1TnpRVlpZSjJtTmhtZHF6M0xCeExkZ2FkckZMVjY2Y3NGSk9QNU5Za08xQ00?oc=5",
-      "snippet": "'Now everything changes': SpaceX catches Starship upper stage for 1st time ever (video) Space",
-      "topics": [
-        "Starship"
-      ],
-      "summary": "A Space.com report by Mike Wall, listed at 23:04 CET on 14 November 2026, says SpaceX caught Starship’s upper stage for the first time on 14 November, with Ship 42 nestling into Mechazilla’s arms at 4:20 p.m. EST, about 22.5 hours after Flight 15 lifted off, while the Super Heavy booster had diverted to a Gulf of Mexico splashdown after a low-fuel alarm. The article quotes SpaceX’s Dan Huot calling the catch “the holy grail of spaceflight,” and notes Flight 15 again deployed 26 next-gen Starlink V3 satellites."
-    },
-    {
-      "id": "media-16",
-      "type": "media",
-      "date": "2026-11-14",
-      "datetime": "2026-11-14T08:00:00Z",
-      "title": "SpaceX successfully catches Starship and makes history - NPR",
-      "source": "NPR",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTkcyZTZfYTNaUW1HemJBRUtfYldKd1cteXZMcHdpdGtySk1nRUh6SFhHMlRlTUh4eTRaTDFaYkhibDJnZTRmYlNWLUUtUmo3NlNWcTh0dEpEMXhGdXNxaHE3aU5kWEZMSjFrQ0FYYnJPMkZRR2ljak9vNGxXVmRQMHYxay1YdHREcGJxa0dmdWJaM2hQYkVjRDBZWXdsUQ?oc=5",
-      "snippet": "SpaceX successfully catches Starship and makes history NPR",
-      "topics": [
-        "Starship"
-      ],
-      "summary": "An NPR report posted at 22:42 CET on 14 November 2026 says Starship made a triumphant return to Earth on Saturday and was caught in midair by giant mechanical arms after a 22-hour flight, the first-ever capture of a Starship flying back from space, though the company fell short of a double catch after the first-stage booster exploded following Friday’s liftoff. The piece says the upper stage reached orbit, released 26 advanced Starlink satellites, completed 14 laps of Earth, and that SpaceX’s Kate Tice said the booster’s engines stopped firing too soon, after which its guidance system initiated a watery detour and self-destruction."
-    },
-    {
-      "id": "media-19",
-      "type": "media",
-      "date": "2026-11-14",
-      "datetime": "2026-11-14T08:00:00Z",
-      "title": "SpaceX deploys Starlink satellites in Starship test, but booster crashes into Gulf - NPR",
-      "source": "NPR",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNnpZMHNXRkc0U0xrV1lHbDF1YVZTRzV4NXFJRUlZQWJTQVlDWHozMmlvUmlRd3BONEJiUGxqcHhHSWZpUkI2R1JBVkRaSW0tUXF4R2NlaDNUTmc5ZEVnNFA3NnJKaDNZMWFscWpUOGl6S0tuRzBNYW1Camc1Ymp6ZXNDdEZFS3RKLTVUN1YzMWpKOVYwQlY3VU5GY3BBS3lkWU5YZWJqOTRsY2ZfYzlueXlEWXF4NnZCS1RablMtd3JhWlIy?oc=5",
-      "snippet": "SpaceX deploys Starlink satellites in Starship test, but booster crashes into Gulf NPR",
-      "topics": [
-        "Starship",
-        "Starlink"
-      ],
-      "summary": "An NPR Weekend Edition Saturday interview with Geoff Brumfiel, listed at 13:40 CET on 14 November 2026 and recorded before the catch attempt, says Friday night’s Starship test reached orbit and deployed 26 Starlink satellites, but the Super Heavy booster that was supposed to land at Starbase instead crashed into the Gulf of Mexico. Brumfiel said the plan later that day was for the ship to reenter, fly back to Starbase and be grabbed by the launch tower’s mechanical arms, a step he described as essential to making Starship rapidly reusable for Starlink and orbital data centers."
-    },
-    {
-      "id": "media-26",
-      "type": "media",
-      "date": "2026-11-14",
-      "datetime": "2026-11-14T08:00:00Z",
-      "title": "With Starship catch, SpaceX still shows it can dazzle the world - Ars Technica",
-      "source": "Ars Technica",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTjNxR3RJODFOUXdTLWVmNHlwVTVqNGVFdlg3TFhMT0pzVjE2YXZEaS1NOUhnZW93c1d6NjR0eHF3UWpDbHlGSzdTSGxZYU1MbGJPZWJ5OVBLMG1hcEdONEw1UjhENjdrd3l2X2VKUkVnMGEyMGZXV2FiT0d4TkpFZWwwaHpjSy1xYVdidkRqR3VrODktNXBDODNYeDhxa3BERVJV?oc=5",
-      "snippet": "With Starship catch, SpaceX still shows it can dazzle the world Ars Technica",
-      "topics": [
-        "Starship"
-      ],
-      "summary": "An Ars Technica report by Eric Berger, listed in Google News at 01:40 CET on 15 November 2026, describes Starship’s upper stage returning to Starbase on Saturday, flipping from horizontal to vertical as three Raptor engines ignited, and being snagged by the launch-tower arms — a hugely significant step, he writes, toward a massive, rapidly reusable rocket after earlier practice runs into the Indian Ocean. Berger notes SpaceX has now returned both elements of a Starship to the tower as a proof of concept, currently builds an upper stage every three weeks at the South Texas Starfactory (sized for one every three days), and says the heat shield is likely the hardest part of making such landings routine."
-    },
-    {
       "id": "media-29",
       "type": "media",
       "date": "2026-11-14",
@@ -700,33 +734,6 @@
       "summary": "An NPR All Things Considered segment by Geoff Brumfiel and Rob Schmitz, listed at 23:31 CET on 14 November 2026, describes SpaceX catching Starship as it returned from orbit at Starbase, with the ship reentering, bursting through clouds, flipping vertical and being grabbed by Mechazilla’s arms. Brumfiel notes the flight also deployed 26 Starlink satellites, that rapid reuse still requires bringing both the booster and ship back, and that Friday’s Super Heavy booster aborted and self-destructed in the Gulf."
     },
     {
-      "id": "media-40",
-      "type": "media",
-      "date": "2026-11-14",
-      "datetime": "2026-11-14T08:00:00Z",
-      "title": "SpaceX Makes History With Successful Rocket Catch in Texas - The New York Times",
-      "source": "The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbVlRV21FMHRaYk1jOFJ1M2lId2dOaVgyb292em1yUFlLcjJiQnlEOHhzVHVFZzh4TjczMm5aeURpYTZid3FFdS1mQURxRDhGRlVxQWs2UVZ2NEhBS1dvaTdVbDMySTVLeEx3dDhSMEZpWHluWHJtak1kVWFuWHdzTw?oc=5",
-      "snippet": "SpaceX Makes History With Successful Rocket Catch in Texas The New York Times",
-      "topics": [],
-      "summary": "The New York Times page itself could not be fetched here; a syndicated reprint of Kenneth Chang’s Times report, listed in Google News at 01:36 CET on 15 November 2026, says Starship returned from orbit on Saturday afternoon and was caught between the mechanical “chopstick” arms on the South Texas launch tower — the first time an upper stage had been brought back from orbit, on the first try. The 15th test flight launched Friday afternoon and deployed 26 next-generation Starlink satellites, while the planned Super Heavy booster catch — which would have been a first double-catch — did not happen, and the article notes that showing the heat shield and engines can be reused quickly is still further off."
-    },
-    {
-      "id": "media-24",
-      "type": "media",
-      "date": "2026-11-14",
-      "datetime": "2026-11-14T08:00:00Z",
-      "title": "SpaceX’s Starship returns from orbit and is captured by launchpad arms in a dramatic first - NBC News",
-      "source": "NBC News",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUy1hcVFMUVFOc0lrZWNVT3lvV1gzbVl1MHE0am1WaFBYRjlJWWtJNnEwZERmdGxLZHdLUFhhaUJoZ3BPeTZRZ0ZtNzBJcmFqTTVjcnBtb2pUblpLTm5nWXBnazdHZTBDNUM1cmJYTjlwNnk5TkllVEd4bnJQSGxJanU3OHBhMmpRRnN5b3F4Q1BQRV9ud001RHc3cEo0d1pJbWNZSnhMc0hZSV9RV3JmUW5KT2ZxY3JoRGc?oc=5",
-      "snippet": "SpaceX’s Starship returns from orbit and is captured by launchpad arms in a dramatic first NBC News",
-      "topics": [
-        "Starship",
-        "Launch"
-      ],
-      "summary": "An NBC News report by Reuters and Evan Bush, first published on 13 November 2026 and updated at 22:33 CET on 14 November, says SpaceX caught its Starship spacecraft with giant mechanical arms at its South Texas launch site on Saturday, recovering the upper stage for the first time after nearly a day in orbit. The catch capped Starship’s 15th test flight; the company had planned to catch both stages, but the Super Heavy booster was diverted offshore after Friday’s liftoff and exploded a short distance over the Gulf of Mexico."
-    },
-    {
       "id": "pr-restoring-boca-chica-beach",
       "type": "press",
       "date": "2026-11-13",
@@ -737,6 +744,48 @@
       "topics": [],
       "datetime": "2026-11-13T16:32:29Z",
       "timeSource": "Official SpaceX post linking the 13 November Updates item"
+    },
+    {
+      "id": "media-15",
+      "type": "media",
+      "date": "2026-11-13",
+      "datetime": "2026-11-13T08:00:00Z",
+      "title": "SpaceX's giant rocket may leave NASA in the dust - NPR",
+      "source": "NPR",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS29lRWxDTEFxWU55UU1fMlhIcXNJamF3bFRkX01nWEhnRjI1QjNnZHppcERYSFJPTzVJVHlvc0pVVkh6WENxSTJQTkVlODhuaGY4b1dzWUhTcjVJZ0w0NGhNWmtsQ0JkNzRlX2trUS1KVkozZFJFOGFWeXRCQVZtUHV1YllJalFsT3Qxd2tObFBKdw?oc=5",
+      "snippet": "SpaceX's giant rocket may leave NASA in the dust NPR",
+      "topics": [],
+      "summary": "An NPR report by Geoff Brumfiel, published 13 November 2026, says SpaceX plans its most ambitious Starship test later today — lift off from South Texas, orbit Earth, and land vertically at the same pad 22 and a half hours later — and that experts warn the shift toward Starship could strand NASA, because SpaceX has said it will stop flying Falcon 9, which launches Dragon, currently the only American spacecraft that can ferry NASA astronauts to and from the ISS. NASA has contracted three additional ISS flights that would only take Dragon through 2028 if flown every six months with no further orders; SpaceX did not comment, its latest report showed about $2.1 billion of launch revenue through September versus $12.8 billion from Starlink and $10.9 billion from AI, and Gwynne Shotwell suggested Boeing’s problem-plagued Starliner (next crewed flight sometime in 2028) could take some of that NASA business."
+    },
+    {
+      "id": "media-20",
+      "type": "media",
+      "date": "2026-11-13",
+      "datetime": "2026-11-13T08:00:00Z",
+      "title": "SpaceX launches Starship in key test flight of massive rocket - CNBC",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPM2RDOFRVRzlYRXd2UzRoU2NsT2loVFJOS3RKTWtsVlZrNm54WWhoREdoelVzai1odkR4VlZyLTN2V093VlJvSlhUTlFDMUJVbDRmQ3F2NV9IbFpBZmRlaUNoaWtuQ3h3eXdWTXFfWlI1YW1LbmhQaHAxN21Ua29fOVNIMS1uQklmdGYwU2JNUnQ4Wl9jdVl5OFpLZTZDdmvSAaQBQVVfeXFMTzdKdnZ2WjdnZFJEZWJVR2tPWHZSQjdXcjdtMzZBNnIyZUdEM2dEU2NWZV94d0pFeXZPZDFlcF9MOHkxLTlNdlZHUTFRR2hBa3hWb3cwa2lRUi1GMm1rQTVycmh6eVBpaFJUZllYOHZPT2J5UXZaNDFfamdNVks1THFnaTl6RWhpUngzYUZMUzJhZDIxTlFzb3cza0NWaE9RSlZDTUg?oc=5",
+      "snippet": "SpaceX launches Starship in key test flight of massive rocket CNBC",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "summary": "A CNBC report by Lora Kolodny, published 13 November 2026, says Starship Flight 15 lifted off from Starbase at 4:47 p.m. local time (5:47 p.m. ET) after FAA launch authorization, but SpaceX aborted the plan to catch and reuse the booster and diverted it to a Gulf of Mexico splashdown, where it burst into flames. The upper stage continued to orbit for a planned 14 trips around Earth and a Saturday landing back at Starbase; Kolodny notes the flight also deployed another 26 Starlink V3 satellites, that William Blair analysts said even a failed catch and a delay of a few months would not be that consequential, and that SpaceX faces fresh criticism over Starshield restrictions in Ukraine."
+    },
+    {
+      "id": "media-28",
+      "type": "media",
+      "date": "2026-11-13",
+      "datetime": "2026-11-13T08:00:00Z",
+      "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video) - Space",
+      "source": "Space",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcEhQWFJRdTk2a2oxdnBsNm1ZUHdjSUdDNUtuQnloQjlTdHZIdXpVeFlQeTNNMk8xeE9uXzhpamdiTnZHaFY2ZFZZbmViSEhBYUxGTENfNXVtZ3RHY2Z2SGlqSXU3cEZNRmtZdDFUc3VHbERUbWFiTEFNUk4wTHF2TVBJblIxUFc1UnBSY1lJRnM5VnFLM3hfYVU3VEpvWW44NmxNSmtUa3pUUXdxUEFHWV8tcnpkUE52MWFOX1pLZjNldlN1?oc=5",
+      "snippet": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video) Space",
+      "topics": [
+        "Starship",
+        "Launch"
+      ],
+      "summary": "A Space.com report by Josh Dinner, published 13 November 2026 and updated at 7:10 p.m. ET after successful payload deployment, says Starship Flight 15 lifted off from Starbase at 5:47 p.m. ET and that SpaceX called off the Super Heavy booster catch, bringing it down for a controlled splashdown in the Gulf of Mexico about 6.5 minutes after launch for reasons that were not immediately clear. The story says Ship reached orbit for only the second time, at about 170 miles (275 kilometers), deployed 26 Starlink V3 satellites, and that a first-ever Ship catch was planned for Saturday at about 4:17 p.m. EST if systems stayed healthy."
     },
     {
       "id": "media-3",
@@ -753,18 +802,6 @@
       "summary": "A PBS NewsHour piece by Marcia Dunn of the Associated Press, published 13 November 2026, says SpaceX’s attempt to recover the entire Starship stack at the pad was thwarted when Super Heavy v3 Booster 22 malfunctioned, automatically aborted, and ended up exploding after being diverted to the Gulf of Mexico, while the Starship 42 spacecraft still reached orbit. It says this was the first catch attempt for the upgraded 236-foot booster and that, barring further trouble, the ship will try a first-ever return-from-orbit catch Saturday after about 22 hours and 15 laps at roughly 170 miles (275 kilometers), having prepared to deploy 26 of SpaceX’s most advanced Starlink satellites."
     },
     {
-      "id": "media-4",
-      "type": "media",
-      "date": "2026-11-13",
-      "datetime": "2026-11-13T08:00:00Z",
-      "title": "SpaceX's giant rocket may leave NASA in the dust - NPR",
-      "source": "NPR",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPS29lRWxDTEFxWU55UU1fMlhIcXNJamF3bFRkX01nWEhnRjI1QjNnZHppcERYSFJPTzVJVHlvc0pVVkh6WENxSTJQTkVlODhuaGY4b1dzWUhTcjVJZ0w0NGhNWmtsQ0JkNzRlX2trUS1KVkozZFJFOGFWeXRCQVZtUHV1YllJalFsT3Qxd2tObFBKdw?oc=5",
-      "snippet": "SpaceX's giant rocket may leave NASA in the dust NPR",
-      "topics": [],
-      "summary": "An NPR report by Geoff Brumfiel, published 13 November 2026, says SpaceX plans its most ambitious Starship test later today — lift off from South Texas, orbit Earth, and land vertically at the same pad 22 and a half hours later — and that experts warn the shift toward Starship could strand NASA, because SpaceX has said it will stop flying Falcon 9, which launches Dragon, currently the only American spacecraft that can ferry NASA astronauts to and from the ISS. NASA has contracted three additional ISS flights that would only take Dragon through 2028 if flown every six months with no further orders; SpaceX did not comment, its latest report showed about $2.1 billion of launch revenue through September versus $12.8 billion from Starlink and $10.9 billion from AI, and Gwynne Shotwell suggested Boeing’s problem-plagued Starliner (next crewed flight sometime in 2028) could take some of that NASA business."
-    },
-    {
       "id": "media-10",
       "type": "media",
       "date": "2026-11-13",
@@ -778,21 +815,6 @@
         "Launch"
       ],
       "summary": "A Yahoo Finance article by Pras Subramanian, published 13 November 2026, says SpaceX’s Starship Flight 15 is scheduled for Friday night at 5:45 p.m. ET and will attempt a first-time “double catch” of both the Super Heavy booster and the Starship upper stage at Boca Chica, which the company said would be the first full recovery of an orbital launch system, while also deploying 26 Starlink V3 satellites that SpaceX says add 1 terabit of capacity each — about equal to ten Falcon 9 V2 Mini launches. Morgan Stanley’s Adam Jonas called the flight “one of the most significant catalysts in SpaceX’s 20+ year history”; the piece notes the stock was up 2% for the week after trading between $148.44 and $135.40, and cites Bloomberg reporting that a SpaceX–Tesla merger could be announced as early as December or slip into early 2027."
-    },
-    {
-      "id": "media-18",
-      "type": "media",
-      "date": "2026-11-13",
-      "datetime": "2026-11-13T08:00:00Z",
-      "title": "SpaceX launches Starship in key test flight of massive rocket - CNBC",
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPM2RDOFRVRzlYRXd2UzRoU2NsT2loVFJOS3RKTWtsVlZrNm54WWhoREdoelVzai1odkR4VlZyLTN2V093VlJvSlhUTlFDMUJVbDRmQ3F2NV9IbFpBZmRlaUNoaWtuQ3h3eXdWTXFfWlI1YW1LbmhQaHAxN21Ua29fOVNIMS1uQklmdGYwU2JNUnQ4Wl9jdVl5OFpLZTZDdmvSAaQBQVVfeXFMTzdKdnZ2WjdnZFJEZWJVR2tPWHZSQjdXcjdtMzZBNnIyZUdEM2dEU2NWZV94d0pFeXZPZDFlcF9MOHkxLTlNdlZHUTFRR2hBa3hWb3cwa2lRUi1GMm1rQTVycmh6eVBpaFJUZllYOHZPT2J5UXZaNDFfamdNVks1THFnaTl6RWhpUngzYUZMUzJhZDIxTlFzb3cza0NWaE9RSlZDTUg?oc=5",
-      "snippet": "SpaceX launches Starship in key test flight of massive rocket CNBC",
-      "topics": [
-        "Starship",
-        "Launch"
-      ],
-      "summary": "A CNBC report by Lora Kolodny, published 13 November 2026, says Starship Flight 15 lifted off from Starbase at 4:47 p.m. local time (5:47 p.m. ET) after FAA launch authorization, but SpaceX aborted the plan to catch and reuse the booster and diverted it to a Gulf of Mexico splashdown, where it burst into flames. The upper stage continued to orbit for a planned 14 trips around Earth and a Saturday landing back at Starbase; Kolodny notes the flight also deployed another 26 Starlink V3 satellites, that William Blair analysts said even a failed catch and a delay of a few months would not be that consequential, and that SpaceX faces fresh criticism over Starshield restrictions in Ukraine."
     },
     {
       "id": "media-23",
@@ -864,21 +886,6 @@
       "summary": "A 13 November 2026 Senate Foreign Relations Committee press release, listed in Google News at 12:07 CET on 14 November, says Ranking Member Jeanne Shaheen (D-NH) and Sen. Chris Coons (D-DE) sent a letter to SpaceX CEO Elon Musk demanding that he and SpaceX preserve documents and communications about disruptions to Ukraine’s Starlink and Starshield access, and confirm those preservation steps in writing by 30 November. The senators wrote that restrictions from 13–24 October 2026, and a renewed Starshield disruption reported by President Zelenskyy and the Ukrainian military on 12 November, impaired Ukrainian air defenses, and they pointed to conflicting accounts from Musk, Defense Secretary Hegseth and Secretary of State Rubio about who ordered the limits."
     },
     {
-      "id": "media-29",
-      "type": "media",
-      "date": "2026-11-13",
-      "datetime": "2026-11-13T08:00:00Z",
-      "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video) - Space",
-      "source": "Space",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNcEhQWFJRdTk2a2oxdnBsNm1ZUHdjSUdDNUtuQnloQjlTdHZIdXpVeFlQeTNNMk8xeE9uXzhpamdiTnZHaFY2ZFZZbmViSEhBYUxGTENfNXVtZ3RHY2Z2SGlqSXU3cEZNRmtZdDFUc3VHbERUbWFiTEFNUk4wTHF2TVBJblIxUFc1UnBSY1lJRnM5VnFLM3hfYVU3VEpvWW44NmxNSmtUa3pUUXdxUEFHWV8tcnpkUE52MWFOX1pLZjNldlN1?oc=5",
-      "snippet": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video) Space",
-      "topics": [
-        "Starship",
-        "Launch"
-      ],
-      "summary": "A Space.com report by Josh Dinner, published 13 November 2026 and updated at 7:10 p.m. ET after successful payload deployment, says Starship Flight 15 lifted off from Starbase at 5:47 p.m. ET and that SpaceX called off the Super Heavy booster catch, bringing it down for a controlled splashdown in the Gulf of Mexico about 6.5 minutes after launch for reasons that were not immediately clear. The story says Ship reached orbit for only the second time, at about 170 miles (275 kilometers), deployed 26 Starlink V3 satellites, and that a first-ever Ship catch was planned for Saturday at about 4:17 p.m. EST if systems stayed healthy."
-    },
-    {
       "id": "pr-building-the-future",
       "type": "press",
       "date": "2026-11-12",
@@ -931,7 +938,7 @@
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-627"
     },
     {
-      "id": "media-15",
+      "id": "media-14",
       "type": "media",
       "date": "2026-11-11",
       "datetime": "2026-11-11T08:00:00Z",
@@ -986,6 +993,21 @@
       "datetime": "2026-11-06T21:15:01Z",
       "timeSource": "EDGAR filing index: accepted 2026-11-06 16:15:01 ET",
       "summary": "The 8-K reports that Donald Harrison, a Class B director, resigned from the SpaceX board effective 4 Nov 2026, and that the resignation was not because of any disagreement on operations, policies, or practices. An IR note the same day thanks Harrison, who had served since February 2015 and is President of Global Partnerships and Corporate Development at Google."
+    },
+    {
+      "id": "pr-gofororbit",
+      "type": "press",
+      "date": "2026-11-06",
+      "title": "Go For Orbit — first revenue Starship mission documentary / recap",
+      "summary": "SpaceX released “Go For Orbit,” a recap of the first orbital Starship flight to carry advanced Starlink V3 satellites — the company’s first revenue-generating Starship mission. Official posts describe more than a dozen prior flight tests and years of development; the public page is a JavaScript experience and did not return a long-form transcript here.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com",
+      "topics": [
+        "Starship",
+        "Starlink"
+      ],
+      "datetime": "2026-11-06T14:56:55Z",
+      "timeSource": "Official SpaceX post announcing “Go For Orbit”"
     },
     {
       "id": "filing-0001104659-26-118614",
@@ -1051,6 +1073,22 @@
       "timeSource": "EDGAR acceptance of the Q3 2026 earnings 8-K (the press release is the 8-K exhibit)"
     },
     {
+      "id": "filing-0001628280-26-066482",
+      "type": "filing",
+      "date": "2026-10-20",
+      "title": "8-K — Q3 2026 earnings release",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm",
+      "topics": [
+        "Filings",
+        "Earnings"
+      ],
+      "datetime": "2026-10-20T20:00:51Z",
+      "timeSource": "EDGAR filing index: accepted 2026-10-20 16:00:51 ET",
+      "summary": "This 8-K furnishes SpaceX’s official third-quarter 2026 earnings release as Exhibit 99.1 under Item 2.02. The exhibit is the same release summarised in the press item: revenue of $14.6 billion (up 161%), net income of $4.4 billion, and Adjusted EBITDA of $8.8 billion."
+    },
+    {
       "id": "pr-ng25",
       "type": "press",
       "date": "2026-10-14",
@@ -1078,6 +1116,22 @@
       ],
       "datetime": "2026-08-14T12:23:02Z",
       "timeSource": "EDGAR acceptance of the Cursor acquisition 8-K"
+    },
+    {
+      "id": "filing-0001628280-26-056945",
+      "type": "filing",
+      "date": "2026-08-14",
+      "title": "8-K — Cursor (Anysphere) acquisition",
+      "source": "SEC EDGAR",
+      "form": "8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm",
+      "topics": [
+        "Filings",
+        "Cursor"
+      ],
+      "datetime": "2026-08-14T12:23:02Z",
+      "timeSource": "EDGAR header ACCEPTANCE-DATETIME 20260814082302 (08:23:02 ET)",
+      "summary": "This 8-K (Items 2.01 and 3.02) reports that SpaceX completed the Anysphere/Cursor merger on 14 Aug 2026 and issued unregistered Class A shares as merger consideration. Cursor stock converted into 389,289,254 SpaceX shares at an implied $60 billion equity value, with additional shares and assumed awards for Cursor RSUs and options."
     },
     {
       "id": "filing-0001628280-26-052535",
