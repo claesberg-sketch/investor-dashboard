@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T18:57:50Z",
+  "updated": "2026-11-23T19:54:37Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -76,6 +76,23 @@
       "snippet": "Elon Musk Faces an A.I. Dilemma at SpaceX The New York Times",
       "topics": [],
       "summary": "A New York Times article by Grace Kay and Ryan Mac, listed in Google News at 17:13 CET on 23 November 2026 (the Google News and NYT pages could not be opened here; this is from Reuters/Investing.com and other contemporaneous reports of the Times piece), says SpaceX is making more money renting data-center compute to rivals — about $3.1 billion a month from Anthropic and about $800 million from Google, in contracts that could run through 2029 with 90 days’ notice — than from Grok, with the AI unit now generating more than half of company revenue. The Times reports Musk has told staff the company is falling behind in AI, briefly renamed an internal chat “Sell compute because we can’t compete,” and that SpaceX has shut down its AI companions initiative, shifted engineers off a Digital Optimus project, and disbanded a 60-person Grok Imagine team, while Musk told the paper’s DealBook conference that Anthropic is highly likely to keep renting and wants significantly more."
+    },
+    {
+      "id": "media-fool-gaining-20261123",
+      "type": "media",
+      "date": "2026-11-23",
+      "datetime": "2026-11-23T15:10:01Z",
+      "title": "Why SpaceX Stock Is Gaining Today - The Motley Fool",
+      "source": "The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/23/why-spacex-stock-is-gaining-today/",
+      "snippet": "Space Exploration Technologies Corp. (SPCX) stock is up 9.7% as of 9:58 a.m. ET on Monday, Nov. 23, after Nvidia reinstated its CEO.",
+      "topics": [
+        "AI compute",
+        "Starlink",
+        "Grok"
+      ],
+      "summary": "A Motley Fool article by Johnny Rice, published at 10:10 a.m. ET (16:10 CET) on 23 November 2026, says SpaceX shares were up 9.7% as of 9:58 a.m. ET that Monday after Nvidia’s board reinstated Jensen Huang as CEO, a move the article says eases concerns about SpaceX’s access to the latest chips after about $44 billion of notes were priced on Friday for Nvidia Vera Rubin chips and related equipment for SpaceX data centers. It also notes Musk’s weekend comment that he hopes Tesla will offer built-in Starlink toward the end of 2027, and that Virginia and Oregon sued SpaceX on Monday over Grok-generated abusive sexual images.",
+      "timeSource": "Motley Fool byline, 10:10 a.m. ET"
     },
     {
       "id": "media-30",
