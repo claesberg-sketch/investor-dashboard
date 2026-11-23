@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-22T22:53:25+01:00",
+  "updated": "2026-11-23T06:51:07+01:00",
   "timezone": "Europe/Stockholm",
-  "source": "X API public reads (get_users_posts) on 22 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
+  "source": "X API public reads (get_users_posts) on 23 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
     {
       "username": "elonmusk",
@@ -40,6 +40,111 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124733560947138910",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-23T05:15:31.000Z",
+      "text": "@cz_binance Cool",
+      "url": "https://x.com/elonmusk/status/2124733560947138910",
+      "metrics": {
+        "likes": 751,
+        "reposts": 37,
+        "replies": 59,
+        "quotes": 33,
+        "bookmarks": 18,
+        "impressions": 49769
+      },
+      "summary": "Elon Musk replied “Cool” to CZ (@cz_binance), who wrote that he had used Grok Bot to clean up inactive and abusive accounts he follows, asking it to keep constructive criticism, and that he was not sure how well it worked. The reply went out at 06:15 CET on 23 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124678745629790551",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-23T01:37:42.000Z",
+      "text": "@SawyerMerritt Except in China, as Starlink is illegal there",
+      "url": "https://x.com/elonmusk/status/2124678745629790551",
+      "metrics": {
+        "likes": 9238,
+        "reposts": 426,
+        "replies": 1239,
+        "quotes": 153,
+        "bookmarks": 274,
+        "impressions": 450792
+      },
+      "summary": "Elon Musk replied “Except in China, as Starlink is illegal there” to Sawyer Merritt (@SawyerMerritt), who had reported Musk saying all Tesla models could get Starlink integrated directly into the vehicle by the end of 2027 and noted that the Cybercabs in Dallas already have it, although riders apparently cannot connect to it yet. The reply went out at 02:37 CET on 23 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124675698728304848",
+      "username": "nextbigfuture",
+      "name": "Brian Wang",
+      "created_at": "2026-11-23T01:25:35.000Z",
+      "text": "@VladSaigau SpaceXSI with 4 months build times can get 90 day prepayment terms on leases and can fer 90 day payment terms on purchases. Operating cash flow funds the build",
+      "url": "https://x.com/nextbigfuture/status/2124675698728304848",
+      "metrics": {
+        "likes": 2,
+        "reposts": 0,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 229
+      },
+      "summary": "Brian Wang (@nextbigfuture) replied to Vlad Saigau (@VladSaigau), whose model says SpaceX will need well north of $500B in extra cash through 2030 to complete its AI and space buildout, likely raised partly with equity and unprecedented levels of debt. Wang argued that with four-month build times SpaceXSI can get 90-day prepayment terms on leases and 90-day payment terms on purchases, so operating cash flow funds the build; the reply went out at 02:25 CET on 23 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124673053246312848",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-23T01:15:05.000Z",
+      "text": "@davidmarcus Hopefully available towards the end of next year. \n\nThis will be important for unsupervised FSD, so passengers have high bandwidth everywhere for work and entertainment.",
+      "url": "https://x.com/elonmusk/status/2124673053246312848",
+      "metrics": {
+        "likes": 9819,
+        "reposts": 532,
+        "replies": 442,
+        "quotes": 133,
+        "bookmarks": 339,
+        "impressions": 707834
+      },
+      "summary": "Elon Musk replied to David Marcus (@davidmarcus), who said he could not wait for Tesla to offer an embedded Starlink option in all models beyond the Cybercab, that it is “hopefully available towards the end of next year.” He added that this will be important for unsupervised FSD so passengers have high bandwidth everywhere for work and entertainment; the reply went out at 02:15 CET on 23 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2124621998521212940",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-22T21:52:12.000Z",
+      "text": "Starlink helps kids with education https://t.co/vUuGt09nTL",
+      "url": "https://x.com/elonmusk/status/2124621998521212940",
+      "metrics": {
+        "likes": 5220,
+        "reposts": 770,
+        "replies": 736,
+        "quotes": 66,
+        "bookmarks": 118,
+        "impressions": 909780
+      },
+      "summary": "Elon Musk wrote “Starlink helps kids with education,” quoting an X Freeze (@XFreeze) post saying Starlink is bringing high-speed internet to students in rural Honduras, including 200 students at Escuela Sergio Palacios in El Hatillo through a Conatel installation. The quoted post cites 1,212 institutions connected under Conatel’s wider programme (over 167,500 students), 1,860 Starlink antennas installed by Hondutel across 218 municipalities and 3,100 installations planned; Musk’s quote went out at 22:52 CET on 22 November 2026.",
+      "topics": [
+        "Starlink"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124614639409606954",
       "username": "elonmusk",
