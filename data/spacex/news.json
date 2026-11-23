@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T20:51:39Z",
+  "updated": "2026-11-23T21:53:33Z",
   "feeds": {
     "press": {
       "label": "Company / IR press (static, curated from official releases)",
@@ -21,6 +21,20 @@
     }
   },
   "items": [
+    {
+      "id": "media-39",
+      "type": "media",
+      "date": "2026-11-23",
+      "datetime": "2026-11-23T20:28:29Z",
+      "title": "Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images - Reuters",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObnVxU21QWWFOSHYzcW1sajgxS25DUndFTGd6dTh6UzdyaFR5U0QtMWlROWIxZ01IcU0wNG5FLXRaMWZoS1o0dHhEUUFiaDItWFVIbE01S1pTbDZxYVZGN1hMaHlNYXBZck84N3JPaW1xcW5VMHdNeFBHSWZmRVN6MzlHZjdEcl8wTkVERGhBU3M0dVBXSHBFUHNpM1pCc1Q0MV9HTWlveVJSV1hiSEFaWjJDMEI0b2p2bzBIZEdrampIVFlVWEE?oc=5",
+      "snippet": "Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images Reuters",
+      "topics": [
+        "Grok"
+      ],
+      "summary": "A Reuters article by Diana Novak Jones, dated 23 November 2026 and listed in Google News at 15:50 CET that day (the Google News link was not opened; this is from the Reuters text syndicated on Yahoo Finance and Investing.com), says Virginia and Oregon have become the first states to sue Elon Musk’s SpaceX Super Intelligence Corp, alleging it profited from a Grok feature that produces child sexual abuse material and other non-consensual sexual images from photographs while failing to put safeguards in place, and that the company misled consumers about Grok’s safety while promoting “spicy mode.” The consumer-protection suits, filed in state courts, seek damages, penalties and court orders; SpaceX did not immediately comment, Virginia Attorney General Jay Jones told Reuters that state attorneys general are stepping in amid limited federal AI regulation, and the piece notes SpaceX already faces more than a dozen individual lawsuits as well as a UK case by lawmaker Jess Asato."
+    },
     {
       "id": "media-txtrib-debris-20261123",
       "type": "media",
@@ -52,20 +66,6 @@
       "summary": "A Reuters report by Daniel Flynn, datelined Kyiv on 23 November 2026 and carried by Street Insider at 12:35 p.m. EST (18:35 CET) that day (the reuters.com page returned 401 here), says British defence minister Wes Streeting, visiting Kyiv, told journalists that restrictions on Ukraine’s military use of SpaceX satellite communications have been “a topic of conversation among defense ministers right across Europe” and “has really dented confidence and trust.” Ukraine said earlier this month that military units had seen significant disruptions to SpaceX’s Starshield system along the entire front line and in Russian-occupied areas; SpaceX did not immediately respond to a request for comment, President Zelenskiy said Kyiv was talking with the US government and SpaceX to find the cause, and Streeting said allies are “owed a clear explanation about those service interruptions.”"
     },
     {
-      "id": "media-39",
-      "type": "media",
-      "date": "2026-11-23",
-      "datetime": "2026-11-23T16:44:46Z",
-      "title": "Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images - Reuters",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObnVxU21QWWFOSHYzcW1sajgxS25DUndFTGd6dTh6UzdyaFR5U0QtMWlROWIxZ01IcU0wNG5FLXRaMWZoS1o0dHhEUUFiaDItWFVIbE01S1pTbDZxYVZGN1hMaHlNYXBZck84N3JPaW1xcW5VMHdNeFBHSWZmRVN6MzlHZjdEcl8wTkVERGhBU3M0dVBXSHBFUHNpM1pCc1Q0MV9HTWlveVJSV1hiSEFaWjJDMEI0b2p2bzBIZEdrampIVFlVWEE?oc=5",
-      "snippet": "Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images Reuters",
-      "topics": [
-        "Grok"
-      ],
-      "summary": "A Reuters article by Diana Novak Jones, dated 23 November 2026 and listed in Google News at 15:50 CET that day (the Google News link was not opened; this is from the Reuters text syndicated on Yahoo Finance and Investing.com), says Virginia and Oregon have become the first states to sue Elon Musk’s SpaceX Super Intelligence Corp, alleging it profited from a Grok feature that produces child sexual abuse material and other non-consensual sexual images from photographs while failing to put safeguards in place, and that the company misled consumers about Grok’s safety while promoting “spicy mode.” The consumer-protection suits, filed in state courts, seek damages, penalties and court orders; SpaceX did not immediately comment, Virginia Attorney General Jay Jones told Reuters that state attorneys general are stepping in amid limited federal AI regulation, and the piece notes SpaceX already faces more than a dozen individual lawsuits as well as a UK case by lawmaker Jess Asato."
-    },
-    {
       "id": "media-8",
       "type": "media",
       "date": "2026-11-23",
@@ -90,7 +90,7 @@
       "summary": "A Motley Fool article by Johnny Rice, published at 10:10 a.m. ET (16:10 CET) on 23 November 2026, says SpaceX shares were up 9.7% as of 9:58 a.m. ET that Monday after Nvidia’s board reinstated Jensen Huang as CEO, a move the article says eases concerns about SpaceX’s access to the latest chips after about $44 billion of notes were priced on Friday for Nvidia Vera Rubin chips and related equipment for SpaceX data centers. It also notes Musk’s weekend comment that he hopes Tesla will offer built-in Starlink toward the end of 2027, and that Virginia and Oregon sued SpaceX on Monday over Grok-generated abusive sexual images."
     },
     {
-      "id": "media-23",
+      "id": "media-16",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T12:40:37Z",
@@ -104,7 +104,7 @@
       "summary": "A CNBC article by Lora Kolodny, published at 13:40 CET on 23 November 2026, says Virginia and Oregon have become the first states to sue SpaceX over Grok, alleging the company failed to stop users from generating and sharing explicit deepfakes, including alleged AI-generated child sexual abuse material, and falsely marketed Grok and X as generally safe. Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones filed separate complaints in Multnomah County and Richmond seeking injunctions, civil penalties, disgorgement and legal costs, with Virginia also seeking consumer restitution; SpaceX did not immediately comment, and the suits were still pending the courts’ acceptance as of early Monday."
     },
     {
-      "id": "media-29",
+      "id": "media-30",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T12:17:34Z",
@@ -116,7 +116,7 @@
       "summary": "A 23 November 2026 news release from Virginia Attorney General Jay Jones, listed in Google News at 13:17 CET that day, announces that Jones and Oregon Attorney General Dan Rayfield have filed consumer-protection suits against SpaceX — described as the parent of X, xAI (now SpaceX Super Intelligence) and Grok — alleging the company failed to stop Grok from generating non-consensual sexual images and child sexual abuse material while promoting a “spicy mode” and falsely assuring users the tools were safe. Virginia’s case was filed in the Circuit Court for the City of Richmond and Oregon’s in Multnomah County Circuit Court; the release cites a CCDH estimate that Grok posted about three million sexualized images on X between 29 December 2025 and 8 January 2026, including about 23,000 that appeared to depict children, and says the attorneys general are seeking accountability and stronger consumer protections."
     },
     {
-      "id": "media-16",
+      "id": "media-19",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T12:01:59Z",
@@ -153,7 +153,7 @@
       "summary": "A Motley Fool column by Chris Neiger, published at 3:18 a.m. ET (09:18 CET) on 23 November 2026 and listed in Google News via Yahoo Finance at 09:38 CET, says he would put $1,000 toward Nvidia rather than SpaceX because Nvidia is more profitable, spends less to grow, and is cheaper, with a forward P/E of around 10 versus SpaceX’s 49. He notes SpaceX’s Q3 2026 revenue jumped 161% to $14.6 billion and net income swung to $4.4 billion, but capex rose 185% to $19.6 billion and AI spending is set to be $35–40 billion in Q4 alone, while Nvidia’s sales more than doubled to $115.8 billion."
     },
     {
-      "id": "media-30",
+      "id": "media-29",
       "type": "media",
       "date": "2026-11-23",
       "datetime": "2026-11-23T04:06:43Z",
@@ -181,7 +181,7 @@
       "timeSource": "Official SpaceX NROL-136 mission page liftoff time (4:23 a.m. PT)"
     },
     {
-      "id": "media-31",
+      "id": "media-33",
       "type": "media",
       "date": "2026-11-22",
       "datetime": "2026-11-22T11:03:00Z",
@@ -223,7 +223,7 @@
       "summary": "Will Robinson-Smith at Spaceflight Now, in an article dated 21 November 2026, listed in Google News at 17:50 CET that day and updated at 8 a.m. EST on 22 November (14:00 CET), reports that SpaceX launched the NROL-136 mission for the National Reconnaissance Office on Sunday morning, sending an undisclosed number of intelligence-gathering satellites to low Earth orbit from Space Launch Complex 4E at Vandenberg Space Force Base — the fourth such proliferated-architecture launch this year and the 15th to date. The article says Falcon 9 first-stage booster B1097, making its 14th flight, lifted off at 4:23 a.m. PST (12:23 UTC), 32 hours, 3 minutes and 21 seconds after the prior USSF launch, smashing the Vandenberg pad turnaround record by more than 23 hours, and that the booster landed at Landing Zone 4 about 7.5 minutes after liftoff, the 38th landing at that site and the 680th Falcon booster landing to date."
     },
     {
-      "id": "media-24",
+      "id": "media-23",
       "type": "media",
       "date": "2026-11-21",
       "datetime": "2026-11-21T13:00:00Z",
@@ -235,6 +235,18 @@
         "Starship"
       ],
       "summary": "A Space.com article by Mike Wall, published 21 November 2026 and listed in Google News at 14:00 CET that day, says Elon Musk told the TomorrowX Summit on Wednesday, 18 November, that Ship 42 — the first Starship upper stage SpaceX ever successfully recovered, caught at the Starbase tower after Flight 15 — will not fly again and will instead be left for public display because it is “kind of an historic ship,” even though he said it “could probably be reflown with a few weeks of refurbishment.” Wall writes that Musk did not say where the ship would be put on display, notes that SpaceX had already caught Super Heavy three times and reflown a booster twice but had never before attempted a Ship catch, and recalls Musk’s target of about 10,000 Starship missions a year by 2030."
+    },
+    {
+      "id": "media-24",
+      "type": "media",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T08:02:04Z",
+      "title": "SPCX Stock Quote Price and Forecast - CNN",
+      "source": "CNN",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mNFpQdmpQSHpfbjh0RmFkcGxLQ1d1dWxoeUoxMTUwM0pnRmYwRDVjMFlvdVNKQm85LUsxSjNVZFlSZm9iSmYwRkJfSVhlNmtK?oc=5",
+      "snippet": "SPCX Stock Quote Price and Forecast CNN",
+      "topics": [],
+      "summary": "This is CNN’s SPCX quote page, not a news feature. When fetched, it showed the stock closed at $143.09, up $1.02 (0.72%) on the day, with a stated market cap of about $1.94 trillion, and it did not have enough data for CNN’s usual revenue or net-income insights."
     },
     {
       "id": "media-35",
@@ -275,18 +287,6 @@
       "snippet": "SpaceX’s Starshield troubles in Ukraine could threaten its broader military business Ars Technica",
       "topics": [],
       "summary": "An Ars Technica article by Eric Berger, listed in Google News at 23:16 CET on 20 November 2026, reports that Rep. Jim Himes (D-Conn.), expected to chair the House Intelligence Committee in January, has threatened to withhold support for funding government-owned systems from SpaceX over Starshield disruptions in Ukraine. In a Friday letter to Elon Musk first reported by CNN, Himes asked SpaceX to explain the October 2026 Starshield changes and whether they were made unilaterally or directed by a U.S. official, writing that a “potentially unilateral modification of a U.S. Government contract, combined with its lack of responsiveness to congressional oversight, calls into question every contract the U.S. Government has with SpaceX.”"
-    },
-    {
-      "id": "media-25",
-      "type": "media",
-      "date": "2026-11-20",
-      "datetime": "2026-11-20T21:45:07Z",
-      "title": "SPCX Stock Quote Price and Forecast - CNN",
-      "source": "CNN",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mNFpQdmpQSHpfbjh0RmFkcGxLQ1d1dWxoeUoxMTUwM0pnRmYwRDVjMFlvdVNKQm85LUsxSjNVZFlSZm9iSmYwRkJfSVhlNmtK?oc=5",
-      "snippet": "SPCX Stock Quote Price and Forecast CNN",
-      "topics": [],
-      "summary": "This is CNN’s SPCX quote page, not a news feature. When fetched, it showed the stock closed at $143.09, up $1.02 (0.72%) on the day, with a stated market cap of about $1.94 trillion, and it did not have enough data for CNN’s usual revenue or net-income insights."
     },
     {
       "id": "media-25",
@@ -393,7 +393,7 @@
       "timeSource": "Google News first listing of the official SpaceX mission page"
     },
     {
-      "id": "media-19",
+      "id": "media-18",
       "type": "media",
       "date": "2026-11-18",
       "datetime": "2026-11-18T16:35:04Z",
@@ -433,7 +433,7 @@
       "summary": "A NASA news release by Lauren E. Low, dated 17 November 2026 and updated on 18 and 19 November, listed in Google News at 20:17 CET on 17 November, says NASA will cover the departure of the SpaceX Dragon on the 35th commercial resupply mission, with undocking from Harmony’s space-facing port no earlier than 12:05 p.m. EST on Friday 20 November and live coverage from 11:45 a.m., targeting splashdown off the California coast at about 4:55 p.m. EST (1:55 p.m. PST) on Saturday 21 November, weather permitting. It says the spacecraft arrived on 15 October after a Falcon 9 launch from Cape Canaveral two days earlier with more than 6,300 pounds of cargo, and that thousands of pounds are coming back, including a 3D-bioprinted blood-vessel construct, frozen tumor organoids, microbial samples and a lighting system that spent more than three years on station."
     },
     {
-      "id": "media-33",
+      "id": "media-31",
       "type": "media",
       "date": "2026-11-17",
       "datetime": "2026-11-17T18:07:04Z",
@@ -499,7 +499,7 @@
       "summary": "An Economist Science and Technology article, listed in Google News at 12:33 CET on 15 November 2026, says that on 14 November, during Starship’s 15th test flight, SpaceX caught the rocket’s second stage at its launch tower for the first time, having previously caught boosters mid-air but never the upper half. The Economist page itself returned 403 here; the visible opening says that leaves the company on the cusp of building the first fully reusable rocket, which should cut the cost of reaching space further."
     },
     {
-      "id": "media-12",
+      "id": "media-11",
       "type": "media",
       "date": "2026-11-15",
       "datetime": "2026-11-15T08:00:00Z",
@@ -636,7 +636,7 @@
       "summary": "A CNBC report by Lora Kolodny, published at 22:14 CET on 14 November 2026 and later updated, says SpaceX successfully caught the upper-stage spacecraft of Starship from orbit with the launch tower’s “chopsticks” at Starbase, Texas, after the vehicle flew around the Earth 14 times. The piece notes that on Friday SpaceX failed to catch and recover the booster, diverting it to a Gulf of Mexico splashdown where it exploded before hitting the water, and that Flight 15 also released another 26 of SpaceX’s newest Starlink v3 satellites."
     },
     {
-      "id": "media-11",
+      "id": "media-12",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T08:00:00Z",
@@ -664,7 +664,7 @@
       "summary": "An Ars Technica report by Eric Berger, listed in Google News at 01:40 CET on 15 November 2026, describes Starship’s upper stage returning to Starbase on Saturday, flipping from horizontal to vertical as three Raptor engines ignited, and being snagged by the launch-tower arms — a hugely significant step, he writes, toward a massive, rapidly reusable rocket after earlier practice runs into the Indian Ocean. Berger notes SpaceX has now returned both elements of a Starship to the tower as a proof of concept, currently builds an upper stage every three weeks at the South Texas Starfactory (sized for one every three days), and says the heat shield is likely the hardest part of making such landings routine."
     },
     {
-      "id": "media-18",
+      "id": "media-17",
       "type": "media",
       "date": "2026-11-14",
       "datetime": "2026-11-14T08:00:00Z",
