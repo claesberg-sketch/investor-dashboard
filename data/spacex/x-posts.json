@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T06:51:07+01:00",
+  "updated": "2026-11-23T15:56:23+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 23 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2124877252412281142",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-23T14:46:29.000Z",
+      "text": "Grok Bot can find you Black Friday deals https://t.co/0AnY1ZA5uo",
+      "url": "https://x.com/elonmusk/status/2124877252412281142",
+      "metrics": {
+        "likes": 1165,
+        "reposts": 146,
+        "replies": 316,
+        "quotes": 16,
+        "bookmarks": 127,
+        "impressions": 440371
+      },
+      "summary": "Elon Musk wrote “Grok Bot can find you Black Friday deals,” quoting Nima Owji (@nima_owji), who said he had created a Grok Bot template called “DEAL HUNTER” that checks the internet for the best deals every couple of hours and notifies the user, with a link to add it from the Grok Bot Directory. The post went out at 15:46 CET on 23 November 2026.",
+      "topics": [
+        "Grok"
+      ],
+      "highlight": true
+    },
     {
       "id": "2124733560947138910",
       "username": "elonmusk",
