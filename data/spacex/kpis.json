@@ -399,17 +399,17 @@
     }
   },
   "street": {
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-23",
     "source": {
-      "label": "StockAnalysis / S&P Global Market Intelligence, 36–40 analysts",
+      "label": "StockAnalysis / S&P Global Market Intelligence (40 analysts); recent actions via TipRanks, TheFly, StreetInsider",
       "url": "https://stockanalysis.com/stocks/spcx/forecast/"
     },
     "rating": "Buy",
     "analysts": 40,
     "priceTarget": {
       "low": 70,
-      "average": 255.06,
-      "median": 245,
+      "average": 257.5,
+      "median": 250,
       "high": 800
     },
     "ratings": {
@@ -421,16 +421,88 @@
     },
     "revenueFY2026": {
       "low": 40800,
-      "avg": 48900,
+      "avg": 49020,
       "high": 54500,
       "unit": "million USD"
     },
     "revenueFY2027": {
-      "avg": 180670,
+      "avg": 182260,
       "unit": "million USD",
-      "note": "Consensus average as published Nov 10, 2026."
+      "note": "Consensus average per StockAnalysis, 23 Nov 2026."
     },
     "recent": [
+      {
+        "firm": "Jefferies",
+        "analyst": "Sheila Kahyaoglu",
+        "action": "Initiates",
+        "rating": "Buy",
+        "target": 210,
+        "date": "2026-11-22"
+      },
+      {
+        "firm": "Morgan Stanley",
+        "analyst": "Adam Jonas",
+        "action": "Maintains",
+        "rating": "Buy",
+        "target": 300,
+        "date": "2026-11-20"
+      },
+      {
+        "firm": "HSBC",
+        "analyst": "Nicolas Cote Colisson",
+        "action": "Maintains",
+        "rating": "Hold",
+        "target": 150,
+        "date": "2026-11-20"
+      },
+      {
+        "firm": "Bernstein",
+        "analyst": "Douglas Harned",
+        "action": "Maintains",
+        "rating": "Buy",
+        "target": 268,
+        "date": "2026-11-19"
+      },
+      {
+        "firm": "Cantor Fitzgerald",
+        "analyst": "Colin Canfield",
+        "action": "Maintains",
+        "rating": "Buy",
+        "target": 345,
+        "date": "2026-11-17"
+      },
+      {
+        "firm": "J.P. Morgan",
+        "analyst": "Doug Anmuth",
+        "action": "Maintains",
+        "rating": "Buy",
+        "target": 500,
+        "date": "2026-11-17"
+      },
+      {
+        "firm": "Raymond James",
+        "analyst": "Brian Gesuale",
+        "action": "Reiterates",
+        "rating": "Buy",
+        "target": 800,
+        "date": "2026-11-17"
+      },
+      {
+        "firm": "Citi",
+        "analyst": "John Godyn",
+        "action": "Raises target (from $240)",
+        "rating": "Buy",
+        "target": 280,
+        "date": "2026-11-16"
+      },
+      {
+        "firm": "Deutsche Bank",
+        "analyst": "Edison Yu",
+        "action": "Maintains",
+        "rating": "Buy",
+        "target": 250,
+        "date": "2026-11-16"
+      },
       {
         "firm": "Bank of America Securities",
         "analyst": "Ronald Epstein",
