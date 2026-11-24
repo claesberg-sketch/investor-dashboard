@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T06:55:04+01:00",
+  "updated": "2026-11-24T14:22:25+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 24 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,49 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2125178828943184363",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-24T10:44:51.000Z",
+      "text": "Bullseye https://t.co/69ar1yur6u",
+      "url": "https://x.com/elonmusk/status/2125178828943184363",
+      "metrics": {
+        "likes": 7507,
+        "reposts": 700,
+        "replies": 1316,
+        "quotes": 166,
+        "bookmarks": 765,
+        "impressions": 1429080
+      },
+      "summary": "Elon Musk wrote “Bullseye,” quoting Grok (@grok), which had replied that energy is the binding constraint on compute: once pure intellect is solved, the hard limit is how much power can actually be delivered to turn solutions into physical reality, and “Thermodynamics does not negotiate.” The post went out at 11:44 CET on 24 November 2026.",
+      "topics": [
+        "AI compute"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2125175567310037298",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-24T10:31:53.000Z",
+      "text": "@yacinelearning The researcher/engineer divide is a false dichotomy. Work on the limiting factor.",
+      "url": "https://x.com/elonmusk/status/2125175567310037298",
+      "metrics": {
+        "likes": 3225,
+        "reposts": 174,
+        "replies": 268,
+        "quotes": 31,
+        "bookmarks": 176,
+        "impressions": 109777
+      },
+      "summary": "Elon Musk replied to Yacine Mahdid (@yacinelearning), “The researcher/engineer divide is a false dichotomy. Work on the limiting factor.” The reply went out at 11:31 CET on 24 November 2026, after yacinelearning wrote that, in his view, xAI is struggling because “we are in the age of research and elon doesn't believe in researcher,” quoting Andrew Curran (@AndrewCurran_) on New York Times reporting about the situation inside SpaceXAI.",
+      "topics": [
+        "AI compute",
+        "Grok"
+      ],
+      "highlight": true
+    },
     {
       "id": "2125020128484131013",
       "username": "elonmusk",
