@@ -1,19 +1,33 @@
 {
-  "updated": "2026-11-22T18:51:37+01:00",
+  "updated": "2026-11-27T08:47:04+01:00",
   "items": [
     {
-      "id": "pr-crs35",
+      "id": "pr-invest-next-generation",
       "type": "press",
-      "date": "2026-11-21",
-      "title": "CRS-35 mission",
-      "summary": "SpaceX’s official CRS-35 mission page says that after 37 days docked to the International Space Station, Dragon completed its 35th Commercial Resupply Services mission for NASA, splashing down off the coast of California on Saturday, 21 November 2026 at 2:04 p.m. PT. It says this was the fourth flight for this Dragon spacecraft, which previously flew CRS-26, CRS-29 and CRS-33, and that Falcon 9 had launched it to the station on Tuesday, 13 October at 6:33 a.m. ET from Space Launch Complex 40 at Cape Canaveral Space Force Station.",
+      "date": "2026-11-25",
+      "title": "SpaceX to Invest in the Next Generation of Americans",
+      "summary": "SpaceX’s official investor update dated 25 November 2026, “SpaceX to Invest in the Next Generation of Americans,” says the company will contribute one newly issued share of its Class A common stock to every currently active Trump Account, and that CEO Elon Musk will personally match the number of shares donated by SpaceX as part of his pledge to donate one SpaceX share to every kid in America. It also says President and COO Gwynne Shotwell has separately announced a personal gift of over 2 million SpaceX shares, and that the company believes ownership of the systems it is building should extend to the next generation of Americans for their long-term benefit.",
       "source": "SpaceX",
-      "url": "https://www.spacex.com/launches/crs35",
+      "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Invest-in-the-Next-Generation-of-Americans-2026-r_LYQ5cH94/default.aspx",
+      "topics": [
+        "Leadership"
+      ],
+      "datetime": "2026-11-25T19:21:59Z",
+      "timeSource": "Official SpaceX X post announcing the commitment (the IR page gives only the date, 25 November 2026)"
+    },
+    {
+      "id": "pr-ussf266",
+      "type": "press",
+      "date": "2026-11-24",
+      "title": "USSF-266 mission",
+      "summary": "SpaceX’s official USSF-266 mission page now confirms that Falcon 9 launched the USSF-266 mission at 8:08 a.m. PT on Tuesday, 24 November 2026 from Space Launch Complex 4E at Vandenberg Space Force Base in California. It says this was the 29th flight for the first-stage booster, which previously launched Crew-7, CRS-29, PACE, Transporter-10, EarthCARE, NROL-186, Transporter-13, TRACERS, NROL-48, COSMO-SkyMED Second Generation FM3, USSF-153, USSF-481 and 16 Starlink missions, and that after stage separation the first stage landed on the Of Course I Still Love You droneship in the Pacific Ocean.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/ussf266",
       "topics": [
         "Launch"
       ],
-      "datetime": "2026-11-21T22:04:00Z",
-      "timeSource": "Official SpaceX CRS-35 mission page splashdown time (2:04 p.m. PT)"
+      "datetime": "2026-11-24T16:08:00Z",
+      "timeSource": "Official SpaceX USSF-266 mission page liftoff time (8:08 a.m. PT)"
     },
     {
       "id": "pr-nrol136",
@@ -28,6 +42,20 @@
       ],
       "datetime": "2026-11-22T12:23:00Z",
       "timeSource": "Official SpaceX NROL-136 mission page liftoff time (4:23 a.m. PT)"
+    },
+    {
+      "id": "pr-crs35",
+      "type": "press",
+      "date": "2026-11-21",
+      "title": "CRS-35 mission",
+      "summary": "SpaceX’s official CRS-35 mission page says that after 37 days docked to the International Space Station, Dragon completed its 35th Commercial Resupply Services mission for NASA, splashing down off the coast of California on Saturday, 21 November 2026 at 2:04 p.m. PT. It says this was the fourth flight for this Dragon spacecraft, which previously flew CRS-26, CRS-29 and CRS-33, and that Falcon 9 had launched it to the station on Tuesday, 13 October at 6:33 a.m. ET from Space Launch Complex 40 at Cape Canaveral Space Force Station.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/crs35",
+      "topics": [
+        "Launch"
+      ],
+      "datetime": "2026-11-21T22:04:00Z",
+      "timeSource": "Official SpaceX CRS-35 mission page splashdown time (2:04 p.m. PT)"
     },
     {
       "id": "pr-ussf317",
@@ -55,20 +83,6 @@
         "Launch"
       ],
       "datetime": "2026-11-18T16:35:04Z",
-      "timeSource": "Google News first listing of the official SpaceX mission page"
-    },
-    {
-      "id": "pr-ng25",
-      "type": "press",
-      "date": "2026-10-14",
-      "title": "NG-25 mission",
-      "summary": "SpaceX’s official NG-25 mission page says the company is targeting Sunday, 29 November 2026 for a Falcon 9 launch of Northrop Grumman’s Cygnus XL commercial resupply mission (NG-25) to the International Space Station from Space Launch Complex 40 at Cape Canaveral Space Force Station, with liftoff targeted for 10:50 a.m. ET and a backup at 10:24 a.m. ET on Monday, 30 November. It says this will be the ninth flight for the first-stage booster, which previously launched KF-01, IMAP, NROL-77, GPS III-9, CRS-34, NROL-95, CRS-35 and one Starlink mission, that after stage separation the first stage will land on Landing Zone 40 at Cape Canaveral Space Force Station, and that a live webcast will begin about 20 minutes prior to liftoff on the site and on X @SpaceX.",
-      "source": "SpaceX",
-      "url": "https://www.spacex.com/launches/ng25",
-      "topics": [
-        "Launch"
-      ],
-      "datetime": "2026-10-14T16:49:14Z",
       "timeSource": "Google News first listing of the official SpaceX mission page"
     },
     {
@@ -128,20 +142,6 @@
       "timeSource": "Official SpaceX “Liftoff!” post for USSF-627"
     },
     {
-      "id": "pr-ussf266",
-      "type": "press",
-      "date": "2026-11-09",
-      "title": "USSF-266 mission",
-      "summary": "SpaceX’s official USSF-266 mission page says the company is targeting Tuesday, 24 November 2026 for a Falcon 9 launch from Space Launch Complex 4E at Vandenberg Space Force Base, with a four-hour window opening at 7:55 a.m. PT and a backup at 7:46 a.m. PT on Wednesday, 25 November. It says this will be the 29th flight for the first-stage booster, which previously launched Crew-7, CRS-29, PACE, Transporter-10, EarthCARE, NROL-186, Transporter-13, TRACERS, NROL-48, COSMO-SkyMED Second Generation FM3, USSF-153, USSF-481 and 16 Starlink missions, and that after stage separation the first stage will land on the Of Course I Still Love You droneship in the Pacific Ocean.",
-      "source": "SpaceX",
-      "url": "https://www.spacex.com/launches/ussf266",
-      "topics": [
-        "Launch"
-      ],
-      "datetime": "2026-11-09T20:24:32Z",
-      "timeSource": "Google News first listing of the official SpaceX mission page"
-    },
-    {
       "id": "pr-ussf432",
       "type": "press",
       "date": "2026-11-07",
@@ -185,6 +185,20 @@
       ],
       "datetime": "2026-10-20T20:00:51Z",
       "timeSource": "EDGAR acceptance of the Q3 2026 earnings 8-K (the press release is the 8-K exhibit)"
+    },
+    {
+      "id": "pr-ng25",
+      "type": "press",
+      "date": "2026-10-14",
+      "title": "NG-25 mission",
+      "summary": "SpaceX’s official NG-25 mission page says the company is targeting Sunday, 29 November 2026 for a Falcon 9 launch of Northrop Grumman’s Cygnus XL commercial resupply mission (NG-25) to the International Space Station from Space Launch Complex 40 at Cape Canaveral Space Force Station, with liftoff targeted for 10:47 a.m. ET and a backup at 10:24 a.m. ET on Monday, 30 November. It says this will be the ninth flight for the first-stage booster, which previously launched KF-01, IMAP, NROL-77, GPS III-9, CRS-34, NROL-95, CRS-35 and one Starlink mission, that after stage separation the first stage will land on Landing Zone 40 at Cape Canaveral Space Force Station, and that a live webcast will begin about 20 minutes prior to liftoff on the site and on X @SpaceX.",
+      "source": "SpaceX",
+      "url": "https://www.spacex.com/launches/ng25",
+      "topics": [
+        "Launch"
+      ],
+      "datetime": "2026-10-14T16:49:14Z",
+      "timeSource": "Google News first listing of the official SpaceX mission page"
     },
     {
       "id": "pr-cursor",
