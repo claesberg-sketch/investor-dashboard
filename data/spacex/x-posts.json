@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T08:46:16+01:00",
+  "updated": "2026-11-27T17:14:52+01:00",
   "timezone": "Europe/Stockholm",
   "source": "X API public reads (get_users_posts) on 27 Nov 2026. Official accounts: original posts since 1 Oct 2026. @elonmusk and @nextbigfuture: company-relevant posts only (SpaceX, Starlink, Starship, SPCX, Starmind, Grok/SI). Short off-topic replies were omitted. created_at is the original X timestamp (UTC).",
   "accounts": [
@@ -40,6 +40,27 @@
     "@grok is a very high-volume product account and is linked from the page rather than fully ingested."
   ],
   "posts": [
+    {
+      "id": "2126222666994737622",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-27T07:52:41.000Z",
+      "text": "True https://t.co/onabG4ka4u",
+      "url": "https://x.com/elonmusk/status/2126222666994737622",
+      "metrics": {
+        "likes": 15225,
+        "reposts": 1940,
+        "replies": 1240,
+        "quotes": 90,
+        "bookmarks": 1739,
+        "impressions": 2141302
+      },
+      "summary": "Elon Musk wrote “True,” quoting a post by @SVTrivo that said Trump Accounts are not only for newborns: any child under 18 with a Social Security number can have one, Treasury automatically enrolled eligible children in October 2026, and parents still need to claim and activate the account before contributions — including the SpaceX shares Musk and the company pledged — can be received. The post went out at 08:52 CET on 27 November 2026.",
+      "topics": [
+        "Leadership"
+      ],
+      "highlight": true
+    },
     {
       "id": "2126185251802157302",
       "username": "elonmusk",
@@ -121,6 +142,27 @@
       "summary": "Elon Musk replied to @stevenmarkryan, “I will be donating another share of SpaceX to all kids in America every year.” The reply went out at 22:24 CET on 26 November 2026, after stevenmarkryan asked followers to name a more awesome act of philanthropy, in a thread about the SpaceX share gifts.",
       "topics": [
         "Leadership"
+      ],
+      "highlight": true
+    },
+    {
+      "id": "2126063925938762222",
+      "username": "elonmusk",
+      "name": "Elon Musk",
+      "created_at": "2026-11-26T21:21:54.000Z",
+      "text": "RT @SamSokolin: The team has been cooking over the last few weeks! You should now see an additional 11% more usage out of your plan, and up…",
+      "url": "https://x.com/elonmusk/status/2126063925938762222",
+      "metrics": {
+        "likes": 0,
+        "reposts": 224,
+        "replies": 0,
+        "quotes": 0,
+        "bookmarks": 0,
+        "impressions": 537847
+      },
+      "summary": "Elon Musk reposted Sam Sokolin (@SamSokolin), who builds Grok Bot at SpaceX Super Intelligence (@SpaceXSI) and wrote that users should now see an additional 11% more usage out of their plan and up to 50% more usage for routines, and that he was excited to share more soon on how the team optimized the routine harness to remove inference requests for simple and repetitive tasks. The repost went out at 22:21 CET on 26 November 2026.",
+      "topics": [
+        "Grok"
       ],
       "highlight": true
     },
